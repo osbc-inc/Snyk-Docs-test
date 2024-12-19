@@ -1,0 +1,24 @@
+# Snyk로 스캔하기
+
+Snyk를 사용하여 코드베이스 및 클라우드 인프라 구성을 스캔하고 보안을 강화할 수 있습니다. Snyk는 정적 응용프로그램 보안 테스트(SAST), 소프트웨어 구성 분석(SCA) 및 Infrastructure as Code 분석 기능을 활용할 수 있습니다.
+
+자세한 정보는 [스캔 개요](scanning-overview.md)와 [스캔 시작](start-scanning.md)을 참조하십시오.
+
+## 스캔 방법 선택
+
+Snyk는 Snyk 제품에 해당하는 스캔 방법을 지원합니다. 소프트웨어 개발 수명주기 초기에 문제를 발견하고 수정하기 위해 작업에 적합한 스캔 방법을 선택하십시오.
+
+* [Snyk Open Source](snyk-open-source/): 취약점과 라이선스 문제를 찾기 위해 오픈 소스 라이브러리를 스캔합니다.\
+  자세한 정보: [오픈 소스 보안 설명](https://snyk.io/series/open-source-security/).
+* [Snyk Code](snyk-code/): 소스 코드 분석을 통해 보안 취약점을 찾는 것과 관련된 다양한 기술을 탐색합니다.\
+  자세한 정보: [Snyk Code 뒤에있는 고급 기술 탐색](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
+* [Snyk Container](snyk-container/): 컨테이너 이미지 및 워크로드 취약점을 스캔합니다.
+* [Snyk Infrastructure as Code: ](snyk-iac/)배포 전후에 클라우드 인프라 구성에서 문제를 스캔합니다.
+
+## 풀 리퀘스트 확인 실행
+
+풀 리퀘스트(PR)를 검토할 때 잠재적인 취약점을 자동으로 식별하고 주소를 지정하여 제품화 단계에서 보안 문제를 방지합니다. 이는 오픈 소스 라이브러리 및 개인 코드에 대해 적용됩니다.
+
+Snyk는 또한 기본 브랜치에서 일정 주기로 재테스트하고 결과를 보여줍니다.
+
+자세한 정보는 [풀 리퀘스트 확인 실행](pull-requests/pull-request-checks/)을 참조하십시오.

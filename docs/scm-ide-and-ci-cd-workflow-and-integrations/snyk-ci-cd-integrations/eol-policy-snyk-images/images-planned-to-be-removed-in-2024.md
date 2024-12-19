@@ -1,0 +1,11 @@
+# 2024년에 삭제될 이미지
+
+다음 타임라인은 변경 사항이 발생하는 시기 및 그 영향을 설명합니다.
+
+| 타임라인   | 계획된 변경 사항                                  | 고객 영향                                                    |
+|------------|-------------------------------------------------|---------------------------------------------------------------|
+| May-2024   | Snyk가 현재 이미지 저장소를 업데이트하고 <a href="https://updates.snyk.io/deprecation-notice-for-obsolete-snyk-images-292563">Snyk 이미지가 EOL에 접근했다고 발표함</a> | 해당 시점에서 기존 이미지에는 변경 사항이 없음.                  |
+| June-2024  | <a href="https://updates.snyk.io/important-update-on-snyk-images-obsolete-software-packages-294548">Snyk가 영향을 받는 이미지 빌드 중단</a> | <a href="images-no-longer-supported-by-snyk.md">영향을 받는 이미지</a>가 최신 안정적인 Snyk CLI 릴리스 및 보안 업데이트를 받지 못함. |
+| July-2024  | 필요한 경우 새로운 Snyk 이미지 생성 및 게시 | <p>Snyk가 다음 이미지를 소개함:</p><p><code>mcr.microsoft.com/dotnet/sdk:8.0</code></p><p>node:22</p><p>ruby:3.3<br>python:3.12</p> |
+| July-2024  | 필요한 경우 docs.snyk.io에 마이그레이션 사용자 가이드 생성 및 게시 | <p>사용자 설명서가 <a href="../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/">마이그레이션 가이드로 업데이트됨</a>.</p><ul><li>고객은 이러한 <a href="https://docs.snyk.io/scm-ide-and-ci-cd-workflow-and-integrations/snyk-ci-cd-integrations/user-defined-custom-images-for-cli">단계</a>를 따라 자체 사용자 정의 이미지를 작성할 수 있음.</li><li>GitHub 작업에서 Python 3.6, Python 3.7 또는 Scala/sbt를 사용하는 고객은 이러한 <a href="../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/github-actions-migration.md">단계</a>를 따를 수 있음.</li><li>CircleCI IaC 작업을 사용하는 고객은 이 <a href="../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/circleci-migration.md">문서</a>를 읽고 영향을 최소화하기 위한 조치를 취할 것이 권장됨.</li><li>Bitbucket Snyk Scan을 위해 <v1.0를 사용하는 고객은 이 <a href="../../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/eol-policy-snyk-images/snyk-images-guides-to-migration/bitbucket-pipelines-migration.md">문서</a>를 읽고 영향을 최소화하기 위한 조치를 취할 것이 권장됨.</li></ul><p><br></p> |
+| August-2024| Docker Hub에서 영향을 받는 이미지 제거 | <a href="images-no-longer-supported-by-snyk.md">영향을 받는 이미지 </a>가 <a href="https://hub.docker.com/r/snyk/snyk">Snyk 이미지 Docker Hub</a>에서 제거될 것임.                          |

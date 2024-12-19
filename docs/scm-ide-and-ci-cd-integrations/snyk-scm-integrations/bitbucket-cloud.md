@@ -1,0 +1,179 @@
+# Bitbucket Cloud
+
+Snyk 계정에 새 통합을 추가하려면 먼저 통합을 설치할 수준 유형을 결정해야 합니다.
+
+* [그룹 수준](bitbucket-cloud.md#group-level-snyk-apprisk-integrations) - Snyk AppRisk Essentials 또는 Snyk AppRisk Pro에서 사용할 수 있는 Snyk 응용 프로그램에 통합을 추가할 수 있습니다. Snyk AppRisk에 대한 통합을 설정하려면 그룹 수준의 통합 메뉴를 사용하십시오.
+* [조직 수준](bitbucket-cloud.md#organization-level-snyk-integrations) - 모든 Snyk 제품에 사용할 수 있는 Snyk 응용 프로그램에 통합을 추가할 수 있습니다. 단, Snyk AppRisk는 제외됩니다.
+
+## 조직 수준 - Snyk 통합
+
+{% hint style="info" %}
+Snyk는 더 부드러운 통합 및 장기 지원을 위해 [Bitbucket Cloud 애플리케이션](bitbucket-cloud-app.md)을 설치하거나 이관하는 것을 권장합니다.
+{% endhint %}
+
+Bitbucket Cloud (PAT) 통합을 통해 다음을 수행할 수 있습니다.
+
+* 통합된 저장소 전체에서 지속적으로 보안 스캔 수행
+* 오픈 소스 구성 요소에서 취약점 감지
+* 자동 수정 및 업그레이드 제공
+
+### Bitbucket Cloud 통합 설정 방법
+
+{% hint style="info" %}
+관리 권한이 필요하지만 Snyk의 액세스는 최종적으로 [App 비밀번호에 할당된 권한](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)에 의해 제한됩니다.
+{% endhint %}
+
+1. Snyk에 Bitbucket 계정에 액세스 권한을 부여하려면 Bitbucket에서 관리자 권한을 가진 전용 서비스 계정을 설정하십시오. 작업 영역에 사용자 추가에 대한 자세한 내용은 [Bitbucket 문서](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)를 참조하십시오.\
+   새로 만든 사용자는 Snyk로 모니터할 필요가 있는 모든 저장소에 **관리자** 권한이 있어야 합니다.
+2. Snyk에서 **통합** 페이지로 이동하여 **Bitbucket Cloud** 카드를 열고 **계정 자격 정보**를 구성하십시오.
+3. Snyk의 **계정 자격 정보 >** **앱 비밀번호 생성** 섹션에서 링크 **앱 비밀번호 생성**을 사용하여 Bitbucket Cloud 계정으로 이동하십시오.
+4. 다음 권한이 할당된 계정을 설정하기 위해 Bitbucket 절차를 따르십시오.
+
+    * **계정: 이메일 및 읽기**
+    * **작업 영역 멤버십: 읽기**
+    * **프로젝트: 읽기**
+    * **저장소: 읽기 및 쓰기**
+    * **풀 리퀘스트: 읽기 및 쓰기**
+    * **웹훅: 읽기 및 쓰기**
+
+    절차에 대한 자세한 내용은 [Bitbucket 문서](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html)를 참조하십시오.
+5. Bitbucket 계정의 사용자 이름 및 [비트 버킷 계정의 앱 비밀번호](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)를 입력하고 **저장**을 클릭하십시오.\
+   사용자 이름은 Bitbucket **개인 설정** 아래에서 찾을 수 있습니다.\
+   Snyk는 Bitbucket Cloud 계정에 연결됩니다. 연결에 성공하면 확인 메시지 "**Bitbucket Cloud 설정이 성공적으로 업데이트되었습니다**"가 표시됩니다.
+
+### Snyk에 Bitbucket 저장소 추가하는 방법
+
+Snyk를 Bitbucket Cloud 계정에 연결한 후 Snyk가 모니터링할 저장소를 선택할 수 있습니다.
+
+1. Snyk에서 **통합** > **Bitbucket Cloud** 카드로 이동한 다음 **Snyk에 Bitbucket Cloud 저장소 추가**를 클릭하여 Snyk에 저장소를 가져올 수 있습니다.
+2. 가져오려는 저장소를 선택하고 **선택한 저장소 추가**를 클릭하십시오.
+
+선택한 저장소를 추가한 후 Snyk는 해당 저장소를 전체 디렉토리 트리(`package.json`, `pom.xml` 등)에서 종속성 파일을 스캔하고 프로젝트로 가져옵니다.
+
+가져온 프로젝트는 **프로젝트** 페이지에 표시되며 지속적으로 취약점을 확인합니다.
+
+### Bitbucket 통합 기능
+
+통합 설치 후 다음 기능을 사용할 수 있습니다.
+
+* [프로젝트 수준 보안 보고서](bitbucket-cloud.md#project-level-security-reports)
+* [프로젝트 모니터링 및 자동 수정 풀 리퀘스트](bitbucket-cloud.md#project-monitoring-and-automatic-fix-pull-requests)
+* [풀 리퀘스트 테스트](bitbucket-cloud.md#pull-request-tests)
+
+#### 프로젝트 수준 보안 보고서
+
+Snyk가 발견한 취약점을 즉시 해결하기 위해 필요한 업그레이드 또는 패치가 포함된 보안 보고서를 통해 저장소에서 발견된 취약점을 살펴보고 즉시 수정 풀 리퀘스트를 열 수 있습니다.
+
+다음의 예시는 프로젝트 수준 보안 보고서를 보여줍니다.
+
+<figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="프로젝트 수준 보안 보고서 예시"><figcaption><p>프로젝트 수준 보안 보고서 예시</p></figcaption></figure>
+
+#### 프로젝트 모니터링 및 자동 수정 풀 리퀘스트
+
+Snyk가 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk는 이메일과 함께 자동화된 수정 풀 리퀘스트를 여는 방법으로 알림을 보냅니다.
+
+다음의 예시는 Snyk에 의해 열린 자동 수정 풀 리퀘스트를 보여줍니다.
+
+<figure><img src="../../.gitbook/assets/666.png" alt="Snyk에 의해 열린 자동 수정 풀 리퀘스트 예시"><figcaption><p>Snyk에 의해 열린 자동 수정 풀 리퀘스트 예시</p></figcaption></figure>
+
+자동 수정 풀 리퀘스트 설정을 검토하고 조정하려면:
+
+1. Snyk에서 **조직 설정** > **통합 > 소스 제어 > Bitbucket Cloud**로 이동하여 **설정 편집**을 클릭하십시오.
+2. **자동 수정 풀 리퀘스트** 섹션으로 스크롤하고 관련 옵션을 구성하십시오.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-03 at 14.49.59.png" alt="자동 수정 풀 리퀘스트 구성"><figcaption><p>자동 수정 풀 리퀘스트 구성</p></figcaption></figure>
+
+{% hint style="info" %}
+Bitbucket Cloud 인터페이스에서 수동으로 열리는 풀 리퀘스트와 달리, Snyk 풀 리퀘스트는 기본 리뷰어에서 자동으로 할당되지 않습니다.
+
+자세한 내용은 [Snyk 자동화된 풀 리퀘스트](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md)를 참조하십시오.
+{% endhint %}
+
+#### 풀 리퀘스트 테스트
+
+Snyk는 저장소의 새로 생성된 풀 리퀘스트를 보안 취약점에 대해 테스트하고 빌드 확인을 Bitbucket Cloud에 전송합니다. Bitbucket Cloud에서 바로 새 보안 문제가 소개되었는지 확인할 수 있습니다.
+
+다음의 예시는 Bitbucket Cloud **풀 리퀘스트** 페이지에서의 Snyk 풀 리퀘스트 빌드 확인을 보여줍니다.
+
+<figure><img src="../../.gitbook/assets/888.png" alt="Bitbucket Cloud 풀 리퀘스트 페이지에서의 Snyk 풀 리퀘스트 빌드 확인 예시"><figcaption><p>Bitbucket Cloud 풀 리퀘스트 페이지에서의 Snyk 풀 리퀘스트 빌드 확인 예시</p></figcaption></figure>
+
+풀 리퀘스트 테스트 설정을 검토하고 조정하려면:
+
+1. Snyk에서 **조직 설정** > **통합 > 소스 제어 > Bitbucket Cloud**로 이동하여 **설정 편집**을 클릭하십시오.
+2. **기본 Snyk 풀 리퀘스트 테스트 > 오픈 소스 보안 및 라이선스**로 스크롤하고 관련 옵션을 구성하십시오.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2022-03-16 at 10.07.50.png" alt="풀 리퀘스트 오픈 소스 보안 &#x26; 라이선스를 위한 옵션 구성"><figcaption><p>풀 리퀘스트 오픈 소스 보안 &#x26; 라이선스를 위한 옵션 구성</p></figcaption></figure>
+
+### Bitbucket Cloud 통합을 위한 필요한 권한 범위
+
+수동으로 또는 자동으로 트리거된 모든 작업은 통합 설정단계에서 사용된 Bitbucket Cloud [서비스 계정](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/service-accounts)에서 수행됩니다. 이 서비스 계정은 **통합 설정**에서 구성된 토큰(App 비밀번호)을 가지고 있어야 합니다.
+
+Snyk가 모니터링 중인 저장소에서 매니페스트 파일을 주기적으로 읽고 수정 또는 업그레이드 PR을 열기 위해 필요한 작업을 수행하려면 통합된 Bitbucket Cloud 서비스 계정이 가져온 저장소에 대한 **관리자** 권한이 필요합니다.
+
+필요한 권한 범위에 대한 자세한 정보는 [Bitbucket 권한 요구 사항](./#bitbucket-permission-requirements)을 참조하십시오.
+
+### Snyk를 Bitbucket Cloud에서 연결 해제하는 방법
+
+{% hint style="warning" %}
+Snyk에서 귀하의 저장소 프로젝트에서 Snyk의 자격 정보를 제거하고 Snyk가 모니터링 중인 전용 프로젝트를 비활성화합니다. 이 통합을 다시 활성화하려면 자격 정보를 다시 입력하고 프로젝트를 활성화해야 합니다.
+{% endhint %}
+
+이 통합을 해제하려면 **조직 설정** > **통합**에서 다음을 수행하십시오.
+
+1. 표시된 통합 목록에서 해제하려는 Bitbucket 통합을 선택하고 **설정 편집**을 클릭하여 현재 통합 상태가 표시되는 페이지를 엽니다.\
+   \
+   각 통합에 맞는 섹션이 있는 페이지를 통해 자격 정보, API 키, 서비스 주요 등을 관리할 수 있습니다.
+2. 관련 섹션으로 스크롤하여 **연결 해제**를 클릭하십시오.
+
+### Bitbucket Cloud 앱으로 이관
+
+이 항목에서는 기존 [Bitbucket Cloud Personal Access Token (PAT) 통합](bitbucket-cloud.md)을 Snyk에서 표시된 Bitbucket Cloud로 이전하여 [**Bitbucket Cloud 앱**](bitbucket-cloud-app.md) 통합으로 이전하는 방법을 설명합니다.
+
+새 앱 통합으로 이전하려면 이전에 가져온 모든 프로젝트를 Snyk에서 삭제하고 PAT 통합과 해당 프로젝트를 삭제한 다음 새 앱 통합을 설정하고 새 통합에서 프로젝트를 다시 가져와야 합니다.
+
+{% hint style="info" %}
+이전 프로젝트 수준 정보가 유지되지 않음을 주의하십시오:
+
+* 취약점 수정 트렌드 숫자를 포함한 이력 기반 프로젝트 데이터
+* 프로젝트 메타데이터: 무시 및 태그
+{% endhint %}
+
+### 이전 프로세스
+
+이전 프로세스는 다음 단계로 구성됩니다.
+
+1. [기존 프로젝트 삭제](bitbucket-cloud.md#delete-existing-projects): 이전에 Legacy 통합에서 연결된 모든 기존 프로젝트를 삭제하십시오.
+2. [PAT 통합 해제](bitbucket-cloud.md#disconnect-the-pat-integration): Snyk에서 Bitbucket Cloud PAT 통합을 해제하십시오.
+3. [첫 번째 파티 확장 기능 삭제](bitbucket-cloud.md#remove-the-snyk-tab-for-the-pat-integration-in-bitbucket-cloud-optional): Bitbucket에서 PAT 통합을 위한 첫 번째 파티 확장 기능을 제거하십시오(선택 사항).
+4. [Bitbucket Cloud 앱 설정](bitbucket-cloud.md#set-up-the-bitbucket-cloud-app-integration): 앱을 설정하고 프로젝트를 가져오십시오.
+
+#### 기존 프로젝트 삭제
+
+Snyk에서 이전 Legacy 통합에서 가져온 모든 프로젝트를 삭제하십시오. 프로젝트 페이지에서 프로젝트를 대량 삭제할 수 있도록 그룹화 필터를 **그룹 없음**으로 변경하십시오. 이제 목록에서 개별적으로 여러 프로젝트를 선택하거나 상단의 확인란을 선택하여 **표시된 모든 프로젝트 선택**을 클릭할 수 있습니다. 프로젝트를 삭제하려면 휴지통 아이콘을 선택하고 **```html
+<div class="hint" style="info">
+Create a BitBucket app password by following these steps:
+
+1. Open your BitBucket account&#x20;
+2. Click the Settings option
+3. Click the Personal BitBucket settings option&#x20;
+4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
+</div>
+
+**Use a Broker Token**
+
+Use a Broker Token (`mandatory`) to create and add your Broker token if you use Snyk broker for AppRisk.
+
+* Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent) page.&#x20;
+* Copy and paste the Broker token on the integration setup menu from the Integration Hub.
+
+**Common options**
+
+The following options apply to both the Access Token and the Broker token.
+
+* Service type (`mandatory`): Select the service type, Cloud, or On-premises.
+* Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
+
+#### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
+
+You can use the [BitBucket REST API V2](https://developer.atlassian.com/bitbucket/api/2/reference/resource/) repository to access information about the API.
+```
