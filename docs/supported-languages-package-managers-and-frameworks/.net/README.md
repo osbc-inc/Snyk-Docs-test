@@ -10,8 +10,8 @@ Snyk 제품을 사용하여 가져올 수 있는 언어 사용 가능성을 확�
 
 사용 가능한 기능:
 
-- {{Snyk Open Source}} 및 {{Snyk Code}}의 SCM 가져오기 가능. .NET을 위해 {{Snyk Open Source}}를 사용하는 경우, SCM 가져오기는 NuGet을 사용할 때에만 가능합니다.
-- CLI 및 IDE를 통해 앱을 테스트하거나 모니터링하는 기능은 {{Snyk Open Source}} 및 {{Snyk Code}} 모두에서 제공됩니다.
+- Snyk Open Source 및 Snyk Code의 SCM 가져오기 가능. .NET을 위해 Snyk Open Source를 사용하는 경우, SCM 가져오기는 NuGet을 사용할 때에만 가능합니다.
+- CLI 및 IDE를 통해 앱을 테스트하거나 모니터링하는 기능은 Snyk Open Source 및 Snyk Code 모두에서 제공됩니다.
 - `pkg:nuget`을 사용하여 앱의 SBOM을 테스트합니다.
 - `pkg:nuget`을 사용하여 앱의 패키지를 테스트합니다.
 

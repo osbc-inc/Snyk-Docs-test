@@ -2,7 +2,7 @@
 
 ## 적용 가능성
 
-Snyk for VB.NET은 **{Snyk Code}에 대해서만 지원됩니다**.
+Snyk for VB.NET은 **Snyk Code에 대해서만 지원됩니다**.
 
 Snyk 제품을 통해 가져올 수 있는 언어의 가용성을 확인하고 테스트하거나 모니터링할 수 있습니다.&#x20;
 

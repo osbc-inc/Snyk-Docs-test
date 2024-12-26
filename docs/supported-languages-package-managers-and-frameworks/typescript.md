@@ -2,7 +2,7 @@
 
 ## 적용 가능성
 
-Snyk은  및 를 위해 TypeScript를 지원합니다. 에서 TypeScript는 [JavaScript](javascript/javascript-for-open-source.md)와 정확히 동일한 방식으로 지원됩니다.
+Snyk은 Snyk Open Source 및 Snyk Code를 위해 TypeScript를 지원합니다. Snyk Open Source에서 TypeScript는 [JavaScript](javascript/javascript-for-open-source.md)와 정확히 동일한 방식으로 지원됩니다.
 
 Snyk 제품을 사용하여 가져올 수 있는 언어의 가용성을 확인하고 애플리케이션으로 가져오거나 테스트하거나 모니터링할 수 있습니다.&#x20;
 
