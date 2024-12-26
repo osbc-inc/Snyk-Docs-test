@@ -268,19 +268,19 @@ Snyk가 개인 고객 환경 (Jira, 코드 저장소 또는 컨테이너 레지�
 
 Snyk 플랫폼 도구로, 명령줄 인터페이스를 사용하여 의존성에서 알려진 취약점을 찾아 수정할 수 있게 합니다. [Snyk CLI](../snyk-cli/)를 참조하십시오.
 
-### 
+### Snyk Code
 
 Snyk 제품입니다. 소유한 응용프로그램 코드의 취약점을 찾고 수정할 수 있는 정적 응용프로그램 보안 테스트(SAST) 제품입니다. [](../scan-with-snyk/snyk-code/)를 참조하십시오.
 
-### 
+### Snyk Container
 
 Snyk 제품으로, 컨테이너 이미지와 Kubernetes 응용프로그램의 취약점을 찾고 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-container/)를 참조하십시오.
 
-### Snyk 
+### Snyk IaC
 
 Snyk 제품으로, Kubernetes, Helm 및 Terraform 구성 파일의 취약점을 찾아 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-iac/)를 참조하십시오.
 
-### 
+### Snyk Open Source
 
 Snyk 제품으로, 오픈 소스 취약점을 찾고 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-open-source/)를 참조하십시오.
 
