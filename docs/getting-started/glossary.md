@@ -270,19 +270,19 @@ Snyk 플랫폼 도구로, 명령줄 인터페이스를 사용하여 의존성에
 
 ### Snyk Code
 
-Snyk 제품입니다. 소유한 응용프로그램 코드의 취약점을 찾고 수정할 수 있는 정적 응용프로그램 보안 테스트(SAST) 제품입니다. [](../scan-with-snyk/snyk-code/)를 참조하십시오.
+Snyk 제품입니다. 소유한 응용프로그램 코드의 취약점을 찾고 수정할 수 있는 정적 응용프로그램 보안 테스트(SAST) 제품입니다. [Snyk Code](../scan-with-snyk/snyk-code/)를 참조하십시오.
 
 ### Snyk Container
 
-Snyk 제품으로, 컨테이너 이미지와 Kubernetes 응용프로그램의 취약점을 찾고 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-container/)를 참조하십시오.
+Snyk 제품으로, 컨테이너 이미지와 Kubernetes 응용프로그램의 취약점을 찾고 수정할 수 있도록 합니다. [Snyk Container](../scan-with-snyk/snyk-container/)를 참조하십시오.
 
 ### Snyk IaC
 
-Snyk 제품으로, Kubernetes, Helm 및 Terraform 구성 파일의 취약점을 찾아 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-iac/)를 참조하십시오.
+Snyk 제품으로, Kubernetes, Helm 및 Terraform 구성 파일의 취약점을 찾아 수정할 수 있도록 합니다. [Snyk IaC](../scan-with-snyk/snyk-iac/)를 참조하십시오.
 
 ### Snyk Open Source
 
-Snyk 제품으로, 오픈 소스 취약점을 찾고 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-open-source/)를 참조하십시오.
+Snyk 제품으로, 오픈 소스 취약점을 찾고 수정할 수 있도록 합니다. [Snyk Open Source](../scan-with-snyk/snyk-open-source/)를 참조하십시오.
 
 ### Snyk 플러그인
 
@@ -290,7 +290,7 @@ Snyk 제품으로, 오픈 소스 취약점을 찾고 수정할 수 있도록 합
 
 ### Snyk 보안 인텔리전스
 
-Snk 클라우드 네이티브 애플리케이션 보안 플랫폼을 구동하는 구성 요소입니다.\
+Snk 클라우드 네이티브 애플리케이션 보안 플랫폼을 구동하는 구성 요소입니다.
 Snyk Intel 취약점 DB를 포함하여, 알려진 취약점에 대한 자세한 정보와 수정 지침을 제공하는 취약점 데이터베이스입니다. [취약점 DB](https://snyk.io/vuln)를 참조하십시오.
 
 ### Snyk 웹 UI
