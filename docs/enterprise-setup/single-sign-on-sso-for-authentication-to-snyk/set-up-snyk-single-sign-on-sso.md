@@ -181,14 +181,14 @@ Snyk이 구성을 완료한 후, 지원 에이전트는 쿠키가 로그인 프�
 3. 다른 애플리케이션에서와 마찬가지로 ID 공급자를 통해 로그인하세요.
 4. 그룹 관리자로 승격할 사용자를 Snyk 지원팀에 알려주세요.
 
----
-
 ## SSO 설정을 위한 리소스
 
 다음 워크시트에는 ID 공급자에 입력해야 할 정보와 단일 사인온(Single Sign-On)을 요청하기 위해 Snyk 지원팀에 티켓을 제출하기 전에 수집해야 할 정보가 포함되어 있습니다.
 
-- [**SSO Azure 워크시트**](../../.gitbook/assets/SSO%20Azure%20Worksheet%20(2).pdf)
-- [**SSO SAML 워크시트**](../../.gitbook/assets/SSO%20SAML%20Worksheet%20(1).pdf)
-- [**SSO ADFS 워크시트**](../../.gitbook/assets/SSO%20ADFS%20Worksheet%20(2).pdf)
-- [**SSO OIDC 워크시트**](../../.gitbook/assets/SSO%20OIDC%20Worksheet%20(1).pdf)
-```
+{% file src="../../.gitbook/assets/SSO Azure Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3).pdf" %}
+
+{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+
+{% file src="../../.gitbook/assets/SSO ADFS Worksheet (2) (1).pdf" %}
+
+{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
