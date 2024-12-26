@@ -146,12 +146,49 @@ IdP(또는 발급자 URL)은 공개적으로 액세스 가능해야 합니다. �
 
 ## Snyk에 제공할 ADFS 정보
 
-서비스 제공자 측의 신뢰를 수립하기 위해 신원 제공자로부터```korean
-#) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (3).pdf" %}
+ID 공급자로부터 다음 정보를 수집하세요. 이 정보를 Snyk에 제공하여 서비스 제공자 측에서 신뢰를 설정합니다.
 
-{% file src="../../.gitbook/assets/SSO SAML Worksheet (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+- **ADFS URL 또는 Federation Metadata XML 파일**
 
-{% file src="../../.gitbook/assets/SSO ADFS Worksheet (2) (1).pdf" %}
+---
 
-{% file src="../../.gitbook/assets/SSO OIDC Worksheet (1) (1) (1) (1) (1) (1) (1) (1).pdf" %}
+## 엔터프라이즈 사용자 매핑
+
+엔터프라이즈 플랜의 경우, Snyk은 사용자가 SSO를 통해 처음 로그인할 때 특정 조직과 역할에 새 사용자를 매핑할 수 있습니다. 이 옵션에는 조직 이름 명명 규칙을 포함한 추가 구성이 필요합니다.
+
+{% hint style="info" %}
+이 SSO 옵션 구현을 준비하려면 Snyk 계정 팀과 협력하세요.
+{% endhint %}
+
+---
+
+## SSO 연결 완료
+
+ID 공급자와 연결을 설정하고 Snyk 지원팀에 필요한 세부 정보를 제공한 후, Snyk은 페이로드를 생성할 수 있는 링크를 제공합니다.
+
+{% hint style="info" %}
+이 링크를 처음 클릭했을 때 표시되는 오류 메시지는 무시하세요. Snyk은 생성된 페이로드를 사용하여 구성을 완료합니다.
+{% endhint %}
+
+Snyk이 구성을 완료한 후, 지원 에이전트는 쿠키가 로그인 프로세스를 방해하지 않도록 시크릿 모드에서 로그인 페이지로 이동할 것을 요청합니다.
+
+프로덕션 환경에 로그인하려면 [https://app.snyk.io/login/sso](https://app.snyk.io/login/sso)를 사용하세요.
+
+로그인을 완료하려면 다음 단계를 따르세요:
+
+1. 이메일 주소를 입력하세요.
+2. **Continue to provider**를 선택하세요.
+3. 다른 애플리케이션에서와 마찬가지로 ID 공급자를 통해 로그인하세요.
+4. 그룹 관리자로 승격할 사용자를 Snyk 지원팀에 알려주세요.
+
+---
+
+## SSO 설정을 위한 리소스
+
+다음 워크시트에는 ID 공급자에 입력해야 할 정보와 단일 사인온(Single Sign-On)을 요청하기 위해 Snyk 지원팀에 티켓을 제출하기 전에 수집해야 할 정보가 포함되어 있습니다.
+
+- [**SSO Azure 워크시트**](../../.gitbook/assets/SSO%20Azure%20Worksheet%20(2).pdf)
+- [**SSO SAML 워크시트**](../../.gitbook/assets/SSO%20SAML%20Worksheet%20(1).pdf)
+- [**SSO ADFS 워크시트**](../../.gitbook/assets/SSO%20ADFS%20Worksheet%20(2).pdf)
+- [**SSO OIDC 워크시트**](../../.gitbook/assets/SSO%20OIDC%20Worksheet%20(1).pdf)
 ```
