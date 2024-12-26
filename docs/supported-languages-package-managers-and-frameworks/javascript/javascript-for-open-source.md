@@ -140,7 +140,36 @@ Yarn, npm 및 pnpm은 다중 하위 프로젝트를 포함하는 모노레포를
 
 ### 워크스페이스 스캔 예제
 
-현재 디렉토리의 모든 워크스페이스 프로젝트 및 다섯 개의 하위 디렉토리까지, 그리고 발견된 다른 프로젝트 유형을 스캔합니다.
+현재 디렉토리 및 5단계 하위 디렉토리 내의 모든 워크스페이스 프로젝트를 스캔하고, 감지된 기타 프로젝트 유형도 포함합니다.
 
 ```bash
-s
+snyk test --all-projects --strict-out-of-sync=false --detection-depth=6 
+```
+
+모든 감지된 워크스페이스에 대해 적용할 무시 및 패치를 한 곳에서 관리하려면 공통 `.snyk` 정책 파일을 사용할 수 있습니다. 이 파일에 대한 자세한 내용은 [The .snyk file](https://docs.snyk.io/manage-risk/policies/the-.snyk-file)을 참조하십시오.
+
+```bash
+snyk test --all-projects --strict-out-of-sync=false --policy-path=src/.snyk
+```
+
+### **npm 워크스페이스 예제**
+
+npm v7에서는 워크스페이스를 지원합니다. 자세한 내용은 [lockfile version and Snyk feature availability matrix](javascript-for-open-source.md#npm)을 참조하십시오.
+
+npm 프로젝트의 모든 워크스페이스를 감지하고 스캔하려면 위에서 설명한 CLI 옵션을 사용하십시오.
+
+### **pnpm 워크스페이스 예제**
+
+pnpm 워크스페이스는 루트 디렉토리에 `package.json`, `pnpm-lock.yaml` 및 `pnpm-workspace.yaml` 파일이 있어야 합니다.
+
+pnpm 프로젝트의 모든 워크스페이스를 감지하고 스캔하려면 위에서 설명한 CLI 옵션을 사용하십시오.
+
+### **Yarn 워크스페이스 예제**
+
+{% hint style="info" %}
+`nohoist`는 Yarn 워크스페이스에서 지원되지 않습니다.
+{% endhint %}
+
+Yarn 프로젝트의 모든 워크스페이스를 감지하고 스캔하려면 모노레포 및 워크스페이스에 대해 정의된 CLI 옵션과 다음 Yarn 전용 옵션을 사용하십시오:
+
+`--yarn-workspaces` : 루트에 락파일이 있는 경우 `--all-projects` 대신 사용하여 Yarn 워크스페이스 프로젝트만 감지하고 스캔합니다. 다른 생태계는 무시됩니다.
