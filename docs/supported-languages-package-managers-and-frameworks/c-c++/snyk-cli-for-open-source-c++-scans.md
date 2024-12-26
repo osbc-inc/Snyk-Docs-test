@@ -283,4 +283,4 @@ Monitoring /c-example (c-example)...
 
 관리되지 않는 의존성을 가진 프로젝트를 가져오면 프로젝트 페이지에 나열된 새 프로젝트가 생성됩니다:
 
-<figure><img src="../../.gitbook
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-04 at 11.18.10.png" alt="Project with unmanaged dependencies"><figcaption><p>Project with unmanaged dependencies</p></figcaption></figure>

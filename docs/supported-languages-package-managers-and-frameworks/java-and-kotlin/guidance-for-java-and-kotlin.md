@@ -120,3 +120,45 @@ Snyk는 기본적으로 활성화된 활성 프로필을 스캔합니다.
 특정 구성을 테스트하려면 여기서 자세한 예제를 참조하십시오 [Java 및 Kotlin을 위한 Snyk](./).
 
 Android Build 변형에 대한 자세한 내용은 [Java 및 Kotlin을 위한 Snyk](./)를 참조하십시오.
+
+**관리되지 않는 파일 (Unmanaged)**
+
+관리되지 않는 JAR 파일에 대한 자세한 내용은 [모든 관리되지 않는 JAR 파일 스캔](../../snyk-cli/test-for-vulnerabilities/scan-all-unmanaged-jar-files.md) 페이지를 참조하십시오.
+
+#### 컨테이너 테스트
+
+Snyk은 컨테이너 스캔의 일환으로 애플리케이션(오픈 소스, Maven, npm 등)의 취약점을 자동으로 검사합니다. 우리는 파이프라인 초기에 CLI 또는 레지스트리를 통해 통합하고 이를 생산 환경에서 실행되는 애플리케이션에 대한 추가적인 신호나 인사이트로 활용할 것을 권장합니다.
+
+자세한 내용은 [컨테이너 보안을 위한 Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)를 참조하십시오.
+
+#### 코드로서의 인프라 (Infrastructure as Code)
+
+자세한 내용은 [코드로서의 인프라 보안](https://snyk.io/product/infrastructure-as-code-security/) 페이지를 참조하십시오.
+
+### 취약점 수정
+
+자세한 내용은 [Maven 프로젝트의 취약점 수정](https://snyk.io/blog/fixing-vulnerabilities-in-maven-projects/) 페이지를 참조하십시오.
+
+### 옵션 및 플러그인
+
+* 로컬 또는 빌드 시간에 보고서를 생성하려면 [snyk-to-html 플러그인](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)을 참조하십시오.
+* 프로그래밍 방식으로 접근할 수 있는 출력을 생성하려면 `--json` 및 `--sarif` 옵션을 참조하십시오.
+* 고급 필터링 옵션에 대해서는 [snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md)를 참조하십시오.
+
+추가적으로, Snyk 팀은 워크플로우에 Snyk을 통합하는 데 유용한 플러그인들을 개발했습니다:
+
+* [**Gradle 플러그인**](https://snyk.io/blog/gradle-plugin-by-snyk-gradle-dependencies-scanning/) **(커뮤니티 프로젝트)**
+* [**Maven 플러그인**](https://snyk.io/blog/snyk-maven-plugin-integrated-security-vulnerability-scanning-for-developers/)
+
+## Java 개발자를 위한 추가 보안 주제
+
+다음은 이 생태계에 영향을 미치는 Snyk 보안 팀과 개발자 관계 팀의 기사 모음입니다. 더 많은 산업, 보안 및 기술 관련 기사를 확인하려면 아래를 참고하십시오.
+
+* [Snyk 블로그](https://snyk.io/blog/)
+* [현대 소프트웨어 공급망 보안](https://snyk.io/blog/software-supply-chain-security/)
+* [보안 Java 개발을 위한 Snyk](https://snyk.io/blog/snyk-for-secure-java-development/)
+* [고급 IntelliJ 디버거 기능](https://snyk.io/blog/advanced-intellij-debugger-features/)
+* [Spring4shell: 제로 데이 RCE Spring Framework 설명](https://snyk.io/blog/spring4shell-zero-day-rce-spring-framework-explained/)
+* [Log4j 취약점 설명: Log4Shell RCE를 버전 2.17.1로 업데이트하여 방지](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-44228/)
+* [Java 의존성 관리의 모범 사례](https://snyk.io/blog/best-practices-for-managing-java-dependencies/)
+* [Spring 보안 인증 우회 (CVE-2022-31692) 탐색](https://snyk.io/blog/spring-security-authorization-bypass-cve-2022-31692/)

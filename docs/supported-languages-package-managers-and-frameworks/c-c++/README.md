@@ -2,7 +2,7 @@
 
 ## 적용 가능성
 
-C/C++는 **** 및 ****에서 지원됩니다.
+C/C++는 **Snyk Open Source** 및 **Snyk Code**에서 지원됩니다.
 
 [오픈 소스 C++ 스캔을 위한 Snyk CLI에 대한 특별 고려](snyk-cli-for-open-source-c++-scans.md)가 있습니다. [C/C++에 대한 Snyk 가이드](guidance-for-snyk-for-c-c++.md)가 제공됩니다.
 
@@ -10,8 +10,8 @@ C/C++는 **** 및 ****에서 지원됩니다.
 
 사용 가능한 기능:
 
-- SCM 가져오기는 에서만 사용 가능합니다.
-- CLI 및 IDE를 통해 앱을 테스트하거나 모니터하려면  및 를 사용하십시오.
+- SCM 가져오기는 Snyk Code에서만 사용 가능합니다.
+- CLI 및 IDE를 통해 앱을 테스트하거나 모니터하려면 Snyk Open Source 및 Snyk Code를 사용하십시오.
 - `pkg:generic.`를 사용하여 앱의 SBOM을 테스트하십시오.
 - `pkg:generic.`를 사용하여 앱의 패키지를 테스트하십시오.
 
@@ -21,8 +21,8 @@ Snyk IDE의 경우 추가 옵션이 필요하지 않습니다. Snyk 플러그인
 
 Snyk C/C++은 어떤 패키지 관리자도 지원하지 않지만 다음 파일 형식을 지원합니다:
 
-- : 사용 불가
-- : `.c`, `.cc`, `.cpp`, `.cxx`, `.h`, `.hpp`, `.hxx`
+- Snyk Open Source: 사용 불가
+- Snyk Code: `.c`, `.cc`, `.cpp`, `.cxx`, `.h`, `.hpp`, `.hxx`
 
 ## 프레임워크 및 라이브러리
 
@@ -56,7 +56,7 @@ Snyk C/C++은 어떤 패키지 관리자도 지원하지 않지만 다음 파일
 
 다음 기능이 Snyk C/C++에서 지원됩니다:
 
-|                                    |           |
+| Snyk Open Source | Snyk Code |
 | -------------------------------------------------- | ------------------ |
 | <ul><li>라이선스 스캔</li><li>보고서</li></ul> | Interfile 분석 |
 
