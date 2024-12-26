@@ -33,4 +33,4 @@ Snyk는 API 토큰을 제공하여 서드파티 개발자 도구와의 통합을
 3. 토큰 필드에서 **클릭하여 표시**한 다음 API 토큰을 선택하고 복사합니다.
 4. 서드파티 인터페이스에서 Snyk 토큰을 붙여넣어 통합을 구성합니다.
 
-<figure><img src="../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (16).png" alt="API token 화면; 취소; 재생성; 표시를 클릭"><figcaption><p>API 토큰 화면; 취소; 재생성; 표시를 클릭</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/uuid-8d94edf8-b42b-e5b3-ada1-e157d18ff884-en (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (3) (16).png" alt="API token 화면; 취소; 재생성; 표시를 클릭"><figcaption><p>API 토큰 화면; 취소; 재생성; 표시를 클릭</p></figcaption></figure>
