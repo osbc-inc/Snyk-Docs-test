@@ -4,7 +4,7 @@
 기타 Snyk 제품에서 지원되는 환경에 대해서는 [지원되는 언어 및 프레임워크](../../../supported-languages-package-managers-and-frameworks/)를 참조하십시오.
 {% endhint %}
 
-{Snyk IaC}}를 사용하여 Terraform, Kubernetes Manifests, AWS CloudFormation, Azure Resource Manager (ARM) 및 Helm Charts를 위한 인프라 구성 파일의 문제를 찾고 보고 수정할 수 있습니다.
+{Snyk IaC를 사용하여 Terraform, Kubernetes Manifests, AWS CloudFormation, Azure Resource Manager (ARM) 및 Helm Charts를 위한 인프라 구성 파일의 문제를 찾고 보고 수정할 수 있습니다.
 
 ## 지원되는 IaC 언어
 
@@ -22,7 +22,7 @@ terrraform init && snyk iac test
 
 ## 지원되는 클라우드 제공업체
 
-{{Snyk IaC}}는 다음 클라우드 제공업체의 스캔을 지원합니다:
+는 다음 클라우드 제공업체의 스캔을 지원합니다:
 
 * [Amazon Web Services](../cloud-platforms-integrations/aws-integration/)
 * [Azure](../cloud-platforms-integrations/azure-integration-for-cloud-configurations/)

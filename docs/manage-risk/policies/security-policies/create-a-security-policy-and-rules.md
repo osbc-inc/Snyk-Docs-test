@@ -7,7 +7,7 @@
 {% hint style="info" %}
 **Snyk Default Security Policy**를 선택하여 그룹 내 모든 조직의 모든 프로젝트에 적용되는 보안 정책의 조건 또는 작업을 변경할 수 있습니다.
 
-보안 정책은 {{Snyk Open Source}} 및 {{Snyk Container}} 프로젝트에 적용됩니다.
+보안 정책은  및  프로젝트에 적용됩니다.
 {% endhint %}
 
 ## 규칙, 조건 및 작업

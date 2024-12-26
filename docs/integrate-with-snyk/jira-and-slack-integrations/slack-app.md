@@ -42,7 +42,7 @@ Slack을 위한 Snyk 앱을 활성화하려면 다음을 수행해야 합니다:
 
 ## Slack을 위한 Snyk 앱 구성
 
-이 설치를 수행하는 사용자는 계속하기 전에 **{{Snyk} 앱 관리 - 앱 설치** 권한을 가져야 합니다. [회원 역할 문서](../../snyk-admin/user-roles/user-role-management.md)를 참조하십시오.
+이 설치를 수행하는 사용자는 계속하기 전에 **Snyk} 앱 관리 - 앱 설치** 권한을 가져야 합니다. [회원 역할 문서](../../snyk-admin/user-roles/user-role-management.md)를 참조하십시오.
 
 1. [Snyk 통합 페이지](https://app.snyk.io/integrations)를 열고 **알림**으로 이동한 다음 **Slack 앱** 타일을 클릭합니다.
 2. Snyk가 Slack에서 데이터에 액세스하도록 허용하기 위해 **Snyk로 허가**를 선택합니다.

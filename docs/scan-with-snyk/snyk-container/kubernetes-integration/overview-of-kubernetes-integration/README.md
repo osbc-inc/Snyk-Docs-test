@@ -42,7 +42,7 @@ Snyk은 쿠버네티스와 통합하여 실행 중인 작업 부하를 가져와
 
 ## 약관
 
-{{Snyk Container}} 쿠버네티스 통합은 Red Hat UBI (Universal Base Image)를 사용합니다.
+ 쿠버네티스 통합은 Red Hat UBI (Universal Base Image)를 사용합니다.
 
 이 애플리케이션을 다운로드하거나 사용하기 전에 [Red Hat 웹사이트](https://www.redhat.com/en/about/agreements)에서 찾을 수 있는 Red Hat 구독 약관에 동의해야 합니다. 이 약관에 동의하지 않는 경우 애플리케이션을 다운로드하거나 사용하지 마십시오.
 

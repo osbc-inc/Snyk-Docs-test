@@ -33,7 +33,7 @@ jobs:
       - name: 취약점 확인을 위해 Snyk 실행
         uses: snyk/actions/python-3.6@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 **높은 심각도의 취약점만** 확인하도록 Snyk Python (3.6) 액션을 사용할 수 있습니다:
@@ -49,7 +49,7 @@ jobs:
       - name: 취약점 확인을 위해 Snyk 실행
         uses: snyk/actions/python-3.6@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --severity-threshold=high
 ```
@@ -76,7 +76,7 @@ jobs:
         uses: snyk/actions/python-3.6@master
         continue-on-error: true # SARIF 업로드가 호출되도록 하기 위해
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --sarif-file-output=snyk.sarif
       - name: 결과를 GitHub Code Scanning에 업로드

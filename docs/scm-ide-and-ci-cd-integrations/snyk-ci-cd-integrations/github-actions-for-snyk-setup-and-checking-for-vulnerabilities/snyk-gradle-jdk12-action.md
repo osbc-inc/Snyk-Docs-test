@@ -17,7 +17,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/gradle-jdk12@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 다음과 같이 **높은 심각도의 취약점만** 확인하려면 Snyk Gradle (jdk12) 액션을 사용할 수 있습니다:
@@ -33,7 +33,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/gradle-jdk12@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --severity-threshold=high
 ```
@@ -60,7 +60,7 @@ jobs:
         uses: snyk/actions/gradle-jdk12@master
         continue-on-error: true # SARIF 업로드가 호출되도록 함
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --sarif-file-output=snyk.sarif
       - name: Upload result to GitHub Code Scanning

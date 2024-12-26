@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 **릴리스 상태** \
-{{Snyk IaC}}+는 현재 클로즈 베타 상태이며 새로운 참여 고객을 더 이상 받지 않습니다.\
++는 현재 클로즈 베타 상태이며 새로운 참여 고객을 더 이상 받지 않습니다.\
 사용 가능한 기능에 대한 자세한 내용은 [현재 IaC 시작](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac)을 참조하십시오.
 {% endhint %}
 
@@ -17,7 +17,7 @@ IaC+를 사용하여 Terraform, Kubernetes(헬름 제외, 곧 제공 예정), AW
 IaC+를 사용하려면 다음이 필요합니다:
 
 * Snyk 계정. 자세한 내용은 [시작하기](../../../getting-started/)를 참조하십시오.
-* 엔터프라이즈 플랜의 {{Snyk IaC}}.
+* 엔터프라이즈 플랜의 .
 * 작업할 Terraform, CloudFormation 또는 Azure Resource Manager 환경이 있거나 배포된 AWS, Azure 또는 Google Cloud 계정이 있어야 합니다.
 * Git 저장소와의 통합. 자세한 내용은 [Git 저장소 (SCM)](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)를 참조하십시오.
 
@@ -41,7 +41,7 @@ IaC+ SCM 통합은 [Snyk Workspaces](../../../scm-ide-and-ci-cd-integrations/sny
 
 [프로젝트](../../../snyk-admin/snyk-projects/) 페이지에서 **대상별 그룹화**가 선택되어 있는지 확인하여 IaC+가 테스트할 파일을 포함하는 대상(깃 저장소)으로 이동합니다.
 
-**{{인프라스트럭처와 동일한 코드}} 이슈** 프로젝트가 표시됩니다. IaC+는 각 저장소에 하나의 프로젝트만 생성하며 현재 IaC는 각 구성 파일에 대해 하나의 프로젝트를 생성합니다.
+** 이슈** 프로젝트가 표시됩니다. IaC+는 각 저장소에 하나의 프로젝트만 생성하며 현재 IaC는 각 구성 파일에 대해 하나의 프로젝트를 생성합니다.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-07 at 3.57.30 PM.png" alt="SCM 저장소의 IaC+ 프로젝트"><figcaption><p>SCM 저장소의 IaC+ 프로젝트</p></figcaption></figure>
 
@@ -69,7 +69,7 @@ IaC+ SCM 통합은 [Snyk Workspaces](../../../scm-ide-and-ci-cd-integrations/sny
 
 ## IaC+ 및 클라우드 이슈 보기
 
-**{{인프라스트럭처와 동일한 코드}} 이슈** 프로젝트 링크를 클릭하여 클라우드 이슈 페이지를 열고 프로젝트에 해당하는 IaC+ [환경](key-concepts-for-iac+-and-cloud.md#environments)에서 발생한 문제만 필터링된 뷰를 확인할 수 있습니다.
+** 이슈** 프로젝트 링크를 클릭하여 클라우드 이슈 페이지를 열고 프로젝트에 해당하는 IaC+ [환경](key-concepts-for-iac+-and-cloud.md#environments)에서 발생한 문제만 필터링된 뷰를 확인할 수 있습니다.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-05-07 at 4.04.13 PM.png" alt="환경별로 필터링된 클라우드 이슈 페이지"><figcaption><p>저장소에 해당하는 환경의 이슈가 필터링된 클라우드 이슈 페이지</p></figcaption></figure>
 

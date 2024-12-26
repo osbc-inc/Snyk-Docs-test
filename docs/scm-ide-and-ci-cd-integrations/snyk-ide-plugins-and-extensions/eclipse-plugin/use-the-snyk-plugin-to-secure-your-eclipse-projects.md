@@ -10,6 +10,6 @@ Snyk에 의해 발견된 모든 문제는 Eclipse 흐름과 네이티브로 통�
 
 계속 진행하기 위해 아래 페이지의 지침에 따르세요 해당하는 스캔 유형에 대한:
 
-* [SAST 스캔 결과(SAST, {{Snyk Code}})](https://docs.snyk.io/ide-tools/eclipse-plugin/sast-scanning-results-sast-snyk-code)
+* [SAST 스캔 결과(SAST, )](https://docs.snyk.io/ide-tools/eclipse-plugin/sast-scanning-results-sast-snyk-code)
 * [구성 오류 스캔 결과 (Snyk Infrastructure as Code)](https://docs.snyk.io/ide-tools/eclipse-plugin/misconfiguration-scanning-results-snyk-infrastructure-as-code)
-* [서드파티 종속성 스캔 (SCA, {{Snyk Open Source}})](https://docs.snyk.io/ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source)
+* [서드파티 종속성 스캔 (SCA, )](https://docs.snyk.io/ide-tools/eclipse-plugin/third-party-dependency-scanning-sca-snyk-open-source)

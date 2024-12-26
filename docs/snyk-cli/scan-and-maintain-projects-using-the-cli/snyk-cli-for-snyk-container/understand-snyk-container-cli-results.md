@@ -1,10 +1,10 @@
-# {{Snyk Container}} CLI 결과 이해
+#  CLI 결과 이해
 
 ## **취약점 정보**
 
 Snyk Container이 취약점을 감지하면 다음과 같이 출력됩니다:
 
-<figure><img src="../../../.gitbook/assets/clivulnerabiilities.png" alt="{{Snyk Container}}에서 감지된 취약점"><figcaption><p>{{Snyk Container}}에서 감지된 취약점</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/clivulnerabiilities.png" alt="에서 감지된 취약점"><figcaption><p>에서 감지된 취약점</p></figcaption></figure>
 
 각 취약점에는 다음 정보가 포함됩니다:
 

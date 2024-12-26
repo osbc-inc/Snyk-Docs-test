@@ -134,5 +134,5 @@ Snyk API 시나리오는 Snyk 애플리케이션을 API를 사용하여 작업�
 [특정 조직의 모든 프로젝트 목록](../reference/projects.md#orgs-org_id-projects)\
 [모든 집계된 문제 목록](../reference/projects-v1.md#org-orgid-project-projectid-aggregated-issues) (코드 제외)\
 [조직 ID별 문제 가져오기](../reference/issues.md#orgs-org_id-issues)\
-REST 실험적 [ID 별 {{Snyk Code}} 문제 가져오기](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org_id-/issues/detail/code/-issue_id-)\
+REST 실험적 [ID 별  문제 가져오기](https://apidocs.snyk.io/?version=2022-04-06%7Eexperimental#get-/orgs/-org_id-/issues/detail/code/-issue_id-)\
 [무시된 사항 검색](../reference/ignores-v1.md#org-orgid-project-projectid-ignore-issueid-2)

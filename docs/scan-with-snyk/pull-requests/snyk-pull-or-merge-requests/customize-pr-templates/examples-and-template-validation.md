@@ -10,9 +10,9 @@
 {
     "data": {
         "attributes": {
-            "title": "[{{ snyk_pull_request_type }}] for {{ package_name }}",
-            "commit_message": "{{ snyk_pull_request_type}}: for {{ package_name }}",
-            "description": "Moving package {{ package_name }} from {{ package_from }} to {{ package_to }}\nFixes {{ issue_count }} issues\nFor more details see {{ snyk_project_url }}\nProject {{ snyk_project_name }}\nOrg {{ snyk_org_name }}"
+            "title": "[] for ",
+            "commit_message": ": for ",
+            "description": "Moving package  from  to \nFixes  issues\nFor more details see \nProject \nOrg "
         },
         "type": "pull_request_template"
     }
@@ -22,21 +22,21 @@
 ### YAML 사용자 정의 PR 템플릿 예시
 
 ```yaml
-title: This PR fixes {{ issue_count }} issues
-commitMessage: "fix: {{ issue_count }} Snyk issues"
+title: This PR fixes  issues
+commitMessage: "fix:  Snyk issues"
 description: |
-  {{ #is_upgrade_pr }}
+  
   This PR has been opened to make sure our repositories are kept up-to-date.
-  It updates {{ package_name }} from version {{ package_from }} to version {{ package_to }}.
+  It updates  from version  to version .
   Review relevant docs for possible breaking changes.
-  {{ /is_upgrade_pr }}
+  
   
   **Tickets**
-  {{ #jira_ids }}
-  - Fixes {{ . }}
-  {{ /jira_ids }}
   
-  To find more details, see the Snyk project [{{ snyk_project_name }}]({{ snyk_project_url }})
+  - Fixes 
+  
+  
+  To find more details, see the Snyk project []()
 ```
 
 ## 사용자 정의 PR 템플릿 유효성 검사

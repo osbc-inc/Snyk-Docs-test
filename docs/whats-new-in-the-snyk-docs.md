@@ -13,7 +13,7 @@ coverY: 0
 - [자산 대시보드](manage-issues/reporting/available-snyk-reports.md#asset-dashboard)가 재설계되어 보고서 섹션에 포함되었습니다. 새로운 글로벌 필터 바, 새로운 데이터 위젯 및 대시보드를 PDF로 내보내는 옵션 등 여러 개선 사항이 추가되었습니다.
 - [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#scm-integrations) 문서가 업데이트되어 각 SCM 통합을 구성하는 데 필요한 구체적인 단계를 설명하도록 되었습니다.
 
-### **{{Snyk Container}}**
+### ****
 
 - [{Snyk Container에서 지원하는 운영 체제 배포](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) 목록이 업데이트되어 Ubuntu 24.10 - Oracular Oriole 및 Ubuntu 24.04 - Noble Numbat 04가 포함되었습니다.
 - [{Snyk Container 작동 방식](scan-with-snyk/snyk-container/how-snyk-container-works/)이 업데이트되어 Snyk가 공개 베이스 이미지 추천을 제공할 때 적용하는 로직에 대한 세부 정보가 추가되었습니다.

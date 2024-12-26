@@ -1,6 +1,6 @@
-# Snyk 브로커 - {{인프라스터럭처 코드}} 탐지
+# Snyk 브로커 -  탐지
 
-## **Snyk 브로커 내 {{인프라스트럭처 코드}} (IaC)**
+## **Snyk 브로커 내  (IaC)**
 
 기본적으로, 인프라스트럭처 코드 (IaC)에서 사용되는 일부 파일 유형은 활성화되어 있지 않습니다. 브로커가 귀하의 저장소에 있는 Terraform과 같은 IaC 파일에 액세스하도록 허용하려면 `ACCEPT_IAC` 환경 변수를 추가할 수 있습니다. 이 변수에는 `tf, yaml, yml, json, tpl` 중 임의의 조합을 사용합니다.
 
@@ -21,7 +21,7 @@ docker run --restart=always \
 
 ## `ACCEPT`를 통한 사용자 정의 구성
 
-`ACCEPT` 환경 변수를 사용하여 Snyk 브로커를 사용하여 {{인프라스트럭처 코드}} 파일을 감지하는 방법에 대한 지침은 다음 페이지를 참조하십시오:
+`ACCEPT` 환경 변수를 사용하여 Snyk 브로커를 사용하여  파일을 감지하는 방법에 대한 지침은 다음 페이지를 참조하십시오:
 
 * [브로커를 사용하여 Terraform 구성 파일 감지](detecting-terraform-configuration-files-using-snyk-broker-custom.md)
 * [브로커를 사용하여 CloudFormation 구성 파일 감지](detecting-cloudformation-configuration-files-using-snyk-broker-custom.md)

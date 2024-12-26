@@ -156,6 +156,6 @@ Snyk가 `snyk test`로 준수하지 않을 수 있는 메타데이터 제약을 
 
 `$ snyk container test app@sha256:17cb37098f0efb819c075eea4ff2a495be909a396e86ece317a6e3a8968e025c --file=Dockerfile`
 
-더 많은 정보 및 예제를 보려면 [고급 {{Snyk Container}} CLI 사용법](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)를 참조하세요.
+더 많은 정보 및 예제를 보려면 [고급  CLI 사용법](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)를 참조하세요.
 
 또한 [컨테이너 이미지에서 애플리케이션 취약점 감지하기](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images)도 참조하세요.

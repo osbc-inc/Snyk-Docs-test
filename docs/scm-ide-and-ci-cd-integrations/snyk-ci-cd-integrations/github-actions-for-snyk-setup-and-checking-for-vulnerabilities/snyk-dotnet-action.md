@@ -21,7 +21,7 @@ jobs:
       - name: 취약점 확인을 위해 Snyk 실행
         uses: snyk/actions/dotnet@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 다음과 같이 **높은 심각도의 취약점**만 확인하려면 Snyk dotNET 작업을 사용할 수 있습니다:
@@ -41,7 +41,7 @@ jobs:
         run: dotnet restore ./path/to/your.sln
         uses: snyk/actions/dotnet@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --severity-threshold=high
 ```
@@ -76,7 +76,7 @@ jobs:
         uses: snyk/actions/dotnet@master
         continue-on-error: true # SARIF 업로드 호출을 위해
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --sarif-file-output=snyk.sarif
       - name: GitHub Code Scanning에 결과 업로드

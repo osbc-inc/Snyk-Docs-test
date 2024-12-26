@@ -46,7 +46,7 @@ exclude:
 
 **참고**: `--file-path` \[제외] 옵션은 Snyk 코드(SAST) 테스트 또는 오픈 소스 `--unmanaged` 테스트에서만 사용할 수 있으며 다른 테스트 유형에는 작동하지 않습니다.
 
-`.snyk` 파일을 사용하여 문제나 취약점을 무시하는 것은 {{Snyk 코드}}에서 지원되지 않습니다.
+`.snyk` 파일을 사용하여 문제나 취약점을 무시하는 것은 에서 지원되지 않습니다.
 
 ## 디버그
 
@@ -76,7 +76,7 @@ exclude:
 
 기본: 없음
 
-**참고**: {{Snyk 코드}}에서 지원되지 않음.
+**참고**: 에서 지원되지 않음.
 
 ### `--policy-path=<POLICY_FILE_PATH>`
 
@@ -161,11 +161,11 @@ $ snyk ignore --id=npm:tough-cookie:20160722
 $ snyk ignore --file-path='./deps/curl-7.58.0/src/tool_msgs.c' --expiry='2031-01-20' --reason='패치된 파일'
 ```
 
-### 글로브 표현식을 사용하여 파일 또는 폴더 무시 - {{Snyk 코드}} 및 `unmanaged` 전용
+### 글로브 표현식을 사용하여 파일 또는 폴더 무시 -  및 `unmanaged` 전용
 
 글로브 표현식과 일치하는 파일을 무시하려면 특정 그룹에 추가하십시오.
 
-이것은 {{Snyk 코드}}에 적용됩니다. {{Snyk Open Source}} 및 컨테이너 또는 IaC에는 적용되지 않습니다.
+이것은 에 적용됩니다.  및 컨테이너 또는 IaC에는 적용되지 않습니다.
 
 ```
 $ snyk ignore --file-path='./**/vendor/**/*.cpp' --file-path-group='global'

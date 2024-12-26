@@ -8,7 +8,7 @@
 
 `snyk test` 명령은 오픈소스 취약점 및 라이선스 문제를 확인하기 위해 프로젝트를 검사합니다. 이 테스트 명령은 종속성을 가진 지원되는 매니페스트 파일을 자동으로 감지하고 그들을 테스트합니다.
 
-**참고:** {{Snyk Code}}, 컨테이너 및 IaC 스캔 방법에 대한 특정 `snyk test` 명령이 있습니다: `code test`, `container test`, `iac test`.
+**참고:** , 컨테이너 및 IaC 스캔 방법에 대한 특정 `snyk test` 명령이 있습니다: `code test`, `container test`, `iac test`.
 
 ## 종료 코드
 

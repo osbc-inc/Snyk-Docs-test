@@ -3,9 +3,9 @@
 {% hint style="info" %}
 **릴리스 상태**
 
-위험 점수는 초기 액세스로 {{Snyk 오픈 소스}} 및 {{Snyk 컨테이너}}에서 사용할 수 있으며, Snyk 엔터프라이즈 및 Snyk 무료 요금제에서 사용할 수 있습니다. 귀하의 그룹에 설정하려면 Snyk 계정 팀과 연락하십시오.
+위험 점수는 초기 액세스로  및 에서 사용할 수 있으며, Snyk 엔터프라이즈 및 Snyk 무료 요금제에서 사용할 수 있습니다. 귀하의 그룹에 설정하려면 Snyk 계정 팀과 연락하십시오.
 
-새로운 위험 점수로 {{Snyk 오픈 소스}} 및 {{Snyk 컨테이너}} 문제를 위한 우선순위 점수를 대체하려면 [Snyk 미리보기](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview)를 사용하세요.
+새로운 위험 점수로  및  문제를 위한 우선순위 점수를 대체하려면 [Snyk 미리보기](https://docs.snyk.io/snyk-admin/manage-settings/snyk-preview)를 사용하세요.
 {% endhint %}
 
 Snyk 위험 점수는 취약점 유형 모든 문제에 대해 자동 위험 분석에 의해 적용된 단일값입니다. 라이선스 문제는 지원되지 않습니다. 위험 점수는 잠재적 영향 및 악용 가능성을 기반으로 합니다. 0부터 1,000까지의 범위로, 점수는 환경에 부과되는 위험을 나타내며 위험 중심 우선순위 접근 방식을 가능하게 합니다. 
@@ -21,7 +21,7 @@ Snyk 위험 점수는 취약점 유형 모든 문제에 대해 자동 위험 분
 CLI에서는 Risk Score를 사용할 수 없습니다.
 
 {% hint style="info %}
-위험 점수는 {{Snyk 오픈 소스}} 및 {{Snyk 컨테이너}} 프로젝트가 다시 테스트된 후에만 우선 순위 점수를 대체합니다.
+위험 점수는  및  프로젝트가 다시 테스트된 후에만 우선 순위 점수를 대체합니다.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -60,12 +60,12 @@ Risk 모델은 Snyk 보안 데이터 과학팀과 숙련된 보안 연구원들�
 - CVSS 악용 가능성 메트릭스: 공격 벡터, 필요한 권한, 사용자 상호작용 및 범위
 - 소셜 트렌드
 - 해로운 패키지
-- 공급자 긴급도 ({{Snyk 컨테이너}})
-- 패키지 인기도 ({{Snyk 오픈 소스}})
+- 공급자 긴급도 ()
+- 패키지 인기도 ()
 
 그런 다음 맥락적 가능성 요소가 가능성 서브스코어를 증가 또는 감소시킵니다:
 
-- 도달 가능성 ({{Snyk 오픈 소스}} Java, JavaScript)
+- 도달 가능성 ( Java, JavaScript)
 - 서술적 깊이
 
 {% hint style="info" %}
@@ -101,7 +101,7 @@ Fixability는 점수 계산의 일부로 고려되지 않으며, 보안 문제�
 | `변화 없음`              | 영향 서브스코어에 영향을 미치지 않음.  |
 | `변화함`                | 영향 서브스코어가 영향을 받음.      |
 
-#### 제공자 긴급도 ({{Snyk 컨테이너}})&#x20;
+#### 제공자 긴급도 ()&#x20;
 
 해당 운영 체제 배포 보안 팀에 의해 제공되는 긴급도 등급입니다. 자세한 내용은 [상대적 중요도를 위한 외부 정보 소스](../../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md#external-information-sources-for-relative-importance)를 참조하십시오.
 

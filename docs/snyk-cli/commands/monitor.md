@@ -16,11 +16,11 @@ PR 확인도 테스트를 수행합니다.
 
 코드를 변경하는 경우 `monitor` 명령을 다시 실행해야 합니다.
 
-Snyk {{컨테이너}}의 경우, [`snyk container` 도움말](https://docs.snyk.io/snyk-cli/commands/container) 을 참조하십시오
+Snyk 의 경우, [`snyk container` 도움말](https://docs.snyk.io/snyk-cli/commands/container) 을 참조하십시오
 
-`monitor` 명령은 Snyk {{코드}}에서 지원되지 않습니다.
+`monitor` 명령은 Snyk 에서 지원되지 않습니다.
 
-Snyk {{인프라스터럭처 as Code}}를 사용하는 경우, [Snyk CLI for IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac)의 "정기적으로 IaC 파일 테스트하기" 지침을 따르십시오.
+Snyk 를 사용하는 경우, [Snyk CLI for IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac)의 "정기적으로 IaC 파일 테스트하기" 지침을 따르십시오.
 
 ## 종료 코드
 

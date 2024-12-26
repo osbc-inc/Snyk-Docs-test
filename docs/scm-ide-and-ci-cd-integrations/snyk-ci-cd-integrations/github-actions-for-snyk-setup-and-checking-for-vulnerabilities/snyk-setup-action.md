@@ -19,7 +19,7 @@ jobs:
     - name: Snyk 테스트
       run: snyk test
       env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        SNYK_TOKEN: $
 ```
 
 설정 액션을 사용할 때 Snyk를 실행하는데 필요한 개발 환경을 설정해야 합니다. 이 경우 Go 프로젝트이므로 `actions/setup-go`가 사용되었지만 프로젝트에 따라 다를 수 있습니다. [GitHub 언어 및 프레임워크 가이드](https://docs.github.com/en/actions/language-and-framework-guides)가 좋은 시작 점이 될 것입니다.
@@ -54,9 +54,9 @@ jobs:
       with:
         go-version: "1.13"
     - name: Snyk 버전
-      run: echo "${{ steps.snyk.outputs.version }}"
+      run: echo "$"
     - name: Snyk 모니터링 
       run: snyk monitor
       env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        SNYK_TOKEN: $
 ```

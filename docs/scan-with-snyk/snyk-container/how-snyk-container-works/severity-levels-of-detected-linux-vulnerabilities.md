@@ -1,6 +1,6 @@
 # Linux 취약점의 심각도 수준
 
-Linux 취약점의 [심각도 수준](../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md) (낮음, 중간, 높음, 심각)을 결정할 때, {{Snyk Container}}은 다음과 같은 여러 요소를 고려합니다:
+Linux 취약점의 [심각도 수준](../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md) (낮음, 중간, 높음, 심각)을 결정할 때, 은 다음과 같은 여러 요소를 고려합니다:
 
 - Snyk 내부 분석
 - Linux 배포 보안 유지자가 제공한 심각도 평가

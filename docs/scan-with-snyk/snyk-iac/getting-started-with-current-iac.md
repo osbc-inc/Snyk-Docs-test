@@ -4,13 +4,13 @@
 이 페이지의 정보는 현재 IaC에 적용됩니다. IaC+를 사용 중이라면 [IaC+ 및 클라우드 스캔 시작하기](getting-started-with-iac+-and-cloud-scans/)을 참조하십시오.
 {% endhint %}
 
-Snyk 웹 UI에서 Infrastructure as Code({Snyk IaC}})를 사용하여 구성 파일에서 문제를 찾아보고 수정할 수 있습니다. 또한 Snyk CLI에서도 {{Snyk IaC}}를 사용할 수 있습니다. 자세한 내용은 [Infrastructure as Code용 Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)를 참조하십시오.
+Snyk 웹 UI에서 Infrastructure as Code({Snyk IaC)를 사용하여 구성 파일에서 문제를 찾아보고 수정할 수 있습니다. 또한 Snyk CLI에서도 를 사용할 수 있습니다. 자세한 내용은 [Infrastructure as Code용 Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)를 참조하십시오.
 
 이 페이지에서는 지원되는 환경( [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/)(포함 Helm), 그리고 [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md))에 대한 구성 파일에서 문제를 찾아보고 수정하는 단계를 찾을 수 있습니다. 이러한 단계는 현재 IaC에 특화되어 있습니다. 또한 [IaC 및 클라우드 스캔 시작하기](getting-started-with-iac+-and-cloud-scans/)도 참조하십시오.
 
-## **{Snyk IaC}}을 위한 전제 조건**
+## **{Snyk IaC을 위한 전제 조건**
 
-{Snyk IaC}}을 사용하기 전에 다음 전제 조건이 충족되어 있는지 확인하십시오:
+{Snyk IaC을 사용하기 전에 다음 전제 조건이 충족되어 있는지 확인하십시오:
 
 - Snyk 계정. 자세한 내용은 [시작하기](../../getting-started/)를 참조하십시오.
 - 작업할 Terraform, CloudFormation, Kubernetes 또는 ARM 환경.
@@ -84,9 +84,9 @@ IaC 프로젝트를 가져온 후, Snyk는 기본적으로 매주 한 번 프로
 
 ## IaC에서 구성 파일 수정
 
-{Snyk IaC}}에서 제안된 권장 사항에 따라 조치하는 단계는 다음과 같습니다.
+{Snyk IaC에서 제안된 권장 사항에 따라 조치하는 단계는 다음과 같습니다.
 
-1. 프로젝트 상세 페이지에서 문제를 선택하여 해당 문제에 대한 세부 정보 및 {Snyk IaC}}의 구체적인 권장 사항을 확인합니다.
+1. 프로젝트 상세 페이지에서 문제를 선택하여 해당 문제에 대한 세부 정보 및 {Snyk IaC의 구체적인 권장 사항을 확인합니다.
 2. 권장 사항에 따라 식별된 문제를 수정하기 위해 구성 파일을 편집하고 변경 내용을 커밋합니다.\
    Snyk는 변경된 파일을 자동으로 다시 스캔합니다.&#x20;
 3. 문제 디스플레이에 반영된 변경 사항을 확인합니다.

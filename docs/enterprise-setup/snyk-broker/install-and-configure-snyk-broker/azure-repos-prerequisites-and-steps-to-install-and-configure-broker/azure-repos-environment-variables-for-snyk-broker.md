@@ -11,5 +11,5 @@ Azure Repos의 Broker Client를 구성하는 데 필요한 다음 환경 변수�
   - 이 URL은 http://와 포트 번호가 있어야합니다.&#x20;
   - 클라이언트를 HTTPS로 구성하려면 [추가 설정이 필요합니다](https://docs.snyk.io/snyk-admin/snyk-broker/install-and-configure-broker-using-docker/advanced-configuration-for-snyk-broker-docker-installation/https-for-broker-client-with-docker).
 - `ACCEPT_IAC` - 기본적으로 인프라스트럭처-코드 (IaC)에서 사용되는 일부 파일 유형은 활성화되어 있지 않습니다. 예를 들어 Terraform의 경우, 리포지토리에서 IaC 파일에 브로커 액세스를 부여하려면 `ACCEPT_IAC` 환경 변수를 추가할 수 있습니다. 가능한 값은 `tf, yaml, yml, json, tpl`의 어떤 조합이든 가능합니다.
-- `ACCEPT_CODE` - 기본적으로 {{Snyk Code}}는 코드 스니펫을로드하지 않습니다. 코드 스니펫을 활성화하려면 `ACCEPT_CODE=true`라는 환경 변수를 추가할 수 있습니다.
+- `ACCEPT_CODE` - 기본적으로 는 코드 스니펫을로드하지 않습니다. 코드 스니펫을 활성화하려면 `ACCEPT_CODE=true`라는 환경 변수를 추가할 수 있습니다.
 - `ACCEPT_APPRISK` - Snyk AppRisk를 활성화하여 응용 프로그램 자산을 식별하고 모니터링하며 리스크를 우선 순위를 지정할 수 있습니다. `ACCEPT_APPRISK=true` 환경 변수를 추가하여 활성화할 수 있습니다.

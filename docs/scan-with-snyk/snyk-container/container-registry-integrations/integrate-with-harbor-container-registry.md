@@ -25,7 +25,7 @@ Snyk는 가져온 이미지(프로젝트로 지칭)를 알려진 보안 취약�
 3. **컨테이너 레지스트리 이름**에 통합하려는 레지스트리의 전체 URL을 입력합니다.
 4. 마지막으로 **저장**을 선택합니다.
 
-자체 호스팅 Harbor 레지스트리를 사용하는 경우 Snyk에게 토큰을 제공하도록하십시오. 더 많은 정보는 [{{Snyk 컨테이너}} (Broker와 함께)의 자체 호스트된 컨테이너 레지스트리 통합](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)를 참조하십시오.
+자체 호스팅 Harbor 레지스트리를 사용하는 경우 Snyk에게 토큰을 제공하도록하십시오. 더 많은 정보는 [ (Broker와 함께)의 자체 호스트된 컨테이너 레지스트리 통합](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)를 참조하십시오.
 
 {% hint style="info" %}
 통합을 설정하려면 Harbor 사용자는 관리자 사용자이어야 합니다. 통합은 레포지토리를 나열하기 위해 /v2/\_catalog 엔드포인트를 사용합니다.

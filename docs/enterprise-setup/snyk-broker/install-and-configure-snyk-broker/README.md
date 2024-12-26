@@ -2,7 +2,7 @@
 
 ## Snyk Broker 사용 방법
 
-Snyk Broker은 특별한 통합을 통해 Snyk와 중계 역할을 하는 오픈 소스 도구로, [snyk.io](http://snyk.io/)가 인터넷에 접근할 수 없는 저장소의 코드를 스캔하고 결과를 반환할 수 있도록 지원합니다. Broker와의 SCM 통합은 {{Snyk Open Source}}, {{Snyk Code}}, {{Snyk Container}} (Dockerfile), {{Snyk IaC}}를 지원합니다. 자세한 내용은 [Snyk Broker와의 통합](../#integrations-with-snyk-broker)을 참조하십시오.
+Snyk Broker은 특별한 통합을 통해 Snyk와 중계 역할을 하는 오픈 소스 도구로, [snyk.io](http://snyk.io/)가 인터넷에 접근할 수 없는 저장소의 코드를 스캔하고 결과를 반환할 수 있도록 지원합니다. Broker와의 SCM 통합은 , ,  (Dockerfile), 를 지원합니다. 자세한 내용은 [Snyk Broker와의 통합](../#integrations-with-snyk-broker)을 참조하십시오.
 
 Snyk Broker에 대한 포괄적인 정보 및 작동 방식, 배포 방법, 커밋 서명, 업그레이드 및 문제 해결 방법은 전체 [Snyk Broker 사용 설명서](../)를 참조하십시오.
 

@@ -19,7 +19,7 @@ jobs:
       - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 Snyk Infrastructure as Code 동작 속성
@@ -52,7 +52,7 @@ jobs:
       - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           file: your/kubernetes-manifest.yaml your/terraform/directory
 ```
@@ -72,7 +72,7 @@ jobs:
       - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           file: your/kubernetes-manifest.yaml
           args: --severity-threshold=high
@@ -93,7 +93,7 @@ jobs:
       - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --report
 ```
@@ -113,7 +113,7 @@ jobs:
       - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --scan=resource-changes
 ```
@@ -136,7 +136,7 @@ jobs:
         continue-on-error: true
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
       - name: GitHub Code Scanning에 결과 업로드
         uses: github/codeql-action/upload-sarif@v2
         with:

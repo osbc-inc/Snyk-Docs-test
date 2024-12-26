@@ -37,7 +37,7 @@ YAML 여러 줄 연산자를 사용할 수 있습니다. 다음 형식을 따라
 ```yaml
 description: |
   This pull request comes from Snyk
-  For more information see the project page {{ snyk_project_url }}
+  For more information see the project page 
   If you have more questions reach out to a member of the security team
 
 ```

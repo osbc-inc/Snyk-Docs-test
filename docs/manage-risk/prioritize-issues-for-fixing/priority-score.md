@@ -56,9 +56,9 @@ Kubernetes 통합에서 가져온 Kubernetes 컨테이너 이미지에는 우선
 
 자세한 내용은 [Snyk 우선순위 점수 및 Kubernetes](../../scan-with-snyk/snyk-container/kubernetes-integration/kubernetes-integration-ui-explained/kubernetes-and-the-snyk-priority-score.md)를 참조하십시오.
 
-### {{Snyk Code}}의 우선 순위 계산
+### 의 우선 순위 계산
 
-{Snyk Code}}의 우선 순위 계산에는 다음과 같은 특정 요소들이 기여합니다:
+{Snyk Code의 우선 순위 계산에는 다음과 같은 특정 요소들이 기여합니다:
 
 * 심각도 수준
 * 수정 가능성: 이 문제에 대한 Snyk에서 사용 가능한 수정 예제가 있는지 여부

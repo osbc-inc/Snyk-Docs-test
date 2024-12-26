@@ -72,7 +72,7 @@ snyk test --unmanaged
 snyk monitor --unmanaged --org=<org-id>
 ```
 
-여기서 `org-id`는 Snyk 웹 인터페이스의 조직 설정에서 찾을 수 있습니다. 조직 ID는 필수가 아니지만 사용하는 것이 강력히 권장됩니다. {{Snyk Code}}와 마찬가지로 [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) 플러그인을 사용하여 보고서 아티팩트를 생성할 수 있습니다.
+여기서 `org-id`는 Snyk 웹 인터페이스의 조직 설정에서 찾을 수 있습니다. 조직 ID는 필수가 아니지만 사용하는 것이 강력히 권장됩니다. 와 마찬가지로 [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) 플러그인을 사용하여 보고서 아티팩트를 생성할 수 있습니다.
 
 * 개별 또는 개인 스캔의 경우 CLI 또는 IDE를 사용하여 결과를 업로드하려면 `snyk monitor --unmanaged` 명령을 사용하세요.
   * 그러나 Snyk는 개별 스캔이 잡음을 유발하지 않도록 개인 폴더로 결과를 보내고 프로젝트 설정에서 예약된 스캔을 비활성화하는 것이 좋다고 권장합니다.

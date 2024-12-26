@@ -11,7 +11,7 @@ Snyk 앱을 생성하는 예시 CURL 요청:
 ```
 curl -XPOST -H"Content-Type: application/vnd.api+json" \
  -H"Authorization: token <REPLACE_WITH_API_TOKEN>" \
- -d '{"data": { "attributes": {"name": "My Awesome Snyk App", "redirect_uris": ["https://example.com/callback"], "scopes": ["org.read"], "context": "tenant"}, "type": "app"}}' \
+ -d '{"data": { "attributes": {"name": "My Awesome Snyk App", "redirect_uris": ["https://example.com/callback"], "scopes": ["org.read"], "context": "tenant"}, "type": "app"' \
  "https://api.snyk.io/rest/orgs/<REPLACE_WITH_YOUR_ORGID>/apps/creations?version=2024-10-11"
 ```
 

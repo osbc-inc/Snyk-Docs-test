@@ -60,7 +60,7 @@ Snyk CLI와 IDE를 Snyk Code Local Engine과 함께 사용하려면 Snyk 계정 
 \
 CSM이 조직을 위해 URL을 구성한 후, **Settings** --> **Snyk Code** 에서 확인할 수 있습니다:
 
-<figure><img src="../../.gitbook/assets/{{Snyk Code}} Local Engine settings showing Local Engine URL (1) (1).png" alt="Snyk Code Local Engine 설정 Local Engine URL"><figcaption><p>Snyk Code Local Engine 설정 Local Engine URL</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ Local Engine settings showing Local Engine URL (1) (1).png" alt="Snyk Code Local Engine 설정 Local Engine URL"><figcaption><p>Snyk Code Local Engine 설정 Local Engine URL</p></figcaption></figure>
 
 ## 로컬 엔진 구성 및 배포
 

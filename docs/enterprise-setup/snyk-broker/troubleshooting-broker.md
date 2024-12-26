@@ -119,12 +119,12 @@ Open Fix/Upgrade PRs 또는 PR/반복 테스트가 큰 매니페스트 파일(>1
 
 코드 에이전트는 더이상 유지되지 않습니다.
 
-Snyk 코드}} 분석을 실행하는 더 선호되는 방법은 [브로커된 코드](git-clone-through-broker.md)를 통해 Snyk 브로커를 통해 수행하는 것입니다. 코드 에이전트는 이점이 없는 대체 방법입니다. 자세한 내용은 Snyk 통합 컨설턴트 또는 기술적 성공 매니저에게 연락하거나 [Snyk 지원](https://support.snyk.io)에 문의하십시오.
+Snyk 코드 분석을 실행하는 더 선호되는 방법은 [브로커된 코드](git-clone-through-broker.md)를 통해 Snyk 브로커를 통해 수행하는 것입니다. 코드 에이전트는 이점이 없는 대체 방법입니다. 자세한 내용은 Snyk 통합 컨설턴트 또는 기술적 성공 매니저에게 연락하거나 [Snyk 지원](https://support.snyk.io)에 문의하십시오.
 
 자동 [PR 확인](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks) 기능은 Snyk 브로커 - 코드 에이전트에서 지원되지 않습니다.
 {% endhint %}
 
-<figure><img src="https://lh3.googleusercontent.com/r_qtONpOOEW35gdyoBcWDAiC6j04M76q8mh922SHor4bdNZdt83sj2kP7d5hbzYcWVXp4Q2hZEiCeAVOmcj4Bu1yFPdnyp3rK7kKeBK8DZEd9S133Xn3YdjddclVf5maEbP23Jor" alt="&#x22;&#x22;"><figcaption><p>{{Snyk Code}} 브로커와 함께 코드 분석 워크플로우</p></figcaption></figure>
+<figure><img src="https://lh3.googleusercontent.com/r_qtONpOOEW35gdyoBcWDAiC6j04M76q8mh922SHor4bdNZdt83sj2kP7d5hbzYcWVXp4Q2hZEiCeAVOmcj4Bu1yFPdnyp3rK7kKeBK8DZEd9S133Xn3YdjddclVf5maEbP23Jor" alt="&#x22;&#x22;"><figcaption><p> 브로커와 함께 코드 분석 워크플로우</p></figcaption></figure>
 
 코드 에이전트와 브로커의 문제를 해결하기 위한 가장 좋은 방법은 통신 흐름을 이해하는 것입니다. 트래픽은 Snyk > 브로커 클라이언트 > 코드 에이전트 > 온프레미스 Git > 코드 에이전트 > Snyk로 이동합니다.
 

@@ -14,7 +14,7 @@ Snyk 리스크 점수와 우선 점수는 보안 관리의 핵심입니다. 두 
 
 점수를 비교하려면 동일 유형의 점수를 동일 제품에 대해 검토하는지 확인해야 합니다. 예를 들어, Snyk Open Source에서의 리스크 점수와 또 다른 Snyk Open Source에서의 리스크 점수를 비교할 수 있지만, Snyk Open Source의 리스크 점수와 Snyk Container의 리스크 점수를 비교할 수는 없습니다.
 
-기본적으로, 우선 점수는 Snyk Container, Snyk Code, Snyk IaC, 및 Snyk Open Source 문제에 대해 활성화되어 있습니다. 사용자가 {{Snyk Preview}}에서 리스크 점수를 활성화하면 다음과 같이 점수가 적용됩니다:
+기본적으로, 우선 점수는 Snyk Container, Snyk Code, Snyk IaC, 및 Snyk Open Source 문제에 대해 활성화되어 있습니다. 사용자가 에서 리스크 점수를 활성화하면 다음과 같이 점수가 적용됩니다:
 
 - 리스크 점수는 Snyk Container 및 Snyk Open Source 문제에 적용됩니다.
 - 우선 점수는 Snyk Code 및 Snyk IaC 문제에 적용됩니다.
@@ -85,7 +85,7 @@ Snyk 리스크 점수와 우선 점수는 보안 관리의 핵심입니다. 두 
 ### 리스크 점수 사용 사례
 
 기존 응용 프로그램에 새로운 써드 파티 라이브러리를 통합하고 스캔 후, 라이브러리에 여러 취약성이 있다는 것을 발견했다고 가정해보겠습니다. 위협의 크기를 결정하는 데 리스크 점수를 사용하여 취약성을 필터링합니다.\
-리스크 점수는 먼저 {{Snyk Preview}}에서 활성화해야 하며, Snyk Open Source 및 Snyk Container에만 적용할 수 있습니다.
+리스크 점수는 먼저 에서 활성화해야 하며, Snyk Open Source 및 Snyk Container에만 적용할 수 있습니다.
 
 소스 코드를 스캔하고 다음 필터를 적용하여 해결 작업에 우선순위를 둘 취약점 목록을 확인하세요:
 

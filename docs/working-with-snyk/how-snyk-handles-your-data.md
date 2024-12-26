@@ -47,7 +47,7 @@ Snyk은 데이터를 보호하는 것이 얼마나 중요한지 알고 있습니
 
 ### **Snyk** Open Source
 
-<figure><img src="../.gitbook/assets/SnykOSS.svg" alt="{{Snyk 오픈 소스}} 로고"><figcaption><p>Snyk Open Source</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykOSS.svg" alt=" 로고"><figcaption><p>Snyk Open Source</p></figcaption></figure>
 
 * Snyk은 오픈 소스 의존성을 식별하기 위해 매니페스트 파일, 락 파일 및 관련 구성 파일에 접근합니다.
 * 다음 상황에서 Snyk는 소스 코드에 액세스합니다:
@@ -68,7 +68,7 @@ Snyk은 데이터를 보호하는 것이 얼마나 중요한지 알고 있습니
 
 ### **Snyk** Code
 
-<figure><img src="../.gitbook/assets/SnykCode.svg" alt="{{Snyk 코드}} 로고"><figcaption><p>Snyk Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykCode.svg" alt=" 로고"><figcaption><p>Snyk Code</p></figcaption></figure>
 
 * Snyk은 저장소별 정보를 저장합니다. 예: Git 저장소의 이름 및 파일 이름. Snyk은 저장소 코드에 대한 일회성 분석을 위해 액세스하고 [소스 코드를 캐시](how-snyk-handles-your-data.md#how-snyk-processes-this-data)합니다. 이 기간 후, 발견된 문제의 위치(파일 경로, 라인, 열)와 문제 ID, 그리고 설명만 유지됩니다.귀하의 코드는 삭제되어 Snyk 네트워크 또는 로그에 저장되지 않습니다.
 * 결과는 데이터베이스에 저장되며, Snyk에 의해 분석 및 모니터링 목적으로 사용됩니다.
@@ -80,7 +80,7 @@ Snyk은 데이터를 보호하는 것이 얼마나 중요한지 알고 있습니
 
 ### **Snyk** Container
 
-<figure><img src="../.gitbook/assets/image (201) (1).png" alt="{{Snyk 컨테이너}} 로고"><figcaption><p>Snyk Container</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (201) (1).png" alt=" 로고"><figcaption><p>Snyk Container</p></figcaption></figure>
 
 * Snyk은 패키지 버전, 실행 가능한 해시 및 버전, 운영 체제, 컨테이너 이미지 메타데이터(예: 루트 FS 해시, 히스토리) 및 이미지 ID에 액세스하고 저장합니다.
 * Snyk은 부모 이미지에 대한 정보를 액세스하고 저장합니다: 이름, 버전 및 태그.
@@ -90,7 +90,7 @@ Snyk은 데이터를 보호하는 것이 얼마나 중요한지 알고 있습니
 
 ### **Snyk IaC**
 
-<figure><img src="../.gitbook/assets/SnykIaC.svg" alt="{{Snyk IaC}} 로고"><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykIaC.svg" alt=" 로고"><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
 
 #### Current IaC
 

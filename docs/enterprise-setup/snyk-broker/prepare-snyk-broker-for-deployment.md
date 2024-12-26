@@ -44,14 +44,14 @@ Snyk 브로커 서버 측에서 시작된 트래픽은 항상 최신의 브로�
 * Infrastructure as Code 파일을 감지할 계획이 있습니까?
   * 배포에 `-e ACCEPT_IAC`라는 환경 변수나 사용자 정의 allowlist `accept.json` 파일을 추가해야 함.
   * [Snyk 브로커 - Infrastructure as Code 검출](snyk-broker-infrastructure-as-code-detection/)을 참조하십시오.
-* {{Snyk Code}} 취약점을 감지할 계획이 있습니까?
+*  취약점을 감지할 계획이 있습니까?
   * 브로커가 귀하의 리포지토리를 Git 클론할 수 있도록 권한 부여
   * 이를 위해 환경 변수를 추가하십시오: `ACCEPT_CODE=true.`
 * 컨테이너 레지스트리에 연결할 계획이 있습니까?
   * Snyk 브로커 컨테이너 레지스트리 에이전트와 함께 추가 에이전트를 배포해야 함.
   * [Snyk 브로커 컨테이너 레지스트리 에이전트](snyk-broker-container-registry-agent/)를 참조하십시오.
 
-각 통합에는 특정한 브로커 토큰이 할당됩니다. {{Snyk Code}} 취약점을 분석하고 컨테이너 레지스트리에 연결하는 통합은 다음을 갖추고 있습니다:
+각 통합에는 특정한 브로커 토큰이 할당됩니다.  취약점을 분석하고 컨테이너 레지스트리에 연결하는 통합은 다음을 갖추고 있습니다:
 
 * 추가 환경 변수 `-e ACCEPT_CODE`를 가진 SCM용 브로커 한 개
 * 컨테이너 레지스트리용 브로커 한 개 및 브로커 컨테이너 레지스트리 에이전트 한 개

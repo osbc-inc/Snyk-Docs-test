@@ -30,7 +30,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.6@master // <- python 3.6 사용
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 <mark style="color:green;">예시 - 이후:</mark>
@@ -46,7 +46,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master // <- python 3.10 사용
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 #### scala/sbt에 대한 다음 단계를 따르십시오 <a href="#a.2-please-follow-these-steps-for-scala-sbt" id="a.2-please-follow-these-steps-for-scala-sbt"></a>
@@ -73,7 +73,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/scala@master // <- 이전 scala 작업 사용
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 <mark style="color:green;">예시 - 이후:</mark>
@@ -89,7 +89,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/sbt1.10.0-scala3.4.2@master // <- 새 scala 작업 사용
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
       
 ```
 
@@ -136,7 +136,7 @@ jobs:
         sudo mv snyk-linux /usr/local/bin/snyk
     - name: Run Snyk to test project dependencies
       env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        SNYK_TOKEN: $
       run: |
         snyk test
 ```  

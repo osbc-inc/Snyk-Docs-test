@@ -5,7 +5,7 @@ Snyk는 Azure 파이프라인을 포함한 Microsoft Azure 생태계 전반에 �
 Snyk Security Scan 작업은 Snyk와 Azure DevOps에서 지원하는 모든 언어에 대해 사용할 수 있습니다.
 
 {% hint style="info" %}
-Snyk Security Scan 작업은 {{Snyk 오픈 소스}}, {{Snyk 컨테이너}}, 그리고 {{Snyk 코드}}를 지원합니다. 파이프라인에 다른 제품을 포함할 계획이 있다면, [Snyk CLI](../../../snyk-cli/)를 사용하세요.
+Snyk Security Scan 작업은 , , 그리고 를 지원합니다. 파이프라인에 다른 제품을 포함할 계획이 있다면, [Snyk CLI](../../../snyk-cli/)를 사용하세요.
 {% endhint %}
 
 Azure 파이프라인용 미리 만들어진 작업은 Azure 인터페이스에서 빠르게 삽입할 수 있으며, 추가 코딩없이 파이프라인을 사용자 정의하고 자동화할 수 있습니다. 이러한 작업에는 Snyk 작업이 포함되어 있습니다.

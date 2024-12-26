@@ -18,8 +18,8 @@ Snyk 제품을 사용하여 가져올 수 있는 언어 가용성을 확인하�
 
 사용 가능한 기능:
 
-- {{Snyk Open Source}} 및 {{Snyk Code}}용 SCM 가져오기 기능
-- CLI와 IDE를 통한 앱 테스트 또는 모니터링, {{Snyk Open Source}} 및 {{Snyk Code}}용 사용 가능
+-  및 용 SCM 가져오기 기능
+- CLI와 IDE를 통한 앱 테스트 또는 모니터링,  및 용 사용 가능
 - `pkg:maven`을 사용하여 앱의 SBOM 테스트
 - `pkg:maven`을 사용하여 앱의 패키지 테스트
 
@@ -37,7 +37,7 @@ Snyk는 Java 및 Kotlin에서 다음 파일 형식을 지원합니다:
 - Snyk Open:
   - Maven: `pom.xml`
   - Gradle: `build.gradle`, `build.gradle.kts`
-- {{Snyk Code}}:
+- :
   - Java: `.java`, `.jsp`, `.jspx`
   - Kotlin: `.kt`
 
@@ -109,7 +109,7 @@ Kotlin 전용:
 
 다음 기능은 Java 및 Kotlin의 Snyk에서 지원됩니다:
 
-| {{Snyk Open Source}}                                                             | {{Snyk Code}}                                                                                                                                                    |
+|                                                              |                                                                                                                                                     |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <ul><li>보고서</li><li>수정 PRs (Maven) </li><li>라이선스 스캔 </li></ul> | <ul><li>보고서</li><li>사용자 정의 규칙 </li><li>인터파일 분석 - Kotlin 완전 지원</li><li>인터파일 분석 - Android 일부 지원</li></ul> |
 

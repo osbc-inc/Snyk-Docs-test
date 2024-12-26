@@ -94,13 +94,13 @@ GitHub 서버 앱이 GitHub 조직에서 제거되면 Snyk의 액세스도 제�
 유니버설 브로커에서 GitHub 서버 앱을 사용하려면 GitHub 서버 인스턴스에 별도의 GitHub 앱을 생성해야 합니다. 이를 위해 Snyk 서비스를 위한 필요한 모든 권한을 사전으로 정의한 `GITHUB-SERVER-URL`을 사용할 수 있습니다.
 
 ```
-{{GITHUB-SERVER-URL}}/settings/apps/new?name=Snyk&description=Snyk%20helps%20you%20develop%20fast%20while%20staying%20secure%20by%20finding%20and%20automatically%20fixing%20security%20issues%20in%20your%20code%2C%20open%20source%20dependencies%2C%20containers%2C%20and%20infrastructure%20as%20code%20-%20all%20powered%20by%20Snyk%E2%80%99s%20security%20intelligence.&url=https%3A%2F%2Fgithub.com%2Fapps%2Fsnyk-io&public=false&webhook_active=true&webhook_url={{SNYK-ENV}}%2Fapi%2Fhidden%2Fscm-apps%2Fapi%2Fgithub-app%2Fwebhook&checks=write&statuses=write&contents=write&metadata=read&repository_projects=write&pull_requests=write&repository_hooks=write&members=read&events[]=repository 
+/settings/apps/new?name=Snyk&description=Snyk%20helps%20you%20develop%20fast%20while%20staying%20secure%20by%20finding%20and%20automatically%20fixing%20security%20issues%20in%20your%20code%2C%20open%20source%20dependencies%2C%20containers%2C%20and%20infrastructure%20as%20code%20-%20all%20powered%20by%20Snyk%E2%80%99s%20security%20intelligence.&url=https%3A%2F%2Fgithub.com%2Fapps%2Fsnyk-io&public=false&webhook_active=true&webhook_url=%2Fapi%2Fhidden%2Fscm-apps%2Fapi%2Fgithub-app%2Fwebhook&checks=write&statuses=write&contents=write&metadata=read&repository_projects=write&pull_requests=write&repository_hooks=write&members=read&events[]=repository 
 ```
 
 위 URL에서 다음을 교체합니다:
 
-- `{{GITHUB-SERVER-URL}}`: GitHub 서버 인스턴스의 기본 URL로 교체합니다.
-- `{{SNYK-ENV}}`: Snyk 계정의 테넌시로 교체합니다. 이 값은 URL로 인코딩되어야 하며, 아래와 같이 일반적인 값을 사용할 수 있습니다:
+- ``: GitHub 서버 인스턴스의 기본 URL로 교체합니다.
+- ``: Snyk 계정의 테넌시로 교체합니다. 이 값은 URL로 인코딩되어야 하며, 아래와 같이 일반적인 값을 사용할 수 있습니다:
   - Snyk US: https%3A%2F%2Fapp.snyk.io
   - Snyk EU: https%3A%2F%2Fapp.eu.snyk.io
   - Snyk AU: https%3A%2F%2Fapp.au.snyk.io

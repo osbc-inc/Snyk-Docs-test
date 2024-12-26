@@ -13,7 +13,7 @@
 **2024년 10월 30일** 이후, 새로운 또는 기존 파이프라인에 Snyk 플러그인을 추가하거나 수정할 수 없게 됩니다. 기존 파이프라인은 6개월 동안 그대로 작동하지만, 가능한 빨리 새 프로세스로 이주하는 것이 좋습니다. **2025년 4월 30일** 이전에 Snyk CLI로 이주하여 CI/CD 워크플로우에 지장이 없도록 해야 합니다. 아래 이주 안내서의 단계를 따라 Snyk CLI를 AWS CodeBuild와 함께 사용하는 방법을 참조하십시오.
 {% endhint %}
 
-이 안내서는 [{{Snyk 오픈 소스}}](https://snyk.io/product/open-source-security-management/) 보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild/)로 이주하는 단계를 설명합니다. Snyk CLI 및 CodeBuild의 내장 기능을 사용하여 CI/CD 파이프라인에서 Snyk 소프트웨어 구성 분석 (SCA) 스캔을 실행하고 결과를 통합할 수 있는 보다 간소화되고 설정 가능한 솔루션을 달성할 수 있습니다.
+이 안내서는 [](https://snyk.io/product/open-source-security-management/) 보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild/)로 이주하는 단계를 설명합니다. Snyk CLI 및 CodeBuild의 내장 기능을 사용하여 CI/CD 파이프라인에서 Snyk 소프트웨어 구성 분석 (SCA) 스캔을 실행하고 결과를 통합할 수 있는 보다 간소화되고 설정 가능한 솔루션을 달성할 수 있습니다.
 
 ## 이주 목표
 
@@ -29,7 +29,7 @@
 
 ## 이주 단계
 
-[{{Snyk Open Source}}](https://snyk.io/product/open-source-security-management/) 보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild)로 이주하는 단계에 따라 이러한 섹션의 단계를 따르십시오.
+[](https://snyk.io/product/open-source-security-management/) 보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild)로 이주하는 단계에 따라 이러한 섹션의 단계를 따르십시오.
 
 ### CodeBuild 설정
 
@@ -93,7 +93,7 @@ Snyk 오픈 소스 스캔은 Snyk가 전체 빌드 워크스페이스에 액세�
 
 ### 결과 처리
 
-CodePipeline에서 사용하는 Snyk 통합은 일부 [Snyk CLI](../../../snyk-cli/commands/) 기능 및 옵션만 지원합니다. CodeBuild에서 Snyk CLI를 사용하면 모든 Snyk CLI 기능을 사용할 수 있습니다. 그러나 {{Snyk Code}}Pipeline 통합과 가장 유사하게 동작을 복제하려면 다음 팁을 따를 수 있습니다:
+CodePipeline에서 사용하는 Snyk 통합은 일부 [Snyk CLI](../../../snyk-cli/commands/) 기능 및 옵션만 지원합니다. CodeBuild에서 Snyk CLI를 사용하면 모든 Snyk CLI 기능을 사용할 수 있습니다. 그러나 Pipeline 통합과 가장 유사하게 동작을 복제하려면 다음 팁을 따를 수 있습니다:
 
 * `snyk test` 명령은 취약점을 발견하면 비정상 종료 코드를 반환합니다. 이 동작을 우회하기 위해 명령 끝에 `|| true`를 추가하는 것을 고려해보세요.
 * [snyk-to-html](https://github.com/snyk/snyk-to-html) 도구를 사용하여 `snyk test --json | snyk-to-html -o snyk-results.html`와 유사한 명령을 실행하여 스캔 결과의 HTML 보고서를 생성할 수 있습니다.

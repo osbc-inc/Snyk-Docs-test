@@ -21,7 +21,7 @@ jobs:
       - name: 취약점 확인을 위해 Snyk 실행
         uses: snyk/actions/scala@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 다음과 같이 Snyk 스칼라 동작을 사용하여 **높은 심각도의 취약점만을 확인**할 수 있습니다:
@@ -37,7 +37,7 @@ jobs:
       - name: 취약점 확인을 위해 Snyk 실행
         uses: snyk/actions/scala@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --severity-threshold=high
 ```
@@ -64,7 +64,7 @@ jobs:
         uses: snyk/actions/scala@master
         continue-on-error: true # SARIF 업로드가 호출되도록 합니다
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --sarif-file-output=snyk.sarif
       - name: GitHub 코드 스캔에 결과 업로드

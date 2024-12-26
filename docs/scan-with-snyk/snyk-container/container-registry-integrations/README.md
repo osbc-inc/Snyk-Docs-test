@@ -18,7 +18,7 @@ Snyk Container은 컨테이너 보안을 모니터링하기 위한 통합을 제
 클라우드 호스팅된 컨테이너 레지스트리의 경우, Snyk는 2GB보다 큰 크기의 이미지를 가져오거나 스캔하지 않습니다. 이 크기를 초과하는 이미지를 스캔하려면 [Snyk CLI](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)를 사용하십시오.
 {% endhint %}
 
-## {{Snyk Container}} 통합 선택
+##  통합 선택
 
 귀하의 요구 사항 및 맥락에 따라, 컨테이너 이미지의 새로운 취약점을 모니터링하기 위해 Snyk는 다음 중 하나의 통합 지점을 선택하는 것을 권장합니다: CLI, 컨테이너 레지스트리 통합 또는 Kubernetes 통합. 이러한 테스트 방법 중 하나를 선택함으로써 취약점 식별 시 최상의 결과를 보장하고 소음을 줄일 수 있습니다.
 

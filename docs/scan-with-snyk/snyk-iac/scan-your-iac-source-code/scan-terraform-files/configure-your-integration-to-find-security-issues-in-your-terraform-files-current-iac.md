@@ -12,7 +12,7 @@ Snyk는 인테그레이트된 Git 저장소에서 Terraform (`.tf`) 파일을 �
 
 테라폼 파일을 스캔하면 모듈에 정적으로 구성된 모든 것에 대한 보안 피드백을 받을 수 있습니다. 반복 및 예약된 테스트를 활용하려면 최상의 방법을 따르고 SCM에서 직접 사용자 정의 모듈을 가져와야 합니다.
 
-변수 보간 기능에 대한 Snyk 블로그 글을 참조하세요: [{{Snyk IaC}} public beta introduces Terraform plan analysis](https://snyk.io/blog/snyk-iac-public-beta-introduces-terraform-plan-analysis/). 이를 통해 CLI를 통해 테라폼 Plan 출력을 스캔하여 배포를 생성하는 데 사용된 모듈의 출력을 포함하여 전체 테라폼 배포를 스캔할 수 있습니다.
+변수 보간 기능에 대한 Snyk 블로그 글을 참조하세요: [ public beta introduces Terraform plan analysis](https://snyk.io/blog/snyk-iac-public-beta-introduces-terraform-plan-analysis/). 이를 통해 CLI를 통해 테라폼 Plan 출력을 스캔하여 배포를 생성하는 데 사용된 모듈의 출력을 포함하여 전체 테라폼 배포를 스캔할 수 있습니다.
 
 ## Snyk를 구성하여 테라폼 설정 파일을 스캔하도록 설정
 

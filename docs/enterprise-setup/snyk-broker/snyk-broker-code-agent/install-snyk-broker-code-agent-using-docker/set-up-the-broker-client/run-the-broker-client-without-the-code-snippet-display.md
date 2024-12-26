@@ -6,7 +6,7 @@
 
 이 섹션에서 설명된 브로커 클라이언트 실행을 위한 설정 명령어는 모든 SCM에서 사용되는 일반 명령어를 포함하고 있습니다. 일부 SCM은 Broker 클라이언트 설정을 위해 추가 매개변수를 필요로 할 수 있으며, 이러한 매개변수는 이 섹션에서 표시되어 있지만 특정 SCM을 위한 Broker 클라이언트를 설정 중일 때 해당 SCM의 설명도 확인하세요 [Install and configure Snyk Broker](../../../install-and-configure-snyk-broker/) 섹션에서.
 
-다음은 웹 UI의 {{Snyk Code}} 결과의 코드 스니펫을 표시하지 않도록 브로커 클라이언트를 설정하는 방법을 설명합니다:
+다음은 웹 UI의  결과의 코드 스니펫을 표시하지 않도록 브로커 클라이언트를 설정하는 방법을 설명합니다:
 
 <figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4) (1).png" alt="코드 스니펫 표시 없이 Broker 클라이언트 실행"><figcaption><p>코드 스니펫 표시 없이 Broker 클라이언트 실행</p></figcaption></figure>
 

@@ -1,6 +1,6 @@
-# {{Snyk Code}} CLI 테스트에서 디렉터리와 파일 제외
+#  CLI 테스트에서 디렉터리와 파일 제외
 
-{Snyk Code}} 리포지토리를 CLI를 사용하여 테스트할 때, `snyk ignore --file-path` 명령을 사용하여 CLI 테스트에서 특정 디렉터리와 파일을 제외할 수 있습니다. 이 명령을 실행하면 자신이 제외하려는 디렉터리나 파일의 이름이 포함된 `.snyk` 파일이 자동으로 리포지토리에 생성됩니다.
+{Snyk Code 리포지토리를 CLI를 사용하여 테스트할 때, `snyk ignore --file-path` 명령을 사용하여 CLI 테스트에서 특정 디렉터리와 파일을 제외할 수 있습니다. 이 명령을 실행하면 자신이 제외하려는 디렉터리나 파일의 이름이 포함된 `.snyk` 파일이 자동으로 리포지토리에 생성됩니다.
 
 {% hint style="info" %}
 * `.snyk` 파일을 수동으로 생성하여 CLI 테스트에서 디렉터리와 파일을 제외할 수도 있습니다. `.snyk` 파일의 수동 생성에 대한 자세한 내용은 [수입 프로세스에서 디렉터리 및 파일 제외](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process)를 참조하세요.
@@ -10,7 +10,7 @@
 
 ## **CLI 테스트에서 디렉터리와 파일 제외하기**
 
-다음 단계를 따라 {Snyk Code}} 디렉터리와 파일을 CLI 테스트에서 제외하십시오:
+다음 단계를 따라 {Snyk Code 디렉터리와 파일을 CLI 테스트에서 제외하십시오:
 
 1\. 터미널에서 테스트하려는 폴더로 디렉터리를 변경하십시오.
 

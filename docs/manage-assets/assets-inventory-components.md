@@ -36,7 +36,7 @@ CLI를 사용하여 코드를 로컬로 스캔하고 특정 리포지토리와 �
 
 이미지 ID를 기반으로 컨테이너 이미지를 식별할 수 있습니다. 동일한 이미지 ID를 갖는 여러 컨테이너 이미지가 있는 경우 해당 ID에 대해 확인된 모든 컨테이너 이미지 정보로 풍부화된 이미지 자산이 하나 생성됩니다.
 
-Snyk AppRisk는 모든 이미지 자산을 {{Snyk 컨테이너}}에서 검색합니다. 최신 이미지를 스캔하려면 이미지를 다시 가져오세요. 이미지 자산이 포함된 프로젝트에 새로운 스캔을 실행하면 새로운 취약점을 위한 동일한 이미지를 다시 스캔합니다. 새 이미지 자산을 식별하려면 먼저 다시 가져오고 그런 다음 프로젝트를 스캔해야 합니다. 자세한 내용은 [컨테이너 이미지에서 애플리케이션 취약점 감지](../scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) 페이지를 확인하세요.
+Snyk AppRisk는 모든 이미지 자산을 에서 검색합니다. 최신 이미지를 스캔하려면 이미지를 다시 가져오세요. 이미지 자산이 포함된 프로젝트에 새로운 스캔을 실행하면 새로운 취약점을 위한 동일한 이미지를 다시 스캔합니다. 새 이미지 자산을 식별하려면 먼저 다시 가져오고 그런 다음 프로젝트를 스캔해야 합니다. 자세한 내용은 [컨테이너 이미지에서 애플리케이션 취약점 감지](../scan-with-snyk/snyk-container/use-snyk-container/detect-application-vulnerabilities-in-container-images.md) 페이지를 확인하세요.
 
 ### 패키지
 

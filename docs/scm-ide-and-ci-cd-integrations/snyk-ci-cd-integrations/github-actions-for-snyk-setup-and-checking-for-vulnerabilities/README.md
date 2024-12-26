@@ -21,7 +21,7 @@ Snyk는 [GitHub 프로젝트의 취약성을 확인](https://github.com/snyk/act
 * [Snyk Golang 액션](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-golang-action)
 * ...
 
-### Snyk Container 및 {{IaC}}용 GitHub Actions
+### Snyk Container 및 용 GitHub Actions
 
 * [Snyk Docker 액션](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-docker-action)
 * [Snyk Infrastracture as Code 액션](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-infrastructure-as-code-action)
@@ -61,7 +61,7 @@ jobs:
       - name: 취약성 확인용 Snyk 실행
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 ### Snyk 모니터 예시
@@ -79,7 +79,7 @@ jobs:
       - name: 취약성 확인용 Snyk 실행
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           command: monitor
 ```
@@ -99,7 +99,7 @@ jobs:
       - name: 취약성 확인용 Snyk 실행
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --severity-threshold=high
 ```
@@ -130,7 +130,7 @@ jobs:
         uses: snyk/actions/node@master
         continue-on-error: true # SARIF 업로드가 호출되도록 확인합니다.
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --sarif-file-output=snyk.sarif
       - name: GitHub Code Scanning에 결과 업로드
@@ -162,7 +162,7 @@ jobs:
       - name: Snyk test
         run: snyk test
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 이 예시에서 `actions/setup-go`를 사용하고 있습니다. 프로젝트의 관련 개발 요구 사항을 설치하기 위해 적절한 액션을 선택해야 합니다. 만약 동일한 파이프라인을 사용하여 응용 프로그램을 빌드하고 테스트 중이라면 이미 관련 개발 요구 사항을 설치하고 있을 가능성이 높습니다.
@@ -173,7 +173,7 @@ jobs:
 
 ```yaml
 env:
-  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  SNYK_TOKEN: $
 ```
 
 모든 Snyk 계정에는 이러한 토큰이 있습니다. Snyk 계정을 생성한 후에는 [Snyk에서 찾을 수 있습니다.](https://docs.snyk.io)Snyk API 토큰은 두 가지 방법 중 하나로 가져올 수 있습니다:

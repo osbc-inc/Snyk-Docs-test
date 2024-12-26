@@ -1,10 +1,10 @@
-# {{ Snyk }} IaC 문제 보고서 보기
+#  IaC 문제 보고서 보기
 
-{{Infrastrucure as Code}} 구성 파일에서 문제를 보려면 [{{ Snyk }} 보고서](../../manage-issues/reporting/legacy-reports/)를 사용하세요.
+ 구성 파일에서 문제를 보려면 [ 보고서](../../manage-issues/reporting/legacy-reports/)를 사용하세요.
 
 ## 요약 페이지
 
-기본적으로 요약 통계 및 그래프에 나타나는 {{Infrastrucure as Code}} 구성 문제는 프로젝트 및 문제 유형 전체에서 발생하는 모든 열린 문제를 보여줍니다.
+기본적으로 요약 통계 및 그래프에 나타나는  구성 문제는 프로젝트 및 문제 유형 전체에서 발생하는 모든 열린 문제를 보여줍니다.
 
 <figure><img src="../../.gitbook/assets/image4.png" alt="보고서 요약 페이지"><figcaption><p>보고서 요약 페이지</p></figcaption></figure>
 
@@ -36,7 +36,7 @@ IaC 문제만 보려면 **문제 필터** 드롭다운에서 **구성**을 선�
 
 API 엔드포인트 [최신 문제 목록 가져오기](../../snyk-api/reference/reporting-api-v1.md#reporting-issues-latest)를 사용하여 전체 문제 목록을 볼 수 있습니다.
 
-**{{Infrastrucure as Code}}** 문제만 검색하려면 다음과 같은 본문 페이로드를 제출하세요:
+**** 문제만 검색하려면 다음과 같은 본문 페이로드를 제출하세요:
 
 ```
 {

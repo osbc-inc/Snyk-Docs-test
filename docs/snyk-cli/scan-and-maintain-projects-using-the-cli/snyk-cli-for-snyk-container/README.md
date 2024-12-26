@@ -1,7 +1,7 @@
 # Snyk CLI for Snyk Container
 
 {% hint style="info" %}
-{{Snyk CLI}}를 사용하려면 [설치](../../install-or-update-the-snyk-cli/) 및 [인증](../../commands/auth.md)을 하십시오.
+를 사용하려면 [설치](../../install-or-update-the-snyk-cli/) 및 [인증](../../commands/auth.md)을 하십시오.
 {% endhint %}
 
 Snyk Container Command Line Interface 또는 [Snyk CLI](../../)는 로컬 머신의 컨테이너 이미지에서 취약점을 찾고 해결하는 데 도움을 줍니다.

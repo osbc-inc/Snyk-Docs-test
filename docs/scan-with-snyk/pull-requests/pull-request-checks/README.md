@@ -29,7 +29,7 @@ Snyk PR Checks 기능은 PR과 함께 "전" 및 "후" 브랜치의 실시간 테
 
 ## 테스트할 내용
 
-[{{Snyk Open Source}}](../../snyk-open-source/)를 사용하여 종속성 및 라이선스 이슈 및 [{{Snyk Code}}](../../snyk-code/)를 사용하여 코드 보안을 테스트하여 SCM에서 PR Checks 결과를 분석할 수 있습니다.
+[](../../snyk-open-source/)를 사용하여 종속성 및 라이선스 이슈 및 [](../../snyk-code/)를 사용하여 코드 보안을 테스트하여 SCM에서 PR Checks 결과를 분석할 수 있습니다.
 
 ## PR Checks 작동 방식
 

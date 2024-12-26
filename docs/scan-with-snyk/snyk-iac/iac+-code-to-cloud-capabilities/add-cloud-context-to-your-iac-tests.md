@@ -4,13 +4,13 @@
 **릴리스 상태**\
 클라우드 컨텍스트 기능은 [IaC+](./)에서만 사용 가능하며 AWS를 지원합니다.
 
-{{Snyk IaC}}+는 지금 클로즈드 베타로 진행 중이며 새 고객을 더 이상 받지 않습니다.\
++는 지금 클로즈드 베타로 진행 중이며 새 고객을 더 이상 받지 않습니다.\
 사용 가능한 기능에 대한 자세한 내용은 [현재 IaC로 시작하기](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac)를 참조하십시오.
 {% endhint %}
 
 ## 클라우드 컨텍스트란?
 
-{{Snyk IaC}}의 클라우드 컨텍스트 기능은 [IaC+](./)를 통해 배포된 클라우드 인프라에서 정보를 활용하여 IaC 테스트에서 특정 이슈를 억제합니다.
+의 클라우드 컨텍스트 기능은 [IaC+](./)를 통해 배포된 클라우드 인프라에서 정보를 활용하여 IaC 테스트에서 특정 이슈를 억제합니다.
 
 예를 들어, Terraform 구성이 퍼블릭 액세스 블록이 없는 Amazon S3 버킷을 선언하지만 계정 수준의 퍼블릭 액세스 블록이 있을 경우 Snyk는 AWS 계정의 클라우드 컨텍스트를 적용하여 버킷이 공개 액세스 블록에 의해 안전하지 않다는 오보 형태의 이슈를 억제합니다.
 
@@ -47,7 +47,7 @@
 
 현재로서는 Amazon Web Services (AWS)의 Terraform이 지원됩니다.
 
-{{Snyk IaC}}는 [Snyk에서 컨텍스트 가져오기](add-cloud-context-to-your-iac-tests.md#bringing-context-from-a-snyk-cloud-scan)를 통해 IaC 테스트 결과에서 클라우드 컨텍스트를 적용하고 이슈를 억제할 수 있습니다.
+는 [Snyk에서 컨텍스트 가져오기](add-cloud-context-to-your-iac-tests.md#bringing-context-from-a-snyk-cloud-scan)를 통해 IaC 테스트 결과에서 클라우드 컨텍스트를 적용하고 이슈를 억제할 수 있습니다.
 
 ## Snyk에서 컨텍스트 가져오기 <a href="#bringing-context-from-a-snyk-cloud-scan" id="bringing-context-from-a-snyk-cloud-scan"></a>
 

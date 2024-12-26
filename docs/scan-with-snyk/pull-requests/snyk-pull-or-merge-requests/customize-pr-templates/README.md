@@ -1,6 +1,6 @@
 # 사용자 지정 PR 템플릿
 
-당신이 [SCM 통합](../../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 이용해 가져온 {{Snyk 오픈 소스}}와 {{Snyk 컨테이너}} 프로젝트를 수정하거나 업그레이드할 때, Snyk는 당신의 저장소에 대해 풀 리퀘스트(PR)를 생성합니다.&#x20;
+당신이 [SCM 통합](../../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 이용해 가져온 와  프로젝트를 수정하거나 업그레이드할 때, Snyk는 당신의 저장소에 대해 풀 리퀘스트(PR)를 생성합니다.&#x20;
 
 Snyk는 제목, 설명 및 커밋 메시지에 대한 기본 PR 템플릿을 가지고 있습니다. 이들은 무엇이 변경되는지, 어떤 이슈가 해결되는지 등을 보여줍니다.
 

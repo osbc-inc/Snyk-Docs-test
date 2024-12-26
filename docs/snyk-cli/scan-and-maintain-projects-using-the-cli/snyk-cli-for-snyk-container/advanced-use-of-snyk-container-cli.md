@@ -1,4 +1,4 @@
-# {{Snyk Container}} CLI의 고급 사용
+#  CLI의 고급 사용
 
 ## 아카이브 스캔
 

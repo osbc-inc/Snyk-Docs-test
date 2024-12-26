@@ -253,7 +253,7 @@ Snyk API를 사용하여 원격 번들 구성을 **재정의할 수 있습니다
 
 ## 환경 변수 및 원격 사용자 정의 규칙 번들
 
-조직을 위해 Snyk 구성을 사용하여 사용자 지정 규칙 번들의 위치를 구성할 수도 있습니다. 프로젝트 폴더에서 다음 명령을 사용하여 컨테이너 레지스트리를 {{Snyk IaC}} CLI와 구성하세요:
+조직을 위해 Snyk 구성을 사용하여 사용자 지정 규칙 번들의 위치를 구성할 수도 있습니다. 프로젝트 폴더에서 다음 명령을 사용하여 컨테이너 레지스트리를  CLI와 구성하세요:
 
 ```plaintext
 snyk config set oci-registry-url=registry-1.docker.io/org-account/org-bundle-image:1.3.14

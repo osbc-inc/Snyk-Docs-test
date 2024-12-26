@@ -56,8 +56,8 @@ Snyk는 이 라이프사이클의 다른 부분을 스캔하며 해당 작업 �
 | 예시                                                                                                 | 설명                                                                                                                                                                     |
 | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="../../.gitbook/assets/image (297) (1).png" alt="" data-size="line">                           | [{Snyk Code}](../../scan-with-snyk/snyk-code/)에 의해 스캔된 자체 코드 분석 결과입니다.                                                                              |
-| <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line">         | [{{Snyk Open Source}](../../scan-with-snyk/snyk-open-source/)에 의해 스캔된 오픈 소스 라이브러리, 각각의 manifest(**pom.xml**, **package.json**, 기타 라이브러리를 위한 기타 manifest 등)가 표시됩니다. |
-| <img src="../../.gitbook/assets/image (307) (1).png" alt="" data-size="line">                           | [{{Snyk Container}](../../scan-with-snyk/snyk-container/)에 의해 스캔된 컨테이너 결과입니다. 도커 파일과 같이 컨테이너에 포함된 항목이 포함됩니다.               |
+| <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line">         | [Snyk Open Source}](../../scan-with-snyk/snyk-open-source/)에 의해 스캔된 오픈 소스 라이브러리, 각각의 manifest(**pom.xml**, **package.json**, 기타 라이브러리를 위한 기타 manifest 등)가 표시됩니다. |
+| <img src="../../.gitbook/assets/image (307) (1).png" alt="" data-size="line">                           | [Snyk Container}](../../scan-with-snyk/snyk-container/)에 의해 스캔된 컨테이너 결과입니다. 도커 파일과 같이 컨테이너에 포함된 항목이 포함됩니다.               |
 | <img src="../../.gitbook/assets/image (206) (1) (1).png" alt="" data-size="original">                 | [Snyk Infrastructure as Code (IaC)](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/)에 의해 스캔된 쿠버네티스 배포 파일, 테라폼 및 기타 IaC 파일입니다.             |
 
 {% hint style="info" %}

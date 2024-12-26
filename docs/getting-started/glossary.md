@@ -202,7 +202,7 @@ Snyk에 의해 식별되고 목록화된 라이선스 문제,### 런타임 컨�
 
 ### SAST
 
-정적 응용프로그램 보안 테스트. 응용프로그램을 실행하지 않고 정적 소스 코드를 검토하여 잠재적인 취약점을 식별하는 보안 분석 기술입니다. [IAST](glossary.md#iast), [DAST](glossary.md#dast), [{{Snyk Code}}](glossary.md#snyk-code), 및 [Snyk {{인프라스트럭처 as Code}}](glossary.md#snyk-infrastructure-as-code)도 참조하십시오.
+정적 응용프로그램 보안 테스트. 응용프로그램을 실행하지 않고 정적 소스 코드를 검토하여 잠재적인 취약점을 식별하는 보안 분석 기술입니다. [IAST](glossary.md#iast), [DAST](glossary.md#dast), [](glossary.md#snyk-code), 및 [Snyk ](glossary.md#snyk-infrastructure-as-code)도 참조하십시오.
 
 ### SBOM
 
@@ -210,7 +210,7 @@ Snyk에 의해 식별되고 목록화된 라이선스 문제,### 런타임 컨�
 
 ### SCA
 
-소프트웨어 구성 요소 분석. 응용프로그램에서 사용 중인 오픈 소스 및 제삼자 구성 요소, 알려진 보안 취약점 및 종종 상대적인 라이센스 제한을 식별하는 보안 분석 기술입니다. [정적 코드 분석](glossary.md#static-code-analysis)과 혼동되어서는 안 됩니다. [{{Snyk 오픈 소스}}](glossary.md#snyk-open-source)도 참조하십시오.
+소프트웨어 구성 요소 분석. 응용프로그램에서 사용 중인 오픈 소스 및 제삼자 구성 요소, 알려진 보안 취약점 및 종종 상대적인 라이센스 제한을 식별하는 보안 분석 기술입니다. [정적 코드 분석](glossary.md#static-code-analysis)과 혼동되어서는 안 됩니다. [](glossary.md#snyk-open-source)도 참조하십시오.
 
 ### 스캔된 artifact(들) (Snyk AppRisk)
 
@@ -268,21 +268,21 @@ Snyk가 개인 고객 환경 (Jira, 코드 저장소 또는 컨테이너 레지�
 
 Snyk 플랫폼 도구로, 명령줄 인터페이스를 사용하여 의존성에서 알려진 취약점을 찾아 수정할 수 있게 합니다. [Snyk CLI](../snyk-cli/)를 참조하십시오.
 
-### {{Snyk Code}}
+### 
 
-Snyk 제품입니다. 소유한 응용프로그램 코드의 취약점을 찾고 수정할 수 있는 정적 응용프로그램 보안 테스트(SAST) 제품입니다. [{{Snyk Code}}](../scan-with-snyk/snyk-code/)를 참조하십시오.
+Snyk 제품입니다. 소유한 응용프로그램 코드의 취약점을 찾고 수정할 수 있는 정적 응용프로그램 보안 테스트(SAST) 제품입니다. [](../scan-with-snyk/snyk-code/)를 참조하십시오.
 
-### {{Snyk Container}}
+### 
 
-Snyk 제품으로, 컨테이너 이미지와 Kubernetes 응용프로그램의 취약점을 찾고 수정할 수 있도록 합니다. [{{Snyk Container}}](../scan-with-snyk/snyk-container/)를 참조하십시오.
+Snyk 제품으로, 컨테이너 이미지와 Kubernetes 응용프로그램의 취약점을 찾고 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-container/)를 참조하십시오.
 
-### Snyk {{인프라스트럭처 as Code}}
+### Snyk 
 
-Snyk 제품으로, Kubernetes, Helm 및 Terraform 구성 파일의 취약점을 찾아 수정할 수 있도록 합니다. [{{Snyk IaC}}](../scan-with-snyk/snyk-iac/)를 참조하십시오.
+Snyk 제품으로, Kubernetes, Helm 및 Terraform 구성 파일의 취약점을 찾아 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-iac/)를 참조하십시오.
 
-### {{Snyk Open Source}}
+### 
 
-Snyk 제품으로, 오픈 소스 취약점을 찾고 수정할 수 있도록 합니다. [{{Snyk Open Source}}](../scan-with-snyk/snyk-open-source/)를 참조하십시오.
+Snyk 제품으로, 오픈 소스 취약점을 찾고 수정할 수 있도록 합니다. [](../scan-with-snyk/snyk-open-source/)를 참조하십시오.
 
 ### Snyk 플러그인
 

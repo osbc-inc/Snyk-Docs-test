@@ -8,7 +8,7 @@
 
 * 올바른 체인에 모든 인증서를 인증서가 실행 중인 운영 체제, 환경 (JDK) 또는 둘 다에 추가합니다.
 * IDE에서 **알 수 없는 인증서 기관 허용**을 설정하거나
-* `--insecure` 인수를 사용하여 Snyk CLI 실행 파일에 설정을 사용하여 전달합니다. **이는 다운로드, API 액세스 및 { {Snyk Code}} 통신을 해결하지 않습니다.**
+* `--insecure` 인수를 사용하여 Snyk CLI 실행 파일에 설정을 사용하여 전달합니다. **이는 다운로드, API 액세스 및 { {Snyk Code 통신을 해결하지 않습니다.**
 
 ## 사용자 지정 인증서 기관 <a href="#custom-certificate-authorities" id="custom-certificate-authorities"></a>
 

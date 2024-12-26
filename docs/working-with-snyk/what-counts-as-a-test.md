@@ -40,7 +40,7 @@ Snyk Open Source, Snyk Code, Snyk IaC, 그리고 Snyk Container 애플리케이�
 | Recurring | Snyk 애플리케이션이 일정 주기(매일 또는 매주)에 따라 실행되는 고객의 구성에 기반한 테스트. Web UI, CLI, 또는 API에 의해 트리거되고 대개 SCM 내의 cron job을 통해 실행됨.  | Snyk Github 통합을 사용하여 고객은 매일 또는 매주 테스트를 설정할 수 있음. |
 | Retest  | Snyk 웹 앱 내에서 다시 테스트 버튼 사용                                       | 사용자가 Snyk 웹 앱 내에서 다시 테스트를 클릭합니다.              |
 | Snyk 모니터 명령 | CLI를 사용하여 고객의 Snyk 계정에 프로젝트를 지속적으로 모니터하여 오픈 소스 취약점 및 라이선스 문제를 확인하고, 결과를 snyk.io로 보냄. 이는 Snyk Open Source 및 Snyk Container에만 해당됨. | 사용자는 CLI에서 `snyk monitor`를 실행합니다. |
-| Snyk 테스트 명령 | <p>CLI를 사용하여 프로젝트에서 오픈 소스 취약점 및 라이선스 문제를 확인. <code>test</code> 명령은 지원되는 manifest 파일을 자동으로 감지하고 해당 내용을 테스트합니다.</p><p><br>참고: {{Snyk Code}}, Container 및 IaC 스캔 방법에는 각각 특정 <code>snyk test</code> 명령이 있습니다: <code>snyk code test</code>, <code>snyk container test</code>, 및 <code>snyk iac test</code>.</p> | 사용자가 CLI에서 `snyk test`를 실행합니다. |
+| Snyk 테스트 명령 | <p>CLI를 사용하여 프로젝트에서 오픈 소스 취약점 및 라이선스 문제를 확인. <code>test</code> 명령은 지원되는 manifest 파일을 자동으로 감지하고 해당 내용을 테스트합니다.</p><p><br>참고: , Container 및 IaC 스캔 방법에는 각각 특정 <code>snyk test</code> 명령이 있습니다: <code>snyk code test</code>, <code>snyk container test</code>, 및 <code>snyk iac test</code>.</p> | 사용자가 CLI에서 `snyk test`를 실행합니다. |
 | 사용자 | 저장소를 가져올 때 트리거되는 테스트                                      | Snyk 웹 앱에서 사용자가 가져오기 버튼을 클릭합니다.                 |
 | IDE    | 통합 개발 환경, VS Code, JetBrains 등                                                |                                                                      |
 

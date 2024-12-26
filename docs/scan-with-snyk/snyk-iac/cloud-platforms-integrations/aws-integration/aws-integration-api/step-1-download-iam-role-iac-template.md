@@ -1,6 +1,6 @@
 # 단계 1: IAM 역할 IaC 템플릿 다운로드 (API)
 
-클라우드 환경을 생성하기 전에, {{인프라스트럭처 as 코드}} (IaC) 템플릿을 다운로드해야 합니다. 이 템플릿은 읽기 전용 **Identity and Access Management** (IAM) 역할을 선언하며, 이 역할은 Snyk가 AWS 계정의 리소스 구성을 스캔할 수 있도록 할 수 있습니다.
+클라우드 환경을 생성하기 전에,  (IaC) 템플릿을 다운로드해야 합니다. 이 템플릿은 읽기 전용 **Identity and Access Management** (IAM) 역할을 선언하며, 이 역할은 Snyk가 AWS 계정의 리소스 구성을 스캔할 수 있도록 할 수 있습니다.
 
 이 IaC 템플릿은 [단계 2: Snyk IAM 역할 생성](../aws-integration-web-ui/step-2-create-the-snyk-iam-role.md)에서 역할을 프로비전하는 데 사용됩니다.
 

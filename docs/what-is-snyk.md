@@ -6,8 +6,8 @@ Snyk는 코드, 오픈 소스 의존성, 컨테이너 이미지 및 인프라 �
 
 * **Snyk Open Source**와 **Snyk Code**: [지원하는 언어 및 프레임워크](supported-languages-package-managers-and-frameworks/) 참조.
 * **Snyk Container**: [지원하는 운영 체제 배포판](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md/) 참조.
-* **{{Snyk Infrastructure as Code}}**: [지원하는 IaC와 클라우드 제공 업체](scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/) 참조.
-* **{{Snyk AppRisk 오퍼링들}}**: {{Snyk AppRisk}} 참조.
+* ****: [지원하는 IaC와 클라우드 제공 업체](scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/) 참조.
+* ****:  참조.
 
 ## Snyk의 개발자 지향 접근
 
@@ -21,7 +21,7 @@ Snyk는 개발자의 워크플로우에서 가시성 및 실행 가능한 통찰
 
 * **코드 보호**: [Snyk Open Source](https://docs.snyk.io/scan-using-snyk/snyk-open-source)를 사용하여 오픈 소스 의존성의 취약점을 수정하고 [Snyk Code](https://docs.snyk.io/scan-using-snyk/snyk-code)를 사용하여 소스 코드의 취약점을 수정합니다.
 * **컨테이너 보호**: [Snyk Container](https://docs.snyk.io/scan-using-snyk/snyk-container)를 사용하여 컨테이너 이미지와 Kubernetes 애플리케이션의 취약점을 수정합니다.
-* **인프라 보호**: [{{Snyk Infrastructure as Code}} (IaC)](https://docs.snyk.io/scan-using-snyk/snyk-iac/scan-your-iac-source-code)를 활용하여 Terraform, CloudFormation, Kubernetes 및 Azure 템플릿의 잘못된 구성을 수정합니다. [IaC+](https://docs.snyk.io/scan-using-snyk/snyk-iac/iac+-code-to-cloud-capabilities)를 사용하여 Amazon Web Services 계정, Microsoft Azure 구독 및 Google Cloud 프로젝트의 잘못된 구성을 수정합니다.
+* **인프라 보호**: [ (IaC)](https://docs.snyk.io/scan-using-snyk/snyk-iac/scan-your-iac-source-code)를 활용하여 Terraform, CloudFormation, Kubernetes 및 Azure 템플릿의 잘못된 구성을 수정합니다. [IaC+](https://docs.snyk.io/scan-using-snyk/snyk-iac/iac+-code-to-cloud-capabilities)를 사용하여 Amazon Web Services 계정, Microsoft Azure 구독 및 Google Cloud 프로젝트의 잘못된 구성을 수정합니다.
 
 ## Snyk를 실행하는 방법 선택하기
 

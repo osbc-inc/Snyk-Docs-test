@@ -5,7 +5,7 @@
 
 IaC+에서 제공되는 클라우드 문제 해결 기능은 AWS, Azure, Google Cloud를 지원하며 [IaC+](./)에 대해서만 사용할 수 있습니다.
 
-{{Snyk IaC}}+는 현재 가입을 받지 않는 닫힌 베타 버전 상태입니다.\
++는 현재 가입을 받지 않는 닫힌 베타 버전 상태입니다.\
 자세한 기능에 대해서는 [현재 IaC로 시작하기](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac)에서 확인하세요.
 {% endhint %}
 
@@ -79,9 +79,9 @@ jobs:
   delivery:
     runs-on: ubuntu-latest
     env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      AWS_ACCESS_KEY_ID: $
+      AWS_SECRET_ACCESS_KEY: $
+      SNYK_TOKEN: $
     steps:
       - uses: actions/checkout@v3
       - uses: hashicorp/setup-terraform@v2
@@ -94,13 +94,13 @@ jobs:
         run: terraform plan -input=false
 
       - name: snyk iac test
-        run: snyk iac test --org=${{ secrets.SNYK_ORG_ID }} --report || true
+        run: snyk iac test --org=$ --report || true
 
       - name: terraform apply
         run: terraform apply -auto-approve -input=false
 
       - name: capture terraform state
-        run: terraform state pull | snyk iac capture --org=${{ secrets.SNYK_ORG_ID }} --stdin
+        run: terraform state pull | snyk iac capture --org=$ --stdin
 ```
 
 #### CircleCI 예시

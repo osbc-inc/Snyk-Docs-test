@@ -14,4 +14,4 @@
   - 이 제한은 누군가가 조직의 URL을 추측하는 리스크를 줄입니다.
   - 설정된 값은 모든 새로운 조직의 기본값으로 사용되지만 기존 Snyk 조직에 대한 **액세스 요청** 설정을 덮어쓰지 않습니다.
   - 자세한 내용은 조직에 액세스 요청의 설명서인 [요청 액세스 설정 활성화](../organizations/requests-for-access-to-an-organization.md#enable-the-request-access-setting)를 참조하십시오.
-- **프로젝트 테스트 빈도**: 이 그룹에서 생성된 모든 새로운 프로젝트의 기본 테스트 빈도를 설정합니다. **프로젝트 테스트 빈도** 설정 변경은 [Snyk Infrastructure as Code](../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/) 또는 [{{Snyk Code}}](../../../scan-with-snyk/snyk-code/) 프로젝트의 기본 테스트 빈도에 영향을 주지 않음에 유의하십시오. 이 둘의 기본값은 모두 주간입니다.
+- **프로젝트 테스트 빈도**: 이 그룹에서 생성된 모든 새로운 프로젝트의 기본 테스트 빈도를 설정합니다. **프로젝트 테스트 빈도** 설정 변경은 [Snyk Infrastructure as Code](../../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/) 또는 [](../../../scan-with-snyk/snyk-code/) 프로젝트의 기본 테스트 빈도에 영향을 주지 않음에 유의하십시오. 이 둘의 기본값은 모두 주간입니다.

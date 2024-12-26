@@ -1,6 +1,6 @@
 # Git 리포지토리 통합 소개
 
-Snyk 함수를 사용하여 응용 프로그램 코드를 안전하게 유지할 수 있습니다. 자체 코드에는 [{{Snyk Code}}](../../../scan-with-snyk/snyk-code/)를 사용하고 사용하는 오픈 소스 라이브러리에는 [{{Snyk Open Source}}](../../../scan-with-snyk/snyk-open-source/)를 사용합니다.
+Snyk 함수를 사용하여 응용 프로그램 코드를 안전하게 유지할 수 있습니다. 자체 코드에는 [](../../../scan-with-snyk/snyk-code/)를 사용하고 사용하는 오픈 소스 라이브러리에는 [](../../../scan-with-snyk/snyk-open-source/)를 사용합니다.
 
 다음 섹션에서 설명하는 대로 이러한 기능은 개발 프로세스의 각 단계에서 사용할 수 있습니다.
 

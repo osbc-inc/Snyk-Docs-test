@@ -121,7 +121,7 @@ description: |
 
 ```yaml
 description: |
-  수정: {{ package_name }}
+  수정: 
 ```
 
 ### 출력
@@ -140,7 +140,7 @@ description: |
 
 ```yaml
 description: |
-  수정된 부분: {{ package_from}}
+  수정된 부분: 
 ```
 
 ### 출력
@@ -159,7 +159,7 @@ description: |
 
 ```yaml
 description: |
-  수정된 부분: {{ package_to}}
+  수정된 부분: 
 ```
 
 ### 출력
@@ -178,7 +178,7 @@ description: |
 
 ```yaml
 description: |
-   해당 PR은 {{ issue_count }}개의 이슈를 해결합니다.
+   해당 PR은 개의 이슈를 해결합니다.
 ```
 
 ### 출력
@@ -197,11 +197,11 @@ description: |
 
 ```
 description: |
-  {{ #product_is_container }}
+  
   이 컨테이너 PR은 우리의 저장소를 최신 상태로 유지하기 위해 열었습니다.
-  패키지 x를 버전 {{ package_from }}에서 버전 {{ package_to }}로 업데이트합니다.
+  패키지 x를 버전 에서 버전 로 업데이트합니다.
   가능한 호환성 문제에 대한 문서를 검토하십시오.
-  {{ /product_is_container }}
+  
 ```
 
 ### 출력
@@ -222,11 +222,11 @@ description: |
 
 ```
 description: |
-  {{ #product_is_open_source }}
+  
   이 오픈 소스 PR은 우리의 저장소를 최신 상태로 유지하기 위해 열었습니다.
-  패키지 x를 버전 {{ package_from }}에서 버전 {{ package_to }}로 업데이트합니다.
+  패키지 x를 버전 에서 버전 로 업데이트합니다.
   가능한 호환성 문제에 대한 문서를 검토하십시오.
-  {{ /product_is_open_source }}
+  
 ```
 
 ### 출력
@@ -247,7 +247,7 @@ description: |
 
 ```yaml
 description: |
-  이 PR은 수정 PR입니까? {{ is_fix_pr }}
+  이 PR은 수정 PR입니까? 
 ```
 
 ### 출력
@@ -266,7 +266,7 @@ description: |
 
 ```yaml
 description: |
-  이 PR은 백로그 PR입니까? {{ is_backlog_pr }}
+  이 PR은 백로그 PR입니까? 
 ```
 
 ### 출력
@@ -285,7 +285,7 @@ description: |
 
 ```yaml
 description: |
-  이 PR은 업그레이드 PR입니까? {{ is_upgrade_pr }}
+  이 PR은 업그레이드 PR입니까? 
 ```
 
 ### 출력
@@ -308,7 +308,7 @@ description: |
 {
     "data": {
         "attributes": {
-            "description": "변경된 내용: {{ files_changed }}"
+            "description": "변경된 내용: "
             
         },
         "type": "pull_request_template"
@@ -336,7 +336,7 @@ Maven 프로젝트용 PR이며 변경된 사항이 pom.xml 파일인 경우, PR�
 {
     "data": {
         "attributes": {
-            "description": "다음을 권장합니다: {{ container.recommended_base_image_name }}"
+            "description": "다음을 권장합니다: "
             
         },
         "type": "pull_request_template"
@@ -362,7 +362,7 @@ Maven 프로젝트용 PR이며 변경된 사항이 pom.xml 파일인 경우, PR�
 {
     "data": {
         "attributes": {
-            "description": "현재 기본 이미지: {{ container.current_base_image_name }}"
+            "description": "현재 기본 이미지: "
             
         },
         "type": "pull_request_template"
@@ -386,7 +386,7 @@ Maven 프로젝트용 PR이며 변경된 사항이 pom.xml 파일인 경우, PR�
 
 ```yaml
 description: |
-  이것은 {{ snyk_pull_request_type }} PR입니다
+  이것은  PR입니다
 ```
 
 ### 출력

@@ -14,13 +14,13 @@
 
 ### Kubernetes **커넥터**
 
-Snyk AppRisk는 Kubernetes 클러스터에서 실행 중인 이미지와 생성된 {{Snyk Container}} 프로젝트 사이의 일치를 찾아 컨테이너 이미지가 배포되었음을 결정합니다.
+Snyk AppRisk는 Kubernetes 클러스터에서 실행 중인 이미지와 생성된  프로젝트 사이의 일치를 찾아 컨테이너 이미지가 배포되었음을 결정합니다.
 
 Snyk AppRisk는 Kubernetes 상태 정보를 사용하여 현재 실행 중인 Docker 이미지 식별자를 추출합니다. Kubernetes 컨테이너의 상태에는 Kubernetes 런타임에서 실행 중인 이미지 이름이 있습니다. 알려진 Docker 이미지 데이터베이스에서 일치하는 이름을 찾습니다. 이미지 이름이 일치하는 경우, Snyk은 그래프에서 이 정보를 표시할 수 있습니다. 그래프는 이미지와 컨테이너 간의 관계를 보여줍니다.
 
 <figure><img src="https://lh6.googleusercontent.com/BoYMeFGbzjUmNmXbmtrklBcl9LLm9S94mwJWkrFA_5E5WIO07BsS3Zv-fbGBlXkNAx4oGnbBtzFijWTxUQbsnlzJI2QqprUJWPevpwBybhmwtzQayYnmW6_Qvhddgz1_vdy-NDZgQKUQhmxnY54xkrI" alt="배포된 이미지의 취약성"><figcaption><p>배포된 이미지의 취약성</p></figcaption></figure>
 
-Kubernetes는 이미지 관리에 대해 [구체적](https://kubernetes.io/docs/concepts/containers/images/#image-names)으로 명시되어 있습니다. Snyk는 Snyk가 알고 있는 이미지를 매핑하는 데 이와 같은 논리를 사용합니다. {{Snyk Container}}로 이미지를 스캔할 때마다, Snyk는 이미지 이름 및 이미지 ID에 대한 정보를 수집합니다. 이 정보를 사용하여 이미지를 Kubernetes 정보와 매핑합니다.
+Kubernetes는 이미지 관리에 대해 [구체적](https://kubernetes.io/docs/concepts/containers/images/#image-names)으로 명시되어 있습니다. Snyk는 Snyk가 알고 있는 이미지를 매핑하는 데 이와 같은 논리를 사용합니다. 로 이미지를 스캔할 때마다, Snyk는 이미지 이름 및 이미지 ID에 대한 정보를 수집합니다. 이 정보를 사용하여 이미지를 Kubernetes 정보와 매핑합니다.
 
 {% hint style="info" %}
 Snyk는 [Kubernetes](https://kubernetes.io/docs/concepts/containers/images/#image-names)와 Docker [이미지](https://docs.docker.com/engine/reference/commandline/images/)에 문서화된 지정된 명명 표준을 준수하여 Kubernetes와 일관성을 유지합니다.&#x20;
@@ -32,21 +32,21 @@ Snyk는 [Kubernetes](https://kubernetes.io/docs/concepts/containers/images/#imag
 
 <table><thead><tr><th width="267.3333333333333">Kubernetes 매니페스트에서 제공된 이름 </th><th>일치에 사용된 이름</th><th>변경 (예/아니오)</th></tr></thead><tbody><tr><td>gcr.io/my-company/my-app:production</td><td>gcr.io/my-company/my-app:production</td><td>아니요</td></tr><tr><td>gcr.io/my-company/my-app:latest</td><td>gcr.io/my-company/my-app:latest</td><td>아니요</td></tr><tr><td>gcr.io/my-company/my-app</td><td>gcr.io/my-company/my-app:latest</td><td>예 - 최신 태그가 추가됨</td></tr><tr><td>my-app</td><td>docker.io/my-app/my-app:latest</td><td>예 - Docker 공개 레지스트리로 기본 설정, 최신 태그가 추가됨</td></tr></tbody></table>
 
-일치는 다음의 우선 순위를 사용하며, 첫 번째 단계는 적어도 하나의 {{Snyk Container}} 프로젝트에서 통과해야 하며, 그 다음 단계에서 일치를 더 검증합니다.&#x20;
+일치는 다음의 우선 순위를 사용하며, 첫 번째 단계는 적어도 하나의  프로젝트에서 통과해야 하며, 그 다음 단계에서 일치를 더 검증합니다.&#x20;
 
 1. 이미지 이름 일치, 예를 들어 `gcr.io/my-company/my-app:latest`.
 2. 이미지 다이제스트 일치.
-3. 이미지 다이제스트로 {{Snyk Container}} 프로젝트 그룹화.
+3. 이미지 다이제스트로  프로젝트 그룹화.
 
 다음 예제를 고려하십시오.
 
-#### **예제 1: {{Snyk Container}} CLI 사용**
+#### **예제 1:  CLI 사용**
 
 결과: 이미지가 성공적으로 일치되고 리스크 요소가 적용됨
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-07-12 at 02.04.31.png" alt="이미지 일치"><figcaption><p>이미지 일치</p></figcaption></figure>
 
-컨테이너 이미지를 {{Snyk Container}} CLI를 사용하여 스캔하며, 레지스트리를 포함한 이미지의 전체 이름을 참조합니다. 이미지가 빌드된 후 클러스터에 배포되기 전에 이를 수행하는 것을 추천합니다.
+컨테이너 이미지를  CLI를 사용하여 스캔하며, 레지스트리를 포함한 이미지의 전체 이름을 참조합니다. 이미지가 빌드된 후 클러스터에 배포되기 전에 이를 수행하는 것을 추천합니다.
 
 다음은 스캔의 예시입니다:
 
@@ -62,9 +62,9 @@ Snyk는 [Kubernetes](https://kubernetes.io/docs/concepts/containers/images/#imag
 
 &#x20;   `image: gcr.io/my-company/my-app:latest`
 
-이렇게 함으로써 Insights는 이미지 이름을 성공적으로 일치시키고 이 {{Snyk Container}} 프로젝트에 연관된 모든 문제에 배포된 리스크 요소를 적용할 수 있습니다.
+이렇게 함으로써 Insights는 이미지 이름을 성공적으로 일치시키고 이  프로젝트에 연관된 모든 문제에 배포된 리스크 요소를 적용할 수 있습니다.
 
-#### **예제 2: {{Snyk Container}} CLI 및 컨테이너 레지스트리 사용**
+#### **예제 2:  CLI 및 컨테이너 레지스트리 사용**
 
 결과: 이미지가 성공적으로 일치되고 리스크 요소가 적용됨
 
@@ -94,7 +94,7 @@ Insights는 이 프로젝트를 일치시키지 못하며 이름이 일치하지
 
 이것은 이미지 다이제스트도 포함합니다.
 
-그러면 Insights는 이미지 다이제스트로 모든 {{Snyk Container}} 프로젝트를 그룹화하게 되어 컨테이너 레지스트리를 통해 부분 이름을 가진 CLI 프로젝트에 대해 배포된 리스크 요소를 적용할 수 있습니다.
+그러면 Insights는 이미지 다이제스트로 모든  프로젝트를 그룹화하게 되어 컨테이너 레지스트리를 통해 부분 이름을 가진 CLI 프로젝트에 대해 배포된 리스크 요소를 적용할 수 있습니다.
 
 {% hint style="info" %}
 Snyk는 CLI 명령어에서 이미지의 전체 이름을 지정할 것을 권장합니다. 이를 수행할 수 없는 경우, Snyk는 두 번째 통합을 통해 동일한 이미지를 스캔할 것을 권장합니다.&#x20;

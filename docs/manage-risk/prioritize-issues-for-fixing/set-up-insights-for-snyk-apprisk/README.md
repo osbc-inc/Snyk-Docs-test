@@ -6,7 +6,7 @@
 
 ## Snyk AppRisk을 위한 우선순위 설정 전제조건
 
-[{{ Snyk }} Container](../../../scan-with-snyk/snyk-container/)을 사용하여 이미지를 스캔하는 응용 프로그램과 Set up Insights 옵션을 사용하여 Snyk AppRisk 우선순위를 사용자화할 수 있습니다. 또한 [{{ Snyk }} Open Source](../../../scan-with-snyk/snyk-open-source/)와 [{{ Snyk }} Code](../../../scan-with-snyk/snyk-code/)로 오픈 소스 종속성 및 소스 코드를 스캔함으로써 추가 가치를 얻을 수 있습니다.
+[ Container](../../../scan-with-snyk/snyk-container/)을 사용하여 이미지를 스캔하는 응용 프로그램과 Set up Insights 옵션을 사용하여 Snyk AppRisk 우선순위를 사용자화할 수 있습니다. 또한 [ Open Source](../../../scan-with-snyk/snyk-open-source/)와 [ Code](../../../scan-with-snyk/snyk-code/)로 오픈 소스 종속성 및 소스 코드를 스캔함으로써 추가 가치를 얻을 수 있습니다.
 
 ### 필요한 위험 요소는 무엇인가요?
 
@@ -14,7 +14,7 @@
 위험 요소는 Snyk AppRisk Pro에서만 이용할 수 있습니다.
 {% endhint %}
 
-{{ Snyk }} AppRisk Insights 제품은 취약점에 대한 다음과 같은 위험 요소를 제공하여 작동합니다:
+ AppRisk Insights 제품은 취약점에 대한 다음과 같은 위험 요소를 제공하여 작동합니다:
 
 - [**이미 배포됨**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md): 내 코드와 컨테이너 이미지가 어디에 배포되었는가?
 - [**로드된 패키지**](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md): 이미지의 종속성인 서드 파티 패키지가 로드되었는가?
@@ -37,7 +37,7 @@
 
 OS 상태 위험 요인을 사용하려면 다음 조건을 충족해야 합니다:
 
-- 소스 코드 및 종속성이 컨테이너 이미지로 빌드되고 {{Snyk Container}}를 사용하여 스캔되어야 합니다. 이 우선 순위를 위해 값이 발생하는 데 필요한 최소한의 요구 사항입니다.
+- 소스 코드 및 종속성이 컨테이너 이미지로 빌드되고 를 사용하여 스캔되어야 합니다. 이 우선 순위를 위해 값이 발생하는 데 필요한 최소한의 요구 사항입니다.
 
 <figure><img src="../../../.gitbook/assets/Example OS condition.png" alt="컨테이너 이미지로 빌드된 소스 코드와 종속성"><figcaption><p>컨테이너 이미지로 빌드된 소스 코드와 종속성</p></figcaption></figure>
 
@@ -75,7 +75,7 @@ Snyk는 가장 효과적인 통합을 달성하고 끊임없이 확장되는 기
 {% endhint %}
 
 3. 이미지를 적절하게 스캔하여 Snyk가 올바른 데이터에 액세스할 수 있도록 합니다. [우선순위 설정: 이미지 스캔](set-up-insights-image-scanning.md)을 참조하십시오.
-4. 우선순위를 사용하려는 응용 프로그램을 위해 필요한 링크를 설정합니다. [우선순위 설정: {{Snyk Open Source}}, Code, Container 프로젝트 연결](set-up-insights-associating-snyk-open-source-code-and-container-projects.md)를 참조하십시오.
+4. 우선순위를 사용하려는 응용 프로그램을 위해 필요한 링크를 설정합니다. [우선순위 설정: , Code, Container 프로젝트 연결](set-up-insights-associating-snyk-open-source-code-and-container-projects.md)를 참조하십시오.
 5. 타사 런타임 통합 또는 Snyk 런타임 센서를 설정하여 더 많은 런타임 데이터를 얻습니다.
 6. 우선순위 기능을 올바르게 설정했는지 확인하려면 **이슈** 페이지의 **Snyk AppRisk 설정** 탭으로 이동하고 Snyk가 액세스한 데이터를 확인합니다.\
    진행 상황의 세부 정보를 확인하려면 그룹별로 관련 섹션을 필터링할 수 있습니다.
@@ -98,7 +98,7 @@ Snyk는 가장 효과적인 통합을 달성하고 끊임없이 확장되는 기
 
 사용 가능한 위험 요소를 활성화하거나 비활성화할 수 있습니다: [배포됨](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-deployed.md), [로드된 패키지](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-loaded-package.md), [OS 상태](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md), [공개된](../assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md). 위험 요소가 비활성화되면 문제 계산에 사용되지 않습니다.
 
-위험 요소를 [{{ Snyk }} Web UI](../../../getting-started/snyk-web-ui.md), Group Settings, Settings 옵션, Risk factors에서 활성화 또는 비활성화할 수 있습니다.
+위험 요소를 [ Web UI](../../../getting-started/snyk-web-ui.md), Group Settings, Settings 옵션, Risk factors에서 활성화 또는 비활성화할 수 있습니다.
 
 ### 공급자 선택
 

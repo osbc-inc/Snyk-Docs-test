@@ -1,8 +1,8 @@
 # {Snyk} Container 및 {Snyk} Open Source의 응용 프로그램 취약점
 
-{{Snyk} Container}는 컨테이너 내의 응용 프로그램 취약점을 감지하며 Snyk Open Source 기능과 중복됩니다.
+Snyk} Container}는 컨테이너 내의 응용 프로그램 취약점을 감지하며 Snyk Open Source 기능과 중복됩니다.
 
-일반적으로 Snyk가 동일한 Manifest 파일에서 종속성 그래프를 구축하고 있으면, {{Snyk} Container 응용 프로그램 취약점 스캔 및 {{Snyk Open Source}}} 스캔 결과는 일반적으로 동일합니다.
+일반적으로 Snyk가 동일한 Manifest 파일에서 종속성 그래프를 구축하고 있으면, } 스캔 결과는 일반적으로 동일합니다.
 
 그러나 결과는 생태계 및 개발자가 응용 프로그램을 빌드하는 방식에 따라 크게 다를 수 있습니다. 컨테이너 내의 응용 프로그램은 컴파일된 응용 프로그램입니다. 그래서 일부 생태계에서, Snyk Open Source는 보다 자세한 Manifest를 스캔하여 보다 정확한 종속성 그래프를 만들 수 있습니다:
 

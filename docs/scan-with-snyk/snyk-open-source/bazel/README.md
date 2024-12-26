@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **기능 이용 가능성**\
-Snyk는 {{Snyk 오픈 소스}}에서 지원하는 Bazel을 위한 빌드 및 테스트 도구입니다. 이 설명서의 지침은 Bazel v 7에만 해당됩니다.&#x20;
+Snyk는 에서 지원하는 Bazel을 위한 빌드 및 테스트 도구입니다. 이 설명서의 지침은 Bazel v 7에만 해당됩니다.&#x20;
 {% endhint %}
 
 Bazel은 [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.html)에서 다음과 같이 정의됩니다.
@@ -50,7 +50,7 @@ Dep Graph API에는 추가 권한이 필요합니다. [Snyk 지원팀에 문의]
 
     ```
     curl -X POST 'https://api.snyk.io/v1/test/dep-graph' \
-      -H 'Authorization: token {{your token}}' \
+      -H 'Authorization: token ' \
       -H 'Content-Type: application/json; charset=utf-8' \
       -d @dep-graph.json
     ```

@@ -21,10 +21,10 @@ Snyk 컨설턴트는 고객에게 "Snyk" 설정과 관련된 다음 서비스를
    2. 제품 모듈별 전제 조건 검토
    3. [고객 전제 조건](snyk-jumpstart-customer-prerequisites.md)에 따라 고객 연락처의 가용성 확인
 2. [Snyk 플랫폼 구성](snyk-jumpstart-services-description.md#snyk-platform-configuration)
-3. [{{Snyk 오픈 소스}} 구성](snyk-jumpstart-services-description.md#snyk-open-source-configuration)
-4. [{{Snyk 코드}} 구성](snyk-jumpstart-services-description.md#snyk-code-configuration)
-5. [{{Snyk 컨테이너}} 구성](snyk-jumpstart-services-description.md#snyk-container-configuration)
-6. [{{Snyk IaC}} 구성](snyk-jumpstart-services-description.md#snyk-iac-configuration)
+3. [ 구성](snyk-jumpstart-services-description.md#snyk-open-source-configuration)
+4. [ 구성](snyk-jumpstart-services-description.md#snyk-code-configuration)
+5. [ 구성](snyk-jumpstart-services-description.md#snyk-container-configuration)
+6. [ 구성](snyk-jumpstart-services-description.md#snyk-iac-configuration)
 7. [Snyk AppRisk Essentials 구성](snyk-jumpstart-services-description.md#snyk-apprisk-essentials-prioritization-configuration)
 8. [Snyk AppRisk Pro 구성](snyk-jumpstart-services-description.md#snyk-apprisk-pro-configuration)
 
@@ -83,9 +83,9 @@ Snyk 컨설턴트는 고객의 개발자들을 위해 60분 교육 세션을 실
 | 관리자 교육 (1 세션) | 그룹 및 조직 관리자가 대상을 가져오고 각 팀의 초기 설정을 완료하기 위해 Snyk를 사용하는 데 편안함을 느낄 수 있도록 합니다. |
 | 개발자 교육 (1 세션) | 제품별 모듈이 완료된 후 실행되며, 개발자들이 성공적으로 발표하고 초기 채택을 보장하기 위함입니다. |
 
-## {{Snyk 오픈 소스}} 구성
+##  구성
 
-### 전달 방식 - {{Snyk 오픈 소스}} 구성
+### 전달 방식 -  구성
 
 Snyk의 전달 방법은 빠른 가치 실현을 보장하기 위해 설계되었습니다. 협력을 통해 Snyk는 고객이 기본 구성을 설정하고 이 설정을 다른 응용 프로그램 및 통합으로 확장할 수 있도록 설계됩니다. 처음부터 Snyk를 올바르게 설정하는 것은 개발자 채택을 개선하고 장기적인 성공을 위한 길을 열어줍니다.
 
@@ -121,7 +121,7 @@ Snyk 컨설턴트는 고객에게 CLI 및 Snyk UI를 통해 오픈 소스 결과
 
 이 문서는 고객에게 제공되며, 이는 계정 설정, 저장소 온보딩 및 통합에 관한 포괄적인 전문 서비스 개요를 제공할 것입니다. 이 문서는 시작부터 종료까지의 기간 동안 계정 설정, 저장소 온보딩 및 통합에 대한 통찰력을 제공하며, 후속 단계에 대한 실용적인 권고 사항과 실행 가능한 지침을 제시할 것입니다. 이 문서는 단순히 회고뿐만 아니라 성취 사항 및 앞으로의 로드맵을 상세히 기술함으로써 고객이 Snyk 투자의 전체 잠재력을 실현할 수 있도록 필수적인 가이드를 제공합니다.
 
-### 타깃 활동 - {{Snyk 오픈 소스}}
+### 타깃 활동 - 
 
 | Snyk 오픈 소스 구성 | 결과 |
 |--------------------------|------|
@@ -134,7 +134,7 @@ Snyk 컨설턴트는 고객에게 CLI 및 Snyk UI를 통해 오픈 소스 결과
 | 오픈 소스 결과 해석 및 조치 | Snyk 보고서를 통해 오픈 소스 결과를 확인하고 이슈를 관리하는 방법을 이해합니다. |
 | 문서 완료 | 완료된 작업과 추가 프로젝트를 위한 실행 가이드를 얻으며 작업 완료에 대한 이해를 얻을 수 있습니다. |
 
-## {{Snyk 코드}}# Snyk 전달 방법
+## # Snyk 전달 방법
 
 Snyk 전달 방법은 빠른 가치 실현을 위해 맞춤화되어 있습니다. 협력 과정을 통해 Snyk는 고객에게 기본 구성을 설정하는 데 도움을 주고, 이를 다른 응용 프로그램 및 통합에 확장할 수 있도록 지원합니다. 시작부터 Snyk를 올바르게 설정하는 것은 개발자 채택을 향상시키고 장기적인 성공을 위한 길을 열어줍니다.
 
@@ -146,9 +146,9 @@ Snyk 컨설턴트는 필요한 경우 고객과 협력하여 [지원되는 컨�
 
 Snyk 컨설턴트는 최대 50개 타깃까지의 컨테이너 이미지를 UI 가져오기 기능을 통해 Snyk에 가져오도록 고객과 협력할 것입니다.
 
-#### {{Snyk 컨테이너}} 결과 해석 및 조치
+####  결과 해석 및 조치
 
-Snyk 컨설턴트는 고객에게 CLI 및 Snyk UI를 통해 {{Snyk 컨테이너}} 결과를 해석하는 방법 및 Snyk 보고서를 사용하여 {{Snyk 컨테이너}} 결과를 관리하는 방법을 가르쳐 줄 것입니다.
+Snyk 컨설턴트는 고객에게 CLI 및 Snyk UI를 통해  결과를 해석하는 방법 및 Snyk 보고서를 사용하여  결과를 관리하는 방법을 가르쳐 줄 것입니다.
 
 #### 단일 CI/CD CLI 구성
 
@@ -162,14 +162,14 @@ Snyk 컨설턴트는 Snyk UI 및 CLI에서 Snyk 사용자 정의 베이스 이�
 
 고객에게 Snyk와의 협력 기간 동안 제공되는 전문 서비스에 대한 종합적인 개요를 제공하는 문서가 제공될 것입니다. 이 문서는 협력의 시작부터 종료까지의 기간 동안 계정 구성, 저장소 온보딩 및 통합에 대한 통찰력을 제공합니다. 이 문서는 후속 조치를 취하는데 도움이 되는 실용적인 권고 사항과 실행 가능한 다음 단계를 제시함으로써 애플리케이션 보안의 향상을 위해 Snyk의 사용을 최적화하는 데 고객을 돕습니다. 성취와 앞으로의 로드맵을 상세히 설명함으로써 이 문서는 고객이 Snyk에 투자한 가치를 실현하는데 필수적인 가이드를 제공합니다.
 
-### 대상 계획 - {{Snyk 컨테이너}}
+### 대상 계획 - 
 
-| {{Snyk 컨테이너}} 구성                            | 결과                                                                                                           |
+|  구성                            | 결과                                                                                                           |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | 단일 브로커 컨테이너 레지스트리 설치 및 구성   | <a href="https://snyk.io/integrations/?type=container-registries">지원되는 컨테이너 레지스트리</a>에 대해 단일 브로커가 설치되고 구성됩니다.                        |
 | 컨테이너 레지스트리 가져오기 (최대 50 타겟)     | 최대 50개 타겟을 [지원되는 컨테이너 레지스트리](https://snyk.io/integrations/?type=container-registries)를 사용하여 Snyk에 가져옵니다.                                 |
 | 컨테이너 결과 해석 및 조치                    | Snyk 보고서를 통해 컨테이너 결과를 보는 방법 및 이슈 관리에 대한 이해를 얻습니다.                                            |
-| 단일 CI/CD CLI 통합                           | 하나의 파이프라인을 구성하여 {{{{Snyk 컨테이너}}의 `test` 및 `monitor` 명령을 실행합니다.                                             |
+| 단일 CI/CD CLI 통합                           | 하나의 파이프라인을 구성하여 의 `test` 및 `monitor` 명령을 실행합니다.                                             |
 | 사용자 정의 베이스 이미지 안내서 (UI 및 CLI)    | UI 및 CLI를 통해 사용자 정의 베이스 이미지 권장 기능을 사용하는 방법에 대한 이해를 얻습니다.                                         |
 | 문서 마무리                                   | 완료된 작업에 대한 이해와 추가 프로젝트 온보딩을 위한 런북을 얻습니다.                                        |
 
@@ -263,7 +263,7 @@ Snyk 컨설턴트는 고객과 협력하여 다음과 같이 Snyk AppRisk Pro를
 
 **Snyk 런타임 센서 설치**&#x20;
 
-Snyk 컨설턴트는 고객과 협력하여 미리 정의된 환경에 Snyk 런타임 센서를 설치할 것입니다. 이는 [Snyk 런타임 센서 시스}} Consultnat).
+Snyk 컨설턴트는 고객과 협력하여 미리 정의된 환경에 Snyk 런타임 센서를 설치할 것입니다. 이는 [Snyk 런타임 센서 시스 Consultnat).
 7. 고객은 작업을 완료하기 위해 Snyk가 필요로 하는 모든 시스템 및 리소스에 신속하게 액세스를 제공합니다.&#x20;
 8. Snyk는 Snyk 솔루션의 일환으로 사용되는 버전 관리 시스템, 저장소 관리, 문제 티켓팅 시스템, 패키징 및 기타 소프트웨어와 같은 제3자 소프트웨어에 대한 지원을 제공하지 않습니다.&#x20;
 9. 중개인이 필요한 경우 고객은 서비스가 시작되기 전에 모든 시스템 요구 사항을 갖추고 있어야 합니다.

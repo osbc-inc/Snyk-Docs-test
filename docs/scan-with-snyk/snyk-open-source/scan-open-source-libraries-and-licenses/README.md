@@ -1,6 +1,6 @@
 # 오픈 소스 라이브러리와 라이선스 스캔
 
-{Snyk Open Source}}를 사용하여 오픈 소스 라이브러리를 스캔할 수 있습니다:&#x20;
+{Snyk Open Source를 사용하여 오픈 소스 라이브러리를 스캔할 수 있습니다:&#x20;
 
 * [Snyk Web UI](../../../getting-started/snyk-web-ui.md)에서
 * [IDE](https://docs.snyk.io/integrations/ide-tools)로
@@ -10,7 +10,7 @@
 
 ## {Snyk Open Source를 Web UI에서 사용하기 위한 사전 요구 사항
 
-{Snyk Open Source}}를 사용하여 오픈 소스 라이브러리를 스캔하기 전에 [시작하기](../../../getting-started/) 단계를 완료했는지 확인하세요.
+{Snyk Open Source를 사용하여 오픈 소스 라이브러리를 스캔하기 전에 [시작하기](../../../getting-started/) 단계를 완료했는지 확인하세요.
 
 ## 오픈 소스 라이브러리의 취약점 확인
 

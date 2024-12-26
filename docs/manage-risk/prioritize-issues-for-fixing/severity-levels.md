@@ -61,7 +61,7 @@ Snyk는 취약점의 특성과 심각성을 지정하기 위해 [CVSS 프레임�
 자세한 내용은 [CVE에 대한 CVSS 소개: 보안 취약점 평가 점수 매기기](https://snyk.io/blog/scoring-security-vulnerabilities-101-introducing-cvss-for-cve/)를 참조하십시오.
 
 {% hint style="info" %}
-심각성 수준은 항상 CVSS 점수와 일치하지 않을 수 있습니다. 예를 들어, {{Snyk Container}}의 Linux 취약점의 심각성 점수는 NVD 심각성 순위에 따라 다를 수 있으니 [Linux 취약성 심각성 이해](../../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md)를 참조하십시오.
+심각성 수준은 항상 CVSS 점수와 일치하지 않을 수 있습니다. 예를 들어, 의 Linux 취약점의 심각성 점수는 NVD 심각성 순위에 따라 다를 수 있으니 [Linux 취약성 심각성 이해](../../scan-with-snyk/snyk-container/how-snyk-container-works/severity-levels-of-detected-linux-vulnerabilities.md)를 참조하십시오.
 {% endhint %}
 
 ### **같은 취약성에 대한 여러 CVSS 점수가 있는 이유**

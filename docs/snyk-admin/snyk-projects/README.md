@@ -93,7 +93,7 @@ Snyk 프로젝트는 특정 Target에서 스캔할 매니페스트 파일과 같
 Targetfile은 Target에서 스캔할 특정 항목을 나타냅니다. 예를 들어 GitHub 리포지토리의 `pom.xml` 파일입니다.
 
 {% hint style="info" %}
-[{{Snyk Code}}](../../scan-with-snyk/snyk-code/) 스캔은 Targetfile을 사용하지 않습니다.
+[](../../scan-with-snyk/snyk-code/) 스캔은 Targetfile을 사용하지 않습니다.
 {% endhint %}
 
 ## Type

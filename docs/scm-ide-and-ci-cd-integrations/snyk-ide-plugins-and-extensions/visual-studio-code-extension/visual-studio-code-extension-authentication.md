@@ -17,7 +17,7 @@ Snyk는 다음 프로토콜을 지원하여 인증합니다:
 
 인증하려면 다음 단계를 따르십시오:
 
-1. 확장 프로그램이 설치된 후 **{{Snyk 아이콘}}**을 탐색 모음에서 클릭한 다음 **연결 및 Workspace 신뢰**를 클릭하십시오:
+1. 확장 프로그램이 설치된 후 ****을 탐색 모음에서 클릭한 다음 **연결 및 Workspace 신뢰**를 클릭하십시오:
 
     <figure><img src="../../../.gitbook/assets/SCR-20240821-qmuv.png" alt="Connect and turst workspace" width="359"><figcaption><p>연결 및 Workspace 신뢰</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ OAuth 2.0 토큰은 정적이 아니며 Snyk 계정 페이지에서 복사할 �
 
 인증하려면 다음 단계를 따르십시오:
 
-1. 확장 프로그램이 설치된 후 **{{Snyk 아이콘}}**을 탐색 모음에서 클릭한 다음 **설정** 아이콘을 클릭하여 **인증 방법**을 찾고 **토큰 인증**으로 변경하십시오:
+1. 확장 프로그램이 설치된 후 ****을 탐색 모음에서 클릭한 다음 **설정** 아이콘을 클릭하여 **인증 방법**을 찾고 **토큰 인증**으로 변경하십시오:
 
     <figure><img src="../../../.gitbook/assets/SCR-20240821-tarb.png" alt="Change authentication method" width="563"><figcaption><p>인증 방법 변경</p></figcaption></figure>
 

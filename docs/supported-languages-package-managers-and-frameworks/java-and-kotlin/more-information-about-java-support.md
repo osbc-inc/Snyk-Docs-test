@@ -105,9 +105,9 @@ Fix PR은 문제가 보고된 POM 파일 내에서 관리되는 버전의 의존
 
 Artifactory 및 Nexus 패키지 레지스트리 통합은 Snyk 엔터프라이즈 요금제 사용자에게 제공됩니다.
 
-- {{Snyk 오픈 소스}}는 Artifactory 또는 Nexus를 통해 개인 패키지를 통해 전환 의존성을 해결합니다.
+- 는 Artifactory 또는 Nexus를 통해 개인 패키지를 통해 전환 의존성을 해결합니다.
 - Snyk는 공개적으로 사용 가능한 인스턴스에 사용자 이름과 비밀번호를 사용하거나 Snyk 브로커를 사용하여 네트워크의 사설 서버에 연결할 수 있습니다.
-- {{Snyk 오픈 소스}}는 Artifactory 및 Nexus 모두와 보안 테스트를 위해 레지스트리와 대화하거나 지역 확인자로써 통합을 제공합니다. [Nexus 저장소 관리자 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) 및 [Artifactory 레지스트리 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)을 참조하세요.
+- 는 Artifactory 및 Nexus 모두와 보안 테스트를 위해 레지스트리와 대화하거나 지역 확인자로써 통합을 제공합니다. [Nexus 저장소 관리자 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) 및 [Artifactory 레지스트리 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)을 참조하세요.
 
 {% hint style="info" %}
 Snyk 엔터프라이즈 사용자가 아니고 Artifactory 또는 Nexus를 사용하는 경우, 분석은 빌드 시스템이 종속성을 검색하고 로컬로 보유하기 때문에 CLI를 사용하여 최상으로 실행됩니다.

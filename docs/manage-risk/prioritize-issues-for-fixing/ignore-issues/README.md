@@ -121,13 +121,13 @@ ignore:
 
 더 자세한 정보는 [보안 정책](../../policies/security-policies/)을 참조하십시오.
 
-## {{Snyk Code에서 문제 무시
+## Snyk Code에서 문제 무시
 
-[{{Snyk Code}}](../../../scan-with-snyk/snyk-code/)를 위해 무시 기능은 다른 제품보다 다양한 문제를 포함할 수 있습니다.
+[](../../../scan-with-snyk/snyk-code/)를 위해 무시 기능은 다른 제품보다 다양한 문제를 포함할 수 있습니다.
 
-{{Snyk Code}}는 입력 코드를 중간 표현으로 변환하여 코드 흐름을 캡처하지만 세부 사항은 추상화합니다.
+는 입력 코드를 중간 표현으로 변환하여 코드 흐름을 캡처하지만 세부 사항은 추상화합니다.
 
-{{Snyk Code}}는 이 중간 표현을 사용하여 코드를 리팩토링하거나 변수의 이름을 변경해도 동일한 문제를 인식할 수 있습니다.
+는 이 중간 표현을 사용하여 코드를 리팩토링하거나 변수의 이름을 변경해도 동일한 문제를 인식할 수 있습니다.
 
 따라서 문제를 무시할 때 Snyk Code는 동일한 무시된 문제가 코드의 여러 위치에서 발생해도 해당 문제를 무시할 수 있습니다. 이는 동일한 무시된 문제가 있는 코드 조각에 대해 여러 중복 보고서를 생성하지 않도록 합니다.
 
@@ -145,7 +145,7 @@ var generalLogFileName = req.query.file || 'standard_log.log';
 var handleLogFile = filesystem.readFile(generalLogFileName, "utf8", function(err, data) {...
 ```
 
-## {{Snyk Container에서 문제 무시
+## Snyk Container에서 문제 무시
 
 `snyk container test`를 사용하여 컨테이너 이미지를 스캔할 때 [The .snyk file](../../policies/the-.snyk-file.md)에서 무시할 문제를 설정하여 중요하지 않은 문제를 무시할 수 있습니다.
 
@@ -155,7 +155,7 @@ Snyk은 작업 디렉토리의 루트에 `.snyk` 파일을 저장 및 버전 관
 
 `snyk container test node --policy-path=.snyk.`
 
-## {{Snyk IaC에서 문제 무시
+## Snyk IaC에서 문제 무시
 
 `snyk iac test`를 사용하여 IaC 구성 파일을 스캔할 때 [The .snyk file](../../policies/the-.snyk-file.md)을 사용하여 중요하지 않은 문제를 무시할 수 있습니다.
 

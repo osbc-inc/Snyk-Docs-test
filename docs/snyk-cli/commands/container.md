@@ -4,7 +4,7 @@
 
 `snyk container` 명령은 컨테이너 이미지에 대한 취약점을 테스트하고 지속적으로 모니터링하며 컨테이너 이미지용 SBOM을 생성합니다.
 
-더 많은 정보는 [Snyk CLI for {{Snyk Container}}](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)를 참조하십시오.
+더 많은 정보는 [Snyk CLI for ](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)를 참조하십시오.
 
 ## `snyk container` 명령 및 도움말 문서
 

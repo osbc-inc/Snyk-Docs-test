@@ -51,7 +51,7 @@ FROM SNYK.SNYK.ISSUES__V_1_0 i
 WHERE p.IS_MONITORED = TRUE                      -- 모니터링된 프로젝트만 포함
      AND i.DELETED_AT IS NULL                    -- 삭제된 문제 제거
      AND ISSUE_STATUS = 'Open'                   -- 열린 문제만 포함
-     AND i.PRODUCT_NAME = '{{Snyk Open Source}}'     -- Snyk Open Source만 포함
+     AND i.PRODUCT_NAME = ''     -- Snyk Open Source만 포함
 GROUP BY o.DISPLAY_NAME                          -- 원하는 집계에 따라 업데이트
 ORDER BY fixable_critical_issues DESC, fixable_high_issues DESC, 
     partially_fixable_critical_issues DESC, partially_fixable_high_issues DESC; -- 원하는 순서에 따라 업데이트
@@ -82,7 +82,7 @@ FROM SNYK.SNYK.ISSUES__V_1_0 i
 WHERE p.IS_MONITORED = TRUE                     -- 모니터링된 프로젝트만 포함
      AND i.DELETED_AT IS NULL                   -- 삭제된 문제 제거
      AND ISSUE_STATUS = 'Open'                  -- 열린 문제만 포함
-     AND i.PRODUCT_NAME = '{{Snyk Code}}'           -- Snyk Open Source만 포함
+     AND i.PRODUCT_NAME = ''           -- Snyk Open Source만 포함
 GROUP BY o.DISPLAY_NAME                         -- 원하는 집계에 따라 업데이트
 ORDER BY high_issues DESC, 
          medium_issues DESC, 

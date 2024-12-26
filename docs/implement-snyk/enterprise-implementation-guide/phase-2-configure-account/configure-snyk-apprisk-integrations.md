@@ -134,7 +134,7 @@ Coverage Gap 필터를 사용하여 다음을 수행할 수 있습니다:
     <figure><img src="../../../.gitbook/assets/image (1) (10).png" alt="Coverage gap 필터를 사용하여 정책에서 벗어난 자산을 찾습니다"><figcaption><p>Coverage gap - Use case 1</p></figcaption></figure>
 - **Snyk 오픈 소스 또는 Snyk 코드 또는 둘 다를 위한 커버리지 요구 사항을 충족하지 않는 모든 자산을 찾습니다**:
 
-    <figure><img src="../../../.gitbook/assets/image (1) (10) (1).png" alt="Coverage gap 필터를 사용하여 {{Snyk Open Source}}이나 {{Snyk Code}}에 대한 정책에서 벗어난 모든 자산을 찾습니다"><figcaption><p>Coverage gap - Use case 2</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (10) (1).png" alt="Coverage gap 필터를 사용하여 이나 에 대한 정책에서 벗어난 모든 자산을 찾습니다"><figcaption><p>Coverage gap - Use case 2</p></figcaption></figure>
 
 #### 태그 <a href="#hardbreak-tags" id="hardbreak-tags"></a>
 

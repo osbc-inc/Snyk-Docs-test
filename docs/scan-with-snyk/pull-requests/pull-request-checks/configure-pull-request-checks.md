@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **릴리스 상태**&#x20;
 
-{Snyk Code}}의 PR Checks는 Closed Beta로 제공되며 엔터프라이즈 요금제에서만 이용할 수 있습니다. 귀하의 조직에서 설정을 원하시는 경우, Snyk 계정팀에 문의하십시오.&#x20;
+{Snyk Code의 PR Checks는 Closed Beta로 제공되며 엔터프라이즈 요금제에서만 이용할 수 있습니다. 귀하의 조직에서 설정을 원하시는 경우, Snyk 계정팀에 문의하십시오.&#x20;
 {% endhint %}
 
 ## 자동 PR Checks를 위한 전제 조건

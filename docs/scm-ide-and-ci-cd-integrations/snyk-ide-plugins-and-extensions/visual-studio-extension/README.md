@@ -9,9 +9,9 @@ Snyk 비주얼 스튜디오 확장 프로그램을 사용하면 코드 및 오�
 **주요 특징:**
 
 - **포괄적인 스캔:** 이 확장 프로그램은 다음과 같은 다양한 보안 문제를 스캔합니다:
-  - [**오픈 소스 보안**](https://snyk.io/product/open-source-security-management/)**:** 직접 및 간접적인 오픈 소스 종속성에서 취약점과 라이선스 문제를 감지합니다. 자동 수정 제안으로 문제 해결이 간소화됩니다. [{{Snyk 오픈 소스}} 문서](https://docs.snyk.io/scan-using-snyk/snyk-open-source)에서 자세히 알아보세요.
-  - [**코드 보안**](https://snyk.io/product/snyk-code/)**:** 사용자 지정 코드에서 보안 취약점을 식별합니다. [{{Snyk 코드}} 문서](https://docs.snyk.io/scan-using-snyk/snyk-code)에서 자세히 알아보세요.
-- **넓은 언어 및 프레임워크 지원:** {{Snyk 오픈 소스}}와 {{Snyk 코드}}는 다양한 패키지 관리자, 프로그래밍 언어 및 프레임워크를 지원하며 최신 기술을 지원하기 위해 지속적으로 업데이트됩니다. 지원되는 언어, 패키지 관리자 및 프레임워크에 대한 가장 최신 정보는 [지원되는 언어 기술 페이지](https://docs.snyk.io/supported-languages-package-managers-and-frameworks)를 참조하세요.
+  - [**오픈 소스 보안**](https://snyk.io/product/open-source-security-management/)**:** 직접 및 간접적인 오픈 소스 종속성에서 취약점과 라이선스 문제를 감지합니다. 자동 수정 제안으로 문제 해결이 간소화됩니다. [ 문서](https://docs.snyk.io/scan-using-snyk/snyk-open-source)에서 자세히 알아보세요.
+  - [**코드 보안**](https://snyk.io/product/snyk-code/)**:** 사용자 지정 코드에서 보안 취약점을 식별합니다. [ 문서](https://docs.snyk.io/scan-using-snyk/snyk-code)에서 자세히 알아보세요.
+- **넓은 언어 및 프레임워크 지원:** 와 는 다양한 패키지 관리자, 프로그래밍 언어 및 프레임워크를 지원하며 최신 기술을 지원하기 위해 지속적으로 업데이트됩니다. 지원되는 언어, 패키지 관리자 및 프레임워크에 대한 가장 최신 정보는 [지원되는 언어 기술 페이지](https://docs.snyk.io/supported-languages-package-managers-and-frameworks)를 참조하세요.
 
 ## 확장 프로그램 설치 및 설정 방법
 

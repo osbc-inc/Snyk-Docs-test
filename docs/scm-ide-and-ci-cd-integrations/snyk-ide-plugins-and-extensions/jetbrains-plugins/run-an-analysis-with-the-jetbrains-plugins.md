@@ -54,7 +54,7 @@ Snyk는 다음 유형의 문제를 보고합니다:
 - **오픈 소스** 문제: 오픈 소스 종속성에서 발견됩니다. [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-open-source-issues)에서 자세한 내용을 확인하십시오.
 - **코드 보안** 문제: 응용 프로그램의 소스 코드에서 발견됩니다. [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues)에서 자세한 내용을 확인하십시오.
 - **코드 품질** 문제: 응용 프로그램 소스 코드에서 발견됩니다. [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues)에서 자세한 내용을 확인하십시오.
-- **{{인프라스트럭처 애스 코드}}** 문제: IaC 파일에서 발견됩니다. [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-infrastructure-as-code-issues)에서 자세한 내용을 확인하십시오.
+- **** 문제: IaC 파일에서 발견됩니다. [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-infrastructure-as-code-issues)에서 자세한 내용을 확인하십시오.
 - **컨테이너** 문제: Kubernetes 워크로드 파일에서 가져온 이미지에서 발견됩니다. [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-container-issues)에서 자세한 내용을 확인하십시오.
 
 {% hint style="info" %}
@@ -100,21 +100,21 @@ Snyk는 다음 유형의 문제를 보고합니다:
 
 ### Snyk 코드 보안 취약점 및 품질 문제
 
-{{Snyk 코드}} 분석은 응용 프로그램 코드에서 발견된 보안 취약점과 코드 품질 문제 목록을 보여줍니다.
+ 분석은 응용 프로그램 코드에서 발견된 보안 취약점과 코드 품질 문제 목록을 보여줍니다.
 
 {% hint style="info" %}
-2025년 6월 24일부터는 {{Snyk 코드}} 품질 문제가 더 이상 제공되지 않습니다.
+2025년 6월 24일부터는  품질 문제가 더 이상 제공되지 않습니다.
 {% endhint %}
 
 자세한 정보 및 문제를 해결하기 위해 다른 사람이 사용한 예제에 대해 알아보려면 보안 취약점 또는 코드 보안 문제를 선택하십시오.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-npba.png" alt=""><figcaption><p>{{Snyk 코드}} 문제 세부 정보</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20241024-npba.png" alt=""><figcaption><p> 문제 세부 정보</p></figcaption></figure>
 
 ### Snyk 오픈 소스 문제
 
-{{Snyk 오픈 소스}} 분석은 모든 매니페스트 파일에서 발견된 취약점 및 라이선스 문제 목록을 보여줍니다. 취약점 또는 라이선스 문제를 선택하여 자세한 정보를 확인할 수 있습니다.
+ 분석은 모든 매니페스트 파일에서 발견된 취약점 및 라이선스 문제 목록을 보여줍니다. 취약점 또는 라이선스 문제를 선택하여 자세한 정보를 확인할 수 있습니다.
 
-<figure><img src="../../../.gitbook/assets/SCR-20241024-nrsk.png" alt="{{Snyk 오픈 소스}} 문제 세부 정보"><figcaption><p>{{Snyk 오픈 소스}} 문제 세부 정보</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SCR-20241024-nrsk.png" alt=" 문제 세부 정보"><figcaption><p> 문제 세부 정보</p></figcaption></figure>
 
 ### Snyk 인프라스트럭처 애스 코드 문제
 
@@ -130,6 +130,6 @@ Snyk는 다음 유형의 문제를 보고합니다:
 
 JetBrains 플러그인은 Kubernetes 구성 파일을 스캔하고 컨테이너 이미지를 찾습니다. 추출된 컨테이너 이미지를 사용하여 빠르게 취약성을 찾아내며 [Snyk 취약성 데이터베이스](https://security.snyk.io)의 최신 정보와 비교 분석합니다.
 
-{{Snyk 컨테이너}} 분석은 이미지에 영향을 줄 수 있는 각 보안 취약점을 보여줍니다. 보다 자세한 정보를 보려면 취약성을 선택하십시오.
+ 분석은 이미지에 영향을 줄 수 있는 각 보안 취약점을 보여줍니다. 보다 자세한 정보를 보려면 취약성을 선택하십시오.
 
 비교 테이블은 심각도 수준(크리티컬 또는 높음)과 함께 표시됩니다. 이는 현재 이미지와 Snyk에서 추천하는 이미지 간의 취약성 차이를 보여주며, 동일한 특성으로 분류된 심각성에 따라 이미지를 업그레이드하고 프로덕션에서 실행 중인 이미지에 대한 신뢰 수준을 높일지 결정하는 데 도움이 됩니다.

@@ -28,7 +28,7 @@
   - **필요한 바이너리 자동 관리** 확인란 선택이 해제된 경우, CLI의 유효한 경로를 제공해야 합니다. 네트워크 구성 또는 방화벽 규칙으로 인해 CLI 다운로드가 불가능한 경우 등 다른 방법으로 CLI를 얻어야 하는 경우 이 옵션을 사용하십시오. Snyk는 항상 CLI의 최신 버전을 사용하는 것을 권장합니다.
 
   <figure><img src=" ../../../.gitbook/assets/image(10)(1)(1)(1).png" alt=""><figcaption><p>VS Code 확장 실행 파일 설정</p></figcaption></figure>
-- **솔루션 설정**: 오픈 소스 스캔을 위한 `snyk test` [CLI 옵션](../../../snyk-cli/commands/test.md)을 추가로 설정합니다. **비관리** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **스캔** 에서는 오픈 소스 패키지의 취약점을 찾기 위해 `--unmanaged` CLI 옵션을 사용합니다. 이를 사용하려면 **모든 프로젝트 스캔**을 비활성화해야 합니다. `--unmanaged` 옵션은 비관리 C/C++ 스캔에 대해만 작동하며 다른 언어에는 사용하지 마십시오. 추가 매개변수는 {{Snyk Code}} 또는 IaC에는 적용되지 않습니다.
+- **솔루션 설정**: 오픈 소스 스캔을 위한 `snyk test` [CLI 옵션](../../../snyk-cli/commands/test.md)을 추가로 설정합니다. **비관리** [**C/C++**](../../../supported-languages-package-managers-and-frameworks/c-c++/) **스캔** 에서는 오픈 소스 패키지의 취약점을 찾기 위해 `--unmanaged` CLI 옵션을 사용합니다. 이를 사용하려면 **모든 프로젝트 스캔**을 비활성화해야 합니다. `--unmanaged` 옵션은 비관리 C/C++ 스캔에 대해만 작동하며 다른 언어에는 사용하지 마십시오. 추가 매개변수는  또는 IaC에는 적용되지 않습니다.
 
 <figure><img src=" ../../../.gitbook/assets/VS_Oprions_Unmagaed.jpg" alt="VS 확장 솔루션 설정 --unmanaged"><figcaption><p>VS 확장 솔루션 설정 --unmanaged</p></figcaption></figure>
 
@@ -37,9 +37,9 @@
 설정에서 다음 결과를 받고 싶은지 선택할 수 있습니다:
 
 - 오픈 소스 취약점
-- {{Snyk Code}} 보안 취약점
-- {{Snyk Code}} 품질 문제
+-  보안 취약점
+-  품질 문제
 
 {% hint style="info" %}
-2025년 6월 24일부터 {{Snyk Code}} 품질 문제는 더 이상 제공되지 않을 것입니다.
+2025년 6월 24일부터  품질 문제는 더 이상 제공되지 않을 것입니다.
 {% endhint %}

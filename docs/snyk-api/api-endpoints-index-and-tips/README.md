@@ -273,17 +273,17 @@
 
 ## IacSettings
 
-### [조직을 위한 {{인프라스트럭처 애스 코드}} 설정 업데이트](../reference/groups-v1.md#group-groupid-org-orgid-members)
+### [조직을 위한  설정 업데이트](../reference/groups-v1.md#group-groupid-org-orgid-members)
 
 **추가 정보**: [원격 IaC 사용자 정의 규칙 번들 사용](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
-### [조직을 위한 {{인프라스트럭처 애스 코드}} 설정 가져오기](../reference/iacsettings.md#orgs-org_id-settings-iac-1)
+### [조직을 위한  설정 가져오기](../reference/iacsettings.md#orgs-org_id-settings-iac-1)
 
-### [그룹을 위한 {{인프라스트럭처 애스 코드}} 설정 업데이트](../reference/iacsettings.md#groups-group_id-settings-iac)
+### [그룹을 위한  설정 업데이트](../reference/iacsettings.md#groups-group_id-settings-iac)
 
 **추가 정보**: [원격 IaC 사용자 정의 규칙 번들 사용](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md), [파이프라인 내의 IaC 사용자 정의 규칙](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/iac-custom-rules-within-a-pipeline.md); [원격 IaC 사용자 정의 규칙 번들 사용](../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/use-iac-custom-rules-with-cli/use-a-remote-iac-custom-rules-bundle.md)
 
-### [그룹을 위한 {{인프라스트럭처 애스 코드}} 설정 가져오기](../reference/iacsettings.md#groups-group_id-settings-iac-1)
+### [그룹을 위한  설정 가져오기](../reference/iacsettings.md#groups-group_id-settings-iac-1)
 
 ## Ignor...
 
@@ -317,7 +317,7 @@
 
 **더 많은 정보:**
 [시나리오: 이슈 대량 무시](scenarios-for-using-the-snyk-api.md#bulk-ignore-issues);\
-[조직 내 모든 프로젝트에서 {{Snyk Code}}의 모든 이슈 포함 목록](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
+[조직 내 모든 프로젝트에서 의 모든 이슈 포함 목록](scenarios-for-using-the-snyk-api.md#list-all-issues-including-snyk-code-issues-in-all-the-projects-in-an-organization)
 
 [이슈 확인](../reference/issues.md#orgs-org_id-issues-issue_id) (조직용)
 
@@ -333,12 +333,12 @@
 
 [모든 Jira 이슈 목록](../reference/jira-v1.md#org-orgid-project-projectid-jira-issues)
 
-**더 많은 정보:** [Jira 통합](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [CI/CD 통합에서 {{Snyk} 테스트 및 snyk monitor](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+**더 많은 정보:** [Jira 통합](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md); [CI/CD 통합에서 Snyk} 테스트 및 snyk monitor](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 [Jira 이슈 생성](../reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issuev)
 
 **더 많은 정보:** [Jira 통합](../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md);\
-[CI/CD 통합에서 {{Snyk} 테스트 및 snyk monitor](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
+[CI/CD 통합에서 Snyk} 테스트 및 snyk monitor](../../scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/snyk-ci-cd-integration-deployment-and-strategies/snyk-test-and-snyk-monitor-in-ci-cd-integration.md)
 
 ## 라이선스 (v1)
 
@@ -457,7 +457,7 @@
 
 [프로젝트에 태그 추가](../reference/projects-v1.md#org-orgid-project-projectid-tags)
 
-**더 많은 정보:** [프로젝트 태그](../../snyk-admin/introduction-to-snyk-projects/project-tags.md); [인사이트 설정: {{Snyk Open Source}}, Code, 그리고 Container Projects 연관 설정](../../manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-associating-snyk-open-source-code-and-container-projects.md);\
+**더 많은 정보:** [프로젝트 태그](../../snyk-admin/introduction-to-snyk-projects/project-tags.md); [인사이트 설정: , Code, 그리고 Container Projects 연관 설정](../../manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-associating-snyk-open-source-code-and-container-projects.md);\
 [시나리오: 어떤 이유로든 Broker 토큰 회전 또는 변경](scenarios-for-using-the-snyk-api.md#rotate-or-change-your-broker-token-for-any-reason)
 
 [프로젝트에서 태그 제거](../reference/projects-v1.md#org-orgid-project-projectid-tags-remove)

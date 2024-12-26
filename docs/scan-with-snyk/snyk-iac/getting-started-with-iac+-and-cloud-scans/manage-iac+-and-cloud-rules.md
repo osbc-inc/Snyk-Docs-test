@@ -4,7 +4,7 @@
 귀하의 조직에 활성화된 제품에 따라 규칙 설정 페이지의 이름이 다를 수 있습니다.
 {% endhint %}
 
-귀하의 조직에서 [{{Snyk IaC}}+](../iac+-code-to-cloud-capabilities/)가 활성화된 경우, 조직의 **설정 > Snyk Cloud & IaC** 페이지에서 모든 Snyk 클라우드 및 IaC 규칙 목록을 볼 수 있습니다.
+귀하의 조직에서 [+](../iac+-code-to-cloud-capabilities/)가 활성화된 경우, 조직의 **설정 > Snyk Cloud & IaC** 페이지에서 모든 Snyk 클라우드 및 IaC 규칙 목록을 볼 수 있습니다.
 
 각 규칙은 [Cloud Security Rules](https://security.snyk.io/rules/cloud/) 사이트에서 자세한 수정 안내로 연결됩니다.
 

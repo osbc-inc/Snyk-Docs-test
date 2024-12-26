@@ -33,7 +33,7 @@ Kubernetes 통합에서 가져온 이미지에서 발견된 응용 프로그램�
 * Go binaries의 경우, Snyk는 Go 모듈 지원으로 빌드된 모든 유형의 Go binary를 지원합니다.
 {% endhint %}
 
-## 취약점을 감지하기 위한 {{Snyk 컨테이너}} CLI 옵션
+## 취약점을 감지하기 위한  CLI 옵션
 
 ### App vulns 옵션
 
@@ -43,7 +43,7 @@ CLI 버전 1.1090.0 (2023-01-24) 이상에서는 Snyk는 기본적으로 이미�
 
 ### Java 응용 프로그램
 
-{{Snyk 컨테이너}} CLI는 JAR 또는 uber-jars 형식으로 이미지에 포함된 Java 응용 프로그램을 스캔할 수 있습니다. uber-jars 또는 shaded jars의 경우, Snyk는 패키지 버전 및 종속성을 해결하기 위해 `pom.properties` 매니페스트 파일을 사용합니다. JAR 파일에 `pom.properties` 파일이 포함되는지는 JAR 빌드 프로세스 중에 사용된 도구 및 구성에 따라 다릅니다. Maven 및 Maven Shade Plugin으로 빌드된 JAR는 기본적으로 `pom.properties` 매니페스트 파일이 포함됩니다.
+ CLI는 JAR 또는 uber-jars 형식으로 이미지에 포함된 Java 응용 프로그램을 스캔할 수 있습니다. uber-jars 또는 shaded jars의 경우, Snyk는 패키지 버전 및 종속성을 해결하기 위해 `pom.properties` 매니페스트 파일을 사용합니다. JAR 파일에 `pom.properties` 파일이 포함되는지는 JAR 빌드 프로세스 중에 사용된 도구 및 구성에 따라 다릅니다. Maven 및 Maven Shade Plugin으로 빌드된 JAR는 기본적으로 `pom.properties` 매니페스트 파일이 포함됩니다.
 
 ### 중첩된 jar 깊이 옵션
 
@@ -53,7 +53,7 @@ CLI 버전 1.1090.0 (2023-01-24) 이상에서는 Snyk는 기본적으로 이미�
 
 ### 알 수 없는 버전으로 끝나는 Maven 패키지
 
-{{Snyk 컨테이너}} CLI는 스캔된 JAR에 `pom.properties` 매니페스트 파일이 포함되지 않은 경우 Maven 패키지가 @unknown 버전으로 끝나는 것으로 보일 수 있습니다. 패키지 버전이 @unknown으로 표시되는 다른 이유에 대한 자세한 내용은 [Why-does-my-Maven-package-show-Unknown-through-the-SCM](https://support.snyk.io/s/article/Why-does-my-Maven-package-show-unknown)를 참조하세요.
+ CLI는 스캔된 JAR에 `pom.properties` 매니페스트 파일이 포함되지 않은 경우 Maven 패키지가 @unknown 버전으로 끝나는 것으로 보일 수 있습니다. 패키지 버전이 @unknown으로 표시되는 다른 이유에 대한 자세한 내용은 [Why-does-my-Maven-package-show-Unknown-through-the-SCM](https://support.snyk.io/s/article/Why-does-my-Maven-package-show-unknown)를 참조하세요.
 
 ## 응용 프로그램 취약점과 라이선스 문제 보기
 

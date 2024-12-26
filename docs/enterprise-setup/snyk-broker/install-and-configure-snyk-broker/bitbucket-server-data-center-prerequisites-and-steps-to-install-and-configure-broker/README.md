@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **기능 가용성**
 
-{{Snyk Code}} PR Checks는 Bitbucket DC/Server 버전 7.0 이상에서만 사용할 수 있습니다.
+ PR Checks는 Bitbucket DC/Server 버전 7.0 이상에서만 사용할 수 있습니다.
 {% endhint %}
 
 설치 전, 사용할 설치 방법([Helm](../install-and-configure-broker-using-helm.md) 또는 [Docker](../install-and-configure-broker-using-docker.md))에 대한 **일반 지침**을 확인해주세요.

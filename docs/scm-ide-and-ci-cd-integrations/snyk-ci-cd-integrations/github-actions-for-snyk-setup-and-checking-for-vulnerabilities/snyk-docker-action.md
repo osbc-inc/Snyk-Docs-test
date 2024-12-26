@@ -18,7 +18,7 @@ jobs:
     - name: Snyk를 실행하여 Docker 이미지의 취약점 확인
       uses: snyk/actions/docker@master
       env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        SNYK_TOKEN: $
       with:
         image: your/image-to-test
 ```
@@ -47,7 +47,7 @@ jobs:
     - name: Snyk를 실행하여 Docker 이미지의 취약점 확인
       uses: snyk/actions/docker@master
       env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        SNYK_TOKEN: $
       with:
         image: your/image-to-test
         args: --severity-threshold=high
@@ -58,7 +58,7 @@ jobs:
 도커 액션은 GitHub 코드 스캔과 통합을 지원하며 GitHub 보안 탭에서 문제를 표시할 수 있습니다. `args`에 `--file=Dockerfile`을 참조하면 `snyk.sarif` 파일이 생성되어 GitHub 코드 스캔에 업로드할 수 있습니다.
 
 ```yaml
-name: {{Snyk Container}}
+name: 
 on: push
 jobs:
   snyk:
@@ -71,7 +71,7 @@ jobs:
       continue-on-error: true
       uses: snyk/actions/docker@master
       env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        SNYK_TOKEN: $
       with:
         image: your/image-to-test
         args: --file=Dockerfile

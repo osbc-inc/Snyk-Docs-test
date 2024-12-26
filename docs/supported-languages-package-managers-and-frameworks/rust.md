@@ -2,7 +2,7 @@
 
 ## 적용 가능성
 
-Rust에 대한 Snyk는 **{{Snyk 오픈 소스}}에 대해서만 지원**됩니다.
+Rust에 대한 Snyk는 **에 대해서만 지원**됩니다.
 
 Snyk는 API를 통해 Rust 애플리케이션의 테스트를 지원합니다. 자세한 내용은 [Test an SBOM document for vulnerabilities](../snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)를 참조하십시오.
 

@@ -1,16 +1,16 @@
 # 컨테이너 이미지 스캔
 
-{{Snyk 컨테이너}}는 컨테이너 레지스트리 스캔을 기반으로 컨테이너 이미지에서 취약점을 찾아 수정하는 데 도움을 줍니다.
+는 컨테이너 레지스트리 스캔을 기반으로 컨테이너 이미지에서 취약점을 찾아 수정하는 데 도움을 줍니다.
 
-{{Snyk 컨테이너}}를 사용하여 컨테이너 이미지를 스캔할 수 있습니다: 
+를 사용하여 컨테이너 이미지를 스캔할 수 있습니다: 
 
 - [Snyk 웹 UI](use-snyk-container/)에서
 - [Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)를 통해
 - [브로커](../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)로 (자체 호스트된 컨테이너 레지스트리용)
 
-## **{{Snyk 컨테이너}}를 웹 UI에서 사용하기 위한 전제조건**
+## **를 웹 UI에서 사용하기 위한 전제조건**
 
-{{Snyk 컨테이너}}를 사용하여 컨테이너 이미지를 스캔하기 전에 다음을 확인하세요:
+를 사용하여 컨테이너 이미지를 스캔하기 전에 다음을 확인하세요:
 
 - Snyk 계정을 생성하거나 로그인합니다.
 - Docker Hub와 같은 지원되는 컨테이너 레지스트리와 통합을 설정합니다. [컨테이너 보안 통합](container-registry-integrations/)을 참조하세요.

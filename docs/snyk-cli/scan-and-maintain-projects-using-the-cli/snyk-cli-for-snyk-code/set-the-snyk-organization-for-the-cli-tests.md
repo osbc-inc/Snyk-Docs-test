@@ -2,9 +2,9 @@
 
 Snyk 계정에 여러 조직이 있는 경우 CLI를 사용하여 코드를 테스트하기 전에 테스트 수를 지정할 Snyk 조직을 지정해야합니다.
 
-CLI 테스트 수는 조직 **설정** 페이지 -> **사용량** 탭 -> **테스트 사용량** 섹션 -> **{{Snyk Code}}** 필드에서 확인할 수 있습니다:
+CLI 테스트 수는 조직 **설정** 페이지 -> **사용량** 탭 -> **테스트 사용량** 섹션 -> **** 필드에서 확인할 수 있습니다:
 
-<figure><img src="../../../.gitbook/assets/snyk-code-usage.png" alt="{{Snyk Code}} 허용된 테스트 사용량"><figcaption><p>{{Snyk Code}} 허용된 테스트 사용량</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk-code-usage.png" alt=" 허용된 테스트 사용량"><figcaption><p> 허용된 테스트 사용량</p></figcaption></figure>
 
 기본적으로 CLI는 **계정 설정**에서 정의된 **기본 조직**에서 테스트를 실행합니다:
 
@@ -61,11 +61,11 @@ org updated
 snyk config set org=a7708807-3881-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-<figure><img src="../../../.gitbook/assets/{{Snyk Code}} - CLI - Org - Setting global default.png" alt="조직 설정 및 확인 명령"><figcaption><p>조직 설정 및 확인 명령</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ - CLI - Org - Setting global default.png" alt="조직 설정 및 확인 명령"><figcaption><p>조직 설정 및 확인 명령</p></figcaption></figure>
 
 이제부터 모든 CLI 테스트는 기본적으로 Snyk 데모 조직으로 실행되며 Snyk 데모 조직 ID가 테스트 결과에 표시됩니다:
 
-<figure><img src="../../../.gitbook/assets/{{Snyk Code}} - CLI - Organization - Global Settings - Results - 2.png" alt="Snyk 데모 조직 ID 표시 결과"><figcaption><p>Snyk 데모 조직 ID 표시 결과</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ - CLI - Organization - Global Settings - Results - 2.png" alt="Snyk 데모 조직 ID 표시 결과"><figcaption><p>Snyk 데모 조직 ID 표시 결과</p></figcaption></figure>
 
 ## 특정 CLI 테스트를 위해 로컬로 조직 설정
 
@@ -85,4 +85,4 @@ snyk code test --org=snyk-xxxx-xxx
 
 이 테스트 결과에 Snyk Test 조직의 내부 이름이 표시됩니다:
 
-![테스트 결과에 내부 이름 표시](<../../../.gitbook/assets/{{Snyk Code}} - CLI - Organization - Specific test Settings - Results - 2.png>)
+![테스트 결과에 내부 이름 표시](<../../../.gitbook/assets/ - CLI - Organization - Specific test Settings - Results - 2.png>)

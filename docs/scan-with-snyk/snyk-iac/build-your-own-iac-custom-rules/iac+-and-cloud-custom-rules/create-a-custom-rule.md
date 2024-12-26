@@ -57,7 +57,7 @@ Rule ID: NEW_PASSWORD_POLICY
 Title: Increase the number of characters in our password policy
 Severity: high
 Description: All of our password policies now require a minimum of 17 characters instead of the CIS recommendation of 14 characters
-Is this rule intended for {{Snyk IaC}}, Snyk Cloud, or both? cloud
+Is this rule intended for , Snyk Cloud, or both? cloud
 Input type: tf
 Does this rule need more than one resource type? No
 Resource type: aws_iam_account_password_policy

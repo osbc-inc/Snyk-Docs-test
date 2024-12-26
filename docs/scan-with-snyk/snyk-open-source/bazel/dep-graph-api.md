@@ -16,7 +16,7 @@ Dep Graph API에는 추가 권한이 필요합니다. 액세스 권한을 요청
 
     ```
     curl -X POST 'https://api.snyk.io/v1/test/dep-graph' \
-      -H 'Authorization: token {{your token}}' \
+      -H 'Authorization: token ' \
       -H 'Content-Type: application/json; charset=utf-8' \
       -d @dep-graph.json
     ```

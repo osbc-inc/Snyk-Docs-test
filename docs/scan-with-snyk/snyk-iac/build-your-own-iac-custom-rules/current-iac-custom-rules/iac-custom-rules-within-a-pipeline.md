@@ -63,9 +63,9 @@ jobs:
 사용자가 `main`에 직접 푸시할 수 없도록 먼저 `Settings` -> `Branches`에서 `main` 브랜치를 구성해야 합니다.
 {% endhint %}
 
-## {{Snyk IaC}} GitHub Action
+##  GitHub Action
 
-규칙을 테스트하는 또 다른 방법은 [Snyk CLI](../../../../snyk-cli/)를 사용하여 컨트랙트를 테스트하는 것입니다. 이를 위해 [{{Snyk IaC}} GitHub Action](https://github.com/snyk/actions/tree/master/iac)을 사용하여 생성된 번들이 CLI에서 읽을 수 있는지 확인합니다.
+규칙을 테스트하는 또 다른 방법은 [Snyk CLI](../../../../snyk-cli/)를 사용하여 컨트랙트를 테스트하는 것입니다. 이를 위해 [ GitHub Action](https://github.com/snyk/actions/tree/master/iac)을 사용하여 생성된 번들이 CLI에서 읽을 수 있는지 확인합니다.
 
 이를 위해 Snyk CLI를 설치하는 단계와 `SNYK_TOKEN`이 필요합니다. 이는 Snyk 계정 설정에서 찾을 수 있습니다.
 
@@ -91,7 +91,7 @@ jobs:
         continue-on-error: true
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
         with:
           args: --rules=bundle.tar.gz
 ```
@@ -133,13 +133,13 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.OCI_REGISTRY_USERNAME }}
-          password: ${{ secrets.OCI_REGISTRY_PASSWORD }}
+          username: $
+          password: $
 
       - name: Publish rules
         run: snyk-iac-rules push --registry $OCI_REGISTRY_URL bundle.tar.gz
         env:
-          OCI_REGISTRY_URL: "${{ secrets.OCI_REGISTRY_NAME }}:v1"
+          OCI_REGISTRY_URL: "$:v1"
 ```
 {% endcode %}
 
@@ -160,11 +160,11 @@ CI/CD 파이프라인 전체에 영향을 주지 않고 사용자 정의 규칙�
       - name: Publish experimental rules
         run: snyk-iac-rules push --registry $OCI_REGISTRY_URL bundle.tar.gz
         env:
-          OCI_REGISTRY_URL: "${{ secrets.OCI_REGISTRY_NAME }}:v1"
+          OCI_REGISTRY_URL: "$:v1"
       - name: Publish rules
         run: snyk-iac-rules push --registry $OCI_REGISTRY_URL bundle.tar.gz
         env:
-          OCI_REGISTRY_URL: "${{ secrets.OCI_REGISTRY_NAME }}:v2-beta"
+          OCI_REGISTRY_URL: "$:v2-beta"
 ```
 {% endcode %}
 
@@ -185,13 +185,13 @@ CI/CD 파이프라인 전체에 영향을 주지 않고 사용자 정의 규칙�
         run: |
           curl --location --request PATCH 'https://api.snyk.io/rest/groups/<group id>/settings/iac/?version=2021-11-03~beta' \
           --header 'Content-Type: application/vnd.api+json' \
-          --header 'Authorization: token ${{ secrets.SNYK_TOKEN }}' \
+          --header 'Authorization: token $' \
           --data-raw '{
             "data": {
                   "type": "iac_settings",
                   "attributes": {
                     "custom_rules": {
-                      "oci_registry_url": "registry-1.${{ secrets.OCI_REGISTRY_NAME }}",
+                      "oci_registry_url": "registry-1.$",
                       "oci_registry_tag": "v1",
                       "is_enabled": true
                     }
@@ -206,7 +206,7 @@ CI/CD 파이프라인 전체에 영향을 주지 않고 사용자 정의 규칙�
 `v2-beta`와 같이 다른 번들을 사용하는 조직을 구성하려면 Snyk 설정 페이지를 사용하십시오. 새 번들을 구성하거나 사용자 정의 규칙을 사용하기 위해 CI/CD 파이프라인에서 환경 변수 사용을 허용하려면 사용자 정의 규칙을 비활성화하세요.
 {% endhint %}
 
-이 그룹 하위의 조직 중 하나와 함께 인증하고, {{Snyk IaC}} GitHub Action을 workflow에 추가합니다:
+이 그룹 하위의 조직 중 하나와 함께 인증하고,  GitHub Action을 workflow에 추가합니다:
 
 ```
 name: Snyk Infrastructure as Code Custom Rules
@@ -224,7 +224,7 @@ jobs:
         continue-on-error: false
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $
 ```
 
 결과적으로 GitHub 액션이 생성된 구성 오류가 해결될 때까지 실패합니다:
@@ -265,8 +265,8 @@ jobs:
         continue-on-error: false
         uses: snyk/actions/iac@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          SNYK_CFG_OCI_REGISTRY_URL: ${{ secrets.OCI_REGISTRY_URL }}
-          SNYK_CFG_OCI_REGISTRY_USERNAME: ${{ secrets.OCI_REGISTRY_USERNAME }}
-          SNYK_CFG_OCI_REGISTRY_PASSWORD: ${{ secrets.OCI_REGISTRY_PASSWORD }}
+          SNYK_TOKEN: $
+          SNYK_CFG_OCI_REGISTRY_URL: $
+          SNYK_CFG_OCI_REGISTRY_USERNAME: $
+          SNYK_CFG_OCI_REGISTRY_PASSWORD: $
 ```

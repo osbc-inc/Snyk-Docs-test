@@ -4,20 +4,20 @@
 
 [Snyk](https://snyk.io/)은 보안 취약점을 스캔하고 모니터링하기 위한 개발자 중심의 클라우드 네이티브 보안 도구입니다. Snyk는 다음과 같은 다양한 콘텐츠 유형에 대해 보안 문제를 스캔합니다:
 
-* [**{{Snyk 오픈 소스}}**](https://docs.snyk.io/scan-using-snyk/snyk-open-source): 오픈 소스 취약점 찾기 및 자동으로 수정하기
-* [**{{Snyk 코드}}**](https://docs.snyk.io/scan-using-snyk/snyk-code): 실시간으로 응용 프로그램 코드의 취약점 찾기 및 수정하기
-* [**{{Snyk 컨테이너}}**](https://docs.snyk.io/scan-using-snyk/snyk-container): 컨테이너 이미지와 Kubernetes 응용 프로그램의 취약점 찾기 및 수정하기
-* [**{{Snyk IaC}}**](https://docs.snyk.io/scan-using-snyk/scan-infrastructure): Terraform 및 Kubernetes 코드의 보안 구성 문제 찾기 및 수정하기
+* [****](https://docs.snyk.io/scan-using-snyk/snyk-open-source): 오픈 소스 취약점 찾기 및 자동으로 수정하기
+* [****](https://docs.snyk.io/scan-using-snyk/snyk-code): 실시간으로 응용 프로그램 코드의 취약점 찾기 및 수정하기
+* [****](https://docs.snyk.io/scan-using-snyk/snyk-container): 컨테이너 이미지와 Kubernetes 응용 프로그램의 취약점 찾기 및 수정하기
+* [****](https://docs.snyk.io/scan-using-snyk/scan-infrastructure): Terraform 및 Kubernetes 코드의 보안 구성 문제 찾기 및 수정하기
 
 [Snyk가 무엇을 할 수 있는지 알아보고 무료 계정으로 등록하세요](https://snyk.io/).
 
-**{{Snyk CLI는 Snyk 기능을 개발 워크플로우로 가져올 수 있습니다**. CLI를 로컬에서 명령줄 또는 IDE에서 실행할 수 있습니다. 또한 CI/CD 파이프라인에서 CLI를 실행할 수 있습니다. 다음은 Snyk CLI 테스트 명령어의 예제를 보여줍니다.
+**Snyk CLI는 Snyk 기능을 개발 워크플로우로 가져올 수 있습니다**. CLI를 로컬에서 명령줄 또는 IDE에서 실행할 수 있습니다. 또한 CI/CD 파이프라인에서 CLI를 실행할 수 있습니다. 다음은 Snyk CLI 테스트 명령어의 예제를 보여줍니다.
 
 <figure><img src="../.gitbook/assets/snyk-cli-screenshot.png" alt="Snyk CLI 테스트 명령어 결과 예제"><figcaption><p>Snyk CLI 테스트 명령어 결과</p></figcaption></figure>
 
 Snyk CLI 스캔은 **다양한 언어 및 도구를 지원**합니다. 자세한 정보는 다음을 참조하세요:
 
-* [오픈 소스 및 {{Snyk 코드}}용 지원되는 언어, 패키지 관리자 및 프레임워크](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview)
+* [오픈 소스 및 용 지원되는 언어, 패키지 관리자 및 프레임워크](https://docs.snyk.io/getting-started/supported-languages-frameworks-and-feature-availability-overview)
 * [컨테이너 용 지원되는 운영 체제 배포](https://docs.snyk.io/scan-with-snyk/snyk-container/how-snyk-container-works/supported-operating-system-distributions)
 * [IaC 언어 및 클라우드 제공 업체 지원](https://docs.snyk.io/scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources)
 
@@ -56,10 +56,10 @@ CLI를 설치하고 기계를 인증한 후 **오픈 소스 프로젝트를 스�
 
 각 콘텐츠 유형을 스캔하기 위해 Snyk CLI를 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오:
 
-* [Snyk CLI for {{Snyk Open Source}}](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source) 및 [`test`](https://docs.snyk.io/snyk-cli/commands/test) 및 [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor) 명령에 대한 CLI 도움말
-* [Snyk CLI for {{Snyk Code}}](https://docs.snyk.io/snyk-cli/commands/code) 및 [Snyk Code CLI 도움말](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code)
-* [Snyk CLI for {{Snyk Container}}](https://docs.snyk.io/snyk-cli/commands/container) 및 Docker 스캔을 포함한 [Snyk Container CLI 도움말](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)
-* [Snyk CLI for {{Snyk IaC}}](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac) 및 Terraform과 Kubernetes(K8s) 프로젝트를 포함한 [Snyk IAC CLI 도움말](https://docs.snyk.io/snyk-cli/commands/iac)
+* [Snyk CLI for ](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source) 및 [`test`](https://docs.snyk.io/snyk-cli/commands/test) 및 [`monitor`](https://docs.snyk.io/snyk-cli/commands/monitor) 명령에 대한 CLI 도움말
+* [Snyk CLI for ](https://docs.snyk.io/snyk-cli/commands/code) 및 [Snyk Code CLI 도움말](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code)
+* [Snyk CLI for ](https://docs.snyk.io/snyk-cli/commands/container) 및 Docker 스캔을 포함한 [Snyk Container CLI 도움말](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container)
+* [Snyk CLI for ](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac) 및 Terraform과 Kubernetes(K8s) 프로젝트를 포함한 [Snyk IAC CLI 도움말](https://docs.snyk.io/snyk-cli/commands/iac)
 
 ## 오픈 소스 또는 컨테이너 프로젝트 모니터링
 

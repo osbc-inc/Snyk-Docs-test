@@ -22,8 +22,8 @@ IDE에서 로그 수준을 디버그로 변경할 수 있습니다:
 
 <figure><img src="../../../.gitbook/assets/image (489).png" alt="액션 검색"><figcaption><p>액션 검색</p></figcaption></figure>
 
-- `{{Snyk Code}}`는 일반 디버그 로깅을 활성화합니다 (플러그인 버전 2.6.0까지만).
-- `{{Snyk Code}}RequestLogging`은 {{Snyk Code}} API와 통신할 때 HTTP 요청의 상세 프로토콜을 활성화합니다 (플러그인 버전 2.6.0까지만).
+- ``는 일반 디버그 로깅을 활성화합니다 (플러그인 버전 2.6.0까지만).
+- `RequestLogging`은  API와 통신할 때 HTTP 요청의 상세 프로토콜을 활성화합니다 (플러그인 버전 2.6.0까지만).
 - `Snyk Language Server`는 백그라운드에서 언어 서버의 디버그 로깅을 활성화합니다.
 
 <figure><img src="../../../.gitbook/assets/image (490).png" alt="Snyk Language Server 구성"><figcaption><p>Snyk Language Server 구성</p></figcaption></figure>
@@ -32,13 +32,13 @@ IDE에서 로그 수준을 디버그로 변경할 수 있습니다:
 
 플러그인이 잘못된 구성 때문에 네트워크 문제를 겪으면 IDE가 사용자 지정 인증서를 해결하는 방법에 대해 [JetBrains 문서](https://www.jetbrains.com/help/idea/ssl-certificates.html)를 참조하십시오.
 
-## IntelliJ에서 {{Snyk Code}} 체크박스 비활성화
+## IntelliJ에서  체크박스 비활성화
 
-때때로 JetBrains IntelliJ 플러그인의 {{Snyk Code}} 체크박스가 비활성화됩니다. 몇 가지 가능한 이유는 다음과 같습니다:
+때때로 JetBrains IntelliJ 플러그인의  체크박스가 비활성화됩니다. 몇 가지 가능한 이유는 다음과 같습니다:
 
 - **네트워크 또는 프록시 설정:** 네트워크 또는 프록시 설정이 올바르게 구성되지 않은 경우 체크박스가 비활성화될 수 있습니다. MITM 프록시 및 인증서 대체 여부를 확인하십시오. 또한 CLI 또는 cURL과 같은 다른 도구를 사용하여 엔드포인트 API 및 deeproxy에 연결할 수 있는지 확인하십시오.&#x20;
-- **잘못된 엔드포인트 주소:** {{Snyk Code}} 플러그인 구성에서 엔드포인트 주소가 잘못되어 있는 경우 체크박스가 비활성화됩니다. 이를 해결하려면 엔드포인트 주소가 올바른지 확인하고 지침에 따라 IntelliJ를 재시작하십시오.
-- **{{Snyk Code}}가 서버 측에서 비활성화됨:** Snyk 조직 설정에서 {{Snyk Code}}가 비활성화된 경우 체크박스가 비활성화됩니다. 이를 해결하려면 IntelliJ 설정에서 표시된 지침을 따르십시오. IDE를 재시작하십시오.
+- **잘못된 엔드포인트 주소:**  플러그인 구성에서 엔드포인트 주소가 잘못되어 있는 경우 체크박스가 비활성화됩니다. 이를 해결하려면 엔드포인트 주소가 올바른지 확인하고 지침에 따라 IntelliJ를 재시작하십시오.
+- **가 서버 측에서 비활성화됨:** Snyk 조직 설정에서 가 비활성화된 경우 체크박스가 비활성화됩니다. 이를 해결하려면 IntelliJ 설정에서 표시된 지침을 따르십시오. IDE를 재시작하십시오.
 - **JetBrains 로그를 확인하십시오:** 추가 정보는 [IDE 로그 파일 찾기](https://intellij-support.jetbrains.com/hc/en-us/articles/207241085-Locating-IDE-log-files)를 참조하십시오.
 
 ## 정의되지 않은 Python 버전
@@ -47,7 +47,7 @@ Snyk은 종속성을 스캔하고 찾기 위해 Python을 사용합니다.&#x20;
 
 여러 Python 버전을 사용하는 경우 올바른 Python 명령을 실행하는 데 `-command` 옵션을 사용하십시오. 플러그인은 프로젝트와 관련된 Python 버전을 감지하지 못합니다.
 
-## {{Snyk Container}} 및 Kubernetes JetBrains 통합 작동 방식
+##  및 Kubernetes JetBrains 통합 작동 방식
 
 JetBrains 플러그인은 Kubernetes 작업량 파일을 스캔하고 사용된 이미지를 수집합니다. 플러그인이 컨테이너 이미지를 올바르게 스캔하고 있는지 문제 해결하려면 다음을 확인할 수 있습니다:
 

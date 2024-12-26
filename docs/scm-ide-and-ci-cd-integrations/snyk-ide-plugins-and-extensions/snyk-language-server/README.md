@@ -77,8 +77,8 @@ PROTOCOL\_VERSION은 3이지만, 계속된 개발에 따라 증가할 수 있습
 
 ```json
 {
-  "activateSnykOpenSource": "true", // {{Snyk Open Source}}를 활성화함 - 기본값은 true
-  "activateSnykCode": "false", // 조직에서 활성화된 경우 {{Snyk Code}}를 활성화함 - 기본값은 false
+  "activateSnykOpenSource": "true", // 를 활성화함 - 기본값은 true
+  "activateSnykCode": "false", // 조직에서 활성화된 경우 를 활성화함 - 기본값은 false
   "activateSnykIac":  "true", // Infrastructure as Code를 활성화함 - 기본값은 true
   "insecure": "false", // 사용자 지정 CA(Certification Authorities) 허용
   "endpoint":  "https://example.com", // 다중 테넌트 및 단일 테넌트 설정에 필요한 Snyk API 엔드포인트

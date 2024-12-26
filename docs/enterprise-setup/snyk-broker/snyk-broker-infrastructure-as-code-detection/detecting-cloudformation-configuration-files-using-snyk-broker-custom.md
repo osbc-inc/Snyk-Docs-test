@@ -33,37 +33,37 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
 
 ```
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/repos/:name/:repo/contents/:path*/*.yaml",
   "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/repos/:name/:repo/contents/:path*%2F*.yaml",
   "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/repos/:name/:repo/contents/:path*/*.yml",
   "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/repos/:name/:repo/contents/:path*%2F*.yml",
   "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/repos/:name/:repo/contents/:path*/*.json",
   "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/repos/:name/:repo/contents/:path*%2F*.json",
   "origin": "https://${GITHUB_TOKEN}@${GITHUB_API}"
@@ -74,7 +74,7 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
 
 ```
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/projects/:project/repos/:repo/browse*/*.yaml",
   "origin": "https://${BITBUCKET_API}",
@@ -85,7 +85,7 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
   }
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/projects/:project/repos/:repo/browse*%2F*.yaml",
   "origin": "https://${BITBUCKET_API}",
@@ -96,7 +96,7 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
   }
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/projects/:project/repos/:repo/browse*/*.yml",
   "origin": "https://${BITBUCKET_API}",
@@ -107,7 +107,7 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
   }
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/projects/:project/repos/:repo/browse*%2F*.yml",
   "origin": "https://${BITBUCKET_API}",
@@ -118,7 +118,7 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
   }
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/projects/:project/repos/:repo/browse*/*.json",
   "origin": "https://${BITBUCKET_API}",
@@ -129,7 +129,7 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
   }
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/projects/:project/repos/:repo/browse*%2F*.json",
   "origin": "https://${BITBUCKET_API}",
@@ -145,37 +145,37 @@ CloudFormation 스캔 기능은 리포지토리의 YAML 또는 JSON 파일에 �
 
 ```
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/api/v4/projects/:project/repository/files*/*.yaml",
   "origin": "https://${GITLAB}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/api/v4/projects/:project/repository/files*%2F*.yaml",
   "origin": "https://${GITLAB}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/api/v4/projects/:project/repository/files*/*.yml",
   "origin": "https://${GITLAB}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/api/v4/projects/:project/repository/files*%2F*.yml",
   "origin": "https://${GITLAB}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/api/v4/projects/:project/repository/files*/*.json",
   "origin": "https://${GITLAB}"
 },
 {
-  "//": "{{인프라스트럭처-애스-코드}} 이슈를 결정하는 데 사용됨",
+  "//": " 이슈를 결정하는 데 사용됨",
   "method": "GET",
   "path": "/api/v4/projects/:project/repository/files*%2F*.json",
   "origin": "https://${GITLAB}"
