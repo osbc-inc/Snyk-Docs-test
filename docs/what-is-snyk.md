@@ -6,8 +6,8 @@ Snyk는 코드, 오픈 소스 의존성, 컨테이너 이미지 및 인프라 �
 
 * **Snyk Open Source**와 **Snyk Code**: [지원하는 언어 및 프레임워크](supported-languages-package-managers-and-frameworks/) 참조.
 * **Snyk Container**: [지원하는 운영 체제 배포판](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md/) 참조.
-* ****: [지원하는 IaC와 클라우드 제공 업체](scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/) 참조.
-* ****:  참조.
+* **Snyk Infrastructure as Code**: [지원하는 IaC와 클라우드 제공 업체](scan-with-snyk/snyk-iac/supported-iac-languages-cloud-providers-and-cloud-resources/) 참조.
+* **Snyk AppRisk offerings**: Snyk AppRisk 참조.
 
 ## Snyk의 개발자 지향 접근
 
