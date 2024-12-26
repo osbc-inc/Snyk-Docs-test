@@ -134,9 +134,9 @@ npm 및 Yarn은 잘 설계된 패키지 관리자입니다. npm 및 Yarn 패키�
 * Node.JS 애플리케이션을 컨테이너에서 배포하는 경우, 컨테이너 베이스 이미지가 포함하는 것 외에도 (Linux, 오픈 소스) 취약한 패키지를 번들로 제공하는 SDK SDK Container는 애플리케이션의 공격 표면을 최소화하는 안전한 베이스 이미지를 식별할 수 있습니다.
 * 작업하고자 하는 레이어를 필터링하려면 즉, 안전하고 체계적인 베이스 이미지를 식별하거나 채택할 레이어, 또는 애플리케이션(운영 체제) 취약점을 식별하는 작업을 하려면 [Snyk 컨테이너 보안을위한 CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/) 참조
 
-#### 인프라스트럭처 as 코드
+#### **Infrastructure as code**
 
-[ 보안](https://snyk.io/product/infrastructure-as-code-security/) 참조
+[Infrastructure as code 보안](https://snyk.io/product/infrastructure-as-code-security/) 참조
 
 ### **옵션 및 플러그인**
 
@@ -144,4 +144,12 @@ npm 및 Yarn은 잘 설계된 패키지 관리자입니다. npm 및 Yarn 패키�
 * `--json` 및 `--sarif` 옵션을 사용하여 프로그래밍 방식으로 액세스 할 수 있는 출력 생성 확인하세요.
 * 고급 필터링 옵션에 대해서는 [snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) 참조
 
-## Node.Js 및 JavaScript 개
+## Node.js 및 JavaScript 개발자에게 영향을 미치는 추가 보안 주제
+
+다음은 Snyk 보안 팀과 Developer Relations에서 제공하는 이 생태계에 영향을 미치는 기사 모음입니다. 산업, 보안 및 기술 관련 추가 기사에 대해서는 [Snyk 블로그](https://snyk.io/blog/)를 방문하십시오:
+
+* [현대 소프트웨어 공급망 보안 강화](https://snyk.io/blog/software-supply-chain-security/)
+* [최신 npm 패키지 생성 모범 사례](https://snyk.io/blog/best-practices-create-modern-npm-package/)
+* [npm에서 종속성 혼동 공격을 감지하고 방지하여 공급망 보안 유지](https://snyk.io/blog/detect-prevent-dependency-confusion-attacks-npm-supply-chain-security/)
+* [Node.js 버전 전환](https://snyk.io/blog/mastering-node-js-version-management-and-npm-registry-sources-like-a-pro/)
+* [JavaScript 및 Node.js의 오픈 소스 프로젝트를 위한 DevSecOps 도구](https://snyk.io/blog/devsecops-tools-for-open-source-projects-in-javascript-and-node-js/)
