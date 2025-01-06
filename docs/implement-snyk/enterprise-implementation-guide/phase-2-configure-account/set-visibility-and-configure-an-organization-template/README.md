@@ -1,6 +1,6 @@
-# 가시성 설정 및 조직 템플릿 구성
+# Set visibility and configure an Organization template
 
-하나의 조직을 만들거나 여러 조직을 생성하기 위한 템플릿을 만들고 싶다면, 초기 설정을 구성해야 합니다. 
+하나의 조직을 만들거나 여러 조직을 생성하기 위한 템플릿을 만들고 싶다면, 초기 설정을 구성해야 합니다.
 
 {% hint style="info" %}
 프로젝트를 가져오려면 [프로젝트 가져오기](../../phase-3-gain-visibility/import-projects.md) 및 [전개](../../phase-5-initial-rollout-to-team/) 논의를 참조하십시오.
@@ -8,7 +8,7 @@
 
 ## 템플릿을 사용하여 조직 구조 생성
 
-새 조직을 만들 때, 기존 조직을 설정 및 통합을 위한 모델로 사용할 수 있습니다. Snyk는 조직 구조를 만들기 전에 템플릿 조직을 구성하는 것을 권장합니다. 
+새 조직을 만들 때, 기존 조직을 설정 및 통합을 위한 모델로 사용할 수 있습니다. Snyk는 조직 구조를 만들기 전에 템플릿 조직을 구성하는 것을 권장합니다.
 
 템플릿 기반 접근 방식은 모든 조직마다 통합을 수동으로 구성하는 번거로움을 피할 수 있도록 해줍니다.
 
@@ -38,18 +38,7 @@ Snyk을 사용하여 조직을 만드는 경우, 예를 들어 GitHub 조직과 
 
 다음 표는 웹 인터페이스나 API를 사용하여 새 조직을 만들 때 템플릿 조직에서 새 조직으로 복사되는 내용을 보여줍니다.
 
-|<th width="466">모든 통합과 그 설정은 복사됩니다</th>|<th>다음은 복사되지 않습니다</th>|
-|---|---|
-|소스 제어 통합|Snyk 서비스 계정|
-|컨테이너 레지스트리 통합|멤버|
-|컨테이너 오케스트레이터 통합 (Kubernetes)|프로젝트|
-|PaaS 및 서버리스 통합|알림 선호도|
-|알림 통합 (Slack 및 Jira)||
-|정책||
-|무시 설정||
-|언어 설정||
-|인프라스트럭처 코드 (IaC) 설정||
-| 설정||
+<table><thead><tr><th width="394">모든 통합과 그 설정은 복사됩니다</th><th width="466">다음 항목은 복사되지 않습니다</th></tr></thead><tbody><tr><td>Source control 통합</td><td>Snyk 서비스 계정</td></tr><tr><td>Container registry 통합</td><td>멤버</td></tr><tr><td>Container orchestrators 통합 (Kubernetes)</td><td>프로젝트</td></tr><tr><td>PaaS 및 Serverless 통합</td><td>알림 선호도</td></tr><tr><td>알림 통합 (Slack 및 Jira)</td><td></td></tr><tr><td>정책</td><td></td></tr><tr><td>Ignore 설정</td><td></td></tr><tr><td>언어 설정</td><td></td></tr><tr><td>Infrastructure as code (IaC) 설정</td><td></td></tr><tr><td>Snyk Code 설정</td><td></td></tr></tbody></table>
 
 ## 템플릿 조직 복제
 
