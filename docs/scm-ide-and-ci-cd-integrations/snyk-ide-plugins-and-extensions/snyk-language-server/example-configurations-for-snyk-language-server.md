@@ -1,4 +1,4 @@
-# Snyk Language Server를 위한 예제 구성
+# Example configurations for Snyk Language Server
 
 ## Sublime Text를 위한 예제 구성
 
@@ -33,7 +33,7 @@
 
 지원되는 파일을 열면 Sublime Text에서 Language Server가 시작되고 결과가 강조 표시됩니다.
 
-![Sublime Text에서 표시된 Snyk Open Source 결과](<../../../.gitbook/assets/image (166) (1) (1) (1) (1) (1) (1) (1) (2) (3).png>)
+![Sublime Text에서 표시된 Snyk Open Source 결과](https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-3a68fa1992e26cef384e0f1009dec2ea258fbe2e%252Fimage%2520%28166%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%282%29.png%3Falt%3Dmedia\&width=768\&dpr=1\&quality=100\&sign=9a6b10b3\&sv=2)
 
 ![Sublime Text에서 표시된 Snyk Code 결과](<../../../.gitbook/assets/image (466) (1).png>)
 
