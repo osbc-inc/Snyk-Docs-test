@@ -1,4 +1,4 @@
-# 커스텀 매핑
+# Custom mapping
 
 커스텀 매핑을 통해 식별 공급자(Identity Provider, IdP)가 제공하는 데이터에 기반하여 사용자를 Snyk 그룹 및 조직에 동적으로 할당하여 확장 가능한 사용자 프로비저닝 및 액세스 모델을 구현할 수 있습니다.
 
@@ -10,12 +10,12 @@ Snyk 내 역할 및 권한에 대해 자세히 알아보려면 [사전 정의된
 
 ## 커스텀 매핑 요구 사항
 
-- [SSO 설정을 위한 자원](../set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup)에서 찾을 수 있는 적절한 IdP(식별 공급자)를 위한 SSO 정보 워크시트를 완료하십시오.
-- IdP에서 사용자 역할을 할당하는 데 사용할 커스텀 속성을 적절히 구성하십시오. [예: 역할 배열 매핑](./#example-roles-array-mapping)을 참조하십시오. 
+* [SSO 설정을 위한 자원](../set-up-snyk-single-sign-on-sso.md#resources-for-sso-setup)에서 찾을 수 있는 적절한 IdP(식별 공급자)를 위한 SSO 정보 워크시트를 완료하십시오.
+* IdP에서 사용자 역할을 할당하는 데 사용할 커스텀 속성을 적절히 구성하십시오. [예: 역할 배열 매핑](./#example-roles-array-mapping)을 참조하십시오.
 
 ## 커스텀 매핑 옵션
 
-이 페이지에 설명된 Snyk의 최신 커스텀 매핑 옵션은 사용자들에게 그룹 수준의 사용자 정의 역할 및 사전 정의 역할을 부여할 수 있는 능력을 포함하여 유연성이 향상됩니다. 
+이 페이지에 설명된 Snyk의 최신 커스텀 매핑 옵션은 사용자들에게 그룹 수준의 사용자 정의 역할 및 사전 정의 역할을 부여할 수 있는 능력을 포함하여 유연성이 향상됩니다.
 
 Snyk에서는 여전히 [레거시 커스텀 매핑](legacy-custom-mapping.md) 옵션을 지원합니다.
 
@@ -37,10 +37,10 @@ IdP에서 `roles`를 문자열 배열로 전달해야 합니다. 다양한 IdP�
 
 여기서:
 
-- `snyk`는 역할 매핑을 위한 고정 접두사입니다. **필수 요소**입니다.
-- `scope`는 `org` 또는 `group` 중 하나일 수 있습니다. **필수 요소**입니다. 역할 매핑에 유효한 scope가 포함되지 않은 경우 무시됩니다.
-- `target`는 역할이 부여될 `org` 또는 `group`의 **slug**이어야 하거나 **와일드카드**여야 합니다.
-- `role`은 필요한 역할의 표준화된 이름입니다.
+* `snyk`는 역할 매핑을 위한 고정 접두사입니다. **필수 요소**입니다.
+* `scope`는 `org` 또는 `group` 중 하나일 수 있습니다. **필수 요소**입니다. 역할 매핑에 유효한 scope가 포함되지 않은 경우 무시됩니다.
+* `target`는 역할이 부여될 `org` 또는 `group`의 **slug**이어야 하거나 **와일드카드**여야 합니다.
+* `role`은 필요한 역할의 표준화된 이름입니다.
 
 자세한 내용은 [스러그](./#slugs) 섹션에서 확인하십시오.
 
@@ -54,8 +54,8 @@ SSO에 속한 조직에서 역할을 부여받은 사용자는 역할 어설션�
 
 ### 역할 어설션 예시
 
-- `snyk:group:*:group_admin`: 사용자에게 SSO 연결에 연결된 모든 그룹에 대한 사전 정의 **그룹 관리자** 역할을 할당합니다.
-- `snyk:group::custom:sys_admin`: 사용자에게 SSO 연결에 연결된 모든 그룹에 대한 사용자 정의 그룹 수준 역할 `Sys Admin`을 할당합니다.
+* `snyk:group:*:group_admin`: 사용자에게 SSO 연결에 연결된 모든 그룹에 대한 사전 정의 **그룹 관리자** 역할을 할당합니다.
+* `snyk:group::custom:sys_admin`: 사용자에게 SSO 연결에 연결된 모든 그룹에 대한 사용자 정의 그룹 수준 역할 `Sys Admin`을 할당합니다.
 
 ### 역할 어설션 배열 예시
 
@@ -83,9 +83,9 @@ SSO에 속한 조직에서 역할을 부여받은 사용자는 역할 어설션�
 
 이러한 어선션을 통해 사용자에게 할당됩니다:
 
-- 모든 그룹에 대한 사전 정의 **그룹 뷰어** 그룹 수준 역할. 부여되는 권한에 대한 자세한 내용은 [사전 정의 역할](../../../snyk-admin/user-roles/pre-defined-roles.md)을 참조하십시오.
-- **조직 관리자** 조직 수준 역할(Deployment라는 이름의 조직에 대해).
-- **개발자 읽기 전용**이름이 **테스트 조직**, 슬러그가 `test-org-N58YhztauHcaMiNfvi5fbL`인 조직에 대해 사용자 정의 조직 수준 역할.
+* 모든 그룹에 대한 사전 정의 **그룹 뷰어** 그룹 수준 역할. 부여되는 권한에 대한 자세한 내용은 [사전 정의 역할](../../../snyk-admin/user-roles/pre-defined-roles.md)을 참조하십시오.
+* **조직 관리자** 조직 수준 역할(Deployment라는 이름의 조직에 대해).
+* **개발자 읽기 전용**이름이 **테스트 조직**, 슬러그가 `test-org-N58YhztauHcaMiNfvi5fbL`인 조직에 대해 사용자 정의 조직 수준 역할.
 
 ## 와일드카드
 
@@ -103,7 +103,11 @@ SSO 연결 내에서 조직에 역할이 부여되는 경우 역할 어설션에
 
 조직 슬러그를 찾으려면 **Settings** 페이지로 이동하여 **General** 설정 아래에서 조직 슬러그 값을 확인할 수 있습니다. 이 값을 복사하여 커스텀 매핑의 역할 어설션에 사용할 수 있습니다.
 
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Ff3juPcOGIxRqh3P26JgM%252Fsettings_org_slug.png%3Falt%3Dmedia%26token%3D1dda021b-5144-4118-a6e4-96ffb197cc29&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=40c5747c&#x26;sv=2" alt=""><figcaption><p>조직 일반 설정 페이지, 조직 슬러그 표시</p></figcaption></figure>
+
 그룹의 슬러그를 찾으려면 그룹 설정으로 이동하여 General Settings 아래에서 그룹 슬러그를 찾을 수 있습니다.
+
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FlzQHxchjbOFAC7i7L8ZN%252Fimage.png%3Falt%3Dmedia%26token%3D05d9b3ad-7b61-439e-aed0-029add524e7c&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=51c6f646&#x26;sv=2" alt=""><figcaption><p>그룹 일반 설정 페이지, 그룹 슬러그 표시</p></figcaption></figure>
 
 ## 역할 표준화된 이름
 
@@ -111,14 +115,16 @@ SSO 연결 내에서 조직에 역할이 부여되는 경우 역할 어설션에
 
 자세한 내용 및 특히 사용자 정의 역할에 대한 자세한 내용은 [사용자 역할 관리](../../../snyk-admin/user-roles/user-role-management.md)를 참조하십시오.
 
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FvHpPz3hxVKUW5pxPcB26%252Fimage.png%3Falt%3Dmedia%26token%3D1340330c-585e-4b03-aeff-a2d986b0fc26&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=45bd9bbd&#x26;sv=2" alt=""><figcaption><p>조직 관리자 역할의 역할 세부 정보 페이지</p></figcaption></figure>
+
 ## 사전 정의 역할 슬러그
 
 Snyk에는 [사전 정의 역할](../../../snyk-admin/user-roles/pre-defined-roles.md) 세트가 있습니다. 해당 정규화된 이름은 다음과 같습니다:
 
-| 역할 유형    | 역할 이름        | 역할 슬러그          |
-| ------------ | ---------------- | ------------------ |
-| 조직 | Org Admin        | `org_admin`        |
-| 조직 | Org Collaborator | `org_collaborator` |
-| 그룹        | Group Admin      | `group_admin`      |
-| 그룹        | Group Viewer     | `group_viewer`     |
-| 그룹        | Group Member     | `group_member`     |
+| 역할 유형 | 역할 이름            | 역할 슬러그             |
+| ----- | ---------------- | ------------------ |
+| 조직    | Org Admin        | `org_admin`        |
+| 조직    | Org Collaborator | `org_collaborator` |
+| 그룹    | Group Admin      | `group_admin`      |
+| 그룹    | Group Viewer     | `group_viewer`     |
+| 그룹    | Group Member     | `group_member`     |
