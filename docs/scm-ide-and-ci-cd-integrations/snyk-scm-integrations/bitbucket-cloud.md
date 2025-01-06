@@ -138,42 +138,110 @@ Snyk에서 귀하의 저장소 프로젝트에서 Snyk의 자격 정보를 제�
 * 프로젝트 메타데이터: 무시 및 태그
 {% endhint %}
 
-### 이전 프로세스
+### 마이그레이션 프로세스
 
-이전 프로세스는 다음 단계로 구성됩니다.
+마이그레이션 프로세스는 다음 단계를 포함합니다:
 
-1. [기존 프로젝트 삭제](bitbucket-cloud.md#delete-existing-projects): 이전에 Legacy 통합에서 연결된 모든 기존 프로젝트를 삭제하십시오.
-2. [PAT 통합 해제](bitbucket-cloud.md#disconnect-the-pat-integration): Snyk에서 Bitbucket Cloud PAT 통합을 해제하십시오.
-3. [첫 번째 파티 확장 기능 삭제](bitbucket-cloud.md#remove-the-snyk-tab-for-the-pat-integration-in-bitbucket-cloud-optional): Bitbucket에서 PAT 통합을 위한 첫 번째 파티 확장 기능을 제거하십시오(선택 사항).
-4. [Bitbucket Cloud 앱 설정](bitbucket-cloud.md#set-up-the-bitbucket-cloud-app-integration): 앱을 설정하고 프로젝트를 가져오십시오.
+1. Snyk에서 Bitbucket Cloud PAT 통합과 연결된 기존 [프로젝트 삭제](bitbucket-cloud.md#delete-existing-projects).
+2. Snyk에서 [PAT 통합 연결 끊기](bitbucket-cloud.md#disconnect-the-pat-integration).
+3. Bitbucket에서 [첫 번째 파티 확장 제거](bitbucket-cloud.md#remove-the-snyk-tab-for-the-pat-integration-in-bitbucket-cloud-optional) (선택 사항).
+4. [Bitbucket Cloud App 연결](bitbucket-cloud.md#set-up-the-bitbucket-cloud-app-integration) 및 프로젝트 가져오기.
 
 #### 기존 프로젝트 삭제
 
-Snyk에서 이전 Legacy 통합에서 가져온 모든 프로젝트를 삭제하십시오. 프로젝트 페이지에서 프로젝트를 대량 삭제할 수 있도록 그룹화 필터를 **그룹 없음**으로 변경하십시오. 이제 목록에서 개별적으로 여러 프로젝트를 선택하거나 상단의 확인란을 선택하여 **표시된 모든 프로젝트 선택**을 클릭할 수 있습니다. 프로젝트를 삭제하려면 휴지통 아이콘을 선택하고 **```html
-<div class="hint" style="info">
-Create a BitBucket app password by following these steps:
+Snyk에서 이전에 Legacy 통합을 통해 가져온 기존 프로젝트를 모두 삭제합니다. 프로젝트 페이지에서 일괄 삭제 작업을 사용하려면 **Group by none**으로 그룹화 필터를 변경하세요. 이제 목록에서 여러 프로젝트를 개별적으로 선택하거나 상단의 체크박스를 선택하여 **모든 표시된 프로젝트 선택**을 선택할 수 있습니다. 프로젝트를 삭제하려면 휴지통 아이콘을 선택하고 **선택한 프로젝트 삭제**를 클릭하세요.
 
-1. Open your BitBucket account&#x20;
-2. Click the Settings option
-3. Click the Personal BitBucket settings option&#x20;
-4. Navigate to the App passwords sub-section from the ACCESS MANAGEMENT section.
-</div>
+<figure><img src="../../.gitbook/assets/2023-11-20_14-29-35.png" alt="Change the Projects filter to Group by none"><figcaption><p>그룹화 필터를 <strong>Group by none</strong>으로 변경</p></figcaption></figure>
 
-**Use a Broker Token**
+<figure><img src="../../.gitbook/assets/2023-11-20_14-41-16.png" alt="Bulk delete the selected Projects" width="375"><figcaption><p>선택한 프로젝트 일괄 삭제</p></figcaption></figure>
 
-Use a Broker Token (`mandatory`) to create and add your Broker token if you use Snyk broker for AppRisk.
+#### PAT 통합 연결 끊기
 
-* Generate your Broker token by following the instructions from the [Obtain your Broker token for Snyk Broker](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent) page.&#x20;
-* Copy and paste the Broker token on the integration setup menu from the Integration Hub.
+Bitbucket Cloud PAT 통합을 연결 끊으려면 Bitbucket Cloud 통합의 설정 페이지로 이동하여 해당 섹션을 찾은 후 **연결 끊기**를 클릭하세요.
 
-**Common options**
+#### Bitbucket에서 Snyk 탭 제거 (선택 사항)
 
-The following options apply to both the Access Token and the Broker token.
+Bitbucket Cloud 통합에는 선택적인 첫 번째 파티 인터페이스 앱이 있습니다.
 
-* Service type (`mandatory`): Select the service type, Cloud, or On-premises.
-* Add Backstage Catalog (`optional`): If you want to add your Backstage catalog, follow the instructions from the [Backstage file for SCM Integrations](application-context-for-scm-integrations/) page.
+이 앱은 Bitbucket Cloud 워크스페이스에 설치되어 "_**Snyk**_" 탭으로 PAT 통합에 첫 번째 파티 인터페이스를 추가할 수 있습니다.
 
-#### API version <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
+이 앱을 사용한 경우, 다음 단계에서 Snyk Bitbucket Cloud App을 설정하기 전에 Bitbucket Cloud에서 이전 인터페이스 앱을 제거하세요. 이 기능은 Snyk App 통합에서 기본적으로 지원됩니다.
 
-You can use the [BitBucket REST API V2](https://developer.atlassian.com/bitbucket/api/2/reference/resource/) repository to access information about the API.
-```
+**Bitbucket.org > 설치된 앱 관리**로 이동하여 **Snyk Security for Bitbucket Cloud** 앱을 확장한 후 **제거**를 클릭하세요.
+
+<figure><img src="../../.gitbook/assets/remove_snyk-security-bbc_11oct2022.png" alt="Remove the first-party Snyk Legacy interface app in Bitbucket"><figcaption><p>Bitbucket에서 첫 번째 파티 Snyk Legacy 인터페이스 앱 제거</p></figcaption></figure>
+
+#### Bitbucket Cloud App 통합 설정
+
+[Bitbucket Cloud App 통합](bitbucket-cloud-app.md) 주제를 참조하여 지침을 확인하세요.
+
+#### 마이그레이션 데모
+
+Snyk의 Partner Solutions Architect인 Marco Morales는 Snyk Bitbucket Cloud App에 대해 설명하고 기존 Bitbucket Cloud 통합을 Snyk Bitbucket Cloud App으로 마이그레이션하는 프로세스를 진행합니다.
+
+_데모로 바로 가려면 2:34에서 시작하세요._
+
+{% embed url="https://thoughtindustries-1.wistia.com/medias/32rgw3hkdk" %}  
+Snyk Bitbucket Cloud App 통합으로 마이그레이션하는 방법  
+{% endembed %}
+
+## 그룹 수준 - Snyk AppRisk 통합
+
+통합 페이지는 모든 활성 통합을 표시하며, 기존 Snyk 조직에서 자동으로 동기화된 데이터를 포함하고 통합 허브에 대한 액세스를 제공합니다.
+
+### Bitbucket 설정 가이드
+
+{% hint style="info" %}  
+Bitbucket Server와 Bitbucket Cloud는 자동 언어 감지를 지원하지 않습니다. Bitbucket Cloud 리포지토리에 언어 태그를 수동으로 추가할 수 있습니다.  
+Bitbucket 프로젝트에서 언어를 수동으로 설정한 후, Snyk는 Snyk AppRisk 애플리케이션에서 자동으로 해당 언어를 감지하고 수집할 수 있습니다.
+{% endhint %}
+
+#### 가져온 엔터티 <a href="#bitbucket-pulled-entities" id="bitbucket-pulled-entities"></a>
+
+* 사용자
+* 리포지토리
+
+#### Snyk AppRisk를 사용하여 통합하기 <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
+
+* 프로필 이름 (`필수`): 통합 프로필 이름을 입력하세요.  
+
+{% hint style="info" %}  
+액세스 토큰 또는 브로커 토큰을 사용하여 통합을 선택할 수 있습니다.  
+{% endhint %}
+
+**액세스 토큰 사용**
+
+액세스 토큰 (`필수`)을 사용하여 Bitbucket 조직에서 Bitbucket PAT를 생성하세요.
+
+* API URL (`필수`) - API URL을 입력하세요.
+* 사용자 이름 (`필수`): Bitbucket 조직의 사용자 이름을 입력하세요.
+* 앱 비밀번호 (`필수`): [API 토큰](https://developer.atlassian.com/cloud/bitbucket/rest/intro/#app-passwords)을 Bitbucket 계정에서 생성하고 다음 권한을 부여하세요:
+  * **계정** - 읽기
+  * **프로젝트** - 읽기
+
+{% hint style="info" %}  
+Bitbucket 앱 비밀번호를 생성하는 방법은 다음과 같습니다:
+
+1. Bitbucket 계정을 엽니다.  
+2. 설정 옵션을 클릭합니다.  
+3. 개인 Bitbucket 설정 옵션을 클릭합니다.  
+4. **액세스 관리** 섹션에서 **앱 비밀번호** 하위 섹션으로 이동합니다.  
+{% endhint %}
+
+**브로커 토큰 사용**
+
+브로커 토큰 (`필수`)을 사용하여 Snyk 브로커를 AppRisk에 사용하려면 브로커 토큰을 생성하고 추가하세요.
+
+* [Snyk 브로커용 브로커 토큰 얻기](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent) 페이지의 지침을 따라 브로커 토큰을 생성하세요.
+* 통합 설정 메뉴에서 Integration Hub로부터 브로커 토큰을 복사하여 붙여넣기 하세요.
+
+**공통 옵션**
+
+다음 옵션은 액세스 토큰과 브로커 토큰 모두에 적용됩니다.
+
+* 서비스 유형 (`필수`): 서비스 유형을 선택하세요, 클라우드 또는 온프레미스.
+* Backstage 카탈로그 추가 (`선택 사항`): Backstage 카탈로그를 추가하려면 [SCM 통합용 Backstage 파일](application-context-for-scm-integrations/) 페이지의 지침을 따르세요.
+
+#### API 버전 <a href="#bitbucket-api-version" id="bitbucket-api-version"></a>
+
+[BitBucket REST API V2](https://developer.atlassian.com/bitbucket/api/2/reference/resource/) 리포지토리를 사용하여 API에 대한 정보를 확인할 수 있습니다.
