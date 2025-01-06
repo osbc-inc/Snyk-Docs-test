@@ -316,15 +316,49 @@ Snyk는 Bitbucket에서 SCM 웹훅을 사용하여 다음 작업을 수행합니
 | 수정 및 업그레이드 PR 열기 | 감시 중인 저장소에서 고치기 PR 생성을 위해 사용됩니다. | 귀하의 리포지터리 및 해당 pull request를 읽고 수정하는 권한이 필요합니다. |
 | PR에 대한 Snyk 테스트 - 초기 설정 | 수입된 리포지터리에 Snyk 웹훅을 추가하여 PR이 작성되거나 업데이트될 때 Snyk에 알릴 수 있게 되며, Snyk 스캔을 트리거할 수 있음 | 귀하의 리포지터리 웹훅을 읽고 수정하는 권한이 필요합니다 |
 
-### Azure Repositories (TFS) 권한 요구사항
+### Azure Repositories (TFS) 권한 요구 사항
 
-[Snyk Azure Repositories (TFS) 통합](azure-repositories-tfs.md)은 Azure DevOps 개인 액세스 토큰(PAT)을 사용합니다. 이 토큰은 Snyk가 Azure 리포지터리에 액세스하는 데 필요한 특정 권한을 설정합니다.
+[Snyk Azure Repositories (TFS) 통합](azure-repositories-tfs.md)은 Azure DevOps 개인 액세스 토큰(PAT)을 사용합니다. 이 토큰은 Snyk이 Azure 리포지토리에 접근하는 데 필요한 특정 권한으로 구성됩니다.
 
-Snyk Azure Repositories (TFS) 통합을 설정하려면 다음이 필요합니다:
+Snyk Azure Repositories (TFS) 통합을 설정하려면 다음 조건을 충족해야 합니다:
 
-- [Snyk 조직 관리자](../../snyk-admin/user-roles/pre-defined-roles.md).
-- Azure의 [프로젝트 관리자 그룹](https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops\&tabs=preview-page)의 멤버. 이는 웹훅 활성화에 필요한 `edit subscriptions permissions`를 가지고 있는 것을 보장합니다.
+* [Snyk 조직 관리자](../../snyk-admin/user-roles/pre-defined-roles.md)여야 합니다.
+* Azure에서 [프로젝트 관리자 그룹](https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?view=azure-devops\&tabs=preview-page)의 구성원이어야 합니다. 이렇게 하면 PAT에 웹후크를 활성화하는 데 필요한 `edit subscriptions permissions`가 부여됩니다.
 
-Azure에서 Snyk 액세스에 필요한 PAT은 다음과 같은 권한이 필요합니다:
+Azure에서 PAT는 Snyk 접근을 위한 다음 권한을 요구합니다:
 
-- **만료일**: 사용자
+* **만료**: 사용자 정의. Snyk은 토큰 만료 날짜를 먼 미래로 설정하는 것을 권장합니다.
+* **범위**: 사용자 정의. **Code** 범위에 대해 `읽기 및 쓰기` 권한이 필요합니다.
+
+## Snyk Broker를 위한 통합 SCM 토큰
+
+통합 SCM 토큰은 [Broker 클라이언트 설정](../../enterprise-setup/snyk-broker/#integrations-with-snyk-broker)에 필요합니다. 이 토큰은 `-e <SCM>_TOKEN` 매개변수에서 사용됩니다. 예를 들어, `-e GITHUB_TOKEN=xxx…`와 같이 SCM에 대한 접근을 가능하게 합니다. 이 토큰은 Broker와 Snyk Code의 운영에 필요한 특정 권한을 충족합니다.
+
+다음 SCM 통합에 대해 통합 SCM 토큰을 생성할 수 있습니다:
+
+* [GitHub 및 GitHub Enterprise](./#github-and-github-enterprise-scm-token)
+* [GitLab](./#gitlab-scm-token)
+* [Azure Repositories (TFS)](./#azure-repositories-tfs-scm-token)
+* [Bitbucket Server/Data Center](./#bitbucket-server-data-center-scm-token)
+
+### GitHub 및 GitHub Enterprise SCM 토큰
+
+**형식**: `GITHUB_TOKEN=` - GitHub 개인 액세스 토큰. \
+**범위**: `repo`, `read:org` 및 `admin:repo_hook`.
+
+### GitLab SCM 토큰
+
+**형식**: `GITLAB_TOKEN=` - GitLab 개인 액세스 토큰. \
+**범위**: `api`.
+
+GitLab 계정에 `Maintainer` 권한이 필요합니다.
+
+### Azure Repositories (TFS) SCM 토큰
+
+**형식**: `AZURE_REPOS_TOKEN=` - Azure Repos 개인 액세스 토큰. \
+**범위**: `사용자 정의`, `Code:` `읽기 및 쓰기`.
+
+### Bitbucket Server/Data Center SCM 토큰
+
+**형식**: `BITBUCKET_USERNAME=`, `BITBUCKET_PASSWORD=` – Bitbucket Server 사용자 이름과 비밀번호 또는 Bitbucket Server 개인 액세스 토큰. \
+**범위**: `Repository admin`.
