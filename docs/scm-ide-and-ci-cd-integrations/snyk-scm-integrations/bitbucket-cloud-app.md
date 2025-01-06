@@ -37,7 +37,7 @@ Bitbucket Cloud 워크스페이스에 Snyk 앱을 설치하려면 Bitbucket에 �
     * 리포지토리 및 풀 리퀘스트 읽기 및 수정
     * 리포지토리의 웹훅 읽기 및 수정
 
-    <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (4).png" alt="Snyk에 Bitbucket Cloud 액세스 허용" width="563"><figcaption><p>Snyk에 Bitbucket Cloud 액세스 허용</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (4).png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Snyk에 Bitbucket Cloud 액세스 허용</p></figcaption></figure>
 3. Snyk 조직에 대한 액세스 권한을 부여하세요(프롬프트가 표시됩니다).
 
     <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt="Bitbucket Cloud가 Snyk 조직에 액세스 허용" width="365"><figcaption><p>Bitbucket Cloud가 Snyk 조직에 액세스 허용<br></p></figcaption></figure>
@@ -164,6 +164,6 @@ Snyk와 리포지토리 프로젝트의 연결을 해제하면 자격 증명이 
 Snyk 측에서 통합 연결을 해제하는 것은 Bitbucket Cloud의 워크스페이스에서 앱을 제거하지 않습니다. Bitbucket.org의 워크스페이스 설정으로 이동하여 설치된 앱을 제거하지 않는 이상 **Snyk Security for Bitbucket Cloud** 앱은 제거되지 않습니다.
 {% endhint %}
 
-## 그룹 레벨 - Snyk AppRisk 통합
+## 그룹 수준 - Snyk AppRisk 통합
 
-그룹 레
+Bitbucket Cloud App은 그룹 수준에서 지원되지 않습니다. 그룹 수준에서 사용 가능한 옵션은 Bitbucket Cloud와 Bitbucket Server입니다. 두 가지에 대한 설치 지침은 [Bitbucket 설정 가이드](bitbucket-cloud.md#bitbucket-setup-guide)를 참조하세요.
