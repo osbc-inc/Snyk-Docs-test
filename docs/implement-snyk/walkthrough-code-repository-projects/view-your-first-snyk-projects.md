@@ -1,4 +1,4 @@
-# 첫 번째 Snyk 프로젝트 보기
+# View your first Snyk Projects
 
 하나 이상의 프로젝트를 가져온 후에는 스캔 결과를 확인할 수 있습니다.
 
@@ -22,7 +22,7 @@ Snyk 웹 UI에서 **프로젝트** 페이지로 이동하여 가져온 리포지
 
 프로젝트를 가져올 때, 비공개 리포지토리는 가져온 스캔 세부 정보에서 잠금 기호로 식별됩니다:
 
-<figure><img src="../../.gitbook/assets/image (125) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="잠금 기호가 있는 비공개 리포지토리"><figcaption><p>잠금 기호가 있는 비공개 리포지토리</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-b089dcaecab05c3fdbdb255e93794078ab4af310%252Fimage%2520%28125%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=13dbd873&#x26;sv=2" alt="잠금 기호가 있는 비공개 리포지토리"><figcaption><p>잠금 기호가 있는 비공개 리포지토리</p></figcaption></figure>
 
 무료 플랜의 고객은 비공개 리포지토리 스캔이 테스트 횟수 한도에 포함됩니다.
 
@@ -53,12 +53,12 @@ Snyk 프로젝트는 Snyk가 스캔하는 항목을 말합니다. 예를 들어,
 
 Snyk는 이 라이프사이클의 다른 부분을 스캔하며 해당 작업 부분에 대한 결과를 나타내는 다른 아이콘과 항목을 보여줍니다. 이 중요한 작업 부분에 대한 결과는 다음과 같습니다:
 
-| 예시                                                                                                 | 설명                                                                                                                                                                     |
-| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="../../.gitbook/assets/image (297) (1).png" alt="" data-size="line">                           | [{Snyk Code}](../../scan-with-snyk/snyk-code/)에 의해 스캔된 자체 코드 분석 결과입니다.                                                                              |
-| <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line">         | [Snyk Open Source}](../../scan-with-snyk/snyk-open-source/)에 의해 스캔된 오픈 소스 라이브러리, 각각의 manifest(**pom.xml**, **package.json**, 기타 라이브러리를 위한 기타 manifest 등)가 표시됩니다. |
-| <img src="../../.gitbook/assets/image (307) (1).png" alt="" data-size="line">                           | [Snyk Container}](../../scan-with-snyk/snyk-container/)에 의해 스캔된 컨테이너 결과입니다. 도커 파일과 같이 컨테이너에 포함된 항목이 포함됩니다.               |
-| <img src="../../.gitbook/assets/image (206) (1) (1).png" alt="" data-size="original">                 | [Snyk Infrastructure as Code (IaC)](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/)에 의해 스캔된 쿠버네티스 배포 파일, 테라폼 및 기타 IaC 파일입니다.             |
+| 예시                                                                                              | 설명                                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="../../.gitbook/assets/image (297) (1).png" alt="" data-size="line">                   | [Snyk Code](../../scan-with-snyk/snyk-code/)에 의해 스캔된 자체 코드 분석 결과입니다.                                                                                            |
+| <img src="../../.gitbook/assets/Screenshot 2022-07-20 at 11.14.02.png" alt="" data-size="line"> | [Snyk Open Source](../../scan-with-snyk/snyk-open-source/)에 의해 스캔된 오픈 소스 라이브러리, 각각의 manifest(**pom.xml**, **package.json**, 기타 라이브러리를 위한 기타 manifest 등)가 표시됩니다. |
+| <img src="../../.gitbook/assets/image (307) (1).png" alt="" data-size="line">                   | [Snyk Container](../../scan-with-snyk/snyk-container/)에 의해 스캔된 컨테이너 결과입니다. 도커 파일과 같이 컨테이너에 포함된 항목이 포함됩니다.                                                       |
+| <img src="../../.gitbook/assets/image (206) (1) (1).png" alt="" data-size="original">           | [Snyk Infrastructure as Code (IaC)](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/)에 의해 스캔된 쿠버네티스 배포 파일, 테라폼 및 기타 IaC 파일입니다.                          |
 
 {% hint style="info" %}
 다른 파일과 유형도 표시될 수 있습니다. 자세한 내용은 [프로젝트 정보 보기](../../snyk-admin/snyk-projects/project-information.md)를 참조하세요.
@@ -78,7 +78,7 @@ Snyk는 이 목록의 각 항목을 별도의 **프로젝트**로 다룹니다.
 
 스캔 결과를 다시 확인하세요:
 
-<figure><img src="../../.gitbook/assets/image (167) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="프로젝트 스캔 결과"><figcaption><p>프로젝트 스캔 결과</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-47c2c6f022cbaa0a5cf85c2980ba29e4c14a3dd9%252Fimage%2520%28167%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=987ecc5c&#x26;sv=2" alt="프로젝트 스캔 결과"><figcaption><p>프로젝트 스캔 결과</p></figcaption></figure>
 
 스캔은 응용 프로그램의 모든 측면에서 발견된 취약점을 보여줍니다. 물론, 이 목록의 각 항목에 대해 책임이 있는 것은 아니지만 전체 그림을 알고있는 것이 중요합니다.
 
@@ -86,6 +86,6 @@ Snyk 오픈 소스 스캔에서 오픈 소스 라이브러리에 취약점이 �
 
 ## 더 많은 정보와 다음 단계
 
-오픈 소스, 코드, 컨테이너, 인프라 파일 스캔 결과를 검토하는 데 대한 자세한 내용은 [Snyk UI 소개]https://learn.snyk.io/lesson/intro-to-snyk-ui/) 과정을 참조하세요.
+오픈 소스, 코드, 컨테이너, 인프라 파일 스캔 결과를 검토하는 데 대한 자세한 내용은 [Snyk UI 소개](https://learn.snyk.io/lesson/intro-to-snyk-ui/) 과정을 참조하세요.
 
-이제 본인이 본 결과를 이해했으니 [취약점 이해](understand-your-vulnerabilities.md)해야합니다.
+이제 본인이 본 결과를 이해했으니 [취약점 자체](understand-your-vulnerabilities.md)를 이해해야 합니다.
