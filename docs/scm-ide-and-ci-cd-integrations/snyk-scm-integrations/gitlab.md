@@ -140,14 +140,32 @@ GitLab이 연결 해제되면 GitLab에서 가져온 Snyk 프로젝트가 비활
 * 사용자
 * 리포지토리
 
-#### Snyk AppRisk를 사용하여 통합 진행 <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
+#### Snyk AppRisk를 사용하여 통합하기 <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
 
-1. 프로필 이름(`필수`): 통합 프로필 이름을 입력합니다.
-2. 액세스 토큰(`필수`):
-   * API 토큰(`필수`): GitLab 조직에서 GitLab PAT를 생성합니다. [GitLab 설정에서 개인 액세스 토큰 생성](gitlab.md#generate-a-personal-access-token-from-your-gitlab-settings)항목을 참조하세요. SAML SSO를 구성한 경우 개인 액세스 토큰을 승인합니다.
-   * 호스트 URL(`필수`): GitLab 서버의 IP/URL입니다. 기본 URL은 [`https://gitlab.com`](https://gitlab.com)입니다.
-3. 브로커 토큰(`필수`): Snyk 브로커를 사용할 경우 브로커 토큰을 생성하고 추가합니다.
-   * [Snyk 브로커를 위한 브로커 토큰 얻기](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent)페이지의 지침을 따라 브로커 토큰을 생성합니다.
-   * 통합 허브의 통합 설정 메뉴에서 브로커 토큰을 복사하여 붙여넣습니다.
-4. SSL 검증(`선택사항`): SSL을 검증해야 하는 경우 옵션을 활성화합니다.
-5. 개인 리포지토리 풀
+1. 프로필 이름 (`필수`): 통합 프로필 이름을 입력하세요.  
+2. 액세스 토큰 (`필수`):
+   * API 토큰 (`필수`): GitLab 조직에서 GitLab PAT를 생성하세요. [GitLab 설정에서 개인 액세스 토큰 생성 섹션](gitlab.md#generate-a-personal-access-token-from-your-gitlab-settings)의 지침을 따르세요. SAML SSO를 설정한 경우, 개인 액세스 토큰을 인증하세요.
+   * 호스트 URL (`필수`): GitLab 서버의 IP/URL입니다. 기본 URL은 [`https://gitlab.com`](https://gitlab.com)입니다.
+3. 브로커 토큰 (`필수`): Snyk 브로커를 AppRisk에 사용하려면 브로커 토큰을 생성하고 추가하세요.
+   * [Snyk 브로커용 브로커 토큰 얻기](../../enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/obtain-the-required-tokens-for-setup.md#obtain-your-broker-token-for-snyk-broker-code-agent) 페이지의 지침을 따라 브로커 토큰을 생성하세요.
+   * 통합 설정 메뉴에서 Integration Hub로부터 브로커 토큰을 복사하여 붙여넣기 하세요.
+4. SSL 확인 (`선택 사항`): SSL을 확인하려면 이 옵션을 활성화하세요.
+5. 개인 리포지토리 풀 (`선택 사항`): 본인만 소유한 리포지토리를 가져오려면 이 옵션을 활성화하세요.
+6. Backstage 카탈로그 추가 (`선택 사항`): Backstage 카탈로그를 추가하려면 [SCM 통합용 Backstage 파일](application-context-for-scm-integrations/) 페이지의 지침을 따르세요.
+
+#### [GitLab 설정에서 개인 액세스 토큰](gitlab.md#gitlab-access-tokens) 생성하기
+
+1. GitLab 프로필로 이동합니다.
+2. 프로필 편집을 선택합니다.
+3. 왼쪽 사이드바에서 액세스 토큰을 선택합니다.
+4. 새 토큰 추가를 선택합니다.
+5. 토큰 이름과 만료 날짜를 입력합니다.
+6. 다음 권한을 활성화했는지 확인하세요:
+   * `read_api` - API에 대한 읽기 권한을 부여하며, 모든 그룹과 프로젝트, 컨테이너 레지스트리, 패키지 레지스트리가 포함됩니다.
+   * `read_repository` - Git-over-HTTP 또는 Repository Files API를 사용하는 개인 프로젝트의 리포지토리에 대해 읽기 전용 액세스를 부여합니다.
+7. 개인 액세스 토큰 생성 버튼을 클릭합니다.
+8. 표시된 키를 복사하여 저장합니다.
+
+#### API 버전 <a href="#gitlab-api-version" id="gitlab-api-version"></a>
+
+[GitLab REST API v4](https://docs.gitlab.com/ee/api/index.html) 리포지토리를 사용하여 API에 대한 정보를 확인할 수 있습니다.
