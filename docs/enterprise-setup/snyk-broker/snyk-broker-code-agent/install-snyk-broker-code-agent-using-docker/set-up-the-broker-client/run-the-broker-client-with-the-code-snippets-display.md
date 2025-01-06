@@ -1,4 +1,4 @@
-# 브로커 클라이언트를 코드 스니펫 표시와 함께 실행
+# Run the Broker client with the code snippets display
 
 브로커 클라이언트 이미지가 당신의 컴퓨터에 저장되면, `docker run` 명령어를 사용하여 이미지를 실행하고 브로커 클라이언트를 시작합니다.
 
@@ -6,9 +6,9 @@
 
 이 섹션에서 설명하는 브로커 클라이언트 실행을 위한 설정 명령어는 모든 SCMs에 사용되는 일반적인 명령어를 포함합니다. 일부 SCMs는 브로커 클라이언트 설정에 추가 매개변수를 필요로하며, 해당 매개변수는 이 섹션에서 표시되지만, 특정 SCM을 위한 브로커 클라이언트를 설정하는 경우 해당 SCM의 지침 또한 참조하십시오 [Snyk 브로커 설치 및 구성](../../../install-and-configure-snyk-broker/) 섹션.
 
-다음은  결과를 웹 UI에서 표시하는 방식으로 브로커 클라이언트를 설정하는 방법에 대해 설명합니다:
+다음은 결과를 웹 UI에서 표시하는 방식으로 브로커 클라이언트를 설정하는 방법에 대해 설명합니다:
 
-<figure><img src="../../../../../.gitbook/assets/Broker - Results - with code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="코드 스니펫을 표시하는 브로커 클라이언트 실행"><figcaption><p>코드 스니펫을 표시하는 브로커 클라이언트 실행</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FarerukRHyQnx9xKiziLs%252FBroker%2520-%2520Results%2520-%2520with%2520code%2520snippets.png%3Falt%3Dmedia%26token%3Dfd7841b2-87f6-48ed-ac56-f7b4323d166e&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=a520526b&#x26;sv=2" alt="코드 스니펫을 표시하는 브로커 클라이언트 실행"><figcaption><p>코드 스니펫을 표시하는 브로커 클라이언트 실행</p></figcaption></figure>
 
 코드 스니펫을 표시하도록 브로커 클라이언트를 설정할 때, 기본 브로커 클라이언트 설정에 사용한 매개변수와 함께 다음 파일과 매개변수를 추가합니다:
 
@@ -22,7 +22,7 @@
 
 ## **accept.json 파일 다운로드**
 
-웹 UI에서  결과의 코드 스니펫을 표시하려면, 먼저 사전 정의된 `accept.json` 파일을 다운로드합니다. `accept.json` 파일을 다운로드할 때, 통합된 SCM에 맞게 사용자 정의된 파일을 선택하고 접근 가능한 위치에 저장합니다.
+웹 UI에서 결과의 코드 스니펫을 표시하려면, 먼저 사전 정의된 `accept.json` 파일을 다운로드합니다. `accept.json` 파일을 다운로드할 때, 통합된 SCM에 맞게 사용자 정의된 파일을 선택하고 접근 가능한 위치에 저장합니다.
 
 1. 통합 설정 페이지에서 통합 용 `accept.json` 파일을 찾아 다운로드합니다:
    * [GitHub](../../../install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker/github-install-and-configure-using-docker.md)
