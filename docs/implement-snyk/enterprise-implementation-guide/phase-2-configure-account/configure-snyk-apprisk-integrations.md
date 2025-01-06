@@ -138,4 +138,35 @@ Coverage Gap 필터를 사용하여 다음을 수행할 수 있습니다:
 
 #### 태그 <a href="#hardbreak-tags" id="hardbreak-tags"></a>
 
-태그를 사용하여 자산을 분류할 수 있습니다. 다음과 같은 여러 방법으로 태그를 사용할 수 있습니다
+자산을 분류하려면 태그를 사용할 수 있습니다. 태그는 여러 가지 방법으로 사용할 수 있습니다:
+
+* 자동 태그: Snyk AppRisk는 리포지토리에서 사용된 기술(Python, Terraform 등)과 최신 리포지토리 업데이트에 대한 정보를 자동으로 리포지토리 자산에 태그합니다. 또한 정책을 사용하여 리포지토리 및 패키지 자산에 태그를 추가할 수 있습니다. GitHub과 GitLab의 주제도 리포지토리에서 가져와 Snyk AppRisk의 자산 태그로 적용할 수 있습니다.
+
+{% hint style="info" %}
+BitBucket은 리포지토리에서 사용된 언어를 자동으로 감지할 수 없습니다. Snyk AppRisk에서는 BitBucket에 대해 수동으로 추가된 언어 태그만 볼 수 있습니다. 자세한 내용은 BitBucket에서 제공하는 공식 문서를 참조하십시오.
+{% endhint %}
+
+* 사용자 정의 태그: 정책을 통해 시스템에서 생성된 태그를 넘어 자산을 분류할 수 있는 맞춤형 태그를 설정할 수 있습니다. 자세한 내용은 [정책 생성](../../../manage-risk/policies/assets-policies/create-policies.md) 페이지를 참조하십시오.  
+
+#### 대시보드
+
+대시보드를 사용하여 애플리케이션 및 보안 제어에 대한 빠른 개요를 확인할 수 있습니다. 기본 위젯을 사용하고 필요에 따라 표시된 정보를 사용자화하거나 필요에 맞는 새로운 위젯을 추가할 수 있습니다. 자세한 내용은 [자산 대시보드](../../../getting-started/snyk-web-ui.md#view-the-assets-dashboard) 페이지를 참조하십시오.
+
+다음은 사용 가능한 대시보드 위젯입니다:
+
+* **SAST 범위**: Snyk Code 및 Snyk Infrastructure as Code로 커버되는 리포지토리와 그렇지 않은 리포지토리를 확인합니다.
+
+{% hint style="info" %}
+SAST 범위 위젯은 OR 조건을 사용합니다. 즉, 리포지토리가 Snyk Code 또는 Snyk Infrastructure as Code로 커버된다면 해당 리포지토리는 SAST로 커버됩니다.
+{% endhint %}
+
+* **SCA 범위**: Snyk Open Source 및 Snyk Container로 커버되는 리포지토리와 그렇지 않은 리포지토리를 확인합니다. Snyk Open Source 범위 또는 Snyk Container 범위 중 하나만 보고 싶다면 위젯을 편집할 수 있습니다.
+
+{% hint style="info" %}
+SCA 범위 위젯은 OR 조건을 사용합니다. 즉, 리포지토리가 Snyk Open Source 또는 Snyk Container로 커버된다면 해당 리포지토리는 SCA로 커버됩니다.
+{% endhint %}
+
+* **소스별 리포지토리 분류**: Snyk AppRisk가 SCM 통합(Azure DevOps(Azure Repos), Gitlab, GitHub, BitBucket)을 사용하여 발견한 리포지토리를 확인합니다. "기타" 카테고리는 Snyk에서 발견했지만 SCM 리포지토리와 상호 연관되지 않은 리포지토리입니다.
+* **기술별 분류**: Snyk가 발견한 리포지토리의 주요 기술(언어) 태그를 확인합니다.
+* **유형별 자산 분류**: 자산이 리포지토리인지 패키지인지 확인합니다.
+* **리포지토리 활동**: 리포지토리가 활성화되어 있는지, 비활성화되어 있는지, 휴면 상태인지 확인합니다.
