@@ -71,7 +71,7 @@ Visual Studio Code, IntelliJ IDEA, Eclipse와 같은 IDE 통합을 통해 개발
 
 ## 추가 고려 사항
 
-### 
+### **Infrastructure as Code**
 
 Snyk의 의 경우, Terraform이나 yaml 구성 파일이 SCM에 보관되지만 별도의 영역이나 저장소에 있을 수 있습니다. 결과적으로 가져와야 할 다른 영역이 있는지 고려하십시오. "Terraform run" 프로세스 중에 Snyk 테스트를 가능하게 하기 위해 Terraform Cloud와 통합하려고 할 수도 있습니다.
 
