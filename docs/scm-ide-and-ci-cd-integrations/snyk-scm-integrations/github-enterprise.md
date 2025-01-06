@@ -42,7 +42,7 @@ Snyk를 GitHub 저장소와 연결하려면 다음 단계를 따르세요.
    자세한 내용은 [GitHub 계정 유형](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) 및 [필요한 액세스 범위](github-enterprise.md#required-access-scopes-for-snyk-github-enterprise-integration)를 참조하십시오.\
    참고로, PR 확인을위한 웹훅을 생성하려면 계정의 저장소 권한이 `관리자`여야 합니다. GitHub 사용자 정의 역할은 지원되지 않습니다.
 2. [개인 액세스 토큰 생성](github-enterprise.md#how-to-generate-a-personal-access-token).
-3. [개인 액세스 토큰 승인 및 SSO 활성화](github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso )하기.
+3. [개인 액세스 토큰 승인 및 SSO 활성화](github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso)하기.
 4. [GitHub 저장소 가져오기](github-enterprise.md#how-to-import-github-repositories).
 
 #### 개인 액세스 토큰 생성
@@ -77,7 +77,7 @@ Snyk는 선택한 저장소에서 dependency 파일(ex: `package.json`)에 대�
 
 가져온 프로젝트는 **프로젝트** 페이지에 나타나며 지속적으로 취약점을 확인합니다.
 
-<figure><img src="../../.gitbook/assets/github_integration-fix_15dec2022 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (16) (26).jpeg" alt="Snyk에 선택한 저장소 가져오기"><figcaption><p>Snyk에 선택한 저장소 가져오기</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-8b3be1cd3d5f4117327c067a1b1c17761b08c9b0%252Fgithub_integration-fix_15dec2022%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%2816%29.jpeg%3Falt%3Dmedia&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=901afa93&#x26;sv=2" alt="Snyk에 선택한 저장소 가져오기"><figcaption><p>Snyk에 선택한 저장소 가져오기</p></figcaption></figure>
 
 ### GitHub Enterprise 통합의 사용
 
@@ -159,8 +159,8 @@ PR 할당에 대한 옵션 **The last user to change the manifest file**은 Git 
 
 ### GitHub Enterprise 통합 해제 방법
 
-{% hint style="warning" %}
 Snyk GitHub Enterprise 통합을 해제하면 가져온 저장소에 대한 모든 스캔이 중지되며 PR 확인을 수행할 수 없으며 Snyk Web UI에서 프로젝20;
+
 * SAML SSO를 구성했다면 GitHub PAT를 인증하십시오. 자세한 내용은 [How to authorize your Personal Access Token and enable SSO](github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso) 페이지를 참조하십시오.
 
 4. Broker Token (`필수`): AppRisk에 Snyk 브로커를 사용하는 경우 브로커 토큰을 생성하고 추가하십시오.
