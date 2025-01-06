@@ -18,7 +18,7 @@
 
 다음 명령을 사용하여 배포를 생성하세요.
 
-```bash
+```
 curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/brokers/installs/INSTALL_ID/deployments?version=2024-02-08~experimental' \
 --header 'Content-Type: application/vnd.api+json' \
 --header 'Authorization: token YOUR_SNYK_TOKEN' \
@@ -38,23 +38,20 @@ curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/broke
 
 위 명령을 실행하면 `DEPLOYMENT_ID`(예: `data.id`)가 반환됩니다.
 
-| <pre><code>{
-    ...
-    "data": {
-        "id": "12345678-1234-1234-1234-123456789012",
-        "type": "broker_deployment",
-        "attributes": {
-            "install_id": "12345678-1234-1234-1234-123456789012",
-            "metadata": {
-                "deployment_name": "My Universal Broker Deployment",
-                "cluster": "Cluster X Region Y or whatever you need to not lose your deployment."
-            }
+
+...
+"data": {
+    "id": "12345678-1234-1234-1234-123456789012",
+    "type": "broker_deployment",
+    "attributes": {
+        "install_id": "12345678-1234-1234-1234-123456789012",
+        "metadata": {
+            "deployment_name": "My Universal Broker Deployment",
+            "cluster": "Cluster X Region Y or whatever you need to not lose your deployment."
         }
-    },
-    ...
-}
-</code></pre> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    }
+},
+...
 
 이제 Broker 클라이언트를 실행할 준비가 되었습니다.
 
