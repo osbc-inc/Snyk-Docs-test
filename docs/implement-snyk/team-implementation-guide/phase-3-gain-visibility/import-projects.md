@@ -41,14 +41,21 @@ CLI를 사용하여 개별 프로젝트를 세밀하게 스캔할 수 있습니�
 
 Snyk CLI를 사용하려면:
 
-1. 빌드 스크립트의 일부로 적절한 방법 중 하나를 사용하여 [CLI 설치](https://docs.snyk.io/snyk-cli/install-or-update-the-snyk-cli)를 수행하십시오.
-2. 스크립트에서 프로젝트 폴더로 이동하십시오.
-3. 원하는 스캔 유형에 대한 적절한 `snyk test` 또는 `snyk monitor` 명령어 및 옵션을 실행하십시오.
+1. 빌드 스크립트의 일부로 적합한 방법을 사용하여 [CLI 설치](https://docs.snyk.io/snyk-cli/install-or-update-the-snyk-cli)를 진행합니다.
+2. 스크립트에서 프로젝트 폴더로 이동합니다.
+3. 실행하려는 스캔 유형에 맞는 적절한 `snyk test` 또는 `snyk monitor` 명령어와 옵션을 실행합니다.\
+   \
+   스크립트에서 테스트를 구현할 위치는 일반적으로 유연하지만, 대부분 배포 전에 실행됩니다. Snyk Open Source 및 Snyk Container는 모니터 명령어만 사용하여 수동으로 보고합니다. 테스트 명령어를 사용할 경우, 목적은 `--severity-threshold`와 같은 특정 기준을 충족하는 문제가 발견되면 빌드를 중단하는 것입니다. CLI나 snyk-filter 플러그인에서 제공하는 여러 옵션을 사용할 수 있습니다.\
+   \
+   일반적으로 Snyk Open Source는 종속성이 빌드 시스템에 설치된 후 `test` 및/또는 `monitor` 명령어로 실행됩니다.\
+   \
+   일반적인 명령어는 다음과 같습니다:
+   * 코드: `snyk code test --org=[org-id]`
+   * 오픈 소스:
+     * `snyk test --all-projects --org=[org-id]`
+     * `snyk monitor --all-projects --org=[org-id]`\
+       `[org-id]`를 조직의 ID로 교체하세요.
+   * 컨테이너 및 코드 인프라 스캔에 대해서는 [컨테이너](../../../scan-with-snyk/snyk-container/scan-container-images.md)와 [인프라 코드](../../../scan-with-snyk/snyk-iac/)를 참조하세요. 이는 스캔하는 유형에 따라 달라집니다.
+4. `snyk test` 명령어를 실행할 때 로컬에서 결과를 확인하거나, `monitor` 또는 `report`를 사용할 때 Snyk 웹 UI를 통해 결과를 확인합니다.
 
-   테스트를 어디에 구현할지는 일반적으로 유연합니다. 보통 배포 전에 가장 자주 수행됩니다.
-
-   일반적으로, Snyk 오픈 소스는 의존성이 빌드 시스템에 설치된 후에 test 또는 monitor로 실행됩니다.
-
-4. 결과를 검토하려면, `snyk test`를 실행할 때 로컬로 또는 monitor 또는 report를 사용하여 Snyk 웹 UI에서 확인하십시오.
-
-다양한 파이프라인 통합의 데모를 보려면 [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples)를 참조하십시오.
+다양한 파이프라인 통합에 대한 데모는 [Snyk-Labs](https://github.com/snyk-labs/snyk-cicd-integration-examples)를 참조하세요.
