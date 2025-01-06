@@ -23,7 +23,7 @@ Snyk ECR 서비스 역할은 ECR에 액세스할 수 있는 IAM 역할로, 브�
 3. 컨테이너 레지스트리 에이전트 IAM 역할 또는 IAM 사용자가 Snyk ECR 서비스 역할만 가정할 수 있도록 제한하십시오.
 4. 브로커 클라이언트에게 Snyk ECR 서비스 역할의 역할 Amazon Resource Name (ARN)을 제공하십시오. 브로커 클라이언트는 이 역할 ARN을 컨테이너 레지스트리 에이전트에게 전달하고, 컨테이너 레지스트리 에이전트는 이를 가정하여 ECR에 액세스합니다.
 
-## 단계 1: IAM 사용자 또는 IAM 역할을 가진 컨테이너 레지스트리 에이전트 실행
+## 1단계: IAM 사용자 또는 IAM 역할을 가진 컨테이너 레지스트리 에이전트 실행
 
 이 단계에서, 컨테이너 레지스트리 에이전트에서 사용할 IAM 역할 또는 IAM 사용자를 생성합니다. IAM 역할 또는 IAM 사용자는 [AWS 문서](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html)에 나와 있는 메서드를 통해 컨테이너 레지스트리 에이전트에 제공될 수 있습니다.
 
@@ -87,7 +87,7 @@ EC2 인스턴스에서 컨테이너 레지스트리 에이전트 이미지를 �
 
 ### 예제 b: 전용 사용자 생성 및 환경 변수를 통해 자격 증명 제공
 
-#### 단계 1: 사용자 생성
+#### 1단계: 사용자 생성
 
 1. [AWS](https://console.aws.amazon.com/iam/home?#/policies)로 이동하여 IAM 서비스로 AWS 관리 콘솔에 로그인하고 **Users** 페이지로 이동합니다.
 2. **Add users**를 선택합니다.
@@ -99,7 +99,7 @@ EC2 인스턴스에서 컨테이너 레지스트리 에이전트 이미지를 �
 8. 사용자의 **Summary** 페이지에서 나중에 사용할 **User ARN**을 복사합니다.\
    예: `arn:aws:iam::aws-account:user` 또는 `SnykCraUser`
 
-#### 단계 2: 사용자가 역할을 가정할 수 있도록 정책 생성
+#### 2단계: 사용자가 역할을 가정할 수 있도록 정책 생성
 
 1. 새로 생성된 사용자 페이지에서 **Permissions** 탭에서 **Inline policy**를 생성합니다.
 2. **Service**에서 **STS**를 선택합니다.
@@ -123,14 +123,14 @@ EC2 인스턴스에서 컨테이너 레지스트리 에이전트 이미지를 �
 6. 정책을 검토하고 정책 이름을 지정합니다: **SnykCraAssumeRolePolicy**.
 7. 정책을 생성합니다.
 
-#### 단계 3: 컨테이너 레지스트리 에이전트 실행 시 자격 증명 제공
+#### 3단계: 컨테이너 레지스트리 에이전트 실행 시 자격 증명 제공
 
 컨테이너 레지스트리 에이전트 이미지를 실행할 때, 자격 증명을 다음 환경 변수를 설정하여 제공할 수 있습니다:
 
 * `AWS_ACCESS_KEY_ID=사용자 액세스 키 ID`
 * `AWS_SECRET_ACCESS_KEY=사용자 비밀 액세스 키`
 
-## 단계 2: Snyk ECR 서비스 역할 생성 및 ECR에 대한 계정 간 액세스 활성화
+## 2단계: Snyk ECR 서비스 역할 생성 및 ECR에 대한 계정 간 액세스 활성화
 
 이 단계에서는 ECR 리포지토리가 위치한 계정에서 역할을 생성합니다. 이 역할은 귀하의 리포지토리에 대한 읽기 전용 액세스를 허용하며, 이전 단계에서 생성된 역할에 의해 가정될 수 있습니다.
 
@@ -184,35 +184,91 @@ EC2 인스턴스에서 컨테이너 레지스트리 에이전트 이미지를 �
 
 ### 3. Snyk ECR 서비스 역할의 사용 범위 강화
 
-이 단계에서는 Snyk ECR 서비스 역할의 사용 범위를 강화하여 이를 컨테이너 레지스트리 에이전트 IAM 역할 또는 IAM 역할만 가정할 수 있도록 설정합니다.
+이 단계에서는 Snyk ECR 서비스 역할의 사용 가능성을 강화하여 컨테이너 레지스트리 에이전트 IAM 역할 또는 IAM 사용자가 해당 역할만을 수임할 수 있도록 합니다.
 
-1. 다시 **Roles** 페이지로 이동하여 [SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole)을 찾고 선택하여 역할 구성에 들어갑니다.
+1. **Roles** 페이지에서 [SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole)을 찾아 선택하여 역할 구성을 엽니다.
 2. **Trust relationships** 탭을 선택합니다.
 3. 신뢰 관계를 편집합니다.
-4. 모든 데이터를 삭제하고 다음 JSON을 대체합니다:
+4. 기존 데이터를 삭제하고 아래 JSON으로 교체합니다:
 
-    ```
+    ```json
     {
-      Version:2012-10-17,
-      Statement: [
+      "Version": "2012-10-17",
+      "Statement": [
         {
-          Effect:Allow,
-          Principal:{
-            AWS:컨테이너 레지스트리 에이전트 IAM 사용자 또```json
-: 룰 ARN Snyk계정의 EcrServiceRole
+          "Effect": "Allow",
+          "Principal": {
+            "AWS": "컨테이너 레지스트리 에이전트 IAM 사용자 또는 역할의 ARN"
+          },
+          "Action": "sts:AssumeRole",
+          "Condition": {
+            "StringEquals": {
+              "sts:ExternalId": "선택적 외부 ID"
+            }
+          }
+        }
+      ]
+    }
+    ```
+
+    * **Statement.Principal.AWS**에 1단계에서 생성한 IAM 역할 또는 사용자 ARN을 입력합니다.  
+      예: `arn:aws:iam::aws-account:user` 또는 `SnykCraEc2Role`,  
+      또는 `arn:aws:iam::aws-account:role` 또는 `SnykCraUser`
+    * **Condition.StringEquals.sts:ExternalId**에 선택적 외부 ID를 입력합니다. 이 값은 Broker Client에 자격 증명 객체를 제공할 때 사용됩니다.
+    * 여러 외부 ID를 지원하려면 대괄호 안에 ID 목록을 입력합니다.  
+      예: `sts:ExternalId: [ "11111111-1111-1111-1111-111111111111", "22222222-2222-2222-2222-222222222222" ]`
+5. 신뢰 정책을 업데이트합니다.
+
+---
+
+### **3단계: 컨테이너 레지스트리 에이전트에 사용되는 IAM 역할 또는 사용자의 사용 범위 강화**
+
+이 단계에서는 컨테이너 레지스트리 에이전트에 사용되는 IAM 역할 또는 사용자의 사용 가능성을 강화하여 [SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole)만 수임할 수 있도록 합니다.
+
+1. **Summary** 섹션 상단에 표시되는 [SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole)의 역할 ARN 키를 복사합니다.
+2. 컨테이너 레지스트리 에이전트를 실행하기 위해 IAM 역할 또는 사용자가 생성된 AWS 계정에서 **SnykCraAssumeRolePolicy**를 편집합니다:
+   1. IAM 역할이 생성된 경우:
+      * **Roles**로 이동하여 **SnykCraEc2Role** 역할을 선택합니다.
+      * **SnykCraAssumeRolePolicy**에서 JSON을 편집합니다.
+      * **SnykEcrServiceRole**의 역할 ARN을 `Resource`에 추가합니다.  
+        예: `Resource: Role ARN of SnykEcrServiceRole`
+   2. IAM 사용자가 생성된 경우:
+      * **Users**로 이동하여 **SnykCraUser** 사용자를 선택합니다.
+      * **SnykCraAssumeRolePolicy**에서 JSON을 편집합니다.
+      * **SnykEcrServiceRole**의 역할 ARN을 `Resource`에 추가합니다.  
+        예: `Resource: Role ARN of SnykEcrServiceRole`
+
+컨테이너 레지스트리 에이전트가 다른 계정의 여러 ECR 레지스트리에 액세스해야 하는 경우, 각 ECR 계정에 대해 Statement 목록에 별도의 항목을 추가해야 합니다. 예를 들어:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SnykCraAssumeRolePolicyAccountA",
+      "Effect": "Allow",
+      "Action": "sts:AssumeRole",
+      "Resource": "Role ARN of SnykEcrServiceRole of account A"
     },
+    {
+      "Sid": "SnykCraAssumeRolePolicyAccountB",
+      "Effect": "Allow",
+      "Action": "sts:AssumeRole",
+      "Resource": "Role ARN of SnykEcrServiceRole of account B"
+    }
   ]
 }
 ```
 
-## **단계 4: Snyk ECR 서비스 역할 ARN 및 외부 ID를 브로커 클라이언트에 제공**
+---
 
-이 단계에서는 SnykEcrServiceRole의 역할 ARN이 브로커 클라이언트에 제공되어 사용됩니다. 브로커 클라이언트는 이를 컨테이너 레지스트리 에이전트에 전달하고, ECR에 연결하기 위해 이를 가정합니다.
+### **4단계: Snyk ECR 서비스 역할의 ARN 및 외부 ID를 Broker Client에 제공**
 
-1. [SnykEcrServiceRole의 Summary](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole) 섹션 상단에 나타나는 **Role ARN** 키를 복사합니다.
-2. 브로커 클라이언트를 실행할 때, 컨테이너 레지스트리 에이전트가 ECR 계정에 액세스할 수 있도록 다음 환경 변수를 제공합니다. 사용자 이름과 비밀번호가 필요하지 않습니다.
+이 단계에서는 SnykEcrServiceRole의 Role ARN을 Broker Client에 제공하여, Broker Client가 이를 컨테이너 레지스트리 에이전트로 전달하고 에이전트가 이를 수임하여 ECR에 연결하도록 합니다.
+
+1. **Summary** 섹션 상단에 표시되는 [SnykEcrServiceRole](https://console.aws.amazon.com/iam/home?#/roles/SnykEcrServiceRole)의 Role ARN을 복사합니다.
+2. Broker Client를 실행할 때 아래 환경 변수를 제공하여 컨테이너 레지스트리 에이전트가 ECR 계정에 액세스할 수 있도록 합니다. 사용자 이름과 비밀번호는 필요하지 않습니다.
    * `CR_TYPE=ecr`
-   * `CR_ROLE_ARN=SnykEcrServiceRole의 역할 ARN`
-   * `CR_REGION=ECR의 AWS 지역`
-   * `CR_EXTERNAL_ID=선택 사항. 신뢰 관계 조건에서 찾은 외부 ID`
-```
+   * `CR_ROLE_ARN=Role ARN of SnykEcrServiceRole`
+   * `CR_REGION=AWS Region of ECR`
+   * `CR_EXTERNAL_ID=선택적 외부 ID (신뢰 관계 조건에 지정된 값)`
