@@ -185,13 +185,69 @@ Harness 통합은 초기 액세스 상태이며, Snyk AppRisk Essentials 및 Sny
 {% hint style="info" %}
 **릴리스 상태**
 
-OpsLevel 통합은 초기 액세스 상태이며**소유자 키(Owner key)** 를 추가하는 것이 필수입니다.
-   * 애플리케이션 - 이 메타데이터를 선택한 경우 **애플리케이션 키(Application key)** 를 추가해야합니다.
-9. **완료** 버튼을 클릭합니다.
-10. 연결이 수립되면, Datadog 서비스 카탈로그 통합의 상태가 **연결됨(Connected)** 으로 변경되고, Snyk AppRisk가 Datadog 서비스 카탈로그에서 발견된 데이터를 사용하여 Snyk AppRisk SCM 통합이 수집한 리포지토리 자산을 보강하기 시작할 것입니다.
-
-{% hint style="warning" %}
-카탈로그 속성을 설정할 때 속성의 이름을 사용자 정의할 수 있지만, 반드시 카탈로그와 통합 허브 설정에서 동일한 이름을 사용해야 합니다.
+OpsLevel 통합은 초기 액세스 단계에 있으며, Snyk AppRisk Essentials와 Snyk AppRisk Pro 플랜에서 사용할 수 있습니다.
 {% endhint %}
 
-\
+### OpsLevel에 필요한 매개변수
+
+1. OpsLevel **프로필 이름**을 추가하세요.
+2. OpsLevel 계정의 **인스턴스 URL**을 추가하세요. 이 형식 유형을 사용할 수 있습니다: `https://<YOUR Organizer>.opslevel.com`
+3. OpsLevel 인스턴스의 **API 토큰**을 추가하세요. OpsLevel 계정에서 API 토큰을 생성하려면, OpsLevel [API 토큰 생성](https://docs.opslevel.com/docs/graphql#1-create-an-api-token) 문서 페이지를 참조하세요.
+
+### OpsLevel을 위한 통합 허브 설정
+
+1. **통합 허브** 메뉴를 엽니다.
+2. **앱 컨텍스트** 태그를 선택하고 OpsLevel을 검색합니다.
+3. **추가** 버튼을 클릭합니다.
+4. **프로필 이름**을 추가합니다. 이는 OpsLevel 인스턴스의 이름입니다.
+5. OpsLevel 계정의 **인스턴스 URL**을 추가합니다.
+6. OpsLevel 인스턴스의 **API 토큰**을 추가합니다.
+7. Snyk AppRisk가 OpsLevel에서 가져올 수 있는 리포지토리 자산과 관련된 하나 이상의 속성을 선택할 수 있습니다. 다음 매핑을 확인하세요:
+   * 카탈로그 이름 - OpsLevel에서 `name`으로 식별됩니다.
+   * 카테고리 - OpsLevel에서 `tier.name`으로 식별됩니다.
+   * 라이프사이클 - OpsLevel에서 `lifecycle.name`으로 식별됩니다.
+   * 소유자 - OpsLevel에서 `owner.name`으로 식별됩니다.
+   * 애플리케이션 - OpsLevel에서 `product`로 식별됩니다.
+8. **완료** 버튼을 클릭합니다.
+9. 연결이 설정되면 OpsLevel 통합 상태가 **연결됨**으로 변경되며, Snyk AppRisk는 OpsLevel에서 찾은 데이터를 사용하여 리포지토리 자산을 강화하기 시작합니다.
+
+{% hint style="warning" %}
+카탈로그 속성을 설정할 때는 반드시 특정 서비스 수준 속성을 사용해야 합니다. 예를 들어 `attribute.name`과 같이 사용해야 합니다.
+{% endhint %}
+
+## Datadog 서비스 카탈로그
+
+{% hint style="info" %}
+**릴리스 상태**
+
+Datadog 서비스 카탈로그 통합은 초기 액세스 단계에 있으며, Snyk AppRisk Essentials와 Snyk AppRisk Pro 플랜에서 사용할 수 있습니다.
+{% endhint %}
+
+### Datadog 서비스 카탈로그에 필요한 매개변수
+
+1. Datadog **프로필 이름**을 추가하세요.
+2. Datadog 인스턴스의 **API 키**를 추가하세요. 토큰은 다음 범위 권한을 가져야 합니다: `apm_service_catalog_read`.
+3. Datadog의 **애플리케이션 키**를 추가하세요. 애플리케이션 키는 사용자가 Datadog의 프로그래밍 API에 액세스할 수 있도록 합니다. 자세한 내용은 [Datadog API 및 애플리케이션 키](https://docs.datadoghq.com/account_management/api-app-keys/) 문서 페이지를 참조하세요.
+
+### Datadog 서비스 카탈로그를 위한 통합 허브 설정
+
+1. **통합 허브** 메뉴를 엽니다.
+2. **앱 컨텍스트** 태그를 선택하고 **Datadog 서비스 카탈로그**를 검색합니다.
+3. **추가** 버튼을 클릭합니다.
+4. **프로필 이름**을 추가합니다. 이는 Datadog 인스턴스의 이름입니다.
+5. Datadog 인스턴스의 **API 키**를 추가합니다.
+6. Datadog 인스턴스의 **애플리케이션 키**를 추가합니다.
+7. **Datadog 사이트**에 대한 세부 정보를 추가합니다.
+8. Snyk AppRisk가 Datadog 서비스 카탈로그에서 가져올 수 있는 리포지토리 자산과 관련된 하나 이상의 속성을 선택할 수 있습니다. 다음 매핑을 확인하세요:
+   * 카탈로그 이름 - 이 메타데이터를 선택하면 **카탈로그 이름 키**를 추가해야 합니다.
+   * 제목 - 이 메타데이터를 선택하면 **제목 키**를 추가해야 합니다.
+   * 카테고리 - 이 메타데이터를 선택하면 **카테고리 키**를 추가해야 합니다.
+   * 라이프사이클 - 이 메타데이터를 선택하면 **라이프사이클 키**를 추가해야 합니다.
+   * 소유자 - 이 메타데이터를 선택하면 **소유자 키**를 추가해야 합니다.
+   * 애플리케이션 - 이 메타데이터를 선택하면 **애플리케이션 키**를 추가해야 합니다.
+9. **완료** 버튼을 클릭합니다.
+10. 연결이 설정되면 Datadog 서비스 카탈로그 통합 상태가 **연결됨**으로 변경되며, Snyk AppRisk는 Snyk AppRisk SCM 통합에서 수집된 리포지토리 자산을 Datadog 서비스 카탈로그에서 찾은 데이터로 강화하기 시작합니다.
+
+{% hint style="warning" %}
+카탈로그 속성을 설정할 때 속성의 이름을 사용자 정의할 수 있지만, 카탈로그와 통합 허브 설정에서 동일한 이름을 사용해야 합니다.
+{% endhint %}
