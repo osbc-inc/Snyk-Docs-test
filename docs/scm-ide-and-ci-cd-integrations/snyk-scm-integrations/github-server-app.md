@@ -152,4 +152,19 @@ curl --location 'https://{SNYK-BASE-API}/v1/org/{YOUR-ORG-ID}/integrations' \
 --header 'Content-Type: application/json; charset=utf-8' \
 --header 'Authorization: token ${REPLACE_WITH_API_TOKEN}' \
 --data '{
-    "type": "github
+    "type": "github-server-app",
+    "broker": {
+        "enabled": true
+    }
+}'
+```
+
+{% hint style="info" %}
+위 명령어가 성공적으로 실행되면 `id` 값이 반환됩니다. 이는 Snyk에서 새로운 GitHub Server App 통합의 `integrationId`입니다. 이 값을 기록해 두세요. Universal Broker에서 필요할 것입니다.
+{% endhint %}
+
+Snyk의 통합 페이지를 방문하면 통합이 구성된 것을 확인할 수 있습니다.
+
+<figure><img src="../../.gitbook/assets/image (630).png" alt=""><figcaption><p>성공적인 GitHub Server App 통합</p></figcaption></figure>
+
+GitHub Server App의 설정 및 설치를 완료하면 브로커 연결 설정에 필요한 모든 자격 증명이 제공됩니다. GitHub Server App과 Broker를 연결하는 방법에 대한 자세한 내용은 Snyk의 [Universal Broker](https://docs.snyk.io/enterprise-setup/snyk-broker/universal-broker) 공식 문서를 참조하세요.
