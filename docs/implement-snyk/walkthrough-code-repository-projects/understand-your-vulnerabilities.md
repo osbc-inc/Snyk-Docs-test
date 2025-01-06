@@ -1,4 +1,4 @@
-# 취약성 이해
+# Understand your vulnerabilities
 
 {% hint style="info" %}
 **요약**\
@@ -40,12 +40,14 @@ Snyk는 취약성에 대한 자세한 정보를 위한 자원을 제공하며, �
 
 오픈 소스 및 컨테이너 취약성의 경우, 취약성 식별자 옆에 있는 Snyk 취약성 식별자를 클릭하여 해당 취약성에 대한 세부 [Snyk 취약성 데이터베이스](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md) 정보에 액세스할 수 있습니다. 예를 들면:
 
-<figure><img src="../../.gitbook/assets/image (174) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="Snyk 취약성 데이터베이스에 액세스"><figcaption><p>Snyk 취약성 데이터베이스에 액세스</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FAqaPY3eauZpcQ02Rcye7%252Fimage.png%3Falt%3Dmedia%26token%3D79355b4a-e8d8-4bff-b629-58d23c906952&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=b5a32e9d&#x26;sv=2" alt="Snyk 취약성 데이터베이스에 액세스"><figcaption><p>Snyk 취약성 데이터베이스에 액세스</p></figcaption></figure>
 
 위 예시에서는 Snyk 취약성 데이터베이스에서 Hibernate Core 및 해당 라이브러리가 SQL 인젝션에 취약하다는 것을 확인할 수 있습니다.
 
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-b4bd2161ca3811f4d9a0d5d02e0b3bf4197f8b8b%252Fimage%2520%28149%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%282%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=10a3cdec&#x26;sv=2" alt=""><figcaption><p>Snyk 취약점 데이터베이스 예시 항목</p></figcaption></figure>
+
 {% hint style="info" %}
-[](../../scan-with-snyk/snyk-code/) 및 [](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/) 이슈 카드에는 해당 영역에 대한 별도의 정보 세트가 있습니다.
+및이슈 카드에는 해당 영역에 대한 별도의 정보 세트가 있습니다.
 {% endhint %}
 
 ### Snyk 학습 액세스
