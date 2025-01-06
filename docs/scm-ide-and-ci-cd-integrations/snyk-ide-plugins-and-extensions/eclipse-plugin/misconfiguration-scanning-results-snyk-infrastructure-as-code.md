@@ -1,4 +1,4 @@
-# 미구성 스캐닝 결과 (Snyk Infrastructure as Code)
+# Misconfiguration scanning results (Snyk Infrastructure as Code)
 
 Eclipse 플러그인 버전 2.0.0 이후, Snyk은 Eclipse의 네이티브 플로에 대한 심층 통합을 도입하고 있습니다: 인라인 강조, 문제 통합, 그리고 호버 시 문제에 대한 정보를 표시합니다. 다음은 Terraform 파일에서 발견된 심각한 중요도의 구성 오류에 대한 모든 정보를 보여줍니다:
 
@@ -10,4 +10,4 @@ Eclipse 플러그인 버전 2.0.0 이후, Snyk은 Eclipse의 네이티브 플로
 현재 호버 정보는 JavaEditor 및 GenericEditor로 제한되어 있습니다. 후자는 Wild Web Developer와 같은 플러그인의 기본 에디터입니다.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Snyk Infrastructure as Code가 Eclipse에 표시된 결과</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-df34417b38c05a72bbc1853770ee39442f2ee6db%252Fimage.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=abb5b922&#x26;sv=2" alt=""><figcaption><p>Snyk Infrastructure as Code가 Eclipse에 표시된 결과</p></figcaption></figure>
