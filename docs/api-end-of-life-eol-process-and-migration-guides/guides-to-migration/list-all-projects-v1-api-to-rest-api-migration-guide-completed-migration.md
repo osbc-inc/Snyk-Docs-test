@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **서비스 종료**
 
-2023년 6월 22일, Snyk가 [공지](https://updates.snyk.io/deprecation-and-end-of-life-for-the-list-all-projects-v1-api-267781)하며 프로젝트 목록 V1 API의 종료 일정을 공개했으며, 이 API는 2023년 12월 22일에 서비스 종료될 예정이며, [REST 프로젝트 목록 API](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org\_id-/projects)를 대신 사용하라고 권장합니다.
+2023년 6월 22일, Snyk이 [공지](https://updates.snyk.io/deprecation-and-end-of-life-for-the-list-all-projects-v1-api-267781)하며 프로젝트 목록 V1 API의 종료 일정을 공개했으며, 이 API는 2023년 12월 22일에 서비스 종료될 예정이며, [REST 프로젝트 목록 API](https://apidocs.snyk.io/?version=2023-05-29#get-/orgs/-org\_id-/projects)를 대신 사용하라고 권장합니다.
 {% endhint %}
 
 ## REST 프로젝트 API의 새로운 기능은 무엇인가요?
