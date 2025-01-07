@@ -12,35 +12,35 @@
 
 이 페이지에는 다음 정보가 제공됩니다.
 
-- [지역별 저장 데이터 유형](regional-hosting-and-data-residency.md#regionally-stored-data-types)
-- [전 세계 저장 데이터 유형](regional-hosting-and-data-residency.md#globally-stored-data-types)
-- [사용 가능한 Snyk 지역](regional-hosting-and-data-residency.md#available-snyk-regions)
-- [지역 멀티테넌트 및 싱글테넌트 호스팅](regional-hosting-and-data-residency.md#regional-multi-and-single-tenant-hosting)
+* [지역별 저장 데이터 유형](regional-hosting-and-data-residency.md#regionally-stored-data-types)
+* [전 세계 저장 데이터 유형](regional-hosting-and-data-residency.md#globally-stored-data-types)
+* [사용 가능한 Snyk 지역](regional-hosting-and-data-residency.md#available-snyk-regions)
+* [지역 멀티테넌트 및 싱글테넌트 호스팅](regional-hosting-and-data-residency.md#regional-multi-and-single-tenant-hosting)
 
 [지역별 URL 목록](regional-hosting-and-data-residency.md#regional-urls)도 제공됩니다.
 
 ## 지역별 및 글로벌 데이터
 
-Snyk는 서비스 품질을 제공하기 위해 서브프로세서를 사용합니다. 따라서 모든 데이터 유형을 선택한 지역에 저장할 수는 없습니다. 서브프로세서 목록은 [Snyk 웹사이트](https://snyk.io/policies/subprocessors/)에서 확인할 수 있습니다.
+Snyk은 서비스 품질을 제공하기 위해 서브프로세서를 사용합니다. 따라서 모든 데이터 유형을 선택한 지역에 저장할 수는 없습니다. 서브프로세서 목록은 [Snyk 웹사이트](https://snyk.io/policies/subprocessors/)에서 확인할 수 있습니다.
 
-제품 별 데이터 처리 방법에 대한 자세한 내용은 [Snyk가 데이터를 처리하는 방법](how-snyk-handles-your-data.md)을 참조하십시오.
+제품 별 데이터 처리 방법에 대한 자세한 내용은 [Snyk이 데이터를 처리하는 방법](how-snyk-handles-your-data.md)을 참조하십시오.
 
 ### 지역별 저장 데이터 유형
 
-- 취약점 데이터
-- 취약점 소스
-- 감사 로그
-- 통합 관련 데이터
-- 고객 소스 코드
+* 취약점 데이터
+* 취약점 소스
+* 감사 로그
+* 통합 관련 데이터
+* 고객 소스 코드
 
 ### 전 세계 저장 데이터 유형
 
-- 결제 데이터
-- 고객 관계 관리 데이터
-- 운영 로그 및 메트릭
-- 제품 분석
-- 지원 티켓
-- 사용자 인증 데이터
+* 결제 데이터
+* 고객 관계 관리 데이터
+* 운영 로그 및 메트릭
+* 제품 분석
+* 지원 티켓
+* 사용자 인증 데이터
 
 ## 사용 가능한 Snyk 지역
 
@@ -54,12 +54,12 @@ Snyk는 서비스 품질을 제공하기 위해 서브프로세서를 사용합�
 
 Snyk은 다음 지역을 위해 데이터 보존을 제공합니다:
 
-|                 지역                 |           URL          |
-| :------------------------------------: | :--------------------: |
-|             SNYK-US-01 (미국)            |   https://app.snyk.io  |
-|             SNYK-US-02 (미국)            | https://app.us.snyk.io |
-|     SNYK-EU-01 (독일, 프랑크푸르트)    | https://app.eu.snyk.io |
-|         SNYK-AU-01 (호주)         | https://app.au.snyk.io |
+|              지역             |           URL          |
+| :-------------------------: | :--------------------: |
+|       SNYK-US-01 (미국)       |   https://app.snyk.io  |
+|       SNYK-US-02 (미국)       | https://app.us.snyk.io |
+|   SNYK-EU-01 (독일, 프랑크푸르트)   | https://app.eu.snyk.io |
+|       SNYK-AU-01 (호주)       | https://app.au.snyk.io |
 | SNYK-GOV-01 (정부용 Snyk (미국)) | https://app.snykgov.io |
 
 싱글테넌트 배포는 Snyk 엔지니어링에 의해 아키텍처 서비스 지원 가능성이 검증된 추가 지역을 지원할 수 있습니다.
@@ -86,8 +86,8 @@ SNYK-US-02, EU 및 AU 데이터 센터 계정은 [기업 요금제](https://snyk
 
 Snyk 생태계에서 특정 통합을 설정할 때 특별한 사항이 있습니다.
 
-- Helm 차트를 사용하여 Snyk 런타임 센서를 설치하는 경우, Snyk API 기본 URL을 제공해야 합니다. Snyk 런타임 센서 문서 페이지의 [Helm 차트 사용](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md#using-a-helm-chart) 섹션의 5단계에서 필요한 모든 세부 정보를 찾을 수 있습니다.
-- 서드파티 통합을 설정하는 경우, 해당 서드파티의 기본 API URL을 지정해야 하는지 확인하십시오.
+* Helm 차트를 사용하여 Snyk 런타임 센서를 설치하는 경우, Snyk API 기본 URL을 제공해야 합니다. Snyk 런타임 센서 문서 페이지의 [Helm 차트 사용](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md#using-a-helm-chart) 섹션의 5단계에서 필요한 모든 세부 정보를 찾을 수 있습니다.
+* 서드파티 통합을 설정하는 경우, 해당 서드파티의 기본 API URL을 지정해야 하는지 확인하십시오.
 
 ## 지역별 URL
 
