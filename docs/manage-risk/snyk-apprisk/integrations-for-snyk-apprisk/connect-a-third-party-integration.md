@@ -304,8 +304,9 @@ Sysdig 런타임 통합으로부터 보고된 다음 [위험 요인](https://doc
 * **Done** 버튼을 클릭합니다.
 * 연결이 설정되면 Sysdig 통합 상태가 **Connected**로 변경됩니다.
 
+
 {% hint style="info" %}
-Sysdig 런타임 데이터가 런타임 통합으로부터 사용 가능해지면, Snyk AppRisk에 몇 시간 내에 표시됩니다.
+Sysdig 런타임 데이터가 런타임 통합을 통해 사용 가능해지면 몇 시간 내에 Snyk AppRisk에 표시됩니다.
 {% endhint %}
 
-![Sysdig - 설정 화면](../../../.gitbook/assets/image (593).png)
+<figure><img src="../../../.gitbook/assets/image (593).png" alt=""><figcaption><p>Sysdig - 설정 화면</p></figcaption></figure>
