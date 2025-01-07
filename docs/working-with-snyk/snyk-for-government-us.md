@@ -33,7 +33,7 @@ API 키를 사용할 수 없습니다.
 
 * 서비스 제공자는 Auth0 대신 Okta입니다.
 * ACS URL 및 엔터티 ID 및 인증서는 각 연결마다 다르며 Snyk SSO 설명서와 일치하지 않을 것입니다.
-* ACS Url, 엔터티 ID 및 인증서를 얻으려면 Snyk가 Okta에서 연결을 부분적으로 제공해야 합니다.
+* ACS Url, 엔터티 ID 및 인증서를 얻으려면 Snyk이 Okta에서 연결을 부분적으로 제공해야 합니다.
 
 자세한 내용은 [Snyk에 대한 인증을 위한 단일 로그인 (SSO)](../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/)를 참조하십시오.
 

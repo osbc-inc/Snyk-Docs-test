@@ -6,7 +6,7 @@
 지역 호스팅 및 데이터 보관은 기업용 요금제에서만 이용 가능합니다. 자세한 정보는 [요금제 및 가격](https://snyk.io/plans)을 참조하십시오.
 {% endhint %}
 
-데이터 보존은 Snyk가 선택한 데이터의 일부를 호스팅하는 지역을 제어할 수 있도록 합니다. GDPR에 대한 정보는 [Snyk가 GDPR 준수를 유지하는 방법](how-snyk-handles-your-data.md#how-snyk-maintains-gdpr-compliance)을 참조하십시오.
+데이터 보존은 Snyk이 선택한 데이터의 일부를 호스팅하는 지역을 제어할 수 있도록 합니다. GDPR에 대한 정보는 [Snyk이 GDPR 준수를 유지하는 방법](how-snyk-handles-your-data.md#how-snyk-maintains-gdpr-compliance)을 참조하십시오.
 
 데이터 보존은 [Snyk Open Source](../scan-with-snyk/snyk-open-source/), [Snyk Code](../scan-with-snyk/snyk-code/), [Snyk Container](../scan-with-snyk/snyk-container/) 및 [Snyk IaC](../scan-with-snyk/snyk-iac/)용으로 사용할 수 있습니다. Snyk은 여러 지역에서 데이터를 호스팅할 수 있습니다.
 
