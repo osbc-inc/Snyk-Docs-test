@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Snyk 문서](README.md)
-* [What's new in the Snyk docs?](whats-new-in-the-snyk-docs.md)
+* [Snyk 문서의 새로운 내용](whats-new-in-the-snyk-docs.md)
 * [Snyk이란 무엇인가요?](what-is-snyk.md)
 * [시작하기](getting-started/README.md)
   * [Snyk 웹 UI 살펴보기](getting-started/snyk-web-ui.md)
