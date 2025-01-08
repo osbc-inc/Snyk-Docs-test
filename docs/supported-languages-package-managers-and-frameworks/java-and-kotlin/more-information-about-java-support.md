@@ -1,4 +1,8 @@
-# Java 지원에 대한 자세한 정보
+---
+description: (아래 - 패키지 레지스트리 통합) 확인 필요
+---
+
+# More information about Java support
 
 ## Maven Bill of Materials (BOM)
 

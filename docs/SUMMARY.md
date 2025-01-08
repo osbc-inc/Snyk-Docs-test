@@ -34,7 +34,7 @@
     * [Maven 및 Gradle과의 SCM 통합](supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md)
     * [Java 및 Kotlin을 사용한 Snyk 워크플로](supported-languages-package-managers-and-frameworks/java-and-kotlin/snyk-workflow-with-java-and-kotlin.md)
     * [Java 및 Kotlin에 대한 지침](supported-languages-package-managers-and-frameworks/java-and-kotlin/guidance-for-java-and-kotlin.md)
-    * [Java 지원에 대한 자세한 정보](supported-languages-package-managers-and-frameworks/java-and-kotlin/more-information-about-java-support.md)
+    * [More information about Java support](supported-languages-package-managers-and-frameworks/java-and-kotlin/more-information-about-java-support.md)
   * [JavaScript](supported-languages-package-managers-and-frameworks/javascript/README.md)
     * [코드 분석을 위한 JavaScript](supported-languages-package-managers-and-frameworks/javascript/javascript-for-code-analysis.md)
     * [오픈 소스용 JavaScript](supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md)
