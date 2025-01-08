@@ -1,4 +1,4 @@
-# Snyk Python CLI
+# Python용 Snyk CLI
 
 ## CLI에서 Python 버전 설정
 
@@ -24,19 +24,19 @@ Pip `requirements.txt` 파일은 최상위 종속성만을 지정하며 중첩�
 
 ## Poetry 및 CLI
 
-Poetry 애플리케이션의 종속성 트리를 빌드하기 위해 Snyk은 `pyproject.toml` 및 `poetry.lock` 파일을 사용합니다. Snyk가 Poetry 종속성을 스캔하고 문제를 식별하려면 두 파일이 모두 있어야 합니다.
+Poetry 애플리케이션의 종속성 트리를 빌드하기 위해 Snyk은 `pyproject.toml` 및 `poetry.lock` 파일을 사용합니다. Snyk이 Poetry 종속성을 스캔하고 문제를 식별하려면 두 파일이 모두 있어야 합니다.
 
 `poetry.lock` 파일이 없는 경우 스캔하기 전에 `poetry lock`을 실행하여 생성해야 합니다.
 
 {% hint style="info" %}
-[PEP 621](https://peps.python.org/pep-0621/)은 `pyproject.toml` 파일에서 직접 종속성을 정의하는 표준이며, 이는 Poetry가 하는 방식과 다릅니다.&#x20;
+[PEP 621](https://peps.python.org/pep-0621/)은 `pyproject.toml` 파일에서 직접 종속성을 정의하는 표준이며, 이는 Poetry가 하는 방식과 다릅니다.
 
 Snyk는 PEP 621을 지원하지 않습니다.
 {% endhint %}
 
 ## Pipenv 및 CLI
 
-Pipenv 애플리케이션의 종속성 트리를 빌드하기 위해 Snyk은 `Pipfile` 및 `Pipfile.lock` 파일을 사용합니다. Snyk가 Pipenv 종속성을 스캔하고 문제를 식별하려면 두 파일이 모두 있어야 합니다.
+Pipenv 애플리케이션의 종속성 트리를 빌드하기 위해 Snyk은 `Pipfile` 및 `Pipfile.lock` 파일을 사용합니다. Snyk이Pipenv 종속성을 스캔하고 문제를 식별하려면 두 파일이 모두 있어야 합니다.
 
 CLI를 사용하기 전에 `pip install`을 실행합니다.
 
@@ -44,7 +44,7 @@ CLI를 사용하기 전에 `pip install`을 실행합니다.
 
 ## setup.py 및 CLI
 
-종속성 트리를 빌드하기 위해 Snyk는 `setup.py` 파일을 분석하고 `install_requires` 키에 나열된 패키지를 감지합니다.
+종속성 트리를 빌드하기 위해 Snyk은 `setup.py` 파일을 분석하고 `install_requires` 키에 나열된 패키지를 감지합니다.
 
 이 파일은 CLI에 자동으로 발견되지 않습니다. 수동으로 `--file` 옵션을 사용하여 명시해야 하며 다음과 같이 지정할 수 있습니다:
 
