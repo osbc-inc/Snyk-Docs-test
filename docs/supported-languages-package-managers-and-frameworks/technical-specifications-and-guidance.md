@@ -1,4 +1,4 @@
-# 기술 규격 및 안내
+# 기술 사양 및 지침
 
 ## Snyk Open Source
 
@@ -8,14 +8,14 @@
 취약점을 테스트하기 전에 오픈 소스 프로젝트를 빌드해야 하는 경우가 있습니다. 자세한 내용은 [Snyk CLI를 사용하여 테스트하기 전에 빌드가 필요한 오픈 소스 프로젝트](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md)를 참조하십시오.
 {% endhint %}
 
-Snyk는 종속성 그래프 및 (의존성 트리)를 구축하고 그 트리 내의 어느 패키지에서도 취약점을 찾기 위해 [취약점 데이터베이스](https://snyk.io/vuln)를 사용합니다.
+Snyk은 종속성 그래프 및 (의존성 트리)를 구축하고 그 트리 내의 어느 패키지에서도 취약점을 찾기 위해 [취약점 데이터베이스](https://snyk.io/vuln)를 사용합니다.
 
-Snyk는 프로젝트의 언어, 패키지 관리자 및 프로젝트의 위치에 따라 종속성 트리를 분석하고 구축합니다.
+Snyk은 프로젝트의 언어, 패키지 관리자 및 프로젝트의 위치에 따라 종속성 트리를 분석하고 구축합니다.
 
 {% hint style="info" %}
-공식 릴리스만 추적됩니다. 커밋(기본 브랜치로의 포함 여부를 포함)은 공식 릴리스나 태그에 포함되지 않는 한 식별되지 않습니다.&#x20;
+공식 릴리스만 추적됩니다. 커밋(기본 브랜치로의 포함 여부를 포함)은 공식 릴리스나 태그에 포함되지 않는 한 식별되지 않습니다.
 
-패키지 관리자가 있는 프로젝트의 경우 패키지 관리자의 릴리스를 의미합니다.&#x20;
+패키지 관리자가 있는 프로젝트의 경우 패키지 관리자의 릴리스를 의미합니다.
 
 Go 및 Unmanaged 스캔(C/C++)의 경우 GitHub 리포지토리에서 공식 릴리스나 태그가 필요합니다.
 {% endhint %}
@@ -24,8 +24,8 @@ Go 및 Unmanaged 스캔(C/C++)의 경우 GitHub 리포지토리에서 공식 릴
 
 개발자의 워크플로우를 통해 의존성 및 취약점을 관리하는 정보는 다음을 참조하십시오:
 
-- [보안 오픈 소스 정책 정의](https://snyk.io/series/open-source-security/open-source-policy/)
-- [보다 효율적인 수정을 위한 Snyk 보안 정책 사용](https://snyk.io/blog/snyk-security-policies/)
+* [보안 오픈 소스 정책 정의](https://snyk.io/series/open-source-security/open-source-policy/)
+* [보다 효율적인 수정을 위한 Snyk 보안 정책 사용](https://snyk.io/blog/snyk-security-policies/)
 
 ### 오픈 소스 라이선스 준수
 
@@ -41,9 +41,9 @@ Go 및 Unmanaged 스캔(C/C++)의 경우 GitHub 리포지토리에서 공식 릴
 
 Snyk Code는 다음 파일을 자동으로 분석에서 제외합니다:
 
-- 웹 UI에서: 1MB보다 큰 파일.
-- CLI 및 IDE에서: 1MB보다 큰 파일.
-- 3줄 이하의 minified JS 파일.
+* 웹 UI에서: 1MB보다 큰 파일.
+* CLI 및 IDE에서: 1MB보다 큰 파일.
+* 3줄 이하의 minified JS 파일.
 
 ### 파일 이름 길이 제한
 
@@ -67,17 +67,17 @@ Snyk는 프레임워크 지원을 포괄적 및 부분 두 가지 수준으로 �
 
 프레임워크를 포괄적으로 지원하는 경우 다음 사항을 의미합니다:
 
-- 소스 및 싱크: Snyk는 모든 관련 소스 및 싱크를 철저히 식별하고 포함했습니다.
-- 데이터 흐름 테스트: 포괄적인 데이터 흐름 범위를 보장하기 위해 철저한 테스트가 수행되었습니다.
-- 엔진 지원: Snyk Code 엔진은 이 프레임워크에 완전히 최적화되어 있습니다.
-- 제한 사항: Snyk는 제한 사항을 인식하지 못합니다. 잘못된 부정을 발견하면 [Snyk 지원](https://support.snyk.io)에 보고하십시오.
+* 소스 및 싱크: Snyk는 모든 관련 소스 및 싱크를 철저히 식별하고 포함했습니다.
+* 데이터 흐름 테스트: 포괄적인 데이터 흐름 범위를 보장하기 위해 철저한 테스트가 수행되었습니다.
+* 엔진 지원: Snyk Code 엔진은 이 프레임워크에 완전히 최적화되어 있습니다.
+* 제한 사항: Snyk는 제한 사항을 인식하지 못합니다. 잘못된 부정을 발견하면 [Snyk 지원](https://support.snyk.io)에 보고하십시오.
 
 부분적인 지원은 다음을 의미합니다:
 
-- 소스 및 싱크: Snyk의 커버리지가 제한되어 일부 소스, 세탁기 또는 싱크가 누락될 수 있습니다.
-- 데이터 흐름 테스트: Snyk가 어느 정도의 테스트를 수행했습니다.
-- 엔진 지원: 엔진이 이 프레임워크와의 호환성이 제한되어 있어 분석 정확도에 영향을 줄 수 있습니다.
-- 제한 사항: Taint 분석 또는 소스 및 싱크 식별에서 잘못된 부정이 발생할 수 있습니다.
+* 소스 및 싱크: Snyk의 커버리지가 제한되어 일부 소스, 세탁기 또는 싱크가 누락될 수 있습니다.
+* 데이터 흐름 테스트: Snyk가 어느 정도의 테스트를 수행했습니다.
+* 엔진 지원: 엔진이 이 프레임워크와의 호환성이 제한되어 있어 분석 정확도에 영향을 줄 수 있습니다.
+* 제한 사항: Taint 분석 또는 소스 및 싱크 식별에서 잘못된 부정이 발생할 수 있습니다.
 
 프레임워크의 부분적인 지원은 일반적으로 이러한 요소 조합을 포함합니다. 즉, 일부 소스 또는 싱크가 누락될 수 있으며, 엔진은 더 나은 지원을 제공할 수 있지만 데이터 흐름 테스트를 수행하여 분석이 완전히 신뢰할 수 있는지 확인하지 않은 경우가 있습니다.
 
@@ -101,16 +101,16 @@ CLI를 통해 Snyk Code를 사용하여 코드를 테스트하려면 터미널�
 
 테스트 옵션을 사용자 정의하고 다른 명령을 실행하거나 디렉토리 및 파일을 제외하며 결과를 다양한 형식으로 보고 탐색하는 방법에 대한 정보는 다음을 참조하십시오:
 
-- [사용 가능한 명령](../snyk-cli/commands/#available-commands)
-- [Snyk Code CLI 테스트에서 디렉터리 및 파일 제외](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
-- [테스트 결과 출력](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
-- [테스트 결과 내보내기](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
-- [snyk-to-html](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)
+* [사용 가능한 명령](../snyk-cli/commands/#available-commands)
+* [Snyk Code CLI 테스트에서 디렉터리 및 파일 제외](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)
+* [테스트 결과 출력](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#output-test-results)
+* [테스트 결과 내보내기](../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/view-snyk-code-cli-results.md#export-test-results)
+* [snyk-to-html](../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md)
 
 `snyk code test`를 실행한 후에는 다음을 수행할 수 있습니다:
 
-- [수정 PR 열기](../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/)
-- [PR Checks 구성](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
+* [수정 PR 열기](../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/)
+* [PR Checks 구성](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 
 ### Snyk Open Source용 CLI
 
@@ -120,6 +120,6 @@ CLI를 통해 Snyk Code를 사용하여 코드를 테스트하려면 터미널�
 
 ### SCM 통합 사용 방법
 
-- [통합 설정](../getting-started/#set-up-a-snyk-integration).
-- 자세한 내용은 [Snyk SCM 통합](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 참조하십시오.
-- 언어별 정보는 [Maven 및 Gradle을 사용하는 Git 리포지토리](java-and-kotlin/git-repositories-with-maven-and-gradle.md), [Git 리포지토리 및 JavaScript](javascript/git-repositories-and-javascript.md) 및 [Git 리포지토리 및 Python](python/git-repositories-and-python.md)를 참조하십시오.
+* [통합 설정](../getting-started/#set-up-a-snyk-integration).
+* 자세한 내용은 [Snyk SCM 통합](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 참조하십시오.
+* 언어별 정보는 [Maven 및 Gradle을 사용하는 Git 리포지토리](java-and-kotlin/git-repositories-with-maven-and-gradle.md), [Git 리포지토리 및 JavaScript](javascript/git-repositories-and-javascript.md) 및 [Git 리포지토리 및 Python](python/git-repositories-and-python.md)를 참조하십시오.
