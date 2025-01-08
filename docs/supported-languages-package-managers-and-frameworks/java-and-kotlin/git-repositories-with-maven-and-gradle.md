@@ -1,4 +1,4 @@
-# Maven 및 Gradle와의 SCM 통합
+# Maven 및 Gradle과의 SCM 통합
 
 ## Maven 및 Gradle 프로젝트용 SCM 통합
 
@@ -91,8 +91,8 @@ lockfile이 없는 Gradle 프로젝트의 경우, 가장 정확한 결과를 얻
 이러한 구성은 개선된 Gradle 스캔에 감지되고 사용될 것입니다.
 {% endhint %}
 
-Java 언어 설정에서 Snyk를 프라이빗 패키지 저장소(Artifactory 또는 Nexus 등)와 통합할 수 있습니다.
+Java 언어 설정에서 Snyk을 프라이빗 패키지 저장소(Artifactory 또는 Nexus 등)와 통합할 수 있습니다.
 
-이를 통해 Snyk는 프라이빗 패키지를 참조하는 Maven 또는 Gradle (얼리 액세스) 프로젝트를 스캔할 때 완전한 종속성 트리를 작성할 수 있습니다.
+이를 통해 Snyk은 프라이빗 패키지를 참조하는 Maven 또는 Gradle (얼리 액세스) 프로젝트를 스캔할 때 완전한 종속성 트리를 작성할 수 있습니다.
 
 자세한 내용은 [Maven을 위한 Artifactory 레지스트리](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)에서 확인하십시오. [패키지 저장소 통합](../../scan-with-snyk/snyk-open-source/package-repository-integrations/)에서 찾을 수 있습니다.

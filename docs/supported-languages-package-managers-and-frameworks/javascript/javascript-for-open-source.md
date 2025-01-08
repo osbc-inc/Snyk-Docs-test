@@ -1,11 +1,11 @@
-# JavaScript 오픈 소스를 위한 Snyk 지원
+# 오픈 소스용 JavaScript
 
 지원되는 패키지 매니저 및 기능에 대해서는 [JavaScript 세부 정보](./)를 참조하십시오.
 
 {% hint style="info" %}
-공식 릴리스만이 추적됩니다. 기본 브랜치에 대한 커밋은 공식 릴리스 또는 태그에 포함되지 않은 한 식별되지 않습니다.&#x20;
+공식 릴리스만이 추적됩니다. 기본 브랜치에 대한 커밋은 공식 릴리스 또는 태그에 포함되지 않은 한 식별되지 않습니다.
 
-JavaScript 패키지의 경우 npmjs 패키지 레지스트리에 릴리스되어야 합니다.&#x20;
+JavaScript 패키지의 경우 npmjs 패키지 레지스트리에 릴리스되어야 합니다.
 {% endhint %}
 
 ## 오픈 소스 및 라이선스
@@ -76,19 +76,19 @@ Snyk CLI pnpm 지원은 이른 액세스 상태입니다.
 
 **잠금 파일 버전**
 
-Snyk는 프로젝트의 종속성 트리를 생성하기 위해 `pnpm-lock.yaml` 잠금 파일을 사용합니다.
+Snyk은 프로젝트의 종속성 트리를 생성하기 위해 `pnpm-lock.yaml` 잠금 파일을 사용합니다.
 
 지원되는 잠금 파일 버전은 pnpm 7, 8 및 9에 해당하는 5.4, 6.x 및 9.x입니다.
 
-pnpm 잠금 파일에는 [bundledDependencies](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#bundledependencies)이 포함되어 있지 않으므로 Snyk는 이를 스캔하지 않습니다.
+pnpm 잠금 파일에는 [bundledDependencies](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#bundledependencies)이 포함되어 있지 않으므로 Snyk은 이를 스캔하지 않습니다.
 
 ### **Yarn**
 
-Snyk는 프로젝트 종속성의 표현을 생성하기 위해 Yarn 잠금 파일(`yarn.lock`)을 사용합니다.
+Snyk은은 프로젝트 종속성의 표현을 생성하기 위해 Yarn 잠금 파일(`yarn.lock`)을 사용합니다.
 
-프로젝트를 스캔하는 데 사용하는 파일은 패키지 매니저의 버전 업그레이드에 따라 변경될 수 있습니다. Snyk는 내부적으로 지원되는 버전만 나열합니다.
+프로젝트를 스캔하는 데 사용하는 파일은 패키지 매니저의 버전 업그레이드에 따라 변경될 수 있습니다. Snyk은 내부적으로 지원되는 버전만 나열합니다.
 
-이 페이지에 나열된 버전보다 더 새로운 Yarn 버전을 사용하는 경우 Yarn이 이미 지원되는 잠금 파일 버전을 사용하기 때문에 Snyk이 예상대로 작동하는 것을 발견할 수 있습니다. 그 Yarn 버전은 아마도 평가되지 않았으며, 따라서 이 페이지에 추가되지 않았을 것입니다.&#x20;
+이 페이지에 나열된 버전보다 더 새로운 Yarn 버전을 사용하는 경우 Yarn이 이미 지원되는 잠금 파일 버전을 사용하기 때문에 Snyk이 예상대로 작동하는 것을 발견할 수 있습니다. 그 Yarn 버전은 아마도 평가되지 않았으며, 따라서 이 페이지에 추가되지 않았을 것입니다.
 
 다음 표는 Yarn 버전 및 Snyk 기능 가용성 매트릭스를 보여줍니다.
 
@@ -102,7 +102,7 @@ Yarn의 다른 버전에는 다른 기능 집합이 있기 때문에 패키지 �
 
 ### Lerna
 
-Snyk는 **Lerna**를 완전히 지원하지는 않습니다. 프로젝트가 Yarn Workspaces를 사용하여 설정된 경우, 프로젝트를 스캔하는 방법은 모든 Yarn Workspaces 프로젝트와 동일하게 스캔할 수 있습니다.
+Snyk은 **Lerna**를 완전히 지원하지는 않습니다. 프로젝트가 Yarn Workspaces를 사용하여 설정된 경우, 프로젝트를 스캔하는 방법은 모든 Yarn Workspaces 프로젝트와 동일하게 스캔할 수 있습니다.
 
 Yarn Workspaces를 사용하여 설정된 Lerna 프로젝트의 경우 다음처럼 `snyk test`와 `snyk monitor`를 실행할 수 있습니다.
 
@@ -121,11 +121,11 @@ ls packages | xargs -I PKG_NAME snyk monitor --file=packages/PKG_NAME/package.js
 
 다음 표에는 종속성을 스캔하는 단계가 나열되어 있습니다. `snyk test` 및 `snyk monitor`와 같은 기본 명령에 대해 다루고 있습니다. 전체 CLI 명령 목록은 [CLI 명령 및 옵션 요약](../../snyk-cli/cli-commands-and-options-summary.md)을 참조하십시오.
 
-| 패키지 매니저 | 시작 방법                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 설명                                                                                                                                                                                                                                                                                               |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| npm             | <ol><li>npm 설치</li><li>`package.json` 및 `package-lock.json` 파일이 있는 디렉토리, 즉 npm 프로젝트 파일이 있는 디렉토리에 있는지 확인</li><li>(선택 사항) <code>npm install</code> 실행</li><li><a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk 명령</a> 실행</li><li>(선택 사항) <a href="../../snyk-cli/commands/test.md#options-for-npm-projects">snyk test</a> 및 <a href="../../snyk-cli/commands/monitor.md#options-for-npm-projects">snyk monitor</a>을 위한 명령 옵션 실행</li></ol>                         | <p>Snyk는 종속성 트리를 빌드하기 위해 당신의 <code>package-lock.json</code> 파일을 분석합니다. </p><p></p><p><code>package-lock.json</code>이 없는 경우, Snyk는 당신의 <code>node_modules</code> 폴더를 분석합니다. </p><p></p><p>대안으로, 먼저 잠금 파일을 생성하기 위해 <code>npm install</code>을 실행할 수 있습니다.</p> |
-| pnpm            | <ol><li>pnpm 설치</li><li>`package.json` 또는 `pnpm` 및 `pnpm-lock.yaml` 파일이 있는 디렉토리, 즉 pnpm 프로젝트 파일이 있는 디렉토리에 있는지 확인</li><li>(선택 사항)  <code>pnpm install</code> 실행</li><li><a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk 명령</a> 실행</li><li>(선택 사항) <a href="../../snyk-cli/commands/test.md#options-for-npm-projects">snyk test</a> 및 <a href="../../snyk-cli/commands/monitor.md#options-for-npm-projects">snyk monitor</a>을 위한 명령 옵션 실행</li></ol> | <p>Snyk는 당신의 <code>pnpm-lock.yaml</code> 파일을 분석하여 종속성 트리를 빌드합니다. <br><br><code>pnpm-lock.yaml</code>이 없는 경우, Snyk는 당신의 <code>node_modules</code> 폴더를 분석합니다. <br><br>대안으로, 먼저 잠금 파일을 생성하기 위해 <code>pnpm install</code>을 실행할 수 있습니다.</p>                   |
-| Yarn            | <ol><li>Yarn 설치</li><li>`package.json` 및 `yarn.lock` 파일이 있는 디렉토리, 즉 Yarn 프로젝트 파일이 있는 디렉토리에 있는지 확인</li><li>(선택 사항)  <code>yarn install</code> 실행</li><li><a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk 명령</a> 실행</li><li>(선택 사항) <a href="../../snyk-cli/commands/test.md#options-for-yarn-projects">snyk test</a> 및 <a href="../../snyk-cli/commands/monitor.md#options-for-yarn-projects">snyk monitor</a>을 위한 명령 옵션 실행</li></ol>                              | <p>Snyk는 당신의 <code>yarn.lock</code> 파일을 분석하여 종속성 트리를 빌드합니다. </p><p></p><p><code>yarn.lock</code>이 없는 경우, Snyk는 당신의 <code>node_modules</code> 폴더를 분석합니다. </p><p></p><p>대안으로, 먼저 잠금 파일을 생성하기 위해 <code>yarn install</code>을 실행할 수 있습니다.</p>                |
+| 패키지 매니저 | 시작 방법                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 설명                                                                                                                                                                                                                                         |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| npm     | <ol><li>npm 설치</li><li><code>package.json</code> 및 <code>package-lock.json</code> 파일이 있는 디렉토리, 즉 npm 프로젝트 파일이 있는 디렉토리에 있는지 확인</li><li>(선택 사항) <code>npm install</code> 실행</li><li><a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk 명령</a> 실행</li><li>(선택 사항) <a href="../../snyk-cli/commands/test.md#options-for-npm-projects">snyk test</a> 및 <a href="../../snyk-cli/commands/monitor.md#options-for-npm-projects">snyk monitor</a>을 위한 명령 옵션 실행</li></ol>                      | <p>Snyk는 종속성 트리를 빌드하기 위해 당신의 <code>package-lock.json</code> 파일을 분석합니다.</p><p><code>package-lock.json</code>이 없는 경우, Snyk는 당신의 <code>node_modules</code> 폴더를 분석합니다.</p><p>대안으로, 먼저 잠금 파일을 생성하기 위해 <code>npm install</code>을 실행할 수 있습니다.</p> |
+| pnpm    | <ol><li>pnpm 설치</li><li><code>package.json</code> 또는 <code>pnpm</code> 및 <code>pnpm-lock.yaml</code> 파일이 있는 디렉토리, 즉 pnpm 프로젝트 파일이 있는 디렉토리에 있는지 확인</li><li>(선택 사항) <code>pnpm install</code> 실행</li><li><a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk 명령</a> 실행</li><li>(선택 사항) <a href="../../snyk-cli/commands/test.md#options-for-npm-projects">snyk test</a> 및 <a href="../../snyk-cli/commands/monitor.md#options-for-npm-projects">snyk monitor</a>을 위한 명령 옵션 실행</li></ol> | <p>Snyk는 당신의 <code>pnpm-lock.yaml</code> 파일을 분석하여 종속성 트리를 빌드합니다.<br><br><code>pnpm-lock.yaml</code>이 없는 경우, Snyk는 당신의 <code>node_modules</code> 폴더를 분석합니다.<br><br>대안으로, 먼저 잠금 파일을 생성하기 위해 <code>pnpm install</code>을 실행할 수 있습니다.</p>       |
+| Yarn    | <ol><li>Yarn 설치</li><li><code>package.json</code> 및 <code>yarn.lock</code> 파일이 있는 디렉토리, 즉 Yarn 프로젝트 파일이 있는 디렉토리에 있는지 확인</li><li>(선택 사항) <code>yarn install</code> 실행</li><li><a href="../../snyk-cli/cli-commands-and-options-summary.md">Snyk 명령</a> 실행</li><li>(선택 사항) <a href="../../snyk-cli/commands/test.md#options-for-yarn-projects">snyk test</a> 및 <a href="../../snyk-cli/commands/monitor.md#options-for-yarn-projects">snyk monitor</a>을 위한 명령 옵션 실행</li></ol>                         | <p>Snyk는 당신의 <code>yarn.lock</code> 파일을 분석하여 종속성 트리를 빌드합니다.</p><p><code>yarn.lock</code>이 없는 경우, Snyk는 당신의 <code>node_modules</code> 폴더를 분석합니다.</p><p>대안으로, 먼저 잠금 파일을 생성하기 위해 <code>yarn install</code>을 실행할 수 있습니다.</p>                   |
 
 ## 모노레포 및 워크스페이스 지원
 
@@ -136,7 +136,7 @@ Yarn, npm 및 pnpm은 다중 하위 프로젝트를 포함하는 모노레포를
 * `--all-projects` : Yarn, npm 및 pnpm 워크스페이스 프로젝트 및 기타 지원되는 생태계 프로젝트를 발견 및 스캔합니다. 워크스페이스 프로젝트를 스캔할 때 루트 잠금 파일이 참조됩니다.
 * `--detection-depth` : 검색할 하위 디렉토리 수를 지정합니다.
 * `--strict-out-of-sync=false` : 워크스페이스의 패키지에 대해 동기화되지 않은 잠금 파일을 테스트할 수 있도록 허용합니다. 이 옵션이 `false`로 설정되면, 동기화되지 않은 매니페스트와 잠금 파일을 사용하여 Snyk 테스트를 실행할 수 있습니다.
-* `--policy-path` : 테스트 중 Snyk가 사용할 정책 경로를 지정합니다.
+* `--policy-path` : 테스트 중 Snyk이이 사용할 정책 경로를 지정합니다.
 
 ### 워크스페이스 스캔 예제
 
