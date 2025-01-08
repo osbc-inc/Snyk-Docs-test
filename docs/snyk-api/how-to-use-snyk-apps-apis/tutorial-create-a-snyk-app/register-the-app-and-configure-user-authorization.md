@@ -55,7 +55,7 @@ curl --include \
      'https://api.snyk.io/rest/orgs/<ORG_ID>/apps?version='
 ```
 
-Snyk로부터의 응답에는 Snyk 앱 통합을 완료하는 데 필요한 `clientId`와 `clientSecret` 두 가지 중요한 값이 포함되어 있습니다. 이러한 값을 안전하게 보관하십시오. 이는 Snyk의 `clientSecret`를 볼 수 있는 유일한 시기이며, **`clientSecret`를 공개적으로 공유해서는 안 됩니다**. 이 값은 Snyk과의 앱 인증에 사용됩니다.
+Snyk으로부터의 응답에는 Snyk 앱 통합을 완료하는 데 필요한 `clientId`와 `clientSecret` 두 가지 중요한 값이 포함되어 있습니다. 이러한 값을 안전하게 보관하십시오. 이는 Snyk의 `clientSecret`를 볼 수 있는 유일한 시기이며, **`clientSecret`를 공개적으로 공유해서는 안 됩니다**. 이 값은 Snyk과의 앱 인증에 사용됩니다.
 
 이제 Snyk 앱으로 앱을 등록했기 때문에 TypeScript 프로젝트를 조정하여 사용자가 권한을 부여할 수 있도록 시작할 수 있습니다.```korean
 const installs = db.data?.installs || [];
@@ -592,6 +592,6 @@ export function callSnykApi(tokenType: string, token: string, version: APIVersio
 
 ## 요약
 
-지금까지 읽어주셔서 축하드립니다! Snyk와 등록, 권한 흐름 구성, `auth_token`의 유효 기간이 지나지 않도록 유지하고 TypeScript를 사용한 훌륭한 시작점을 설정하는 방법을 배웠습니다.
+지금까지 읽어주셔서 축하드립니다! Snyk과 등록, 권한 흐름 구성, `auth_token`의 유효 기간이 지나지 않도록 유지하고 TypeScript를 사용한 훌륭한 시작점을 설정하는 방법을 배웠습니다.
 
 이 튜토리얼의 다음 모듈에서는 템플릿 시스템을 추가하고 Snyk의 모든 프로젝트를 사용자에게 보여주도록 앱을 구성할 것입니다.

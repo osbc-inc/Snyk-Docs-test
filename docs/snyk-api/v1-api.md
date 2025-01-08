@@ -21,7 +21,7 @@ V1 API 엔드포인트는 Snyk 사용자 문서의 [참조](reference/)에서 �
 
 ## API URL
 
-Snyk는 다음 지역에서 호스팅됩니다. 각 지역에는 고유한 기본 URL이 있습니다.
+Snyk은 다음 지역에서 호스팅됩니다. 각 지역에는 고유한 기본 URL이 있습니다.
 
 <table><thead><tr><th width="189">지역</th><th>기본 URL</th></tr></thead><tbody><tr><td>SNYK-US-01</td><td><code>https://api.snyk.io/v1/</code></td></tr><tr><td>SNYK-US-02</td><td><code>https://api.us.snyk.io/v1/</code></td></tr><tr><td>SNYK-EU-01 </td><td><code>https://api.eu.snyk.io/v1/</code> </td></tr><tr><td>SNYK-AU-01</td><td><code>https://api.au.snyk.io/v1/</code></td></tr></tbody></table>
 
@@ -53,7 +53,7 @@ HTTP/1.1 401 Unauthorized
 
 ## 요청 속도 제한
 
-Snyk는 고객에게 안정적인 경험을 제공하기 위해 V1 API 요청을 제한합니다.
+Snyk은 고객에게 안정적인 경험을 제공하기 위해 V1 API 요청을 제한합니다.
 
 V1 API는 **분당 2,000개의 요청**을 기본 속도 제한으로 가지고 있지만, 특정 엔드포인트에는 더 낮은 제한이 설정될 수 있습니다. 각 엔드포인트의 속도 제한을 보려면 참조 문서를 참조하세요.
 
