@@ -1,4 +1,4 @@
-# REST Search Audit Logs API와 GA REST Audit Logs API 마이그레이션 가이드
+# Search Audit Logs (Group and Org) v1 API to GA REST Audit logs API migration guide
 
 ## REST Search Audit Logs API의 새로운 기능
 
@@ -23,107 +23,57 @@ REST 마이그레이션의 일환으로 감사 로그 이벤트 페이로드는 
 
 v1 응답은 배열 형태로 반환됩니다. 예시:
 
-\`\`\`
-
-`[`
-
-  `{`
-
-    `"groupId": "4a18d42f-0706-4ad0-b127-24078731fbea",`
-
-    `"orgId": "4a18d42f-0706-4ad0-b127-24078731fbea",`
-
-    `"userId": "4a18d42f-0706-4ad0-b127-24078731fbea",`
-
-    `"projectId": null,`
-
-    `"event": "group.edit",`
-
-    `"content": {`
-
-      `"before": {`
-
-        `"name": "Group Previous Name"`
-
-      `},`
-
-      `"after": {`
-
-        `"name": "Group Current Name"`
-
-      `}`
-
-    `},`
-
-    `"created": "2017-04-11T21:00:00.000Z"`
-
-  `}`
-
-`]`
-
-\`\`\`
+```json
+[
+  {
+    "groupId": "4a18d42f-0706-4ad0-b127-24078731fbea",
+    "orgId": "4a18d42f-0706-4ad0-b127-24078731fbea",
+    "userId": "4a18d42f-0706-4ad0-b127-24078731fbea",
+    "projectId": null,
+    "event": "group.edit",
+    "content": {
+      "before": {
+        "name": "Group Previous Name"
+      },
+      "after": {
+        "name": "Group Current Name"
+      }
+    },
+    "created": "2017-04-11T21:00:00.000Z"
+  }
+]
+```
 
 REST 응답은 동일한 이벤트 페이로드 정보를 포함하지만 다음 형식으로 제공됩니다:
 
-\`\`\`
+```json
+{
+  "data": {
+    "items": [
+      {
+        "groupId": "4a18d42f-0706-4ad0-b127-24078731fbea",
+        "orgId": "4a18d42f-0706-4ad0-b127-24078731fbea",
+        "userId": "4a18d42f-0706-4ad0-b127-24078731fbea",
+        "projectId": null,
+        "event": "group.edit",
+        "content": {
+          "before": {
+            "name": "Group Previous Name"
+          },
+          "after": {
+            "name": "Group Current Name"
+          }
+        },
+        "created": "2017-04-11T21:00:00.000Z"
+      }
+    ]
+  },
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "links": {
+    "next": "https://example.com/api/resource"
+  }
+}
 
-`{`
-
-  `"data": {`
-
-    `"items": [`
-
-      `{`
-
-  `"groupId": "4a18d42f-0706-4ad0-b127-24078731fbea",`
-
-  `"orgId": "4a18d42f-0706-4ad0-b127-24078731fbea",`
-
-  `"userId": "4a18d42f-0706-4ad0-b127-24078731fbea",`
-
-  `"projectId": null,`
-
-  `"event": "group.edit",`
-
-  `"content": {`
-
-    `"before": {`
-
-      `"name": "Group Previous Name"`
-
-    `},`
-
-    `"after": {`
-
-      `"name": "Group Current Name"`
-
-    `}`
-
-  `},`
-
-  `"created": "2017-04-11T21:00:00.000Z"`
-
-`}`
-
-\
-\
-
-  `],`
-
-  `},`
-
-  `"jsonapi": {`
-
-    `"version": "1.0"`
-
-  `},`
-
-  `"links": {`
-
-    `"next": "https://example.com/api/resource",`
-
-  `}`
-
-`}`
-
-\`\`\`
+```
