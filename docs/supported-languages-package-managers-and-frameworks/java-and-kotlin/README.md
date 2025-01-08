@@ -1,4 +1,8 @@
-# Java 및 Kotlin
+---
+description: '(사용 가능한 기능 : 아래) "및 SCM 가져오기 기능" 확인 필요'
+---
+
+# Java and Kotlin
 
 ## 적용 가능성
 

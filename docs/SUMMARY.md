@@ -27,7 +27,7 @@
   * [Go](supported-languages-package-managers-and-frameworks/go/README.md)
     * [코드 분석용 Go](supported-languages-package-managers-and-frameworks/go/go-for-code-analysis.md)
     * [오픈 소스용 Go](supported-languages-package-managers-and-frameworks/go/go-for-open-source.md)
-  * [Java 및 Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/README.md)
+  * [Java and Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/README.md)
     * [코드 분석을 위한 Java 및 Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/java-and-kotlin-for-code-analysis.md)
     * [오픈 소스를 위한 Java 및 Kotlin](supported-languages-package-managers-and-frameworks/java-and-kotlin/java-and-kotlin-for-open-source.md)
     * [Java 및 Kotlin용 Snyk CLI](supported-languages-package-managers-and-frameworks/java-and-kotlin/snyk-cli-for-java-and-kotlin.md)
