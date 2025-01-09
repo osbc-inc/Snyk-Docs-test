@@ -1,4 +1,4 @@
-# Snyk 브로커를 배치하기 위한 준비
+# 배포를 위한 Snyk Broker 준비하기
 
 {% hint style="info" %}
 Windows에서 Snyk 브로커를 사용하는 것은 지원되지 않습니다. Snyk는 Windows 사용자가 리눅스를 사용하여 브로커를 배포하는 것을 권장합니다.
@@ -23,7 +23,7 @@ Windows에서 Snyk 브로커를 사용하는 것은 지원되지 않습니다. S
 
 ## Snyk 브로커 설치를 위한 호스트 준비
 
-Snyk는 각 통합을 위해 최소한 두 개의 별도의 브로커 클라이언트 인스턴스를 설정하거나 Kubernetes 시스템을 사용하여 설치하길 권장합니다. 이렇게 하면 항상 적어도 두 개의 인스턴스가 가동되어 중복성이 유지됩니다.
+Snyk은각 통합을 위해 최소한 두 개의 별도의 브로커 클라이언트 인스턴스를 설정하거나 Kubernetes 시스템을 사용하여 설치하길 권장합니다. 이렇게 하면 항상 적어도 두 개의 인스턴스가 가동되어 중복성이 유지됩니다.
 
 ## Snyk 브로커 사용을 위한 네트워크 구성
 
@@ -44,14 +44,14 @@ Snyk 브로커 서버 측에서 시작된 트래픽은 항상 최신의 브로�
 * Infrastructure as Code 파일을 감지할 계획이 있습니까?
   * 배포에 `-e ACCEPT_IAC`라는 환경 변수나 사용자 정의 allowlist `accept.json` 파일을 추가해야 함.
   * [Snyk 브로커 - Infrastructure as Code 검출](snyk-broker-infrastructure-as-code-detection/)을 참조하십시오.
-*  취약점을 감지할 계획이 있습니까?
-  * 브로커가 귀하의 리포지토리를 Git 클론할 수 있도록 권한 부여
-  * 이를 위해 환경 변수를 추가하십시오: `ACCEPT_CODE=true.`
+* 취약점을 감지할 계획이 있습니까?
+* 브로커가 귀하의 리포지토리를 Git 클론할 수 있도록 권한 부여
+* 이를 위해 환경 변수를 추가하십시오: `ACCEPT_CODE=true.`
 * 컨테이너 레지스트리에 연결할 계획이 있습니까?
   * Snyk 브로커 컨테이너 레지스트리 에이전트와 함께 추가 에이전트를 배포해야 함.
   * [Snyk 브로커 컨테이너 레지스트리 에이전트](snyk-broker-container-registry-agent/)를 참조하십시오.
 
-각 통합에는 특정한 브로커 토큰이 할당됩니다.  취약점을 분석하고 컨테이너 레지스트리에 연결하는 통합은 다음을 갖추고 있습니다:
+각 통합에는 특정한 브로커 토큰이 할당됩니다. 취약점을 분석하고 컨테이너 레지스트리에 연결하는 통합은 다음을 갖추고 있습니다:
 
 * 추가 환경 변수 `-e ACCEPT_CODE`를 가진 SCM용 브로커 한 개
 * 컨테이너 레지스트리용 브로커 한 개 및 브로커 컨테이너 레지스트리 에이전트 한 개
@@ -59,7 +59,7 @@ Snyk 브로커 서버 측에서 시작된 트래픽은 항상 최신의 브로�
 ## Snyk 브로커를 위한 대상 응용프로그램에서 자격 증명 생성
 
 {% hint style="info" %}
-Snyk는 모든 API 토큰과 자격 증명을 90일마다 반복해서 바꾸는 것을 권장합니다.
+Snyk 모든 API 토큰과 자격 증명을 90일마다 반복해서 바꾸는 것을 권장합니다.
 
 브로커의 첫 배포에는 Snyk 계정 팀과 협력해야 합니다.
 {% endhint %}
@@ -76,7 +76,7 @@ Snyk는 모든 API 토큰과 자격 증명을 90일마다 반복해서 바꾸는
 [Artifactory Repository](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/) 및 [Nexus Repository Manager](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) 브로커화된 인스턴스 또는 [Jira](install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md) 통합의 경우, Snyk UI에서 브로커 토큰을 생성하거나 [Snyk 지원팀](https://support.snyk.io)에 문의할 수 있습니다.
 
 1. 해당 통합을 위해 **설정** > **통합**을 선택하여 브로커 토큰을 생성하십시오.
-2. 브로커 토큰이 생성된 후, 해당 통합에서, 스크린에 나타나는 알림이 **Could not connect to...**인 것을 확인하십시오. 이는 아직 클라이언트를 설치하거나 구성하지 않았기 때문입니다.
+2. 브로커 토큰이 생성된 후, 해당 통합에서, 스크린에 나타나는 알림이 \*\*Could not connect to...\*\*인 것을 확인하십시오. 이는 아직 클라이언트를 설치하거나 구성하지 않았기 때문입니다.
 3. UI에서 브로커 토큰을 복사하여 클라이언트를 설치할 때 사용하십시오.
 
 ## 여러 조직을 대상으로 브로커 활성화

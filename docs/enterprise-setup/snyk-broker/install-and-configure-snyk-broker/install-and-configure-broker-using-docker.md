@@ -1,10 +1,10 @@
-# 도커를 사용하여 브로커 설치 및 구성
+# Docker를 사용하여 Broker 설치 및 구성하기
 
 설치를 시작하기 전에 [Prepare Snyk Broker for deployment](../prepare-snyk-broker-for-deployment.md) 페이지의 [Prerequisites](../prepare-snyk-broker-for-deployment.md#prerequisites-for-snyk-broker) 및 다른 정보를 참조하십시오.
 
-**Kubernetes를 사용하는 경우**, Snyk는 [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm)를 사용하여 Snyk 브로커를 설치하는 것을 권장합니다. 자세한 내용은 [Helm을 사용하여 브로커 설치 및 구성](install-and-configure-broker-using-helm.md)을 참조하십시오.
+**Kubernetes를 사용하는 경우**, Snyk은 [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm)를 사용하여 Snyk 브로커를 설치하는 것을 권장합니다. 자세한 내용은 [Helm을 사용하여 브로커 설치 및 구성](install-and-configure-broker-using-helm.md)을 참조하십시오.
 
-다른 환경에서는, Snyk가 제공하는 [Docker 이미지](https://github.com/snyk/broker)를 사용하여 Snyk 브로커를 설치할 수 있습니다. 이곳에 나열된 페이지들은 Docker를 사용하여 Snyk 브로커 클라이언트 통합을 설정하는 방법을 설명합니다. 
+다른 환경에서는, Snyk이 제공하는 [Docker 이미지](https://github.com/snyk/broker)를 사용하여 Snyk 브로커를 설치할 수 있습니다. 이곳에 나열된 페이지들은 Docker를 사용하여 Snyk 브로커 클라이언트 통합을 설정하는 방법을 설명합니다.
 
 ## Docker를 사용하여 설치
 

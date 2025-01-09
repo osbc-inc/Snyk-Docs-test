@@ -9,7 +9,7 @@
 
 서비스 계정은 특수한 유형의 시스템 사용자입니다. 서비스 계정을 생성하면 해당 서비스 계정과 연결된 유일한 API 토큰이 생성되며 이는 일반 사용자 자격 증명을 대체합니다. Snyk는 Snyk 프로세스를 시작하기 위해 인증이 필요합니다.
 
-**자동화에 사용되는 서비스 계정**을 설정하여 Snyk 사용자의 토큰을 사용하는 대신 통합을 관리하는 데 도움을 줄 수 있습니다.&#x20;
+**자동화에 사용되는 서비스 계정**을 설정하여 Snyk 사용자의 토큰을 사용하는 대신 통합을 관리하는 데 도움을 줄 수 있습니다.
 
 조직 또는 그룹 수준에서 단일 또는 여러 토큰을 생성하여 통합을 관리할 수 있습니다. 각 서비스 계정에는 쉽게 인식하기 위해 고유한 이름이 지정되어 있습니다. 이 이름은 재사용할 수 없습니다.
 
@@ -152,7 +152,7 @@ Snyk는 IDE와 인증하는 데 서비스 계정 토큰을 사용하는 것을 �
 
 **그룹 수준**에서 보기(View), 생성(Create), 편집(Edit) 서비스 계정 권한을 가진 사용자는 조직 내 새로운 서비스 계정을 설정하고 역할(Role)을 할당할 수 있습니다.
 
-조직을 선택하고 **Settings(설정)** > **Service Accounts(서비스 계정)**으로 이동합니다. 계정 이름을 입력하고 드롭다운에서 역할을 선택한 후 **Create(생성)** 버튼을 클릭합니다.
+조직을 선택하고 **Settings(설정)** > \*\*Service Accounts(서비스 계정)\*\*으로 이동합니다. 계정 이름을 입력하고 드롭다운에서 역할을 선택한 후 **Create(생성)** 버튼을 클릭합니다.
 
 <figure><img src="../../.gitbook/assets/snyk-service-accounts.png" alt="조직 서비스 계정 생성 시 역할 선택"><figcaption><p>조직 서비스 계정 생성 시 역할 선택</p></figcaption></figure>
 
@@ -161,7 +161,7 @@ Snyk는 IDE와 인증하는 데 서비스 계정 토큰을 사용하는 것을 �
 <figure><img src="../../.gitbook/assets/Screenshot 2022-06-23 at 15.49.49.png" alt="서비스 계정에 할당된 역할 변경에 대한 경고"><figcaption><p>서비스 계정에 할당된 역할 변경에 대한 경고</p></figcaption></figure>
 
 {% hint style="warning" %}
-Snyk는 사용자가 본인의 권한보다 높은 권한을 가진 역할로 조직 서비스 계정을 생성하지 못하도록 방지합니다. 만약 본인의 권한보다 높은 권한을 가진 역할로 서비스 계정을 생성하려고 하면, **Cannot create a service account with a higher privilege role than yours(본인의 권한보다 높은 권한 역할로 서비스 계정을 생성할 수 없습니다)** 오류가 표시됩니다.
+Sny은 사용자가 본인의 권한보다 높은 권한을 가진 역할로 조직 서비스 계정을 생성하지 못하도록 방지합니다. 만약 본인의 권한보다 높은 권한을 가진 역할로 서비스 계정을 생성하려고 하면, **Cannot create a service account with a higher privilege role than yours(본인의 권한보다 높은 권한 역할로 서비스 계정을 생성할 수 없습니다)** 오류가 표시됩니다.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.59.52.png" alt="사용자가 더 높은 권한 역할을 서비스 계정에 할당할 수 없음"><figcaption><p>사용자가 더 높은 권한 역할을 서비스 계정에 할당할 수 없음</p></figcaption></figure
+<figure><img src="../../.gitbook/assets/Screenshot 2022-08-01 at 15.59.52.png" alt="사용자가 더 높은 권한 역할을 서비스 계정에 할당할 수 없음"><figcaption><p>사용자가 더 높은 권한 역할을 서비스 계정에 할당할 수 없음</p></figcaption></figure>

@@ -1,7 +1,7 @@
 # Universal Broker
 
 {% hint style="info" %}
-**릴리스 상태**  
+**릴리스 상태**\
 유니버설 브로커는 초기 액세스 중이며 엔터프라이즈 플랜에서만 사용할 수 있습니다. 설정하려면 Snyk 계정팀에 문의하십시오.
 {% endhint %}
 
@@ -9,9 +9,9 @@
 
 이 페이지에서는 클라이언트를 위한 구성 흐름을 설명합니다. 다음 페이지에서는 유니버설 브로커를 사용하여 브로커 배포 설정을 안내합니다:
 
-- [유니버설 브로커의 초기 구성](initial-configuration-of-the-universal-broker.md)
-- [API를 사용하여 GitHub 연결 설정](set-up-a-github-connection-using-the-api.md)
-- [필수 환경 변수로 브로커 다시 시작 및 연결](restart-your-broker-with-the-required-environment-variable-and-connect.md)
+* [유니버설 브로커의 초기 구성](initial-configuration-of-the-universal-broker.md)
+* [API를 사용하여 GitHub 연결 설정](set-up-a-github-connection-using-the-api.md)
+* [필수 환경 변수로 브로커 다시 시작 및 연결](restart-your-broker-with-the-required-environment-variable-and-connect.md)
 
 ## 유니버설 브로커 배포 및 연결 모델 <a href="#universal-broker-deployment-and-connection-model" id="universal-broker-deployment-and-connection-model"></a>
 
@@ -19,7 +19,7 @@
 
 <figure><img src="../../../.gitbook/assets/image 5.png" alt="Universal Broker Model"><figcaption><p>유니버설 브로커 모델</p></figcaption></figure>
 
-각 배포와 컨테이너가 하나의 연결 유형만 지원하는 기존 브로커 모델과 대조적으로, Snyk는 많은 종류의 연결을 지원하는 브로커 배포를 설정하고 잊는 방식으로 제공합니다.
+각 배포와 컨테이너가 하나의 연결 유형만 지원하는 기존 브로커 모델과 대조적으로, Snyk은은 많은 종류의 연결을 지원하는 브로커 배포를 설정하고 잊는 방식으로 제공합니다.
 
 단일 배포는 여러 유형의 연결을 지원할 수 있습니다. 새로운 기능을 제공할 수 있지만 Snyk은 컨테이너 리소스가 무한정 수직 확장 불가능하기 때문에 25개 연결 미만을 유지하는 것을 권장합니다.
 

@@ -1,4 +1,4 @@
-# GitHub - Docker를 사용하여 설치 및 구성
+# GitHub - Docker를 사용한 설치 및 구성
 
 설치하기 전에 [전제 조건](./) 및 [Docker를 사용한 설치에 대한 일반 지침](../install-and-configure-broker-using-docker.md)를 검토하십시오.
 
@@ -8,7 +8,7 @@
 
 GitHub용 **Snyk 브로커 클라이언트를 사용**하려면 `docker pull snyk/broker:github-com`을 **실행**하십시오. 환경 변수의 정의에 대해서는 [Snyk 브로커를 위한 GitHub - 환경 변수](github-environment-variables-for-snyk-broker.md)를 참조하십시오.
 
-**필요한 경우**, [고급 구성 페이지](../advanced-configuration-for-snyk-broker-docker-installation/)로 이동하여 GitHub 인스턴스가 프라이빗 인증서를 사용하는 경우 브로커 클라이언트 구성에 CA(Certificate Authority)를 제공하거나 [프록시 지원](../advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md)을 설정하는 등 필요한 구성 변경을 수행하십시오.&#x20;
+**필요한 경우**, [고급 구성 페이지](../advanced-configuration-for-snyk-broker-docker-installation/)로 이동하여 GitHub 인스턴스가 프라이빗 인증서를 사용하는 경우 브로커 클라이언트 구성에 CA(Certificate Authority)를 제공하거나 [프록시 지원](../advanced-configuration-for-snyk-broker-docker-installation/proxy-support-with-docker.md)을 설정하는 등 필요한 구성 변경을 수행하십시오.
 
 ## GitHub를 위한 브로커 클라이언트 설정을 위한 Docker 실행 명령
 
@@ -33,7 +33,7 @@ docker run --restart=always \
 ```
 
 {% hint style="info" %}
-Snyk AppRisk는 기본적으로 **`false`**로 설정됩니다. **`true`**로 설정하여 활성화하십시오.
+Snyk AppRisk는 기본적으로 \*\*`false`\*\*로 설정됩니다. \*\*`true`\*\*로 설정하여 활성화하십시오.
 {% endhint %}
 
 **Docker 실행 명령을 사용하는 대신에** GitHub 통합을 위해 환경 변수를 재정의하기 위해 파생된 Docker 이미지를 사용할 수도 있습니다. [파생된 Docker 이미지](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)를 참조하여 GitHub 통합을 위해 오버라이드할 환경 변수를 확인하십시오.
@@ -48,10 +48,10 @@ Broker 클라이언트 구성을 붙여넣어 Broker 클라이언트 컨테이�
 
 ### **GitHub용 큰 매니페스트 파일 (> 1MB) 지원**
 
-오픈 Fix/Upgrade PR 또는 PR/반복 테스트가 실패하는 이유 중 하나는 큰 매니페스트 파일(> 1MB)을 가져오는 것일 수 있습니다. 이 문제를 해결하려면 [Snyk Open Source 스캔 (SCA)의 대용량 매니페스트 파일 (Docker 설정)](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)의 추가 지침을 따라 브로커에 추가 변수를 활성화하십시오. &#x20;
+오픈 Fix/Upgrade PR 또는 PR/반복 테스트가 실패하는 이유 중 하나는 큰 매니페스트 파일(> 1MB)을 가져오는 것일 수 있습니다. 이 문제를 해결하려면 [Snyk Open Source 스캔 (SCA)의 대용량 매니페스트 파일 (Docker 설정)](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)의 추가 지침을 따라 브로커에 추가 변수를 활성화하십시오.
 
 {% hint style="info" %}
-가능한 최대 보안을 보장하기 위해 Snyk는 이 규칙을 기본으로 활성화하지 않습니다. 이 엔드포인트 사용은 경로에 특정 허용된 파일 이름이 포함되어 있지 않기 때문에 이 규칙의 사용은 이 리포지토리의 모든 파일에 대한 이론적 액세스를 의미합니다.
+가능한 최대 보안을 보장하기 위해 Snyk은 이 규칙을 기본으로 활성화하지 않습니다. 이 엔드포인트 사용은 경로에 특정 허용된 파일 이름이 포함되어 있지 않기 때문에 이 규칙의 사용은 이 리포지토리의 모든 파일에 대한 이론적 액세스를 의미합니다.
 {% endhint %}
 
 ### **GitHub와의 Broker에 대한 추가 문제 해결**

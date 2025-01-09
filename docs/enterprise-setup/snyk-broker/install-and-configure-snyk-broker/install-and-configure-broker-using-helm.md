@@ -2,9 +2,9 @@
 
 설치를 시작하기 전에 [Snyk Broker를 배포하기 위한 사전 조건](../prepare-snyk-broker-for-deployment.md#prerequisites-for-snyk-broker) 및 페이지 [Prepare Snyk Broker for deployment](../prepare-snyk-broker-for-deployment.md)에서 다른 정보를 확인하세요.
 
-**만약 Kubernetes를 사용 중이라면**, Snyk는 [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm)를 사용하여 **Snyk Broker를 설치**할 것을 권장합니다.
+**만약 Kubernetes를 사용 중이라면**, Snyk은 [**Broker Helm Chart**](https://github.com/snyk/snyk-broker-helm)를 사용하여 **Snyk Broker를 설치**할 것을 권장합니다.
 
-**기타 환경을 사용하고 있다면**, Snyk가 제공하는 [Docker 이미지](https://github.com/snyk/broker)를 사용하여 Snyk Broker를 설치할 수 있습니다. 자세한 내용은 [Docker를 사용하여 Broker 설치 및 구성](install-and-configure-broker-using-docker.md)을 참조하세요.
+**기타 환경을 사용하고 있다면**, Snyk이이 제공하는 [Docker 이미지](https://github.com/snyk/broker)를 사용하여 Snyk Broker를 설치할 수 있습니다. 자세한 내용은 [Docker를 사용하여 Broker 설치 및 구성](install-and-configure-broker-using-docker.md)을 참조하세요.
 
 {% hint style="info" %}
 **기본값이 아닌 지역용 다중 테넌트 설정**\
