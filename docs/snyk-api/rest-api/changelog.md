@@ -742,7 +742,7 @@
 - org.webhook.delete
 - user.org.notification_settings.edit
 
-### GET - `/groups/{group_id}/audit_logs/search` - Added
+### GET - `/groups/{group_id}/audit_logs/search` - 추가됨
 - 그룹에 대한 감사 로그 검색. 일부 조직 수준 이벤트와 다음과 같은 그룹 수준 이벤트를 지원함:
   - api.access
   - group.cloud_config.settings.edit
@@ -780,40 +780,40 @@
 
 ## 2023-09-07
 
-### POST - `/orgs/{org_id}/service_accounts` - Added
+### POST - `/orgs/{org_id}/service_accounts` - 추가됨
 - 조직을 위한 서비스 계정을 생성합니다. 서비스 계정은 Snyk API에 액세스하는 데 사용될 수 있습니다.
 
-### GET - `/orgs/{org_id}/service_accounts` - Added
+### GET - `/orgs/{org_id}/service_accounts` - 추가됨
 - 조직을 위한 모든 서비스 계정을 가져옵니다.
 
-### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
+### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - 추가됨
 - ID별로 조직 수준의 서비스 계정 이름을 업데이트합니다.
 
-### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
+### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - 추가됨
 - ID별로 조직 수준의 서비스 계정을 가져옵니다.
 
-### DELETE - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Added
+### DELETE - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - 추가됨
 - 조직에서 서비스 계정을 삭제합니다.
 
-### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Added
+### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - 추가됨
 - 서비스 계정의 클라이언트 시크릿을 관리합니다.
 
-### POST - `/groups/{group_id}/service_accounts` - Added
+### POST - `/groups/{group_id}/service_accounts` - 추가됨
 - 그룹을 위한 서비스 계정을 생성합니다. 서비스 계정은 Snyk API에 액세스하는 데 사용될 수 있습니다.
 
-### GET - `/groups/{group_id}/service_accounts` - Added
+### GET - `/groups/{group_id}/service_accounts` - 추가됨
 - 그룹을 위한 모든 서비스 계정을 가져옵니다.
 
-### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
+### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - 추가됨
 - ID별로 그룹의 서비스 계정 이름을 업데이트합니다.
 
-### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
+### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - 추가됨
 - ID별로 그룹 수준의 서비스 계정을 가져옵니다.
 
-### DELETE - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Added
+### DELETE - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - 추가됨
 - ID에 따라 그룹 수준의 서비스 계정을 영구적으로 삭제합니다.
 
-### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Added
+### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - 추가됨
 - 서비스 계정 ID로 그룹 서비스 계정의 클라이언트 시크릿을 관리합니다.
 
 ## 2023-08-28
@@ -836,7 +836,7 @@
 ### POST - `/orgs/{org_id}/packages/issues` - Updated
 - 응답에 선택적 속성 `meta`를 `200` 상태로 추가함
 
-### POST - `/custom_base_images` - Added
+### POST - `/custom_base_images` - 추가됨
 - 사용자 정의 기본 이미지를 만들려면 먼저 기본 이미지를 Snyk로 가져와야 합니다.
 CLI, UI 또는 API를 통해 수행할 수 있습니다.
 
@@ -845,33 +845,33 @@ CLI, UI 또는 API를 통해 수행할 수 있습니다.
 첫 번째 이미지가 리포지토리에 추가되면 이 엔드포인트에 버전 스키마를 전달할 수 없습니다.
 버전 스키마를 업데이트하려면 PATCH 엔드포인트를 사용해야 합니다.
 
-### GET - `/custom_base_images` - Added
+### GET - `/custom_base_images` - 추가됨
 - 정렬 및 필터링을 지원하는 사용자 정의 기본 이미지 목록을 가져옵니다.
 org_id 또는 group_id 매개변수 중 하나는 성공적인 인가를 위해 설정되어야 합니다.
 
-### PATCH - `/custom_base_images/{custombaseimage_id}` - Added
+### PATCH - `/custom_base_images/{custombaseimage_id}` - 추가됨
 - 사용자 정의 기본 이미지의 속성을 업데이트함
 
-### GET - `/custom_base_images/{custombaseimage_id}` - Added
+### GET - `/custom_base_images/{custombaseimage_id}` - 추가됨
 - 사용자 정의 기본 이미지를 가져옵니다.
 
-### DELETE - `/custom_base_images/{custombaseimage_id}` - Added
+### DELETE - `/custom_base_images/{custombaseimage_id}` - 추가됨
 - 사용자 정의 기본 이미지 리소스를 삭제함 (관련 컨테이너 프로젝트에는 영향을 주지 않음)
 
 ## 2023-06-22
 
-### GET - `/orgs/{org_id}/settings/sast` - Added
+### GET - `/orgs/{org_id}/settings/sast` - 추가됨
 - 조직의 SAST 설정을 검색함
 
 ## 2023-05-29
 
-### GET - `/orgs` - Added
+### GET - `/orgs` - 추가됨
 - 액세스할 수 있는 조직 목록을 페이징하여 가져옵니다.
 
-### PATCH - `/orgs/{org_id}` - Added
+### PATCH - `/orgs/{org_id}` - 추가됨
 - 조직의 세부 정보를 업데이트함
 
-### GET - `/orgs/{org_id}` - Added
+### GET - `/orgs/{org_id}` - 추가됨
 - 조직의 전체 세부 정보를 가져옵니다.
 
 ## 2023-04-28
@@ -896,12 +896,12 @@ org_id 또는 group_id 매개변수 중 하나는 성공적인 인가를 위해 
 
 ## 2023-04-17
 
-### POST - `/orgs/{org_id}/packages/issues` - Added
+### POST - `/orgs/{org_id}/packages/issues` - 추가됨
 - 모든 고객에게 이 엔드포인트가 제공되지 않음. 관심이 있다면 지원팀에 문의하십시오. Package URL (purl)로 식별된 일괄 패키지에 대한 문제를 쿼리함. 직접 취약점만 반환되며 종속성에서의 간섭 취약점은 반환되지 않습니다.
 
 ## 2023-03-20
 
-### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Added
+### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - 추가됨
 - 이 엔드포인트를 사용하면 소프트웨어 프로젝트의 SBOM 문서를 검색할 수 있습니다.
 다음 형식을 지원합니다:
 * JSON 형식의 CycloneDX 버전 1.4 (`format`을 `cyclonedx1.4+json`로 설정)
@@ -912,62 +912,62 @@ org_id 또는 group_id 매개변수 중 하나는 성공적인 인가를 위해 
 
 ## 2023-02-15
 
-### GET - `/orgs/{org_id}/projects` - Added
+### GET - `/orgs/{org_id}/projects` - 추가됨
 - 조직의 모든 프로젝트 목록을 표시함.
 
-### PATCH - `/orgs/{org_id}/projects/{project_id}` - Added
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - 추가됨
 - 프로젝트 ID로 조직의 프로젝트 하나를 업데이트함.
 
-### GET - `/orgs/{org_id}/projects/{project_id}` - Added
+### GET - `/orgs/{org_id}/projects/{project_id}` - 추가됨
 - 프로젝트 ID로 조직의 프로젝트 하나를 가져옵니다.
 
 ## 2022-12-14
 
-### POST - `/orgs/{org_id}/slack_app/{bot_id}` - Added
+### POST - `/orgs/{org_id}/slack_app/{bot_id}` - 추가됨
 - 특정 테넌트를 위해 새로운 Slack 알림 기본 설정을 생성함.
 
-### GET - `/orgs/{org_id}/slack_app/{bot_id}` - Added
+### GET - `/orgs/{org_id}/slack_app/{bot_id}` - 추가됨
 - 제공된 테넌트 ID 및 봇 ID에 대한 Slack 통합 기본 알림 설정을 가져옵니다.
 
-### DELETE - `/orgs/{org_id}/slack_app/{bot_id}` - Added
+### DELETE - `/orgs/{org_id}/slack_app/{bot_id}` - 추가됨
 - 주어진 Slack 앱 통합을 제거함.
 
-### GET - `/orgs/{org_id}/slack_app/{bot_id}/projects` - Added
+### GET - `/orgs/{org_id}/slack_app/{bot_id}/projects` - 추가됨
 - 프로젝트를 위한 Slack 알림 설정 오버라이드를 표시함. 이 설정은 테넌트의 기본 설정을 재정의함.
 
-### POST - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
+### POST - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - 추가됨
 - 프로젝트를 위한 Slack 설정 오버라이드를 생성함.
 
-### PATCH - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
+### PATCH - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - 추가됨
 - 프로젝트를 위한 Slack 알림 설정을 업데이트함.
 
-### DELETE - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - Added
+### DELETE - `/orgs/{org_id}/slack_app/{bot_id}/projects/{project_id}` - 추가됨
 - 프로젝트를 위한 Slack 설정 오버라이드를 제거함.
 
 ## 2022-11-14
 
-### GET - `/orgs/{org_id}/invites` - Added
+### GET - `/orgs/{org_id}/invites` - 추가됨
 - 조직에 대한 보류 중인 사용자 초대 목록을 나타냅니다.
 
-### DELETE - `/orgs/{org_id}/invites/{invite_id}` - Added
+### DELETE - `/orgs/{org_id}/invites/{invite_id}` - 추가됨
 - 조직에 대한 보류 중인 사용자 초대를 취소함.
 
 ## 2022-11-07
 
-### GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels` - Added
+### GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels` - 추가됨
 - 이 조직에 Snyk Slack 앱이 설정되어야 하며, Snyk Slack 앱에서 액세스할 수 있는 채널 목록을 가져옵니다. 현재 이 컬렉션을 순방향으로만 페이징할 수 있으며 prev 링크가 생성되지 않으며 ending_before 매개변수가 작동하지 않을 수 있음.
 
-### GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id}` - Added
+### GET - `/orgs/{org_id}/slack_app/{tenant_id}/channels/{channel_id}` - 추가됨
 - 이 조직에 Snyk Slack 앱이 설정되어야 하며, 제공된 Slack 채널 ID에 대한 Slack 채널 이름을 반환함.
 
 ## 2022-09-15
 
-### GET - `/orgs/{org_id}/packages/{purl}/issues` - Added
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - 추가됨
 - Package URL (purl)로 식별된 특정 패키지 버전에 대한 문제를 쿼리함. Snyk는 직접적인 취약점만 반환합니다. 종속성에서의 간섭 취약점은 반환되지 않으며, 이는 맥락에 따라 다를 수 있습니다.
 
 ## 2022-06-01
 
-### POST - `/orgs/{org_id}/invites` - Added
+### POST - `/orgs/{org_id}/invites` - 추가됨
 - 역할을 가진 사용자에게 조직으로 초대함.
 
 ## 2022-03-11
