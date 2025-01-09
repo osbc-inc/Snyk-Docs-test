@@ -1,10 +1,10 @@
-# Kubernetes 비밀 및 Helm 차트 설치
+# Kubernetes secrets 및 Helm 차트 설치
 
-Snyk 브로커 헬름 차트의 버전 `2.8.0`부터 외부 시크릿이 지원됩니다.&#x20;
+Snyk Broker Helm 차트의 버전 `2.8.0`부터 외부 시크릿이 지원됩니다.
 
-이 기능을 활성화하려면 `values.yaml`에서 `useExternalSecrets`를 `true`로 설정하거나 `--set externalSecrets=true`를 사용하십시오.&#x20;
+이 기능을 활성화하려면 `values.yaml`에서 `useExternalSecrets`를 `true`로 설정하거나 `--set externalSecrets=true`를 사용하십시오.
 
-필요한 시크릿 목록을 얻으려면 Helm 설치의 드라이 런을 수행하십시오. 이 작업은 사용 중인 쿠버네티스 환경에 대한 변경 사항을 만들지 않지만 다음을 필요로 합니다:
+필요한 시크릿 목록을 얻으려면 Helm 설치의 드라이 런을 수행하십시오. 이 작업은 사용 중인 Kubernetes 환경에 대한 변경 사항을 만들지 않지만 다음을 필요로 합니다:
 
 ```
 helm install snyk-broker-chart \
@@ -32,7 +32,7 @@ helm install snyk-broker-chart \
 
 ## 시크릿 및 키 이름 변경
 
-다음의 각 Helm 값은 `name`과 `key`를 지원하여 Snyk 브로커 헬름 차트가 해당 시크릿 이름과 시크릿 내의 특정 키를 참조할 수 있게 합니다:
+다음의 각 Helm 값은 `name`과 `key`를 지원하여 Snyk Broker Helm 차트가 해당 시크릿 이름과 시크릿 내의 특정 키를 참조할 수 있게 합니다:
 
 * `externalCredentialSecret` (`artifactory`, `nexus` 또는 `nexus2`가 아닌 모든 브로커 유형에 사용됨: 해당 브로커 유형과 관련된 비밀번호 또는 PAT)
 * `brokerTokenSecret` (브로커 토큰에 사용됨)
@@ -64,7 +64,7 @@ brokerTokenSecret:
   key: org-x-broker-token
 ```
 
-헬름 차트는 시크릿 `snyk-broker-secrets`의 `org-x-broker-token` 키에 포함된 내용을 브로커 토큰에 대해 참조합니다.
+Helm 차트는 시크릿 `snyk-broker-secrets`의 `org-x-broker-token` 키에 포함된 내용을 브로커 토큰에 대해 참조합니다.
 
 ## 부분 외부 시크릿
 
@@ -73,7 +73,7 @@ brokerTokenSecret:
 * 값이 존재하는 경우, 시크릿을 평소대로 생성합니다.
 * 값이 없는 경우, 외부 시크릿을 찾습니다.
 
-이 방법으로, 일부 시크릿은 브로커 헬름 차트에 의해 제어되고, 다른 시크릿은 외부에서 제어될 수 있습니다:
+이 방법으로, 일부 시크릿은 브로커 Helm 차트에 의해 제어되고, 다른 시크릿은 외부에서 제어될 수 있습니다:
 
 ```
 scmType: github-com
@@ -98,7 +98,7 @@ Helm 설치의 드라이 런을 수행하면 필요한 시크릿 이름과 키�
 -> github-com-token-snyk-broker-chart:github-com-token-key <GITHUB_TOKEN>
 ```
 
-브로커 토큰 시크릿은 브로커 헬름 차트에 직접 값을 제공하기 때문에 이 목록에서 제외됩니다.
+브로커 토큰 시크릿은 브로커 Helm 차트에 직접 값을 제공하기 때문에 이 목록에서 제외됩니다.
 
 ## 다중 키가 있는 단일 외부 시크릿 사용
 
