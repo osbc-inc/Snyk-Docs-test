@@ -972,28 +972,46 @@ org_id 또는 group_id 매개변수 중 하나는 성공적인 인가를 위해 
 
 ## 2022-03-11
 
-### GET - `/self/apps` - Added
-- 사용자 대신 작동할 수 있는 앱 목록을 가져옵니다.
+### GET - `/self/apps` - 추가됨
+- 사용자를 대신하여 작동할 수 있는 앱 목록 가져오기.
 
-### DELETE - `/self/apps/{app_id}` - Added
-- 앱 ID로 앱의 액세스를 취소합니다.
+### DELETE - `/self/apps/{app_id}` - 추가됨
+- 앱 ID를 사용하여 앱의 액세스 취소.
 
-### POST - `/orgs/{org_id}/apps` - Added
-- 조직을 위해 새로운 앱을 생성합니다. 사용을 제한합니다. 대신 /orgs/{org_id}/apps/creations을 사용하세요.
+### POST - `/orgs/{org_id}/apps` - 추가됨
+- 조직에 새로운 앱 생성. 사용 중단됨, 대신 `/orgs/{org_id}/apps/creations` 사용 권장.
 
-### GET - `/orgs/{org_id}/apps` - Added
-- 조직에서 생성한 앱 목록을 가져옵니다. 사용을 제한합니다. 대신 /orgs/{org_id}/apps/creations을 사용하세요.
+### GET - `/orgs/{org_id}/apps` - 추가됨
+- 조직에서 생성한 앱 목록 가져오기. 사용 중단됨, 대신 `/orgs/{org_id}/apps/creations` 사용 권장.
 
-### PATCH - `/orgs/{org_id}/apps/{client_id}` - Added
-- 앱 속성을 업데이트합니다. 사용을 제한합니다. 대신 /orgs/{org_id}/apps/creations/{app_id}을 사용하세요.
+### PATCH - `/orgs/{org_id}/apps/{client_id}` - 추가됨
+- 앱 속성 업데이트. 사용 중단됨, 대신 `/orgs/{org_id}/apps/creations/{app_id}` 사용 권장.
 
-### GET - `/orgs/{org_id}/apps/{client_id}` - Added
-- 클라이언트 ID로 앱을 가져옵니다. 사용을 제한합니다. 대신 /orgs/{org_id}/apps/creations/{app_id}을 사용하세요.
+### GET - `/orgs/{org_id}/apps/{client_id}` - 추가됨
+- 클라이언트 ID를 사용하여 앱 가져오기. 사용 중단됨, 대신 `/orgs/{org_id}/apps/creations/{app_id}` 사용 권장.
 
-### DELETE - `/orgs/{org_id}/apps/{client_id}` - Added
-- 앱 ID로 앱을 삭제합니다. 사용을 제한합니다. 대신 /orgs/{org_id}/apps/creations/{app_id}을 사용하세요.
+### DELETE - `/orgs/{org_id}/apps/{client_id}` - 추가됨
+- 앱 ID를 사용하여 앱 삭제. 사용 중단됨, 대신 `/orgs/{org_id}/apps/creations/{app_id}` 사용 권장.
 
-### POST - `/orgs/{org_id}/apps/{client_id}/secrets` - Added
-- 앱의 클라이언트 시크릿을 관리합니다. 사용을 제한합니다. 대신 /orgs/{org_id}/apps/creations/{app_id}/secrets을 사용하세요.
+### POST - `/orgs/{org_id}/apps/{client_id}/secrets` - 추가됨
+- 앱의 클라이언트 비밀 관리. 사용 중단됨, 대신 `/orgs/{org_id}/apps/creations/{app_id}/secrets` 사용 권장.
 
-### GET - `/orgs/{org_id}/app_b
+### GET - `/orgs/{org_id}/app_bots` - 추가됨
+- 조직에 권한을 부여받은 앱 봇 목록 가져오기. 사용 중단됨, 대신 `/orgs/{org_id}/apps/installs` 사용 권장.
+
+### DELETE - `/orgs/{org_id}/app_bots/{bot_id}` - 추가됨
+- 앱 봇의 권한 취소. 사용 중단됨, 대신 `/orgs/{org_id}/apps/installs/{install_id}` 사용 권장.
+
+## 2021-12-09
+
+### PATCH - `/orgs/{org_id}/settings/iac` - 추가됨
+- 조직의 Infrastructure as Code 설정 업데이트.
+
+### GET - `/orgs/{org_id}/settings/iac` - 추가됨
+- 조직의 Infrastructure as Code 설정 가져오기.
+
+### PATCH - `/groups/{group_id}/settings/iac` - 추가됨
+- 그룹의 Infrastructure as Code 설정 업데이트.
+
+### GET - `/groups/{group_id}/settings/iac` - 추가됨
+- 그룹의 Infrastructure as Code 설정 가져오기.
