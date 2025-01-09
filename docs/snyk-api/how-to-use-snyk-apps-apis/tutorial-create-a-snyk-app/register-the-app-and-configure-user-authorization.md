@@ -57,11 +57,27 @@ curl --include \
 
 Snyk으로부터의 응답에는 Snyk App 통합을 완료하는 데 필요한 `clientId`와 `clientSecret` 두 가지 중요한 값이 포함되어 있습니다. 이러한 값을 안전하게 보관하십시오. 이는 Snyk의 `clientSecret`를 볼 수 있는 유일한 시기이며, **`clientSecret`를 공개적으로 공유해서는 안 됩니다**. 이 값은 Snyk과의 App 인증에 사용됩니다.
 
-이제 Snyk App으로 App을 등록했기 때문에 TypeScript 프로젝트를 조정하여 사용자가 권한을 부여할 수 있도록 시작할 수 있습니다.\`\`\`korean const installs = db.data?.installs || \[];
+이제 Snyk App으로 App을 등록했기 때문에 TypeScript 프로젝트를 조정하여 사용자가 권한을 부여할 수 있도록 시작할 수 있습니다.
 
-const index = installs.findIndex((install) => install.date === oldData.date); if (index === -1) return false; installs\[index] = newData; // 기존 설치를 새로운 설치로 대체함 db.data.installs = installs; await db.write(); return true; }
+## Snyk 앱을 이용한 사용자 인증
 
-````
+Snyk 앱의 사용자 인증은 쿼리 매개변수가 포함된 웹페이지 URL을 통해 이루어지며, 이는 Snyk 앱의 데이터와 일치합니다. 이 URL의 쿼리 매개변수 값을 대체하고, 최종 링크를 웹 브라우저에서 사용자가 방문할 수 있도록 보냅니다. 이후 사용자는 Snyk 앱에 계정 접근 권한을 부여할 수 있습니다.
+
+접근 권한이 부여되면 사용자는 우리가 등록한 `callbackURL`로 다시 리디렉션됩니다. 여기서는 `http://localhost:3000/callback`으로 설정했습니다.
+
+기본적으로, 앱은 아래와 같은 링크를 생성하고 사용자가 인증할 때 해당 링크로 이동해야 합니다.
+
+```
+https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&state={state}&code_challenge={codeChallenge}&code_challenge_method=S256
+```
+
+몇몇 쿼리 매개변수는 비교적 명확해 보일 수 있지만, 여기에서 자세히 설명합니다. Snyk 앱에서 이 URL을 사용자들에게 생성하도록 수정할 것입니다.
+
+- `redirect_uri`: 선택적 값이며, [Snyk에 앱 등록](register-the-app-and-configure-user-authorization.md#registering-our-app-with-snyk) 명령에서 보낸 값 중 하나와 일치해야 합니다. 전달되지 않은 경우 Snyk 앱의 첫 번째 값이 기본값으로 사용됩니다.
+- `state`: 이 값은 `/authorize` 호출에서 `redirect_uri`로의 콜백까지 앱 전용 상태(예: 사용자 ID 등)를 전달하는 데 사용됩니다. 이를 콜백에서 [CSRF 공격 방지](https://datatracker.ietf.org/doc/html/rfc6749#section-10.12)를 위해 검증해야 합니다.
+- `code_challenge`: 코드 검증자의 SHA256 해시를 URL-안전한 base64로 인코딩한 문자열입니다. 코드 검증자는 `/authorize` 호출 전에 앱 측에 저장된 고도로 무작위화된 문자열이며, 반환된 인증 코드를 토큰 쌍으로 교환할 때 전송됩니다. 이는 인증 코드 가로채기 공격을 방지하기 위한 PKCE(Proof Key for Code Exchange)의 일부입니다.
+
+연결이 완료되면 사용자는 제공된 리디렉션 URI(이 경우 `/callback` 경로)로 리디렉션되며, 쿼리 문자열 매개변수 `code`와 `state`가 추가되어 다음 인증 단계에 필요합니다.
 
 ### API 호출을 위한 준비
 
