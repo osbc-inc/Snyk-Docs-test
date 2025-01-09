@@ -1,6 +1,6 @@
-## 2024-10-15 - Updated 2024-12-09
+## 2024-10-15 - 업데이트됨 2024-12-09
 
-### GET - `/orgs/{org_id}` - Updated
+### GET - `/orgs/{org_id}` - 업데이트됨
 - 응답 속성 `data`가 상태 `200`에 대해 선택 사항으로 변경되었습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 속성 `jsonapi`가 상태 `200`에 대해 선택 사항으로 변경되었습니다.
@@ -27,30 +27,30 @@
 
 - 상태 `200`에 대한 `data/type` 응답의 속성 패턴 `^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$`가 추가되었습니다.
 
-## 2024-10-15 - Updated 2024-11-28
+## 2024-10-15 - 업데이트됨 2024-11-28
 
-### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - Updated
+### GET - `/orgs/{org_id}/projects/{project_id}/sbom` - 업데이트됨
 - 새로운 선택 사항인 `query` 요청 매개변수 `exclude`를 추가했습니다.
 
-## 2024-10-15 - Updated 2024-11-06
+## 2024-10-15 - 업데이트됨 2024-11-06
 
-### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/representations/items/` 응답 속성 `anyOf` 목록에서 `#/components/schemas/ResourcePathRepresentation`, `#/components/schemas/PackageRepresentation`를 제거했습니다.
 
-### POST - `/orgs/{org_id}/packages/issues` - Updated
+### POST - `/orgs/{org_id}/packages/issues` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/representations/items/` 응답 속성 `anyOf` 목록에서 `#/components/schemas/ResourcePathRepresentation`, `#/components/schemas/PackageRepresentation`를 제거했습니다.
 
-## 2024-10-15 - Updated 2024-10-31
+## 2024-10-15 - 업데이트됨 2024-10-31
 
-### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - 업데이트됨
 - 상태 `200`에 대한 `data/items/attributes/coordinates/items/representations/items/` 응답 속성 `anyOf` 목록에 `#/components/schemas/ResourcePathRepresentation`, `#/components/schemas/PackageRepresentation`를 추가했습니다.
 
-### POST - `/orgs/{org_id}/packages/issues` - Updated
+### POST - `/orgs/{org_id}/packages/issues` - 업데이트됨
 - 상태 `200`에 대한 `data/items/attributes/coordinates/items/representations/items/` 응답 속성 `anyOf` 목록에 `#/components/schemas/ResourcePathRepresentation`, `#/components/schemas/PackageRepresentation`를 추가했습니다.
 
-## 2024-10-15 - Updated 2024-10-30
+## 2024-10-15 - 업데이트됨 2024-10-30
 
-### GET - `/orgs/{org_id}/issues` - Updated
+### GET - `/orgs/{org_id}/issues` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/reachability` 응답 속성에 새로운 `function` enum 값을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/reachability` 응답 속성에 새로운 `no-info` enum 값을 추가했습니다.
@@ -60,7 +60,7 @@
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/reachability` 응답 속성에 새로운 `package` enum 값을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+### GET - `/orgs/{org_id}/issues/{issue_id}` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/attributes/coordinates/items/reachability` 응답 속성에 새로운 `function` enum 값을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 `data/attributes/coordinates/items/reachability` 응답 속성에 새로운 `no-info` enum 값을 추가했습니다.
@@ -70,7 +70,7 @@
 - 응답 상태 `200`에 대한 `data/attributes/coordinates/items/reachability` 응답 속성에 새로운 `package` enum 값을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-### GET - `/groups/{group_id}/issues` - Updated
+### GET - `/groups/{group_id}/issues` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/reachability` 응답 속성에 새로운 `function` enum 값을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/reachability` 응답 속성에 새로운 `no-info` enum 값을 추가했습니다.
@@ -80,7 +80,7 @@
 - 응답 상태 `200`에 대한 `data/items/attributes/coordinates/items/reachability` 응답 속성에 새로운 `package` enum 값을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+### GET - `/groups/{group_id}/issues/{issue_id}` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/attributes/coordinates/items/reachability` 응답 속성에 새로운 `function` enum 값을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 `data/attributes/coordinates/items/reachability` 응답 속성에 새로운 `no-info` enum 값을 추가했습니다.
@@ -96,29 +96,29 @@
 
 앞으로 Snyk는 각 안정성에 대해 하나씩이 아닌 각 버전-날짜마다 하나의 API 명세를 노출할 것입니다. 새로운 버전의 Snyk API는 중단 변경으로 인해 필요할 때만 게시될 것입니다. 새로운 버전에 대해서는 베타 버전의 경우 날짜만을 지정해야 하며, `2024-10-15~beta`가 아닌 `2024-10-15`를 지정해야 합니다. 이 변경으로 인해 기존 버전에는 영향을 미치지 않습니다. 이 새로운 접근 방식은 다가오는 새로운 버전에만 적용됩니다.
 
-## 2024-08-25 - Updated 2024-10-10
+## 2024-08-25 - 업데이트됨 2024-10-10
 
-### GET - `/self` - Updated
+### GET - `/self` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/attributes` 응답 속성 `anyOf` 목록에 `#/components/schemas/User20240422`, `#/components/schemas/ServiceAccount20240422`를 추가했습니다.
 
 - 응답 상태 `200`에 대한 `data/attributes` 응답 속성 `anyOf` 목록에서 `#/components/schemas/ServiceAccount`를 제거했습니다.
 
-### GET - `/orgs/{org_id}/projects` - Updated
+### GET - `/orgs/{org_id}/projects` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/items/relationships/target` 응답 속성 `oneOf` 목록에 `#/components/schemas/ProjectRelationshipsTarget20230215`를 추가했습니다. 
 
 - 응답 상태 `200`에 대한 `data/items/relationships/target` 응답 속성 `oneOf` 목록에서 `#/components/schemas/ProjectRelationshipsTarget`를 제거했습니다.
 
-### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/relationships/target` 응답 속성 `oneOf` 목록에 `#/components/schemas/ProjectRelationshipsTarget20230215`를 추가했습니다. 
 
 - 응답 상태 `200`에 대한 `data/relationships/target` 응답 속성 `oneOf` 목록에서 `#/components/schemas/ProjectRelationshipsTarget`를 제거했습니다.
 
-### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+### GET - `/orgs/{org_id}/projects/{project_id}` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/relationships/target` 응답 속성 `oneOf` 목록에 `#/components/schemas/ProjectRelationshipsTarget20230215`를 추가했습니다.
 
 - 응답 상태 `200`에 대한 `data/relationships/target` 응답 속성 `oneOf` 목록에서 `#/components/schemas/ProjectRelationshipsTarget`를 제거했습니다.
 
-### GET - `/orgs/{org_id}/packages/{purl}/issues` - Updated
+### GET - `/orgs/{org_id}/packages/{purl}/issues` - 업데이트됨
 - 응답 상태 `200`에 대한 선택 사항이었던 속성 `data/items/attributes/coordinates/items/representation`을 제거했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 선택 사항이었던 속성 `data/items/attributes/key`을 제거했습니다.
@@ -133,7 +133,7 @@
 
 - 응답 상태 `200`에 대한 필수 속성 `data/items/attributes/coordinates/items/representations`를 추가했습니다.
 
-### POST - `/orgs/{org_id}/packages/issues` - Updated
+### POST - `/orgs/{org_id}/packages/issues` - 업데이트됨
 - 응답 상태 `200`에 대한 선택 사항이었던 속성 `data/items/attributes/slots/exploit`을 제거했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 선택 사항 속성 `data/items/attributes/severities/items/type`를 추가했습니다.
@@ -142,14 +142,14 @@
 
 - 응답 상태 `200`에 대한 선택 사항 속성 `data/items/attributes/slots/exploit_details`를 추가했습니다.
 
-### GET - `/orgs/{org_id}/invites` - Updated
+### GET - `/orgs/{org_id}/invites` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/items/attributes/role` 응답 속성의 type/format이 `string`/`uuid`에서 `string`/``으로 변경되었습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 `data/items/type` 응답 속성에서 `org_invitation` enum 값을 제거했습니다.
 
-## 2024-08-25 - Updated 2024-09-11
+## 2024-08-25 - 업데이트됨 2024-09-11
 
-### POST - `/orgs/{org_id}/apps` - Updated
+### POST - `/orgs/{org_id}/apps` - 업데이트됨
 - 새로운 필수 요청 속성 `name`을 추가했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 새로운 필수 요청 속성 `redirect_uris`을 추가했습니다.
@@ -162,14 +162,14 @@
 
 - 새로운 선택 사항 요청 속성 `context`를 추가했습니다.
 
-### GET - `/orgs/{org_id}/apps` - Updated
+### GET - `/orgs/{org_id}/apps` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/items/attributes/redirect_uris` 응답 속성의 minItems가 `1`에서 `0`으로 감소했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`에 대한 `data/items/attributes/client_id` 응답 속성이 필수로 변경되었습니다.
 
 - 응답 상태 `200`에 대한 `data/items/attributes/redirect_uris` 응답 속성이 필수로 변경되었습니다.
 
-### PATCH - `/orgs/{org_id}/apps/{client_id}` - Updated
+### PATCH - `/orgs/{org_id}/apps/{client_id}` - 업데이트됨
 - 응답 상태 `200`에 대한 `data/attributes/redirect_uris` 응답 속성의 minItems가 `1`에서 `0`으로 감소했습니다.
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 요청 속성 `data`를 제거했습니다.
@@ -251,7 +251,7 @@
 
 
 
-### GET - `/orgs/{org_id}/memberships` - Updated
+### GET - `/orgs/{org_id}/memberships` - 업데이트됨
 - `data/items/relationships/org` 응답 속성이 `200` 상태에서 필수로 변경되었습니다.
 
 - `data/items/relationships/org/data/attributes` 응답 속성이 `200` 상태에서 필수로 변경되었습니다.
@@ -818,7 +818,7 @@
 
 ## 2023-08-28
 
-### GET - `/orgs/{org_id}/projects` - Updated
+### GET - `/orgs/{org_id}/projects` - 업데이트됨
 - `names_start_with`라는 새로운 선택적 `query` 요청 매개변수를 추가함
 
 - `target_file`라는 새로운 선택적 `query` 요청 매개변수를 추가함
@@ -827,13 +827,13 @@
 
 - `target_runtime`라는 새로운 선택적 `query` 요청 매개변수를 추가함
 
-### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - 업데이트됨
 - `user_id`라는 `query` 요청 매개변수를 삭제함
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
 ## 2023-08-21
 
-### POST - `/orgs/{org_id}/packages/issues` - Updated
+### POST - `/orgs/{org_id}/packages/issues` - 업데이트됨
 - 응답에 선택적 속성 `meta`를 `200` 상태로 추가함
 
 ### POST - `/custom_base_images` - 추가됨
@@ -876,7 +876,7 @@ org_id 또는 group_id 매개변수 중 하나는 성공적인 인가를 위해 
 
 ## 2023-04-28
 
-### POST - `/orgs/{org_id}/invites` - Updated
+### POST - `/orgs/{org_id}/invites` - 업데이트됨
 - 새로운 필수 요청 속성 `data`를 추가함
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 상태 `201`의 응답 중 `data/attributes/role` 속성 유형/형식을 `string`/``에서 `string`/`uuid`로 변경함
@@ -888,7 +888,7 @@ org_id 또는 group_id 매개변수 중 하나는 성공적인 인가를 위해 
 - 응답 상태 `201`의 `data/type` 속성에 새로운 `org_invitation` 열거 값을 추가함
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 
-### GET - `/orgs/{org_id}/invites` - Updated
+### GET - `/orgs/{org_id}/invites` - 업데이트됨
 - 상태 `200`의 응답 중 `data/items/attributes/role` 속성 유형/형식을 `string`/``에서 `string`/`uuid`로 변경함
 ![Badge](https://img.shields.io/badge/Breaking-yellow)
 - 응답 상태 `200`의 `data/items/type` 속성에 새로운 `org_invitation` 열거 값을 추가함
