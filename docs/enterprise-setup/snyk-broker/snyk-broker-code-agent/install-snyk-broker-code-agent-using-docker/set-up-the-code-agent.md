@@ -36,7 +36,7 @@ docker pull snyk/code-agent:<image_tag>
 
 ## 코드 에이전트 컨테이너 실행
 
-Code Agent 이미지를 컴퓨터에 저장하면, 터미널에 다음 명령을 입력하여 Snyk Broker Code Agent 이미지를 기반으로하는 컨테이너를 실행합니다:
+Code Agent 이미지를 컴퓨터에 저장하면, 터미널에 다음 명령을 입력하여 Snyk Broker Code Agent 이미지를 기반으로 하는 컨테이너를 실행합니다:
 
 ```
 docker run --name <container_name> \
@@ -182,4 +182,4 @@ Code Agent의 `docker run` 명령에 다음 환경 변수를 추가합니다:
 
 ```
 -e NODE_TLS_REJECT_UNAUTHORIZED=0
-```  
+```

@@ -1,4 +1,8 @@
-# 코드 스니펫 표시 없이 Broker 클라이언트 실행
+---
+description: 사진 깨짐
+---
+
+# Run the Broker client without the code snippet display
 
 브로커 클라이언트 이미지가 사용자의 기기에 저장된 후, `docker run` 명령어를 사용하여 이미지를 실행하고 브로커 클라이언트를 시작합니다.
 
@@ -6,9 +10,9 @@
 
 이 섹션에서 설명된 브로커 클라이언트 실행을 위한 설정 명령어는 모든 SCM에서 사용되는 일반 명령어를 포함하고 있습니다. 일부 SCM은 Broker 클라이언트 설정을 위해 추가 매개변수를 필요로 할 수 있으며, 이러한 매개변수는 이 섹션에서 표시되어 있지만 특정 SCM을 위한 Broker 클라이언트를 설정 중일 때 해당 SCM의 설명도 확인하세요 [Install and configure Snyk Broker](../../../install-and-configure-snyk-broker/) 섹션에서.
 
-다음은 웹 UI의  결과의 코드 스니펫을 표시하지 않도록 브로커 클라이언트를 설정하는 방법을 설명합니다:
+다음은 웹 UI의 결과의 코드 스니펫을 표시하지 않도록 브로커 클라이언트를 설정하는 방법을 설명합니다:
 
-<figure><img src="../../../../../.gitbook/assets/Broker - Results - without code snippets (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (4) (1).png" alt="코드 스니펫 표시 없이 Broker 클라이언트 실행"><figcaption><p>코드 스니펫 표시 없이 Broker 클라이언트 실행</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Broker%20-%20Results%20-%20without%20code%20snippets%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(4)%20(1).png" alt="코드 스니펫 표시 없이 Broker 클라이언트 실행"><figcaption><p>코드 스니펫 표시 없이 Broker 클라이언트 실행</p></figcaption></figure>
 
 **브로커 클라이언트 컨테이너 실행**을 위해 터미널에 다음 명령어를 입력하여 Snyk 브로커 클라이언트를 실행합니다:
 
@@ -33,18 +37,18 @@ docker run --restart=always \
 * `-e BROKER_TOKEN`은 특정 조직과 특정 통합 SCM과 연결된 브로커 토큰입니다.
 * `-e <SCM_TOKEN>`은 특정 통합 SCM의 SCM 토큰입니다.
 * `-e <SCM_domain>=`은 `http/https`를 제외한 SCM 도메인명입니다. 예를 들어 `snyk.git.com`입니다. 각 SCM에 대해 해당 SCM을 위한 매개변수를 사용합니다:
-    * **GitHub** - `-e <SCM_domain>` 매개변수는 필요하지 않습니다.
-    * **GitHub Enterprise**: `-e GITHUB`\
-      [GitHub Enterprise](../../../install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md)를 위해 다음 매개변수를 추가하세요:\
-      `-e GITHUB_API=<your.ghe.domain.com/api/v3_(http/s 미포함)> \`\
-      `-e GITHUB_GRAPHQL=<your.ghe.domain.com/api_(http/s 미포함)> \`
-    * **Azure Repos**: `-e AZURE_REPOS_HOST`\
-      [Azure Repos](../../../install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)를 위해 다음 매개변수를 추가하세요:\
-      `-e AZURE_REPOS_ORG=<azure_repo_org_name> \`
-    * **Bitbucket Server/Data Center**: `-e BITBUCKET`\
-      [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md)를 위해 다음 매개변수를 추가하세요:\
-      `-e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0_(http/s 미포함)> \`
-    * **GitLab**: `-e GITLAB`
+  * **GitHub** - `-e <SCM_domain>` 매개변수는 필요하지 않습니다.
+  * **GitHub Enterprise**: `-e GITHUB`\
+    [GitHub Enterprise](../../../install-and-configure-snyk-broker/github-enterprise-prerequisites-and-steps-to-install-and-configure-broker/github-enterprise-install-and-configure-using-docker.md)를 위해 다음 매개변수를 추가하세요:\
+    `-e GITHUB_API=<your.ghe.domain.com/api/v3_(http/s 미포함)> \`\
+    `-e GITHUB_GRAPHQL=<your.ghe.domain.com/api_(http/s 미포함)> \`
+  * **Azure Repos**: `-e AZURE_REPOS_HOST`\
+    [Azure Repos](../../../install-and-configure-snyk-broker/azure-repos-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-azure-repos.md)를 위해 다음 매개변수를 추가하세요:\
+    `-e AZURE_REPOS_ORG=<azure_repo_org_name> \`
+  * **Bitbucket Server/Data Center**: `-e BITBUCKET`\
+    [Bitbucket Server/Data Center](../../../install-and-configure-snyk-broker/bitbucket-server-data-center-prerequisites-and-steps-to-install-and-configure-broker/data-center.md)를 위해 다음 매개변수를 추가하세요:\
+    `-e BITBUCKET_API=<your.bitbucket-server.domain.com/rest/api/1.0_(http/s 미포함)> \`
+  * **GitLab**: `-e GITLAB`
 * \[선택 사항] `-e BROKER_CLIENT_URL=`은 브로커 클라이언트의 호스트 머신 URL입니다. URL에는 호스트 머신의 IP 주소 또는 포트 번호를 포함할 수 있습니다. 예를 들어, `http://localhost:8000`와 같이 사용될 수 있습니다.\
   동일한 브로커 클라이언트를 다른 Snyk 제품에 사용하고 Automatic PR Checks 기능을 활성화하려는 경우에만 이 매개변수를 추가하세요. Automatic PR Checks 기능은 Code Agent에 지원되지 않으므로 Code Agent에 대한 이 매개변수는 사용할 필요가 없습니다.
 * `-e PORT`은 외부 연결을 수락하는 브로커 클라이언트 컨테이너의 포트 번호입니다. 기본값은 `8000`입니다. 이 포트 번호는 `-p` 이전 매개변수의 `<브로커 클라이언트 컨테이너 포트 번호>`와 동일해야 합니다.
