@@ -1,4 +1,4 @@
-# 취약점을 테스트하는 SBOM 문서
+# SBOM 문서의 취약점 테스트
 
 {% hint style="info" %}
 **릴리스 상태 및 기능 가용성**
@@ -8,7 +8,7 @@ Snyk REST API는 엔터프라이즈 플랜에서만 사용 가능합니다. 자�
 이러한 엔드포인트는 베타 API 버전입니다. 기능 중 일부가 변경될 수 있습니다. 자세한 정보는 REST API의 [버전 관리](../rest-api/about-the-rest-api.md#versioning) 정보를 참조하십시오.
 {% endhint %}
 
-Snyk은 [API 엔드포인트 모음](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests)을 제공하여 소프트웨어 원료료록(SBOM) 문서를 비동기식으로 테스트할 수 있습니다. 이러한 엔드포인트를 사용하여 SBOM 및 해당 패키지에 영향을 주는 취약성에 대해 자세히 알아볼 수 있습니다.
+Snyk은 [API 엔드포인트 모음](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests)을 제공하여 software bill of materials(SBOM) 문서를 비동기식으로 테스트할 수 있습니다. 이러한 엔드포인트를 사용하여 SBOM 및 해당 패키지에 영향을 주는 취약성에 대해 자세히 알아볼 수 있습니다.
 
 {% hint style="info" %}
 지원되는 SBOM 형식은 [CycloneDX](https://cyclonedx.org/) 1.4/1.5/1.6 JSON 및 [SPDX](https://spdx.dev/) 2.3 JSON입니다.
@@ -24,7 +24,7 @@ Snyk은 SBOM 내의 구성 요소를 [패키지 URL](https://github.com/package-
 2. [테스트의 상태를 확인합니다](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#Check-the-status-of-the-test).
 3. [테스트 결과를 확인합니다. 테스트가 완료된 경우](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#View-results-of-the-test).
 
-### SBOM 문서를 Snyk에 전송하여 테스트 생성하기&#x20;
+### SBOM 문서를 Snyk에 전송하여 테스트 생성하기
 
 SBOM을 테스트하는 것은 시간이 오래 걸릴 수 있습니다. 테스트 결과가 준비될 때까지 기다리는 대신, 초기 요청 후에 Snyk는 SBOM을 보낸 후 `job_id`를 반환하고 요청을 비동기적으로 처리합니다.
 
@@ -32,7 +32,7 @@ SBOM을 테스트하는 것은 시간이 오래 걸릴 수 있습니다. 테스�
 
 1. Snyk 웹 UI에 로그인하고 조직 ID(UUID 형식), 프로젝트 ID(UUID) 및 API 키를 검색합니다.\
    이러한 값들을 찾는 데 도움이 필요한 경우 [조직 일반 설정](../../snyk-admin/groups-and-organizations/organizations/organization-general-settings.md), [프로젝트 설정 보기 및 편집](../../snyk-admin/snyk-projects/view-and-edit-project-settings.md) 및 [API 인증](../rest-api/authentication-for-api/authenticate-for-the-api.md)을 참조하십시오.
-2. `curl` 또는 Postman과 같은 HTTP 클라이언트를 사용하여 [SBOM 테스트 실행 생성](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests) 엔드포인트로 요청을 보냅니다.&#x20;
+2. `curl` 또는 Postman과 같은 HTTP 클라이언트를 사용하여 [SBOM 테스트 실행 생성](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests) 엔드포인트로 요청을 보냅니다.
 
 {% hint style="info" %}
 요청 본문에 SBOM 문서가 JSON 객체의 형태로 포함됩니다. 이 요청은 SBOM 문서에 대한 테스트 실행을 생성합니다.
@@ -63,7 +63,7 @@ curl --request POST \
 ```
 {% endcode %}
 
-3. 응답에서 다음 단계에서 사용할 `job_id`를 얻습니다. \
+3. 응답에서 다음 단계에서 사용할 `job_id`를 얻습니다.\
    이는 SBOM 문서에 대한 수행 중인 테스트 실행의 고유 식별자입니다.
 
 {% code title="JSON 응답 본문" %}
@@ -86,7 +86,7 @@ curl --request POST \
 
 ### 테스트의 상태 확인하기 (옵션)
 
-초기 요청 후 언제든지 테스트의 상태를 확인할 수 있습니다. &#x20;
+초기 요청 후 언제든지 테스트의 상태를 확인할 수 있습니다.
 
 1. [SBOM 테스트 실행 생성](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests) 엔드포인트로부터 반환된 `job_id`를 사용하여 엔드포인트 [SBOM 테스트 실행 상태 가져오기](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#get-/orgs/-org_id-/sbom_tests/-job_id-)로 요청을 보냅니다.
 2. 이 엔드포인트에 대한 성공적인 요청은 테스트의 상태인 `processing` 또는 `finished`를 반환합니다. 호출에 실패하면 오류가 반환됩니다.

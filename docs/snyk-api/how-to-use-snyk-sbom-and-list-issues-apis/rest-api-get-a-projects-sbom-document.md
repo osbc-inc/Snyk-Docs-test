@@ -1,11 +1,11 @@
 # 프로젝트의 SBOM 문서 가져오기
 
 {% hint style="info" %}
-**기능 가용성**\
+**사전 준비 사항**\
 이 기능은 Snyk 엔터프라이즈 플랜을 가입한 고객에게 제공됩니다.
 {% endhint %}
 
-Snyk은 Open Source 및 Container 프로젝트의 SBOM 문서를 생성하기 위한 [프로젝트의 SBOM 문서 가져오기](../reference/sbom.md) 엔드포인트를 제공합니다. 이 프로젝트들은 지속적으로 문제를 모니터링하고 있습니다.&#x20;
+Snyk은 Open Source 및 Container 프로젝트의 SBOM 문서를 생성하기 위한 [프로젝트의 SBOM 문서 가져오기](../reference/sbom.md) 엔드포인트를 제공합니다. 이 프로젝트들은 지속적으로 문제를 모니터링하고 있습니다.
 
 SBOM 문서는 프로젝트의 종속성과 이들 간의 관계의 최신 상태를 나타냅니다.
 
