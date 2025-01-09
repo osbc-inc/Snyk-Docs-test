@@ -1,6 +1,6 @@
 # 사용자 인증 설정
 
-사용자가 Snyk 계정을 귀하의 앱에 연결할 때, 선택한 조직 또는 그룹에 대한 액세스를 승인하고 요청된 스코프를 승인해야 합니다. 이 프로세스는 사용자를 Snyk Apps 인증 웹 페이지로 이동시키고 다음과 같은 매개변수를 전달하여 시작됩니다: `https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&state={state}&code_challenge={codeChallenge}&code_challenge_method=S256`
+사용자가 Snyk 계정을 귀하의 App에 연결할 때, 선택한 조직 또는 그룹에 대한 액세스를 승인하고 요청된 스코프를 승인해야 합니다. 이 프로세스는 사용자를 Snyk Apps 인증 웹 페이지로 이동시키고 다음과 같은 매개변수를 전달하여 시작됩니다: `https://app.snyk.io/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectURI}&state={state}&code_challenge={codeChallenge}&code_challenge_method=S256`
 
 귀하의 Snyk App이 여러 리디렉션 URI로 구성된 경우 `redirect_uri`를 전달하여 사용할 리디렉션 URI를 선택합니다. 주어진 값은 귀하의 Snyk App에 정의된 값 중 하나와 정확히 일치해야 합니다. 지정되지 않으면 Snyk App에 정의된 첫 번째 값이 사용됩니다.
 

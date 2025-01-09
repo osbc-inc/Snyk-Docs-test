@@ -1,4 +1,4 @@
-# Express.js 구성
+# Express.js 설정
 
 ## Express를 설정하여 응용프로그램 제공
 
@@ -18,7 +18,7 @@ npm install --save \
   http
 ```
 
-패키지의 TypeScript 타입 및 인터페이스 정의를 개발 종속성으로 설치합니다.
+패키지의 TypeScript 타입 및 인터페이스 정의를 개발 디펜던시로 설치합니다.
 
 ```
 npm install --save-dev \

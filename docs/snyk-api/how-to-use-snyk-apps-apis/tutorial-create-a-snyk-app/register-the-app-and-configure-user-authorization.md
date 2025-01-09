@@ -1,10 +1,10 @@
-# 앱 등록 및 사용자 권한 부여 구성
+# App 등록 및 사용자 권한 구성
 
 이 튜토리얼의 이전 섹션에서 TypeScript 프로젝트를 설정하고 Express 서버를 추가하고 기본 라우팅을 구성했습니다. 이전 섹션에서 만든 프로젝트를 기반으로 작업할 것입니다. 이미 완료하지 않았다면 이 튜토리얼의 이전 부분을 완료하는 것이 매우 권장됩니다.
 
-## Snyk 앱 만들고 등록하기
+## Snyk App 만들고 등록하기
 
-우리는 지금까지 TypeScript 애플리케이션에 대한 어느 정도의 진전을 보았지만, 현재는 단순히 TypeScript 애플리케이션에 불과합니다. 이를 진정한 Snyk 앱으로 변환하려면 Snyk API를 사용하여 프로젝트를 새로운 앱으로 등록해야 합니다.
+우리는 지금까지 TypeScript 애플리케이션에 대한 어느 정도의 진전을 보았지만, 현재는 단순히 TypeScript 애플리케이션에 불과합니다. 이를 진정한 Snyk App으로 변환하려면 Snyk API를 사용하여 프로젝트를 새로운 앱으로 등록해야 합니다.
 
 ### 전제 조건
 
@@ -22,23 +22,23 @@ https://app.snyk.io/org/{your-org-name}/manage/settings
 API 사용자가 사용하는 Snyk API Token은 API로 보내지지 않고 안전하게 보관됩니다.
 {% endhint %}
 
-### Snyk 앱 및 Snyk API에 대해
+### Snyk App 및 Snyk API에 대해
 
-Snyk 앱은 유료로 앱을 설치한 사용자와 관계없이 API에 대한 풀 액세스 권한이 있습니다. 이 기능을 활용하려면 앱이 API에 접근할 때 `https://api.snyk.io/` 도메인의 API 엔드포인트를 사용해야 합니다.
+Snyk App은 유료로 앱을 설치한 사용자와 관계없이 API에 대한 풀 액세스 권한이 있습니다. 이 기능을 활용하려면 App이 API에 접근할 때 `https://api.snyk.io/` 도메인의 API 엔드포인트를 사용해야 합니다.
 
-### Snyk에 앱 등록
+### Snyk App 등록
 
-새로운 Snyk 앱을 등록하려면 간단한 POST 요청을 사용하여 Snyk의 API를 통해 수행됩니다. 이 튜토리얼 동안 코드를 설명하는 대신 `curl`을 사용하여 직접 요청을 보냅니다. 요청의 본문에는 다음 세부 정보가 필요합니다.
+새로운 Snyk App을 등록하려면 간단한 POST 요청을 사용하여 Snyk의 API를 통해 수행됩니다. 이 튜토리얼 동안 코드를 설명하는 대신 `curl`을 사용하여 직접 요청을 보냅니다. 요청의 본문에는 다음 세부 정보가 필요합니다.
 
-* `name`: Snyk 앱의 이름
+* `name`: Snyk App의 이름
 * `redirectUris`: 최종 사용자 인증 중 허용되는 콜백 위치
-* `scopes`: 사용자에게 부여할 Snyk 앱의 계정 권한
+* `scopes`: 사용자에게 부여할 Snyk App의 계정 권한
 
-스코프에 대한 주의: 등록된 이후에는 Snyk 앱의 스코프를 현재 변경할 수 없습니다. 유일한 대응 방법은 [Delete App](https://snykv3.docs.apiary.io/#reference/apps/single-app-management/delete-app) API 엔드포인트를 사용하여 Snyk 앱을 삭제하고 새로운 Snyk 앱으로 다시 등록하는 것뿐입니다.
+스코프에 대한 주의: 등록된 이후에는 Snyk App의 스코프를 현재 변경할 수 없습니다. 유일한 대응 방법은 [Delete App](https://snykv3.docs.apiary.io/#reference/apps/single-app-management/delete-app) API 엔드포인트를 사용하여 Snyk App을 삭제하고 새로운 Snyk App으로 다시 등록하는 것뿐입니다.
 
-현재 작성 시점에서 **Snyk 앱은 여전히 베타 버전**입니다. 현재 사용 가능한 스코프는 **`apps:beta` 하나뿐**입니다. 이 스코프는 앱이 프로젝트를 테스트 및 모니터링하고 Snyk 조직, 기존 프로젝트, 문제, 보고서 정보를 읽을 수 있게 합니다.
+현재 작성 시점에서 **Snyk App은 여전히 베타 버전**입니다. 현재 사용 가능한 스코프는 **`apps:beta` 하나뿐**입니다. 이 스코프는 App이 프로젝트를 테스트 및 모니터링하고 Snyk 조직, 기존 프로젝트, 문제, 보고서 정보를 읽을 수 있게 합니다.
 
-**Snyk 앱 베타의 제한 중 하나는 Snyk 앱이 등록된 조직에 관리자 액세스 권한이 있는 사용자에게만 사용자 권한을 부여받을 수 있다는 점**입니다. 
+**Snyk App 베타의 제한 중 하나는 Snyk App이 등록된 조직에 관리자 액세스 권한이 있는 사용자에게만 사용자 권한을 부여받을 수 있다는 점**입니다.
 
 API 토큰과 `orgid`를 사용하여 터미널에서 다음 명령을 수행하십시오. 이 튜토리얼에서는 `redirectUris` 값으로 `http://localhost:3000/callback`을 사용합니다.
 
@@ -55,20 +55,13 @@ curl --include \
      'https://api.snyk.io/rest/orgs/<ORG_ID>/apps?version='
 ```
 
-Snyk으로부터의 응답에는 Snyk 앱 통합을 완료하는 데 필요한 `clientId`와 `clientSecret` 두 가지 중요한 값이 포함되어 있습니다. 이러한 값을 안전하게 보관하십시오. 이는 Snyk의 `clientSecret`를 볼 수 있는 유일한 시기이며, **`clientSecret`를 공개적으로 공유해서는 안 됩니다**. 이 값은 Snyk과의 앱 인증에 사용됩니다.
+Snyk으로부터의 응답에는 Snyk App 통합을 완료하는 데 필요한 `clientId`와 `clientSecret` 두 가지 중요한 값이 포함되어 있습니다. 이러한 값을 안전하게 보관하십시오. 이는 Snyk의 `clientSecret`를 볼 수 있는 유일한 시기이며, **`clientSecret`를 공개적으로 공유해서는 안 됩니다**. 이 값은 Snyk과의 App 인증에 사용됩니다.
 
-이제 Snyk 앱으로 앱을 등록했기 때문에 TypeScript 프로젝트를 조정하여 사용자가 권한을 부여할 수 있도록 시작할 수 있습니다.```korean
-const installs = db.data?.installs || [];
+이제 Snyk App으로 App을 등록했기 때문에 TypeScript 프로젝트를 조정하여 사용자가 권한을 부여할 수 있도록 시작할 수 있습니다.\`\`\`korean const installs = db.data?.installs || \[];
 
-const index = installs.findIndex((install) => install.date === oldData.date);
-if (index === -1) return false;
-installs[index] = newData;
-// 기존 설치를 새로운 설치로 대체함
-db.data.installs = installs;
-await db.write();
-return true;
-}
-```
+const index = installs.findIndex((install) => install.date === oldData.date); if (index === -1) return false; installs\[index] = newData; // 기존 설치를 새로운 설치로 대체함 db.data.installs = installs; await db.write(); return true; }
+
+````
 
 ### API 호출을 위한 준비
 
@@ -84,7 +77,7 @@ export const enum APIVersion {
   V1 = "v1",
   REST = "rest",
 }
-```
+````
 
 우리는 Snyk API를 쉽게 호출하기 위한 단일 함수를 추가하여 시작합니다. 이 함수는 `tokenType` (bearer 또는 token), `token` 그리고 `APIVersion` (우리가 방금 정의한 Enum에 편리하게 해당함)을 취합니다.
 
@@ -185,7 +178,7 @@ export class EncryptDecrypt {
 
 이제 준비 작업이 완료되었으니 이제 작업을 시작하는 시간입니다.
 
-이전 섹션에서 설명한대로, 앱은 특정 토큰 URL로 인증자를 전송해야합니다. Snyk App의 `/auth` 경로를 추가하고 Express에 인증 미들웨어를 추가할 것입니다. 이를 위해 훌륭한 [passportjs](https://www.passportjs.org), [passport-oauth2](https://https/www.passportjs.org/packages/passport-oauth2) 인증 전략 및 Snyk의 [@snyk/passport-snyk-oauth2](https://www.npmjs.com/package/@snyk/passport-snyk-oauth2)을 사용할 것입니다. 
+이전 섹션에서 설명한대로, 앱은 특정 토큰 URL로 인증자를 전송해야합니다. Snyk App의 `/auth` 경로를 추가하고 Express에 인증 미들웨어를 추가할 것입니다. 이를 위해 훌륭한 [passportjs](https://www.passportjs.org), [passport-oauth2](https://https/www.passportjs.org/packages/passport-oauth2) 인증 전략 및 Snyk의 [@snyk/passport-snyk-oauth2](https://www.npmjs.com/package/@snyk/passport-snyk-oauth2)을 사용할 것입니다.
 
 `passport` 및 해당 모듈은 일반적으로 긴 과정이 되는 인증 프로세스의 대부분을 처리합니다.
 
