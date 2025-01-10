@@ -1,4 +1,4 @@
-# Snyk 브로커(사용자 지정)를 사용하여 Kubernetes 구성 파일 감지
+# Snyk Broker(사용자 정의)를 사용하여 Kubernetes 구성 파일 감지하기
 
 ## Snyk 브로커에서 Kubernetes 구성 파일 감지
 
@@ -19,7 +19,7 @@ docker run --restart=always \
 
 그렇지 않으면 `accept.json`을 편집하고 관련 IaC 특정 규칙을 추가하여 사용자 지정 허용 파일을 컨테이너에 로드할 수 있습니다. 사용자 지정 허용 파일(다른 폴더에서 가져온)을 사용하는 경우(`ACCEPT` 환경 변수를 사용함), `ACCEPT_IAC` 메커니즘을 사용할 수 없음에 주의하시기 바랍니다.
 
-이러한 지침은 사용자 지정 허용 목록이 필요하며 Snyk가 스캔할 수 있는 파일에 Kubernetes 구성 파일을 추가하려는 경우입니다.
+이러한 지침은 사용자 지정 허용 목록이 필요하며 Snyk이 스캔할 수 있는 파일에 Kubernetes 구성 파일을 추가하려는 경우입니다.
 
 ## 구성 작성
 
@@ -230,7 +230,7 @@ docker run --restart=always \
 
 ### Azure Repo 규칙
 
-```
+```````
 {
   "public": [
     {
@@ -451,7 +451,7 @@ docker run --restart=always \
 }
 ]
 }
-```
+```````
 
 ## Broker 구성
 
@@ -469,5 +469,7 @@ docker run --restart=always \
   snyk/broker:github-com
 ```
 
-주의: 이를 통해 Snyk가 `.yaml`, `.yml` 또는 `.json` 파일에 대해 쿼리할 수 있게 됩니다. 특정 프로젝트나 파일 레이아웃에 대해 더 제한적으로 설정하려면 앞의 예제에서 경로를 더 제한적으로 변경할 수 있습니다.
-``` 
+주의: 이를 통해 Snyk이 `.yaml`, `.yml` 또는 `.json` 파일에 대해 쿼리할 수 있게 됩니다. 특정 프로젝트나 파일 레이아웃에 대해 더 제한적으로 설정하려면 앞의 예제에서 경로를 더 제한적으로 변경할 수 있습니다.
+
+```
+```

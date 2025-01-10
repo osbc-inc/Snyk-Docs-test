@@ -1,4 +1,4 @@
-# Snyk 브로커(Custom)를 사용하여 Terraform 설정 파일 감지
+# Snyk Broker를 사용하여 Terraform 구성 파일 감지(사용자 지정)
 
 ## **Snyk 브로커에서의 Terraform**
 
@@ -19,7 +19,7 @@ docker run --restart=always \
 
 그렇지 않으면 `accept.json`을 편집하고 관련 IaC 특정 규칙을 추가하여 사용자 정의 accept 파일을 컨테이너로 로드할 수 있습니다. 별도 폴더의 사용자 지정 accept 파일이 사용된 경우(`ACCEPT` 환경 변수 사용),`ACCEPT_IAC` 메커니즘을 사용할 수 없습니다.
 
-Terraform 파일을 Snyk가 스캔할 수 있는 파일로 추가하고자 하는 경우 사용자 정의 허용 목록이 필요한 경우 다음 지침을 따르세요.
+Terraform 파일을 Snyk이 스캔할 수 있는 파일로 추가하고자 하는 경우 사용자 정의 허용 목록이 필요한 경우 다음 지침을 따르세요.
 
 ## 설정 작성
 

@@ -1,4 +1,4 @@
-# Snyk 브로커(Custom)를 사용하여 CloudFormation 구성 파일 검색
+# Snyk 브로커(사용자 지정)를 사용하여 CloudFormation 구성 파일 감지하기
 
 ## Snyk 브로커에서의 CloudFormation
 
@@ -19,7 +19,7 @@ docker run --restart=always \
 
 그 외에도, `accept.json`을 편집하여 관련 IaC 특정 규칙을 추가하고 컨테이너에 사용자 지정 accept 파일을 로드할 수 있습니다. 사용자 정의 accept 파일(별도의 폴더에서 사용)을 사용하는 경우(`ACCEPT` 환경 변수 사용) `ACCEPT_IAC` 메커니즘을 사용할 수 없음을 참고해야 합니다.
 
-CloudFormation 파일을 Snyk가 스캔할 수 있도록 포함하려는 경우 사용하는 사용자 지정 허용 목록에 관한 요구 사항은 다음과 같습니다.
+CloudFormation 파일을 Snyk 스캔할 수 있도록 포함하려는 경우 사용하는 사용자 지정 허용 목록에 관한 요구 사항은 다음과 같습니다.
 
 ## 구성 작성
 
@@ -198,4 +198,4 @@ docker run --restart=always \
   snyk/broker:github-com
 ```
 
-이러면 Snyk가 `.yaml`, `.yml`, 또는 `.json` 파일에 대한 쿼리 수행이 가능해집니다. 특정 프로젝트 또는 파일 레이아웃에 대해 더 엄격하게 하려는 경우, 앞의 예시 경로를 수정하여 특정 프로젝트나 파일 레이아웃에 대해 더 제한적으로 할 수 있습니다.
+이러면 Snyk이 `.yaml`, `.yml`, 또는 `.json` 파일에 대한 쿼리 수행이 가능해집니다. 특정 프로젝트 또는 파일 레이아웃에 대해 더 엄격하게 하려는 경우, 앞의 예시 경로를 수정하여 특정 프로젝트나 파일 레이아웃에 대해 더 제한적으로 할 수 있습니다.
