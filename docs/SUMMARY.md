@@ -1052,7 +1052,7 @@
   * [Snyk SBOM 및 List issues API 사용 방법](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/README.md)
     * [프로젝트의 SBOM 문서 가져오기](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/rest-api-get-a-projects-sbom-document.md)
     * [SBOM 문서의 취약점 테스트](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md)
-    * [List issues for a package](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
+    * [패키지를 위한 issues 목록](snyk-api/how-to-use-snyk-sbom-and-list-issues-apis/list-issues-for-a-package.md)
   * [How to use Snyk webhooks APIs](snyk-api/how-to-use-snyk-webhooks-apis/README.md)
     * [About webhooks](snyk-api/how-to-use-snyk-webhooks-apis/about-webhooks.md)
     * [Webhook events and payloads](snyk-api/how-to-use-snyk-webhooks-apis/webhooks.md)
