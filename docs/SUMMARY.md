@@ -1059,7 +1059,7 @@
     * [Payload의 유효성 검사 및 버전 관리](snyk-api/how-to-use-snyk-webhooks-apis/validation-and-versioning-of-payloads.md)
     * [웹훅 가이드](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/README.md)
       * [Snyk 웹훅을 Zapier와 함께 사용하는 방법](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/tutorial.md)
-      * [How to use Snyk Webhooks to integrate New Relic with Snyk](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-integrate-new-relic-with-snyk/README.md)
+      * [Snyk Webhooks를 사용하여 New Relic을 Snyk와 통합하는 방법](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-integrate-new-relic-with-snyk/README.md)
         * [Create an Azure Function App](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-integrate-new-relic-with-snyk/create-an-azure-function-app.md)
         * [Configure Azure Function environment variables](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-integrate-new-relic-with-snyk/configure-azure-function-environment-variables.md)
         * [Copy the Azure Function URL](snyk-api/how-to-use-snyk-webhooks-apis/guides-to-webhooks/how-to-use-snyk-webhooks-to-integrate-new-relic-with-snyk/copy-the-azure-function-url.md)
