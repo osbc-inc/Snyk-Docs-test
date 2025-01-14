@@ -12,23 +12,23 @@
 * [**.snyk** 파일](../../manage-risk/policies/the-.snyk-file.md)
 * [manifest 파일과 다른 디렉터리의 **.snyk** 정책 파일](a-.snyk-policy-file-in-a-different-directory-from-the-manifest-file.md)
 * [Snyk CLI에서 빌드 실패](failing-of-builds-in-snyk-cli.md)
-* Snyk CLI를 사용하여 취약점 **무시**하기]\(ignore-vulnerabilities-using-the-snyk-cli.md)
-* 프로젝트 스캔 시 **잘못된 문자열 길이** 오류]\(invalid-string-length-error-when-scanning-projects.md)
-* 모든 관리되지 않는 **JAR 파일** 스캔]\(../test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
-* CLI에서 사용할 조직 선택]\(how-to-select-the-organization-to-use-in-the-cli.md)
-* 스캔이 실패하거나 종속성이 없는 **Setup.py 파일**]\(setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
-* CLI 테스트를 위한 **심각도 임계값**]\(set-severity-thresholds-for-cli-tests.md)
-* 사용 전 npm 패키지 테스트]\(test-public-npm-packages-before-use.md)
-* CLI **테스트 결과**]\(cli-test-results.md)
-* 환경별 **취약점 수 차이**]\(../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
+* [Snyk CLI를 사용하여 취약점 **무시**하기]\(ignore-vulnerabilities-using-the-snyk-cli.md)
+* [프로젝트 스캔 시 **잘못된 문자열 길이** 오류]\(invalid-string-length-error-when-scanning-projects.md)
+* [모든 관리되지 않는 **JAR 파일** 스캔]\(../test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
+* [CLI에서 사용할 조직 선택]\(how-to-select-the-organization-to-use-in-the-cli.md)
+* [스캔이 실패하거나 종속성이 없는 **Setup.py 파일**]\(setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
+* [CLI 테스트를 위한 **심각도 임계값**]\(set-severity-thresholds-for-cli-tests.md)
+* [사용 전 npm 패키지 테스트]\(test-public-npm-packages-before-use.md)
+* [CLI **테스트 결과**]\(cli-test-results.md)
+* [환경별 **취약점 수 차이**]\(../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
 
 ## 프로젝트 모니터링
 
-* 정기적으로 프로젝트 **모니터링**]\(monitor-your-projects-at-regular-intervals.md)
-* 모니터링을 위한 프로젝트 **그룹화**]\(group-projects-by-branch-or-version-for-monitoring.md)
+* [정기적으로 프로젝트 **모니터링**]\(monitor-your-projects-at-regular-intervals.md)
+* [모니터링을 위한 프로젝트 **그룹화**]\(group-projects-by-branch-or-version-for-monitoring.md)
 
 ## 프로젝트 유지 관리
 
-* **Log4shell** 명령어 사용]\(log4shell-command-use.md)
+* [**Log4shell** 명령어 사용]\(log4shell-command-use.md)
 * [@**snyk/protect** 패키지](snyk-protect-package.md)
-* Snyk CLI를 사용하여 취약점 **수정**]\(fix-vulnerabilities-using-the-snyk-cli.md)
+* [Snyk CLI를 사용하여 취약점 **수정**]\(fix-vulnerabilities-using-the-snyk-cli.md)
