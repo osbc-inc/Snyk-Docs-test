@@ -80,7 +80,7 @@ GitLab 그룹 액세스 토큰을 생성하려면 Maintainer 역할을 선택해
 
 #### **Snyk 머지 리퀘스트를 사용하여 취약점 수정**
 
-Snyk 프로젝트 또는 Snyk가 감시하는 GitLab 프로젝트에 대한 Snyk 테스트 보고서를 보면 취약점을 수정하는 두 가지 옵션이 표시됩니다:
+Snyk 프로젝트 또는 Snyk이 감시하는 GitLab 프로젝트에 대한 Snyk 테스트 보고서를 보면 취약점을 수정하는 두 가지 옵션이 표시됩니다:
 
 * **이 취약점 수정:** Snyk 프로젝트의 감지된 모든 취약점을 수정하는 데 필요한 최소한의 변경 사항으로 Snyk 머지 리퀘스트를 생성합니다.
 * **이 취약점 수정:** 개별 문제에 대한 Snyk 머지 리퀘스트를 생성하여 해당 취약점을 수정합니다.
@@ -93,11 +93,11 @@ GitLab 웹훅은 머지 리퀘스트가 발생하면 Snyk로 이벤트를 전송
 
 #### 새로운 취약점에 대한 이메일 알림 받기
 
-Snyk에서 감시하고 있는 Snyk 프로젝트에 새 취약점이 감지되면 Snyk가 해당 취약점을 해결하기 위한 Snyk 머지 리퀘스트를 생성하는 이메일을 보냅니다.
+Snyk에서 감시하고 있는 Snyk 프로젝트에 새 취약점이 감지되면 Snyk이 해당 취약점을 해결하기 위한 Snyk 머지 리퀘스트를 생성하는 이메일을 보냅니다.
 
 #### 새 업그레이드 또는 패치에 대한 이메일 알림 받기
 
-취약점에 대한 업그레이드가 발견되지 않고 패치만 가능한 상황에 처할 수 있습니다. 해결이 가능해지면 Snyk가 알람 이메일을 보내고 새로운 수정 사항이 포함된 머지 리퀘스트를 생성합니다.
+취약점에 대한 업그레이드가 발견되지 않고 패치만 가능한 상황에 처할 수 있습니다. 해결이 가능해지면 Snyk 알람 이메일을 보내고 새로운 수정 사항이 포함된 머지 리퀘스트를 생성합니다.
 
 {% hint style="warning" %}
 패칭은 Node.js 프로젝트에서만 가능합니다.
@@ -111,7 +111,7 @@ GitLab 통합을 해제하면 Snyk 웹훅, Snyk 자격 증명 및 Snyk 웹 UI의
 
 1. Snyk GitLab 통합 **설정**으로 이동합니다.
 2. 페이지 하단에서 **GitLab 제거**를 선택합니다.
-3. 확인 화면이 열립니다. 계속하려면 **GitLab 연결 끊기**를 선택합니다.
+3.  확인 화면이 열립니다. 계속하려면 **GitLab 연결 끊기**를 선택합니다.
 
     <figure><img src="../../.gitbook/assets/2023-08-15_16-36-28.png" alt="GitLab 연결 끊기 확인" width="375"><figcaption><p>GitLab 연결 끊기 확인</p></figcaption></figure>
 
@@ -142,7 +142,7 @@ GitLab이 연결 해제되면 GitLab에서 가져온 Snyk 프로젝트가 비활
 
 #### Snyk AppRisk를 사용하여 통합하기 <a href="#gitlab-integrate-using-snyk-apprisk" id="gitlab-integrate-using-snyk-apprisk"></a>
 
-1. 프로필 이름 (`필수`): 통합 프로필 이름을 입력하세요.  
+1. 프로필 이름 (`필수`): 통합 프로필 이름을 입력하세요.
 2. 액세스 토큰 (`필수`):
    * API 토큰 (`필수`): GitLab 조직에서 GitLab PAT를 생성하세요. [GitLab 설정에서 개인 액세스 토큰 생성 섹션](gitlab.md#generate-a-personal-access-token-from-your-gitlab-settings)의 지침을 따르세요. SAML SSO를 설정한 경우, 개인 액세스 토큰을 인증하세요.
    * 호스트 URL (`필수`): GitLab 서버의 IP/URL입니다. 기본 URL은 [`https://gitlab.com`](https://gitlab.com)입니다.

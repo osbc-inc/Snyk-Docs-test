@@ -8,7 +8,7 @@ Snyk 계정에 새 통합을 추가하려면 먼저 통합을 설치할 수준 �
 ## 조직 수준 - Snyk 통합
 
 {% hint style="info" %}
-Snyk는 더 부드러운 통합 및 장기 지원을 위해 [Bitbucket Cloud 애플리케이션](bitbucket-cloud-app.md)을 설치하거나 이관하는 것을 권장합니다.
+Snyk은은 더 부드러운 통합 및 장기 지원을 위해 [Bitbucket Cloud 애플리케이션](bitbucket-cloud-app.md)을 설치하거나 이관하는 것을 권장합니다.
 {% endhint %}
 
 Bitbucket Cloud (PAT) 통합을 통해 다음을 수행할 수 있습니다.
@@ -27,7 +27,7 @@ Bitbucket Cloud (PAT) 통합을 통해 다음을 수행할 수 있습니다.
    새로 만든 사용자는 Snyk로 모니터할 필요가 있는 모든 저장소에 **관리자** 권한이 있어야 합니다.
 2. Snyk에서 **통합** 페이지로 이동하여 **Bitbucket Cloud** 카드를 열고 **계정 자격 정보**를 구성하십시오.
 3. Snyk의 **계정 자격 정보 >** **앱 비밀번호 생성** 섹션에서 링크 **앱 비밀번호 생성**을 사용하여 Bitbucket Cloud 계정으로 이동하십시오.
-4. 다음 권한이 할당된 계정을 설정하기 위해 Bitbucket 절차를 따르십시오.
+4.  다음 권한이 할당된 계정을 설정하기 위해 Bitbucket 절차를 따르십시오.
 
     * **계정: 이메일 및 읽기**
     * **작업 영역 멤버십: 읽기**
@@ -43,12 +43,12 @@ Bitbucket Cloud (PAT) 통합을 통해 다음을 수행할 수 있습니다.
 
 ### Snyk에 Bitbucket 저장소 추가하는 방법
 
-Snyk를 Bitbucket Cloud 계정에 연결한 후 Snyk가 모니터링할 저장소를 선택할 수 있습니다.
+Snyk을 Bitbucket Cloud 계정에 연결한 후 Snyk이모니터링할 저장소를 선택할 수 있습니다.
 
 1. Snyk에서 **통합** > **Bitbucket Cloud** 카드로 이동한 다음 **Snyk에 Bitbucket Cloud 저장소 추가**를 클릭하여 Snyk에 저장소를 가져올 수 있습니다.
 2. 가져오려는 저장소를 선택하고 **선택한 저장소 추가**를 클릭하십시오.
 
-선택한 저장소를 추가한 후 Snyk는 해당 저장소를 전체 디렉토리 트리(`package.json`, `pom.xml` 등)에서 종속성 파일을 스캔하고 프로젝트로 가져옵니다.
+선택한 저장소를 추가한 후 Snyk은 해당 저장소를 전체 디렉토리 트리(`package.json`, `pom.xml` 등)에서 종속성 파일을 스캔하고 프로젝트로 가져옵니다.
 
 가져온 프로젝트는 **프로젝트** 페이지에 표시되며 지속적으로 취약점을 확인합니다.
 
@@ -62,7 +62,7 @@ Snyk를 Bitbucket Cloud 계정에 연결한 후 Snyk가 모니터링할 저장�
 
 #### 프로젝트 수준 보안 보고서
 
-Snyk가 발견한 취약점을 즉시 해결하기 위해 필요한 업그레이드 또는 패치가 포함된 보안 보고서를 통해 저장소에서 발견된 취약점을 살펴보고 즉시 수정 풀 리퀘스트를 열 수 있습니다.
+Snyk이 발견한 취약점을 즉시 해결하기 위해 필요한 업그레이드 또는 패치가 포함된 보안 보고서를 통해 저장소에서 발견된 취약점을 살펴보고 즉시 수정 풀 리퀘스트를 열 수 있습니다.
 
 다음의 예시는 프로젝트 수준 보안 보고서를 보여줍니다.
 
@@ -70,7 +70,7 @@ Snyk가 발견한 취약점을 즉시 해결하기 위해 필요한 업그레이
 
 #### 프로젝트 모니터링 및 자동 수정 풀 리퀘스트
 
-Snyk가 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk는 이메일과 함께 자동화된 수정 풀 리퀘스트를 여는 방법으로 알림을 보냅니다.
+Snyk이 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk은은 이메일과 함께 자동화된 수정 풀 리퀘스트를 여는 방법으로 알림을 보냅니다.
 
 다음의 예시는 Snyk에 의해 열린 자동 수정 풀 리퀘스트를 보여줍니다.
 
@@ -108,11 +108,11 @@ Snyk는 저장소의 새로 생성된 풀 리퀘스트를 보안 취약점에 �
 
 수동으로 또는 자동으로 트리거된 모든 작업은 통합 설정단계에서 사용된 Bitbucket Cloud [서비스 계정](https://docs.snyk.io/features/user-and-group-management/managing-groups-and-organizations/service-accounts)에서 수행됩니다. 이 서비스 계정은 **통합 설정**에서 구성된 토큰(App 비밀번호)을 가지고 있어야 합니다.
 
-Snyk가 모니터링 중인 저장소에서 매니페스트 파일을 주기적으로 읽고 수정 또는 업그레이드 PR을 열기 위해 필요한 작업을 수행하려면 통합된 Bitbucket Cloud 서비스 계정이 가져온 저장소에 대한 **관리자** 권한이 필요합니다.
+Snyk이 모니터링 중인 저장소에서 매니페스트 파일을 주기적으로 읽고 수정 또는 업그레이드 PR을 열기 위해 필요한 작업을 수행하려면 통합된 Bitbucket Cloud 서비스 계정이 가져온 저장소에 대한 **관리자** 권한이 필요합니다.
 
 필요한 권한 범위에 대한 자세한 정보는 [Bitbucket 권한 요구 사항](./#bitbucket-permission-requirements)을 참조하십시오.
 
-### Snyk를 Bitbucket Cloud에서 연결 해제하는 방법
+### Snyk을 Bitbucket Cloud에서 연결 해제하는 방법
 
 {% hint style="warning" %}
 Snyk에서 귀하의 저장소 프로젝트에서 Snyk의 자격 정보를 제거하고 Snyk가 모니터링 중인 전용 프로젝트를 비활성화합니다. 이 통합을 다시 활성화하려면 자격 정보를 다시 입력하고 프로젝트를 활성화해야 합니다.
@@ -181,8 +181,8 @@ Snyk의 Partner Solutions Architect인 Marco Morales는 Snyk Bitbucket Cloud App
 
 _데모로 바로 가려면 2:34에서 시작하세요._
 
-{% embed url="https://thoughtindustries-1.wistia.com/medias/32rgw3hkdk" %}  
-Snyk Bitbucket Cloud App 통합으로 마이그레이션하는 방법  
+{% embed url="https://thoughtindustries-1.wistia.com/medias/32rgw3hkdk" %}
+Snyk Bitbucket Cloud App 통합으로 마이그레이션하는 방법
 {% endembed %}
 
 ## 그룹 수준 - Snyk AppRisk 통합
@@ -191,8 +191,8 @@ Snyk Bitbucket Cloud App 통합으로 마이그레이션하는 방법
 
 ### Bitbucket 설정 가이드
 
-{% hint style="info" %}  
-Bitbucket Server와 Bitbucket Cloud는 자동 언어 감지를 지원하지 않습니다. Bitbucket Cloud 리포지토리에 언어 태그를 수동으로 추가할 수 있습니다.  
+{% hint style="info" %}
+Bitbucket Server와 Bitbucket Cloud는 자동 언어 감지를 지원하지 않습니다. Bitbucket Cloud 리포지토리에 언어 태그를 수동으로 추가할 수 있습니다.\
 Bitbucket 프로젝트에서 언어를 수동으로 설정한 후, Snyk는 Snyk AppRisk 애플리케이션에서 자동으로 해당 언어를 감지하고 수집할 수 있습니다.
 {% endhint %}
 
@@ -203,10 +203,10 @@ Bitbucket 프로젝트에서 언어를 수동으로 설정한 후, Snyk는 Snyk 
 
 #### Snyk AppRisk를 사용하여 통합하기 <a href="#bitbucket-integrate-using-snyk-apprisk" id="bitbucket-integrate-using-snyk-apprisk"></a>
 
-* 프로필 이름 (`필수`): 통합 프로필 이름을 입력하세요.  
+* 프로필 이름 (`필수`): 통합 프로필 이름을 입력하세요.
 
-{% hint style="info" %}  
-액세스 토큰 또는 브로커 토큰을 사용하여 통합을 선택할 수 있습니다.  
+{% hint style="info" %}
+액세스 토큰 또는 브로커 토큰을 사용하여 통합을 선택할 수 있습니다.
 {% endhint %}
 
 **액세스 토큰 사용**
@@ -219,13 +219,13 @@ Bitbucket 프로젝트에서 언어를 수동으로 설정한 후, Snyk는 Snyk 
   * **계정** - 읽기
   * **프로젝트** - 읽기
 
-{% hint style="info" %}  
+{% hint style="info" %}
 Bitbucket 앱 비밀번호를 생성하는 방법은 다음과 같습니다:
 
-1. Bitbucket 계정을 엽니다.  
-2. 설정 옵션을 클릭합니다.  
-3. 개인 Bitbucket 설정 옵션을 클릭합니다.  
-4. **액세스 관리** 섹션에서 **앱 비밀번호** 하위 섹션으로 이동합니다.  
+1. Bitbucket 계정을 엽니다.
+2. 설정 옵션을 클릭합니다.
+3. 개인 Bitbucket 설정 옵션을 클릭합니다.
+4. **액세스 관리** 섹션에서 **앱 비밀번호** 하위 섹션으로 이동합니다.
 {% endhint %}
 
 **브로커 토큰 사용**

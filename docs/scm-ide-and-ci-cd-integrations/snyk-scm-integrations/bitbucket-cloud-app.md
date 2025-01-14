@@ -31,20 +31,20 @@ Bitbucket Cloud 워크스페이스에 Snyk 앱을 설치하려면 Bitbucket에 �
 {% endhint %}
 
 1. Snyk에서 **Integrations(소스 제어) >** **Bitbucket Cloud App** 타일로 이동하여 **Connect**를 클릭하여 Snyk Bitbucket Cloud 앱을 Bitbucket Cloud 워크스페이스에 설치하세요.
-2. 새 Bitbucket 탭에서 목록에서 Snyk 조직에 연결할 해당 워크스페이스를 선택하고 [**Grant access** to let Snyk](bitbucket-cloud-app.md#required-snyk-bitbucket-cloud-app-permissions-scope)를 클릭하세요:
+2.  새 Bitbucket 탭에서 목록에서 Snyk 조직에 연결할 해당 워크스페이스를 선택하고 [**Grant access** to let Snyk](bitbucket-cloud-app.md#required-snyk-bitbucket-cloud-app-permissions-scope)를 클릭하세요:
 
     * 계정 정보 읽기
     * 리포지토리 및 풀 리퀘스트 읽기 및 수정
     * 리포지토리의 웹훅 읽기 및 수정
 
     <figure><img src="../../.gitbook/assets/image (108) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (4).png" alt="Allow access for Snyk to Bitbucket Cloud" width="563"><figcaption><p>Snyk에 Bitbucket Cloud 액세스 허용</p></figcaption></figure>
-3. Snyk 조직에 대한 액세스 권한을 부여하세요(프롬프트가 표시됩니다).
+3.  Snyk 조직에 대한 액세스 권한을 부여하세요(프롬프트가 표시됩니다).
 
     <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt="Bitbucket Cloud가 Snyk 조직에 액세스 허용" width="365"><figcaption><p>Bitbucket Cloud가 Snyk 조직에 액세스 허용<br></p></figcaption></figure>
 
-    Snyk 조직에 액세스를 허용하고 난 뒤, Snyk **Organization Settings** 페이지가 열리며 Bitbucket Cloud 앱이 연결되었음이 확인됩니다.\
+    Snyk 조직에 액세스를 허용하고 난 뒤, Snyk **Organization Settings** 페이지가 열리며 Bitbucket Cloud 앱이 연결되었음이 확인됩니다.\\
 
-Snyk가 Bitbucket Cloud와 통합되면 저장소 페이지에서 새 Snyk 보안 탭을 볼 수 있으며 Bitbucket에서 직접 프로젝트의 문제와 취약성을 가져오고 탐색할 수 있습니다.
+Snyk이 Bitbucket Cloud와 통합되면 저장소 페이지에서 새 Snyk 보안 탭을 볼 수 있으며 Bitbucket에서 직접 프로젝트의 문제와 취약성을 가져오고 탐색할 수 있습니다.
 
 <figure><img src="../../.gitbook/assets/bbcloud-app_snyk-security_6oct2022.png" alt="Snyk Bitbucket Cloud 앱으로 Bitbucket 보안 인사이트"><figcaption><p>Snyk Bitbucket Cloud 앱으로 Bitbucket 보안 인사이트</p></figcaption></figure>
 
@@ -64,7 +64,7 @@ Bitbucket Cloud 워크스페이스 중 하나에서 **보안** 탭으로 이동�
 
 ### Bitbucket 리포지토리를 Snyk에 추가
 
-Snyk를 Bitbucket Cloud 계정에 연결한 후 Snyk가 모니터링할 리포지토리를 선택할 수 있습니다.
+Snyk을 Bitbucket Cloud 계정에 연결한 후 Snyk이 모니터링할 리포지토리를 선택할 수 있습니다.
 
 1. Snyk에서 **Integrations** > **Bitbucket Cloud App** 카드로 이동하여 Snyk에 리포지토리를 가져오는 것을 시작하는 클릭하세요.
 2. 가져올 리포지토리를 선택하고 **선택한 리포지토리 추가**를 클릭하세요.
@@ -83,28 +83,24 @@ Snyk를 Bitbucket Cloud 계정에 연결한 후 Snyk가 모니터링할 리포�
 
 #### 프로젝트 레벨 보안 보고서
 
-Snyk는 저장소에서 발견된 취약성을 즉시 고침하기 위해 필요한 업그레이드 또는 패치가 포함된 고침 풀 리퀘스트를 열어 바로 고치기 위한 고급 [보안 보고서](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md)를 제공합니다.
+Snyk은 저장소에서 발견된 취약성을 즉시 고침하기 위해 필요한 업그레이드 또는 패치가 포함된 고침 풀 리퀘스트를 열어 바로 고치기 위한 고급 [보안 보고서](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md)를 제공합니다.
 
 다음은 프로젝트 레벨 보안 보고서의 예시입니다.
 
 <figure><img src="../../.gitbook/assets/bbc_project-sec-rpt_21sept2022.png" alt="프로젝트 레벨 보안 보고서"><figcaption><p>프로젝트 레벨 보안 보고서</p></figcaption></figure>
 
-Snyk는 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk가 고침을 위한 자동으로 풀 리퀘스트를 열거나 이를 이메일 통지합니다.
+Snyk은 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk이 고침을 위한 자동으로 풀 리퀘스트를 열거나 이를 이메일 통지합니다.
 
-다음은 Snyk가 열어진 고침 풀 리퀘스트의 예시입니다.
+다음은 Snyk이 열어진 고침 풀 리퀘스트의 예시입니다.
 
-<figure><img src="../../.gitbook/assets/bbc-app_pr_6oct2022.png" alt="Snyk가 열어진 고침 풀 리퀘스트"><figcaption><p>Snyk가 열어진 고침 풀 리퀘스트</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bbc-app_pr_6oct2022.png" alt="Snyk가 열어진 고침 풀 리퀘스트"><figcaption><p>Snyk이 열어진 고침 풀 리퀘스트</p></figcaption></figure>
 
 자동 고침 풀 리퀘스트 설정을 검토하고 조정하려면:
 
 1. Snyk에서 **Organization settings** > **Integrations > Source control > Bitbucket Cloud App**로 이동하여 **Edit Settings**를 클릭합니다.
-2. **Automatic fix PRs** 섹션으로 스크롤하고 관련 옵션을 구성합니다.
+2.  **Automatic fix PRs** 섹션으로 스크롤하고 관련 옵션을 구성합니다.
 
-    <div align="left">
-
-    <figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.19.09.png" alt="자동 고침 PR 설정"><figcaption><p>자동 고침 PR 설정 </p></figcaption></figure>
-
-    </div>
+    <div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2023-05-02 at 11.19.09.png" alt="자동 고침 PR 설정"><figcaption><p>자동 고침 PR 설정</p></figcaption></figure></div>
 
 {% hint style="info" %}
 Bitbucket Cloud 계정의 기본 리뷰어 집합에 자동으로 할당되지 않습니다.
@@ -114,7 +110,7 @@ Bitbucket Cloud 계정의 기본 리뷰어 집합에 자동으로 할당되지 �
 
 #### 풀 리퀘스트 테스트
 
-Snyk는 저장소의 새로 생성된 풀 리퀘스트를 보안 취약성에 대해 테스트하고 빌드 체크를 Bitbucket Cloud로 보냅니다. Bitbucket Cloud에서 풀 리퀘스트가 새로운 보안 문제를 도입하는지 여부를 직접 확인할 수 있습니다.
+Snyk은 저장소의 새로 생성된 풀 리퀘스트를 보안 취약성에 대해 테스트하고 빌드 체크를 Bitbucket Cloud로 보냅니다. Bitbucket Cloud에서 풀 리퀘스트가 새로운 보안 문제를 도입하는지 여부를 직접 확인할 수 있습니다.
 
 다음은 Bitbucket Cloud **Pull Request** 페이지에서 보는 Snyk 풀 리퀘스트 빌드 체크의 예시입니다.
 
