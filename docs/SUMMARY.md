@@ -455,7 +455,7 @@
 * [Manage assets](manage-assets/README.md)
   * [자산 인벤토리 레이아웃](manage-assets/assets-inventory-layouts.md)
   * [자산 인벤토리 컴포넌트](manage-assets/assets-inventory-components.md)
-  * [Assets inventory features](manage-assets/assets-inventory-features.md)
+  * [자산 인벤토리 기능](manage-assets/assets-inventory-features.md)
 * [Scan with Snyk](scan-with-snyk/README.md)
   * [Scanning overview](scan-with-snyk/scanning-overview.md)
   * [Start scanning](scan-with-snyk/start-scanning.md)
