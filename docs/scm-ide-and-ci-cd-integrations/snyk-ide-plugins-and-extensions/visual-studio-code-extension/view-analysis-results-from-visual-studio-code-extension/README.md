@@ -1,4 +1,4 @@
-# View analysis results from Visual Studio Code extension
+# Visual Studio 코드 확장 프로그램에서 분석 결과 보기
 
 Snyk 분석 결과는 응용 프로그램 코드에서 발견된 보안 취약점 및 코드 문제 목록을 보여줍니다. 보안 취약점 또는 코드 보안 문제를 선택하여 자세한 내용 및 다른 사람들이 문제를 해결한 예시를 확인할 수 있습니다. "Issue details" 패널은 화면 오른쪽에 탭으로 나타납니다.
 
@@ -20,13 +20,13 @@ Snyk 분석 결과는 응용 프로그램 코드에서 발견된 보안 취약�
 
 ### 심각도 필터
 
-Snyk는 심각한, 높은, 중간, 낮은 심각도를 보고합니다. 이것은 [스캔 구성](../visual-studio-code-extension-configuration.md#scan-configuration) 설정에서 조정할 수 있습니다.
+Snyk은 심각한, 높은, 중간, 낮은 심각도를 보고합니다. 이것은 [스캔 구성](../visual-studio-code-extension-configuration.md#scan-configuration) 설정에서 조정할 수 있습니다.
 
 기본적으로 모든 수준이 선택되어 있습니다. 하나 이상을 선택해야 합니다.
 
 ### 문제 유형별 필터링
 
-Snyk는 다음 유형의 문제를 보고합니다:
+Snyk은 다음 유형의 문제를 보고합니다:
 
 * **오픈 소스** 문제: 오픈 소스 종속성에서 발견된 문제; 자세한 내용은 [결과](analysis-results-snyk-open-source.md) 참조.
 * **코드 보안** 문제: 응용프로그램의 소스 코드에서 발견된 문제; 자세한 내용은 [결과](analysis-results-snyk-code.md) 참조.
@@ -51,7 +51,7 @@ Snyk는 다음 유형의 문제를 보고합니다:
 
 이 기능은 [플러그인 설정](../visual-studio-code-extension-configuration.md#scan-configuration)을 통해 구성할 수 있습니다. 기본적으로 꺼져 있으며, 켜려면 수동 조치가 필요합니다.
 
-이 기능이 활성화된 후에는 Snyk가 델타 결과만 보고합니다.
+이 기능이 활성화된 후에는 Snyk이 델타 결과만 보고합니다.
 
 특성 브랜치를 새롭게 작성할 경우 보고된 문제가 없을 것입니다. 이는 개발자들이 목표로 하는 의도적인 상태이며 아래 화면 이미지에서 확인할 수 있습니다.
 

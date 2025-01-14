@@ -1,6 +1,6 @@
-# Snyk Language Server
+# Snyk 언어 서버
 
-Snyk는 통합 개발 환경 또는 편집기에서 Snyk의 기능을 사용할 수 있도록 허용하는 IDE 통합을 제공합니다. 이 페이지에서는 [Language Server Protocol](https://microsoft.github.io/language-server-protocol/)을 지원하는 IDE나 편집기에 대한 진단을 제공할 수 있는 Snyk Language Server에 대해 설명합니다. 모든 IDE 플러그인 및 사용 방법에 대한 정보는 문서의 [IDE를 위한 Snyk](https://docs.snyk.io/ide-tools)를 참조하십시오.
+Snyk은 통합 개발 환경 또는 편집기에서 Snyk의 기능을 사용할 수 있도록 허용하는 IDE 통합을 제공합니다. 이 페이지에서는 [Language Server Protocol](https://microsoft.github.io/language-server-protocol/)을 지원하는 IDE나 편집기에 대한 진단을 제공할 수 있는 Snyk Language Server에 대해 설명합니다. 모든 IDE 플러그인 및 사용 방법에 대한 정보는 문서의 [IDE를 위한 Snyk](https://docs.snyk.io/ide-tools) 참조하십시오.
 
 Snyk Language Server는 취약점, 오픈 소스 라이선스 문제 및 인프라 구성 오류를 검사하고 문제 유형 및 심각도에 따라 보안 문제를 분류하여 결과를 반환합니다.
 
@@ -8,26 +8,26 @@ Snyk Language Server는 취약점, 오픈 소스 라이선스 문제 및 인프�
 
 Snyk Language Server는 다음 유형의 문제를 스캔합니다:
 
-- [**오픈 소스 보안**](https://snyk.io/product/open-source-security-management/) - Snyk 프로젝트에 편입된 직접 및 간접(순환) 오픈 소스 의존성의 보안 취약성 및 라이선스 문제. [오픈 소스 문서](https://docs.snyk.io/products/snyk-open-source)도 참조하십시오.
-- [**코드 보안**](https://snyk.io/product/snyk-code/) - 코드에 대한 보안 취약성. [Snyk Code 문서](https://docs.snyk.io/products/snyk-code)도 참조하십시오.
-- [**Infrastructure as Code (IaC) 보안**](https://snyk.io/product/infrastructure-as-code-security/) - IaC 템플릿(Terraform, Kubernetes, CloudFormation, Azure Resource Manager)의 구성 문제. [Snyk Infrastructure as Code 문서](https://docs.snyk.io/products/snyk-infrastructure-as-code)도 참조하십시오.
+* [**오픈 소스 보안**](https://snyk.io/product/open-source-security-management/) - Snyk 프로젝트에 편입된 직접 및 간접(순환) 오픈 소스 의존성의 보안 취약성 및 라이선스 문제. [오픈 소스 문서](https://docs.snyk.io/products/snyk-open-source)도 참조하십시오.
+* [**코드 보안**](https://snyk.io/product/snyk-code/) - 코드에 대한 보안 취약성. [Snyk Code 문서](https://docs.snyk.io/products/snyk-code)도 참조하십시오.
+* [**Infrastructure as Code (IaC) 보안**](https://snyk.io/product/infrastructure-as-code-security/) - IaC 템플릿(Terraform, Kubernetes, CloudFormation, Azure Resource Manager)의 구성 문제. [Snyk Infrastructure as Code 문서](https://docs.snyk.io/products/snyk-infrastructure-as-code)도 참조하십시오.
 
-Language Server를 설치하고 구성한 후 매번 실행하거나 파일을 열거나 저장할 때마다, Snyk가 프로젝트의 매니페스트 파일, 소유 코드 및 구성 파일을 스캔합니다. Snyk는 행동을 취할 수 있는 취약점, 라이선스 또는 구성 문제 세부 정보를 제공하고 결과를 LSP를 지원하는 편집기 또는 IDE에서 네이티브로 표시합니다.
+Language Server를 설치하고 구성한 후 매번 실행하거나 파일을 열거나 저장할 때마다, Snyk이 프로젝트의 매니페스트 파일, 소유 코드 및 구성 파일을 스캔합니다. Snyk은 행동을 취할 수 있는 취약점, 라이선스 또는 구성 문제 세부 정보를 제공하고 결과를 LSP를 지원하는 편집기 또는 IDE에서 네이티브로 표시합니다.
 
 이 페이지에서는 지원되는 환경, 지원 및 피드백 제공 및 설치 지침에 대해 설명합니다.
 
 ## 지원되는 운영 체제 및 아키텍처
 
-{% hint style="경고" %}
+{% hint style="info" %}
 Snyk 플러그인은 배급 업체에서 지원 종료(End Of Life, EOL)된 모든 운영 체제에서 지원되지 않습니다.
 {% endhint %}
 
 다음 환경에서 Language Server를 사용할 수 있습니다:
 
-- Linux: AMD64 및 ARM64
-- Linux Alpine: 386 및 AMD64
-- Windows: 386, AMD64, 386 호환성을 통한 ARM
-- MacOS: AMD64 및 ARM64
+* Linux: AMD64 및 ARM64
+* Linux Alpine: 386 및 AMD64
+* Windows: 386, AMD64, 386 호환성을 통한 ARM
+* MacOS: AMD64 및 ARM64
 
 ## Language Server 다운로드 위치
 
@@ -132,20 +132,20 @@ PATH 변수는 다른 모든 변수와 다르게 처리됩니다. PATH 변수는
 
 변수를 구성 파일을 통해 추가하는 것 외에, Snyk Language Server는 Linux 및 macOS에서 다음 디렉토리를 경로에 추가합니다:
 
-- /bin
-- $HOME/bin
-- /usr/local/bin
-- $JAVA\_HOME/bin
+* /bin
+* $HOME/bin
+* /usr/local/bin
+* $JAVA\_HOME/bin
 
 JAVA\_HOME이 설정되어 있지 않은 경우, Snyk Language Server는 먼저 `path`에서, 그리고 다음 디렉토리에서 Java 실행 파일을 찾아 부모 디렉토리를 JAVA\_HOME에 추가합니다. 다음 디렉토리가 재귀적으로 검색됩니다:
 
-- /usr/lib
-- /usr/java
-- /opt
-- /Library
-- $HOME/.sdkman
-- C:\Program Files
-- C:\Program Files (x86)
+* /usr/lib
+* /usr/java
+* /opt
+* /Library
+* $HOME/.sdkman
+* C:\Program Files
+* C:\Program Files (x86)
 
 Maven 실행 파일을 찾아 경로에 부모 디렉토리를 추가하기 위해 동일한 디렉토리가 검색됩니다.
 
