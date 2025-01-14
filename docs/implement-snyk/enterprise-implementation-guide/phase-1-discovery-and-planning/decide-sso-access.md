@@ -1,13 +1,13 @@
-# SSO 접근 결정
+# SSO 액세스 결정
 
 ## Single Sign-On (SSO) 설정 결정
 
 SSO에 대한 자세한 정보는 [Using Single Sign-On (SSO) for authentication](../../../enterprise-setup/single-sign-on-sso-for-authentication-to-snyk/)을 참조하십시오.
 
-일반적으로 초기 시험판 또는 평가 팀이 개인 인증을 사용하는 것이 일반적이지만, 사용자에게 Snyk를 제공하기 전에 SSO를 구현해야 합니다. 다음을 포함하여 SSO를 구현해야 합니다:
+일반적으로 초기 시험판 또는 평가 팀이 개인 인증을 사용하는 것이 일반적이지만, 사용자에게 Snyk을 제공하기 전에 SSO를 구현해야 합니다. 다음을 포함하여 SSO를 구현해야 합니다:
 
-- 적절한 SSO 계정을 만들고 해당 계정을 관리자로 승격시킵니다.
-- 넓은 그룹에게 Snyk를 제공하기 전에 개인 계정을 제거합니다.
+* 적절한 SSO 계정을 만들고 해당 계정을 관리자로 승격시킵니다.
+* 넓은 그룹에게 Snyk을 제공하기 전에 개인 계정을 제거합니다.
 
 ## SSO 프로비저닝 옵션
 
