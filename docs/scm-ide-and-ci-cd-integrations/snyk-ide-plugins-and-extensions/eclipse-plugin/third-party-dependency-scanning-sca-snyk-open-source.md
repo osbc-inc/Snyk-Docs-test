@@ -1,14 +1,12 @@
-# 제 3자 의존성 스캔 (SCA, Snyk 오픈 소스)
+# 타사 종속성 검사(SCA, Snyk 오픈 소스)
 
-Eclipse 플러그인 버전 2.0.0 및 이후에서는 Snyk가 Eclipse의 원본 흐름과 보다 깊은 통합, 인라인 강조, 문제 통합, 그리고 호버로 문제에 대한 정보를 소개합니다. 다음에서는 서드파티 종속성에서 발견된 보안 취약점에 대한 이러한 모든 정보를 보여줍니다:
+Eclipse 플러그인 버전 2.0.0 및 이후에서는 Snyk이 Eclipse의 원본 흐름과 보다 깊은 통합, 인라인 강조, 문제 통합, 그리고 호버로 문제에 대한 정보를 소개합니다. 다음에서는 서드파티 종속성에서 발견된 보안 취약점에 대한 이러한 모든 정보를 보여줍니다:
 
 1. 취약한 패키지가 강조표시됩니다 (빨간색 squiggly line), 이 패키지에 심각한 보안 취약성이 있음을 나타내줍니다. 마우스오버하면 모든 정보가 표시되며, 스크롤하여 추가 정보를 확인하거나 링크를 클릭할 수 있습니다. 취약성이 있는 곳 바로 옆에 취해야 할 조치와 방법이 제시됩니다.
-   
 2. **문제** 뷰와의 통합을 볼 수 있으며, **문제** 뷰를 사용하여 문제를 필터링하고 그룹화하는 데 유용합니다. Snyk은 또한 문제가 있는 라인을 표시하며, 문제 뷰에서 문제를 클릭하면 해당 위치로 이동합니다.
-   
 3. 왼쪽에 있는 기둥 아이콘과 오른쪽에 있는 파일 맵 하이라이트 (우선순위에 맞는 색상과 일치)을 확인할 수 있습니다.
 
-{% hint style = "info" %}
+{% hint style="info" %}
 호버 정보는 JavaEditor 및 GenericEditor에만 제한되며, 이는 Wild Web Developer와 같은 플러그인의 기본 편집기입니다.
 {% endhint %}
 
@@ -87,7 +85,7 @@ Eclipse 결과 행에 나타나는 화살표
 
 에이브러포트 close the Snyk Results panel by accident, or for some reason you do not see it, you can enable it as follows:
 
-**Windows -> Show View -> Other...**을 차례로 탐색하십시오.
+\*\*Windows -> Show View -> Other...\*\*을 차례로 탐색하십시오.
 
 ![Show View, Other](<../../../.gitbook/assets/Screenshot 2022-05-13 at 12.04.07.png>)
 

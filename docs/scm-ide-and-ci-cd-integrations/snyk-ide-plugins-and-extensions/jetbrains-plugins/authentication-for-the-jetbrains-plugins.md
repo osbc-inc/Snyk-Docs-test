@@ -1,12 +1,12 @@
-# Authentication for the JetBrains plugins
+# JetBrains 플러그인용 인증
 
-프로젝트를 스캔하려면 Snyk로 인증해야 합니다.
+프로젝트를 스캔하려면 Snyk으로 인증해야 합니다.
 
 {% hint style="warning" %}
 인증하기 전에 지역을 올바르게 설정했는지 확인하세요. 자세한 내용은 [지역 호스팅 및 데이터 저장](../../../working-with-snyk/regional-hosting-and-data-residency.md)를 참조하십시오. [지역별 URL 목록](../../../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls)도 확인할 수 있습니다.
 {% endhint %}
 
-Snyk는 다음과 같은 프로토콜을 지원하여 인증합니다:
+Snyk은 다음과 같은 프로토콜을 지원하여 인증합니다:
 
 * OAuth 2.0 (기본)
 * Snyk API 토큰 (대안 옵션)

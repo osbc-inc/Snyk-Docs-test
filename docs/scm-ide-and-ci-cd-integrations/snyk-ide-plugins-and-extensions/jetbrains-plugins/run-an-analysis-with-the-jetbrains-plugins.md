@@ -1,4 +1,4 @@
-# JetBrains 플러그인을 사용하여 분석 실행
+# JetBrains 플러그인으로 분석 실행하기
 
 {% hint style="info" %}
 현재 프로젝트에서 Snyk 확장이 구성되어 있고 인증되어 있으며 신뢰할 수 있도록 설정되어 있는지 확인하십시오. 이에 대한 자세한 내용은 구성 및 인증 페이지에서 설명됩니다.
@@ -6,8 +6,8 @@
 
 다음 중 하나의 방법으로 `snyk test`를 트리거할 수 있습니다:
 
-- 자동 (기본)
-- 수동
+* 자동 (기본)
+* 수동
 
 프로젝트가 열리거나 지원되는 파일이 저장될 때 Snyk 스캔이 자동으로 트리거됩니다. 이 동작은 [기존 구성](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#user-experience)을 사용하여 끌 수 있습니다.
 
@@ -30,10 +30,10 @@
 
 ### 심각도 필터
 
-Snyk는 심각, 높음, 중간 및 낮음의 심각성을 보고합니다. 심각도를 제어하는 두 가지 방법이 있습니다:
+Snyk은 심각, 높음, 중간 및 낮음의 심각성을 보고합니다. 심각도를 제어하는 두 가지 방법이 있습니다:
 
-- 플러그인 설정은 [스캔 구성](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration)
-- 다음 화면 이미지에서 볼 수 있는 Snyk 패널의 문제 상단의 작은 버튼
+* 플러그인 설정은 [스캔 구성](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration)
+* 다음 화면 이미지에서 볼 수 있는 Snyk 패널의 문제 상단의 작은 버튼
 
 기본적으로 모든 수준이 선택되어 있습니다. 하나 이상을 선택해야 합니다.
 
@@ -41,22 +41,22 @@ Snyk는 심각, 높음, 중간 및 낮음의 심각성을 보고합니다. 심�
 
 Snyk 심각도 아이콘의 의미는 다음과 같습니다.
 
-| ![](<../../../.gitbook/assets/image (201) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) 치명적(Critical) 심각도                                                                                                  | 공격자가 애플리케이션에서 민감한 데이터에 접근하고 코드를 실행할 수 있는 가능성이 있습니다.                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (3).png>) 높은(High) 심각도 | 공격자가 애플리케이션에서 민감한 데이터에 접근할 가능성이 있습니다.                                                                            |
-| ![](<../../../.gitbook/assets/image (116) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (6).png>) 중간(Medium) 심각도                                          | 특정 조건에서 공격자가 애플리케이션에서 민감한 데이터에 접근할 가능성이 있습니다.                                                      |
+| ![](<../../../.gitbook/assets/image (201) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) 치명적(Critical) 심각도                                                                                                   | 공격자가 애플리케이션에서 민감한 데이터에 접근하고 코드를 실행할 수 있는 가능성이 있습니다.                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| ![](<../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (3).png>) 높은(High) 심각도 | 공격자가 애플리케이션에서 민감한 데이터에 접근할 가능성이 있습니다.                                                 |
+| ![](<../../../.gitbook/assets/image (116) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (6).png>) 중간(Medium) 심각도                                          | 특정 조건에서 공격자가 애플리케이션에서 민감한 데이터에 접근할 가능성이 있습니다.                                         |
 | ![](<../../../.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) 낮음(Low) 심각도                                                                                                         | 애플리케이션이 일부 데이터를 노출하여 다른 취약점과 함께 사용될 경우 애플리케이션을 공격하는 데 활용될 수 있는 취약점 매핑을 허용할 가능성이 있습니다. |
 
----
+***
 
 ### 문제 유형별 필터링
 
-Snyk는 다음과 같은 유형의 문제를 보고합니다:
+Snyk은 다음과 같은 유형의 문제를 보고합니다:
 
-* **오픈 소스(Open Source)** 문제: 오픈 소스 종속성에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-open-source-issues)을 참조하세요.  
-* **코드 보안(Code Security)** 문제: 애플리케이션 소스 코드에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues)을 참조하세요.  
-* **코드 품질(Code Quality)** 문제: 애플리케이션 소스 코드에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues)을 참조하세요.  
-* **코드형 인프라(Infrastructure as Code)** 문제: 코드형 인프라 파일에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-infrastructure-as-code-issues)을 참조하세요.  
+* **오픈 소스(Open Source)** 문제: 오픈 소스 종속성에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-open-source-issues)을 참조하세요.
+* **코드 보안(Code Security)** 문제: 애플리케이션 소스 코드에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues)을 참조하세요.
+* **코드 품질(Code Quality)** 문제: 애플리케이션 소스 코드에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-code-security-vulnerabilities-and-quality-issues)을 참조하세요.
+* **코드형 인프라(Infrastructure as Code)** 문제: 코드형 인프라 파일에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-infrastructure-as-code-issues)을 참조하세요.
 * **컨테이너(Container)** 문제: Kubernetes 워크로드 파일에서 가져온 이미지에서 발견됩니다. 자세한 내용은 [아래 섹션](run-an-analysis-with-the-jetbrains-plugins.md#snyk-container-issues)을 참조하세요.
 
 {% hint style="info" %}
@@ -65,14 +65,14 @@ Snyk는 다음과 같은 유형의 문제를 보고합니다:
 
 특정 문제 유형을 표시하거나 숨기는 두 가지 방법이 있습니다:
 
-1. [스캔 설정](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration)에서 플러그인 설정 사용  
-2. 아래 화면 이미지처럼 패널의 사이드바에서 필터 버튼 사용  
+1. [스캔 설정](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration)에서 플러그인 설정 사용
+2. 아래 화면 이미지처럼 패널의 사이드바에서 필터 버튼 사용
 
 기본적으로 모든 문제 유형이 선택되어 표시됩니다.
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-miah.png" alt="특정 문제 유형 표시 또는 숨기기"><figcaption><p>특정 문제 유형 표시 또는 숨기기</p></figcaption></figure>
 
----
+***
 
 ### 새로운 문제(Net New Issues) vs 모든 문제(All Issues)
 
@@ -84,7 +84,7 @@ Snyk는 다음과 같은 유형의 문제를 보고합니다:
 
 이 기능은 [스캔 설정을 통해 구성할 수 있습니다](configuration-for-the-snyk-jetbrains-plugin-and-ide-proxy.md#scan-configuration). 기본적으로 Net New Issues는 꺼져 있으므로 수동으로 켜야 합니다.
 
-기능이 활성화되면 Snyk는 차이점만 보고합니다.
+기능이 활성화되면 Snyk은 차이점만 보고합니다.
 
 새로 생성된 기능 브랜치에는 보고된 문제가 없을 것입니다. 이는 의도된 상태이며, 개발자는 이를 목표로 합니다. 다음 화면 이미지를 참조하세요:
 
@@ -94,13 +94,13 @@ Snyk는 다음과 같은 유형의 문제를 보고합니다:
 
 고급 사례에서는 개발자가 다음 단계를 따라 기본 브랜치를 변경할 수 있습니다(아래 화면 이미지를 참조):
 
-1. 문제 트리의 최상위 노드를 클릭  
-2. 드롭다운 선택을 사용하여 브랜치를 선택  
-3. 확인을 클릭하여 선택 저장  
+1. 문제 트리의 최상위 노드를 클릭
+2. 드롭다운 선택을 사용하여 브랜치를 선택
+3. 확인을 클릭하여 선택 저장
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-nfhj.png" alt="새로운 문제 계산을 위한 기본 브랜치 변경"><figcaption><p>새로운 문제 계산을 위한 기본 브랜치 변경</p></figcaption></figure>
 
----
+***
 
 ## 사용 가능한 Snyk 문제 유형
 
@@ -116,7 +116,7 @@ Snyk 코드 분석은 애플리케이션 코드에서 발견된 보안 취약점
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-npba.png" alt=""><figcaption><p>Snyk 코드 문제 세부 정보</p></figcaption></figure>
 
----
+***
 
 ### Snyk Open Source 문제
 
@@ -124,7 +124,7 @@ Snyk Open Source 분석은 모든 매니페스트 파일에서 발견된 취약�
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-nrsk.png" alt="Snyk 오픈 소스 문제 세부 정보"><figcaption><p>Snyk 오픈 소스 문제 세부 정보</p></figcaption></figure>
 
----
+***
 
 ### Snyk IaC 문제
 
@@ -132,7 +132,7 @@ Snyk IaC 분석은 Terraform, Kubernetes, AWS CloudFormation, Azure Resource Man
 
 <figure><img src="../../../.gitbook/assets/SCR-20241024-ntcr.png" alt="Snyk IaC 문제 세부 정보"><figcaption><p>Snyk IaC 문제 세부 정보</p></figcaption></figure>
 
----
+***
 
 ### Snyk Container 문제
 

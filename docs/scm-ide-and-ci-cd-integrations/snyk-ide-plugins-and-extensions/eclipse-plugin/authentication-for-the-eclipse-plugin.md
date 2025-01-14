@@ -1,11 +1,11 @@
-# Eclipse 플러그인을 위한 인증
+# Eclipse 플러그인 인증
 
-프로젝트를 스캔하려면 Snyk와 인증해야 합니다. 
+프로젝트를 스캔하려면 Snyk과 인증해야 합니다.
 
-Snyk는 다음 프로토콜을 지원합니다:
+Snyk은 다음 프로토콜을 지원합니다:
 
-- OAuth 2.0 (기본)
-- Snyk API 토큰 (대체 옵션)
+* OAuth 2.0 (기본)
+* Snyk API 토큰 (대체 옵션)
 
 ## OAuth 2.0 프로토콜을 사용하여 인증하는 단계
 
@@ -35,13 +35,13 @@ Snyk는 다음 프로토콜을 지원합니다:
 
 분석이 자동으로 시작됩니다. 문제가 있는 경우 [OAuth 2.0 인증이 작동하지 않음](../troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md)을 참조하세요.
 
-{% hint 스타일="info" %}
+{% hint style="info" %}
 OAuth 2.0 토큰은 정적이 아니며 Snyk 계정 페이지에서 복사할 수 없습니다.
 {% endhint %}
 
 ## Snyk API 토큰을 사용하여 인증하는 단계
 
-{% hint 스타일="warning" %}
+{% hint style="info" %}
 이 방법은 OAuth 방법에 비해 불안정합니다.
 {% endhint %}
 
@@ -57,7 +57,7 @@ API 토큰을 사용하여 인증하려면 다음 단계를 따르세요:
 
 다른 계정으로 다시 인증하려면 다음 단계를 따르세요:
 
-1. **프레퍼런스** > **Snyk**로 이동합니다.
+1. **프레퍼런스** > **Snyk으**로 이동합니다.
 2. **토큰** 필드의 값을 지웁니다.
 3. **적용 및 닫기**를 클릭합니다.
 4. 로그아웃 후 처음부터 인증을 시작합니다.
