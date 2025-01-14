@@ -273,4 +273,4 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
 }
 ```
 
-다음 [Azure Function 환경 변수 구성](configure-azure-function-environment-variables.md).
+다음은 [Azure Function 환경 변수 구성](configure-azure-function-environment-variables.md).

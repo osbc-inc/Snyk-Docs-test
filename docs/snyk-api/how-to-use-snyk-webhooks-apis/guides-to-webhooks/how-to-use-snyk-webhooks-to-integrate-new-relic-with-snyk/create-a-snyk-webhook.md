@@ -27,7 +27,7 @@ Content-Type: application/json
 }
 ```
 
-그런 다음 [웹훅 트리거하기 API](https://snyk.docs.apiary.io/#reference/webhooks/ping/ping-a-webhook)를 사용하여 Snyk 웹훅을 프로액티브하게 트리거하여 통합을 테스트할 수 있습니다:
+그런 다음 [웹훅 트리거하기 위해API](https://snyk.docs.apiary.io/#reference/webhooks/ping/ping-a-webhook)를 사용하여 Snyk 웹훅을 프로액티브하게 트리거하여 통합을 테스트할 수 있습니다:
 
 ```plaintext
 POST https://api.snyk.io/v1/org/{SNYK-ORG-ID}/webhooks/{SNYK-WEBHOOK-ID}/ping HTTP/2

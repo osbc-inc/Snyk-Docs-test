@@ -1,24 +1,24 @@
 # Snyk 웹훅을 사용하여 AWS Lambda를 통해 Snyk를 Slack에 연결하는 방법
 
-Snyk Webhooks를 이용하여 Lambda 함수를 사용하여 Snyk에서 발견된 새로운 취약점을 Slack에서 받아들이고 필터링할 수 있습니다.
+Snyk 웹훅을 이용하여 Lambda 함수를 사용하여 Snyk에서 발견된 새로운 취약점을 Slack에서 받아들이고 필터링할 수 있습니다.
 
-Snyk Webhooks를 Lambda 함수에 노출시키는 것은 API Gateway 및 Lambda 함수 URL을 통해 처리됩니다. 귀하의 요구 사항과 환경에 가장 적합한 옵션을 선택하십시오. API Gateway를 사용하지 않는 경우, 이 안내서의 지침을 무시할 수 있습니다.
+Snyk 웹훅을 Lambda 함수에 노출시키는 것은 API Gateway 및 Lambda 함수 URL을 통해 처리됩니다. 귀하의 요구 사항과 환경에 가장 적합한 옵션을 선택하십시오. API Gateway를 사용하지 않는 경우, 이 안내서의 지침을 무시할 수 있습니다.
 
 **전제 조건**은 다음과 같습니다:
 
-- 다음에 액세스할 수 있는 AWS 계정:
-  - 새 역할 생성 제어 (또는 기존 역할 사용)
-  - Lambda 함수 수정
-  - API Gateway 수정 (Lambda 함수를 API Gateway를 통해 발행하는 경우)
-- 조직 관리자 액세스 권한이 있는 Snyk 계정
-- 기존 채널에 웹훅이 추가된 새 Slack 앱을 만들 수 있는 Slack 계정
-- 터미널에서 npm 명령을 실행할 수 있는 능력
+* 다음에 액세스할 수 있는 AWS 계정:
+  * 새 역할 생성 제어 (또는 기존 역할 사용)
+  * Lambda 함수 수정
+  * API Gateway 수정 (Lambda 함수를 API Gateway를 통해 발행하는 경우)
+* 조직 관리자 액세스 권한이 있는 Snyk 계정
+* 기존 채널에 웹훅이 추가된 새 Slack 앱을 만들 수 있는 Slack 계정
+* 터미널에서 npm 명령을 실행할 수 있는 능력
 
 Snyk Webhook, AWS Lambda 함수 및 Slack 알림은 다음처럼 **작동**합니다:
 
-- Snyk가 새 취약점을 발견할 때마다, Snyk API Webhook을 트리거합니다.
-- 이는 Lambda 함수를 트리거하여 Slack로 알림을 보냅니다. Lambda 함수의 목표는 이러한 알림을 필터링하고 Slack 페이로드를 사용자에게 흥미로운 정보를 보여주도록 사용자화하는 것입니다.
-- Slack 알림을 받으면 새로 발견된 취약점에 대응할 수 있습니다.
+* Snyk이 새 취약점을 발견할 때마다, Snyk API Webhook을 트리거합니다.
+* 이는 Lambda 함수를 트리거하여 Slack으로 알림을 보냅니다. Lambda 함수의 목표는 이러한 알림을 필터링하고 Slack 페이로드를 사용자에게 흥미로운 정보를 보여주도록 사용자화하는 것입니다.
+* Slack 알림을 받으면 새로 발견된 취약점에 대응할 수 있습니다.
 
 이 안내서는 AWS Lambda 함수를 사용하여 Snyk 웹훅에서 Slack으로 페이로드를 필터링하는 방법을 **설명**합니다.
 
