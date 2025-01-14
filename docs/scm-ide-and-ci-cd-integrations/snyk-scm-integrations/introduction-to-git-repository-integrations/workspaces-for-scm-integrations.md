@@ -1,4 +1,4 @@
-# SCM 통합용 Workspaces
+# SCM 통합을 위한 워크스페이스
 
 {% hint style="info" %}
 Workspaces는 특히 대규모 기업 환경에서 Snyk의 SCM 통합 결과의 정확성과 신뢰성을 향상시킵니다. 이 기능은 미래에 계획 중인 추가 기능 및 개선을 지원합니다. 이러한 이유로 Snyk는 귀하의 그룹 수준에서 [이 옵션을 기본적으로 활성화](workspaces-for-scm-integrations.md#manage-workspaces)하는 것을 강력히 권장합니다.
@@ -6,11 +6,11 @@ Workspaces는 특히 대규모 기업 환경에서 Snyk의 SCM 통합 결과의 
 
 ## Workspaces의 중요성: 신뢰성과 정확성 향상
 
-Snyk는 Workspaces가 가장 **신뢰성 있고** **정확한** 취약점 탐지를 제공하는 데 상당한 발전 단계라고 믿습니다.
+Snyk은 Workspaces가 가장 **신뢰성 있고** **정확한** 취약점 탐지를 제공하는 데 상당한 발전 단계라고 믿습니다.
 
 ### Workspaces가 신뢰성 있는 결과를 지원하는 방법
 
-기존에 Snyk는 SCM API를 사용하여 저장소 콘텐츠에 액세스했는데, 이는 주요 및 보조 속도 제한 및 콘텐츠 제한을 부과합니다. 예를 들어 GitHub.com API는 시간당 일정 수의 요청만 허용하도록 속도 제한이되며 Git 데이터베이스에서 검색된 트리 항목 수에도 제한이 있습니다.
+기존에 Snyk은 SCM API를 사용하여 저장소 콘텐츠에 액세스했는데, 이는 주요 및 보조 속도 제한 및 콘텐츠 제한을 부과합니다. 예를 들어 GitHub.com API는 시간당 일정 수의 요청만 허용하도록 속도 제한이되며 Git 데이터베이스에서 검색된 트리 항목 수에도 제한이 있습니다.
 
 이러한 API를 통해 저장소 콘텐츠가 검색되면 이러한 제한으로 인해 다양한 방법으로 분석이 완전하지 않는 경우가 많습니다. 특히 아주 많은 수의 저장소 또는 10만 개 이상의 파일을 포함하는 저장소, 일명 모노레포에서는 더욱 그렇습니다.
 
@@ -22,7 +22,7 @@ Workspaces를 통해 이러한 제한이 제거됩니다.
 
 ## Snyk 데이터 수집
 
-Workspaces가 활성화되면 Snyk는 주어진 커밋에서 저장소 콘텐츠의 임시 및 얕은 클론 및 모든 커밋 메타데이터(커밋 메시지, 작성자 및 타임스탬프 포함)를 SCM 통합을 통해 흡수합니다.
+Workspaces가 활성화되면 Snyk은 주어진 커밋에서 저장소 콘텐츠의 임시 및 얕은 클론 및 모든 커밋 메타데이터(커밋 메시지, 작성자 및 타임스탬프 포함)를 SCM 통합을 통해 흡수합니다.
 
 {% hint style="info" %}
 Snyk 데이터 처리 및 Git 리포지토리 클론에 대한 캐시 보유 기간에 대한 자세한 내용은 [취약점 소스 데이터와 관련된 캐시 보유 기간](../../../working-with-snyk/how-snyk-handles-your-data.md#cache-retention-period-related-to-vulnerability-source-data) 및 [데이터가 안전하다는 것을 보장하기 위한 Snyk의 보호장치](../../../working-with-snyk/how-snyk-handles-your-data.md#safeguards-snyk-puts-in-place-to-ensure-data-is-secure)를 참조하십시오.
