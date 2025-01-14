@@ -16,7 +16,7 @@
 * [프로젝트 스캔 시 **잘못된 문자열 길이** 오류](invalid-string-length-error-when-scanning-projects.md)
 * [모든 관리되지 않는 **JAR 파일** 스캔](../test-for-vulnerabilities/scan-all-unmanaged-jar-files.md)
 * [CLI에서 사용할 조직 선택](how-to-select-the-organization-to-use-in-the-cli.md)
-* [스캔이 실패하거나 종속성이 없는 **Setup.py 파일**]\(setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
+* [스캔이 실패하거나 종속성이 없는 **Setup.py 파일**](setup.py-file-failing-to-scan-or-finding-zero-dependencies.md)
 * [CLI 테스트를 위한 **심각도 임계값**](set-severity-thresholds-for-cli-tests.md)
 * [사용 전 npm 패키지 테스트](test-public-npm-packages-before-use.md)
 * [CLI **테스트 결과**](cli-test-results.md)
