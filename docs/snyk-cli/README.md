@@ -11,7 +11,7 @@
 
 추가 정보는 다음 페이지를 참조하십시오:
 
-* [오픈 소스용 Snyk CLI](scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
-* [Snyk CLI for ](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
-* [Snyk CLI for ](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
-* [Snyk CLI for Infrastructure as Code](scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
+* [Open Source용 Snyk CLI](scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/)
+* [Snyk Code용  Snyk CLI ](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/)
+* [Snyk Container용  Snyk CLI](scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-container/)
+* [Infrastructure as Code용 Snyk CLI](scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)
