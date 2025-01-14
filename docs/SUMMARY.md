@@ -452,7 +452,7 @@
     * [Vanta Integration](integrate-with-snyk/vulnerability-management-tools/vanta-integration.md)
     * [Vulcan Integration](integrate-with-snyk/vulnerability-management-tools/vulcan-integration.md)
     * [Wabbi Integration](integrate-with-snyk/vulnerability-management-tools/wabbi-integration.md)
-* [Manage assets](manage-assets/README.md)
+* [자산 관리](manage-assets/README.md)
   * [자산 인벤토리 레이아웃](manage-assets/assets-inventory-layouts.md)
   * [자산 인벤토리 컴포넌트](manage-assets/assets-inventory-components.md)
   * [자산 인벤토리 기능](manage-assets/assets-inventory-features.md)
