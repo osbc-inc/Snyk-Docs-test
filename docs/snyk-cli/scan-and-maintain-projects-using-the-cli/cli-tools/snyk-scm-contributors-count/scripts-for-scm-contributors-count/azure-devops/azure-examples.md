@@ -22,7 +22,7 @@ description: Azure에 대한 옵션 목록과 예제
 
 ## 명령 실행 전
 
-1. `SNYK_TOKEN`을 내보냅니다 (`Snyk가 이미 모니터링하는 저장소의 기여자만 가져오려는 경우`):
+1. `SNYK_TOKEN`을 내보냅니다 (`Snyk이 이미 모니터링하는 저장소의 기여자만 가져오려는 경우`):
    * 토큰이 그룹 수준 액세스 권한이 있는지 확인하거나 그룹 수준 액세스 권한이 있는 서비스 계정의 토큰을 사용합니다. 서비스 계정을 만드는 방법에 대해 자세히 알아보려면 [서비스 계정 설정 방법](https://docs.snyk.io/features/integrations/managing-integrations/service-accounts#how-to-set-up-a-service-account)을 참조하십시오.
    * 토큰 값 복사합니다.
    *   환경에 토큰 내보내기:
@@ -88,4 +88,4 @@ description: Azure에 대한 옵션 목록과 예제
 
     ```
     DEBUG=snyk* snyk-scm-contributors-count azure-devops --token AZURE-TOKEN --org AZURE-ORG --projectKeys Key1 --repo Repo1 --exclusionFilePath 파일_경로 --skipSnykMonitoredRepos --json
-    ```  
+    ```
