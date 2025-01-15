@@ -456,7 +456,7 @@
   * [자산 인벤토리 레이아웃](manage-assets/assets-inventory-layouts.md)
   * [자산 인벤토리 컴포넌트](manage-assets/assets-inventory-components.md)
   * [자산 인벤토리 기능](manage-assets/assets-inventory-features.md)
-* [Scan with Snyk](scan-with-snyk/README.md)
+* [Snyk로 스캔하기](scan-with-snyk/README.md)
   * [Scanning overview](scan-with-snyk/scanning-overview.md)
   * [Start scanning](scan-with-snyk/start-scanning.md)
   * [Import Project repository](scan-with-snyk/import-project-repository/README.md)

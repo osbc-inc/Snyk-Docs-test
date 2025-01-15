@@ -8,12 +8,12 @@ Snyk를 사용하여 코드베이스 및 클라우드 인프라 구성을 스캔
 
 Snyk는 Snyk 제품에 해당하는 스캔 방법을 지원합니다. 소프트웨어 개발 수명주기 초기에 문제를 발견하고 수정하기 위해 작업에 적합한 스캔 방법을 선택하십시오.
 
-* [Snyk Open Source](snyk-open-source/): 취약점과 라이선스 문제를 찾기 위해 오픈 소스 라이브러리를 스캔합니다.\
+* [Snyk 오픈 소스](snyk-open-source/): 취약점과 라이선스 문제를 찾기 위해 오픈 소스 라이브러리를 스캔합니다.\
   자세한 정보: [오픈 소스 보안 설명](https://snyk.io/series/open-source-security/).
-* [Snyk Code](snyk-code/): 소스 코드 분석을 통해 보안 취약점을 찾는 것과 관련된 다양한 기술을 탐색합니다.\
-  자세한 정보: [Snyk Code 뒤에있는 고급 기술 탐색](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
-* [Snyk Container](snyk-container/): 컨테이너 이미지 및 워크로드 취약점을 스캔합니다.
-* [Snyk Infrastructure as Code: ](snyk-iac/)배포 전후에 클라우드 인프라 구성에서 문제를 스캔합니다.
+* [Snyk 코드](snyk-code/): 소스 코드 분석을 통해 보안 취약점을 찾는 것과 관련된 다양한 기술을 탐색합니다.\
+  자세한 정보: [Snyk 코드 뒤에있는 고급 기술 탐색](https://snyk.io/blog/advanced-technologies-behind-snyk-code/).
+* [Snyk 컨테이너](snyk-container/): 컨테이너 이미지 및 워크로드 취약점을 스캔합니다.
+* [코드형  Sync 인프라: ](snyk-iac/)배포 전후에 클라우드 인프라 구성에서 문제를 스캔합니다.
 
 ## 풀 리퀘스트 확인 실행
 
