@@ -1,4 +1,4 @@
-# Snyk Jira Cloud 통합 보안
+# Snyk Security in Jira Cloud Integration
 
 {% hint style="info" %}
 Jira Server 및 Jira Data Center는 지원되지 않습니다.
@@ -36,14 +36,14 @@ Jira에서 Security in Jira Cloud를 활성화하려면 **프로젝트 설정 > 
 ## Snyk Jira Cloud 앱의 구성
 
 1. **앱** > **앱 관리**로 이동합니다.
-2. 왼쪽 메뉴에서 **Snyk Jira의 Security**를 선택합니다. 
+2. 왼쪽 메뉴에서 **Snyk Jira의 Security**를 선택합니다.
 3. Snyk 계정에 로그인하거나 새 Snyk 계정을 만듭니다.
-4. Snyk에서 **액세스 권한 부여**를 선택하여 Snyk가 Jira 소프트웨어 계정 정보를 읽을 수 있도록 허용합니다.
+4. Snyk에서 **액세스 권한 부여**를 선택하여 Snyk이 Jira 소프트웨어 계정 정보를 읽을 수 있도록 허용합니다.
 5. Jira 사이트에 연결할 특정 Snyk 조직을 선택하고 **앱 액세스 부여**를 선택합니다.
 
 ## 코드 저장소를 Jira 프로젝트에 연결
 
-Snyk를 Jira에 연결하려면 다음 단계를 완료한 후 Jira에서 보안 문제를 대응할 수 있습니다.
+Snyk을 Jira에 연결하려면 다음 단계를 완료한 후 Jira에서 보안 문제를 대응할 수 있습니다.
 
 {% hint style="info" %}
 일반적으로 연구 및 개발 엔지니어링 매니저가 이 작업을 수행합니다. 그들은 Jira 프로젝트를 소유하고 팀의 코드 저장소를 알고 있기 때문입니다.
@@ -51,7 +51,7 @@ Snyk를 Jira에 연결하려면 다음 단계를 완료한 후 Jira에서 보안
 
 1. Jira에서 **프로젝트 설정** > **도구 체인**으로 이동하여 도구 목록에서 Snyk를 찾습니다.\
    [Jira Software에서 프로젝트 도구 체인이란?](https://support.atlassian.com/jira-software-cloud/docs/what-is-the-project-toolchain-in-jira/)
-2. Snyk를 위한 **연결 추가** 플러스(+ ) 버튼을 클릭합니다.
+2. Snyk을 위한 **연결 추가** 플러스(+ ) 버튼을 클릭합니다.
 3. 목록에서 컨테이너 코드 저장소를 선택하고 **컨테이너 추가**를 선택합니다. 이것이 Snyk 대상입니다.\
    여러 코드 저장소를 Jira에 연결할 수 있습니다.
 
@@ -81,7 +81,7 @@ Jira에 연결한 Snyk 대상 또는 저장소를 삭제하려면 해당 Jira �
 
 <figure><img src="../../.gitbook/assets/2024-12-13_10-19-14.png" alt=""><figcaption><p>동작 추가 및 새로운 규칙에 대한 이슈 생성</p></figcaption></figure>
 
-5. **요약** 필드에 "Fix \"를 추가합니다. **설명**에는 \를 넣습니다.
+5. **요약** 필드에 "Fix "를 추가합니다. **설명**에는 \를 넣습니다.
 
 <figure><img src="../../.gitbook/assets/2024-12-13_10-19-31.png" alt=""><figcaption><p>요약 필드와 설명을 새로운 룰에 추가</p></figcaption></figure>
 

@@ -5,16 +5,16 @@ description: 조직에서 설치된 앱 목록을 받아오는 방법
 # Slack 앱
 
 {% hint style="warning" %}
-Snyk는 [Slack 통합](slack-integration.md)이 오래되었으므로 모든 고객이 Snyk Slack 앱을 사용하도록 권장합니다.
+Snyk은 [Slack 통합](slack-integration.md)이 오래되었으므로 모든 고객이 Snyk Slack 앱을 사용하도록 권장합니다.
 {% endhint %}
 
 Slack을 위한 Snyk 앱은 공식 [Slack 앱](https://api.slack.com/start/overview#apps)으로 개발되었습니다.
 
 Slack 앱은 다음 혜택 외에도 다음을 제공합니다:
 
-- Snyk 제품(오픈 소스, 코드, 컨테이너 및 IaC) 지원이 향상됩니다.
-- 심각도 수준에 대한 필터링 지원
-- 프로젝트 수준에서 알림 재지정 지원
+* Snyk 제품(오픈 소스, 코드, 컨테이너 및 IaC) 지원이 향상됩니다.
+* 심각도 수준에 대한 필터링 지원
+* 프로젝트 수준에서 알림 재지정 지원
 
 ## Slack을 위한 Snyk 앱 개요
 
@@ -22,9 +22,9 @@ Slack을 위한 Snyk 앱은 가져온 프로젝트에서 소프트웨어 전체�
 
 다음 이점이 있습니다:
 
-- 취약점을 신속히 토론하고 해결하는 협업 강화
-- 관련성과 신흥 취약점 인식 유지
-- 이슈 알림 임계값으로 인한 중단 최소화
+* 취약점을 신속히 토론하고 해결하는 협업 강화
+* 관련성과 신흥 취약점 인식 유지
+* 이슈 알림 임계값으로 인한 중단 최소화
 
 Slack을 위한 Snyk 앱은 [Snyk 앱](../../snyk-api/how-to-use-snyk-apps-apis/)에 기반하며 조직 및 프로젝트 수준에서 이슈 알림을 더 세밀하게 구성할 수 있는 혜택을 제공합니다.
 
@@ -42,11 +42,11 @@ Slack을 위한 Snyk 앱을 활성화하려면 다음을 수행해야 합니다:
 
 ## Slack을 위한 Snyk 앱 구성
 
-이 설치를 수행하는 사용자는 계속하기 전에 **Snyk} 앱 관리 - 앱 설치** 권한을 가져야 합니다. [회원 역할 문서](../../snyk-admin/user-roles/user-role-management.md)를 참조하십시오.
+이 설치를 수행하는 사용자는 계속하기 전에 **Snyk 앱 관리 - 앱 설치** 권한을 가져야 합니다. [회원 역할 문서](../../snyk-admin/user-roles/user-role-management.md)를 참조하십시오.
 
 1. [Snyk 통합 페이지](https://app.snyk.io/integrations)를 열고 **알림**으로 이동한 다음 **Slack 앱** 타일을 클릭합니다.
-2. Snyk가 Slack에서 데이터에 액세스하도록 허용하기 위해 **Snyk로 허가**를 선택합니다.
-3. Snyk가 Snyk Slack 워크스페이스에 액세스하도록 추가 허가가 요청됩니다. 콘텐츠 및 채널 및 대화에 대한 정보가 포함되며 또한 Snyk에 해당 채널 및 대화에서 작업을 수행하도록 허용합니다. 계속하려면 **허용**을 선택합니다.
+2. Snyk이 Slack에서 데이터에 액세스하도록 허용하기 위해 **Snyk로 허가**를 선택합니다.
+3. Snyk이 Snyk Slack 워크스페이스에 액세스하도록 추가 허가가 요청됩니다. 콘텐츠 및 채널 및 대화에 대한 정보가 포함되며 또한 Snyk에 해당 채널 및 대화에서 작업을 수행하도록 허용합니다. 계속하려면 **허용**을 선택합니다.
 
 {% hint style="info" %}
 여러 Slack 워크스페이스를 사용할 수 있는 경우 페이지 상단 오른쪽에 드롭다운이 표시됩니다. 원하는 Slack 워크스페이스를 선택합니다.
@@ -75,9 +75,9 @@ Slack 앱이 구성되면 새 이슈 알림이 원하는 심각도 수준 임계
 
 사용자화 옵션에는 다음이 포함됩니다:
 
-- 프로젝트 ID
-- 심각도 수준
-- Slack 채널 ID
+* 프로젝트 ID
+* 심각도 수준
+* Slack 채널 ID
 
 <figure><img src="../../.gitbook/assets/image (118) (3).png" alt="빈 프로젝트 알림 사용자화 테이블"><figcaption><p>빈 프로젝트 알림 사용자화 테이블</p></figcaption></figure>
 

@@ -14,7 +14,7 @@ Jira 인스턴스가 비공개인 경우, [Snyk 브로커 배포 방법](../../e
 
 ## **Snyk와 Jira 통합을 위한 선행 조건**
 
-* Snyk는 Jira 버전 5 이상을 지원합니다.
+* Snyk은 Jira 버전 5 이상을 지원합니다.
 * 다음의 [Jira 권한](https://confluence.atlassian.com/adminjiraserver073/managing-project-permissions-861253293.html)이 필요합니다: **프로젝트 참조** 및 **이슈 생성**.
 
 ## **Jira 통합 설정 방법**
@@ -27,7 +27,7 @@ Snyk Web UI의 **Organization Settings > Integrations** 페이지에 Jira 계정
 
 <figure><img src="../../.gitbook/assets/JiraSettings_nonBroker.png" alt="Jira 설정"><figcaption><p>Jira 설정</p></figcaption></figure>
 
-통합에 세부 정보를 입력한 후 **저장하고 계속**을 누르십시오.&#x20;
+통합에 세부 정보를 입력한 후 **저장하고 계속**을 누르십시오.
 
 {% hint style="info" %}
 연결이 성공하지 않으면 기본 URL이 정확히 `https://`로 시작하는지 확인하십시오. 대문자가 없어야하며 http일 수 없습니다.

@@ -1,4 +1,4 @@
-# Snyk과 통합하기
+# Snyk와 통합
 
 ## Snyk의 통합
 
@@ -6,7 +6,7 @@ Snyk 내에서 타사 기능을 사용하고 다른 도구와의 사용을 도�
 
 이 페이지는 추가적인 Snyk 통합 및 해당 위치를 식별합니다.
 
-Snyk는 리포지토리 게이트키퍼용 플러그인 및 패키지 리포지토리에 연결하기 위한 통합을 제공합니다:
+Snyk은 리포지토리 게이트키퍼용 플러그인 및 패키지 리포지토리에 연결하기 위한 통합을 제공합니다:
 
 * [게이트키퍼 플러그인](../scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/)
 * [패키지 리포지토리 통합](../scan-with-snyk/snyk-open-source/package-repository-integrations/)
@@ -18,11 +18,11 @@ Snyk Container 및 Snyk Iac를 지원하는 통합이 있습니다:
 
 [이벤트 전달 통합](event-forwarding/)을 통해 Snyk 플랫폼 이벤트를 직접 다른 플랫폼의 특정 제품에 전달하여 사용자 정의 경보 설정, 고유 보고서 작성, 자동화 트리거 등을 설정할 수 있습니다.
 
-[알림 및 티켓 시스템 통합](jira-and-slack-integrations/)을 통해 Jira 및 Slack에서 Snyk를 사용할 수 있습니다.
+[알림 및 티켓 시스템 통합](jira-and-slack-integrations/)을 통해 Jira 및 Slack에서 Snyk을 사용할 수 있습니다.
 
-Snyk가 취약점 관리 도구와 어떻게 작동하는지에 대한 정보도 제공합니다. 
+Snyk이 취약점 관리 도구와 어떻게 작동하는지에 대한 정보도 제공합니다.
 
-Snyk는 대체 보고서 도구를 제공합니다. 자세한 내용은 [보고서 및 BI 통합](../manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/)을 참조하세요.
+Snyk은 대체 보고서 도구를 제공합니다. 자세한 내용은 [보고서 및 BI 통합](../manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share/)을 참조하세요.
 
 ## Snyk AppRisk를 위한 통합
 
@@ -40,7 +40,7 @@ Snyk는 대체 보고서 도구를 제공합니다. 자세한 내용은 [보고�
 
 아래 표를 참조하여 Snyk AppRisk에 대한 모든 통합의 가용성과 호환성을 확인할 수 있습니다. 통합은 유형으로 분류되며 이름으로 나열되며, Snyk AppRisk Essentials 및 Snyk AppRisk Pro에 대해 사용 가능 여부가 표시됩니다.
 
-<table><thead><tr><th width="172">통합 유형</th><th width="164">통합 이름</th><th width="198">Snyk AppRisk Essentials</th><th>Snyk AppRisk Pro</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations">BitBucket</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations">Azure DevOps</a></li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                   <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>개발 포털 및 서비스 카달로그</td><td><ul><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/">Backstage 카달로그</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>리스크 관리 협업</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>이메일</li></ul></td><td>                <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td>                    <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#nightfall-setup-guide">NightFall</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>런타임 보안 및 가시성</td><td><ul><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md">Snyk 런타임 센서</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td>               <span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td>                     <span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
+<table><thead><tr><th width="172">통합 유형</th><th width="164">통합 이름</th><th width="198">Snyk AppRisk Essentials</th><th>Snyk AppRisk Pro</th></tr></thead><tbody><tr><td>SCM</td><td><ul><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github.md#group-level-snyk-apprisk-integrations">GitHub</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/bitbucket-cloud.md#group-level-snyk-apprisk-integrations">BitBucket</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/gitlab.md#group-level-snyk-apprisk-integrations">GitLab</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/azure-repositories-tfs.md#group-level-snyk-apprisk-integrations">Azure DevOps</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>개발 포털 및 서비스 카달로그</td><td><ul><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/">Backstage 카달로그</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#servicenow-cmdb-setup-guide">ServiceNow CMDB</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#atlassian-compass">Atlassian Compass</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#harness">Harness</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#opslevel">OpsLevel</a></li><li><a href="../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/application-context-for-scm-integrations/#datadog-org-context-service-catalog">Datadog Org Context (Service Catalog)</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>리스크 관리 협업</td><td><ul><li><a href="jira-and-slack-integrations/slack-integration.md">Slack</a></li><li>이메일</li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>AST</td><td><ul><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#nightfall-setup-guide">NightFall</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#gitguardian-setup-guide">GitGuardian</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr><tr><td>런타임 보안 및 가시성</td><td><ul><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md">Snyk 런타임 센서</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sysdig-setup-guide">Sysdig</a></li><li><a href="../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#dynatrace-setup-guide">Dynatrace</a></li></ul></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2716">✖️</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2714">✔️</span></td></tr></tbody></table>
 
 ### Integration Hub 사용
 
@@ -63,7 +63,7 @@ Snyk는 대체 보고서 도구를 제공합니다. 자세한 내용은 [보고�
 
 SCM 인스턴스가 공개적으로 액세스할 수 없는 경우 Snyk 브로커가 필요합니다. Docker 또는 Helm을 사용하여 Snyk 브로커를 설치 및 구성할 수 있습니다. Snyk 브로커에 대한 자세한 내용은 [Snyk 브로커 - AppRisk](../enterprise-setup/snyk-broker/snyk-broker-apprisk.md)를 참조하세요.
 
-{% hint 스타일 = "info" %}
+{% hint style="info" %}
 명령을 실행하기 전에 Snyk 브로커 배포 환경에서 Snyk AppRisk 플래그를 활성화하세요.
 {% endhint %}
 
