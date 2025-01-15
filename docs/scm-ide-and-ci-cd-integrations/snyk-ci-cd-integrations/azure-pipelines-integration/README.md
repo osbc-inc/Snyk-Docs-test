@@ -1,6 +1,6 @@
-# Snyk 보안 스캔 작업을 사용한 Azure 파이프라인 통합
+# Azure Pipelines integration using the Snyk Security Scan task
 
-Snyk는 Azure 파이프라인을 포함한 Microsoft Azure 생태계 전반에 걸쳐 보안을 활성화시키며, 애플리케이션 및 컨테이너 취약점을 자동으로 발견하고 수정합니다.
+Snyk은 Azure 파이프라인을 포함한 Microsoft Azure 생태계 전반에 걸쳐 보안을 활성화시키며, 애플리케이션 및 컨테이너 취약점을 자동으로 발견하고 수정합니다.
 
 Snyk Security Scan 작업은 Snyk와 Azure DevOps에서 지원하는 모든 언어에 대해 사용할 수 있습니다.
 

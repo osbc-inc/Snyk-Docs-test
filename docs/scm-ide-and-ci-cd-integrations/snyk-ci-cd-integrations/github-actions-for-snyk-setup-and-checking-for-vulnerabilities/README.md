@@ -1,8 +1,8 @@
-# Snyk 설정 및 취약성 검사를 위한 GitHub Actions
+# Snyk 설정 및 취약점 확인을 위한 GitHub 작업
 
 ## GitHub Actions 통합 개요
 
-Snyk는 [GitHub 프로젝트의 취약성을 확인](https://github.com/snyk/actions)하기 위해 [Snyk](https://snyk.io/)를 사용하는 데 사용할 수 있는 일련의 GitHub 액션을 제공합니다. 이러한 액션은 [Snyk CLI](https://docs.snyk.io/snyk-cli)를 기반으로 하며 액션의 [속성](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-github-action-properties-for-open-source-languages-and-package-managers)에서 `args`를 사용하여 [모든 옵션과 기능](https://docs.snyk.io/snyk-cli/cli-reference)을 사용할 수 있습니다.
+Snyk은 [GitHub 프로젝트의 취약성을 확인](https://github.com/snyk/actions)하기 위해 [Snyk](https://snyk.io/) 사용하는 데 사용할 수 있는 일련의 GitHub 액션을 제공합니다. 이러한 액션은 [Snyk CLI](https://docs.snyk.io/snyk-cli)를 기반으로 하며 액션의 [속성](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#snyk-github-action-properties-for-open-source-languages-and-package-managers)에서 `args`를 사용하여 [모든 옵션과 기능](https://docs.snyk.io/snyk-cli/cli-reference)을 사용할 수 있습니다.
 
 [Snyk 설정 액션](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)도 있습니다.
 
@@ -30,11 +30,11 @@ Snyk는 [GitHub 프로젝트의 취약성을 확인](https://github.com/snyk/act
 
 Open Source 언어 및 패키지 관리자를 위한 Snyk GitHub Action에는 `with`를 사용하여 기본 이미지로 전달되는 속성이 있습니다.
 
-| 속성    | 기본값 | 설명                                                                                                                                                           |
-| ------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args    |        | Snyk 이미지로의 기본 인수를 재정의합니다. [모든 옵션에 대한 Snyk CLI 명령 및 옵션 요약 참조](https://docs.snyk.io/snyk-cli/cli-reference) |
-| command | test   | test 또는 monitor와 같은 실행할 명령을 지정합니다.                                                                                                              |
-| json    | false  | stdout에 추가하여 snyk.json으로 결과를 저장합니다.                                                                                                              |
+| 속성      | 기본값   | 설명                                                                                                        |
+| ------- | ----- | --------------------------------------------------------------------------------------------------------- |
+| args    |       | Snyk 이미지로의 기본 인수를 재정의합니다. [모든 옵션에 대한 Snyk CLI 명령 및 옵션 요약 참조](https://docs.snyk.io/snyk-cli/cli-reference) |
+| command | test  | test 또는 monitor와 같은 실행할 명령을 지정합니다.                                                                        |
+| json    | false | stdout에 추가하여 snyk.json으로 결과를 저장합니다.                                                                       |
 
 다른 Snyk GitHub Actions에 관련된 속성에 대한 자세한 내용은 [Snyk Container 및 Snyk Infrastracture as Code용 GitHub Actions](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration#github-actions-for-snyk-container-and-snyk-infrastructure-as-code) 및 [Snyk 설정 액션](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration/snyk-setup-action)에 나열된 페이지를 참조하십시오.
 
@@ -179,5 +179,4 @@ env:
 모든 Snyk 계정에는 이러한 토큰이 있습니다. Snyk 계정을 생성한 후에는 [Snyk에서 찾을 수 있습니다.](https://docs.snyk.io)Snyk API 토큰은 두 가지 방법 중 하나로 가져올 수 있습니다:
 
 1. UI에서 Snyk 계정 [설정 페이지](https://app.snyk.io/account)로 이동하여 [Snyk API 토큰 폐기 및 재생성](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens)에 설명된 대로 API 토큰을 검색합니다.
-
 2. 로컬에서 [Snyk CLI](https://docs.snyk.io/snyk-cli/getting-started-with-the-cli)를 사용 중이라면 `snyk config get api` 명령을 실행하여 API 토큰을 가져올 수 있습니다.

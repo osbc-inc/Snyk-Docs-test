@@ -1,4 +1,4 @@
-# CircleCI 통합을 위한 Snyk Orb
+# Snyk Orb를 사용한 CircleCI 통합
 
 Snyk은 **Snyk Orb**를 사용하여 [CircleCI](https://circleci.com)와 통합되며, 지속적 통합/지속적 전달 (CI/CD) 워크플로우의 일환으로 응용 프로그램 종속성과 Docker 이미지를 원활하게 스캔하여 오픈 소스 보안 취약점을 확인할 수 있습니다.
 
@@ -10,8 +10,8 @@ Snyk Orb를 사용하면 구성에 기반하여 오픈 소스 취약점을 테�
 
 아래 정보를 참조하여 CircleCI로 시작하고, 구현부터 Snyk와 함께 그린 빌드까지 진행하세요.
 
-- [Snyk Circle CI README](https://circleci.com/orbs/registry/orb/snyk/snyk) - 구성에 Snyk를 설정하는 데 필요한 모든 정보를 포함하며 매개변수 및 샘플 목록을 제공합니다.
-- [응용 프로그램 및 이미지 스캔을 CI/CD 파이프라인에 추가하기 (Circle CI 블로그 게시물)](https://circleci.com/blog/adding-application-and-image-scanning-to-your-cicd-pipeline/) - Snyk Orb로 안전한 파이프라인을 설정하는 방법에 대해 설명합니다.
+* [Snyk Circle CI README](https://circleci.com/orbs/registry/orb/snyk/snyk) - 구성에 Snyk를 설정하는 데 필요한 모든 정보를 포함하며 매개변수 및 샘플 목록을 제공합니다.
+* [응용 프로그램 및 이미지 스캔을 CI/CD 파이프라인에 추가하기 (Circle CI 블로그 게시물)](https://circleci.com/blog/adding-application-and-image-scanning-to-your-cicd-pipeline/) - Snyk Orb로 안전한 파이프라인을 설정하는 방법에 대해 설명합니다.
 
 ## CircleCI 통합 방법
 
@@ -21,12 +21,12 @@ CircleCI에 프로젝트를 추가하고 구성 파일에 Snyk Orb를 추가하�
 
 1. 어플리케이션 종속성 또는 컨테이너 이미지를 취약점이나 오픈 소스 라이선스의 문제를 스캔하고, 해당 취약점 및 문제를 나열합니다.
 2. Snyk가 취약점을 발견하면 구성에 따라 다음 중 하나를 수행합니다:
-   - 빌드를 실패 처리
-   - 빌드를 완료
+   * 빌드를 실패 처리
+   * 빌드를 완료
 
 ### **모니터**
 
-선택적으로 빌드가 성공적으로 완료되고 Snyk 단계에서 **MONITOR**를 **True**로 설정한 경우, Snyk는 Snyk 웹 UI에서 프로젝트 종속성의 스냅샷을 저장합니다. Snyk 웹 UI에서는 이슈를 모두 표시하는 종속성 트리를 확인하고, 기존 응용 프로그램 버전의 새 이슈에 대한 알림을 받을 수 있습니다.
+선택적으로 빌드가 성공적으로 완료되고 Snyk 단계에서 **MONITOR**를 **True**로 설정한 경우, Snyk은 Snyk 웹 UI에서 프로젝트 종속성의 스냅샷을 저장합니다. Snyk 웹 UI에서는 이슈를 모두 표시하는 종속성 트리를 확인하고, 기존 응용 프로그램 버전의 새 이슈에 대한 알림을 받을 수 있습니다.
 
 ## CircleCI 통합을 구현하기 위한 전제 조건
 
