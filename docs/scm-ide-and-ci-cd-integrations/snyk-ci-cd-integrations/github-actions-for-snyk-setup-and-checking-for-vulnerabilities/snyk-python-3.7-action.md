@@ -1,4 +1,4 @@
-# Snyk Python-3.7 Action
+# Snyk Python-3.7 액션
 
 {% hint style="warning" %}
 이 이미지는 2024년 8월 12일에 제거되었습니다. 계속된 지원 및 최신 기능을 보장하려면 사용자들이 더 최신의 액션으로 이전하는 것이 권장됩니다. 현재 해당 이미지를 사용 중이라면, 이 날짜 이후의 작업 흐름에서의 장애를 피하기 위해 가능한 빨리 업그레이드 계획을 세워야 합니다.
@@ -14,16 +14,16 @@ Snyk는 Python이 Snyk 검사를 실행하기 전에 종속성을 다운로드�
 
 Python 이미지는 현재 경로에서 매니페스트 파일이 존재하는 경우에만 종속성을 확인하고 설치합니다. 즉, 액션이 트리거되는 경로에서의 경로여야 합니다.
 
-* 만약 pip가 현재 경로에 존재하고 Snyk가 `requirements.txt` 파일을 찾는다면, Snyk는 `pip install -r requirements.txt`를 실행합니다.
-* 만약 pipenv가 현재 경로에 존재하고 Snyk가 `Pipfile.lock`가 없는 `Pipfile`을 찾는다면, Snyk는 `pipenv update`를 실행합니다.
-* 만약 `pyproject.toml`이 현재 경로에 존재하고 Snyk가 `poetry.lock`을 찾지 못한다면, Snyk는 `pip install poetry`를 실행합니다.
+* 만약 pip가 현재 경로에 존재하고 Snyk이 `requirements.txt` 파일을 찾는다면, Snyk은 `pip install -r requirements.txt`를 실행합니다.
+* 만약 pipenv가 현재 경로에 존재하고 Snyk이 `Pipfile.lock`가 없는 `Pipfile`을 찾는다면, Snyk은 `pipenv update`를 실행합니다.
+* 만약 `pyproject.toml`이 현재 경로에 존재하고 Snyk이 `poetry.lock`을 찾지 못한다면, Snyk은 `pip install poetry`를 실행합니다.
 
 만약 매니페스트 파일이 루트가 아닌 다른 위치에 존재한다면, **설치해야 합니다**.
 
 다음과 같이 Snyk Python (3.7) 액션을 사용하여 취약점을 확인할 수 있습니다:
 
 ```yaml
-name: Snyk를 사용한 Python-3.7 예시 작업흐름
+name: Snyk을 사용한 Python-3.7 예시 작업흐름
 on: push
 jobs:
   security:
@@ -39,7 +39,7 @@ jobs:
 다음과 같이 Snyk Python (3.7) 액션을 사용하여 **고 심각도 취약점** 만 확인할 수 있습니다:
 
 ```yaml
-name: Snyk를 사용한 Python-3.7 예시 작업흐름
+name: Snyk을을 사용한 Python-3.7 예시 작업흐름
 on: push
 jobs:
   security:
@@ -65,7 +65,7 @@ jobs:
 Snyk 액션이 취약점을 발견하면 실패합니다. 이는 SARIF 업로드 액션이 실행되지 못하게 합니다. 따라서 다음 예시와 같이 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) 옵션을 사용해야 합니다:
 
 ```yaml
-name: Snyk를 사용한 Python-3.7 예시 작업흐름
+name: Snyk을 사용한 Python-3.7 예시 작업흐름
 on: push
 jobs:
   security:

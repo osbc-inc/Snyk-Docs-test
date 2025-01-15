@@ -1,4 +1,4 @@
-# Snyk Python-3.6 Action
+# Snyk Python-3.6 액션
 
 {% hint style="warning" %}
 본 이미지는 2024년 8월 12일에 제거되었습니다. 권장사항으로 사용자들은 지속적인 지원과 최신 기능을 보장하기 위해 최신 액션으로의 이전을 고려하는 것이 매우 권장됩니다. 현재 본 이미지를 사용 중이라면 이 날짜 이후의 업무 흐름 중단을 피하기 위해 가능한 빨리 업그레이드 계획을 세우십시오.
@@ -10,20 +10,20 @@
 
 다음 예제에서는 Snyk Python GitHub 액션을 사용하는 방법을 보여줍니다.
 
-Snyk는 Python이 종속성을 다운로드한 후에 Snyk 체크를 실행하거나 트리거해야 한다고 요구합니다.
+Snyk은 Python이 종속성을 다운로드한 후에 Snyk 체크를 실행하거나 트리거해야 한다고 요구합니다.
 
 Python 이미지는 현재 경로에 매니페스트 파일이 있는 경우에만 종속성을 확인하고 설치합니다. 즉, 작업이 트리거되는 경로에서의 경로입니다.
 
-* 현재 경로에 pip가 존재하고 Snyk가 `requirements.txt` 파일을 찾으면 Snyk가 `pip install -r requirements.txt`을 실행합니다.
-* 현재 경로에 pipenv가 존재하고 Snyk가 `Pipfile.lock`이 없는 `Pipfile`을 찾으면 Snyk가 `pipenv update`를 실행합니다.
-* 현재 경로에 `pyproject.toml`이 존재하고 Snyk가 `poetry.lock`을 찾지 못하면 Snyk가 `pip install poetry`를 실행합니다.
+* 현재 경로에 pip가 존재하고 Snyk이 `requirements.txt` 파일을 찾으면 Snyk이 `pip install -r requirements.txt`을 실행합니다.
+* 현재 경로에 pipenv가 존재하고 Snyk이 `Pipfile.lock`이 없는 `Pipfile`을 찾으면 Snyk이 `pipenv update`를 실행합니다.
+* 현재 경로에 `pyproject.toml`이 존재하고 Snyk이 `poetry.lock`을 찾지 못하면 Snyk이 `pip install poetry`를 실행합니다.
 
 루트 이외의 위치에 매니페스트 파일이 있는 경우 **반드시 설치**되어야 합니다.
 
 다음과 같이 Snyk Python (3.6) 액션을 사용하여 취약점을 확인할 수 있습니다:
 
 ```yaml
-name: Snyk를 사용한 Python-3.6 예제 워크플로우
+name: Snyk을 사용한 Python-3.6 예제 워크플로우
 on: push
 jobs:
   security:
@@ -39,7 +39,7 @@ jobs:
 **높은 심각도의 취약점만** 확인하도록 Snyk Python (3.6) 액션을 사용할 수 있습니다:
 
 ```yaml
-name: Snyk를 사용한 Python-3.6 예제 워크플로우
+name: Snyk을 사용한 Python-3.6 예제 워크플로우
 on: push
 jobs:
   security:
@@ -65,7 +65,7 @@ jobs:
 Snyk 액션이 취약점을 발견하면 실패합니다. 이로 인해 SARIF 업로드 액션이 실행되지 않습니다. 따라서 다음 예제와 같이 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) 옵션을 사용해야 합니다:
 
 ```yaml
-name: Snyk를 사용한 Python-3.6 예제 워크플로우
+name: Snyk을 사용한 Python-3.6 예제 워크플로우
 on: push
 jobs:
   security:

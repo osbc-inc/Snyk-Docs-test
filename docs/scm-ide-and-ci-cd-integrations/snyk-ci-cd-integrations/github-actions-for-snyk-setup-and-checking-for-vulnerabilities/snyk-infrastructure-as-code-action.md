@@ -1,4 +1,4 @@
-# Snyk Infrastructure as Code 동작
+# 코드 액션으로서의 Snyk 인프라
 
 이 페이지는 [Infrastructure as Code](https://github.com/snyk/actions/tree/master/iac)용 Snyk GitHub 동작의 사용 방법 및 예제를 제공합니다. 일반적인 지침과 정보는 [GitHub Actions 통합](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)을 참조하십시오.
 
@@ -26,15 +26,15 @@ Snyk Infrastructure as Code 동작 속성
 
 Snyk Infrastructure as Code 동작은 기본 이미지로 전달되는 속성을 가지고 있습니다. 이러한 속성은 `with`를 사용하여 동작으로 전달됩니다:
 
-| 속성     | 기본값   | 설명                                                              |
-| --------- | -------- | ----------------------------------------------------------------- |
-| `args`    |          | Snyk 이미지에 대한 기본 인수 재정의                             |
-| `command` | `"test"` | 실행할 명령을 지정합니다. 현재 `test`만 지원됩니다.                 |
-| `file`    |          | 문제가 있는 파일을 스캔할 경로입니다.                                |
-| `json`    | `false`  | 표준 출력 외에도 결과를 snyk.json으로 저장                           |
-| `sarif`   | `true`   | 표준 출력 외에도 결과를 snyk.sarif으로 저장                         |
+| 속성        | 기본값      | 설명                               |
+| --------- | -------- | -------------------------------- |
+| `args`    |          | Snyk 이미지에 대한 기본 인수 재정의           |
+| `command` | `"test"` | 실행할 명령을 지정합니다. 현재 `test`만 지원됩니다. |
+| `file`    |          | 문제가 있는 파일을 스캔할 경로입니다.            |
+| `json`    | `false`  | 표준 출력 외에도 결과를 snyk.json으로 저장     |
+| `sarif`   | `true`   | 표준 출력 외에도 결과를 snyk.sarif으로 저장    |
 
-## Snyk Infrastructure as Code 동작 예시 
+## Snyk Infrastructure as Code 동작 예시
 
 ### 경로 지정
 
@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
+      - name: Snyk을 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
           SNYK_TOKEN: $
@@ -69,7 +69,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
+      - name: Snyk을 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
           SNYK_TOKEN: $
@@ -90,7 +90,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
+      - name: Snyk을 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
           SNYK_TOKEN: $
@@ -110,7 +110,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Snyk를 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
+      - name: Snyk을 사용하여 Kubernetes manifest 파일을 확인하는 동작 실행
         uses: snyk/actions/iac@master
         env:
           SNYK_TOKEN: $
@@ -130,8 +130,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Snyk를 사용하여 구성 파일을 보안 문제 스캔
-        # Snyk가 보안 문제를 감지하면 빌드를 중단하는 데 사용할 수 있습니다.
+      - name: Snyk을 사용하여 구성 파일을 보안 문제 스캔
+        # Snyk이 보안 문제를 감지하면 빌드를 중단하는 데 사용할 수 있습니다.
         # 이 경우 문제를 GitHub Code Scanning에 업로드하려고 합니다
         continue-on-error: true
         uses: snyk/actions/iac@master
@@ -144,7 +144,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-비공개 저장소에 대한 업로드-sarif 옵션을 사용하려면 GitHub 고급 보안이 필요합니다. &#x20;
+비공개 저장소에 대한 업로드-sarif 옵션을 사용하려면 GitHub 고급 보안이 필요합니다.
 
 `Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되면 GitHub 고급 보안이 활성화되어 있는지 확인하십시오. 자세한 내용은 "[고유 저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하십시오.
 {% endhint %}

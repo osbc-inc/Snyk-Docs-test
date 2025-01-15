@@ -1,4 +1,4 @@
-# Snyk Python Action
+# Snyk Python 액션
 
 이 페이지에서는 [Python](https://github.com/snyk/actions/tree/master/python)을 위한 Snyk GitHub 액션을 사용하는 예제를 제공합니다. 액션 사용 방법 및 추가 정보에 대한 지침은 [GitHub Actions 통합](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)을 참조하십시오.
 
@@ -6,13 +6,13 @@
 
 다음 예시에서는 Snyk Python GitHub 액션을 사용하는 방법을 보여줍니다.
 
-Snyk는 Python이 의존성을 다운로드한 후에 Snyk 체크를 실행하거나 트리거하기를 요구합니다.
+Snyk은 Python이 의존성을 다운로드한 후에 Snyk 체크를 실행하거나 트리거하기를 요구합니다.
 
 Python 이미지는 현재 경로에 매니페스트 파일이 있는 경우에만 종속성을 확인하고 설치합니다. 즉, 액션이 트리거되는 경로에서의 경로입니다.
 
-* 만약 현재 경로에 pip가 있고, Snyk가 `requirements.txt` 파일을 찾는다면, Snyk는 `pip install -r requirements.txt`를 실행합니다.
-* 만약 현재 경로에 pipenv가 있고, Snyk가 `Pipfile.lock` 없이 `Pipfile`을 찾는다면, Snyk는 `pipenv update`를 실행합니다.
-* 현재 경로에 `pyproject.toml`이 있고, Snyk가 `poetry.lock`을 찾지 못한다면, Snyk는 `pip install poetry`를 실행합니다.
+* 만약 현재 경로에 pip가 있고, Snyk이 `requirements.txt` 파일을 찾는다면, Snyk은 `pip install -r requirements.txt`를 실행합니다.
+* 만약 현재 경로에 pipenv가 있고, Snyk이 `Pipfile.lock` 없이 `Pipfile`을 찾는다면, Snyk은 `pipenv update`를 실행합니다.
+* 현재 경로에 `pyproject.toml`이 있고, Snyk이 `poetry.lock`을 찾지 못한다면, Snyk은 `pip install poetry`를 실행합니다.
 
 만약 매니페스트 파일이 루트 외의 다른 위치에 있다면, **반드시 설치**되어야 합니다.
 

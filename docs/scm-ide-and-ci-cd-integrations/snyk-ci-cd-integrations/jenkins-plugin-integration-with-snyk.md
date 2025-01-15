@@ -1,6 +1,6 @@
-# Jenkins 플러그인을 Snyk와 통합
+# Jenkins 플러그인과 Snyk의 통합
 
-Snyk는 파이프라인에서 프로젝트를 취약점에 대해 테스트하고 모니터링하기 위해 [Snyk CLI](https://docs.snyk.io/snyk-cli/cli-reference)를 기반으로 하는 Jenkins용 네이티브 플러그인을 제공합니다.
+Snyk은 파이프라인에서 프로젝트를 취약점에 대해 테스트하고 모니터링하기 위해 [Snyk CLI](https://docs.snyk.io/snyk-cli/cli-reference)를 기반으로 하는 Jenkins용 네이티브 플러그인을 제공합니다.
 
 {% hint style="warning" %}
 Snyk Jenkins 플러그인은 Snyk Open Source를 지원합니다. 파이프라인에 Snyk Code, Snyk Container, 그리고 Snyk IaC 스캔을 포함하려는 경우 일반적인 [Snyk CLI](../../snyk-cli/)를 사용하십시오.
@@ -49,12 +49,12 @@ Snyk Jenkins 플러그인을 사용하기 위한 각 섹션의 단계를 따르�
 
 ### 사용자 정의 API 엔드포인트
 
-기본적으로 Snyk는 https://api.snyk.io 엔드포인트를 사용합니다. `SNYK_API` 환경 변수를 변경하여 Snyk를 다른 엔드포인트를 사용하도록 구성할 수 있습니다:
+기본적으로 Snyk은 https://api.snyk.io 엔드포인트를 사용합니다. `SNYK_API` 환경 변수를 변경하여 Snyk을 다른 엔드포인트를 사용하도록 구성할 수 있습니다:
 
 * **Manage Jenkins** > **Configure System**으로 이동합니다.
 * **Global Properties** 아래에서 **Environment** 변수 옵션을 선택합니다.
 * **Add**를 클릭합니다.
-* 이름을 **SNYK_API**로 설정하고 값은 사용자 정의 엔드포인트로 설정합니다.
+* 이름을 **SNYK\_API**로 설정하고 값은 사용자 정의 엔드포인트로 설정합니다.
 
 자세한 정보는 [Snyk API에 연결하기 위한 Snyk CLI 구성](https://docs.snyk.io/snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api)를 참조하십시오.
 

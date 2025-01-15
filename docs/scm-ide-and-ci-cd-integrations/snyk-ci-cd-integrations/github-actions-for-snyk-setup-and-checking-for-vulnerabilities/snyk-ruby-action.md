@@ -1,4 +1,4 @@
-# Snyk Ruby 작업
+# Snyk Ruby 액션
 
 이 페이지는 [Ruby](https://github.com/snyk/actions/tree/master/ruby)에 대한 Snyk GitHub 작업을 사용하는 예제를 제공합니다. 작업 및 추가 정보에 대한 지침은 [GitHub Actions 통합](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)을 참조하십시오.
 
@@ -23,7 +23,7 @@ jobs:
 다음과 같이 **높은 심각도 취약점만** 확인하려면 Snyk Ruby 작업을 사용할 수 있습니다:
 
 ```yaml
-name: Snyk를 사용한 Ruby 예제 워크플로우
+name: Snyk을 사용한 Ruby 예제 워크플로우
 on: push
 jobs:
   security:
@@ -46,10 +46,10 @@ jobs:
 
 `--sarif-file-output` [Snyk CLI 옵션](https://docs.snyk.io/snyk-cli/cli-reference)과 [GitHub SARIF 업로드 작업](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github)를 사용하여 Snyk 스캔 결과를 GitHub Code Scanning에 업로드할 수 있습니다. 다음 예제에서 보여지는 대로 진행됩니다.
 
-Snyk 작업은 취약점을 발견하면 실패합니다. 이로 인해 SARIF 업로드 작업이 실행되지 않습니다. 따라서 다음 예제와 같이 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) 옵션을 사용해야 합니다:
+Snyk 작업은 취약점을 발견하면 실패합니다. 이로 인해 SARIF 업로드 작업이 실행되지 않습니다. 따라서 다음 예제와 같이 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) 옵션을 사용해야 합니다:
 
 ```yaml
-name: Snyk를 사용한 Ruby 예제 워크플로우
+name: Snyk을 사용한 Ruby 예제 워크플로우
 on: push
 jobs:
   security:
@@ -70,7 +70,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-사용자가 사설 저장소에서 upload-sarif 옵션을 사용하려면 GitHub Advanced Security가 필요합니다. &#x20;
+사용자가 사설 저장소에서 upload-sarif 옵션을 사용하려면 GitHub Advanced Security가 필요합니다.
 
-`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되는 경우 GitHub Advanced Security가 활성화되어 있는지 확인하십시오. 자세한 내용은 "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하십시오.
+`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되는 경우 GitHub Advanced Security가 활성화되어 있는지 확인하십시오. 자세한 내용은  "[저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하십시오.
 {% endhint %}
