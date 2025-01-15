@@ -1,4 +1,4 @@
-# AWS CodePipeline 통합 설정 단계
+# AWS CodePipeline 통합을 위한 설정 단계
 
 {% hint style="warning" %}
 **AWS CodePipeline을 위한 Snyk 통합이 중단될 예정입니다**
@@ -6,16 +6,16 @@
 \
 **조치 필요**
 
-우리 서비스와 고객들의 보안을 보호하기 위해 Snyk는 **AWS CodePipeline**과의 통합을 폐지하기 시작했습니다. 중단을 최소화하기 위해 **AWS CodeBuild** 및 Snyk CLI를 사용하는 것을 권장합니다. 이는 동일한 사용 사례와 기능을 지원할 것입니다.&#x20;
+우리 서비스와 고객들의 보안을 보호하기 위해 Snyk은 **AWS CodePipeline**과의 통합을 폐지하기 시작했습니다. 중단을 최소화하기 위해 **AWS CodeBuild** 및 Snyk CLI를 사용하는 것을 권장합니다. 이는 동일한 사용 사례와 기능을 지원할 것입니다.
 
 **이주 일정**
 
-**2024년 10월 30일**부터는 새로운 또는 기존 파이프라인에 Snyk 플러그인을 추가하거나 수정할 수 없게 될 것입니다. 기존 파이프라인은 6개월 동안 그대로 작동할 것이지만, 가능한 빨리 새로운 프로세스로 이주하는 것을 권장합니다. CI/CD 워크플로우에 중단을 피하려면 **2025년 4월 30일** 이전에 Snyk CLI로 이주해야 합니다. Snyk CLI를 AWS CodeBuild와 함께 사용하도록 마이그레이션하려면 이 [마이그레이션 가이드](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/migrating-to-aws-codebuild)를 참조하십시오. 
+**2024년 10월 30일**부터는 새로운 또는 기존 파이프라인에 Snyk 플러그인을 추가하거나 수정할 수 없게 될 것입니다. 기존 파이프라인은 6개월 동안 그대로 작동할 것이지만, 가능한 빨리 새로운 프로세스로 이주하는 것을 권장합니다. CI/CD 워크플로우에 중단을 피하려면 **2025년 4월 30일** 이전에 Snyk CLI로 이주해야 합니다. Snyk CLI를 AWS CodeBuild와 함께 사용하도록 마이그레이션하려면 이 [마이그레이션 가이드](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/migrating-to-aws-codebuild)를 참조하십시오.
 
-AWS CodeBuild 및 Snyk CLI가 요구 사항을 충족할 것임을 확신합니다.&#x20;
+AWS CodeBuild 및 Snyk CLI가 요구 사항을 충족할 것임을 확신합니다.
 {% endhint %}
 
-Snyk를 AWS CodePipeline 콘솔에서 직접 시작할 수 있습니다.
+Snyk을 AWS CodePipeline 콘솔에서 직접 시작할 수 있습니다.
 
 {% hint style="info" %}
 CodePipeline과의 Snyk 통합에는 UI 기반의 인증 단계가 설정의 일부로 필요합니다. 이는 CloudFormation 또는 Terraform과 같은 비대화식 설정 방법과 호환되지 않습니다.
@@ -43,7 +43,7 @@ CodePipeline과의 Snyk 통합에는 UI 기반의 인증 단계가 설정의 일
 
 ## 단계 3: Snyk에 연결
 
-Snyk에 대한 인증 방법을 선택하여 Snyk가 오픈 소스 코드를 스캔 시작할 수 있도록 허용합니다.
+Snyk에 대한 인증 방법을 선택하여 Snyk이 오픈 소스 코드를 스캔 시작할 수 있도록 허용합니다.
 
 ![Snyk 로그인 화면](../../../.gitbook/assets/snyk-cp-int-config.png)
 
@@ -54,9 +54,9 @@ Snyk에 대한 인증 방법을 선택하여 Snyk가 오픈 소스 코드를 스
 ![Snyk AWS CodePipeline 구성 옵션](../../../.gitbook/assets/Snyk_AWS_CodePipeline_Config_y_CodePipeline_-_AWS_Developer_Tools_png.png)
 
 * **Snyk 조직:** 발견 보고서가 저장되는 Snyk 조직을 선택합니다.
-* **취약점 처리:** 취약점이 발견되었을 때 파이프라인 동작을 정의합니다. **Snyk가 오류를 발견하면 배포 차단** 확인란이 선택되면 파이프라인이 실패하고 CodePipeline의 다음 단계로 진행하지 않습니다.
-* **최소 심각도로 취약성을 가진 취약성에 대해 배포 차단**: **Low**|**Medium**|**High**|**Critical**: 특정 수준 이상의 취약성만 보고합니다.  
-* **빌드에서의 모니터링 동작**: AWS CodePipeline에서 프로젝트를 모니터링하는 기준을 설정합니다. 가능한 옵션은:
+* **취약점 처리:** 취약점이 발견되었을 때 파이프라인 동작을 정의합니다. **Snyk이 오류를 발견하면 배포 차단** 확인란이 선택되면 파이프라인이 실패하고 CodePipeline의 다음 단계로 진행하지 않습니다.
+* **최소 심각도로 취약성을 가진 취약성에 대해 배포 차단**: **Low**|**Medium**|**High**|**Critical**: 특정 수준 이상의 취약성만 보고합니다.
+*   **빌드에서의 모니터링 동작**: AWS CodePipeline에서 프로젝트를 모니터링하는 기준을 설정합니다. 가능한 옵션은:
 
     * **항상 모니터링**: 테스트 결과와 독립적으로 프로젝트 스냅샷이 생성됩니다.
     * **테스트 실패 시**: 테스트 실패 시에만 프로젝트 스냅샷이 생성됩니다.

@@ -1,4 +1,4 @@
-# AWS CodeBuild로 이주하기
+# AWS CodeBuild로 마이그레이션
 
 {% hint style="warning" %}
 **AWS CodePipeline을 위한 Snyk 통합이 종료될 예정임**
@@ -6,14 +6,14 @@
 \
 **조치 필요**
 
-서비스 및 고객의 보안을 보호하기 위해, Snyk는 **AWS CodePipeline**과의 통합을 폐기하기 시작했습니다. 중단을 최소화하기 위해, **AWS CodeBuild** 및 **Snyk CLI**를 사용하여 동일한 사용 사례와 기능을 지원하는 대체 방법으로 전환하는 것을 권장합니다.
+서비스 및 고객의 보안을 보호하기 위해, Snyk은 **AWS CodePipeline**과의 통합을 폐기하기 시작했습니다. 중단을 최소화하기 위해, **AWS CodeBuild** 및 **Snyk CLI**를 사용하여 동일한 사용 사례와 기능을 지원하는 대체 방법으로 전환하는 것을 권장합니다.
 
 **이주 일정**
 
 **2024년 10월 30일** 이후, 새로운 또는 기존 파이프라인에 Snyk 플러그인을 추가하거나 수정할 수 없게 됩니다. 기존 파이프라인은 6개월 동안 그대로 작동하지만, 가능한 빨리 새 프로세스로 이주하는 것이 좋습니다. **2025년 4월 30일** 이전에 Snyk CLI로 이주하여 CI/CD 워크플로우에 지장이 없도록 해야 합니다. 아래 이주 안내서의 단계를 따라 Snyk CLI를 AWS CodeBuild와 함께 사용하는 방법을 참조하십시오.
 {% endhint %}
 
-이 안내서는 [](https://snyk.io/product/open-source-security-management/) 보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild/)로 이주하는 단계를 설명합니다. Snyk CLI 및 CodeBuild의 내장 기능을 사용하여 CI/CD 파이프라인에서 Snyk 소프트웨어 구성 분석 (SCA) 스캔을 실행하고 결과를 통합할 수 있는 보다 간소화되고 설정 가능한 솔루션을 달성할 수 있습니다.
+이 안내서는보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild/)로 이주하는 단계를 설명합니다. Snyk CLI 및 CodeBuild의 내장 기능을 사용하여 CI/CD 파이프라인에서 Snyk 소프트웨어 구성 분석 (SCA) 스캔을 실행하고 결과를 통합할 수 있는 보다 간소화되고 설정 가능한 솔루션을 달성할 수 있습니다.
 
 ## 이주 목표
 
@@ -29,7 +29,7 @@
 
 ## 이주 단계
 
-[](https://snyk.io/product/open-source-security-management/) 보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild)로 이주하는 단계에 따라 이러한 섹션의 단계를 따르십시오.
+보안 스캔 워크플로우를 [Snyk 및 AWS CodePipeline 통합](./)에서 [AWS CodeBuild](https://aws.amazon.com/codebuild)로 이주하는 단계에 따라 이러한 섹션의 단계를 따르십시오.
 
 ### CodeBuild 설정
 
@@ -81,7 +81,7 @@ phases:
 * 예제 `buildspec.yaml`에서 명령을 빌드 단계에 추가하여 프로젝트 빌드 직후 Snyk 스캔이 수행되도록합니다.
 
 {% hint style="info" %}
-Snyk 오픈 소스 스캔은 Snyk가 전체 빌드 워크스페이스에 액세스할 수 있도록 빌드 프로세스와 동일한 CodeBuild 액션 내에서 이루어져야 합니다.
+Snyk 오픈 소스 스캔은 Snyk이 전체 빌드 워크스페이스에 액세스할 수 있도록 빌드 프로세스와 동일한 CodeBuild 액션 내에서 이루어져야 합니다.
 {% endhint %}
 
 #### 빌드된 프로젝트가 필요하지 않은 경우
@@ -89,7 +89,7 @@ Snyk 오픈 소스 스캔은 Snyk가 전체 빌드 워크스페이스에 액세�
 * 기존 CodePipeline을 편집하거나 새로 생성합니다.
 * 원본 코드 획득 단계 이후에 새로운 빌드 단계를 추가합니다.
 * 이 단계에 새로 생성한 CodeBuild 프로젝트를 선택합니다.
-* Snyk가 소스 코드를 직접 스캔할 수 있도록 입력 아티팩트 아래의 SourceArtifact를 선택합니다.
+* Snyk이 소스 코드를 직접 스캔할 수 있도록 입력 아티팩트 아래의 SourceArtifact를 선택합니다.
 
 ### 결과 처리
 
