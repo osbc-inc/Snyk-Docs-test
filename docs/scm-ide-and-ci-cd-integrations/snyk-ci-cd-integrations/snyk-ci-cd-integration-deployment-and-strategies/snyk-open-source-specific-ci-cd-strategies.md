@@ -1,4 +1,4 @@
-# Snyk 오픈 소스에 특화된 CI/CD 전략
+# Snyk 오픈 소스별 CI/CD 전략
 
 이러한 전략은 Snyk SCA ([소프트웨어 구성 분석](https://snyk.io/blog/what-is-software-composition-analysis-sca-and-does-my-company-need-it/)) 테스트 기능을 사용하는 팀에 유용합니다.
 
@@ -11,7 +11,7 @@
 
 ## Python
 
-* Snyk는 Python을 사용하여 종속성을 스캔하고 찾습니다. Snyk는 스캔을 시작하기 위해 Python 버전이 필요하며 기본값은 `python`입니다. 여러 Python 버전을 사용하는 경우, 실행에 올바른 Python 명령을 지정하기 위해 `test` 또는 `monitor` 명령어와 함께 `--command=` 옵션을 사용하세요. 다음은 예시입니다:\
+* Snyk은 Python을 사용하여 종속성을 스캔하고 찾습니다. Snyk은 스캔을 시작하기 위해 Python 버전이 필요하며 기본값은 `python`입니다. 여러 Python 버전을 사용하는 경우, 실행에 올바른 Python 명령을 지정하기 위해 `test` 또는 `monitor` 명령어와 함께 `--command=` 옵션을 사용하세요. 다음은 예시입니다:\
   `snyk test --command=python3`
 * `setup.py` 파일을 대상으로 설정해야 합니다. 명령어를 사용하세요 `snyk test --file=setup.py`
 * Pip 프로젝트를 스캔하고 사용하는 경우 표준 `requirements.txt`가 아닌 경우 `--file=` 옵션을 사용해야 하므로 다음 옵션을 사용하여 패키지 매니저로 Pip을 지정해야 합니다 `--package-manager=pip.`
@@ -48,7 +48,7 @@ snyk test --yarn-workspaces --policy-path=src/.snyk
 
 일부 고객은 단일 저장소에 여러 언어, 패키지 매니저 및 프로젝트가 있는 복잡한 프로젝트를 가지고 있습니다. 이를 간단히하기 위해 다음과 같은 접근 방식을 취할 수 있습니다:
 
-* **각 프로젝트 및 언어를 빌드할 때**, 특정 프로젝트 파일을 타겟팅하는 `snyk test`를 실행하는 지시문을 추가하세요. 예를 들어:
+*   **각 프로젝트 및 언어를 빌드할 때**, 특정 프로젝트 파일을 타겟팅하는 `snyk test`를 실행하는 지시문을 추가하세요. 예를 들어:
 
     ```
     snyk test --file=package.json

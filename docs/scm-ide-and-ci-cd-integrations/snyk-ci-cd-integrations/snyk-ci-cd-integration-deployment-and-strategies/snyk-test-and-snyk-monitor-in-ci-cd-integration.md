@@ -1,4 +1,4 @@
-# Snyk 테스트 및 CI/CD 통합에서의 snyk monitor
+# CI/CD 통합의 Snyk 테스트 및 Snyk 모니터
 
 접근 방식과 목표에 따라, 파이프라인에서 `snyk monitor` 및 `snyk test` 명령을 모두 사용해야 할 수 있습니다. 아래에는 예시와 자세한 내용이 제시되어 있습니다.
 
@@ -48,8 +48,8 @@ $ snyk config set org=<ORG_ID>
 
 빌드 실패로 이어질 수 있는 매개변수를 정제하기 위해 `snyk test` 명령에 옵션을 추가할 수 있습니다:
 
-- `--severity-threshold=high`: 높은 심각도 문제로만 빌드 실패
-- `--fail-on=upgradable`: 업그레이드 가능한 문제로만 빌드 실패 (Snyk 수정 안내로 해결할 수 있음)
+* `--severity-threshold=high`: 높은 심각도 문제로만 빌드 실패
+* `--fail-on=upgradable`: 업그레이드 가능한 문제로만 빌드 실패 (Snyk 수정 안내로 해결할 수 있음)
 
 또한 [snyk-filter](https://github.com/snyk-tech-services/snyk-filter)와 같은 래퍼를 사용하거나 [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)와 같은 추가 도구를 사용하여 기타 매개변수에 대해 빌드를 실패시킬 수 있습니다. snyk-filter 및 snyk-delta 사용에 대한 정보는 [Snyk CLI에서 빌드 실패](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/failing-of-builds-in-snyk-cli.md)를 참조하십시오.
 
@@ -57,10 +57,10 @@ $ snyk config set org=<ORG_ID>
 
 기본적으로 문제가 무시되지 않거나 [snyk-delta](https://github.com/snyk-tech-services/snyk-delta)를 사용하지 않는 경우, 파이프라인에서 문제가 발견되면 `snyk test`로 빌드가 실패합니다. 이러한 문제를 해결하지 않고 빌드를 계속하려면 다음을 수행할 수 있습니다:
 
-- [.snyk 정책 파일 사용하여 문제 무시](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
-- Snyk UI에서 문제 무시
-- Ignores API를 사용하여 문제 무시
-- 대량 무시를 위해 Snyk Python API 사용: [pysnyk](https://github.com/snyk-labs/pysnyk) 및 데모 [bulk-ignore-vulns-by-issueIdList](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)를 참조하십시오.
+* [.snyk 정책 파일 사용하여 문제 무시](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/ignore-vulnerabilities-using-the-snyk-cli.md)
+* Snyk UI에서 문제 무시
+* Ignores API를 사용하여 문제 무시
+* 대량 무시를 위해 Snyk Python API 사용: [pysnyk](https://github.com/snyk-labs/pysnyk) 및 데모 [bulk-ignore-vulns-by-issueIdList](https://github.com/snyk-labs/pysnyk/blob/master/examples/api-demo-9c-bulk-ignore-vulns-by-issueIdList.py)를 참조하십시오.
 
 ## 사용자 정의 빌드 아티팩트 생성
 
@@ -68,6 +68,6 @@ Snyk 명령으로부터의 JSON 출력을 사용하여 빌드 아티팩트로 �
 
 ## 새 취약점을 위한 작업 항목 생성
 
-Snyk를 사용하여 JIRA에서 자동으로 새 작업 항목을 생성할 수 있습니다. 자세한 내용은 [Jira 통합](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) 문서를 참조하십시오. 이 코드를 사용자 지정 요구 사항에 맞게 수정하거나 다른 작업 관리 시스템과 작업할 수 있도록 조정할 수 있습니다.
+Snyk을 사용하여 JIRA에서 자동으로 새 작업 항목을 생성할 수 있습니다. 자세한 내용은 [Jira 통합](../../../integrate-with-snyk/jira-and-slack-integrations/jira-integration.md) 문서를 참조하십시오. 이 코드를 사용자 지정 요구 사항에 맞게 수정하거나 다른 작업 관리 시스템과 작업할 수 있도록 조정할 수 있습니다.
 
 시작하려면 [Jira tickets for new vulns](https://github.com/snyk-tech-services/jira-tickets-for-new-vulns)를 참조하십시오. 또한 API 엔드포인트 [Jira 이슈 생성](../../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-issue-issueid-jira-issue) 및 [모든 Jira 이슈 나열](../../../snyk-api/reference/jira-v1.md#org-orgid-project-projectid-jira-issues)를 사용할 수 있습니다.
