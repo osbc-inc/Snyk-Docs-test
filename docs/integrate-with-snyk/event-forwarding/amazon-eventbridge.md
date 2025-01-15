@@ -1,9 +1,9 @@
-# Amazon EventBridge
+# 아마존 이벤트 브리지
 
 {% hint style="info" %}
 **Snyk 앱으로 전환**
 
-Snyk는 이벤트 포워딩 통합을 Snyk 앱 플랫폼을 사용하도록 전환하고 있습니다. 이 변경으로 현재 및 미래의 클라우드 이벤트 통합에 대한 새로운 기능과 향상된 보안이 가능해집니다.
+Snyk은 이벤트 포워딩 통합을 Snyk 앱 플랫폼을 사용하도록 전환하고 있습니다. 이 변경으로 현재 및 미래의 클라우드 이벤트 통합에 대한 새로운 기능과 향상된 보안이 가능해집니다.
 
 전환 중에 기존 통합은 정상적으로 작동하며 고객들은 통합을 승인하여 Snyk 앱이 되면 계속 작동하도록 할 수 있습니다. 기존 통합을 승인하려면 다음 단계를 따라야 합니다:
 
@@ -16,15 +16,15 @@ Snyk는 이벤트 포워딩 통합을 Snyk 앱 플랫폼을 사용하도록 전�
 
 [Amazon EventBridge](https://aws.amazon.com/eventbridge/) 통합은 Snyk 플랫폼 이벤트를 EventBridge로 보내어 Snyk 이벤트를 기존 AWS 환경에 통합할 수 있도록 합니다. 이 통합은 두 가지 유형의 이벤트를 보낼 수 있도록 구성될 수 있습니다:
 
-- **Snyk 이슈 이벤트:** 이 이벤트는 Snyk 프로젝트에서 새로운 문제가 발견되거나 문제가 업데이트될 때 보내집니다. 각 이벤트에는 발견된 취약성이나 다른 문제에 대한 정보가 포함되며, 문제 해결이 가능한지 여부 등을 포함합니다.
-- **Snyk 플랫폼 감사 이벤트:** 이 이벤트는 Snyk 사용자가 Snyk 플랫폼에서 작업을 수행할 때마다 보내집니다. 자세한 정보는 [감사 로그](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/audit-logs)를 참조하십시오. 이 이벤트 유형은 Snyk 엔터프라이즈 플랜에서 사용할 수 있습니다. 상세 내용은 [가격 요금제](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md)를 참조하십시오.
+* **Snyk 이슈 이벤트:** 이 이벤트는 Snyk 프로젝트에서 새로운 문제가 발견되거나 문제가 업데이트될 때 보내집니다. 각 이벤트에는 발견된 취약성이나 다른 문제에 대한 정보가 포함되며, 문제 해결이 가능한지 여부 등을 포함합니다.
+* **Snyk 플랫폼 감사 이벤트:** 이 이벤트는 Snyk 사용자가 Snyk 플랫폼에서 작업을 수행할 때마다 보내집니다. 자세한 정보는 [감사 로그](https://docs.snyk.io/snyk-admin/manage-users-and-permissions/audit-logs)를 참조하십시오. 이 이벤트 유형은 Snyk 엔터프라이즈 플랜에서 사용할 수 있습니다. 상세 내용은 [가격 요금제](../../implement-snyk/enterprise-implementation-guide/trial-limitations.md)를 참조하십시오.
 
 통합 설정을 위해 두 단계가 필요합니다:
 
 1. Snyk 대시보드에서 EventBridge 통합을 구성합니다. 이렇게 하면 AWS 계정에 Snyk **파트너 이벤트 소스**가 생성되며, EventBridge 대시보드에서 확인할 수 있습니다.
 2. Amazon EventBridge에서 Snyk 통합을 구성합니다. 이 단계는 첫 번째 단계에서 생성된 Snyk 이벤트 소스를 EventBridge **이벤트 버스**에 연결하는 것을 포함합니다.
 
-이러한 단계를 완료하면 Snyk가 구성된 이벤트 버스로 즉시 이벤트를 보내기 시작합니다.
+이러한 단계를 완료하면 Snyk이 구성된 이벤트 버스로 즉시 이벤트를 보내기 시작합니다.
 
 ## Snyk 대시보드에서 EventBridge 구성
 
@@ -52,8 +52,7 @@ Snyk 측 EventBridge 통합을 구성한 후, EventBridge 콘솔에 새 **파트
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-eventbridge-eventsource.png" alt="파트너 이벤트 소스"><figcaption><p>파트너 이벤트 소스</p></figcaption></figure>
 
-Snyk에서 생성된 이벤트 소스는 다음과 같은 패턴을 가집니다:
-`aws.partner/snyk.io/org_<SNYK_ORG_ID>/<EVENT_TYPE>`
+Snyk에서 생성된 이벤트 소스는 다음과 같은 패턴을 가집니다: `aws.partner/snyk.io/org_<SNYK_ORG_ID>/<EVENT_TYPE>`
 
 이벤트 소스 이름을 클릭한 후 **이벤트 버스와 연결**을 클릭하고 이벤트 소스를 이벤트 버스에 연결하기 위해 안내에 따릅니다. 이벤트 소스가 이벤트 버스에 연결되면 Snyk가 즉시 이벤트를 전송하며 EventBridge에서 지원하는 모든 작업에 사용할 수 있습니다.
 
@@ -81,11 +80,11 @@ EventBridge 통합은 구성된 AWS 계정 ID, 리전 및 이벤트 유형에 �
 
 이 이벤트 유형에는 Snyk 이슈에 대한 핵심 데이터가 포함되며 다음을 포함합니다:
 
-- 취약성 유형 및 CVE 식별자
-- 문제 심각도
-- 문제 해결이 가능한지 여부
+* 취약성 유형 및 CVE 식별자
+* 문제 심각도
+* 문제 해결이 가능한지 여부
 
-이벤트는 [Open Cybersecurity Schema Framework _finding_](https://schema.ocsf.io/1.0.0-rc.2/classes/security\_finding?extensions=) 스키마를 사용하여 JSON 형식으로 작성됩니다.
+이벤트는 [Open Cybersecurity Schema Framework _finding_](https://schema.ocsf.io/1.0.0-rc.2/classes/security_finding?extensions=) 스키마를 사용하여 JSON 형식으로 작성됩니다.
 
 {% hint style="info" %}
 모든 Snyk 이슈 데이터가 이러한 이벤트에 포함되는 것은 아니지만, Snyk는 계속해서 더 완전한 이벤트 데이터를 제공하기 위해 노력하고 있습니다.
