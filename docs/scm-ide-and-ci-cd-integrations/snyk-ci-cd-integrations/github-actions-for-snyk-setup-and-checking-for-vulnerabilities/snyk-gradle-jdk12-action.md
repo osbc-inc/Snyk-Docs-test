@@ -1,4 +1,4 @@
-# Snyk Gradle-jdk12 작업
+# Snyk Gradle-jdk12 액션
 
 이 페이지는 [Gradle (jdk12)](https://github.com/snyk/actions/tree/master/gradle-jdk12)을 위한 Snyk GitHub Action 사용 예시를 제공합니다. 실행 방법과 추가 정보에 대한 안내는 [GitHub Actions 통합](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)을 참조하세요.
 
@@ -70,7 +70,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-비공개 저장소에 업로드하기 위해서는 GitHub Advanced Security가 필요합니다. &#x20;
+비공개 저장소에 업로드하기 위해서는 GitHub Advanced Security가 필요합니다.
 
-`Advanced Security must be enabled for this repository to use code scanning` 오류가 발생하면 GitHub Advanced Security가 활성화되어 있는지 확인하세요. 자세한 정보는 "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하세요.
+`Advanced Security must be enabled for this repository to use code scanning` 오류가 발생하면 GitHub Advanced Security가 활성화되어 있는지 확인하세요. 자세한 정보는 "[저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하세요.
 {% endhint %}

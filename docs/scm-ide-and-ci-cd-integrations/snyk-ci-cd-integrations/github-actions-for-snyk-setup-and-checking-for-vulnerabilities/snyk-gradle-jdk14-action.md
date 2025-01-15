@@ -46,7 +46,7 @@ jobs:
 
 `--sarif-file-output` [Snyk CLI 옵션](https://docs.snyk.io/snyk-cli/cli-reference) 및 [GitHub SARIF 업로드 액션](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github)을 사용하여 Snyk 스캔 결과를 GitHub Code Scanning에 업로드할 수 있습니다.
 
-Snyk 액션이 취약점을 발견하면 실패합니다. 이로 인해 SARIF 업로드 액션이 실행되지 않습니다. 따라서 다음 예제와 같이 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) 옵션을 사용해야 합니다.
+Snyk 액션이 취약점을 발견하면 실패합니다. 이로 인해 SARIF 업로드 액션이 실행되지 않습니다. 따라서 다음 예제와 같이 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) 옵션을 사용해야 합니다.
 
 ```yaml
 name: 예제 Gradle (jdk14)를 사용한 작업 흐름 예제 Snyk
@@ -70,7 +70,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-비공개 저장소에 대한 업로드-sarif 옵션을 사용하려면 GitHub Advanced Security가 있어야 합니다. &#x20;
+비공개 저장소에 대한 업로드-sarif 옵션을 사용하려면 GitHub Advanced Security가 있어야 합니다.
 
-`Advanced Security must be enabled for this repository to use code scanning`이라는 오류가 표시되면 GitHub Advanced Security가 활성화되었는지 확인하십시오. 자세한 정보는 "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)" 참조.
+`Advanced Security must be enabled for this repository to use code scanning`이라는 오류가 표시되면 GitHub Advanced Security가 활성화되었는지 확인하십시오. 자세한 정보는 "[저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)" 참조.
 {% endhint %}

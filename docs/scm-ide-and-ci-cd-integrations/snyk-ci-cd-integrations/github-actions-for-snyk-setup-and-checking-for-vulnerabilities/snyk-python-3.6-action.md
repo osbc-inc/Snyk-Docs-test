@@ -1,4 +1,4 @@
-# Snyk Python-3.6 액션
+# Snyk Python-3.6 Action
 
 {% hint style="warning" %}
 본 이미지는 2024년 8월 12일에 제거되었습니다. 권장사항으로 사용자들은 지속적인 지원과 최신 기능을 보장하기 위해 최신 액션으로의 이전을 고려하는 것이 매우 권장됩니다. 현재 본 이미지를 사용 중이라면 이 날짜 이후의 업무 흐름 중단을 피하기 위해 가능한 빨리 업그레이드 계획을 세우십시오.
@@ -14,9 +14,9 @@ Snyk는 Python이 종속성을 다운로드한 후에 Snyk 체크를 실행하�
 
 Python 이미지는 현재 경로에 매니페스트 파일이 있는 경우에만 종속성을 확인하고 설치합니다. 즉, 작업이 트리거되는 경로에서의 경로입니다.
 
-- 현재 경로에 pip가 존재하고 Snyk가 `requirements.txt` 파일을 찾으면 Snyk가 `pip install -r requirements.txt`을 실행합니다.
-- 현재 경로에 pipenv가 존재하고 Snyk가 `Pipfile.lock`이 없는 `Pipfile`을 찾으면 Snyk가 `pipenv update`를 실행합니다.
-- 현재 경로에 `pyproject.toml`이 존재하고 Snyk가 `poetry.lock`을 찾지 못하면 Snyk가 `pip install poetry`를 실행합니다.
+* 현재 경로에 pip가 존재하고 Snyk가 `requirements.txt` 파일을 찾으면 Snyk가 `pip install -r requirements.txt`을 실행합니다.
+* 현재 경로에 pipenv가 존재하고 Snyk가 `Pipfile.lock`이 없는 `Pipfile`을 찾으면 Snyk가 `pipenv update`를 실행합니다.
+* 현재 경로에 `pyproject.toml`이 존재하고 Snyk가 `poetry.lock`을 찾지 못하면 Snyk가 `pip install poetry`를 실행합니다.
 
 루트 이외의 위치에 매니페스트 파일이 있는 경우 **반드시 설치**되어야 합니다.
 
@@ -86,7 +86,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-비공개 저장소에 sarif 업로드 옵션을 사용하려면 GitHub 고급 보안이 있어야 합니다. &#x20;
+비공개 저장소에 sarif 업로드 옵션을 사용하려면 GitHub 고급 보안이 있어야 합니다.
 
-`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되면 GitHub 고급 보안이 활성화되어 있는지 확인하십시오. 자세한 내용은 "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"을 참조하십시오.
+`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되면 GitHub 고급 보안이 활성화되어 있는지 확인하십시오. 자세한 내용은 "[저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"을 참조하십시오.
 {% endhint %}

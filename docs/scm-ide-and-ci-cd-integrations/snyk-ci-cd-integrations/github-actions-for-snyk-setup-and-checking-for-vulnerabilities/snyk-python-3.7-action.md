@@ -1,4 +1,4 @@
-# Snyk Python-3.7 동작
+# Snyk Python-3.7 Action
 
 {% hint style="warning" %}
 이 이미지는 2024년 8월 12일에 제거되었습니다. 계속된 지원 및 최신 기능을 보장하려면 사용자들이 더 최신의 액션으로 이전하는 것이 권장됩니다. 현재 해당 이미지를 사용 중이라면, 이 날짜 이후의 작업 흐름에서의 장애를 피하기 위해 가능한 빨리 업그레이드 계획을 세워야 합니다.
@@ -86,7 +86,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-개인 저장소의 경우 upload-sarif 옵션을 사용하려면 GitHub Advanced Security를 가져야 합니다. &#x20;
+개인 저장소의 경우 upload-sarif 옵션을 사용하려면 GitHub Advanced Security를 가져야 합니다.
 
-`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되면 GitHub Advanced Security가 활성화되어 있는지 확인하십시오. 자세한 정보는 "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하십시오.
+`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되면 GitHub Advanced Security가 활성화되어 있는지 확인하십시오. 자세한 정보는 "[저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하십시오.
 {% endhint %}

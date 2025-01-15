@@ -72,5 +72,5 @@ jobs:
 {% hint style="info" %}
 개인 저장소에 upload-sarif 옵션을 사용하려면 GitHub 고급 보안이 필요합니다.
 
-`Advanced Security must be enabled for this repository to use code scanning` 오류가 발생하는 경우, GitHub 고급 보안이 활성화되어 있는지 확인하십시오. 자세한 정보는 "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하십시오.
+`Advanced Security must be enabled for this repository to use code scanning` 오류가 발생하는 경우, GitHub 고급 보안이 활성화되어 있는지 확인하십시오. 자세한 정보는 "[저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"를 참조하십시오.
 {% endhint %}

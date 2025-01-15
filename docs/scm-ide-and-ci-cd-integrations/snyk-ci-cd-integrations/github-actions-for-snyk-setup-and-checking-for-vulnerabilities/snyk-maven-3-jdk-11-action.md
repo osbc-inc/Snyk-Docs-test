@@ -1,4 +1,4 @@
-# Snyk Maven-3-jdk-11 작업
+# Snyk Maven-3-jdk-11 Action
 
 이 페이지는 [Maven (3-jdk-11)](https://github.com/snyk/actions/tree/master/maven-3-jdk-11)을 위한 Snyk GitHub Action의 사용 예제를 제공합니다. 이 작업을 사용하는 방법 및 자세한 정보에 대한 지침은 [GitHub Actions 통합](https://docs.snyk.io/integrations/ci-cd-integrations/github-actions-integration)을 참조하세요.
 
@@ -44,7 +44,7 @@ jobs:
 
 ## Snyk Maven (3-jdk-11) 작업을 사용하여 Snyk 검사 결과를 GitHub Code Scanning에 업로드
 
-`--sarif-file-output` [Snyk CLI 옵션](https://docs.snyk.io/snyk-cli/cli-reference)과 [GitHub SARIF 업로드 액션](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github)을 사용하여 Snyk 검사 결과를 GitHub Code Scanning에 업로드할 수 있습니다. 다음 예제에서 표시된대로 Snyk 액션이 취약점을 발견하면 실패합니다. 이는 SARIF 업로드 작업이 실행되지 못하게 합니다. 따라서 다음 예제처럼 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idstepscontinue-on-error) 옵션을 사용해야 합니다:
+`--sarif-file-output` [Snyk CLI 옵션](https://docs.snyk.io/snyk-cli/cli-reference)과 [GitHub SARIF 업로드 액션](https://docs.github.com/en/code-security/secure-coding/uploading-a-sarif-file-to-github)을 사용하여 Snyk 검사 결과를 GitHub Code Scanning에 업로드할 수 있습니다. 다음 예제에서 표시된대로 Snyk 액션이 취약점을 발견하면 실패합니다. 이는 SARIF 업로드 작업이 실행되지 못하게 합니다. 따라서 다음 예제처럼 [continue-on-error](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) 옵션을 사용해야 합니다:
 
 ```yaml
 name: Snyk를 사용한 Maven (3-jdk-11) 예제 워크플로우
@@ -68,7 +68,7 @@ jobs:
 ```
 
 {% hint style="info" %}
-개인 repos에서 upload-sarif 옵션을 사용하려면 GitHub Advanced Security가 있어야 합니다. &#x20;
+개인 repos에서 upload-sarif 옵션을 사용하려면 GitHub Advanced Security가 있어야 합니다.
 
-`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되면 GitHub Advanced Security가 활성화되어 있는지 확인하세요. 자세한 내용은 "[Managing security and analysis settings for your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"을 참조하세요.
+`Advanced Security must be enabled for this repository to use code scanning` 오류가 표시되면 GitHub Advanced Security가 활성화되어 있는지 확인하세요. 자세한 내용은 "[저장소의 보안 및 분석 설정 관리](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)"을 참조하세요.
 {% endhint %}
