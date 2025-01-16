@@ -1,4 +1,4 @@
-# GitHub Enterprise - Flow and Tech
+# GitHub Enterprise - 흐름과 기술
 
 ## Flow <a href="#flow" id="flow"></a>
 
@@ -9,7 +9,7 @@
 5. 제외 파일에 지정된 기여자를 제거합니다 (`the exclusionFilePath` 플래그가 설정되어 유효한 경로가 제공된 경우).
 6. 결과를 출력합니다.
 
-## GitHub Enterprise API endpoints used <a href="#azure-api-endpoints-used" id="azure-api-endpoints-used"></a>
+## 사용된 GitHub Enterprise API 엔드포인트 <a href="#azure-api-endpoints-used" id="azure-api-endpoints-used"></a>
 
 * GitHub Enterprise에서 orgs 가져오기: `api/v3/organizations` (`fetchAllOrgs` 플래그가 **설정**된 경우) 또는 `api/v3/user/orgs` (`fetchAllOrgs` 플래그가 **설정되지 않은** 경우)
 * 가져온/제공된 orgs 목록과 관련 있는 repo/s 목록 가져오기: `api/v3/orgs/{Org}/repos`

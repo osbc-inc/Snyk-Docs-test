@@ -1,6 +1,6 @@
-#  CLI 결과 보기
+# View Snyk Code CLI results
 
-{Snyk CLI를 사용하여 `snyk code test` 명령의 결과에 대해 다음 작업을 수행할 수 있습니다:
+Snyk CLI를 사용하여 `snyk code test` 명령의 결과에 대해 다음 작업을 수행할 수 있습니다:
 
 * [{Snyk Code CLI 결과 분석](view-snyk-code-cli-results.md#analyze-snyk-code-cli-results): 테스트 결과 보기 및 취약점 분석.
 * [심각도 수준으로 결과 필터링](view-snyk-code-cli-results.md#filter-results-by-severity-level): 터미널에 표시된 `snyk code test` 결과를 특정 심각도 수준 이상의 문제만 표시하도록 필터링.
@@ -13,11 +13,11 @@
 `Snyk-to-html`을 사용하여 [HTML 형식으로 CLI 결과 표시도 가능합니다](../cli-tools/snyk-to-html.md).
 {% endhint %}
 
-##  CLI 결과 분석
+## CLI 결과 분석
 
 CLI에서 `snyk code test` 명령을 실행한 후 테스트 결과가 표시됩니다:
 
-<figure><img src="../../../.gitbook/assets/ - CLI - snyk code test - Results Details - 2.png" alt=" CLI에서 나온 테스트 결과"><figcaption><p> CLI에서 나온 테스트 결과</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20Details%20-%202.png" alt="CLI에서 나온 테스트 결과"><figcaption><p>CLI에서 나온 테스트 결과</p></figcaption></figure>
 
 Snyk 웹 UI에서 문제를 무시했다면, 이러한 문제는 여전히 CLI 결과에 나타납니다. 이 페이지의 각 섹션은 표시된 결과의 한 부분을 설명합니다.
 
@@ -27,35 +27,35 @@ Snyk 웹 UI에서 문제를 무시했다면, 이러한 문제는 여전히 CLI �
 
 각 문제에 대해 다음 정보가 제공됩니다:
 
-<figure><img src="../../../.gitbook/assets/ - CLI - snyk code test - Results - Issue summary - 2.png" alt=" 문제에 대한 CLI 테스트 정보"><figcaption><p> 문제에 대한 CLI 테스트 정보</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Issue%20summary%20-%202.png" alt="문제에 대한 CLI 테스트 정보"><figcaption><p>문제에 대한 CLI 테스트 정보</p></figcaption></figure>
 
-- 헤더: 문제의 심각도 수준 및 취약점 유형.
-- 경로: 문제가 발견된 파일 이름 및 파일에서 문제가 발견된 라인. 이 위치 세부 정보는 문제의 Sink를 나타내며, 테스트된 저장소에서 취약점이 실행될 수 있는 위치를 의미합니다.
-- 정보: 문제 데이터 흐름에 대한 설명.
+* 헤더: 문제의 심각도 수준 및 취약점 유형.
+* 경로: 문제가 발견된 파일 이름 및 파일에서 문제가 발견된 라인. 이 위치 세부 정보는 문제의 Sink를 나타내며, 테스트된 저장소에서 취약점이 실행될 수 있는 위치를 의미합니다.
+* 정보: 문제 데이터 흐름에 대한 설명.
 
 `Info` 섹션에 나타나는 메시지는 웹 UI의 **Data flow** 섹션에 있는 메시지와 동일합니다:
 
-<figure><img src="../../../.gitbook/assets/ - CLI - snyk code test - Results - Issue summary - In the UI - 2.png" alt=" 문제에 대한 CLI 테스트 정보"><figcaption><p> 문제에 대한 CLI 테스트 정보</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Issue%20summary%20-%20In%20the%20UI%20-%202.png" alt="문제에 대한 CLI 테스트 정보"><figcaption><p>문제에 대한 CLI 테스트 정보</p></figcaption></figure>
 
 ### 테스트 결과에 대한 일반 정보
 
 테스트 결과에 대한 일반 정보는 다음과 같은 세부 정보를 포함합니다:
 
-<figure><img src="../../../.gitbook/assets/ - CLI - snyk code test - Results - Test summary - 2.png" alt="CLI 테스트 결과 일반 정보 세부사항"><figcaption><p>CLI 테스트 결과 일반 정보 세부사항</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Test%20summary%20-%202.png" alt="CLI 테스트 결과 일반 정보 세부사항"><figcaption><p>CLI 테스트 결과 일반 정보 세부사항</p></figcaption></figure>
 
-- 테스트 성공: 테스트가 완료되었는지 여부.
-- 조직: 테스트가 실행된 조직의 Snyk ID 또는 내부 이름. 자세한 내용은 [CLI 테스트용 Snyk 조직 설정](set-the-snyk-organization-for-the-cli-tests.md)을 참조하십시오.
-- 테스트 유형: 결과를 생성한 테스트 명령의 유형. {Snyk Code}의 경우 항상 `정적 코드 분석`**입니다.**
-- 프로젝트 경로: 테스트된 저장소의 경로.
+* 테스트 성공: 테스트가 완료되었는지 여부.
+* 조직: 테스트가 실행된 조직의 Snyk ID 또는 내부 이름. 자세한 내용은 [CLI 테스트용 Snyk 조직 설정](set-the-snyk-organization-for-the-cli-tests.md)을 참조하십시오.
+* 테스트 유형: 결과를 생성한 테스트 명령의 유형. {Snyk Code}의 경우 항상 `정적 코드 분석`**입니다.**
+* 프로젝트 경로: 테스트된 저장소의 경로.
 
 ### 테스트 결과 요약
 
 테스트 결과 요약에는 다음과 같은 세부 정보가 포함됩니다:
 
-<figure><img src="../../../.gitbook/assets/ - CLI - snyk code test - Results - Summary - 2.png" alt=" 문제에 대한 CLI 테스트 결과 요약"><figcaption><p> 문제에 대한 CLI 테스트 결과 요약</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Summary%20-%202.png" alt="문제에 대한 CLI 테스트 결과 요약"><figcaption><p>문제에 대한 CLI 테스트 결과 요약</p></figcaption></figure>
 
-- {Snyk Code에서 발견한 취약점 문제 수.
-- 각 심각도 수준별 발견된 문제 수.
+* {Snyk Code에서 발견한 취약점 문제 수.
+* 각 심각도 수준별 발견된 문제 수.
 
 {% hint style="info" %}
 `snyk code test` 명령에는 종료 코드가 있습니다. 이러한 코드의 정의는 [이 코드들에 대한 도움말](../../commands/code-test.md#exit-codes)을 참조하십시오. 종료 코드를 보려면 `snyk code test -d`를 실행하십시오.
@@ -77,7 +77,7 @@ snyk code test <폴더/경로> --severity-threshold=<낮음|중간|높음>
 
 예를 들어, `snyk-goof-master` 폴더에서 8개의 문제가 발견되었는데, 그 중 4개는 높은 심각도 수준이었으며 4개는 중간 수준인 경우:
 
-<figure><img src="../../../.gitbook/assets/ - CLI - snyk code test - Results - Filter Severity - Example - before - 2.png" alt="의 높고 중간 심각도 문제에 대한 CLI 테스트 결과"><figcaption><p>의 높고 중간 심각도 문제에 대한 CLI 테스트 결과</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Filter%20Severity%20-%20Example%20-%20before%20-%202.png" alt="의 높고 중간 심각도 문제에 대한 CLI 테스트 결과"><figcaption><p>의 높고 중간 심각도 문제에 대한 CLI 테스트 결과</p></figcaption></figure>
 
 높은 심각도 수준 이상의 문제만 표시하려면 다음을 입력하십시오:
 
@@ -87,15 +87,15 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --severit
 
 결과는 높은 심각도 수준인 4개의 문제가 모두 표시됩니다. 낮은 심각도 수준의 문제는 표시되지 않습니다:
 
-![높은 심각도 수준의 {Snyk Code CLI 결과](<../../../.gitbook/assets/ - CLI - snyk code test - Results - Filter Severity - Example - after - 2.png>)
+![높은 심각도 수준의 {Snyk Code CLI 결과](../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Filter%20Severity%20-%20Example%20-%20after%20-%202.png)
 
 ## JSON 및 SARIF 파일에서 심각도 수준
 
 `snyk code test`를 실행하여 발견된 문제의 심각도 수준은 JSON 및 SARIF 파일에서 다르게 표시됩니다. JSON 및 SARIF 결과에서 사용되는 심각도 수준은 다음과 같습니다:
 
-- 높음 = **에러**
-- 중간 = **경고**
-- 낮음 = **노트/정보**
+* 높음 = **에러**
+* 중간 = **경고**
+* 낮음 = **노트/정보**
 
 크리티컬 표시는 {Snyk Code}에서 사용되지 않습니다.
 

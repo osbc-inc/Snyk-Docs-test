@@ -1,6 +1,6 @@
 # 이미지 스캔 및 모니터링
 
-{Snyk} Container와 함께 `test`와 `monitor` 명령어를 함께 사용하는 것이 일반적입니다. 빠른 확인을 위해 `snyk container test` 명령어를 사용할 수 있습니다. 지속적인 보증 및 결과를 쉽게 공유하기 위해 `snyk container monitor` 명령어를 사용할 수도 있습니다.
+Snyk Container와 함께 `test`와 `monitor` 명령어를 함께 사용하는 것이 일반적입니다. 빠른 확인을 위해 `snyk container test` 명령어를 사용할 수 있습니다. 지속적인 보증 및 결과를 쉽게 공유하기 위해 `snyk container monitor` 명령어를 사용할 수도 있습니다.
 
 ## 이미지 스캔
 

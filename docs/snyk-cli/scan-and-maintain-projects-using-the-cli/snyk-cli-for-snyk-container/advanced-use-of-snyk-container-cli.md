@@ -1,4 +1,4 @@
-#  CLI의 고급 사용
+# Advanced use of Snyk Container CLI
 
 ## 아카이브 스캔
 
@@ -11,8 +11,8 @@ snyk container test docker-archive:archive.tar
 snyk container test oci-archive:archive.tar
 ```
 
-{% hint style = "info" %}
-`crane`의 경우, Snyk는 `--format=oci`와 `--format=legacy` 형식만 지원합니다.&#x20;
+{% hint style="info" %}
+`crane`의 경우, Snyk은 `--format=oci`와 `--format=legacy` 형식만 지원합니다.
 {% endhint %}
 
 ## 다중 플랫폼 이미지 테스트
@@ -47,7 +47,7 @@ Docker가 설치된 경우, Snyk CLI `container` 명령은 미리 구성된 레�
 snyk container test <repository>:<tag> --username= --password=
 ```
 
-{% hint style = "info" %}
+{% hint style="info" %}
 둘 다 전달되면 옵션이 환경 변수보다 우선합니다.
 {% endhint %}
 
