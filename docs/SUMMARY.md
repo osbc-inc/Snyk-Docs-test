@@ -461,7 +461,7 @@
   * [스캔 시작](scan-with-snyk/start-scanning.md)
   * [프로젝트 저장소 가져오기](scan-with-snyk/import-project-repository/README.md)
     * [프로젝트 가져오기에서 디렉터리 및 파일 제외](scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md)
-    * [Remove imported repository from a Project](scan-with-snyk/import-project-repository/remove-imported-repository-from-a-project.md)
+    * [프로젝트에서 가져온 저장소 제거하기](scan-with-snyk/import-project-repository/remove-imported-repository-from-a-project.md)
   * [Pull Requests](scan-with-snyk/pull-requests/README.md)
     * [Snyk Pull or Merge Requests](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/README.md)
       * [Create automatic PRs for new fixes (Fix PRs)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md)
