@@ -1,13 +1,13 @@
-# Exclude directories and files from Project import
+# 프로젝트 가져오기에서 디렉터리 및 파일 제외
 
-파일은 다시 테스트에서 제외되어 에 의해 테스트되지 않으며 코드 분석 결과에 나타나지 않습니다. 프로젝트를 SCM 통합을 통해 가져오는 경우, 가져오기 창의 하단에 제외할 폴더만 추가하십시오.
+파일은 재테스트에서 제외되므로 Snyk Code에서 테스트되지 않으며 코드 분석 결과에 나타나지 않습니다. 프로젝트를 SCM 통합을 통해 가져오는 경우, 가져오기 창의 하단에 제외할 폴더만 추가하십시오.
 
 <figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt=""><figcaption><p>폴더 제외하기</p></figcaption></figure>
 
 {Snyk Code에서 저장소를 가져올 때, `.snyk` 파일을 사용하여 가져오기에서 특정 디렉토리 및 파일을 제외할 수 있습니다. `.snyk` 파일은 쉘 매칭 패턴(정규 표현식)을 포함할 수 있는 YAML 정책 파일이며, 가져오기 프로세스에서 제외할 디렉토리 및 파일을 지정할 수 있게 합니다. `.snyk` 파일은 가져올 저장소에 생성되어야 합니다.
 
 {% hint style="info" %}
-* 에서 `.snyk` 파일은 가져오기에서 디렉토리 및 파일을 제외하는 데만 사용됩니다. 기타 Snyk 제품처럼 취약점을 무시하거나 다른 작업에는 사용할 수 없습니다.
+* Synk 코드에서 `.snyk` 파일은 가져오기에서 디렉토리 및 파일을 제외하는 데만 사용됩니다. 다른 Snyk 제품처럼 취약점을 무시하거나 다른 작업에는 사용할 수 없습니다.
 * 현재 `.snyk` 파일의 `exclude` 옵션은 Snyk 웹 UI 및 CLI 환경에서만 적용됩니다. `exclude` 옵션은 IDE 환경에서 로 작업할 때 사용할 수 없습니다.
 * 일부 상황에서 `.snyk` 파일이 잘못된 경우 제외된 파일이 제외되지 않을 수 있습니다. 이러한 상황에서는 `.snyk` 파일 없이 스캔이 계속됩니다.
 {% endhint %}
@@ -46,20 +46,20 @@ exclude:
 `global` 또는 `code`를 사용하여 Snyk 코드 테스트에서 지정된 디렉토리 및 파일을 제외할 수 있습니다. `code`는 분석에만 적용되며, `global`은 현재 Snyk Code를 사용하는 분석에만 적용되지만 나중에 다른 제품에서도 적용될 수 있습니다.
 {% endhint %}
 
-### **`.snyk` 파일 만들기 시 고려해야 할 사항**
+### **`.snyk` 파일 생성 시 고려해야 할 사항**
 
 * 규칙 안의 경로는 `.snyk` 파일 위치를 기준으로 상대적이어야 합니다.
 * 모든 규칙은 유효한 경우 앞에 대시가 있어야 합니다: `- <exclusion_rule>`
 * 별표 문자 `*`와 같은 특수 문자 및 패턴으로 시작하는 규칙의 경우, 이를 이중 인용부호(`" "`)로 감싸야 합니다. 이렇게 하면 잘못된 해석이나 의도하지 않은 동작을 방지하여 단일 entity로 취급됩니다. 예를 들어, `"*/src"`
 * 들여쓰기 사용에 대한 고려 사항은 다음과 같습니다:
-  * `.snyk` YAML 파일의 구문을 사용할 때, 새 줄 및 들여쓰기에 주의해야 합니다. 잘못된 들여쓰기는 제외 명세의 실행을 방해할 수 있습니다.
+  * `.snyk` YAML 파일의 구문을 사용할 때, 새 줄 및 들여쓰기에 주의해야 합니다. 잘못된 들여쓰기는 제외 사양을 방해할 수 있습니다.
   * 들여쓰기에 탭을 사용하지 마십시오. 들여쓰기에는 공백만 사용하십시오.
   * 구문을 올바르게 사용하는지 확인하려면 [YAML Lint](http://www.yamllint.com/)와 같은 YAML 검증기를 사용할 수 있습니다. 일부 YAML 검증기에서는 들여쓰기에 탭과 공백을 구별하지 않을 수 있습니다. 탭을 사용하면 검증기가 구문을 승인할 수 있지만 제외 명세가 실행되지 않을 수 있습니다.
 * 쉘 매칭 패턴 구문에 대한 자세한 내용은 다음을 참조하십시오:
   * GNU Org - [Shell 패턴 매칭](https://www.gnu.org/software/findutils/manual/html_node/find_html/Shell-Pattern-Matching.html)
-  * Docstore - [예제와 함께 빠른 참조 패턴 매칭](https://docstore.mik.ua/orelly/unix/upt/ch26_10.htm)
+  * Docstore - [예제를 통한 패턴 매칭 퀵 레퍼런스](https://docstore.mik.ua/orelly/unix/upt/ch26_10.htm)&#x20;
 
-## **`.snyk` 파일을 사용하여 가져오기에서 디렉토리 및 파일 제외**
+## **`.snyk` 파일을 사용하여 가져오기에서 디렉토리 및 파일 제외하기**
 
 아래 단계를 따라 `.snyk` 파일을 사용하여 가져오기 프로세스에서 디렉토리 및 파일을 제외합니다:
 
@@ -90,7 +90,7 @@ exclude:
 
 *   이미 Snyk로 가져온 경우, 다음과 같이 저장소를 재테스트합니다:
 
-    **프로젝트** 페이지에서 리포지토리의 **코드 분석** 프로젝트를 클릭합니다. 그런 다음 **코드 분석** 페이지에서 **지금 다시 테스트**를 클릭합니다.
+    **프로젝트** 페이지에서 리포지토리의 **코드 분석** 프로젝트를 클릭합니다. 그런 다음 **코드 분석** 페이지에서 **Restart now**를 클릭합니다.
 
 <figure><img src="../../.gitbook/assets/code_analysis_retest_now.png" alt="지금 다시 테스트 옵션 클릭"><figcaption><p>지금 다시 테스트 옵션</p></figcaption></figure>
 
@@ -114,8 +114,8 @@ exclude:
 
 <figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FVKHsTEk0phuBp51gNsGl%252FSnyk%2520Code%2520-%2520Exlude%2520from%2520Import%2520-%2520Example%2520-%2520Command.png%3Falt%3Dmedia%26token%3Dc07d3708-19ac-4409-a087-5767605aabc9&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=55458cae&#x26;sv=2" alt=".snyk 파일 명령어"><figcaption><p><code>.snyk</code> 파일 명령어</p></figcaption></figure>
 
-3\. **snyk-goof** 리포지토리에서 **코드 분석** 페이지에서 **지금 다시 테스트** 옵션을 클릭하여 리테스트합니다.
+3\. **snyk-goof** 리포지토리에서 **코드 분석** 페이지에서 **Restart now** 옵션을 클릭하여 재테스트합니다.
 
-`app.js`와 `db.js` 파일은 다시 테스트에서 제외되어 제외되며, 에 의해 테스트되지 않으며 코드 분석 결과에 나타나지 않습니다. 이제 오직 다섯 개의 취약성 문제만 발견됩니다:
+`app.js`와 `db.js` 파일은 재테스트에서 제외되었으므로 스닉 코드에서 테스트하지 않았으며 코드 분석 결과에도 나타나지 않습니다. 이제 오직 다섯 개의 취약성 문제만 발견됩니다:
 
 <figure><img src="../../.gitbook/assets/image (545) (1).png" alt="제외된 후 파일에서 발견된 문제의 예시"><figcaption><p>제외된 후 발견된 문제</p></figcaption></figure>
