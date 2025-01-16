@@ -8,7 +8,7 @@ Snyk 웹 UI에서 저장소를 선택하고 **선택한 저장소 추가** 버�
 
 <figure><img src="../../.gitbook/assets/projects_page_targets.png" alt=""><figcaption><p>프로젝트 페이지의 대상 폴더</p></figcaption></figure>
 
-선택한 저장소의 일부 파일이 가져오기되지 않은 경우 가져오기되지 않은 프로젝트에 대한 알림을 받습니다. 
+선택한 저장소의 일부 파일이 가져오기 되지 않은 경우 해당 프로젝트에 대한 알림을 받습니다.
 
 ## 다음 단계?
 

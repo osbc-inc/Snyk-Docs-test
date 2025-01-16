@@ -459,7 +459,7 @@
 * [Snyk로 스캔하기](scan-with-snyk/README.md)
   * [스캔 개요](scan-with-snyk/scanning-overview.md)
   * [스캔 시작](scan-with-snyk/start-scanning.md)
-  * [Import Project repository](scan-with-snyk/import-project-repository/README.md)
+  * [프로젝트 저장소 가져오기](scan-with-snyk/import-project-repository/README.md)
     * [Exclude directories and files from Project import](scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md)
     * [Remove imported repository from a Project](scan-with-snyk/import-project-repository/remove-imported-repository-from-a-project.md)
   * [Pull Requests](scan-with-snyk/pull-requests/README.md)
