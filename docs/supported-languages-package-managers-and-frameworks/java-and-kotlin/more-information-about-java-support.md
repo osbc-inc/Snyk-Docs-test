@@ -1,8 +1,4 @@
----
-description: (아래 - 패키지 레지스트리 통합) 확인 필요
----
-
-# More information about Java support
+# Java 지원에 대한 자세한 정보
 
 ## Maven Bill of Materials (BOM)
 
@@ -84,9 +80,9 @@ BOM 파일에는 다음이 포함됩니다:
 
 ### 의존성 해결
 
-Snyk은BOM의 `dependencyManagement` 조회에 있는 버전을 부모로 가져온 프로젝트 POM에서 선언된 어떤 의존성에 적용합니다.
+Snyk은 BOM의 `dependencyManagement` 조회에 있는 버전을 부모로 가져온 프로젝트 POM에서 선언된 어떤 의존성에 적용합니다.
 
-Snyk이BOM 파일을 스캔할 때, `dependencyManagement` 내용은 해당 파일의 의존성으로 간주되지 않습니다. 이것들은 오직 조회용입니다.
+Snyk이 BOM 파일을 스캔할 때, `dependencyManagement` 내용은 해당 파일의 의존성으로 간주되지 않습니다. 이것들은 오직 조회용입니다.
 
 다음은 이전 예시 파일 각각을 어떻게 분석하고 처리하는지 설명합니다.
 
@@ -99,7 +95,7 @@ BOM이 `dependencyManagement` 외부에 직접 의존성을 가지고 있는 경
 
 ### 수정 PRs
 
-Snyk는 Fix PR 기능을 통해 취약한 패키지를 업그레이드하는 권장 사항을 제공합니다.
+Snyk은 Fix PR 기능을 통해 취약한 패키지를 업그레이드하는 권장 사항을 제공합니다.
 
 Fix PR은 문제가 보고된 POM 파일 내에서 관리되는 버전의 의존성에 대해서만 작성할 수 있습니다.
 
@@ -109,9 +105,9 @@ Fix PR은 문제가 보고된 POM 파일 내에서 관리되는 버전의 의존
 
 Artifactory 및 Nexus 패키지 레지스트리 통합은 Snyk 엔터프라이즈 요금제 사용자에게 제공됩니다.
 
-* 는 Artifactory 또는 Nexus를 통해 개인 패키지를 통해 전환 의존성을 해결합니다.
+* Snyk 오픈 소스는 Artifactory 또는 Nexus를 통해 개인 패키지를 통해 전환 의존성을 해결합니다.
 * Snyk은 공개적으로 사용 가능한 인스턴스에 사용자 이름과 비밀번호를 사용하거나 Snyk 브로커를 사용하여 네트워크의 사설 서버에 연결할 수 있습니다.
-* 는 Artifactory 및 Nexus 모두와 보안 테스트를 위해 레지스트리와 대화하거나 지역 확인자로써 통합을 제공합니다. [Nexus 저장소 관리자 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) 및 [Artifactory 레지스트리 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)을 참조하세요.
+* Snyk 오픈 소스는 Artifactory 및 Nexus 모두와 보안 테스트를 위해 레지스트리와 대화하거나 지역 확인자로써 통합을 제공합니다. [Nexus 저장소 관리자 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) 및 [Artifactory 레지스트리 설정](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)을 참조하세요.
 
 {% hint style="info" %}
 Snyk 엔터프라이즈 사용자가 아니고 Artifactory 또는 Nexus를 사용하는 경우, 분석은 빌드 시스템이 종속성을 검색하고 로컬로 보유하기 때문에 CLI를 사용하여 최상으로 실행됩니다.
