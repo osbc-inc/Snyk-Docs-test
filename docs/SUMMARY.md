@@ -458,7 +458,7 @@
   * [자산 인벤토리 기능](manage-assets/assets-inventory-features.md)
 * [Snyk로 스캔하기](scan-with-snyk/README.md)
   * [스캔 개요](scan-with-snyk/scanning-overview.md)
-  * [Start scanning](scan-with-snyk/start-scanning.md)
+  * [스캔 시작](scan-with-snyk/start-scanning.md)
   * [Import Project repository](scan-with-snyk/import-project-repository/README.md)
     * [Exclude directories and files from Project import](scan-with-snyk/import-project-repository/exclude-directories-and-files-from-project-import.md)
     * [Remove imported repository from a Project](scan-with-snyk/import-project-repository/remove-imported-repository-from-a-project.md)
