@@ -1,4 +1,4 @@
-# Snyk Security in Jira Cloud Integration
+# Jira Cloud 통합의 Snyk Security
 
 {% hint style="info" %}
 Jira Server 및 Jira Data Center는 지원되지 않습니다.
@@ -81,7 +81,7 @@ Jira에 연결한 Snyk 대상 또는 저장소를 삭제하려면 해당 Jira �
 
 <figure><img src="../../.gitbook/assets/2024-12-13_10-19-14.png" alt=""><figcaption><p>동작 추가 및 새로운 규칙에 대한 이슈 생성</p></figcaption></figure>
 
-5. **요약** 필드에 "Fix "를 추가합니다. **설명**에는 \를 넣습니다.
+5. **요약** 필드에 "\{{취약점.표시 이름\}} Fix "를 추가합니다. **설명**에는 \{{vulnerability.description.wiki\}}를 입력합니다.
 
 <figure><img src="../../.gitbook/assets/2024-12-13_10-19-31.png" alt=""><figcaption><p>요약 필드와 설명을 새로운 룰에 추가</p></figcaption></figure>
 

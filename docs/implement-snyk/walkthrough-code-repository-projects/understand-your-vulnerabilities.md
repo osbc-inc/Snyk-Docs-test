@@ -1,4 +1,4 @@
-# Understand your vulnerabilities
+# 취약점 파악
 
 {% hint style="info" %}
 **요약**\
@@ -47,7 +47,7 @@ Snyk은 취약성에 대한 자세한 정보를 위한 자원을 제공하며, �
 <figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-b4bd2161ca3811f4d9a0d5d02e0b3bf4197f8b8b%252Fimage%2520%28149%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%282%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=10a3cdec&#x26;sv=2" alt=""><figcaption><p>Snyk 취약점 데이터베이스 예시 항목</p></figcaption></figure>
 
 {% hint style="info" %}
-및이슈 카드에는 해당 영역에 대한 별도의 정보 세트가 있습니다.
+[Snyk Code](https://docs.snyk.io/scan-with-snyk/snyk-code) 및 [Snyk IaC](https://docs.snyk.io/scan-with-snyk/snyk-iac/scan-your-iac-source-code) 발급 카드에는 이러한 영역에 대한 별도의 정보 세트가 있습니다.
 {% endhint %}
 
 ### Snyk 학습 액세스
