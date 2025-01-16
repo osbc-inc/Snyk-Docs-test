@@ -1,4 +1,4 @@
-# CLI 결과를 Snyk 웹 UI와 공유하기
+# Snyk 웹 UI로 CLI 결과 공유
 
 알려진 구성 문제를 해결하기 위해 [CLI](../../) `snyk iac test` 명령을 사용할 수 있습니다.
 
@@ -9,7 +9,7 @@
 {% hint style="info" %}
 [사용자 지정 규칙](../../../scan-with-snyk/snyk-iac/build-your-own-iac-custom-rules/current-iac-custom-rules/) 및 결과 공유 기능을 함께 사용하는 것은 현재 지원되지 않습니다.
 
-Snyk는 파일 내용을 네트워크를 통해 공유하지 않으며, 방금 스캔된 구성 문제에 대한 필요한 메타데이터만 공유합니다.
+Snyk은 파일 내용을 네트워크를 통해 공유하지 않으며, 방금 스캔된 구성 문제에 대한 필요한 메타데이터만 공유합니다.
 {% endhint %}
 
 ## `snyk iac test --report` 예제 출력
@@ -94,4 +94,4 @@ Snyk 웹 UI를 사용하거나 프로젝트 스캔 시 `.snyk` 정책 파일을 
 ```
 snyk iac test myproject --report \
     --target-reference="$(git branch --show-current)"
-```  
+```

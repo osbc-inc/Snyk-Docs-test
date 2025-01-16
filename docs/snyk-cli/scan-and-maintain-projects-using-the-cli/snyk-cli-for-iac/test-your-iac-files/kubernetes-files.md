@@ -1,6 +1,6 @@
-# 쿠버네티스 파일
+# Kubernetes 파일
 
-Snyk의 를 사용하면 CLI를 통해 구성 파일을 테스트할 수 있습니다. 쿠버네티스용 Snyk의 는 다음을 지원합니다:
+코드형 Snyk 인프라를 사용하면 CLI로 구성 파일을 테스트할 수 있습니다. 쿠버네티스용 Snyk의 Infrastructure는 다음을 지원합니다:
 
 * 배포(Deployments), 파드(Pods) 및 서비스(Services)
 * 크론잡(CronJobs), 잡(Jobs), 스테이트풀세트(StatefulSet), 레플리카세트(ReplicaSet), 데몬세트(DaemonSet) 및 레플리케이션 컨트롤러(ReplicationController)

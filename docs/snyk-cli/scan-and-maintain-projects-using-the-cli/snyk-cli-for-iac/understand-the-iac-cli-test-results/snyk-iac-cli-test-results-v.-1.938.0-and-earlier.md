@@ -1,10 +1,10 @@
-# Snyk IaC CLI 테스트 결과 (v. 1.938.0 및 이전 버전)
+# Snyk IaC CLI 테스트 결과(버전 1.938.0 이하)
 
 {% hint style="info" %}
 이 섹션의 지침은 Terraform, Kubernetes, CloudFormation 및 ARM을 포함한 Snyk Infrastructure as Code에서 지원하는 모든 파일 형식에 적용됩니다.
 {% endhint %}
 
-Snyk는 구성 파일을 분석하여 문제를 찾고 해결할 수 있도록 도와드립니다.
+Snyk은 구성 파일을 분석하여 문제를 찾고 해결할 수 있도록 도와드립니다.
 
 예를 들어, Terraform 파일을 스캔하는 경우 다음 명령을 실행하십시오:
 
