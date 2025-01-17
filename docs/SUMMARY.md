@@ -971,7 +971,7 @@
     * [Node.js 4를 지원하는 최신 버전의 CLI](snyk-cli/install-or-update-the-snyk-cli/most-recent-version-of-the-cli-that-supports-node.js-4.md)
     * [Alpine Linux운영 체제에서 CLI 및 Jenkins 플러그인을 위한 전제 조건](snyk-cli/install-or-update-the-snyk-cli/prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)
     * [Apple M1 또는 M2 머신에서 버전 1.1230.0 이전 CLI 릴리스 사용](snyk-cli/install-or-update-the-snyk-cli/using-cli-releases-before-version-1.1230.0-on-an-apple-m1-or-m2-machine.md)
-  * [Authenticate to use the CLI](snyk-cli/authenticate-to-use-the-cli.md)
+  * [CLI 사용을 위한 인증](snyk-cli/authenticate-to-use-the-cli.md)
   * [Configure the Snyk CLI](snyk-cli/configure-the-snyk-cli/README.md)
     * [Environment variables for Snyk CLI](snyk-cli/configure-the-snyk-cli/environment-variables-for-snyk-cli.md)
     * [Configure Snyk CLI to connect to Snyk API](snyk-cli/configure-the-snyk-cli/configure-snyk-cli-to-connect-to-snyk-api.md)
