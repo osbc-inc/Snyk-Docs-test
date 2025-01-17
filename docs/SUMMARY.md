@@ -169,7 +169,7 @@
         * [코드 에이전트 설정](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-code-agent.md)
         * [Broker 클라이언트 설정](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/README.md)
           * [Snyk Broker 클라이언트 Docker 이미지 다운로드 또는 업데이트](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/download-or-update-the-snyk-broker-client-docker-image.md)
-          * [Run the Broker client without the code snippet display](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-without-the-code-snippet-display.md)
+          * [코드 스니펫 디스플레이 없이 Broker 클라이언트 실행](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-without-the-code-snippet-display.md)
           * [코드 스니펫 표시를 사용하여 Broker 클라이언트를 실행합니다.](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/set-up-the-broker-client/run-the-broker-client-with-the-code-snippets-display.md)
         * [Snyk Broker 코드 에이전트 설정 테스트하기](enterprise-setup/snyk-broker/snyk-broker-code-agent/install-snyk-broker-code-agent-using-docker/test-the-snyk-broker-code-agent-setup.md)
     * [Snyk Broker - 컨테이너 레지스트리 에이전트](enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/README.md)

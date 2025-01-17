@@ -1,8 +1,4 @@
----
-description: 사진 깨짐
----
-
-# Run the Broker client without the code snippet display
+# 코드 스니펫 디스플레이 없이 Broker 클라이언트 실행
 
 브로커 클라이언트 이미지가 사용자의 기기에 저장된 후, `docker run` 명령어를 사용하여 이미지를 실행하고 브로커 클라이언트를 시작합니다.
 
