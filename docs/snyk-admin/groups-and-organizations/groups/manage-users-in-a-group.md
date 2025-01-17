@@ -1,7 +1,7 @@
 # 그룹에서 사용자 관리
 
 {% hint style="info" %}
-**기능 가용성**
+**기능 사용 여부**
 
 그룹은 Enterprise 요금제에서만 사용 가능합니다. 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)을 참조하십시오.
 {% endhint %}
@@ -12,11 +12,11 @@
 
 그룹 관리자로서 다음을 수행할 수 있습니다:
 
-- [그룹 및 조직 멤버 보기](manage-users-in-a-group.md#view-group-and-organization-members)
-- [개별 멤버 보기](manage-users-in-a-group.md#view-individual-members)
-- [그룹 멤버를 그룹 관리자로 승격](manage-users-in-a-group.md#promote-a-group-member-to-a-group-admin)
-- [그룹 멤버 삭제](manage-users-in-a-group.md#delete-group-members)
-- [보기 필터링 및 정렬](manage-users-in-a-group.md#filter-and-sort-views-of-group-members)
+* [그룹 및 조직 멤버 보기](manage-users-in-a-group.md#view-group-and-organization-members)
+* [개별 멤버 보기](manage-users-in-a-group.md#view-individual-members)
+* [그룹 멤버를 그룹 관리자로 승격](manage-users-in-a-group.md#promote-a-group-member-to-a-group-admin)
+* [그룹 멤버 삭제](manage-users-in-a-group.md#delete-group-members)
+* [보기 필터링 및 정렬](manage-users-in-a-group.md#filter-and-sort-views-of-group-members)
 
 {% hint style="warning" %}
 외부 사용자를 직접 그룹에 추가할 수 없습니다. 먼저 조직에 추가하고 그다음 그룹에 추가해야 합니다. 자세한 내용은 [조직에서 사용자 관리](../organizations/manage-users-in-organizations.md)를 참조하십시오.
@@ -78,3 +78,4 @@
 열 제목을 클릭하여 사용자 보기를 정렬할 수 있습니다:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2022-03-11 at 09.01.07.png" alt="그룹 멤버 열 제목"><figcaption><p>그룹 멤버 열 제목</p></figcaption></figure>
+

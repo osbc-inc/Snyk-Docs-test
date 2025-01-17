@@ -1,7 +1,7 @@
 # 그룹 및 조직
 
 {% hint style="info" %}
-**기능 가용성**\
+**기능 지원 여부**\
 Snyk 그룹은 엔터프라이즈 플랜에서만 사용 가능합니다. 자세한 정보는 [플랜 및 가격](https://snyk.io/plans/)을 참조하십시오.
 {% endhint %}
 
@@ -13,7 +13,7 @@ Snyk에는 Snyk 스캔과 기능에 대한 액세스를 제어할 수 있는 계
 
 * [**그룹**](groups/): 대부분 그룹은 전체 Snyk 사용자를 포괄하지만 대기업은 여러 그룹을 가질 수 있습니다. 그룹에는 여러 조직을 포함할 수 있습니다.
 * [**조직**](organizations/): 조직은 팀과 같은 특정 비즈니스 영역을 나타냅니다. 조직에는 여러 프로젝트를 포함할 수 있습니다.
-* [**프로젝트**](../snyk-projects/)**:** 프로젝트는 Snyk가 문제를 스캔하는 항목을 기반으로 설정됩니다. 각 프로젝트는 스캔 결과를 보여줍니다. 해당 프로젝트에서 문제를 어떻게 스캔할지 정의하도록 프로젝트를 구성할 수 있습니다.
+* [**프로젝트**](../snyk-projects/)**:** 프로젝트는 Snyk이 문제를 스캔하는 항목을 기반으로 설정됩니다. 각 프로젝트는 스캔 결과를 보여줍니다. 해당 프로젝트에서 문제를 어떻게 스캔할지 정의하도록 프로젝트를 구성할 수 있습니다.
 
 Snyk에는 또한 [조직 내 사용자 관리](organizations/manage-users-in-organizations.md) 및 [그룹 내 사용자 관리](groups/manage-users-in-a-group.md) 기능이 있습니다. Snyk API v1을 사용하여 [조직에 사용자를 할당](../user-management-with-the-api/provision-users-to-organizations-using-the-api.md)하거나 [그룹과 조직에서 회원을 제거](../user-management-with-the-api/remove-members-from-groups-and-orgs-using-the-api.md)할 수 있습니다.
 
