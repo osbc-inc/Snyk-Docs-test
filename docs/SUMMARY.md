@@ -801,7 +801,7 @@
       * [View dependencies](manage-risk/reporting/dependencies-and-licenses/view-dependencies.md)
       * [View licenses](manage-risk/reporting/dependencies-and-licenses/view-licenses.md)
 * [Admin](snyk-admin/README.md)
-  * [Structure your account for high application performance](snyk-admin/structure-your-account-for-high-application-performance.md)
+  * [높은 애플리케이션 성능을 위한 계정 구조화](snyk-admin/structure-your-account-for-high-application-performance.md)
   * [Groups and Organizations](snyk-admin/groups-and-organizations/README.md)
     * [Groups](snyk-admin/groups-and-organizations/groups/README.md)
       * [Manage users in a Group](snyk-admin/groups-and-organizations/groups/manage-users-in-a-group.md)
