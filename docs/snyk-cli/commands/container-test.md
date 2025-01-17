@@ -1,4 +1,4 @@
-# 컨테이너 테스트
+# Container test
 
 ## 사용법
 
@@ -96,15 +96,15 @@ stdout를 통해 인간이 읽을 수 있는 테스트 결과를 표시하고 �
 수정 가능한 취약점이 있는 경우에만 실패합니다.
 
 * `all`: 업그레이드나 패치할 수 있는 취약점이 하나 이상 있는 경우 실패합니다.
-* `upgradable`: Snyk가 계산된 복구 가능한 원순결을 가지고 있는 취약점이 하나 이상 있는 경우 실패합니다.
+* `upgradable`: Snyk이 계산된 복구 가능한 원순결을 가지고 있는 취약점이 하나 이상 있는 경우 실패합니다.
 
-Snyk가 `snyk test`로 준수하지 않을 수 있는 메타데이터 제약을 확인하면 고쳐도 코드가 깨지지 않도록 회피하려고 합니다. 수동으로 고칠 수 있는 곳을 식별하고 적용할 수 있을 수 있습니다.
+Snyk이 `snyk test`로 준수하지 않을 수 있는 메타데이터 제약을 확인하면 고쳐도 코드가 깨지지 않도록 회피하려고 합니다. 수동으로 고칠 수 있는 곳을 식별하고 적용할 수 있을 수 있습니다.
 
 ### `--app-vulns`
 
 컨테이너 이미지의 애플리케이션 종속성과 운영 체제에서 취약점을 모두 한 번에 스캔합니다.
 
-1.1090.0 (2023-01-24) 버전 이상의 CLI 버전에서는 Snyk가 이미지의 애플리케이션 종속성을 기본적으로 스캔합니다. `--app-vulns` 플래그를 지정할 필요가 없습니다.
+1.1090.0 (2023-01-24) 버전 이상의 CLI 버전에서는 Snyk이 이미지의 애플리케이션 종속성을 기본적으로 스캔합니다. `--app-vulns` 플래그를 지정할 필요가 없습니다.
 
 1.962.0부터 v1.1089.0까지의 CLI 버전에서는 운영 체제 및 애플리케이션 취약점을 JSON 형식으로 결과에서 볼 수 있게 하려면 `--app-vulns` 옵션을 사용하세요.
 
@@ -116,7 +116,7 @@ Snyk가 `snyk test`로 준수하지 않을 수 있는 메타데이터 제약을 
 
 ### `--nested-jars-depth`
 
-`app-vulns`를 활성화했을 때, `--nested-jars-depth=n` 옵션을 사용하여 Snyk가 얼마나 많은 수준의 중첩된 jar를 풀어야 하는지 설정합니다. 깊이는 숫자여야 합니다.
+`app-vulns`를 활성화했을 때, `--nested-jars-depth=n` 옵션을 사용하여 Snyk이 얼마나 많은 수준의 중첩된 jar를 풀어야 하는지 설정합니다. 깊이는 숫자여야 합니다.
 
 ### `--exclude-base-image-vulns`
 
@@ -156,6 +156,6 @@ Snyk가 `snyk test`로 준수하지 않을 수 있는 메타데이터 제약을 
 
 `$ snyk container test app@sha256:17cb37098f0efb819c075eea4ff2a495be909a396e86ece317a6e3a8968e025c --file=Dockerfile`
 
-더 많은 정보 및 예제를 보려면 [고급  CLI 사용법](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)를 참조하세요.
+더 많은 정보 및 예제를 보려면 [고급 CLI 사용법](https://docs.snyk.io/snyk-container/snyk-cli-for-container-security/advanced-snyk-container-cli-usage)를 참조하세요.
 
 또한 [컨테이너 이미지에서 애플리케이션 취약점 감지하기](https://docs.snyk.io/scan-using-snyk/snyk-container/use-snyk-container-from-the-web-ui/detect-application-vulnerabilities-in-container-images)도 참조하세요.

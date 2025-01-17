@@ -1,4 +1,4 @@
-# IaC 캡처
+# IaC capture
 
 ## 사용법
 
@@ -10,7 +10,7 @@
 
 `snyk iac capture` 명령은 Terraform 상태 파일로부터 리소스 ID 및 이름과 같은 필수 정보를 포함하는 매핑 아티팩트를 생성하여 코드에서 클라우드로 리소스 매핑을 생성하는 데 필요한 최소한의 정보를 포함하며, 해당 매핑 아티팩트를 Snyk로 전송합니다.
 
-Snyk는 이 정보를 사용하여 클라우드 문제와 해당 IaC 파일을 연결합니다. 이 링크는 Snyk 웹 UI에서 볼 수 있습니다.
+Snyk은 이 정보를 사용하여 클라우드 문제와 해당 IaC 파일을 연결합니다. 이 링크는 Snyk 웹 UI에서 볼 수 있습니다.
 
 자세한 정보는 [IaC에서 클라우드 문제 해결하기](https://docs.snyk.io/scan-using-snyk/scan-infrastructure/iac+-code-to-cloud-capabilities/fix-cloud-issues-in-iac)를 참조하십시오.
 

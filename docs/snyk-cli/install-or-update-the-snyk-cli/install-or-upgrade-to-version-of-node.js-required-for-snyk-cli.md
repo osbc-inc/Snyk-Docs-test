@@ -1,6 +1,6 @@
-# Snyk CLI에 필요한 Node.js 버전 설치 또는 업그레이드
+# Snyk CLI에 필요한 Node.js 버전을 설치하거나 업그레이드하세요.
 
-Snyk CLI 버전 1.853.0 이상에는 Node.js v12 이상이 필요합니다. Snyk는 완전한 호환성을 보장하기 위해 최신 버전의 Node.js 및 npm을 사용하는 것을 권장합니다.
+Snyk CLI 버전 1.853.0 이상에는 Node.js v12 이상이 필요합니다. Snyk은 완전한 호환성을 보장하기 위해 최신 버전의 Node.js 및 npm을 사용하는 것을 권장합니다.
 
 ### Node.js 업그레이드 방법
 

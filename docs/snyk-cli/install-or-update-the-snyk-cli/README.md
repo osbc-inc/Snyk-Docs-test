@@ -18,7 +18,7 @@ IDE용 CLI를 설치하는 방법에 대한 자세한 정보는 [IDE 문서](../
 
 원하는 플랫폼용 (macOS, Linux, Windows) Snyk CLI의 독립 실행 파일을 다운로드하려면 [GitHub 릴리스](https://github.com/snyk/snyk/releases)를 사용합니다.
 
-Snyk는 또한 Snyk 콘텐츠 전송 네트워크(CDN)에서 이러한 독립 실행 파일을 제공합니다. 최신 `release.json` [파일](https://downloads.snyk.io/cli/stable/release.json)에서 다운로드 링크를 확인하십시오. 특정 버전 또는 플랫폼에 대한 예시는 다음과 같습니다:
+Snyk은 또한 Snyk 콘텐츠 전송 네트워크(CDN)에서 이러한 독립 실행 파일을 제공합니다. 최신 `release.json` [파일](https://downloads.snyk.io/cli/stable/release.json)에서 다운로드 링크를 확인하십시오. 특정 버전 또는 플랫폼에 대한 예시는 다음과 같습니다:
 
 * [https://downloads.snyk.io/cli/v1.666.0/release.json](https://downloads.snyk.io/cli/v1.666.0/release.json)
 * [https://downloads.snyk.io/cli/stable/snyk-macos](https://downloads.snyk.io/cli/stable/snyk-macos)
@@ -90,7 +90,7 @@ Yarn을 사용하는 경우 `yarn global add snyk` 명령을 실행하여 **설�
 
 ## Docker 이미지에서 Snyk CLI
 
-Snyk CLI는 Docker 이미지에서 실행할 수도 있습니다. Snyk는 [Docker Hub의 snyk/snyk](https://hub.docker.com/r/snyk/snyk)에서 여러 Docker 이미지를 제공합니다. 상세 내용은 [GitHub의 snyk/snyk-images](https://github.com/snyk/snyk-images)를 참조하십시오.
+Snyk CLI는 Docker 이미지에서 실행할 수도 있습니다. Snyk은 [Docker Hub의 snyk/snyk](https://hub.docker.com/r/snyk/snyk)에서 여러 Docker 이미지를 제공합니다. 상세 내용은 [GitHub의 snyk/snyk-images](https://github.com/snyk/snyk-images)를 참조하십시오.
 
 이러한 이미지는 Snyk CLI를 둘러싸고 있으며 Tag에 따라 다른 프로젝트에 대한 관련 도구가 제공됩니다. `snyk/snyk`를 사용하여 Gradle 프로젝트를 스캔하는 예시는 다음과 같습니다:
 
