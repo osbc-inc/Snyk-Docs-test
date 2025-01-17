@@ -1,4 +1,4 @@
-# Snyk CLI를 사용하여 취약점 수정
+# Snyk CLI를 사용하여 취약점 수정하기
 
 Snyk CLI는 `snyk test` 명령을 사용하여 발견된 취약점을 수정하는 기능을 제공합니다. Web UI에서 수정에 대한 정보를 보려면 [취약점 수정](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md)을 참조하십시오. 패치에 대한 일반 정보는 [취약점 수정을 위한 Snyk 패치](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)를 참조하십시오.
 
@@ -13,7 +13,7 @@ CLI에서는 각 목록(업그레이드 및 패치)에 대한 결과가 Snyk가 
 
 업그레이드 및 패치 결과는 다음과 유사합니다:
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="CLI에서 업그레이드 결과"><figcaption><p>CLI에서 업그레이드 결과</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-b6747c94f599365ca4d3eeff91dfe9e61bb49bea%252Fimage%2520%2817%29.png%3Falt%3Dmedia%26token%3Db702cbaf-f6e7-44f5-981c-eb71c17c57ad&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=ea8370e&#x26;sv=2" alt="CLI에서 업그레이드 결과"><figcaption><p>CLI에서 업그레이드 결과</p></figcaption></figure>
 
 패치 권장 사항은 다음과 유사합니다:
 

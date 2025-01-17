@@ -1,4 +1,4 @@
-# View Snyk Code CLI results
+# Snyk 코드 CLI 결과 보기
 
 Snyk CLI를 사용하여 `snyk code test` 명령의 결과에 대해 다음 작업을 수행할 수 있습니다:
 
@@ -17,7 +17,7 @@ Snyk CLI를 사용하여 `snyk code test` 명령의 결과에 대해 다음 작�
 
 CLI에서 `snyk code test` 명령을 실행한 후 테스트 결과가 표시됩니다:
 
-<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20Details%20-%202.png" alt="CLI에서 나온 테스트 결과"><figcaption><p>CLI에서 나온 테스트 결과</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FO6YZZfP8VS5Q1u0e95Sy%252FSnyk%2520Code%2520-%2520CLI%2520-%2520snyk%2520code%2520test%2520-%2520Results%2520Details%2520-%25202.png%3Falt%3Dmedia%26token%3D83f3734c-d68e-4b32-9f53-a288041b1592&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=98f856bb&#x26;sv=2" alt="CLI에서 나온 테스트 결과"><figcaption><p>CLI에서 나온 테스트 결과</p></figcaption></figure>
 
 Snyk 웹 UI에서 문제를 무시했다면, 이러한 문제는 여전히 CLI 결과에 나타납니다. 이 페이지의 각 섹션은 표시된 결과의 한 부분을 설명합니다.
 
@@ -27,7 +27,7 @@ Snyk 웹 UI에서 문제를 무시했다면, 이러한 문제는 여전히 CLI �
 
 각 문제에 대해 다음 정보가 제공됩니다:
 
-<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Issue%20summary%20-%202.png" alt="문제에 대한 CLI 테스트 정보"><figcaption><p>문제에 대한 CLI 테스트 정보</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252F8bVxWHuUy6iMFBJi5d5p%252FSnyk%2520Code%2520-%2520CLI%2520-%2520snyk%2520code%2520test%2520-%2520Results%2520-%2520Issue%2520summary%2520-%25202.png%3Falt%3Dmedia%26token%3D3bcb4e4e-1836-4a4c-8dd6-5c83595f55f4&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=49d56075&#x26;sv=2" alt="문제에 대한 CLI 테스트 정보"><figcaption><p>문제에 대한 CLI 테스트 정보</p></figcaption></figure>
 
 * 헤더: 문제의 심각도 수준 및 취약점 유형.
 * 경로: 문제가 발견된 파일 이름 및 파일에서 문제가 발견된 라인. 이 위치 세부 정보는 문제의 Sink를 나타내며, 테스트된 저장소에서 취약점이 실행될 수 있는 위치를 의미합니다.
@@ -35,13 +35,13 @@ Snyk 웹 UI에서 문제를 무시했다면, 이러한 문제는 여전히 CLI �
 
 `Info` 섹션에 나타나는 메시지는 웹 UI의 **Data flow** 섹션에 있는 메시지와 동일합니다:
 
-<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Issue%20summary%20-%20In%20the%20UI%20-%202.png" alt="문제에 대한 CLI 테스트 정보"><figcaption><p>문제에 대한 CLI 테스트 정보</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FILtqK0UOp7yJgRPyXshY%252FSnyk%2520Code%2520-%2520CLI%2520-%2520snyk%2520code%2520test%2520-%2520Results%2520-%2520Issue%2520summary%2520-%2520In%2520the%2520UI%2520-%25202.png%3Falt%3Dmedia%26token%3D5498c20f-8e24-4d71-8df5-ca88af15512f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3dd1c6e0&#x26;sv=2" alt="문제에 대한 CLI 테스트 정보"><figcaption><p>문제에 대한 CLI 테스트 정보</p></figcaption></figure>
 
 ### 테스트 결과에 대한 일반 정보
 
 테스트 결과에 대한 일반 정보는 다음과 같은 세부 정보를 포함합니다:
 
-<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Test%20summary%20-%202.png" alt="CLI 테스트 결과 일반 정보 세부사항"><figcaption><p>CLI 테스트 결과 일반 정보 세부사항</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fh77DJ2P7FlMpVbYatTUq%252FSnyk%2520Code%2520-%2520CLI%2520-%2520snyk%2520code%2520test%2520-%2520Results%2520-%2520Test%2520summary%2520-%25202.png%3Falt%3Dmedia%26token%3D043a5d29-bf87-4ffe-aa76-9b9d4f16d387&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3d0eb99d&#x26;sv=2" alt="CLI 테스트 결과 일반 정보 세부사항"><figcaption><p>CLI 테스트 결과 일반 정보 세부사항</p></figcaption></figure>
 
 * 테스트 성공: 테스트가 완료되었는지 여부.
 * 조직: 테스트가 실행된 조직의 Snyk ID 또는 내부 이름. 자세한 내용은 [CLI 테스트용 Snyk 조직 설정](set-the-snyk-organization-for-the-cli-tests.md)을 참조하십시오.
@@ -52,9 +52,9 @@ Snyk 웹 UI에서 문제를 무시했다면, 이러한 문제는 여전히 CLI �
 
 테스트 결과 요약에는 다음과 같은 세부 정보가 포함됩니다:
 
-<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Summary%20-%202.png" alt="문제에 대한 CLI 테스트 결과 요약"><figcaption><p>문제에 대한 CLI 테스트 결과 요약</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FzlkAy6wMvp4FcOEHJz1w%252FSnyk%2520Code%2520-%2520CLI%2520-%2520snyk%2520code%2520test%2520-%2520Results%2520-%2520Summary%2520-%25202.png%3Falt%3Dmedia%26token%3Dcff47c0b-b085-437a-8f35-3a6eedc5f7ce&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=3a710dca&#x26;sv=2" alt="문제에 대한 CLI 테스트 결과 요약"><figcaption><p>문제에 대한 CLI 테스트 결과 요약</p></figcaption></figure>
 
-* {Snyk Code에서 발견한 취약점 문제 수.
+* Snyk Code에서 발견한 취약점 문제 수.
 * 각 심각도 수준별 발견된 문제 수.
 
 {% hint style="info" %}
@@ -77,7 +77,7 @@ snyk code test <폴더/경로> --severity-threshold=<낮음|중간|높음>
 
 예를 들어, `snyk-goof-master` 폴더에서 8개의 문제가 발견되었는데, 그 중 4개는 높은 심각도 수준이었으며 4개는 중간 수준인 경우:
 
-<figure><img src="../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Filter%20Severity%20-%20Example%20-%20before%20-%202.png" alt="의 높고 중간 심각도 문제에 대한 CLI 테스트 결과"><figcaption><p>의 높고 중간 심각도 문제에 대한 CLI 테스트 결과</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252F6vyDfGgr4fpKzbjjm4It%252FSnyk%2520Code%2520-%2520CLI%2520-%2520snyk%2520code%2520test%2520-%2520Results%2520-%2520Filter%2520Severity%2520-%2520Example%2520-%2520before%2520-%25202.png%3Falt%3Dmedia%26token%3D3aff742c-0b43-4df9-b0e1-965924d10799&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b1f47ae2&#x26;sv=2" alt="의 높고 중간 심각도 문제에 대한 CLI 테스트 결과"><figcaption><p>Snyk Code의 높고 중간 심각도 문제에 대한 CLI 테스트 결과</p></figcaption></figure>
 
 높은 심각도 수준 이상의 문제만 표시하려면 다음을 입력하십시오:
 
@@ -87,7 +87,7 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --severit
 
 결과는 높은 심각도 수준인 4개의 문제가 모두 표시됩니다. 낮은 심각도 수준의 문제는 표시되지 않습니다:
 
-![높은 심각도 수준의 {Snyk Code CLI 결과](../../../.gitbook/assets/%20-%20CLI%20-%20snyk%20code%20test%20-%20Results%20-%20Filter%20Severity%20-%20Example%20-%20after%20-%202.png)
+![높은 심각도 수준의 Snyk Code CLI 결과](https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252FXy4FUu2zOXs4ktKj9vGG%252FSnyk%2520Code%2520-%2520CLI%2520-%2520snyk%2520code%2520test%2520-%2520Results%2520-%2520Filter%2520Severity%2520-%2520Example%2520-%2520after%2520-%25202.png%3Falt%3Dmedia%26token%3D63042f8f-87be-4136-a02a-9dc035143338\&width=768\&dpr=4\&quality=100\&sign=787fb82d\&sv=2)
 
 ## JSON 및 SARIF 파일에서 심각도 수준
 

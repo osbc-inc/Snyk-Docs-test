@@ -1,14 +1,14 @@
-#  CLI 결과 검토
+# Snyk 오픈 소스 CLI 결과 검토하기
 
-CLI에서 `snyk test` 명령을 실행한 후,  테스트 결과가 표시됩니다. 결과 보고서에는 테스트 결과 요약, 발견된 취약점 문제 목록 및 테스트된 Snyk 프로젝트에 대한 설명 정보가 포함됩니다.
+CLI에서 `snyk test` 명령을 실행한 후, 테스트 결과가 표시됩니다. 결과 보고서에는 테스트 결과 요약, 발견된 취약점 문제 목록 및 테스트된 Snyk 프로젝트에 대한 설명 정보가 포함됩니다.
 
-<figure><img src="../../../.gitbook/assets/image (107) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2) (2).png" alt=" CLI 테스트 결과."><figcaption><p> CLI 테스트 결과</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-e0c6f7f5e41fee82a3937332d9c66094f2972ce1%252Fimage%2520%28107%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%282%29%2520%281%29%2520%282%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=d4492bdb&#x26;sv=2" alt="CLI 테스트 결과."><figcaption><p>CLI 테스트 결과</p></figcaption></figure>
 
 ## 테스트 결과 요약
 
 보고서 처음에 나오는 테스트 결과 요약에는 다음이 표시됩니다:
 
-<figure><img src="../../../.gitbook/assets/image (463).png" alt=" CLI 종속성 테스트, 문제 및 발견된 취약점 수."><figcaption><p> CLI 종속성 테스트, 문제 및 발견된 취약점 수</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (463).png" alt="CLI 종속성 테스트, 문제 및 발견된 취약점 수."><figcaption><p>CLI 종속성 테스트, 문제 및 발견된 취약점 수</p></figcaption></figure>
 
 * 검사된 직접 및 간접 종속성 수
 * 하나 이상의 경로에서 발견된 총 문제 수
@@ -45,7 +45,7 @@ CLI에서 `snyk test` 명령을 실행한 후,  테스트 결과가 표시됩니
 
 테스트 결과에 대한 설명 정보에는 다음 세부 사항이 포함됩니다:
 
-* **조직:** 테스트가 실행된 조직의 Snyk ID 또는 내부 이름. 자세한 내용은 `snyk test` 도움말의 [`--org=ORG_ID>` 옵션](../../commands/test.md#org-less-than-org\_id-greater-than)을 확인하세요.
+* **조직:** 테스트가 실행된 조직의 Snyk ID 또는 내부 이름. 자세한 내용은 `snyk test` 도움말의 [`--org=ORG_ID>` 옵션](../../commands/test.md#org-less-than-org_id-greater-than)을 확인하세요.
 * **패키지 관리자:** 이 오픈 소스 스캔에 연결된 패키지 관리자
 * **대상 파일:** 오픈 소스 취약점을 스캔한 대상 파일
 * **프로젝트 이름:** 이 프로젝트가 위치한 디렉터리의 이름
