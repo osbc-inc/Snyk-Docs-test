@@ -465,7 +465,7 @@
   * [풀 리퀘스트](scan-with-snyk/pull-requests/README.md)
     * [Snyk 풀 또는 병합 요청](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/README.md)
       * [새로운 수정 사항에 대한 자동 PR 생성(수정 PR)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md)
-      * [Create automatic PRs for backlog issues and known vulnerabilities (Backlog PRs)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)
+      * [백로그 이슈 및 알려진 취약점에 대한 자동 PR 생성(백로그 PR)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)
       * [Upgrade dependencies with automatic PRs (Upgrade PRs)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/README.md)
         * [Upgrade open source dependencies with automatic PRs](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-open-source-dependencies-with-automatic-prs.md)
       * [Customize PR templates](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/README.md)
