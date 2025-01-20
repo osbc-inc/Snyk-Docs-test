@@ -1,6 +1,6 @@
-# 그룹 및 조직 간 전환
+# 그룹과 조직 간 전환
 
-Snyk는 Snyk 웹 UI에 로그인할 때 기본적으로 귀하의 기본 조직을 표시합니다. 또한 Snyk는 CLI를 사용하여 프로젝트를 테스트할 때 기본 조직 설정을 사용합니다. 자세한 정보는 [조직 관리](organizations/create-and-delete-organizations.md)를 참조하십시오.
+Snyk은 Snyk 웹 UI에 로그인할 때 기본적으로 귀하의 기본 조직을 표시합니다. 또한 Snyk은 CLI를 사용하여 프로젝트를 테스트할 때 기본 조직 설정을 사용합니다. 자세한 정보는 [조직 관리](organizations/create-and-delete-organizations.md)를 참조하십시오.
 
 ## 그룹 변경
 
