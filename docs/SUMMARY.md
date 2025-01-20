@@ -469,7 +469,7 @@
       * [자동 PR을 통한 종속성 업그레이드(업그레이드 PR)](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/README.md)
         * [자동 PR을 통한 오픈 소스 종속성 업그레이드](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/upgrade-open-source-dependencies-with-automatic-prs.md)
       * [PR 템플릿 사용자 지정](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/README.md)
-        * [Apply a custom PR template](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md)
+        * [사용자 지정 PR 템플릿 적용](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/apply-a-custom-pr-template.md)
         * [Variables list and description](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description.md)
         * [Troubleshooting and limitations for custom PR templates](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/troubleshooting-and-limitations-for-custom-pr-templates.md)
         * [Examples and template validation](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/examples-and-template-validation.md)

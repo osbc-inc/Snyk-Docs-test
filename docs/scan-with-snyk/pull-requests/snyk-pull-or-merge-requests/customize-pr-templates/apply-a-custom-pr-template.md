@@ -1,4 +1,4 @@
-# Apply a custom PR template
+# 사용자 지정 PR 템플릿 적용
 
 ## API를 사용하여 사용자 정의 PR 템플릿 생성 및 관리하기
 
@@ -18,9 +18,9 @@ API 요청을 사용하여 사용자 정의 템플릿을 업로드하면 해당 
 
 PR에 대해 브랜치 이름을 사용자 정의할 수는 없습니다. PR의 브랜치 이름은 Snyk의 기본값을 사용합니다.
 
-그룹의 사용자 정의 PR 템플릿을 검색하려면 엔드포인트 [Get pull request template for Group](https://apidocs.snyk.io/?#get-/groups/-group_id-/settings/pull_request_template)을 사용하세요. 이것은 템플릿을 변경하거나 문제해결할 때 유용합니다.
+그룹의 사용자 정의 PR 템플릿을 검색하려면 엔드포인트 [그룹에 대한 풀리퀘스트 받기](https://apidocs.snyk.io/?#get-/groups/-group_id-/settings/pull_request_template) 사용하세요. 이것은 템플릿을 변경하거나 문제해결할 때 유용합니다.
 
-템플릿을 삭제하려면 [Delete pull request template for group](https://apidocs.snyk.io/?#delete-/groups/-group_id-/settings/pull_request_template) 엔드포인트를 사용하세요.
+템플릿을 삭제하려면 [그룹에 대한 풀리퀘스트 템플릿 삭제](https://apidocs.snyk.io/?#delete-/groups/-group_id-/settings/pull_request_template) 엔드포인트를 사용하세요.
 
 ## YAML PR 템플릿 파일을 사용자 정의하기
 
@@ -60,7 +60,7 @@ PR에 대해 브랜치 이름을 사용자 정의할 수는 없습니다. PR의 
 
 ### YAML 사용자 정의 PR 템플릿 사용하기
 
-`[Project (repository)](#user-content-fn-1)`에 `snyk_pull_request_template.yaml`이라는 이름의 YAML 파일을 수동으로 업로드할 수 있습니다. 이 통합의 종류에 따라 방법이 다릅니다.
+프로젝트(리포지토리)에 snyk\_pull\_request\_template.yaml이라는 이름의 YAML 파일을 수동으로 업로드할 수 있습니다. 이 통합의 종류에 따라 방법이 다릅니다.
 
 * GitHub/ GitHub Enterprise - `/.github/snyk_pull_request_template.yaml`
 * GitLab - `/.gitlab/snyk_pull_request_template.yaml`
@@ -71,7 +71,7 @@ PR에 대해 브랜치 이름을 사용자 정의할 수는 없습니다. PR의 
 
 ## 사용자 정의 PR 템플릿 가져오는 브로커 구성
 
-만약 [Snyk Broker](../../../../enterprise-setup/snyk-broker/)를 사용 중이라면, 버전이 4.188.0 이상인 브로커를 사용하고 `ACCEPT_CUSTOM_PR_TEMPLATES` 환경 변수를 사용하여 브로커가 사용자 정의 PR 템플릿을 가져올 수 있도록 설정해야 합니다.
+만약 [Snyk 브로커](../../../../enterprise-setup/snyk-broker/)를 사용 중이라면, 버전이 4.188.0 이상인 브로커를 사용하고 `ACCEPT_CUSTOM_PR_TEMPLATES` 환경 변수를 사용하여 브로커가 사용자 정의 PR 템플릿을 가져올 수 있도록 설정해야 합니다.
 
 이를 위해 `ACCEPT=/path/to/custom.json`을 제거하고 다음 환경 변수를 브로커 컨테이너나 배포에 추가해야 합니다:
 
