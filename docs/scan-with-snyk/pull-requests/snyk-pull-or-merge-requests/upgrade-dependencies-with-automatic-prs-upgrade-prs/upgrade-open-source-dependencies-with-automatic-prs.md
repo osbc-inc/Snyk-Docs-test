@@ -1,6 +1,6 @@
-# Upgrade open source dependencies with automatic PRs
+# 자동 PR을 통한 오픈 소스 종속성 업그레이드
 
-Git 리포지토리를 가져오면 Snyk는 취약점과 라이선스, 그리고 종속성 건강 문제를 스캔하여 지속적으로 감시합니다. Snyk는 구성 설정에 따라 자동으로 pull request(PR)를 생성합니다.
+Git 리포지토리를 가져오면 Snyk는 취약점과 라이선스, 그리고 종속성 상태 문제를 스캔하여 지속적으로 감시합니다. Snyk는 구성 설정에 따라 자동으로 pull request(PR)를 생성합니다.
 
 <figure><img src="../../../../.gitbook/assets/image (435).png" alt="Snyk Bot conversation card in GitHub reporting PR raised"><figcaption><p>Snyk Bot conversation card in GitHub reporting PR raised</p></figcaption></figure>
 
