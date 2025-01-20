@@ -1,8 +1,8 @@
-# 사용자 정의 PR 템플릿 적용
+# Apply a custom PR template
 
 ## API를 사용하여 사용자 정의 PR 템플릿 생성 및 관리하기
 
-API 엔드포인트 [Create or update pull request template for Group](https://apidocs.snyk.io/?#post-/groups/-group\_id-/settings/pull\_request\_template)을 사용하여 사용자 정의 PR 템플릿을 생성할 수 있습니다. 사용자 정의 속성을 포함하는 JSON 페이로드가 포함된 API 요청을 보냅니다. 이 요청은 Organization 또는 Project 내의 모든 프로젝트에서 사용될 그룹 수준의 pull request 템플릿을 구성합니다. Snyk API를 사용하여 생성된 pull request 템플릿은 언제든지 업데이트할 수 있으며 그룹의 모든 프로젝트는 최신 변경사항으로 자동 업데이트됩니다.
+API 엔드포인트 [그룹에 대한 풀 리퀘스트 템플릿 만들기 또는 업데이트](https://apidocs.snyk.io/?#post-/groups/-group_id-/settings/pull_request_template)을 사용하여 사용자 정의 PR 템플릿을 생성할 수 있습니다. 사용자 정의 속성을 포함하는 JSON 페이로드가 포함된 API 요청을 보냅니다. 이 요청은 조직 또는 프로젝트 내의 모든 프로젝트에서 사용될 그룹 수준의 풀 리퀘스트 템플릿을 구성합니다. Snyk API를 사용하여 생성된 풀 리퀘스트 템플릿은 언제든지 업데이트할 수 있으며 그룹의 모든 프로젝트는 최신 변경사항으로 자동 업데이트됩니다.
 
 PR 템플릿의 API 구성은 그룹 수준에서만 가능합니다.
 
@@ -12,15 +12,15 @@ API 요청을 사용하여 사용자 정의 템플릿을 업로드하면 해당 
 
 다음 **API를 사용하여 사용자 정의할 수 있는 속성**은 다음과 같습니다:
 
-- `title` - PR 제목 사용자 정의
-- `commit_message` - PR 커밋 메시지 사용자 정의
-- `description` - PR 설명 사용자 정의
+* `title` - PR 제목 사용자 정의
+* `commit_message` - PR 커밋 메시지 사용자 정의
+* `description` - PR 설명 사용자 정의
 
 PR에 대해 브랜치 이름을 사용자 정의할 수는 없습니다. PR의 브랜치 이름은 Snyk의 기본값을 사용합니다.
 
-그룹의 사용자 정의 PR 템플릿을 검색하려면 엔드포인트 [Get pull request template for Group](https://apidocs.snyk.io/?#get-/groups/-group\_id-/settings/pull\_request_template)을 사용하세요. 이것은 템플릿을 변경하거나 문제해결할 때 유용합니다.
+그룹의 사용자 정의 PR 템플릿을 검색하려면 엔드포인트 [Get pull request template for Group](https://apidocs.snyk.io/?#get-/groups/-group_id-/settings/pull_request_template)을 사용하세요. 이것은 템플릿을 변경하거나 문제해결할 때 유용합니다.
 
-템플릿을 삭제하려면 [Delete pull request template for group](https://apidocs.snyk.io/?#delete-/groups/-group\_id-/settings/pull_request_template) 엔드포인트를 사용하세요.
+템플릿을 삭제하려면 [Delete pull request template for group](https://apidocs.snyk.io/?#delete-/groups/-group_id-/settings/pull_request_template) 엔드포인트를 사용하세요.
 
 ## YAML PR 템플릿 파일을 사용자 정의하기
 
@@ -52,9 +52,9 @@ commitMessage: "snyk: this is a security pull request"
 
 다음 속성들은 사용자 정의가 가능합니다:
 
-- `title` - PR 제목 사용자 정의
-- `commitMessage` - PR 커밋 메시지 사용자 정의
-- `description` - PR 설명 사용자 정의
+* `title` - PR 제목 사용자 정의
+* `commitMessage` - PR 커밋 메시지 사용자 정의
+* `description` - PR 설명 사용자 정의
 
 PR에 대해 브랜치 이름을 사용자 정의할 수는 없습니다. PR의 브랜치 이름은 Snyk의 기본값을 사용합니다.
 
@@ -62,10 +62,10 @@ PR에 대해 브랜치 이름을 사용자 정의할 수는 없습니다. PR의 
 
 `[Project (repository)](#user-content-fn-1)`에 `snyk_pull_request_template.yaml`이라는 이름의 YAML 파일을 수동으로 업로드할 수 있습니다. 이 통합의 종류에 따라 방법이 다릅니다.
 
-- GitHub/ GitHub Enterprise - `/.github/snyk_pull_request_template.yaml`
-- GitLab  - `/.gitlab/snyk_pull_request_template.yaml`
-- Azure DevOps  - `/.azuredevops/snyk_pull_request_template.yaml`
-- 기타 (예: BitBucket)  - `/.config/snyk_pull_request_template.yaml`
+* GitHub/ GitHub Enterprise - `/.github/snyk_pull_request_template.yaml`
+* GitLab - `/.gitlab/snyk_pull_request_template.yaml`
+* Azure DevOps - `/.azuredevops/snyk_pull_request_template.yaml`
+* 기타 (예: BitBucket) - `/.config/snyk_pull_request_template.yaml`
 
 여러 리포지토리에 대해 사용자 정의 템플릿을 사용하려면 각 리포지토리에 YAML 사용자 정의 템플릿 파일을 추가하세요.
 
@@ -78,5 +78,3 @@ PR에 대해 브랜치 이름을 사용자 정의할 수는 없습니다. PR의 
 ```
 ACCEPT_CUSTOM_PR_TEMPLATES=true
 ```
-
-[^1]:
