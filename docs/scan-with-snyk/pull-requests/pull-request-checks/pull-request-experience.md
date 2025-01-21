@@ -17,7 +17,7 @@ Snyk 풀 리퀘스트 경험은 풀 리퀘스트에서 PR Check 스캔 결과에
 
 * **Snyk PR Checks** 가 활성화되어 있어야 합니다. 자세한 내용은 [풀 리퀘스트 체크 구성](configure-pull-request-checks.md)를 참조하십시오.
 * **GitHub 통합**의 경우, 특정 **GitHub 계정**이 수정 및 업그레이드 PR을 오픈하기 위해 설정되어 있어야 합니다. 이렇게 구성된 개인 액세스 토큰(PAT)은 풀 리퀘스트 경험에서 일관된 댓글 경험을 제공하는 데 필요합니다. 자세한 내용은[ ](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)[특정 GitHub 계정에서 수정 및 업그레이드 풀 리퀘스트 열기](../snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)를 참조하십시오.
-* 인라인 코멘트의 경우, **코드 분석 PR 체크** 설정은 [통합 수준](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#configure-pull-request-experience-at-the-integration-level)에서 활성화되어 있어야 합니다. Snyk 웹 UI에서 설정 > 통합 > 설정 편집 에서 **Pull request status checks > Code analysis** 아래에서 해당 옵션이 활성화되어 있는지 확인하십시오. "Code analysis"가 표시되지 않는 경우, Snyk 계정 팀에 문의하여 계정에 대해 Snyk Code를 활성화하도록 요청하십시오. 이미 활성화되어 있는 경우, **설정** > **Snyk Code** 에서 켜져 있는지 확인하십시오.
+* 인라인 코멘트의 경우, **코드 분석 PR 체크** 설정은 [통합 수준](https://docs.snyk.io/scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience#configure-pull-request-experience-at-the-integration-level)에서 활성화되어 있어야 합니다. Snyk 웹 UI에서 설정 > 통합 > 설정 편집 에서 **Pull request status checks > Code analysis** 아래에서 해당 옵션이 활성화되어 있는지 확인하십시오. "Code analysis"가 표시되지 않는 경우, Snyk 계정 팀에 문의하여 계정에 대해 Snyk 코드를 활성화하도록 요청하십시오. 이미 활성화되어 있는 경우, **설정** > **Snyk 코드**에서 켜져 있는지 확인하십시오.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 14.14.35.png" alt=""><figcaption><p>풀 리퀘스트 상태 체크를 위한 코드 분석 기능</p></figcaption></figure>
 
@@ -41,7 +41,7 @@ Snyk PR Checks의 이슈 요약 댓글은 [일찍 접근](../../../getting-start
 Snyk PR Checks의 인라인 댓글은 [일찍 접근](../../../getting-started/snyk-release-process.md#early-access) 상태에 있으며 **Snyk Code PR Checks**에만 사용할 수 있습니다.
 {% endhint %}
 
-인라인 댓글 기능은 **Snyk Code** Pull Request Check에서 식별된 각 이슈에 대해 자세한 댓글을 추가합니다. 각 댓글에는 심각성 수준, 이슈의 이름 및 간단한 설명, 추가 정보를 위한 유용한 링크, 그리고 경우에 따라 데이터 흐름이 포함됩니다.&#x20;
+인라인 댓글 기능은 **Snyk Code** Pull Request Check에서 식별된 각 이슈에 대해 자세한 댓글을 추가합니다. 각 댓글에는 심각성 수준, 이슈의 이름 및 간단한 설명, 추가 정보를 위한 유용한 링크, 그리고 경우에 따라 데이터 흐름이 포함됩니다.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-11-27 at 14.03.12.png" alt=""><figcaption><p>풀 리퀘스트 경험을 위한 인라인 댓글 기능</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Snyk PR Checks의 인라인 댓글은 [일찍 접근](../../../getting-started/s
 
 인라인 댓글은 이슈가 발견된 특정 파일과 코드 라인에 직접 추가됩니다. 이슈의 코드 내 위치 및 SCM 플랫폼의 기능에 따라 인라인 댓글을 작성할 수 있는 능력이 제한될 수 있습니다. 다음 표는 다른 SCM 및 이슈 위치에 대한 이러한 제한 사항을 안내합니다:
 
-<table data-full-width="false"><thead><tr><th width="458">이슈 위치</th><th width="143">GitHub</th><th>Bitbucket</th></tr></thead><tbody><tr><td><strong>풀 리퀘스트 차이 내에서:</strong> <br>변경된 특정 코드 라인에서 발견된 이슈에 대한 인라인 댓글 추가</td><td>지원 <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td>지원 <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><p><strong>수정된 파일 내지만 풀 리퀘스트 차이 밖에서:</strong></p><p>하이라이트된 변경 부분에 속하지 않은 수정 파일 일부에서 발견된 이슈에 대한 인라인 댓글 추가</p></td><td><p>지원 안됨 <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></p></td><td>지원 <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><p><strong>수정된 파일 외부에서 풀 리퀘스트 차이:</strong></p><p>풀 리퀘스트에서 수정되지 않은 파일에 발견된 이슈에 대한 인라인 댓글 추가</p></td><td><p>지원 안됨 <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></p></td><td><p>지원 안됨 <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></p></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="458">이슈 위치</th><th width="143">GitHub</th><th>Bitbucket</th></tr></thead><tbody><tr><td><strong>풀 리퀘스트 차이 내에서:</strong><br>변경된 특정 코드 라인에서 발견된 이슈에 대한 인라인 댓글 추가</td><td>지원 <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td>지원 <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><p><strong>수정된 파일 내지만 풀 리퀘스트 차이 밖에서:</strong></p><p>하이라이트된 변경 부분에 속하지 않은 수정 파일 일부에서 발견된 이슈에 대한 인라인 댓글 추가</p></td><td>지원 안됨 <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td>지원 <span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><p><strong>수정된 파일 외부에서 풀 리퀘스트 차이:</strong></p><p>풀 리퀘스트에서 수정되지 않은 파일에 발견된 이슈에 대한 인라인 댓글 추가</p></td><td>지원 안됨 <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td><td>지원 안됨 <span data-gb-custom-inline data-tag="emoji" data-code="274c">❌</span></td></tr></tbody></table>
 
 ## 풀 리퀘스트 경험 구성
 
