@@ -12,17 +12,17 @@ Snyk 프로젝트 정보는 **Projects** 목록에서 나타납니다. Snyk 대�
 
 Snyk 프로젝트 개념에는 다음이 포함됩니다:
 
-- [Target](./#target)
-- [Origin](./#origin)
-- [Project](./#project)
-- [Targetfile](./#targetfile)
-- [Type](./#type)
+* [Target](./#target)
+* [Origin](./#origin)
+* [Project](./#project)
+* [Targetfile](./#targetfile)
+* [Type](./#type)
 
 ## Target
 
-프로젝트는 Target에 보관됩니다. Target은 Snyk가 스캔한 외부 리소스를 나타냅니다: 코드 저장소, Kubernetes 작업로드 또는 Snyk 외부에서 스캔 가능한 다른 리소스 등.
+프로젝트는 Target에 보관됩니다. Target은 Snyk이 스캔한 외부 리소스를 나타냅니다: 코드 저장소, Kubernetes 작업로드 또는 Snyk 외부에서 스캔 가능한 다른 리소스 등.
 
-Snyk는 프로젝트 가져오기를 요청하거나 CLI를 사용하여 스캔할 때 Target을 생성합니다. 가져오기가 실패하거나 아무것도 찾지 못한 경우 Target은 비어 있을 것입니다.
+Snyk은 프로젝트 가져오기를 요청하거나 CLI를 사용하여 스캔할 때 Target을 생성합니다. 가져오기가 실패하거나 아무것도 찾지 못한 경우 Target은 비어 있을 것입니다.
 
 **Target으로 그룹화**를 선택하면 **Projects** 목록에 Snyk Targets이 나타납니다. 또한 [조직별 Target 가져오기](../../snyk-api/reference/targets.md#orgs-org_id-targets)와 [주어진 Org ID에 대한 모든 프로젝트 나열](../../snyk-api/reference/projects.md#orgs-org_id-projects) 엔드포인트를 사용하여 Targets을 찾을 수 있습니다.
 
@@ -48,35 +48,35 @@ Origin은 CLI, GitHub 또는 Kubernetes와 같은 Target 생태계를 정의합�
 
 가능한 Origin 값은 다음과 같습니다:
 
-- acr
-- api
-- artifactory-cr
-- aws-config
-- aws-lambda
-- azure-functions
-- azure-repos
-- bitbucket-cloud
-- bitbucket-server
-- cli
-- cloud-foundry
-- digitalocean-cr
-- docker-hub
-- ecr
-- gcr
-- github
-- github-cr
-- github-enterprise
-- gitlab
-- gitlab-cr
-- google-artifact-cr
-- harbor-cr
-- heroku
-- ibm-cloud
-- kubernetes
-- nexus-cr
-- pivotal
-- quay-cr
-- terraform-cloud
+* acr
+* api
+* artifactory-cr
+* aws-config
+* aws-lambda
+* azure-functions
+* azure-repos
+* bitbucket-cloud
+* bitbucket-server
+* cli
+* cloud-foundry
+* digitalocean-cr
+* docker-hub
+* ecr
+* gcr
+* github
+* github-cr
+* github-enterprise
+* gitlab
+* gitlab-cr
+* google-artifact-cr
+* harbor-cr
+* heroku
+* ibm-cloud
+* kubernetes
+* nexus-cr
+* pivotal
+* quay-cr
+* terraform-cloud
 
 ## Project
 
@@ -93,7 +93,7 @@ Snyk 프로젝트는 특정 Target에서 스캔할 매니페스트 파일과 같
 Targetfile은 Target에서 스캔할 특정 항목을 나타냅니다. 예를 들어 GitHub 리포지토리의 `pom.xml` 파일입니다.
 
 {% hint style="info" %}
-[](../../scan-with-snyk/snyk-code/) 스캔은 Targetfile을 사용하지 않습니다.
+스캔은 Targetfile을 사용하지 않습니다.
 {% endhint %}
 
 ## Type
@@ -104,13 +104,13 @@ Type은 특정 프로젝트에 사용할 스캔 방법을 나타냅니다. 예�
 
 ### 삭제, 활성화 또는 비활성화
 
-프로젝트에 대해 일괄 작업을 수행하려면 먼저 프로젝트를 선택한 다음 **프로젝트를 삭제, 활성화 또는 비활성화**를 선택하세요.&#x20;
+프로젝트에 대해 일괄 작업을 수행하려면 먼저 프로젝트를 선택한 다음 **프로젝트를 삭제, 활성화 또는 비활성화**를 선택하세요.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-11-15 at 10.42.37.png" alt=""><figcaption><p>일괄적으로 프로젝트 삭제하기</p></figcaption></figure>
 
 ### 테스트 빈도 설정
 
-각 프로젝트의 테스트 빈도를 설정할 수 있습니다.&#x20;
+각 프로젝트의 테스트 빈도를 설정할 수 있습니다.
 
 각 항목에서 해당 프로젝트의 테스트 빈도 (`never`, `daily`, 또는 `weekly`)를 선택할 수 있습니다. Open Source, Code Analysis, Container 또는 IaC 유형에 적용되는 것에 따라 해당 프로젝트의 테스트 빈도를 선택하세요.
 
@@ -119,10 +119,10 @@ Type은 특정 프로젝트에 사용할 스캔 방법을 나타냅니다. 예�
 {% hint style="info" %}
 기본 테스트 빈도 및 제한 사항은 다음과 같습니다:
 
-- Open Source: 기본값은 매일입니다.
-- Code Analysis 프로젝트: 기본값은 매주이며, 매일은 사용할 수 없습니다. 코드를 매일 테스트하려면 [Snyk 지원팀에 요청](https://support.snyk.io)하세요.
-- Container: 기본값은 매일입니다.
-- IaC: 기본값은 매주입니다.
+* Open Source: 기본값은 매일입니다.
+* Code Analysis 프로젝트: 기본값은 매주이며, 매일은 사용할 수 없습니다. 코드를 매일 테스트하려면 [Snyk 지원팀에 요청](https://support.snyk.io)하세요.
+* Container: 기본값은 매일입니다.
+* IaC: 기본값은 매주입니다.
 {% endhint %}
 
 **비활성화**를 클릭하여 테스트를 하지 않고, 웹훅을 제거하고 프로젝트 결과를 보고서에 표시하지 않도록 설정할 수 있습니다.
