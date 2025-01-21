@@ -484,7 +484,7 @@
       * [오픈 소스 라이선스 규정 준수](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md)
       * [Snyk 라이선스 규정 준수 관리](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md)
     * [패키지 리포지토리 통합](scan-with-snyk/snyk-open-source/package-repository-integrations/README.md)
-      * [Artifactory Package Repository connection setup](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/README.md)
+      * [Artifactory 패키지 리포지토리 연결 설정](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/README.md)
         * [Artifactory Registry for Maven](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
         * [Artifactory Registry for npm](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-npm.md)
       * [Nexus Repository Manager connection setup](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/README.md)
