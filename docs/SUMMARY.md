@@ -482,7 +482,7 @@
   * [Snyk 오픈 소스](scan-with-snyk/snyk-open-source/README.md)
     * [오픈 소스 라이브러리 및 라이선스 스캔하기](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/README.md)
       * [오픈 소스 라이선스 규정 준수](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md)
-      * [Snyk License Compliance Management](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md)
+      * [Snyk 라이선스 규정 준수 관리](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md)
     * [Package repository integrations](scan-with-snyk/snyk-open-source/package-repository-integrations/README.md)
       * [Artifactory Package Repository connection setup](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/README.md)
         * [Artifactory Registry for Maven](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
