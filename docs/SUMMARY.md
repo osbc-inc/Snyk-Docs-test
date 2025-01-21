@@ -473,7 +473,7 @@
         * [Variables list and description](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/variables-list-and-description.md)
         * [Troubleshooting and limitations for custom PR templates](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/troubleshooting-and-limitations-for-custom-pr-templates.md)
         * [Examples and template validation](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/customize-pr-templates/examples-and-template-validation.md)
-      * [Opening fix and upgrade pull requests from a fixed GitHub account](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
+      * [고정된 GitHub 계정에서 수정 및 업그레이드 풀 리퀘스트 열기](scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/opening-fix-and-upgrade-pull-requests-from-a-fixed-github-account.md)
     * [Pull Request Checks](scan-with-snyk/pull-requests/pull-request-checks/README.md)
       * [Configure Pull Request Checks](scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
       * [Pull Request Experience](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md)
