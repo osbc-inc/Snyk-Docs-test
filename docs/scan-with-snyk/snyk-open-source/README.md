@@ -13,7 +13,7 @@ Snyk 오픈 소스를 사용하면 애플리케이션에서 사용하는 오픈 
 Snyk 오픈 소스는 많은 일반적인 언어 및 플랫폼에서 이용할 수 있습니다. [지원되는 언어 및 패키지 관리자](../../supported-languages-package-managers-and-frameworks/)를 참조하세요.
 
 {% hint style="info" %}
-공식 릴리스만 추적됩니다. 커밋은 공식 릴리스 또는 태그에 포함되지 않는 한 기본 브랜치에 식별되지 않습니다. 
+공식 릴리스만 추적됩니다. 커밋은 공식 릴리스 또는 태그에 포함되지 않는 한 기본 브랜치에 식별되지 않습니다.
 
 패키지 관리자가 있는 프로젝트의 경우, 패키지 관리자로의 릴리스가 필요합니다.
 
@@ -22,12 +22,12 @@ Go 및 Unmanaged 스캔 (C/C++)의 경우, 공식 릴리스나 GitHub 레포지�
 
 ## 취약점 찾아 해결하기
 
-Snyk 오픈 소스를 사용하여 애플리케이션에서 사용하는 오픈 소스 라이브러리의 취약점을 찾아 해결할 수 있습니다. Snyk는 취약점에 대한 실행 가능한 수정 조언을 제공하며 취약점을 고치기 위한 풀 리퀘스트를 사용하는 워크플로를 지원합니다. 자세한 정보는 [{Snyk 오픈 소스로 자동 및 수동 PR](../pull-requests/snyk-pull-or-merge-requests/)를 참조하세요.
+Snyk 오픈 소스를 사용하여 애플리케이션에서 사용하는 오픈 소스 라이브러리의 취약점을 찾아 해결할 수 있습니다. Snyk는 취약점에 대한 실행 가능한 수정 조언을 제공하며 취약점을 고치기 위한 풀 리퀘스트를 사용하는 워크플로를 지원합니다. 자세한 정보는 [Snyk 오픈 소스로 자동 및 수동 PR](../pull-requests/snyk-pull-or-merge-requests/)를 참조하세요.
 
 Snyk 오픈 소스는 발견된 취약점을 우선 순위를 정하고 보고하는 데도 도움을 줍니다. 자세한 정보는 [리스크 관리](../../manage-risk/)를 참조하세요.
 
 ## 라이선스 문제 찾아 해결하기
 
-Snyk 오픈 소스는 프로젝트의 라이선스 준수를 위해 검사를 수행하며 Snyk에서 알려진 라이선스와 비교합니다. 자세한 정보는 [오픈 소스 라이선스 준수](scan-open-source-libraries-and-licenses/open-source-license-compliance.md/)를 참조하세요.
+Snyk 오픈 소스는 프로젝트의 라이선스 준수를 위해 검사를 수행하며 Snyk에서 알려진 라이선스와 비교합니다. 자세한 정보는 [오픈 소스 라이선스 준수](scan-open-source-libraries-and-licenses/open-source-license-compliance.md)를 참조하세요.
 
 또한 회사가 라이선스 문제를 다루는 방법을 정의하는 라이선스 정책을 사용할 수 있습니다. 자세한 정보는 [라이선스 정책](../../manage-risk/policies/license-policies/)를 참조하세요.

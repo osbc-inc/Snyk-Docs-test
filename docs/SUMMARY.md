@@ -479,7 +479,7 @@
       * [풀 리퀘스트 경험](scan-with-snyk/pull-requests/pull-request-checks/pull-request-experience.md)
       * [PR Checks 결과](scan-with-snyk/pull-requests/pull-request-checks/analyze-pr-checks-results.md)
       * [Troubleshoot PR Checks](scan-with-snyk/pull-requests/pull-request-checks/troubleshoot-pr-checks.md)
-  * [Snyk Open Source](scan-with-snyk/snyk-open-source/README.md)
+  * [Snyk 오픈 소스](scan-with-snyk/snyk-open-source/README.md)
     * [Scan open-source libraries and licenses](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/README.md)
       * [Open-source license compliance](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/open-source-license-compliance.md)
       * [Snyk License Compliance Management](scan-with-snyk/snyk-open-source/scan-open-source-libraries-and-licenses/snyk-license-compliance-management.md)
