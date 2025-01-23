@@ -1,4 +1,4 @@
-# Snyk AppRisk을 위한 우선 순위 설정
+# Snyk AppRisk의 우선순위 지정
 
 Snyk AppRisk은 통합적인 응용 프로그램 지능을 사용하여 컨테이너, 코드 및 오픈 소스 문제를 식별하고 애플리케이션에 대한 위험을 기반으로하는 우선 순위를 더 잘 식별하고 설정하는 데 도움을 줍니다. 사용자는 또한 Snyk AppRisk 정책에 정의된 자산 분류에 따라 우선 순위를 정할 수 있습니다.
 
@@ -6,7 +6,7 @@ Snyk AppRisk를 사용하는 경우 [Snyk 웹 UI](../../getting-started/snyk-web
 
 ## Snyk AppRisk을 위한 통찰
 
-Snyk는 추가 자산 컨텍스트와 함께 식별된 모든 문제를 중앙 집중형으로 제공하는 새로운 문제 페이지를 소개하여 AppSec 팀이 Snyk에서 문제를 더 잘 분류하고 개선할 수 있도록 돕는다.
+Snyk은 추가 자산 컨텍스트와 함께 식별된 모든 문제를 중앙 집중형으로 제공하는 새로운 문제 페이지를 소개하여 AppSec 팀이 Snyk에서 문제를 더 잘 분류하고 개선할 수 있도록 돕는다.
 
 **문제**는 그룹 레벨이나 조직 레벨에서 사용할 수 있습니다. [증거 그래프](using-the-issues-ui-with-snyk-apprisk/evidence-graph.md)는 Snyk AppRisk Pro 사용자 및 그룹 레벨에서만 사용할 수 있습니다.
 
