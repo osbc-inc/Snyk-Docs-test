@@ -4,16 +4,16 @@
 
 오픈 소스 상세 정보는 [무시 설정 방법](./#how-to-set-ignores)을 참조하십시오. 이 정보는 다른 Snyk 스캔 방법과 함께 무시 사용의 유용한 배경을 제공합니다. 이 페이지의 다음 섹션에서 자세한 내용을 확인할 수 있습니다:
 
-- [Snyk Code에서 문제 무시하기](./#ignore-issues-in-snyk-code)
-- [Snyk Container에서 문제 무시하기](./#ignore-issues-in-snyk-container)
-- [Snyk IaC에서 문제 무시하기](./#ignore-issues-in-snyk-iac)
+* [Snyk Code에서 문제 무시하기](./#ignore-issues-in-snyk-code)
+* [Snyk Container에서 문제 무시하기](./#ignore-issues-in-snyk-container)
+* [Snyk IaC에서 문제 무시하기](./#ignore-issues-in-snyk-iac)
 
 ## 문제 무시 결정
 
 최적으로는 취약점을 고치거나 패치하거나 취약한 종속성을 제거할 수 있어야 합니다. 그러나 다음과 같은 이유로 문제를 억제하고 싶을 수 있습니다:
 
-- 해결 방법이 없음.
-- 문제가 프로젝트와 관련이 없음. 예를 들어 내부 서비스에 대한 분산 거부 서비스 (DDoS) 공격과 같은 경우가 있습니다.
+* 해결 방법이 없음.
+* 문제가 프로젝트와 관련이 없음. 예를 들어 내부 서비스에 대한 분산 거부 서비스 (DDoS) 공격과 같은 경우가 있습니다.
 
 취약점이 현재 악용될 수 없는 경로를 가지고 있다 하더라도 문제를 최적화하는 것이 최선입니다. 악용할 수 없는 취약점도 미래에 악용될 수 있습니다.
 
@@ -21,11 +21,11 @@
 
 여러 방법으로 문제를 확인하고 무시할 수 있습니다:
 
-- [Snyk Web UI에서 문제 무시](./#ignore-issues-in-the-snyk-web-ui)
-- CLI에서 문제 무시하기](./#ignore-issues-in-the-cli)
-- [CLI 또는 CI/CD에서 스캔하여 Web UI에서 무시](./#scan-from-the-cli-or-ci-cd-ignore-in-the-web-ui)
-- [.snyk 파일을 사용하여 문제 무시](./#use-the-.snyk-file-to-ignore-issues)
-- [정책 액션을 사용하여 문제 무시](./#use-policy-actions-to-ignore-issues)
+* [Snyk Web UI에서 문제 무시](./#ignore-issues-in-the-snyk-web-ui)
+* CLI에서 문제 무시하기]\(./#ignore-issues-in-the-cli)
+* [CLI 또는 CI/CD에서 스캔하여 Web UI에서 무시](./#scan-from-the-cli-or-ci-cd-ignore-in-the-web-ui)
+* [.snyk 파일을 사용하여 문제 무시](./#use-the-.snyk-file-to-ignore-issues)
+* [정책 액션을 사용하여 문제 무시](./#use-policy-actions-to-ignore-issues)
 
 ### Snyk Web UI에서 문제 무시
 
@@ -80,13 +80,13 @@ CLI 또는 CI/CD 실행을 통해 찾아진 오픈 소스 문제를 무시하는
 2. Web UI에서 스캔 결과를 확인하고 문제를 무시하는 옵션을 선택합니다.
 3. CI/CD 또는 CLI에서 `snyk test` 또는 `snyk monitor`를 실행할 때 문제가 무시됩니다.
 
-다음 예시를 참조하십시오. 문제는 **CI/CLI**로 식별되며 프로젝트가 `snyk monitor`에서 가져왔음을 나타냅니다. 문제는 **`npmconf`**입니다. **취약하지 않음**이고 사용자는 **무시**를 선택할 수 있습니다.
+다음 예시를 참조하십시오. 문제는 **CI/CLI**로 식별되며 프로젝트가 `snyk monitor`에서 가져왔음을 나타냅니다. 문제는 \*\*`npmconf`\*\*입니다. **취약하지 않음**이고 사용자는 **무시**를 선택할 수 있습니다.
 
 <figure><img src="../../../.gitbook/assets/image (514).png" alt="snyk monitor에 의해 가져온 프로젝트, Web UI에서 설정된 무시"><figcaption><p>snyk monitor에 의해 가져온 프로젝트, Web UI에서 설정된 무시</p></figcaption></figure>
 
 다음은 Web UI에서 무시가 설정되기 전에 `snyk test` 결과를 보여줍니다:
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk test 결과 무시 전 Web UI"><figcaption><p>Snyk test 결과 무시 전 Web UI</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-42833c4dd568f659f3f44c68a0aa9129eaaf41c3%252Fimage%2520%2818%29%2520%281%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=b5db477a&#x26;sv=2" alt="Snyk test 결과 무시 전 Web UI"><figcaption><p>Snyk test 결과 무시 전 Web UI</p></figcaption></figure>
 
 다음은 Web UI에서 무시가 설정된 후 `snyk test` 결과를 보여줍니다:
 
@@ -96,7 +96,7 @@ CLI 또는 CI/CD 실행을 통해 찾아진 오픈 소스 문제를 무시하는
 
 ### .snyk 파일을 사용하여 문제 무시
 
-오픈 소스 프로젝트의 경우 취약점을 무시하려면 `.snyk` YAML 파일을 만들거나 기존 `.snyk` 파일을 수정할 수 있습니다. 
+오픈 소스 프로젝트의 경우 취약점을 무시하려면 `.snyk` YAML 파일을 만들거나 기존 `.snyk` 파일을 수정할 수 있습니다.
 
 <figure><img src="../../../.gitbook/assets/screen+shot+2017-05-10+at+11.16.57+am.png" alt=".snyk 파일"><figcaption><p>.snyk 파일</p></figcaption></figure>
 
@@ -123,9 +123,9 @@ ignore:
 
 ## Snyk Code에서 문제 무시
 
-[](../../../scan-with-snyk/snyk-code/)를 위해 무시 기능은 다른 제품보다 다양한 문제를 포함할 수 있습니다.
+[Snyk Code](../../../scan-with-snyk/snyk-code/)를 위해 무시 기능은 다른 제품보다 다양한 문제를 포함할 수 있습니다.
 
-는 입력 코드를 중간 표현으로 변환하여 코드 흐름을 캡처하지만 세부 사항은 추상화합니다.
+Snyk Code은 입력 코드를 중간 표현으로 변환하여 코드 흐름을 캡처하지만 세부 사항은 추상화합니다.
 
 는 이 중간 표현을 사용하여 코드를 리팩토링하거나 변수의 이름을 변경해도 동일한 문제를 인식할 수 있습니다.
 
@@ -173,4 +173,4 @@ Snyk은 작업 디렉토리의 루트에 `.snyk` 파일을 저장 및 버전 관
 3. **각 무시에 대한 이유를 요구**를 선택하면 문제를 무시할 때마다 **자세한 내용** 필드가 필수로 입력되어 사용자가 각 무시에 대한 이유를 입력해야 합니다.
 4. 변경 사항을 적용하려면 **업데이트**를 선택합니다.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png" alt="무시 설정 업데이트"><figcaption><p>무시
+<figure><img src="../../../.gitbook/assets/Screenshot 2021-12-07 at 11.25.49.png" alt="무시 설정 업데이트"><figcaption><p>무시</p></figcaption></figure>
