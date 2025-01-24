@@ -1,4 +1,4 @@
-# Ruby 구성을 위한 개인 gem 소스
+# Ruby 구성을 위한 비공개 gem 소스
 
 {% hint style="info" %}
 **기능 가용성**\
@@ -9,7 +9,7 @@
 
 Snyk에게 개인 gem이 호스팅되는 위치를 알려주는 구성을 추가할 수 있습니다. 이는 보통 Bundler 환경 변수로 추가하는 정보입니다.
 
-이 구성을 추가한 후에는 Snyk가 해당 정보를 사용하여 Pull/Merge 요청을 만들 때 개인 종속성에 액세스하여 lockfile을 재생성할 수 있도록 Bundler가 해당 종속성에 도달할 수 있게 됩니다.
+이 구성을 추가한 후에는 Snyk가 해당 정보를 사용하여 풀/병합 요청을 만들 때 개인 종속성에 액세스하여 lockfile을 재생성할 수 있도록 Bundler가 해당 종속성에 도달할 수 있게 됩니다.
 
 ## Ruby를 위한 개인 gem 소스 구성
 
@@ -26,9 +26,9 @@ Snyk에게 개인 gem이 호스팅되는 위치를 알려주는 구성을 추가
 
 구성 요구 사항 목록은 다음과 같습니다:
 
-- 변수 값은 CGI 이스케이핑이 되어야 합니다.
-- Gem 소스는 `https` URL을 사용해야 합니다.\
+* 변수 값은 CGI 이스케이핑이 되어야 합니다.
+* Gem 소스는 `https` URL을 사용해야 합니다.\
   예: **지원됨:** `gem "privvy", git: "https://github.com/testexample/ruby-gem-for-private-source"`\
   **지원되지 않음:** `gem "privvy", git: "git@github.com:testexample/ruby-gem-for-private-source"`
-- Gem 소스는 공개적으로 해결 가능해야 합니다, 즉, 방화벽 뒤에 숨겨져 있으면 안 됩니다.
-- 변수는 [Bundler Gem Sources를 위한 자격 증명 문서](https://bundler.io/v1.16/bundle_config.html#CREDENTIALS-FOR-GEM-SOURCES)에 따라 구성되어야 합니다.
+* Gem 소스는 공개적으로 해결 가능해야 합니다, 즉, 방화벽 뒤에 숨겨져 있으면 안 됩니다.
+* 변수는 [Bundler Gem Sources를 위한 자격 증명 문서](https://bundler.io/v1.16/bundle_config.html#CREDENTIALS-FOR-GEM-SOURCES)에 따라 구성되어야 합니다.

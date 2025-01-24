@@ -491,7 +491,7 @@
         * [Maven용 Nexus 리포지토리 관리자](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
         * [npm용 Nexus 리포지토리 관리자](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-npm.md)
       * [npm Teams와 npm Enterprise 통합](scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md)
-      * [Private gem sources for Ruby configuration](scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration.md)
+      * [Ruby 구성을 위한 비공개 gem 소스](scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration.md)
     * [Manage vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/README.md)
       * [Fix your vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md)
       * [Gatekeeper plugins](scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/README.md)
