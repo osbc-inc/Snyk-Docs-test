@@ -497,7 +497,7 @@
       * [Gatekeeper 플러그인](scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/README.md)
         * [Artifactory Gatekeeper 플러그인](scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md)
         * [Nexus 리포지토리 관리자 Gatekeeper 플러그인](scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
-      * [Vulnerability fix types](scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md)
+      * [취약점 수정 유형](scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md)
       * [Upgrade package versions to fix vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/upgrade-package-versions-to-fix-vulnerabilities.md)
       * [Snyk patches to fix vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
       * [Snyk Vulnerability Database](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)
