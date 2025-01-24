@@ -1,4 +1,4 @@
-# Artifactory 게이트키퍼 플러그인
+# Artifactory Gatekeeper 플러그인
 
 {% hint style="info" %}
 **기능 가용성**\
@@ -9,8 +9,8 @@ Artifactory를 위한 Snyk 플러그인을 사용하면 아티팩트를 오픈 �
 
 플러그인이 설치된 후에는 백그라운드에서 실행되어 다음과 같은 작업을 자동으로 수행할 수 있습니다:
 
-- Snyk에서 보고된 취약점 및 라이선스 문제 수를 아티팩트의 속성으로 추가
-- 구성된 임계값에 따라 취약점 및 라이선스 문제가 있는 패키지의 다운로드를 개발자가 차단
+* Snyk에서 보고된 취약점 및 라이선스 문제 수를 아티팩트의 속성으로 추가
+* 구성된 임계값에 따라 취약점 및 라이선스 문제가 있는 패키지의 다운로드를 개발자가 차단
 
 아티팩트를 워크플로의 일부로 스캔하고 그 테스트 결과를 직접 Artifactory UI에서 표시함으로써, Snyk Artifactory 게이트키퍼 플러그인을 사용하여 응용 프로그램 보안에 위험이 되는 문제를 더 신속하게 추적하고 해당 아티팩트를 프로젝트에서 사용하는 것을 피할 수 있습니다.
 
@@ -22,19 +22,19 @@ Artifactory를 위한 Snyk 플러그인을 사용하면 아티팩트를 오픈 �
 
 ## Artifactory 플러그인이 지원하는 패키지 관리자
 
-- npm
-- Maven (.jar 파일)
-- Gradle (.jar 파일)
-- sbt (.jar 파일)
-- pip (PyPi)
-- CocoaPods
-- Ruby Gems
-- Nuget
+* npm
+* Maven (.jar 파일)
+* Gradle (.jar 파일)
+* sbt (.jar 파일)
+* pip (PyPi)
+* CocoaPods
+* Ruby Gems
+* Nuget
 
 ## Artifactory 플러그인을 위한 사전 준비 사항
 
-- Snyk 엔터프라이즈 계정
-- Artifactory 버전 7.4.3 이상
+* Snyk 엔터프라이즈 계정
+* Artifactory 버전 7.4.3 이상
 
 ## Artifactory와 Snyk 간에 교환되는 데이터
 
@@ -88,7 +88,7 @@ Artifactory **원격 저장소**에서 패키지 관리자 또는 URL에서 다�
 
 플러그인 구성은 이 파일에서 로드됩니다: `$JFROG_HOME/artifactory/etc/artifactory/plugins/snykSecurityPlugin.properties`. 파일의 변경 사항이 적용되려면 Artifactory를 다시 시작해야 합니다.
 
-<table data-header-hidden><thead><tr><th width="411"></th><th width="116"></th><th></th></tr></thead><tbody><tr><td><strong>매개변수</strong></td><td><strong>기본 값</strong></td><td><strong>설명</strong></td></tr><tr><td><code>snyk.api.token</code></td><td></td><td>서비스 계정 토큰 또는 조직 API 토큰</td></tr><tr><td><code>snyk.api.organization</code></td><td></td><td>하나의 Snyk 조직의 조직 ID</td></tr><tr><td><code>snyk.api.url</code></td><td>https://api.snyk.io/v1/</td><td>Snyk API 기본 URL</td></tr><tr><td><code>snyk.scanner.test.continuously</code></td><td>false</td><td>플러그인이 주기적으로 Snyk에서 취약성 데이터를 새로 고치거나 패키지가 처음 요청될 때 얻은 결과에 따라 액세스를 필터링해야 하는지를 결정합니다. 지속적 모드인 경우, 이미 사용자가 허용한 패키지에 대해 새로운 취약점이 보고되지 않습니다.</td></tr><tr><td><code>snyk.scanner.frequency.hours</code></td><td>168</td><td>스캔 결과 만료 시간 (지속 모드만 해당). 최근 스캔이 이 시간 내에 이루어졌으면, 필터링은 이전 결과를 존중합니다. 해당 시간을 초과하면 새로운 Snyk 테스트 요청이 이루어집니다. 이 속성을 0으로 설정하면, 플러그인은 아티팩트에 액세스할 때마다 테스트를 트리거합니다.</td></tr><tr><td><code>snyk.scanner.vulnerability.threshold</code></td><td>low</td><td>취약점 문제에 대한 전역 임계값. 허용되는 값: "low", "medium", "high", "critical", "none"</td></tr><tr><td><code>snyk.scanner.license.threshold</code></td><td>low</td><td>라이선스 문제에 대한 전역 임계값. 허용되는 값: "low", "medium", "high", "critical", "none"</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="411"></th><th width="116"></th><th></th></tr></thead><tbody><tr><td><strong>매개변수</strong></td><td><strong>기본 값</strong></td><td><strong>설명</strong></td></tr><tr><td><code>snyk.api.token</code></td><td></td><td>서비스 계정 토큰 또는 조직 API 토큰</td></tr><tr><td><code>snyk.api.organization</code></td><td></td><td>하나의 Snyk 조직의 조직 ID</td></tr><tr><td><code>snyk.api.url</code></td><td>https://api.sn<br>yk.io/v1/</td><td>Snyk API 기본 URL</td></tr><tr><td><code>snyk.scanner.test.continuously</code></td><td>false</td><td>플러그인이 주기적으로 Snyk에서 취약성 데이터를 새로 고치거나 패키지가 처음 요청될 때 얻은 결과에 따라 액세스를 필터링해야 하는지를 결정합니다. 지속적 모드인 경우, 이미 사용자가 허용한 패키지에 대해 새로운 취약점이 보고되지 않습니다.</td></tr><tr><td><code>snyk.scanner.frequency.hours</code></td><td>168</td><td>스캔 결과 만료 시간 (지속 모드만 해당). 최근 스캔이 이 시간 내에 이루어졌으면, 필터링은 이전 결과를 존중합니다. 해당 시간을 초과하면 새로운 Snyk 테스트 요청이 이루어집니다. 이 속성을 0으로 설정하면, 플러그인은 아티팩트에 액세스할 때마다 테스트를 트리거합니다.</td></tr><tr><td><code>snyk.scanner.vulnerability.threshold</code></td><td>low</td><td>취약점 문제에 대한 전역 임계값. 허용되는 값: "low", "medium", "high", "critical", "none"</td></tr><tr><td><code>snyk.scanner.license.threshold</code></td><td>low</td><td>라이선스 문제에 대한 전역 임계값. 허용되는 값: "low", "medium", "high", "critical", "none"</td></tr></tbody></table>
 
 속성의 전체 목록은 [GitHub에서 속성 파일을 확인하십시오](https://github.com/snyk/artifactory-snyk-security-plugin/blob/master/core/src/main/groovy/io/snyk/plugins/artifactory/snykSecurityPlugin.properties).
 
