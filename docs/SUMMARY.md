@@ -488,7 +488,7 @@
         * [Maven용 Artifactory 리포지토리](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
         * [npm용 Artifactory 리포지토리](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-npm.md)
       * [Nexus 리포지토리 관리자 연결 설정](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/README.md)
-        * [Nexus Repository Manager for Maven](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
+        * [Maven용 Nexus 리포지토리 관리자](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
         * [Nexus Repository Manager for npm](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-npm.md)
       * [npm Teams and npm Enterprise integration](scan-with-snyk/snyk-open-source/package-repository-integrations/npm-teams-and-npm-enterprise-integration.md)
       * [Private gem sources for Ruby configuration](scan-with-snyk/snyk-open-source/package-repository-integrations/private-gem-sources-for-ruby-configuration.md)
