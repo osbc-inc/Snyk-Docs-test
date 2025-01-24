@@ -2,7 +2,7 @@
 
 ## 개요
 
-Snyk AppRisk 정책을 사용하면 비즈니스 컨텍스트를 추가하고 통지를받는 프로세스를 쉽게 자동화할 수 있습니다. 
+Snyk AppRisk 정책을 사용하면 비즈니스 컨텍스트를 추가하고 통지를 받는 프로세스를 쉽게 자동화할 수 있습니다.
 
 {% hint style="info" %}
 정책이 생성된 후, 최대 3시간 후에 실행되며 그 후로는 3시간마다 실행됩니다.
@@ -26,10 +26,10 @@ Snyk AppRisk 정책에 액세스하려면 그룹 수준에서 자리를 잡은 �
 
 자산을 정리하고 분류하며 최신 자산 정보를 항상 업데이트할 수 있도록 정책을 생성할 수 있습니다. 정책을 사용하는 일반적인 사례:
 
-- [새로운 자산 알림](use-cases-for-policies/notification-policy-use-case.md)
-- [자산 분류](use-cases-for-policies/classification-policy-use-case.md)
-- [자산 태그 설정](use-cases-for-policies/tagging-policy-use-case.md)
-- [보안 커버리지 제어](use-cases-for-policies/coverage-control-policy-use-case.md)
+* [새로운 자산 알림](use-cases-for-policies/notification-policy-use-case.md)
+* [자산 분류](use-cases-for-policies/classification-policy-use-case.md)
+* [자산 태그 설정](use-cases-for-policies/tagging-policy-use-case.md)
+* [보안 커버리지 제어](use-cases-for-policies/coverage-control-policy-use-case.md)
 
 ### 새로운 자산 알림
 
