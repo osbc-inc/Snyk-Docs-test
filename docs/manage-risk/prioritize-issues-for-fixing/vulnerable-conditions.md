@@ -5,6 +5,7 @@ Exploitable하지 않은 취약점은 애플리케이션에 보안 위협을 제
 모든 취약점은 취약점이 위협이 되도록, 즉, exploit할 수 있도록 하는 조건이 있습니다.
 
 취약한 조건의 예로는 다음 기준 중 하나 이상을 충족하는 조건이 포함됩니다:
+
 * 사용자 상호작용 필요
 * 특정한 포트 번호가 열려 있어야 함
 * 특정 CPU 아키텍처가 필요함
@@ -26,16 +27,16 @@ Exploit 가능성은 맥락에 의존합니다. 맥락의 예로는 환경, 설�
 Snyk Code ([SAST](https://snyk.io/learn/application-security/sast-vs-dast/)) 엔진은 당신의 퍼스트 파티 코드를 읽고 Snyk Open Source (SCA)에서 발견된 취약점의 조건을 확인하는 데 사용됩니다.
 
 {% hint style="info" %}
-이 기능을 제공하기 위해 Snyk는 당신의 Git 저장소 콘텐츠의 임시 복사본을 만듭니다.
+이 기능을 제공하기 위해 Snyk은 당신의 Git 저장소 콘텐츠의 임시 복사본을 만듭니다.
 
-자세한 정보는 [Snyk가 데이터를 처리하는 방법](../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하십시오.
+자세한 정보는 [Snyk이데이터를 처리하는 방법](../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하십시오.
 {% endhint %}
 
 ## Jackson 취약한 조건의 평가
 
 Jackson 취약한 조건은 취약점이 exploit될 수 있도록 다음 조건을 모두 충족해야 합니다.
 
-* 취약한 버전: [Jackson 패키지](https://snyk.io/vuln/maven:com.fasterxml.jackson.core%3Ajackson-databind) (**com.fasterxml.jackson.core:jackson-databind 취약점**)은 Snyk가 취약하다고 알고 있는 특정 버전이어야 합니다.
+* 취약한 버전: [Jackson 패키지](https://snyk.io/vuln/maven:com.fasterxml.jackson.core%3Ajackson-databind) (**com.fasterxml.jackson.core:jackson-databind 취약점**)은 Snyk이 취약하다고 알고 있는 특정 버전이어야 합니다.
 * **특정 설정:** 특정 설정 또는 기능이 활성화되어 있어야 하며, 이 경우 Polymorphic Type Handling 기능이어야 합니다.
   * 당신의 코드에서 이 설정이 활성화되었는지 확인하려면 다음과 같은 것 중 하나를 찾아보면 됩니다:
     * `@JsonSubTypes` 주석이 사용되었음.

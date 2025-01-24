@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **기능 가용성**
 
-정책은 엔터프라이즈 플랜에서만 사용할 수 있으며  스캔에만 적용됩니다.&#x20;
+정책은 엔터프라이즈 플랜에서만 사용할 수 있으며 스캔에만 적용됩니다.
 
 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)을 참조하십시오.
 
@@ -12,7 +12,7 @@
 
 Snyk 정책에는 Snyk가 특정 유형의 오픈 소스 문제를 만났을 때의 동작 방식을 정의하는 규칙이 포함됩니다. 정책을 사용하면 `exploit 사용 불가`, 같은 조건에 따라 문제 유형을 식별하고 해당 문제에 조치를 취할 수 있습니다. 따라서 사용자 지정 가능한 Snyk 정책을 사용하여 스캔 중 발견된 특정 문제 유형에 대한 조치를 정의할 수 있습니다.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (112) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (2) (3).png" alt="Snyk 정책 관리자"><figcaption><p>Snyk 정책 관리자</p></figcaption></figure></div>
+<div align="left"><figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-b9765625d9be0504acad00c2d78a078465170f05%252Fimage%2520%28112%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%282%29%2520%281%29%2520%282%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8a357553&#x26;sv=2" alt="Snyk 정책 관리자"><figcaption><p>Snyk 정책 관리자</p></figcaption></figure></div>
 
 Snyk 정책 관리자를 사용하여 정책을 보고 생성하고 편집할 수 있습니다. 자세한 내용은 [정책 보기, 생성 및 수정](view-create-and-modify-policies.md)을 참조하십시오.
 
