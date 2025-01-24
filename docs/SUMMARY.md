@@ -498,7 +498,7 @@
         * [Artifactory Gatekeeper 플러그인](scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/artifactory-gatekeeper-plugin.md)
         * [Nexus 리포지토리 관리자 Gatekeeper 플러그인](scan-with-snyk/snyk-open-source/manage-vulnerabilities/gatekeeper-plugins/nexus-repository-manager-gatekeeper-plugin.md)
       * [취약점 수정 유형](scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md)
-      * [Upgrade package versions to fix vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/upgrade-package-versions-to-fix-vulnerabilities.md)
+      * [취약점 수정을 위한 패키지 버전 업그레이드](scan-with-snyk/snyk-open-source/manage-vulnerabilities/upgrade-package-versions-to-fix-vulnerabilities.md)
       * [Snyk patches to fix vulnerabilities](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
       * [Snyk Vulnerability Database](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)
       * [Differences in Open Source vulnerability counts across environments](scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
