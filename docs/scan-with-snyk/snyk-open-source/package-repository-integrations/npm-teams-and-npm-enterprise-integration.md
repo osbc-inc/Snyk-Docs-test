@@ -1,4 +1,4 @@
-# npm Teams 및 npm Enterprise 통합
+# npm Teams와 npm Enterprise 통합
 
 {% hint style="info" %}
 **기능 가용성**\
@@ -11,7 +11,7 @@ Snyk는 npm 및 Yarn 프로젝트에서 사용자 정의 npm Teams 및 npm Enter
 
 이를 통해 Snyk는 사용자 정의 레지스트리에 호스팅되는 패키지의 모든 직접 및 간접 종속성을 해결하고 더 완전하고 정확한 종속성 그래프와 관련된 취약점을 계산할 수 있습니다.
 
-구성한 후에 Snyk는 또한 이 정보를 사용하여 Pull/Merge 요청을 만들 때 개인 종속성에 액세스하고, npm과 yarn이 해당 종속성에 도달하여 lockfile을 다시 생성할 수 있도록 허용합니다.
+구성한 후에 Snyk는 또한 이 정보를 사용하여 풀/병합 요청을 만들 때 개인 종속성에 액세스하고, npm과 yarn이 해당 종속성에 도달하여 lockfile을 다시 생성할 수 있도록 허용합니다.
 
 당신은 Snyk에게 개인 npm Teams 및 npm Enterprise Node.js 패키지가 호스팅되고 어떤 범위 아래에 있는지 알려주는 구성을 추가할 수 있습니다.
 
@@ -27,9 +27,9 @@ Snyk는 npm 및 Yarn 프로젝트에서 사용자 정의 npm Teams 및 npm Enter
    3. **이 레지스트리를 사용하려면 범위에만 구성**하려면 **범위**를 추가합니다.
    4. **기본 레지스트리 URL 및 범위 패키지를 추가**하려면, 기본 및 각 범위당 하나의 구성을 추가합니다.
 4. 원하는 모든 레지스트리와 범위를 추가했을 때 **설정 업데이트**를 클릭합니다.
-5. 통합을 테스트하려면, 이전에 생성되지 않았던 Snyk 픽스 Pull 요청에 업데이트된 lockfile을 포함한 개인 종속성이 포함된 프로젝트에서 Pull/Merge 요청을 엽니다.
+5. 통합을 테스트하려면, 이전에 생성되지 않았던 Snyk 픽스  요청에 업데이트된 lockfile을 포함한 개인 종속성이 포함된 프로젝트에서 풀/병합 요청을 엽니다.
 
-<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (2).png" alt="npm 통합 테스트"><figcaption><p>npm 통합 테스트</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image%20(34)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(2)%20(2).png" alt="npm 통합 테스트"><figcaption><p>npm 통합 테스트</p></figcaption></figure>
 
 ## npm Teams 및 npm Enterprise 레지스트리 설정
 
