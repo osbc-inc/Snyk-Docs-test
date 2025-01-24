@@ -486,7 +486,7 @@
     * [패키지 리포지토리 통합](scan-with-snyk/snyk-open-source/package-repository-integrations/README.md)
       * [Artifactory 패키지 리포지토리 연결 설정](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/README.md)
         * [Maven용 Artifactory 리포지토리](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-maven.md)
-        * [Artifactory Registry for npm](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-npm.md)
+        * [npm용 Artifactory 리포지토리](scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/artifactory-registry-for-npm.md)
       * [Nexus Repository Manager connection setup](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/README.md)
         * [Nexus Repository Manager for Maven](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-maven.md)
         * [Nexus Repository Manager for npm](scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/nexus-repository-manager-for-npm.md)
