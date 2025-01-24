@@ -1,4 +1,4 @@
-# Maven용 Artifactory 레지스트리
+# Maven용 Artifactory 리포지토리
 
 {% hint style="info" %}
 **기능 가용성**\
@@ -16,7 +16,7 @@ Maven 프로젝트를 구성하여 모든 요청을 사용자 정의 패키지 �
 
 ## **사용자 정의 Maven 패키지 레지스트리 설정**
 
-사용자 정의 레지스트리에 액세스하기 위해 인증이 필요한 경우 Artifactory 패키지 저장소 통합을 구성해야 합니다. 자세한 내용은 [Artifactory 패키지 저장소 연결 설정](./)을 참조하세요.
+사용자 정의 레지스트리에 액세스하기 위해 인증이 필요한 경우 Artifactory 패키지 저장소 통합을 구성해야 합니다. 자세한 내용은 [Artifactory 패키지 리포지토리 연결 설정](./)을 참조하세요.
 
 통합 설정을 완료한 후에는 **설정 > 언어 > Java**로 이동하여 Maven 설정을 구성할 수 있습니다.
 
@@ -42,4 +42,4 @@ Artifactory를 미러 또는 아티팩트가 소재할 추가 저장소로 사�
 
 대안으로 아티팩트를 확인할 추가 위치로 사용될 저장소를 구성할 수 있습니다.
 
-저장소는 [미러](artifactory-registry-for-maven.md#mirrors)와 같은 방식으로 구성되지만 **Mirror Of**는 필요하지 않습니다.
+저장소는 [Mirrors](artifactory-registry-for-maven.md#mirrors)와 같은 방식으로 구성되지만 **Mirror Of**는 필요하지 않습니다.
