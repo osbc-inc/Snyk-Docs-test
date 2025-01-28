@@ -688,12 +688,14 @@
         }
       },
       "GroupId": {
-        "description": "Unique identifier of the group.",
+        "description": "Group ID",
         "in": "path",
         "name": "group_id",
         "required": true,
         "schema": {
-          "$ref": "#/components/schemas/GroupId"
+          "example": "4a18d42f-0706-4ad0-b127-24078731fbed",
+          "format": "uuid",
+          "type": "string"
         }
       },
       "Id": {
@@ -839,12 +841,13 @@
         "style": "form"
       },
       "MembershipId": {
-        "description": "Unique identifier of the tenant membership.",
+        "description": "The ID of the Group Membership",
         "in": "path",
         "name": "membership_id",
         "required": true,
         "schema": {
-          "$ref": "#/components/schemas/TenantMembershipId"
+          "format": "uuid",
+          "type": "string"
         }
       },
       "Name": {
@@ -1139,7 +1142,7 @@
             "user_display_name",
             "email",
             "login_method",
-            "role_name"
+            "role"
           ],
           "type": "string"
         }
@@ -3206,6 +3209,50 @@
         ],
         "type": "object"
       },
+      "CVSSSource": {
+        "additionalProperties": false,
+        "properties": {
+          "level": {
+            "example": "medium",
+            "minLength": 1,
+            "type": "string"
+          },
+          "modification_time": {
+            "description": "The time this CVSS data was last updated",
+            "format": "date-time",
+            "type": "string"
+          },
+          "score": {
+            "example": 4.2,
+            "format": "float",
+            "type": "number"
+          },
+          "source": {
+            "example": "snyk",
+            "minLength": 1,
+            "type": "string"
+          },
+          "vector": {
+            "example": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:A/VC:N/VI:N/VA:N/SC:H/SI:L/SA:L/E:A",
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "example": "4.0",
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "level",
+          "source",
+          "score",
+          "vector",
+          "version",
+          "modification_time"
+        ],
+        "type": "object"
+      },
       "CatalogProgress": {
         "properties": {
           "attributes": {
@@ -3430,10 +3477,114 @@
       "CloudResource": {
         "properties": {
           "environment": {
-            "$ref": "#/components/schemas/Environment"
+            "properties": {
+              "id": {
+                "description": "Internal ID for an environment.",
+                "format": "uuid",
+                "type": "string"
+              },
+              "name": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "native_id": {
+                "description": "An optional native identifier for this environment. For example, a cloud account id.",
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "aws",
+                  "azure",
+                  "azure_ad",
+                  "google",
+                  "scm",
+                  "cli",
+                  "tfc"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "name"
+            ],
+            "type": "object"
           },
           "resource": {
-            "$ref": "#/components/schemas/Resource"
+            "properties": {
+              "iac_mappings_count": {
+                "description": "Amount of IaC resources this resource maps to.",
+                "format": "int64",
+                "minimum": 0,
+                "type": "integer"
+              },
+              "id": {
+                "description": "Internal ID for a resource.",
+                "format": "uuid",
+                "type": "string"
+              },
+              "input_type": {
+                "enum": [
+                  "cloud_scan",
+                  "arm",
+                  "k8s",
+                  "tf",
+                  "tf_hcl",
+                  "tf_plan",
+                  "tf_state",
+                  "cfn"
+                ],
+                "type": "string"
+              },
+              "location": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "name": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "native_id": {
+                "description": "An optional native identifier for this resource. For example, a cloud resource id.",
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "platform": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "resource_type": {
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              },
+              "tags": {
+                "additionalProperties": {
+                  "maxLength": 256,
+                  "type": "string"
+                },
+                "type": "object"
+              },
+              "type": {
+                "enum": [
+                  "cloud",
+                  "iac"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "input_type"
+            ],
+            "type": "object"
           }
         },
         "required": [
@@ -3597,98 +3748,7 @@
             "properties": {
               "coordinates": {
                 "items": {
-                  "properties": {
-                    "remedies": {
-                      "items": {
-                        "properties": {
-                          "description": {
-                            "description": "A markdown-formatted optional description of this remedy.",
-                            "example": "Upgrade the package version to 5.4.0,6.4.0 to fix this vulnerability",
-                            "type": "string"
-                          },
-                          "details": {
-                            "properties": {
-                              "upgrade_package": {
-                                "description": "A minimum version to upgrade to in order to remedy the issue.",
-                                "example": "5.4.0,6.4.0",
-                                "type": "string"
-                              }
-                            },
-                            "type": "object"
-                          },
-                          "type": {
-                            "description": "The type of the remedy. Always ‘indeterminate’.",
-                            "example": "indeterminate",
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "type": "array"
-                    },
-                    "representations": {
-                      "description": "The affected versions of this vulnerability.",
-                      "items": {
-                        "anyOf": [
-                          {
-                            "description": "An object that contains an opaque identifying string.",
-                            "properties": {
-                              "resource_path": {
-                                "example": ",5.4.0),[6.0.0.pr1,6.4.0)",
-                                "maxLength": 2024,
-                                "minLength": 1,
-                                "type": "string"
-                              }
-                            },
-                            "required": [
-                              "resource_path"
-                            ],
-                            "type": "object"
-                          },
-                          {
-                            "properties": {
-                              "package": {
-                                "properties": {
-                                  "name": {
-                                    "description": "The package’s name",
-                                    "example": "woodstox-core",
-                                    "type": "string"
-                                  },
-                                  "namespace": {
-                                    "description": "A name prefix, such as a maven group id or docker image owner",
-                                    "example": "com.fasterxml.woodstox",
-                                    "type": "string"
-                                  },
-                                  "type": {
-                                    "description": "The package type or protocol",
-                                    "example": "maven",
-                                    "type": "string"
-                                  },
-                                  "url": {
-                                    "description": "The purl of the package",
-                                    "example": "pkg:maven/com.fasterxml.woodstox/woodstox-core@5.0.0",
-                                    "type": "string"
-                                  },
-                                  "version": {
-                                    "description": "The version of the package",
-                                    "example": "5.0.0",
-                                    "type": "string"
-                                  }
-                                },
-                                "type": "object"
-                              }
-                            },
-                            "type": "object"
-                          }
-                        ]
-                      },
-                      "type": "array"
-                    }
-                  },
-                  "required": [
-                    "representations"
-                  ],
-                  "type": "object"
+                  "$ref": "#/components/schemas/Coordinate"
                 },
                 "type": "array"
               },
@@ -3791,96 +3851,30 @@
       },
       "Coordinate": {
         "properties": {
-          "is_fixable_manually": {
-            "type": "boolean"
-          },
-          "is_fixable_snyk": {
-            "type": "boolean"
-          },
-          "is_fixable_upstream": {
-            "type": "boolean"
-          },
-          "is_patchable": {
-            "type": "boolean"
-          },
-          "is_pinnable": {
-            "type": "boolean"
-          },
-          "is_upgradeable": {
-            "type": "boolean"
-          },
-          "reachability": {
-            "$ref": "#/components/schemas/ReachabilityDef"
-          },
           "remedies": {
             "items": {
-              "$ref": "#/components/schemas/Remedy"
+              "$ref": "#/components/schemas/Remedy3"
             },
-            "maxItems": 5,
-            "minItems": 1,
             "type": "array"
           },
           "representations": {
-            "description": "A list of precise locations that surface an issue. A coordinate may have multiple representations.\n",
+            "description": "The affected versions of this vulnerability.",
             "items": {
-              "oneOf": [
+              "anyOf": [
                 {
-                  "description": "An object that contains an opaque identifying string.",
-                  "properties": {
-                    "resourcePath": {
-                      "maxLength": 2024,
-                      "minLength": 1,
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "resourcePath"
-                  ],
-                  "type": "object"
+                  "$ref": "#/components/schemas/ResourcePathRepresentation"
                 },
                 {
-                  "description": "An object that contains a list of opaque identifying strings.",
-                  "properties": {
-                    "dependency": {
-                      "$ref": "#/components/schemas/Dependency"
-                    }
-                  },
-                  "required": [
-                    "dependency"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "description": "A resource location to some service, like a cloud resource.",
-                  "properties": {
-                    "cloud_resource": {
-                      "$ref": "#/components/schemas/CloudResource"
-                    }
-                  },
-                  "required": [
-                    "cloud_resource"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "description": "A location within a file.",
-                  "properties": {
-                    "sourceLocation": {
-                      "$ref": "#/components/schemas/SourceLocation"
-                    }
-                  },
-                  "required": [
-                    "sourceLocation"
-                  ],
-                  "type": "object"
+                  "$ref": "#/components/schemas/PackageRepresentation"
                 }
               ]
             },
-            "maxItems": 5,
-            "minItems": 1,
             "type": "array"
           }
         },
+        "required": [
+          "representations"
+        ],
         "type": "object"
       },
       "CreateAssignmentsPayload": {
@@ -3898,6 +3892,11 @@
           "reset_learning_progress": {
             "description": "Global flag to reset progress for all lesson assignments in the request",
             "type": "boolean"
+          },
+          "reset_progress_before": {
+            "description": "Reset progress for all lesson assignments before this date (exclusive)",
+            "format": "date",
+            "type": "string"
           }
         },
         "required": [
@@ -4372,7 +4371,7 @@
       },
       "Cves": {
         "items": {
-          "pattern": "^CVE-\\d+$",
+          "pattern": "^(CVE)-\\d+-\\d+(,(CVE)-\\d+-\\d+)*$",
           "type": "string"
         },
         "maxItems": 50,
@@ -4609,7 +4608,16 @@
             "type": "string"
           },
           "type": {
-            "$ref": "#/components/schemas/EnvironmentTypeDef"
+            "enum": [
+              "aws",
+              "azure",
+              "azure_ad",
+              "google",
+              "scm",
+              "cli",
+              "tfc"
+            ],
+            "type": "string"
           }
         },
         "required": [
@@ -5329,18 +5337,7 @@
         "additionalProperties": true,
         "properties": {
           "attributes": {
-            "additionalProperties": true,
-            "properties": {
-              "name": {
-                "description": "The name of the group.",
-                "example": "My Group",
-                "type": "string"
-              }
-            },
-            "required": [
-              "name"
-            ],
-            "type": "object"
+            "$ref": "#/components/schemas/GroupAttributes"
           },
           "id": {
             "example": "331ede0a-de94-456f-b788-166caeca58bf",
@@ -5361,11 +5358,11 @@
         "type": "object"
       },
       "GroupAttributes": {
-        "example": {
-          "name": "My Group"
-        },
+        "additionalProperties": true,
         "properties": {
           "name": {
+            "description": "The name of the group.",
+            "example": "My Group",
             "type": "string"
           }
         },
@@ -5899,7 +5896,18 @@
             "additionalProperties": false,
             "properties": {
               "attributes": {
-                "$ref": "#/components/schemas/GroupAttributes"
+                "example": {
+                  "name": "My Group"
+                },
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "type": "object"
               },
               "id": {
                 "$ref": "#/components/schemas/GroupId"
@@ -6138,7 +6146,344 @@
           "coordinates": {
             "description": "Where the issue originated, specific to issue type. Details on what\ncode, package, etc introduced the issue. An issue may be caused by\nmore than one coordinate.\n",
             "items": {
-              "$ref": "#/components/schemas/Coordinate"
+              "properties": {
+                "is_fixable_manually": {
+                  "type": "boolean"
+                },
+                "is_fixable_snyk": {
+                  "type": "boolean"
+                },
+                "is_fixable_upstream": {
+                  "type": "boolean"
+                },
+                "is_patchable": {
+                  "type": "boolean"
+                },
+                "is_pinnable": {
+                  "type": "boolean"
+                },
+                "is_upgradeable": {
+                  "type": "boolean"
+                },
+                "reachability": {
+                  "enum": [
+                    "function",
+                    "package",
+                    "no-info",
+                    "not-applicable"
+                  ],
+                  "type": "string"
+                },
+                "remedies": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "correlation_id": {
+                        "description": "An optional identifier for correlating remedies between coordinates or across issues. They are scoped\nto a single Project and test run. Remedies with the same correlation_id must have the same contents.\n",
+                        "maxLength": 256,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "description": {
+                        "description": "A markdown-formatted optional description of this remedy. Links are not permitted.",
+                        "maxLength": 4096,
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "meta": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "data": {
+                            "additionalProperties": true,
+                            "description": "Metadata information related to apply a remedy. Limited in size to 100Kb when JSON serialized.",
+                            "type": "object"
+                          },
+                          "schema_version": {
+                            "description": "A schema version identifier the metadata object validates against. Note: this information is\nonly relevant in the domain of the API consumer: the issues system always considers metadata\njust as an arbitrary object.\n",
+                            "maxLength": 256,
+                            "minLength": 1,
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "data",
+                          "schema_version"
+                        ],
+                        "type": "object"
+                      },
+                      "type": {
+                        "enum": [
+                          "indeterminate",
+                          "manual",
+                          "automated",
+                          "rule_result_message",
+                          "terraform",
+                          "cloudformation",
+                          "cli",
+                          "kubernetes",
+                          "arm"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "type": "object"
+                  },
+                  "maxItems": 5,
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "representations": {
+                  "description": "A list of precise locations that surface an issue. A coordinate may have multiple representations.\n",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "description": "An object that contains an opaque identifying string.",
+                        "properties": {
+                          "resourcePath": {
+                            "maxLength": 2024,
+                            "minLength": 1,
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "resourcePath"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "description": "An object that contains a list of opaque identifying strings.",
+                        "properties": {
+                          "dependency": {
+                            "properties": {
+                              "package_name": {
+                                "description": "The package name the issue was found in",
+                                "maxLength": 2048,
+                                "minLength": 1,
+                                "type": "string"
+                              },
+                              "package_version": {
+                                "description": "The package version the issue was found in",
+                                "maxLength": 2048,
+                                "minLength": 1,
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "package_name",
+                              "package_version"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "dependency"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "description": "A resource location to some service, like a cloud resource.",
+                        "properties": {
+                          "cloud_resource": {
+                            "properties": {
+                              "environment": {
+                                "properties": {
+                                  "id": {
+                                    "description": "Internal ID for an environment.",
+                                    "format": "uuid",
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "maxLength": 256,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "native_id": {
+                                    "description": "An optional native identifier for this environment. For example, a cloud account id.",
+                                    "maxLength": 2048,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "enum": [
+                                      "aws",
+                                      "azure",
+                                      "azure_ad",
+                                      "google",
+                                      "scm",
+                                      "cli",
+                                      "tfc"
+                                    ],
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "type",
+                                  "name"
+                                ],
+                                "type": "object"
+                              },
+                              "resource": {
+                                "properties": {
+                                  "iac_mappings_count": {
+                                    "description": "Amount of IaC resources this resource maps to.",
+                                    "format": "int64",
+                                    "minimum": 0,
+                                    "type": "integer"
+                                  },
+                                  "id": {
+                                    "description": "Internal ID for a resource.",
+                                    "format": "uuid",
+                                    "type": "string"
+                                  },
+                                  "input_type": {
+                                    "enum": [
+                                      "cloud_scan",
+                                      "arm",
+                                      "k8s",
+                                      "tf",
+                                      "tf_hcl",
+                                      "tf_plan",
+                                      "tf_state",
+                                      "cfn"
+                                    ],
+                                    "type": "string"
+                                  },
+                                  "location": {
+                                    "maxLength": 256,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "maxLength": 256,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "native_id": {
+                                    "description": "An optional native identifier for this resource. For example, a cloud resource id.",
+                                    "maxLength": 2048,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "platform": {
+                                    "maxLength": 256,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "resource_type": {
+                                    "maxLength": 256,
+                                    "minLength": 1,
+                                    "type": "string"
+                                  },
+                                  "tags": {
+                                    "additionalProperties": {
+                                      "maxLength": 256,
+                                      "type": "string"
+                                    },
+                                    "type": "object"
+                                  },
+                                  "type": {
+                                    "enum": [
+                                      "cloud",
+                                      "iac"
+                                    ],
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "input_type"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "environment"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "cloud_resource"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "description": "A location within a file.",
+                        "properties": {
+                          "sourceLocation": {
+                            "properties": {
+                              "file": {
+                                "description": "A path to the file containing this issue, relative to the root of the project target,\nformatted using POSIX separators.\n",
+                                "maximum": 2048,
+                                "minimum": 1,
+                                "type": "string"
+                              },
+                              "region": {
+                                "properties": {
+                                  "end": {
+                                    "properties": {
+                                      "column": {
+                                        "minimum": 0,
+                                        "type": "integer"
+                                      },
+                                      "line": {
+                                        "minimum": 0,
+                                        "type": "integer"
+                                      }
+                                    },
+                                    "required": [
+                                      "line",
+                                      "column"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  "start": {
+                                    "properties": {
+                                      "column": {
+                                        "minimum": 0,
+                                        "type": "integer"
+                                      },
+                                      "line": {
+                                        "minimum": 0,
+                                        "type": "integer"
+                                      }
+                                    },
+                                    "required": [
+                                      "line",
+                                      "column"
+                                    ],
+                                    "type": "object"
+                                  }
+                                },
+                                "required": [
+                                  "start",
+                                  "end"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "file"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "sourceLocation"
+                        ],
+                        "type": "object"
+                      }
+                    ]
+                  },
+                  "maxItems": 5,
+                  "minItems": 1,
+                  "type": "array"
+                }
+              },
+              "type": "object"
             },
             "minItems": 1,
             "type": "array"
@@ -6166,6 +6511,48 @@
             ],
             "type": "string"
           },
+          "exploit_details": {
+            "additionalProperties": false,
+            "properties": {
+              "maturity_levels": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "format": {
+                      "example": "CVSS_v4",
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "level": {
+                      "example": "attacked",
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "format",
+                    "level"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "sources": {
+                "example": [
+                  "CISA"
+                ],
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "sources",
+              "maturity_levels"
+            ],
+            "type": "object"
+          },
           "ignored": {
             "description": "A flag indicating if the issue is being ignored. Derived from the issue's ignore, which provides more details.",
             "type": "boolean"
@@ -6189,6 +6576,12 @@
           },
           "risk": {
             "$ref": "#/components/schemas/Risk"
+          },
+          "severities": {
+            "items": {
+              "$ref": "#/components/schemas/CVSSSource"
+            },
+            "type": "array"
           },
           "status": {
             "description": "The issue's status. Derived from the issue's resolution, which provides more details.",
@@ -6656,6 +7049,33 @@
         },
         "type": "array"
       },
+      "LoadedPackageRiskFactor": {
+        "properties": {
+          "included_in_score": {
+            "default": false,
+            "type": "boolean"
+          },
+          "links": {
+            "$ref": "#/components/schemas/RiskFactorLinks"
+          },
+          "name": {
+            "type": "string"
+          },
+          "updated_at": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "value": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "updated_at",
+          "value"
+        ],
+        "type": "object"
+      },
       "ManualRemediationPRsSettings20240531": {
         "additionalProperties": false,
         "description": "Manually raise pull requests to fix new and existing vulnerabilities. If not specified, settings will be inherited from the Organization's integration.",
@@ -6837,22 +7257,52 @@
         "additionalProperties": false,
         "properties": {
           "attributes": {
-            "$ref": "#/components/schemas/OrgAttributes"
+            "additionalProperties": false,
+            "properties": {
+              "group_id": {
+                "description": "The ID of a Group.",
+                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                "format": "uuid",
+                "type": "string"
+              },
+              "is_personal": {
+                "description": "Whether this organization belongs to an individual, rather than a Group.",
+                "example": true,
+                "type": "boolean"
+              },
+              "name": {
+                "description": "Friendly name of the organization.",
+                "example": "My Org",
+                "type": "string"
+              },
+              "slug": {
+                "description": "Unique URL sanitized name of the organization for accessing it in Snyk.",
+                "example": "my-org",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "slug",
+              "is_personal"
+            ],
+            "type": "object"
           },
           "id": {
-            "description": "The Snyk ID of the organization.",
+            "description": "The Snyk ID corresponding to this org",
             "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
             "format": "uuid",
             "type": "string"
           },
           "type": {
-            "$ref": "#/components/schemas/Types"
+            "description": "Content type.",
+            "example": "org",
+            "type": "string"
           }
         },
         "required": [
           "type",
-          "id",
-          "attributes"
+          "id"
         ],
         "type": "object"
       },
@@ -7591,34 +8041,7 @@
       "PackageRepresentation": {
         "properties": {
           "package": {
-            "properties": {
-              "name": {
-                "description": "The package’s name",
-                "example": "woodstox-core",
-                "type": "string"
-              },
-              "namespace": {
-                "description": "A name prefix, such as a maven group id or docker image owner",
-                "example": "com.fasterxml.woodstox",
-                "type": "string"
-              },
-              "type": {
-                "description": "The package type or protocol",
-                "example": "maven",
-                "type": "string"
-              },
-              "url": {
-                "description": "The purl of the package",
-                "example": "pkg:maven/com.fasterxml.woodstox/woodstox-core@5.0.0",
-                "type": "string"
-              },
-              "version": {
-                "description": "The version of the package",
-                "example": "5.0.0",
-                "type": "string"
-              }
-            },
-            "type": "object"
+            "$ref": "#/components/schemas/PackageMeta"
           }
         },
         "type": "object"
@@ -8074,8 +8497,7 @@
       "ProgressStatus": {
         "enum": [
           "completed",
-          "inProgress",
-          "todo"
+          "inProgress"
         ],
         "type": "string"
       },
@@ -8962,10 +9384,38 @@
       "Region": {
         "properties": {
           "end": {
-            "$ref": "#/components/schemas/FilePosition"
+            "properties": {
+              "column": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "line": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "line",
+              "column"
+            ],
+            "type": "object"
           },
           "start": {
-            "$ref": "#/components/schemas/FilePosition"
+            "properties": {
+              "column": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "line": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "line",
+              "column"
+            ],
+            "type": "object"
           }
         },
         "required": [
@@ -9049,7 +9499,25 @@
             "type": "string"
           },
           "meta": {
-            "$ref": "#/components/schemas/RemedyMetadata"
+            "additionalProperties": false,
+            "properties": {
+              "data": {
+                "additionalProperties": true,
+                "description": "Metadata information related to apply a remedy. Limited in size to 100Kb when JSON serialized.",
+                "type": "object"
+              },
+              "schema_version": {
+                "description": "A schema version identifier the metadata object validates against. Note: this information is\nonly relevant in the domain of the API consumer: the issues system always considers metadata\njust as an arbitrary object.\n",
+                "maxLength": 256,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "data",
+              "schema_version"
+            ],
+            "type": "object"
           },
           "type": {
             "enum": [
@@ -9376,10 +9844,7 @@
         "description": "An object that contains an opaque identifying string.",
         "properties": {
           "resource_path": {
-            "example": ",5.4.0),[6.0.0.pr1,6.4.0)",
-            "maxLength": 2024,
-            "minLength": 1,
-            "type": "string"
+            "$ref": "#/components/schemas/ResourcePath"
           }
         },
         "required": [
@@ -9443,6 +9908,7 @@
         "type": "object"
       },
       "ResourceType": {
+        "default": "lesson",
         "enum": [
           "learning_path",
           "lesson"
@@ -9486,6 +9952,7 @@
         "discriminator": {
           "mapping": {
             "deployed": "#/components/schemas/DeployedRiskFactor",
+            "loaded_package": "#/components/schemas/LoadedPackageRiskFactor",
             "os_condition": "#/components/schemas/OSConditionRiskFactor",
             "public_facing": "#/components/schemas/PublicFacingRiskFactor"
           },
@@ -9500,6 +9967,9 @@
           },
           {
             "$ref": "#/components/schemas/PublicFacingRiskFactor"
+          },
+          {
+            "$ref": "#/components/schemas/LoadedPackageRiskFactor"
           }
         ]
       },
@@ -10199,7 +10669,47 @@
             "type": "string"
           },
           "region": {
-            "$ref": "#/components/schemas/Region"
+            "properties": {
+              "end": {
+                "properties": {
+                  "column": {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "line": {
+                    "minimum": 0,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "line",
+                  "column"
+                ],
+                "type": "object"
+              },
+              "start": {
+                "properties": {
+                  "column": {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "line": {
+                    "minimum": 0,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "line",
+                  "column"
+                ],
+                "type": "object"
+              }
+            },
+            "required": [
+              "start",
+              "end"
+            ],
+            "type": "object"
           }
         },
         "required": [
@@ -11656,14 +12166,21 @@
     },
     "/groups/{group_id}": {
       "get": {
-        "description": "Get a group\n",
+        "description": "Returns a group by its ID",
         "operationId": "getGroup",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
+            "description": "The ID of the group",
+            "in": "path",
+            "name": "group_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/GroupId"
+            "$ref": "#/components/parameters/Version"
           }
         ],
         "responses": {
@@ -11671,19 +12188,30 @@
             "content": {
               "application/vnd.api+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GroupResponse"
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Group"
+                    },
+                    "jsonapi": {
+                      "$ref": "#/components/schemas/JsonApi"
+                    },
+                    "links": {
+                      "$ref": "#/components/schemas/Links"
+                    }
+                  },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
+                  "type": "object"
                 }
               }
             },
-            "description": "Returns an instance of a Group",
+            "description": "Group is returned",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
-              },
-              "location": {
-                "schema": {
-                  "type": "string"
-                }
               },
               "snyk-request-id": {
                 "$ref": "#/components/headers/RequestIdResponseHeader"
@@ -11714,22 +12242,18 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get Group",
+        "summary": "Get a group",
         "tags": [
-          "Group"
+          "Groups"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
           "2022-01-31~experimental",
-          "2023-01-30~beta",
-          "2024-04-25~experimental"
+          "2023-01-30~beta"
         ],
         "x-snyk-api-resource": "groups",
         "x-snyk-api-stability": "beta",
@@ -16152,15 +16676,7 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "description": "Group ID",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "example": "4a18d42f-0706-4ad0-b127-24078731fbed",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/ScanItemId"
@@ -16444,15 +16960,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Group ID",
-            "in": "path",
-            "name": "group_id",
-            "required": true,
-            "schema": {
-              "example": "4a18d42f-0706-4ad0-b127-24078731fbed",
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/GroupId"
           },
           {
             "$ref": "#/components/parameters/PathIssueId20240123"
@@ -17101,14 +17609,7 @@
             }
           },
           {
-            "description": "The ID of the Group Membership",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           },
           {
             "$ref": "#/components/parameters/Cascade"
@@ -17189,14 +17690,7 @@
             }
           },
           {
-            "description": "The ID of the Group Membership",
-            "in": "path",
-            "name": "membership_id",
-            "required": true,
-            "schema": {
-              "format": "uuid",
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/MembershipId"
           },
           {
             "$ref": "#/components/parameters/Version"
@@ -17417,7 +17911,75 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "$ref": "#/components/schemas/Org"
+                        "additionalProperties": false,
+                        "properties": {
+                          "attributes": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "access_requests_enabled": {
+                                "description": "Whether the organization permits access requests from users who are not members of the organization.",
+                                "example": false,
+                                "type": "boolean"
+                              },
+                              "created_at": {
+                                "description": "The time the organization was created.",
+                                "example": "2022-03-16T00:00:00Z",
+                                "format": "date-time",
+                                "type": "string"
+                              },
+                              "group_id": {
+                                "description": "The Snyk ID of the group to which the organization belongs.",
+                                "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                                "format": "uuid",
+                                "type": "string"
+                              },
+                              "is_personal": {
+                                "description": "Whether the organization is independent (that is, not part of a group).",
+                                "example": true,
+                                "type": "boolean"
+                              },
+                              "name": {
+                                "description": "The display name of the organization.",
+                                "example": "My Org",
+                                "type": "string"
+                              },
+                              "slug": {
+                                "description": "The canonical (unique and URL-friendly) name of the organization.",
+                                "example": "my-org",
+                                "type": "string"
+                              },
+                              "updated_at": {
+                                "description": "The time the organization was last modified.",
+                                "example": "2022-03-16T00:00:00Z",
+                                "format": "date-time",
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "name",
+                              "slug",
+                              "is_personal"
+                            ],
+                            "type": "object"
+                          },
+                          "id": {
+                            "description": "The Snyk ID of the organization.",
+                            "example": "59d6d97e-3106-4ebb-b608-352fad9c5b34",
+                            "format": "uuid",
+                            "type": "string"
+                          },
+                          "type": {
+                            "example": "resource",
+                            "pattern": "^[a-z][a-z0-9]*(_[a-z][a-z0-9]*)*$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "id",
+                          "attributes"
+                        ],
+                        "type": "object"
                       },
                       "type": "array"
                     },
@@ -19608,22 +20170,21 @@
     },
     "/orgs/{org_id}": {
       "get": {
-        "description": "Get the full details of an organization.",
+        "description": "Returns an org by its ID",
         "operationId": "getOrg",
         "parameters": [
           {
-            "$ref": "#/components/parameters/Version"
-          },
-          {
-            "description": "Unique identifier for org",
+            "description": "The ID of the org",
             "in": "path",
             "name": "org_id",
             "required": true,
             "schema": {
-              "example": "b667f176-df52-4b0a-9954-117af6b05ab7",
               "format": "uuid",
               "type": "string"
             }
+          },
+          {
+            "$ref": "#/components/parameters/Version"
           }
         ],
         "responses": {
@@ -19633,20 +20194,25 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/Org20230529"
+                      "$ref": "#/components/schemas/Org"
                     },
                     "jsonapi": {
                       "$ref": "#/components/schemas/JsonApi"
                     },
                     "links": {
-                      "$ref": "#/components/schemas/SelfLink"
+                      "$ref": "#/components/schemas/Links"
                     }
                   },
+                  "required": [
+                    "jsonapi",
+                    "data",
+                    "links"
+                  ],
                   "type": "object"
                 }
               }
             },
-            "description": "Returns an instance of an organization",
+            "description": "Org is returned",
             "headers": {
               "deprecation": {
                 "$ref": "#/components/headers/DeprecationHeader"
@@ -19680,27 +20246,24 @@
           "404": {
             "$ref": "#/components/responses/404"
           },
-          "409": {
-            "$ref": "#/components/responses/409"
-          },
           "500": {
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get organization",
+        "summary": "Get an org",
         "tags": [
           "Orgs"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
+          "2022-02-16~experimental",
           "2022-04-06~experimental",
-          "2022-12-15~beta",
-          "2023-05-29"
+          "2022-12-15~beta"
         ],
         "x-snyk-api-resource": "orgs",
-        "x-snyk-api-stability": "ga",
-        "x-snyk-api-version": "2023-05-29",
-        "x-stability-level": "stable"
+        "x-snyk-api-stability": "beta",
+        "x-snyk-api-version": "2022-12-15~beta",
+        "x-stability-level": "beta"
       },
       "patch": {
         "description": "Update the details of an organization",
@@ -42654,7 +43217,7 @@
     },
     "/orgs/{org_id}/learn/progress/catalog": {
       "get": {
-        "description": "Shows which users have completed, started or not started a lesson within Snyk Learn, even if they don't have a Snyk Learn account.",
+        "description": "Retrieves aggregated counts of users' lesson or learning path statuses (completed, in progress, todo) across all catalog resources for an organization.",
         "operationId": "getCatalogProgress",
         "parameters": [
           {
@@ -42729,9 +43292,9 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get learning progress for an organisation",
+        "summary": "Get collective learning progress",
         "tags": [
-          "Catalog Progress"
+          "Learn progress"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -42745,7 +43308,7 @@
     },
     "/orgs/{org_id}/learn/progress/users": {
       "get": {
-        "description": "List of users within the organization mapped to Snyk Catalog, reporting on users learn progress status for each catalog resource.",
+        "description": "Retrieves detailed learning progress status per user, including completion dates and history for each catalog resource.",
         "operationId": "getUsersProgress",
         "parameters": [
           {
@@ -42823,9 +43386,9 @@
             "$ref": "#/components/responses/500"
           }
         },
-        "summary": "Get learning progress for organization members",
+        "summary": "Get individual user learning progress",
         "tags": [
-          "Users Learn Progress"
+          "Learn progress"
         ],
         "x-snyk-api-lifecycle": "released",
         "x-snyk-api-releases": [
@@ -42865,19 +43428,7 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "description": "Which column to sort by.",
-            "in": "query",
-            "name": "sort_by",
-            "schema": {
-              "enum": [
-                "username",
-                "user_display_name",
-                "email",
-                "login_method",
-                "role"
-              ],
-              "type": "string"
-            }
+            "$ref": "#/components/parameters/SortBy"
           },
           {
             "$ref": "#/components/parameters/SortOrder"
@@ -43235,7 +43786,7 @@
     },
     "/orgs/{org_id}/packages/issues": {
       "post": {
-        "description": "This endpoint is not available to all customers. If you are interested please contact support. Query issues for a batch of packages identified by Package URL (purl). Only direct vulnerabilities are returned, transitive vulnerabilities (from dependencies) are not returned because they can vary depending on context.",
+        "description": "This endpoint is currently restricted and is not available to all customers. Query issues for a batch of packages identified by Package URL (purl). Only direct vulnerabilities are returned; transitive vulnerabilities (from dependencies) are not included as they can vary depending on the context.",
         "operationId": "listIssuesForManyPurls",
         "parameters": [
           {
@@ -53917,7 +54468,19 @@
             "$ref": "#/components/parameters/Limit"
           },
           {
-            "$ref": "#/components/parameters/SortBy"
+            "description": "Which column to sort by.",
+            "in": "query",
+            "name": "sort_by",
+            "schema": {
+              "enum": [
+                "username",
+                "user_display_name",
+                "email",
+                "login_method",
+                "role_name"
+              ],
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/SortOrder"
@@ -54023,7 +54586,16 @@
             "$ref": "#/components/parameters/Version"
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "Unique identifier of the tenant membership.",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "description": "Unique identifier for a tenant membership.",
+              "example": "00000000-0000-0000-0000-000000000000",
+              "format": "uuid",
+              "type": "string"
+            }
           },
           {
             "$ref": "#/components/parameters/TenantId"
@@ -54100,7 +54672,16 @@
             "$ref": "#/components/parameters/TenantId"
           },
           {
-            "$ref": "#/components/parameters/MembershipId"
+            "description": "Unique identifier of the tenant membership.",
+            "in": "path",
+            "name": "membership_id",
+            "required": true,
+            "schema": {
+              "description": "Unique identifier for a tenant membership.",
+              "example": "00000000-0000-0000-0000-000000000000",
+              "format": "uuid",
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
