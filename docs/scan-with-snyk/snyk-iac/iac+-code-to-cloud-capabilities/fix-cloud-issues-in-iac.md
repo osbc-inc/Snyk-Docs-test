@@ -1,4 +1,4 @@
-# IaC에서 클라우드 문제 해결하기
+# IaC에서 클라우드 문제 해결
 
 {% hint style="info" %}
 **릴리스 상태**
@@ -19,11 +19,11 @@ IaC에서 클라우드 문제 해결 기능은 클라우드 리소스를 잘못 
 
 ## IaC에서 클라우드 문제를 해결하는 방법 <a href="#docs-internal-guid-445fbd0a-7fff-7c11-045c-437badbb9640" id="docs-internal-guid-445fbd0a-7fff-7c11-045c-437badbb9640"></a>
 
-Snyk는 가능한 경우 클라우드 리소스를 소스 IaC 템플릿에 "매핑"하여 이 기능을 제공합니다. Snyk는 이를 위해 Terraform 상태 파일에 포함된 리소스 ID와 같은 정보를 활용하여 클라우드 리소스를 Terraform 상태와 IaC 소스 코드에 매핑할 수 있습니다.
+Snyk은 가능한 경우 클라우드 리소스를 소스 IaC 템플릿에 "매핑"하여 이 기능을 제공합니다. Snyk은 이를 위해 Terraform 상태 파일에 포함된 리소스 ID와 같은 정보를 활용하여 클라우드 리소스를 Terraform 상태와 IaC 소스 코드에 매핑할 수 있습니다.
 
-Snyk는 CLI를 통해 Terraform 상태 파일에 액세스하며, 배포 파이프라인에 통합되어 있어야 합니다. 민감한 정보 가능성 때문에 `.tfstate` 파일을 Snyk 플랫폼으로 보내지 않습니다. 대신, Snyk는 리소스 ID와 같은 매핑에 필요한 최소한의 데이터를 얻고 이 정보를 Snyk 플랫폼으로 보내는 [매핑 아티팩트](../getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#resource-mapping)를 생성합니다. 기타 구성 데이터는 매핑 아티팩트에 포함되지 않습니다.
+Snyk은 CLI를 통해 Terraform 상태 파일에 액세스하며, 배포 파이프라인에 통합되어 있어야 합니다. 민감한 정보 가능성 때문에 `.tfstate` 파일을 Snyk 플랫폼으로 보내지 않습니다. 대신, Snyk은 리소스 ID와 같은 매핑에 필요한 최소한의 데이터를 얻고 이 정보를 Snyk 플랫폼으로 보내는 [매핑 아티팩트](../getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#resource-mapping)를 생성합니다. 기타 구성 데이터는 매핑 아티팩트에 포함되지 않습니다.
 
-Snyk는 클라우드 환경을 스캔할 때 매핑 아티팩트, 클라우드 리소스 및 IaC 리소스를 분석하여 클라우드 리소스에서 IaC 소스 템플릿으로의 [리소스 매핑](../getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#resource-mapping)을 생성합니다.
+Snyk은 클라우드 환경을 스캔할 때 매핑 아티팩트, 클라우드 리소스 및 IaC 리소스를 분석하여 클라우드 리소스에서 IaC 소스 템플릿으로의 [리소스 매핑](../getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#resource-mapping)을 생성합니다.
 
 ## IaC에서 클라우드 문제 해결에 필요한 사전 조건 <a href="#docs-internal-guid-1c18d3e8-7fff-6839-26b4-06682c96a199" id="docs-internal-guid-1c18d3e8-7fff-6839-26b4-06682c96a199"></a>
 
@@ -149,13 +149,13 @@ workflows:
 
 ### 단계 3: 파이프라인 실행 <a href="#docs-internal-guid-a2671bcf-7fff-a65d-b991-ff8b7f32cc9e" id="docs-internal-guid-a2671bcf-7fff-a65d-b991-ff8b7f32cc9e"></a>
 
-CI/CD 파이프라인을 실행하여 Terraform 상태를 가져오고 [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture)를 실행하면 Snyk가 Terraform 상태 파일에서 최소한의 정보를 사용한 [매핑 아티팩트](../getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#resource-mapping)를 생성하고 Snyk로 보냅니다.
+CI/CD 파이프라인을 실행하여 Terraform 상태를 가져오고 [snyk iac capture](https://docs.snyk.io/snyk-cli/commands/iac-capture)를 실행하면 Snyk이 Terraform 상태 파일에서 최소한의 정보를 사용한 [매핑 아티팩트](../getting-started-with-iac+-and-cloud-scans/key-concepts-for-iac+-and-cloud.md#resource-mapping)를 생성하고 Snyk으로 보냅니다.
 
-매핑 아티팩트가 생성되거나 업데이트되면 Snyk는 IaC 리소스, 클라우드 리소스 및 매핑 아티팩트를 조직 전체에서 분석하여 클라우드 및 IaC 리소스 간의 연결을 포함하는 리소스 매핑을 생성합니다.
+매핑 아티팩트가 생성되거나 업데이트되면 Snyk은 IaC 리소스, 클라우드 리소스 및 매핑 아티팩트를 조직 전체에서 분석하여 클라우드 및 IaC 리소스 간의 연결을 포함하는 리소스 매핑을 생성합니다.
 
 ### 단계 4: 몇 분 기다리고 클라우드 문제 페이지 확인 <a href="#docs-internal-guid-c33c6869-7fff-eb8c-a85d-9060c4575809" id="docs-internal-guid-c33c6869-7fff-eb8c-a85d-9060c4575809"></a>
 
-몇 분 기다려 Snyk가 클라우드 환경을 스캔하고 매핑 실행을 완료하고 리소스 매핑을 업데이트할 수 있도록 하세요.
+몇 분 기다려 Snyk이 클라우드 환경을 스캔하고 매핑 실행을 완료하고 리소스 매핑을 업데이트할 수 있도록 하세요.
 
 [클라우드 문제 페이지](../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/view-iac+-and-cloud-issues-in-the-snyk-web-ui.md)로 이동하고 **has\_iac\_mappings** 필터를 `true`로 설정하여 클라우드 문제에서 IaC 리소스에 매핑된 리소스가 표시되도록 하세요.
 
@@ -237,15 +237,15 @@ CI/CD 파이프라인을 실행하여 Terraform 상태를 가져오고 [snyk iac
 * azurerm\_storage\_account\_network\_rules
 * azurerm\_service\_fabric\_cluster
 * azurerm\_security\_center\_auto\_provisioning
-* azurerm\_security\_# dns_managed_zone
-* google_compute_instance_template
-* google_compute_instance
-* google_service_account
-* google_compute_network
-* google_compute_subnetwork
-* google_compute_ssl_policy
-* google_compute_project_metadata
-* google_compute_firewall
-* google_compute_disk
-* google_kms_crypto_key
-* google_sql_user
+* azurerm\_security\_# dns\_managed\_zone
+* google\_compute\_instance\_template
+* google\_compute\_instance
+* google\_service\_account
+* google\_compute\_network
+* google\_compute\_subnetwork
+* google\_compute\_ssl\_policy
+* google\_compute\_project\_metadata
+* google\_compute\_firewall
+* google\_compute\_disk
+* google\_kms\_crypto\_key
+* google\_sql\_user

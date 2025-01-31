@@ -1,10 +1,10 @@
-#  IaC 문제 보고서 보기
+# Snyk IaC 문제 보고서 보기
 
- 구성 파일에서 문제를 보려면 [ 보고서](../../manage-issues/reporting/legacy-reports/)를 사용하세요.
+구성 파일에서 문제를 보려면 [보고서](../../manage-issues/reporting/legacy-reports/)를 사용하세요.
 
 ## 요약 페이지
 
-기본적으로 요약 통계 및 그래프에 나타나는  구성 문제는 프로젝트 및 문제 유형 전체에서 발생하는 모든 열린 문제를 보여줍니다.
+기본적으로 요약 통계 및 그래프에 나타나는 구성 문제는 프로젝트 및 문제 유형 전체에서 발생하는 모든 열린 문제를 보여줍니다.
 
 <figure><img src="../../.gitbook/assets/image4.png" alt="보고서 요약 페이지"><figcaption><p>보고서 요약 페이지</p></figcaption></figure>
 
@@ -26,7 +26,7 @@ IaC 문제만 보려면 **문제 필터** 드롭다운에서 **구성**을 선�
 
 그룹화되지 않은 문제를 볼 수도 있습니다. 이는 문제가 발견된 프로젝트 파일에 대한 자세한 정보와 처음 도입된 시기에 대한 세부 정보를 보여줍니다.
 
-![](<../../.gitbook/assets/image2-3 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (5) (7).png>)
+![](https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-7e25b29d6a8ad6f38c3f05ff8bc9bdafaaa04824%252Fimage2-3%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%285%29.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=a6c5383f\&sv=2)
 
 문제 탭에 대한 자세한 내용은 [문제 탭](../../manage-issues/reporting/legacy-reports/legacy-reports-issues-tab.md) 문서를 참조하세요.
 
@@ -36,7 +36,7 @@ IaC 문제만 보려면 **문제 필터** 드롭다운에서 **구성**을 선�
 
 API 엔드포인트 [최신 문제 목록 가져오기](../../snyk-api/reference/reporting-api-v1.md#reporting-issues-latest)를 사용하여 전체 문제 목록을 볼 수 있습니다.
 
-**** 문제만 검색하려면 다음과 같은 본문 페이로드를 제출하세요:
+\*\*\*\* 문제만 검색하려면 다음과 같은 본문 페이로드를 제출하세요:
 
 ```
 {
