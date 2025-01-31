@@ -1,6 +1,6 @@
-# 입력 파일 구문 분석
+# 입력 파일 구문 분석하기
 
-Regol 코드를 작성할 때 입력 파일의 내부 표현을 이해하는 것은 어려울 수 있습니다. 규칙을 작성하는 방법을 배우면 알 수 있겠지만, 입력 값은 JSON과 유사한 객체이지만 입력 파일은 YAML, Terraform 또는 [테라폼 계획 JSON 출력](https://www.terraform.io/docs/internals/json-format.html)일 수도 있습니다. 이러한 것들이 JSON으로 어떻게 변환되는지 이해하는 데 도움이 되도록 Snyk는 `parse` 명령을 제공합니다.
+Regol 코드를 작성할 때 입력 파일의 내부 표현을 이해하는 것은 어려울 수 있습니다. 규칙을 작성하는 방법을 배우면 알 수 있겠지만, 입력 값은 JSON과 유사한 객체이지만 입력 파일은 YAML, Terraform 또는 [테라폼 계획 JSON 출력](https://www.terraform.io/docs/internals/json-format.html)일 수도 있습니다. 이러한 것들이 JSON으로 어떻게 변환되는지 이해하는 데 도움이 되도록 Snyk은 `parse` 명령을 제공합니다.
 
 Regol 코드를 작성하는 데 도움이 될 JSON으로 파싱된 파일을 얻으려면 IaC 파일이 필요합니다. [규칙 테스트](testing-a-rule.md)할 때도 사용할 수 있는 이 입력 파일은 기본적으로 파일을 JSON으로 파싱합니다.
 

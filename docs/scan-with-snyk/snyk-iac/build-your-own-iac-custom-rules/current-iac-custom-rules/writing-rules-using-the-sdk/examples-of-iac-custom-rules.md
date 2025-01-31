@@ -1,4 +1,4 @@
-# IaC 사용자 정의 규칙 예시
+# IaC 사용자 지정 규칙의 예
 
 ## 간단한 부울 규칙 예시
 
@@ -54,7 +54,7 @@ deny[msg] {
 {% endhint %}
 
 {% hint style="info" %}
-Snyk는 늘 규칙이 올바른지 확인하기 위해 항상 [규칙 업데이트 및 단위 테스트 실행](testing-a-rule.md)을 권장합니다.
+Snyk은 늘 규칙이 올바른지 확인하기 위해 항상 [규칙 업데이트 및 단위 테스트 실행](testing-a-rule.md)을 권장합니다.
 {% endhint %}
 
 이 규칙에 대한 테스트는 이 가이드의 시작점 격자가 부적합하다는 것을 Rego 규칙이 식별할 수 있는지 확인합니다:
@@ -110,7 +110,7 @@ resource "aws_redshift_cluster" "denied" {
 여러 표현식을 결합하여 논리 `AND`를 나타낼 수 있습니다.
 
 * `;` 연산자를 사용할 수 있습니다.
-* 또는 표현식을 여러 줄에 나누어 적용함으로써 `;`(`AND`) 연산자를 생략할 수 있습니다. 
+* 또는 표현식을 여러 줄에 나누어 적용함으로써 `;`(`AND`) 연산자를 생략할 수 있습니다.
 
 {% hint style="info" %}
 논리 AND는 [OPA 문서](https://www.openpolicyagent.org/docs/latest/#expressions-logical-and)에서도 다루고 있습니다.
@@ -143,7 +143,7 @@ deny[msg] {
 {% endcode %}
 
 {% hint style="info" %}
-Snyk는 늘 규칙이 올바른지 확인하기 위해 [규칙 업데이트 및 단위 테스트 실행](testing-a-rule.md)을 권장합니다.
+Snyk은 늘 규칙이 올바른지 확인하기 위해 [규칙 업데이트 및 단위 테스트 실행](testing-a-rule.md)을 권장합니다.
 {% endhint %}
 
 이 규칙에 대한 테스트는 `CUSTOM-RULE-1`에 대한 테스트와 동일하지만, 테스트 이름 및 `testing.evaluate_test_cases` 함수에 전달되는 첫 번째 두 인수가 다릅니다.
@@ -243,7 +243,7 @@ deny[msg] {
 이렇게 하면 거부하는 모든 규칙이 성공적으로 반환됩니다.
 
 {% hint style="info" %}
-Snyk는 항상 [규칙 업데이트 및 단위 테스트 실행](./#test-a-custom-rule)을 통해 규칙이 올바른지 확인하는 것을 권장합니다.
+Snyk은 항상 [규칙 업데이트 및 단위 테스트 실행](./#test-a-custom-rule)을 통해 규칙이 올바른지 확인하는 것을 권장합니다.
 {% endhint %}
 
 이 규칙에 대한 테스트는 논리 OR가 예상대로 작동하는지 보여주기 위해 여러 테스트 케이스가 포함될 것입니다:
@@ -330,10 +330,10 @@ Snyk는 늘 규칙이 올바른지 확인하기 위해 [규칙 업데이트 및 
 * 그렇지 않을 경우, 다른 유형은 “서비스”라고 가정하며 이 서비스 설명이 있어야 합니다.
 * 이 두 가지는 상호 배타적입니다; 첫 번째 조건이 해당되면 두 번째 조건은 해당되지 않으며 그 반대도 마찬가지입니다.
 
-| 유형    | 이메일 | 서비스 설명 |
-| ------- | ----- | ------------------ |
-| 사용자    | YES   | NO                 |
-| 서비스 | NO    | YES                |
+| 유형  | 이메일 | 서비스 설명 |
+| --- | --- | ------ |
+| 사용자 | YES | NO     |
+| 서비스 | NO  | YES    |
 
 이를 위해 코드를 리팩터링하여 `checkTags` 도우미 함수를 사용하십시오. 이 함수는 태그가 있고 두 조건 모두에 대해 OR를 사용하여 검사할 수 있습니다.
 
@@ -377,66 +377,62 @@ deny[msg] {
 
 {% code title="rules/CUSTOM-RULE-5/main.rego" %}
 ```
+```
+{% endcode %}
+
+
+
+````
 package rules
-
-checkUserTag(resource){
-    not resource.tags.email
+checkUserTag(resource){ 
+    not resource.tags.email 
 }
-
-checkUserTag(resource){
+checkUserTag(resource){ 
     resource.tags.serviceDescription
 }
-
-checkServiceTag(resource){
-    not resource.tags.serviceDescription
+checkServiceTag(resource){ 
+    not resource.tags.serviceDescription 
+}
+checkServiceTag(resource){ 
+    resource.tags.email 
+}
+checkTags(resource){ 
+    count(resource.tags) == 0 
+}
+checkTags(resource) { 
+    resource.tags.type == "user" 
+    checkUserTag(resource) 
+} else { 
+    resource.tags.type == "service" 
+    checkServiceTag(resource) 
 }
 
-checkServiceTag(resource){
-    resource.tags.email
+deny[msg] { 
+    resource := input.resource.aws_redshift_cluster[name] 
+    checkTags(resource) 
+    msg := { 
+    "publicId": "CUSTOM-RULE-5", 
+    "```korean "토큰", ]
+    check_sensitive(keys, denylist) { 
+    _ = keys[key] contains(key, denylist[_]) 
+    }
+
+deny[msg] { 
+    input.kind == "ConfigMap" 
+    input.data = keys 
+    check_sensitive(keys, sensitive_denylist) 
+    msg := { 
+        "publicId": "CUSTOM-RULE-7", 
+        "title": "ConfigMap exposes sensitive data", 
+        "severity": "high", 
+        "msg": "input.data", 
+        "issue": "", 
+        "impact": "", 
+        "remediation": "", 
+        "references": [], 
+        } 
 }
 
-checkTags(resource){
-	count(resource.tags) == 0
-}
-
-checkTags(resource) {
-    resource.tags.type == "user"
-    checkUserTag(resource)
-} else {
-    resource.tags.type == "service"
-    checkServiceTag(resource)
-}
-
-deny[msg] {
-    resource := input.resource.aws_redshift_cluster[name]
-	checkTags(resource)
-    msg := {
-        "publicId": "CUSTOM-RULE-5",
-        "```korean
-"토큰",
-]
-
-check_sensitive(keys, denylist) {
-	_ = keys[key]
-	contains(key, denylist[_])
-}
-
-deny[msg] {
-	input.kind == "ConfigMap"
-	input.data = keys
-	check_sensitive(keys, sensitive_denylist)
-	msg := {
-		"publicId": "CUSTOM-RULE-7",
-		"title": "ConfigMap exposes sensitive data",
-		"severity": "high",
-		"msg": "input.data",
-		"issue": "",
-		"impact": "",
-		"remediation": "",
-		"references": [],
-	}
-}
-```
+````
 
 "pass", "secret", "key", "token"과 같은 부분 문자열이 포함된 키는 민감한 정보로 간주되므로 ConfigMap에 포함해서는 안 됩니다.
-```
