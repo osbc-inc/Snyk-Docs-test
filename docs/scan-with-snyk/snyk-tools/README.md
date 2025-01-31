@@ -2,7 +2,7 @@
 
 ## Snyk 도구의 범위
 
-Snyk 도구는 "통증 포인트"를 해결하지 못하는 특정 상황에 도움을 줍니다. 이는 웹 UI, CLI, API 또는 통합을 통해 Snyk를 사용하더라도 해당됩니다. Snyk 도구는 Snyk API와 CLI의 기능을 확장합니다.
+Snyk 도구는 "통증 포인트"를 해결하지 못하는 특정 상황에 도움을 줍니다. 이는 웹 UI, CLI, API 또는 통합을 통해 Snyk을 사용하더라도 해당됩니다. Snyk 도구는 Snyk API와 CLI의 기능을 확장합니다.
 
 {% hint style="info" %}
 Snyk 도구를 사용하려면 [Snyk 계정](https://snyk.io/login?cta=sign-up\&loc=nav\&page=support_docs_page)이 있고 Projects가 채워져 있어야 합니다.
@@ -33,7 +33,7 @@ Snyk 도구를 사용하려면 [Snyk 계정](https://snyk.io/login?cta=sign-up\&
 * [snyk-licenses-texts](https://github.com/snyk-tech-services/snyk-licenses-texts): 사용된 조직 수준의 라이센스, 저작권(2024년 1월 8일까지), 및 의존성 데이터를 제공합니다.
 * [snyk-request-manager](https://github.com/snyk-tech-services/snyk-request-manager): Snyk API와 상호 작용하기 위한 요청 관리자입니다.
 * [snyk-repo-issue-tracker](https://github.com/snyk-tech-services/snyk-repo-issue-tracker): Snyk Project issues API와 실행 간의 문제 변경 내용 집합을 생성할 수 있는 파이썬 스크립트/모듈입니다.
-* [snyk-repo-diff:](https://github.com/snyk-tech-services/snyk-repo-diff) Snyk에 의해 모니터링되지 않는 저장소를 판별하는 데 도움을 줍니다.
+*   [snyk-repo-diff:](https://github.com/snyk-tech-services/snyk-repo-diff) Snyk에 의해 모니터링되지 않는 저장소를 판별하는 데 도움을 줍니다.
 
     이 도구는 특정 Snyk 그룹 내의 모든 조직에 속한 모든 프로젝트 목록을 불러오고, 주어진 GitHub 조직에서 발견된 저장소 목록을 연결하는 방식으로 작동합니다.
 * [snyk-issues-to-csv](https://github.com/snyk-tech-services/snyk-issues-to-csv): PySnyk 모듈과 Pandas 모듈을 사용하여 보고서 API에서 모든 문제를 수집하고 전체 그룹의 단일 CSV 파일로 결합하는 파이썬 스크립트입니다.

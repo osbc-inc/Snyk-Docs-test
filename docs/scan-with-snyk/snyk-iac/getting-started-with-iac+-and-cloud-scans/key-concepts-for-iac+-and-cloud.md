@@ -1,10 +1,10 @@
-# IaC+ 및 클라우드에 대한 주요 개념
+# IaC+ 및 클라우드의 주요 개념
 
 {% hint style="info" %}
 Snyk IaC+는 현재 클로즈 베타 상태이며 새로운 고객을 받아들이지 않습니다.
 
 \
-_현재 IaC를 사용하여 시작하는 방법_ 에 대한 자세한 내용은 [여기](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac)를 참조하십시오.
+&#xNAN;_&#xD604;재 IaC를 사용하여 시작하는 방법_ 에 대한 자세한 내용은 [여기](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac)를 참조하십시오.
 {% endhint %}
 
 IaC+ 및 클라우드 스캔에는 [환경](key-concepts-for-iac+-and-cloud.md#environments) 및 [자원](key-concepts-for-iac+-and-cloud.md#resources)과 같이 Snyk 코어 개념과는 다른 여러 독특한 개념이 있습니다.

@@ -1,6 +1,6 @@
 # 도구: snyk-api-import
 
-Snyk는 종속성에서 알려진 취약점을 찾아 수정하고 모니터링하는 데 도움을 줍니다. 이는 선택적으로 하되 메이저한 변동 사항과 빌드 시스템 내에서 일어나는 연속적인 통합 (CI)의 일부로 이뤄집니다.
+Snyk은 종속성에서 알려진 취약점을 찾아 수정하고 모니터링하는 데 도움을 줍니다. 이는 선택적으로 하되 메이저한 변동 사항과 빌드 시스템 내에서 일어나는 연속적인 통합 (CI)의 일부로 이뤄집니다.
 
 ## snyk-api-import
 
@@ -10,10 +10,10 @@ Snyk API 프로젝트 가져오기 도구인 `snyk-api-import`는 GitHub, GitLab
 
 `snyk-api-import`를 사용하려면 미리 다음을 수행해야 합니다:
 
-- 가져오기 전에 Snyk 조직 (Orgs)를 설정합니다.
-- 해당 Snyk 조직을 SCM (GitHub, GitLab, Bitbucket 등)과 어떤 연결로 구성합니다. 가져오기 파일을 생성하기 위해 `integrationId`가 필요합니다.
-- 가져오기 알림을 받지 않도록 설정하기 위해 [알림 설정](../../../snyk-api/reference/organizations-v1.md#org-orgid-notification-settings) API 엔드포인트를 사용하여 이메일 알림 등을 비활성화합니다 (권장됨).
-- 가져오기가 완료될 때까지 SCMs (GitHub, GitLab, Bitbucket 등)로 추가 요청을 보내지 않도록 가져오기가 완료될 때까지 fix PRs와 PR 확인을 비활성화하기 위해 [업데이트](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-integrationid-settings) (통합 설정) 엔드포인트를 사용합니다.
+* 가져오기 전에 Snyk 조직 (Orgs)를 설정합니다.
+* 해당 Snyk 조직을 SCM (GitHub, GitLab, Bitbucket 등)과 어떤 연결로 구성합니다. 가져오기 파일을 생성하기 위해 `integrationId`가 필요합니다.
+* 가져오기 알림을 받지 않도록 설정하기 위해 [알림 설정](../../../snyk-api/reference/organizations-v1.md#org-orgid-notification-settings) API 엔드포인트를 사용하여 이메일 알림 등을 비활성화합니다 (권장됨).
+* 가져오기가 완료될 때까지 SCMs (GitHub, GitLab, Bitbucket 등)로 추가 요청을 보내지 않도록 가져오기가 완료될 때까지 fix PRs와 PR 확인을 비활성화하기 위해 [업데이트](../../../snyk-api/reference/integrations-v1.md#org-orgid-integrations-integrationid-settings) (통합 설정) 엔드포인트를 사용합니다.
 
 ## 설치
 
@@ -41,28 +41,28 @@ yarn global add snyk-api-import
 
 명령이 명시되지 않은 경우 `import` 명령이 기본적으로 실행됩니다.
 
-- `import` - 가져오기 구성 파일에 정의된 기존 Snyk 조직으로 대상 저장소 (Targets)를 API를 활용하여 가져오기를 시작합니다. 모든 프로젝트 유형에 대한 지원은 [가져오기](../../../snyk-api/reference/import-projects-v1.md) API 엔드포인트, [가져오기 대상](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) 및 [가져오기 작업 세부 정보 가져오기](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)를 통해 제공됩니다. [가져오기 API (프로젝트 가져오기, 가져오기)](https://snyk.docs.apiary.io/#reference/import-projects).
-- `help` - 도움말 및 사용 가능한 모든 명령 및 옵션 표시.
-- `orgs:data` 유틸리티 - API를 사용하여 조직을 생성하는 데 필요한 데이터 생성에 사용합니다.
-- `orgs:create` 유틸리티 - `orgs:data` 명령으로 생성된 데이터 파일을 기반으로 Snyk에 조직을 생성하는 데 사용합니다.
-- `import:data` 유틸리티 - 가져오기를 시작하는 데 필요한 데이터를 생성하는 데 사용합니다. 기본적으로 아카이브된 저장소는 제외됩니다.
-- `list:imported` 유틸리티 - 가져오기 중에 이전에 가져온 대상을 건너뛰는 데 도움을 주는 데이터를 생성하는 데 사용합니다.
+* `import` - 가져오기 구성 파일에 정의된 기존 Snyk 조직으로 대상 저장소 (Targets)를 API를 활용하여 가져오기를 시작합니다. 모든 프로젝트 유형에 대한 지원은 [가져오기](../../../snyk-api/reference/import-projects-v1.md) API 엔드포인트, [가져오기 대상](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import) 및 [가져오기 작업 세부 정보 가져오기](../../../snyk-api/reference/import-projects-v1.md#org-orgid-integrations-integrationid-import-jobid)를 통해 제공됩니다. [가져오기 API (프로젝트 가져오기, 가져오기)](https://snyk.docs.apiary.io/#reference/import-projects).
+* `help` - 도움말 및 사용 가능한 모든 명령 및 옵션 표시.
+* `orgs:data` 유틸리티 - API를 사용하여 조직을 생성하는 데 필요한 데이터 생성에 사용합니다.
+* `orgs:create` 유틸리티 - `orgs:data` 명령으로 생성된 데이터 파일을 기반으로 Snyk에 조직을 생성하는 데 사용합니다.
+* `import:data` 유틸리티 - 가져오기를 시작하는 데 필요한 데이터를 생성하는 데 사용합니다. 기본적으로 아카이브된 저장소는 제외됩니다.
+* `list:imported` 유틸리티 - 가져오기 중에 이전에 가져온 대상을 건너뛰는 데 도움을 주는 데이터를 생성하는 데 사용합니다.
 
 로그는 [Bunyan CLI](http://trentm.com/node-bunyan/bunyan.1.html)를 사용하여 탐색할 수 있습니다.
 
 ## snyk-api-import 지침의 내용
 
-- 유틸리티
-  - [Snyk에 조직 생성](creating-organizations-in-snyk.md)
-  - [가져오기 대상 및 가져오기 데이터 생성](creating-import-targets-data-for-import-command.md)
-  - [Snyk에서 GitHub.com 및 GitHub Enterprise 조직 및 저장소 미러링](mirroring-github.com-and-github-enterprise-organizations-and-repos-in-snyk.md)
-  - [Snyk에서 GitLab 조직 및 저장소 미러링](mirroring-gitlab-organizations-and-repos-in-snyk.md)
-  - [Snyk에서 Bitbucket Server 조직 및 저장소 미러링](mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
-  - [Snyk에서 Bitbucket Cloud 조직 및 저장소 미러링](mirroring-bitbucket-cloud-organizations-and-repos-in-snyk.md)
-- [가져오기 시작](kicking-off-an-import.md)
-- [snyk-api-import에 기여](contributing-to-snyk-api-import.md)
-- [싱크: 모니터링된 저장소의 변경 감지 및 Snyk 프로젝트 업데이트](https://github.com/snyk/snyk-api-import/blob/master/docs/sync.md)
-- 예제 워크플로: [AWS 자동화](https://github.com/snyk/snyk-api-import/blob/master/docs/example-workflows/aws-automation-example.md)
+* 유틸리티
+  * [Snyk에 조직 생성](creating-organizations-in-snyk.md)
+  * [가져오기 대상 및 가져오기 데이터 생성](creating-import-targets-data-for-import-command.md)
+  * [Snyk에서 GitHub.com 및 GitHub Enterprise 조직 및 저장소 미러링](mirroring-github.com-and-github-enterprise-organizations-and-repos-in-snyk.md)
+  * [Snyk에서 GitLab 조직 및 저장소 미러링](mirroring-gitlab-organizations-and-repos-in-snyk.md)
+  * [Snyk에서 Bitbucket Server 조직 및 저장소 미러링](mirroring-bitbucket-server-organizations-and-repos-in-snyk.md)
+  * [Snyk에서 Bitbucket Cloud 조직 및 저장소 미러링](mirroring-bitbucket-cloud-organizations-and-repos-in-snyk.md)
+* [가져오기 시작](kicking-off-an-import.md)
+* [snyk-api-import에 기여](contributing-to-snyk-api-import.md)
+* [싱크: 모니터링된 저장소의 변경 감지 및 Snyk 프로젝트 업데이트](https://github.com/snyk/snyk-api-import/blob/master/docs/sync.md)
+* 예제 워크플로: [AWS 자동화](https://github.com/snyk/snyk-api-import/blob/master/docs/example-workflows/aws-automation-example.md)
 
 ## FAQ
 
@@ -74,9 +74,9 @@ yarn global add snyk-api-import
 
 다음 자료들이 **ulimit**을 높일 수 있도록 도와줍니다:
 
-- [ss64.com](https://ss64.com/bash/ulimit.html)
-- [StackOverflow](https://stackoverflow.com/questions/45004352/error-enfile-file-table-overflow-scandir-while-run-reaction-on-mac)
-- [blog.mact.me](http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit)
+* [ss64.com](https://ss64.com/bash/ulimit.html)
+* [StackOverflow](https://stackoverflow.com/questions/45004352/error-enfile-file-table-overflow-scandir-while-run-reaction-on-mac)
+* [blog.mact.me](http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit)
 
 </details>
 

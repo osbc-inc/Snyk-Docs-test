@@ -1,6 +1,6 @@
-# 환경 삭제
+# 환경 제거
 
-환경을 삭제하면 Snyk는 모든 관련 스캔, 이슈 및 리소스 기록을 제거합니다. 클라우드 환경의 경우 클라우드 제공업체에 있는 실제 리소스에는 영향을 주지 않습니다.
+환경을 삭제하면 Snyk은 모든 관련 스캔, 이슈 및 리소스 기록을 제거합니다. 클라우드 환경의 경우 클라우드 제공업체에 있는 실제 리소스에는 영향을 주지 않습니다.
 
 ## 웹 UI
 
@@ -8,7 +8,7 @@ Snyk 웹 UI에서는 조직 **설정 (톱니바퀴 아이콘) > 클라우드 환
 
 ## API
 
-Snyk API를 사용하여 환경을 제거하려면 다음 형식으로 [환경 삭제](https://apidocs.snyk.io/#delete-/orgs/-org\_id-/cloud/environments/-environment\_id-) 엔드포인트에 요청을 보냅니다. 환경 ID는 [환경 ID 찾기](find-an-environment-id.md) 페이지에 표시된 방법을 사용하여 찾을 수 있습니다.
+Snyk API를 사용하여 환경을 제거하려면 다음 형식으로 [환경 삭제](https://apidocs.snyk.io/#delete-/orgs/-org_id-/cloud/environments/-environment_id-) 엔드포인트에 요청을 보냅니다. 환경 ID는 [환경 ID 찾기](find-an-environment-id.md) 페이지에 표시된 방법을 사용하여 찾을 수 있습니다.
 
 ```
 curl -X DELETE \

@@ -14,7 +14,7 @@ curl -X GET \
 
 ## API 응답 이해
 
-Snyk는 조직 내의 모든 리소스에 대한 정보를 포함하는 JSON 문서를 반환합니다. 예를 들어:
+Snyk은 조직 내의 모든 리소스에 대한 정보를 포함하는 JSON 문서를 반환합니다. 예를 들어:
 
 ```json
 {
@@ -88,14 +88,14 @@ Snyk는 조직 내의 모든 리소스에 대한 정보를 포함하는 JSON 문
 
 다음 표는 API 응답에서 중요한 속성 몇 가지를 나열합니다:
 
-| 속성                             | 정의                                                                                          |
-| -------------------------------- | -------------------------------------------------------------------------------------------- |
-| `data.id`                        | 리소스 ID                                                                                    |
-| `data.attributes.environment_id` | 리소스를 포함하는 환경의 ID                                                                   |
-| `data.attributes.scan_id`        | 이 리소스가 처음 감지된 스캔의 ID                                                             |
-| `data.attributes.resource_type`  | 리소스 유형                                                                                  |
-| `data.attributes.native_id`      | 리소스의 클라우드 공급자에 대한 고유 식별자; AWS의 경우 Amazon 리소스 이름 (ARN)            |
-| `data.attributes.state`          | 가장 최근 스캔 시점에서의 리소스 속성                                                        |
+| 속성                               | 정의                                                    |
+| -------------------------------- | ----------------------------------------------------- |
+| `data.id`                        | 리소스 ID                                                |
+| `data.attributes.environment_id` | 리소스를 포함하는 환경의 ID                                      |
+| `data.attributes.scan_id`        | 이 리소스가 처음 감지된 스캔의 ID                                  |
+| `data.attributes.resource_type`  | 리소스 유형                                                |
+| `data.attributes.native_id`      | 리소스의 클라우드 공급자에 대한 고유 식별자; AWS의 경우 Amazon 리소스 이름 (ARN) |
+| `data.attributes.state`          | 가장 최근 스캔 시점에서의 리소스 속성                                 |
 
 ## 리소스 목록 필터링
 
@@ -125,7 +125,7 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-지원되는 매개변수 목록은 [리소스 목록 API 문서](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/resources)를 참조하십시오.
+지원되는 매개변수 목록은 [리소스 목록 API 문서](https://apidocs.snyk.io/#get-/orgs/-org_id-/cloud/resources)를 참조하십시오.
 
 ## 특정 리소스에 대한 세부 정보 보기
 

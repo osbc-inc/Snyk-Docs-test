@@ -1,4 +1,4 @@
-# Snyk 웹 UI에서 IaC+ 및 클라우드 이슈보기
+# Snyk 웹 UI에서 IaC+ 및 클라우드 문제 보기
 
 조직의 클라우드 및 IaC+ 이슈를 Snyk 웹 UI를 통해 볼 수 있습니다.
 
@@ -6,7 +6,7 @@ Snyk 웹 UI에서 클라우드 이슈를 보려면 조직으로 이동하고 메
 
 <figure><img src="../../../../.gitbook/assets/snyk-cloud-access-issues-page-3.png" alt="이슈 보기를 선택합니다"><figcaption><p>이슈 보기를 선택합니다</p></figcaption></figure>
 
-기본적으로 Snyk는 조직의 모든 클라우드 환경에서 발생하는 오픈 이슈를 표시합니다. 이슈는 처음에는 [실패한 보안 규칙별로 그룹화](view-iac+-and-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-rule)되지만, [리소스별로 그룹화](view-iac+-and-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-resource)하도록 선택할 수 있습니다.
+기본적으로 Snyk은 조직의 모든 클라우드 환경에서 발생하는 오픈 이슈를 표시합니다. 이슈는 처음에는 [실패한 보안 규칙별로 그룹화](view-iac+-and-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-rule)되지만, [리소스별로 그룹화](view-iac+-and-cloud-issues-in-the-snyk-web-ui.md#group-cloud-issues-by-resource)하도록 선택할 수 있습니다.
 
 ## 규칙별 이슈 그룹화
 
@@ -80,7 +80,7 @@ Snyk 웹 UI에서 클라우드 이슈를 보려면 조직으로 이동하고 메
 
 ## 이슈 요약 패널에서 이슈 세부 정보보기
 
-이슈를 보려면 행 왼쪽의 **확장 행** (`>`) 기호를 선택한 다음 해당 리소스 또는 규칙을 선택하십시오. Snyk는 클라우드 이슈 세부 정보를 표시합니다.
+이슈를 보려면 행 왼쪽의 **확장 행** (`>`) 기호를 선택한 다음 해당 리소스 또는 규칙을 선택하십시오. Snyk은 클라우드 이슈 세부 정보를 표시합니다.
 
 클라우드 이슈 요약 패널은 기본적으로 **개요**를 표시하며 다음 정보를 포함합니다:
 

@@ -1,6 +1,6 @@
-# IaC 소스 코드를 스캔하세요
+# IaC 소스 코드 스캔
 
-{Snyk IaC}를 사용하여 다음을 수행할 수 있습니다:
+Snyk IaC를 사용하여 다음을 수행할 수 있습니다:
 
 * [Terraform 파일 스캔](scan-terraform-files/)
 * [CloudFormation 파일 스캔](scan-cloudformation-files/)

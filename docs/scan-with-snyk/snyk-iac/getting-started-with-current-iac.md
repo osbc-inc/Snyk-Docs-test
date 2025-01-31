@@ -1,4 +1,4 @@
-# 현재 IaC로 시작하기
+# 현재 IaC 시작하기
 
 {% hint style="info" %}
 이 페이지의 정보는 현재 IaC에 적용됩니다. IaC+를 사용 중이라면 [IaC+ 및 클라우드 스캔 시작하기](getting-started-with-iac+-and-cloud-scans/)을 참조하십시오.
@@ -8,19 +8,19 @@ Snyk 웹 UI에서 Infrastructure as Code({Snyk IaC)를 사용하여 구성 파�
 
 이 페이지에서는 지원되는 환경( [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/)(포함 Helm), 그리고 [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md))에 대한 구성 파일에서 문제를 찾아보고 수정하는 단계를 찾을 수 있습니다. 이러한 단계는 현재 IaC에 특화되어 있습니다. 또한 [IaC 및 클라우드 스캔 시작하기](getting-started-with-iac+-and-cloud-scans/)도 참조하십시오.
 
-## **{Snyk IaC을 위한 전제 조건**
+## **Snyk IaC을 위한 전제 조건**
 
-{Snyk IaC을 사용하기 전에 다음 전제 조건이 충족되어 있는지 확인하십시오:
+Snyk IaC을 사용하기 전에 다음 전제 조건이 충족되어 있는지 확인하십시오:
 
-- Snyk 계정. 자세한 내용은 [시작하기](../../getting-started/)를 참조하십시오.
-- 작업할 Terraform, CloudFormation, Kubernetes 또는 ARM 환경.
-- Snyk와 동일한 방식으로 통합된 Git 저장소. 자세한 내용은 [Git 저장소(SCM)](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)를 참조하십시오.
+* Snyk 계정. 자세한 내용은 [시작하기](../../getting-started/)를 참조하십시오.
+* 작업할 Terraform, CloudFormation, Kubernetes 또는 ARM 환경.
+* Snyk와 동일한 방식으로 통합된 Git 저장소. 자세한 내용은 [Git 저장소(SCM)](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)를 참조하십시오.
 
 IaC와 지원되는 환경에 대한 자세한 내용은 다음 페이지를 참조하십시오:
 
-- [Terraform 파일에서 보안 문제를 찾기 위한 통합 구성](scan-your-iac-source-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-files-current-iac.md)
-- [CloudFormation 파일에서 보안 문제를 찾기 위한 통합 구성](scan-your-iac-source-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files-current-iac.md)
-- [Kubernetes 구성 파일에서 보안 문제를 찾기 위한 통합 구성](scan-your-iac-source-code/scan-kubernetes-configuration-files/configure-integration-to-find-security-issues-in-kubernetes-configuration-files-current-iac.md)
+* [Terraform 파일에서 보안 문제를 찾기 위한 통합 구성](scan-your-iac-source-code/scan-terraform-files/configure-your-integration-to-find-security-issues-in-your-terraform-files-current-iac.md)
+* [CloudFormation 파일에서 보안 문제를 찾기 위한 통합 구성](scan-your-iac-source-code/scan-cloudformation-files/configure-your-integration-to-find-security-issues-in-your-cloudformation-files-current-iac.md)
+* [Kubernetes 구성 파일에서 보안 문제를 찾기 위한 통합 구성](scan-your-iac-source-code/scan-kubernetes-configuration-files/configure-integration-to-find-security-issues-in-kubernetes-configuration-files-current-iac.md)
 
 {% hint style="info" %}
 ARM 구성 파일을 스캔하려면 Snyk CLI를 사용해야 합니다. [ARM 구성 파일 스캔](scan-your-iac-source-code/scan-arm-configuration-files.md)를 참조하십시오.
@@ -28,7 +28,7 @@ ARM 구성 파일을 스캔하려면 Snyk CLI를 사용해야 합니다. [ARM �
 
 ## IaC 프로젝트 가져오기
 
-Snyk에서 스캔하려는 [프로젝트](../../snyk-admin/snyk-projects/)를 가져오기 시작합니다. 이러한 단계에서 Snyk가 시험하고 재시험할 저장소를 선택합니다:
+Snyk에서 스캔하려는 [프로젝트](../../snyk-admin/snyk-projects/)를 가져오기 시작합니다. 이러한 단계에서 Snyk이 시험하고 재시험할 저장소를 선택합니다:
 
 1. Snyk에 로그인하고 대시보드에서 **프로젝트**를 네비게이션에서 선택합니다.
 2. 프로젝트 페이지에서 **프로젝트 추가** 드롭다운에서 스캔할 저장소 및 프로젝트가 있는 SCM을 선택하십시오. 예를 들어 GitHub을 선택합니다.
@@ -58,9 +58,9 @@ IaC 프로젝트를 가져온 후, Snyk는 기본적으로 매주 한 번 프로
 
 <figure><img src="../../.gitbook/assets/image (2) (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk 프로젝트 이슈 카드"><figcaption><p>Snyk 프로젝트 이슈 카드</p></figcaption></figure>
 
-## {Snyk IaC용 이슈 카드 세부사항
+## Snyk IaC용 이슈 카드 세부사항
 
-&#x20;각 이슈 카드에는 리소스 및 도입된 경로에 대한 정보가 표시됩니다.&#x20;
+각 이슈 카드에는 리소스 및 도입된 경로에 대한 정보가 표시됩니다.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.24.14.png" alt="이슈 카드 세부사항"><figcaption><p>이슈 카드 세부사항</p></figcaption></figure>
 
@@ -84,11 +84,11 @@ IaC 프로젝트를 가져온 후, Snyk는 기본적으로 매주 한 번 프로
 
 ## IaC에서 구성 파일 수정
 
-{Snyk IaC에서 제안된 권장 사항에 따라 조치하는 단계는 다음과 같습니다.
+Snyk IaC에서 제안된 권장 사항에 따라 조치하는 단계는 다음과 같습니다.
 
-1. 프로젝트 상세 페이지에서 문제를 선택하여 해당 문제에 대한 세부 정보 및 {Snyk IaC의 구체적인 권장 사항을 확인합니다.
+1. 프로젝트 상세 페이지에서 문제를 선택하여 해당 문제에 대한 세부 정보 및 Snyk IaC의 구체적인 권장 사항을 확인합니다.
 2. 권장 사항에 따라 식별된 문제를 수정하기 위해 구성 파일을 편집하고 변경 내용을 커밋합니다.\
-   Snyk는 변경된 파일을 자동으로 다시 스캔합니다.&#x20;
+   Snyk은 변경된 파일을 자동으로 다시 스캔합니다.
 3. 문제 디스플레이에 반영된 변경 사항을 확인합니다.
 
 <figure><img src="../../.gitbook/assets/snyk-iac-getting-started-issue-card.png" alt="수정된 IaC 문제 예시"><figcaption><p>수정된 IaC 문제 예시</p></figcaption></figure>
@@ -107,7 +107,7 @@ Terraform Cloud 및 Helm은 코드 조각이 아닌 경로 세부사항만 표�
 
 ### 코드 미리보기가 불가능한 예시
 
-Snyk가 파일에서 취약한 경로의 정확한 줄을 식별할 수 없을 경우, Snyk는 코드 조각 대신 메시지와 경로 세부사항만 표시합니다. 가능한 경우 **전체 세부사항** 버튼을 표시하여 전체 코드 미리보기를 볼 수 있습니다.
+Snyk이 파일에서 취약한 경로의 정확한 줄을 식별할 수 없을 경우, Snyk은 코드 조각 대신 메시지와 경로 세부사항만 표시합니다. 가능한 경우 **전체 세부사항** 버튼을 표시하여 전체 코드 미리보기를 볼 수 있습니다.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-05-23 at 14.28.07 (1).png" alt="코드 조각 없는 이슈 카드"><figcaption><p>코드 조각 없는 이슈 카드</p></figcaption></figure>
 
