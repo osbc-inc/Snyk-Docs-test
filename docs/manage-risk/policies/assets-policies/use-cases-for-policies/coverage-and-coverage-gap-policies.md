@@ -20,8 +20,6 @@ Coverage 갭 필터는 Coverage 필터의 반대인 것이 아닙니다.
 
 Snyk Code와 Snyk OS에서 동시에 스캔된 자산을 식별합니다. 이러한 자산을 식별하는 것은 커버리지 요구 사항을 충족한다는 것을 의미하지 않습니다.
 
-\
-
 <figure><img src="https://lh7-us.googleusercontent.com/1aKKSl4O03NT8YL3qR0K1vpcfEMtlCw9pLYrKJ3Q2OdtVYTqdMbsbtWr7Jq32TzMBKEo1t53c7gaEndbiFVqLObxPcUcw7vmmaaSHO5K7UsgtjVu6FO3kLCp6cT_-CX1CzX5Anst0acYqVom89K9y14" alt="Set Coverage filters"><figcaption><p>커버리지 필터 설정</p></figcaption></figure>
 
 ### 선택된 제품 중 최소 하나 포함
@@ -45,12 +43,10 @@ Snyk Code 또는 Snyk OS 또는 둘 다의 커버리지 요구 사항을 충족�
 <figure><img src="https://lh7-us.googleusercontent.com/guCzWVv9SP7H1h6WYSFGwHEVvW3c0DVvg26mHAdxkorPgZI3gYCIH93QN0fXNl71ZDZxucfpROkkjruxuQ_vu5QCjS7_ImROEZlBTYIh-hxZnsM3comPaQpQbsy7s_3MDuFVEiljw2G8szWddXjqPgQ" alt="선택된 제품 중 최소 하나를 포함하도록 커버리지 갭 필터 설정"><figcaption><p>선택된 제품 중 최소 하나를 포함하도록 커버리지 갭 필터 설정</p></figcaption></figure>
 
 \
-Snyk Code와 Snyk OS의 커버리지 요구 사항을 모두 충족하는 자산을 식별합니다.&#x20;
-
-\
+Snyk Code와 Snyk OS의 커버리지 요구 사항을 모두 충족하는 자산을 식별합니다.
 
 <figure><img src="https://lh7-us.googleusercontent.com/-Ys7HZ5UcthgyDyPbBNG572CTM04RJ_Tcc1JTa9GrltfSVUM5gvFLrxpNRlV6ZNqRJQOw5hL0QFworAAOVbGYCMM4J-H4z9G8L3BiU3-PEU79GqxAalKB5UvdXxKUIgNEszwH0jUN_7kpos8HLSXvo8" alt="선택된 제품을 제외하도록 커버리지 필터 설정"><figcaption><p>선택된 제품을 제외하도록 커버리지 필터 설정</p></figcaption></figure>
 
 {% hint style="info" %}
 커버리지 및 커버리지 갭 필터를 사용하여 이미지 자산의 커버리지와 커버리지 갭을 모니터링할 수 있습니다. 이로써 자산의 위험을 더 완전하게 파악하고 필요할 때 조치를 취할 수 있습니다.
-{% endhint %}  
+{% endhint %}

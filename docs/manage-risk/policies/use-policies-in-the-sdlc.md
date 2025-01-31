@@ -1,4 +1,4 @@
-# SDLC에서 정책 사용하기
+# SDLC의 정책 사용
 
 개발자의 로컬 개발 환경부터 IDE 또는 CLI, Git 기반의 워크플로 및 CI/CD 및 프로덕션 단계까지 SDLC의 모든 단계에 정책을 적용할 수 있습니다.
 
@@ -30,7 +30,7 @@
 라이선스 정책을 만들 때 Snyk는 테스트가 실패하는 이유를 설명하도록 권장합니다. 따라서 예를 들어 GPL 라이선스로 빌드가 실패하면 개발자들이 설명을 볼 수 있고 취해야 할 조치를 알 수 있습니다. 자세한 내용은 [라이선스 정책 및 규칙 만들기](license-policies/create-a-license-policy-and-rules.md)를 참조하십시오.
 {% endhint %}
 
-이 정책은 선택된 속성이 적용된 모든 프로젝트에 할당되었으며 다음 번 Snyk가 해당 프로젝트를 스캔할 때 적용됩니다.
+이 정책은 선택된 속성이 적용된 모든 프로젝트에 할당되었으며 다음 번 Snyk이 해당 프로젝트를 스캔할 때 적용됩니다.
 
 자세한 내용은 [라이선스 정책](license-policies/)을 참조하십시오.
 
@@ -38,19 +38,15 @@
 
 이전 예제와 유사한 프로세스를 사용하여 `FrontEnd` 환경의 알려진 취약점이 없는 `Medium` 심각도 취약점을 자동으로 무시하는 보안 정책을 정의할 수 있습니다:
 
-<div align="left">
+<div align="left"><figure><img src="../../.gitbook/assets/image (14) (3).png" alt="Snyk 보안 정책 - 무시할 취약점 지정"><figcaption><p>Snyk 보안 정책 - 무시할 취약점 지정</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/image (14) (3).png" alt="Snyk 보안 정책 - 무시할 취약점 지정"><figcaption><p>Snyk 보안 정책 - 무시할 취약점 지정</p></figcaption></figure>
-
-</div>
-
-이 정책은 선택된 속성이 적용된 모든 프로젝트에 할당되었으며 다음 번 Snyk가 해당 프로젝트를 스캔할 때 적용됩니다.
+이 정책은 선택된 속성이 적용된 모든 프로젝트에 할당되었으며 다음 번 Snyk이 해당 프로젝트를 스캔할 때 적용됩니다.
 
 자세한 내용은 [보안 정책](security-policies/)을 참조하십시오.
 
 ## GitHub 레포지토리에서 정책 적용하기
 
-Snyk가 모니터링하는 GitHub 프로젝트에서 기여하는 개발자가 제출하는 모든 새로운 풀 리퀘스트는 해당 프로젝트에 할당된 정책을 확인합니다. 이를 통해 정책 위반 코드를 저장소에 커밋할 수 없도록 보장합니다.
+Snyk이 모니터링하는 GitHub 프로젝트에서 기여하는 개발자가 제출하는 모든 새로운 풀 리퀘스트는 해당 프로젝트에 할당된 정책을 확인합니다. 이를 통해 정책 위반 코드를 저장소에 커밋할 수 없도록 보장합니다.
 
 {% hint style="info" %}
 Snyk의 PR Checks 기능에 대한 자세한 내용은 [PR Checks](../../scan-with-snyk/pull-requests/pull-request-checks/)를 참조하십시오.

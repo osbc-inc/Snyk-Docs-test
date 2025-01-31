@@ -1,4 +1,4 @@
-# 정책 실행
+# 정책 구현
 
 프로젝트에 추가하는 모든 정책은 자산을 더 잘 모니터링하고 비즈니스 컨텍스트를 자동화하여 발생하는 변경 사항에 대한 알림을 항상 수신함으로써 도와줍니다.
 
@@ -6,18 +6,18 @@
 
 정책 기능의 주요 뷰에 액세스하여 모든 정책의 목록과 자세한 정보를 볼 수 있습니다:
 
-- **정책 상태** - 활성화되었는지 여부.
-- **마지막 수정일** - 정책이 마지막으로 수정된 날짜.
-- **수정자** - 정책을 마지막으로 수정한 사용자의 이름.
+* **정책 상태** - 활성화되었는지 여부.
+* **마지막 수정일** - 정책이 마지막으로 수정된 날짜.
+* **수정자** - 정책을 마지막으로 수정한 사용자의 이름.
 
 추가 세부정보에 액세스하려면 정책 위로 마우스를 가져가세요:
 
-- **플로우로 이동** - 정책을 엽니다.
-- **세부정보** - 날짜 및 생성자를 포함한 정책 생성 및 수정에 대한 세부정보 제공.
-- **복제** - 정책 복제.
-- **삭제** - 정책 삭제.
+* **플로우로 이동** - 정책을 엽니다.
+* **세부정보** - 날짜 및 생성자를 포함한 정책 생성 및 수정에 대한 세부정보 제공.
+* **복제** - 정책 복제.
+* **삭제** - 정책 삭제.
 
-<figure><img src="../../../.gitbook/assets/Policies-New UI.png" alt="AppRisk - Policies overview screen"><figcaption><p>Snyk AppRisk - Policies overview screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Policies-New UI.png" alt="AppRisk - Policies overview screen"><figcaption><p>Snyk AppRisk - 정책 개요 화면</p></figcaption></figure>
 
 ## 정책 사용자화
 
@@ -27,7 +27,7 @@
 
 정책이 작동하는 방식에 대한 개요를 얻기 위해 시뮬레이션을 실행할 수 있습니다. 정책에 추가한 기준과 일치하는 자산의 총수를 나타내는 숫자가 정책 위에 표시됩니다.
 
-<figure><img src="../../../.gitbook/assets/Simulate Policies -New UI.png" alt="AppRisk - Policy simulation"><figcaption><p>Snyk AppRisk - Policy simulation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Simulate Policies -New UI.png" alt="AppRisk - Policy simulation"><figcaption><p>Snyk AppRisk - 정책 개요 화면</p></figcaption></figure>
 
 ### 정책 실행
 
