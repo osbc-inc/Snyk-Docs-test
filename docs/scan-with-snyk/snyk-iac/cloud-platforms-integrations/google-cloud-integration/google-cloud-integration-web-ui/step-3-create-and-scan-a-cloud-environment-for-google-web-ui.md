@@ -1,8 +1,8 @@
-# 단계 3: Google용 클라우드 환경 생성 및 스캔 (웹 UI)
+# 3단계: Google용 클라우드 환경 만들기 및 스캔(웹 UI)
 
 {% hint style="info" %}
 **요약**\
-Snyk를 위한 Google 서비스 계정을 만들었습니다. 이제 클라우드 환경을 생성하고 스캔할 수 있습니다.
+Snyk을 위한 Google 서비스 계정을 만들었습니다. 이제 클라우드 환경을 생성하고 스캔할 수 있습니다.
 {% endhint %}
 
 Google용 클라우드 환경을 만들고 스캔하려면 **Google 서비스 계정 이메일 주소**와 **프로젝트 ID**를 제공해야 합니다.
@@ -26,5 +26,5 @@ Google이 서비스 계정을 만드는 데 60초 이상이 걸릴 수 있습니
 
 다음을 수행할 수 있습니다:
 
-* Snyk가 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/) 참조.
+* Snyk이 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/) 참조.
 * 클라우드 컨텍스트로 취약점 우선순위를 지정합니다.

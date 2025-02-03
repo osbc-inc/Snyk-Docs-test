@@ -1,18 +1,18 @@
-# 단계 2: Snyk IAM 역할 생성
+# 2단계: Snyk IAM 역할 만들기
 
-{% hint 스타일 = "info" %}
+{% hint style="info" %}
 **요약**\
-Snyk를 위해 AWS 계정을 가져오기 위해 신원 및 액세스 관리 (IAM) 역할을 선언하는 Terraform 또는 Amazon Web Services (AWS) CloudFormation 템플릿을 다운로드했습니다. 이제 인프라를 프로비저닝해야 합니다.
+Snyk을 위해 AWS 계정을 가져오기 위해 신원 및 액세스 관리 (IAM) 역할을 선언하는 Terraform 또는 Amazon Web Services (AWS) CloudFormation 템플릿을 다운로드했습니다. 이제 인프라를 프로비저닝해야 합니다.
 {% endhint %}
 
-Snyk를 사용하여 AWS 계정을 가져오기 위해 [Snyk 웹 UI](step-1-download-iam-role-iac-template-web-ui.md) 또는 [Snyk API](../aws-integration-api/step-1-download-iam-role-iac-template.md)를 사용하든, Snyk IAM 역할을 생성하는 과정은 동일합니다.
+Snyk을 사용하여 AWS 계정을 가져오기 위해 [Snyk 웹 UI](step-1-download-iam-role-iac-template-web-ui.md) 또는 [Snyk API](../aws-integration-api/step-1-download-iam-role-iac-template.md)를 사용하든, Snyk IAM 역할을 생성하는 과정은 동일합니다.
 
 생성할 IAM 역할에는 다음 정책이 첨부됩니다:
 
 * AWS 관리형 [SecurityAudit](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_security-auditor) 읽기 전용 정책.
 * SecurityAudit로 처리되지 않는 필수 읽기 권한을 부여하는 보조 인라인 정책.
 
-또한 역할에는 [외부 ID](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html)를 지정하는 신뢰 정책이 있습니다. Snyk가 이 고유 ID를 조직을 위해 생성하여 다른 당사자가 ID 없이도 역할을 가정하는 것을 방지합니다. 심지어 그들이 귀하의 역할 Amazon 리소스 이름 (ARN)을 가지고 있더라도요.
+또한 역할에는 [외부 ID](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html)를 지정하는 신뢰 정책이 있습니다. Snyk이 이 고유 ID를 조직을 위해 생성하여 다른 당사자가 ID 없이도 역할을 가정하는 것을 방지합니다. 심지어 그들이 귀하의 역할 Amazon 리소스 이름 (ARN)을 가지고 있더라도요.
 
 ## Terraform 또는 CloudFormation으로 IAM 역할 생성
 
@@ -23,7 +23,7 @@ Snyk에서 다운로드 한 템플릿의 유형에 따라 다음 도구 중 하�
 
 ### Terraform으로 IAM 역할 생성
 
-{% hint 스타일 = "info" %}
+{% hint style="info" %}
 [Terraform CLI](https://www.terraform.io/downloads)를 사용하기 전에 [AWS 자격 증명을 설정](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration)해야 합니다.
 {% endhint %}
 
@@ -50,7 +50,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 ### AWS CLI로 IAM 역할 생성
 
-{% hint 스타일 = "info" %}
+{% hint style="info" %}
 [AWS CLI](https://aws.amazon.com/cli/)를 사용하기 전에 [AWS 자격 증명을 설정](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)해야 합니다.
 {% endhint %}
 
@@ -82,7 +82,7 @@ aws cloudformation describe-stacks \
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-cloudformation-create-stacks.png" alt="AWS Management Console에서 스택 생성 버튼 선택"><figcaption><p>AWS Management Console에서 스택 생성 버튼 선택</p></figcaption></figure>
 
-4\. 드롭다운 메뉴에서 **새 리소스로(표준)**를 선택합니다.
+4\. 드롭다운 메뉴에서 \*\*새 리소스로(표준)\*\*를 선택합니다.
 
 5\. **스택 생성** 페이지에서 **템플릿 지정** 섹션으로 이동하고 **템플릿 파일 업로드**를 선택합니다.
 

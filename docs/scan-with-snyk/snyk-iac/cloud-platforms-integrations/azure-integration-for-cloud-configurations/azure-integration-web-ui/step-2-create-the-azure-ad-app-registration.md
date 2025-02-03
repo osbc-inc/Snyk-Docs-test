@@ -1,13 +1,13 @@
-# 단계 2: Entra ID 앱 등록 생성
+# 2단계: Entra ID 앱 등록 만들기
 
 {% hint style="info" %}
 **요약**\
 [Azure Active Directory (AD) 애플리케이션 등록](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration), [페더레이션 신원 자격 증명](https://learn.microsoft.com/en-us/azure/active-directory/develop/workload-identity-federation) 및 Snyk를 위한 [서비스 주체](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)를 선언하는 Terraform 템플릿을 다운로드했습니다. 이제 인프라를 프로비저닝해야 합니다.
 {% endhint %}
 
-Azure 구독을 스캔하기 위해 Snyk는 리더([Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader)) 역할을 가진 서비스 주체의 권한을 사용합니다. 이렇게 함으로써 Snyk가 구독 리소스의 구성을 스캔할 수 있게 됩니다.
+Azure 구독을 스캔하기 위해 Snyk는 리더([Reader](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#reader)) 역할을 가진 서비스 주체의 권한을 사용합니다. 이렇게 함으로써 Snyk이 구독 리소스의 구성을 스캔할 수 있게 됩니다.
 
-또한, Snyk는 구독 및 테넌트에 대한 페더레이션 자격 증명을 조직에 잠그는 보안 기능을 보유하고 있습니다. 이렇게 함으로써 누군가 자격 증명의 이름을 추측하여 해당 리소스를 보기 위해 별도의 조직에 가입하는 것을 방지합니다.
+또한, Snyk은 구독 및 테넌트에 대한 페더레이션 자격 증명을 조직에 잠그는 보안 기능을 보유하고 있습니다. 이렇게 함으로써 누군가 자격 증명의 이름을 추측하여 해당 리소스를 보기 위해 별도의 조직에 가입하는 것을 방지합니다.
 
 ## Terraform 또는 Azure CLI를 사용하여 인프라 생성
 
@@ -19,7 +19,7 @@ Snyk에서 다운로드한 파일 유형에 따라 다음 도구 중 하나를 �
 ### Terraform을 사용하여 Azure 앱 등록 인프라 생성
 
 {% hint style="info" %}
-[Terraform CLI](https://www.terraform.io/downloads)를 사용하기 전에 반드시 [Azure 자격 증명을 사용하도록 구성](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs#authenticating-to-azure-active-directory)하십시오. 사용자는 응용 프로그램 관리자 또는 글로벌 관리자 디렉토리 역할 중 하나를 가지고 있어야 합니다. 이것은 Terraform을 통해 [페더레이션 신원 자격 증명](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/application\_federated\_identity\_credential#api-permissions) 및 [서비스 주체](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/service\_principal)를 생성하는 데 필요합니다.
+[Terraform CLI](https://www.terraform.io/downloads)를 사용하기 전에 반드시 [Azure 자격 증명을 사용하도록 구성](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs#authenticating-to-azure-active-directory)하십시오. 사용자는 응용 프로그램 관리자 또는 글로벌 관리자 디렉토리 역할 중 하나를 가지고 있어야 합니다. 이것은 Terraform을 통해 [페더레이션 신원 자격 증명](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/application_federated_identity_credential#api-permissions) 및 [서비스 주체](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/service_principal)를 생성하는 데 필요합니다.
 {% endhint %}
 
 1. 터미널에서 다운로드한 Terraform 파일이 있는 디렉터리로 이동합니다(`Snyk Web UI`에서 다운로드한 경우 `snyk-permissions-azure.tf`로 명명됨).

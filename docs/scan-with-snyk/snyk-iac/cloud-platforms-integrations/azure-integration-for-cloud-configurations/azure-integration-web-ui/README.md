@@ -8,5 +8,5 @@
 
 위 단계를 완료하면 다음을 수행할 수 있습니다:
 
-* Snyk가 발견한 클라우드 구성 문제를 볼 수 있습니다. [클라우드 및 IaC+ 문제](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/) 참조.
+* Snyk이 발견한 클라우드 구성 문제를 볼 수 있습니다. [클라우드 및 IaC+ 문제](../../../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/) 참조.
 * 클라우드 컨텍스트로 취약점을 우선순위로 지정할 수 있습니다.

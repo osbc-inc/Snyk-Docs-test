@@ -1,11 +1,11 @@
-# 단계 3: Google을 위한 클라우드 환경을 생성하고 스캔
+# 3단계: Google용 클라우드 환경 만들기 및 스캔(API)
 
 {% hint style="info" %}
 **요약**\
-Snyk를 위한 Google 서비스 계정을 생성했습니다. 이제 클라우드 환경을 생성하고 스캔할 수 있습니다.
+Snyk을 위한 Google 서비스 계정을 생성했습니다. 이제 클라우드 환경을 생성하고 스캔할 수 있습니다.
 {% endhint %}
 
-[Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments)에 요청을 보내어 클라우드 환경을 생성하고 스캔하려면 API 요청 본문에서 **Google 서비스 계정의 이메일 주소**와 **프로젝트 ID**를 제공해야 합니다.
+[Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/environments)에 요청을 보내어 클라우드 환경을 생성하고 스캔하려면 API 요청 본문에서 **Google 서비스 계정의 이메일 주소**와 **프로젝트 ID**를 제공해야 합니다.
 
 ## Snyk API 요청 보내기
 
@@ -79,15 +79,15 @@ curl -X POST \
 }
 ```
 
-Snyk는 환경이 생성되면 자동으로 스캔을 시작합니다.
+Snyk은 환경이 생성되면 자동으로 스캔을 시작합니다.
 
 {% hint style="info" %}
-JSON 출력의 `data.attributes.status` 필드가 `in_progress`로 설정됩니다. 이는 Snyk가 환경을 만들고 스캔을 시작했음을 의미합니다.
+JSON 출력의 `data.attributes.status` 필드가 `in_progress`로 설정됩니다. 이는 Snyk이 환경을 만들고 스캔을 시작했음을 의미합니다.
 {% endhint %}
 
 스캔이 완료되었는지 확인하려면 [스캔이 완료되었는지 확인](https://docs.snyk.io/integrations/cloud-platforms/aws-integration/snyk-cloud-for-aws-api/step-3-create-and-scan-a-snyk-cloud-environment#check-to-see-if-the-scan-is-finished)을 참조하십시오.
 
-환경을 다시 스캔하려면 [클라우드 환경 스캔](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/snyk-environments/scan-a-cloud-environment.md)을 참조하십시오.
+환경을 다시 스캔하려면 [클라우드 환경 스캔](../../../getting-started-with-iac+-and-cloud-scans/snyk-environments/scan-a-cloud-environment.md)을 참조하십시오.
 
 {% hint style="info" %}
 Google은 서비스 계정을 생성하는 데 60초 이상이 걸릴 수 있습니다. 서비스 계정을 생성한 후 즉시 환경을 만들려고 시도하면 **자격 증명을 확인할 수 없음 오류**가 발생할 수 있으니, 최소 60초를 기다린 후 다시 시도하십시오.
@@ -97,5 +97,5 @@ Google은 서비스 계정을 생성하는 데 60초 이상이 걸릴 수 있습
 
 이제 다음을 수행할 수 있습니다:
 
-* Snyk가 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/)를 참조하십시오.
+* Snyk이 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/)를 참조하십시오.
 * 클라우드 컨텍스트로 취약점을 우선순위대로 지정합니다.

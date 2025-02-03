@@ -1,11 +1,11 @@
-# 단계 3: 클라우드 환경 (API) 생성 및 스캔
+# 3단계: 클라우드 환경 만들기 및 스캔(API)
 
 {% hint style="info" %}
 **요약**\
 Snyk 클라우드 IAM 역할을 생성했습니다. 이제 클라우드 환경을 생성하고 스캔할 수 있습니다.
 {% endhint %}
 
-클라우드 환경을 생성하고 스캔하기 위해 [Snyk API endpoint Create New Environment](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/environments)로 요청을 보내려면 API 요청 본문에 역할의 Amazon 리소스 이름 (ARN)을 제공해야 합니다.
+클라우드 환경을 생성하고 스캔하기 위해 [Snyk API endpoint Create New Environment](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/environments)로 요청을 보내려면 API 요청 본문에 역할의 Amazon 리소스 이름 (ARN)을 제공해야 합니다.
 
 ## 역할 ARN 찾기
 
@@ -96,13 +96,13 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-만약 JSON 출력에서 `data.attributes.status` 필드가 `success`로 설정되어 있다면, Snyk가 환경을 스캔을 완료했음을 나타냅니다.
+만약 JSON 출력에서 `data.attributes.status` 필드가 `success`로 설정되어 있다면, Snyk이 환경을 스캔을 완료했음을 나타냅니다.
 
-환경을 다시 스캔하려면 [클라우드 환경 스캔](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/snyk-environments/scan-a-cloud-environment.md)을 참조하세요.
+환경을 다시 스캔하려면 [클라우드 환경 스캔](../../../getting-started-with-iac+-and-cloud-scans/snyk-environments/scan-a-cloud-environment.md)을 참조하세요.
 
 ## 다음은 무엇인가요?
 
 이제 다음을 수행할 수 있습니다:
 
-- Snyk가 찾은 클라우드 구성 문제를 확인하세요. [클라우드 및 IaC+ 문제](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/)를 참조하세요.
-- 클라우드 컨텍스트를 사용하여 취약점을 우선 순위로 지정하세요.
+* Snyk이 찾은 클라우드 구성 문제를 확인하세요. [클라우드 및 IaC+ 문제](../../../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/)를 참조하세요.
+* 클라우드 컨텍스트를 사용하여 취약점을 우선 순위로 지정하세요.

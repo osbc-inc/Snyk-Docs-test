@@ -1,14 +1,14 @@
-# 단계 1: 서비스 계정 IaC 템플릿(API) 다운로드
+# 1단계: 서비스 계정 IaC 템플릿(API) 다운로드하기
 
 구글 프로젝트의 리소스 구성을 스캔하기 위한 권한을 제공하는 타이트한 범위의 구글 서비스 계정을 선언하는 인프라 구성(IaC) 템플릿을 다운로드해야 Cloud Environment를 생성할 수 있습니다.
 
-이 템플릿은 구글 클라우드 프로젝트를 위해 일련의 [구글 서비스 API](https://cloud.google.com/service-usage/docs/enabled-service)를 활성화합니다. 이는 Snyk가 프로젝트 리소스를 스캔하기 위해 필요한 API를 사용할 수 있도록 보장합니다.
+이 템플릿은 구글 클라우드 프로젝트를 위해 일련의 [구글 서비스 API](https://cloud.google.com/service-usage/docs/enabled-service)를 활성화합니다. 이는 Snyk이 프로젝트 리소스를 스캔하기 위해 필요한 API를 사용할 수 있도록 보장합니다.
 
 이 IaC 템플릿을 사용하여 [단계 2: 구글 서비스 계정 생성(API)](step-2-create-the-google-service-account-api.md)에서 역할을 프로비저닝할 것입니다.
 
 ## IaC 템플릿 검색
 
-[Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/permissions)에서 IaC 템플릿을 검색하려면 로그인한 상태에서 Snyk 조직 수준 [서비스 계정](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account)에 대한 API 토큰이 필요합니다. 이 서비스 계정은 Org Admin 역할을 갖습니다.
+[Snyk API](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/permissions)에서 IaC 템플릿을 검색하려면 로그인한 상태에서 Snyk 조직 수준 [서비스 계정](https://docs.snyk.io/features/user-and-group-management/structure-account-for-high-application-performance/service-accounts#set-up-a-service-account)에 대한 API 토큰이 필요합니다. 이 서비스 계정은 Org Admin 역할을 갖습니다.
 
 1. [Snyk 웹 UI](https://app.snyk.io/)에서 **Settings (톱니바퀴 아이콘) > General > Organization ID**로 이동하여 조직 ID를 복사합니다.
 2. 다음 형식으로 Snyk API에 요청을 보냅니다:
@@ -78,4 +78,4 @@ curl -X POST \
 
 ## 다음 단계
 
-다음 단계는 Snyk를 위해 구글 서비스 계정을 생성하는 것입니다.
+다음 단계는 Snyk을 위해 구글 서비스 계정을 생성하는 것입니다.

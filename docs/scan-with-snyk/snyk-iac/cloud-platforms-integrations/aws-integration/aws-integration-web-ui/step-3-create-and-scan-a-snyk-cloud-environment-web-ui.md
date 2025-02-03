@@ -1,4 +1,4 @@
-# 단계 3: 클라우드 환경 생성 및 스캔 (웹 UI)
+# 3단계: 클라우드 환경 생성 및 스캔(웹 UI)
 
 {% hint style="info" %}
 **요약**\
@@ -43,7 +43,6 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-console-find-arn.png" alt="AWS 관리 콘솔에서 역할 이름 검색"><figcaption><p>AWS 관리 콘솔에서 역할 이름 검색</p></figcaption></figure>
 
 5. 역할을 선택합니다.
-
 6. 역할 세부 정보 페이지에서 **요약** 섹션에서 ARN을 찾아 복사합니다:
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-console-copy-arn.png" alt="AWS 관리 콘솔에서 역할 ARN 복사"><figcaption><p>AWS 관리 콘솔에서 역할 ARN 복사</p></figcaption></figure>
@@ -61,5 +60,5 @@ arn:aws:iam::123412341234:role/snyk-cloud-role
 
 이제 다음을 수행할 수 있습니다:
 
-* Snyk가 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/) 참조
+* Snyk이 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/) 참조
 * 클라우드 컨텍스트로 취약점을 우선순위로 정하는 방법.

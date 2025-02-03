@@ -10,5 +10,5 @@ AWS 계정을 웹 UI를 통해 등록하기 위해선, AWS 계정 및 관련 자
 
 위 단계를 완료하면 다음을 수행할 수 있습니다:
 
-* Snyk가 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../../../scan-with-snyk/snyk-iac/getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/).
+* Snyk이 발견한 클라우드 구성 문제를 확인합니다. [클라우드 및 IaC+ 문제](../../../getting-started-with-iac+-and-cloud-scans/manage-iac+-and-cloud-issues/).
 * 클라우드 컨텍스트로 취약점을 우선순위 지정합니다.
