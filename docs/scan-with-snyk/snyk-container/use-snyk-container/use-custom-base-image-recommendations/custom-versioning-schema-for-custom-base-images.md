@@ -1,6 +1,6 @@
-# 사용자 지정 베이스 이미지용 사용자 지정 버전 스키마
+# 사용자 지정 기본 이미지에 대한 사용자 지정 버전 관리 스키마
 
-사용자 지정 버전 스키마(CVS)는 Snyk가 회사의 컨테이너 이미지 태그 버전 스키마를 이해하는 방법입니다. 이를 통해 Snyk는 정확한 기본 이미지 업그레이드 권고를 제공할 수 있습니다.
+사용자 지정 버전 스키마(CVS)는 Snyk이 회사의 컨테이너 이미지 태그 버전 스키마를 이해하는 방법입니다. 이를 통해 Snyk은 정확한 기본 이미지 업그레이드 권고를 제공할 수 있습니다.
 
 ## Snyk CVS를 위한 전제 조건
 
@@ -26,7 +26,7 @@ snyk/example:1.3_V1
 
 이 저장소의 이미지 태그가 의미론적 버전 관리 표준을 따르지 않으므로 태그를 사용자 지정 버전 스키마로 설명해야 합니다.
 
- `snyk/example` 태그 스키마는 다음 요소에 의해 정의됩니다.
+`snyk/example` 태그 스키마는 다음 요소에 의해 정의됩니다.
 
 1. 가장 중요한 영향을 미치는 값의 숫자 (주요 부분)
 2. 점
@@ -34,7 +34,7 @@ snyk/example:1.3_V1
 4. "V"로 시작하는 밑줄(버전)
 5. 값이 가장 중요하지 않은 숫자.
 
-Snyk가 서로 다른 부분과 역할을 이해하려면 스키마를 정의해야합니다. 이 정규 표현식에서 명명된 그룹은 중요한 변수를 나타냅니다.
+Snyk이 서로 다른 부분과 역할을 이해하려면 스키마를 정의해야합니다. 이 정규 표현식에서 명명된 그룹은 중요한 변수를 나타냅니다.
 
 아래의 스키마는 위 예제와 해당 요소의 번역 버전입니다.
 
@@ -47,13 +47,13 @@ Snyk가 서로 다른 부분과 역할을 이해하려면 스키마를 정의해
 <pre class="language-regex"><code class="lang-regex">(?&#x3C;<a data-footnote-ref href="#user-content-fn-1">C0</a>>\d+)\.(?&#x3C;<a data-footnote-ref href="#user-content-fn-2">C1</a>>\d+)_V(?&#x3C;<a data-footnote-ref href="#user-content-fn-3">C2</a>>\d+)
 </code></pre>
 
-그러면 Snyk가 다음을 수행합니다:
+그러면 Snyk이 다음을 수행합니다:
 
 * 이 표현식을 사용하여 저장소의 모든 태그를 구문 분석합니다.
 * 중요도 순서대로 값을 비교합니다.
 * 태그별로 정렬된 이미지 세트를 생성합니다.
 
-그런 다음 Snyk는이 정렬된 세트를 사용하여 더 나은 권고 사항을 제공할 수 있습니다.
+그런 다음 Snyk은 이 정렬된 세트를 사용하여 더 나은 권고 사항을 제공할 수 있습니다.
 
 ### CVS로 필터링
 
@@ -214,7 +214,7 @@ ECMAScript 구문을 준수하지 않는 표현식을 전달하는 경우이 오
 
 #### 어떻게 해결할 수 있나요특정 문자가 아닌 [양자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)와 [문자 클래스](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)를 사용하세요.
 
-태그를 설명하는 데 1,000자 이상이 필요하다면 CSV는 적합하지 않을 수 있습니다. 
+태그를 설명하는 데 1,000자 이상이 필요하다면 CSV는 적합하지 않을 수 있습니다.
 
 다른 옵션에 대한 정보는 [Snyk 지원팀](https://support.snyk.io)에 문의하십시오.
 

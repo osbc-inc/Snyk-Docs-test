@@ -1,8 +1,8 @@
-# Dockerfile에서 취약한 기본 이미지 수정
+# Dockerfile에서 취약한 기본 이미지 수정하기
 
 ## 자동 Pull Request(PR)
 
-Snyk는 Git 저장소를 가져올 때 Dockerfile을 스캔하여 취약한 기본 이미지를 감지하고 자동 Pull Request를 사용하여 이를 수정하는 데 도움을 줍니다. 이를 통해 이미지를 빌드하기 전에 보안 문제를 검토하고 레지스트리나 프로덕션 환경에 미리 수정할 수 있습니다.
+Snyk은 Git 저장소를 가져올 때 Dockerfile을 스캔하여 취약한 기본 이미지를 감지하고 자동 Pull Request를 사용하여 이를 수정하는 데 도움을 줍니다. 이를 통해 이미지를 빌드하기 전에 보안 문제를 검토하고 레지스트리나 프로덕션 환경에 미리 수정할 수 있습니다.
 
 Dockerfile 수정용 PR을 지원하는 Git 기반 저장소 관리자는 다음과 같습니다:
 
@@ -13,11 +13,11 @@ Dockerfile 수정용 PR을 지원하는 Git 기반 저장소 관리자는 다음
 * GitHub Enterprise Server
 * Azure Repos
 
-Snyk에서 생성된 모든 Dockerfile 프로젝트의 기본 이미지가 [도커 공식 이미지](https://docs.docker.com/docker-hub/official\_images/)인 경우, 결과에는 기존보다 취약한 것 대신 사용할 수 있는 적절한 기본 이미지 목록이 포함됩니다. 자세한 내용은 [컨테이너 이미지 분석 및 수정](../use-snyk-container/analyze-and-fix-container-images.md)을 참조하십시오.
+Snyk에서 생성된 모든 Dockerfile 프로젝트의 기본 이미지가 [도커 공식 이미지](https://docs.docker.com/docker-hub/official_images/)인 경우, 결과에는 기존보다 취약한 것 대신 사용할 수 있는 적절한 기본 이미지 목록이 포함됩니다. 자세한 내용은 [컨테이너 이미지 분석 및 수정](../use-snyk-container/analyze-and-fix-container-images.md)을 참조하십시오.
 
-그런 다음, Snyk는 최신 소수 버전으로 업그레이드하기 위해 Dockerfile에 대한 수정 Pull Request를 자동으로 생성합니다.
+그런 다음, Snyk은 최신 소수 버전으로 업그레이드하기 위해 Dockerfile에 대한 수정 Pull Request를 자동으로 생성합니다.
 
-Snyk는 Dockerfile의 변경이 발생하거나 초기 스캔 후 더 나은 기본 이미지를 식별할 때 자동으로 수정 PR을 엽니다.
+Snyk은 Dockerfile의 변경이 발생하거나 초기 스캔 후 더 나은 기본 이미지를 식별할 때 자동으로 수정 PR을 엽니다.
 
 ### Dockerfile 기본 이미지의 자동 업데이트 활성화
 
@@ -25,11 +25,7 @@ Snyk는 Dockerfile의 변경이 발생하거나 초기 스캔 후 더 나은 기
 
 자동 업데이트 PR을 활성화하려면 **설정 > 통합**으로 이동하여 연결된 소스 코드 관리자를 선택하십시오. 설정 구성 페이지에서 **Dockerfiles** 아래 **자동 업데이트 PR 활성화**를 토글합니다.
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/enable_automatic_PRs.png" alt="기본 이미지를 위한 자동 업데이트 PR 활성화"><figcaption><p>자동 업데이트 PR 활성화</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/enable_automatic_PRs.png" alt="기본 이미지를 위한 자동 업데이트 PR 활성화"><figcaption><p>자동 업데이트 PR 활성화</p></figcaption></figure></div>
 
 ## 수동으로 수정 PR 열기
 
