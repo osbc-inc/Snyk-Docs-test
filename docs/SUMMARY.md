@@ -504,7 +504,7 @@
       * [환경에 따른 오픈 소스 취약점 수 차이](scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
       * [Snyk 오픈소스로 취약점 수정문제 해결](scan-with-snyk/snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md)
     * [Bazel - 빌드 및 테스트 도구](scan-with-snyk/snyk-open-source/bazel/README.md)
-      * [Dep Graph API](scan-with-snyk/snyk-open-source/bazel/dep-graph-api.md)
+      * [Dep 그래프 API](scan-with-snyk/snyk-open-source/bazel/dep-graph-api.md)
       * [Example of Snyk for Bazel](scan-with-snyk/snyk-open-source/bazel/example-of-snyk-for-bazel.md)
   * [Snyk Code](scan-with-snyk/snyk-code/README.md)
     * [Snyk Code Local Engine](scan-with-snyk/snyk-code/snyk-code-local-engine.md)
