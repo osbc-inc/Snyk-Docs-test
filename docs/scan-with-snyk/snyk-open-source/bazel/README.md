@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **기능 이용 가능성**\
-Snyk는 에서 지원하는 Bazel을 위한 빌드 및 테스트 도구입니다. 이 설명서의 지침은 Bazel v 7에만 해당됩니다.&#x20;
+Snyk는 에서 지원하는 Bazel을 위한 빌드 및 테스트 도구입니다. 이 설명서의 지침은 Bazel v 7에만 해당됩니다.
 {% endhint %}
 
 Bazel은 [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.html)에서 다음과 같이 정의됩니다.
@@ -13,7 +13,7 @@ Bazel은 [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.h
 
 Snyk는 Bazel을 **Snyk 오픈 소스**에 대해서만 지원합니다.
 
-Snyk는 Bazel로 관리되는 종속성을 가진 프로젝트를 테스트 지원합니다. 권장되는 방법은 [Dep Graph API](dep-graph-api.md)를 사용하여 테스트하고 모니터링하는 것입니다. C++를 비롯한 여러 언어에 Bazel을 사용할 수 있지만, **Dep Graph 엔드포인트는 C++을 지원하지 않습니다**.
+Snyk는 Bazel로 관리되는 종속성을 가진 프로젝트를 테스트 지원합니다. 권장되는 방법은 [Dep 그래프 API](dep-graph-api.md)를 사용하여 테스트하고 모니터링하는 것입니다. C++를 비롯한 여러 언어에 Bazel을 사용할 수 있지만, **Dep 그래프 엔드포인트는 C++을 지원하지 않습니다**.
 
 ## 패키지 관리자
 
@@ -21,7 +21,7 @@ Bazel은 npm 등의 패키지 관리자와 같은 종속성 매니페스트 파�
 
 Bazel은 npmjs.org나 Maven Central과 같은 패키지 레지스트리와의 네이티브 통합이 제한적입니다. 외부 레지스트리에서 종속성을 설치하는 데 도움이 되는 일부 Bazel 규칙을 추가할 수 있습니다. 예를 들어, [Maven에서](https://docs.bazel.build/versions/master/external.html#maven-artifacts-and-repositories) 가져오기.
 
-Bazel 종속성은 BUILD 파일의 코드로 지정되므로 Snyk는 프로젝트에서 종속성을 쉽게 발견할 수 없습니다. Snyk를 사용하여 Bazel 프로젝트를 테스트하고 모니터링하는 정보는 [Dep Graph API](dep-graph-api.md) 페이지를 참조하십시오.
+Bazel 종속성은 BUILD 파일의 코드로 지정되므로 Snyk는 프로젝트에서 종속성을 쉽게 발견할 수 없습니다. Snyk를 사용하여 Bazel 프로젝트를 테스트하고 모니터링하는 정보는 [Dep 그래프 API](dep-graph-api.md) 페이지를 참조하십시오.
 
 ## 프레임워크 및 라이브러리
 
@@ -40,13 +40,12 @@ Snyk API는 엔터프라이즈 플랜에서만 사용할 수 있습니다. 자�
 
 Dep Graph API에는 추가 권한이 필요합니다. [Snyk 지원팀에 문의](https://support.snyk.io)하여 액세스를 요청하십시오.
 
-[Bazel](./)에서 관리되는 종속성을 테스트하고 모니터링하기 위해 Snyk Dep Graph API 엔드포인트 [Test Dep Graph](../../../snyk-api/reference/test-v1.md#test-dep-graph) 및 [Monitor Dep Graph](../../../snyk-api/reference/monitor-v1.md)를 사용하는 것이 좋습니다. 모니터 기능을 통해 고객은 취약점을 모니터링할 트리를 Snyk에 제출할 수 있습니다. C++를 비롯한 여러 언어에 Bazel을 사용할 수 있지만, **Dep Graph 엔드포인트는 C++을 지원하지 않습니다**.
+[Bazel](./)에서 관리되는 종속성을 테스트하고 모니터링하기 위해 Snyk Dep Graph API 엔드포인트 [Test Dep 그래프](../../../snyk-api/reference/test-v1.md#test-dep-graph) 및 [Monitor Dep 그래프](../../../snyk-api/reference/monitor-v1.md)를 사용하는 것이 좋습니다. 모니터 기능을 통해 고객은 취약점을 모니터링할 트리를 Snyk에 제출할 수 있습니다. C++를 비롯한 여러 언어에 Bazel을 사용할 수 있지만, **Dep 그래프 엔드포인트는 C++을 지원하지 않습니다**.
 
 다음과 같은 기본적인 단계를 따릅니다:
 
-1. 예를 들어 Maven, Cocoapods와 같은 각 종속성 유형에 대해 [Dep Graph JSON 객체](https://github.com/snyk/dep-graph)를 만들어 모든 종속성 패키지와 버전을 나열합니다. [Snyk를 위한 Baszel 예제](example-of-snyk-for-bazel.md)를 참조하십시오.
-   
-2. Bazel 테스트 규칙의 일부로 Dep Graph JSON 객체를 `POST` 요청으로 [Test Dep Graph](../../../snyk-api/reference/test-v1.md#test-dep-graph) 엔드포인트에 보냅니다. 아래는 예시 curl 요청입니다:
+1. 예를 들어 Maven, Cocoapods와 같은 각 종속성 유형에 대해 [Dep 그래프 JSON 객체](https://github.com/snyk/dep-graph)를 만들어 모든 종속성 패키지와 버전을 나열합니다. [Snyk를 위한 Baszel 예제](example-of-snyk-for-bazel.md)를 참조하십시오.
+2.  Bazel 테스트 규칙의 일부로 Dep Graph JSON 객체를 `POST` 요청으로 [Test Dep 그래프](../../../snyk-api/reference/test-v1.md#test-dep-graph) 엔드포인트에 보냅니다. 아래는 예시 curl 요청입니다:
 
     ```
     curl -X POST 'https://api.snyk.io/v1/test/dep-graph' \
@@ -54,20 +53,19 @@ Dep Graph API에는 추가 권한이 필요합니다. [Snyk 지원팀에 문의]
       -H 'Content-Type: application/json; charset=utf-8' \
       -d @dep-graph.json
     ```
-
 3. API 응답을 확인하여 성공/실패 상태 및 발생한 취약점을 확인합니다.
 
-### Test Dep Graph API 작동 방식
+### Test Dep 그래프 API 작동 방식
 
-Test Dep Graph API는 일반적인 종속성 그래프를 가져와 해당 종속성에 대한 관련 취약점을 포함하는 보고서를 반환합니다.
+Test Dep 그래프API는 일반적인 종속성 그래프를 가져와 해당 종속성에 대한 관련 취약점을 포함하는 보고서를 반환합니다.
 
-지원되는 패키지 관리자 및 저장소 생태계는 [Test Dep Graph](../../../snyk-api/reference/test-v1.md#test-dep-graph) 및 [Monitor Dep Graph](../../../snyk-api/reference/monitor-v1.md) 문서에 나열되어 있습니다.
+지원되는 패키지 관리자 및 저장소 생태계는 [Test Dep 그래프](../../../snyk-api/reference/test-v1.md#test-dep-graph) 및 [Monitor Dep 그래프](../../../snyk-api/reference/monitor-v1.md) 문서에 나열되어 있습니다.
 
 지원되는 생태계 내에서 Bazel 종속성이 Snyk API를 사용하여 테스트될 수 있습니다.
 
-### Snyk Dep Graph JSON 구문
+### Snyk Dep 그래프 JSON 구문
 
-Test Dep Graph API는 루트 응용 프로그램과 직접 및 간접 종속성의 그래프를 설명하는 [Snyk Dep Graph](https://github.com/snyk/dep-graph) JSON 객체를 가져옵니다.
+Test Dep 그래프 API는 루트 응용 프로그램과 직접 및 간접 종속성의 그래프를 설명하는 [Snyk Dep](https://github.com/snyk/dep-graph)[ 그래프](https://github.com/snyk/dep-graph) JSON 객체를 가져옵니다.
 
 이 형식에 대한 [스키마](https://github.com/snyk/dep-graph#depgraphdata)는 다음과 같습니다:
 
@@ -115,17 +113,17 @@ export interface DepGraphData {
 ```
 {% endcode %}
 
-Dep Graph 객체의 특정 구성 요소에 대한 추가 설명은 다음과 같습니다:
+Dep 그래프 객체의 특정 구성 요소에 대한 추가 설명은 다음과 같습니다:
 
-* `schemaVersion` - Dep Graph 스키마의 버전입니다. 이를 `1.2.0`로 설정합니다.
+* `schemaVersion` - Dep 그래프 스키마의 버전입니다. 이를 `1.2.0`로 설정합니다.
 * `pkgManager.name` - `deb`, `gomodules`, `gradle`, `maven`, `npm`, `nuget`, `paket`, `pip`, `rpm`, `rubygems`, 또는 `cocoapods` 중 하나일 수 있습니다.
-* `pkgs` - Dep Graph의 모든 패키지의 `id`, `name`, `version`을 포함하는 객체 배열입니다. `id`는 `name@version` 형식이어야 합니다. 이 배열에 각 종속성을 나열합니다. 프로젝트 자체를 나타내는 항목도 포함합니다.
+* `pkgs` - Dep그래프의 모든 패키지의 `id`, `name`, `version`을 포함하는 객체 배열입니다. `id`는 `name@version` 형식이어야 합니다. 이 배열에 각 종속성을 나열합니다. 프로젝트 자체를 나타내는 항목도 포함합니다.
 * `graph.nodes` - `pkgs`에 있는 항목 간 관계를 설명하는 객체 배열입니다. 이것은 일반적으로 프로젝트 노드로, `deps`에 정의된 직접 종속성의 평면 배열로 모든 다른 패키지가 정의됩니다.
 * `graph.rootNodeId` - 그래프의 루트 노드로 사용할 `graph.nodes`의 항목의 `id`를 지정합니다. 이를 프로젝트 노드의 `nodeId`로 설정합니다.
 
-### Snyk Dep Graph 테스트 API 응답
+### Snyk Dep 그래프 테스트 API 응답
 
-Test Dep Graph API는 Dep Graph 종속성에서 발견된 문제(취약점 및 라이선스)를 설명하는 JSON 객체를 반환합니다.
+Test Dep 그래프 API는 Dep 그래프 종속성에서 발견된 문제(취약점 및 라이선스)를 설명하는 JSON 객체를 반환합니다.
 
 단일 취약점을 포함한 예시 응답은 다음과 같습니다:
 
