@@ -1,10 +1,10 @@
-# 템플릿과 술어
+# 템플릿 및 predicates
 
-이 섹션은  Query Language 표준 라이브러리의 템플릿과 술어에 대한 소개를 제공하여 각 술어와 템플릿에 대한 실용적인 예시를 제공합니다.
+이 섹션은 Query Language 표준 라이브러리의 템플릿과 predicates에 대한 소개를 제공하여 각 predicates와 템플릿에 대한 실용적인 예시를 제공합니다.
 
 ## 메소드, 리터럴, 및 인자
 
-{Snyk Code의 기본 기능은 메소드 호출을 찾고 해당 인자에 대해 추론하는 것입니다. 여기서의 목표는 특정한 메소드 호출과 그들의 인자에 대한 패턴을 찾아 해당 객체의 특정 속성이 성립하는지 확인하는 것입니다.
+Snyk Code의 기본 기능은 메소드 호출을 찾고 해당 인자에 대해 추론하는 것입니다. 여기서의 목표는 특정한 메소드 호출과 그들의 인자에 대한 패턴을 찾아 해당 객체의 특정 속성이 성립하는지 확인하는 것입니다.
 
 아래 Python 프로그램을 분석하고 검색할 것이라고 가정해봅시다. 유사한 프로그램이 제공된다면, 동일한 예시는 가 지원하는 다른 모든 언어에 대해서도 작동합니다. 코드는 쿼리를 수행하기 위해 컴파일되지 않아도 됩니다.
 
@@ -28,9 +28,9 @@ finalsend(o)
 o.send('unsafe')
 ```
 
-첫 번째 쿼리는 `connect` 메소드를 찾습니다. 쿼리 `"connect"`는 이 값을 포함한 문자열과 해당 이름의 메소드 호출을 반환합니다. 이를 구분하기 위해 값은 템플릿에 넣을 수 있습니다. 이름 `connect`를 어떻게 포장할 수 있는지 찾기 위해 자동 완성을 사용할 수 있습니다. `Literal` 또는 `StringLiteral`은 문자열 _`'connect'`_으로 검색 결과를 제한하며, `CallExpression`은 함수 호출 `connect()`로 결과를 제한합니다.
+첫 번째 쿼리는 `connect` 메소드를 찾습니다. 쿼리 `"connect"`는 이 값을 포함한 문자열과 해당 이름의 메소드 호출을 반환합니다. 이를 구분하기 위해 값은 템플릿에 넣을 수 있습니다. 이름 `connect`를 어떻게 포장할 수 있는지 찾기 위해 자동 완성을 사용할 수 있습니다. `Literal` 또는 `StringLiteral`은 문자열 \_`'connect'`\_으로 검색 결과를 제한하며, `CallExpression`은 함수 호출 `connect()`로 결과를 제한합니다.
 
-<figure><img src="../../../.gitbook/assets/SnykCodeQueryStringvsCallExpr.png" alt="Environment suggesting possible use for &#x22;connect&#x22;"><figcaption><p>환경이 &#x22;connect&#x22;을 사용할 가능성을 제안</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SnykCodeQueryStringvsCallExpr.png" alt="Environment suggesting possible use for &#x22;connect&#x22;"><figcaption><p>환경이 "connect"을 사용할 가능성을 제안</p></figcaption></figure>
 
 함수 호출이 파일 스캔 중인 파일 외부의 함수에 대해서도 찾을 수 있는데, `CallExpression<"safesend">`를 찾으려고 시도하면 결과가 없을 것입니다. 이는 분석이 로컬 함수를 인라인하여 그들의 동작에 대해 추론하기 때문입니다.
 
@@ -43,7 +43,7 @@ o.send('unsafe')
 `CallExpression<"send"> HasArg0<CallExpression<"connect">>`\
 이것들은 모두 위치입니다. 그러나 `connect` 값을 가진 첫 번째 인자로 `send`를 호출하는 위치들을 찾을 수 있습니다.
 
-<figure><img src="../../../.gitbook/assets/SnykCodeQueryCallExprsSend.png" alt="첫 번째 인자가 'connect' 값을 취하는 send 호출"><figcaption><p>첫 번째 인자가 'connect' 값을 취하는 send 호출</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SnykCodeQueryCallExprsSend.png" alt="첫 번째 인자가 &#x27;connect&#x27; 값을 취하는 send 호출"><figcaption><p>첫 번째 인자가 'connect' 값을 취하는 send 호출</p></figcaption></figure>
 
 이것은 다른 그림을 제공합니다. 분석을 통해 메시지 `connect`가 로컬 함수를 호출하는 위치에 보내졌음을 이해했습니다.
 
@@ -52,7 +52,7 @@ o.send('unsafe')
 
 이 쿼리는 인자 `0`을 만족하는 _send_ 호출을 검색합니다. 데이터 플로우에서, `send`가 발생하는 위치는 `disconnect`을 호출하는 인자 `0` 이후여야 합니다. 이는 최종으로 안전하지 않은 `send` 호출에만 일치합니다.
 
-부정을 위해, `connect`를 반환하지만 반환된 객체에 대해 _disconnect_를 호출하지 않는 객체를 찾을 수 있습니다.
+부정을 위해, `connect`를 반환하지만 반환된 객체에 대해 \_disconnect\_를 호출하지 않는 객체를 찾을 수 있습니다.
 
 `CallExpression<"connect"> Not<ForSameObject<Arg0In<CallExpression<"disconnect">>>>`
 
@@ -92,9 +92,9 @@ o.send('unsafe')
 
 첫 번째 소스 카테고리(SourceServer)는 서버를 구현하는 프로그램에 대해 정의됩니다. 이러한 소스들은 주로 완전히 사용자에 의해 제어 가능합니다. 이것은 악성 사용자가 응용 프로그램에 대한 공격을 수행할 수 있는 것을 의미하거나 이러한 데이터를 추가적인 주의를 기울여 처리해야 함을 나타냅니다. 예를 들어, 언제나 인증이 수행되었는지 확인하거나 다른 속성이 강제되었는지 확인할 수 있습니다.
 
-비서버 술어들도 서버 기능을 구현하지 않은 프로그램에 적용됩니다.
+비서버 predicates들도 서버 기능을 구현하지 않은 프로그램에 적용됩니다.
 
-SourceServer 카테고리에서의 각 술어는 _`PRED:SourceServer`_ 또는 _`PRED:AnySource`_를 쿼리하여 반환됩니다. 다음 TypeScript 코드 예제를 고려해보세요.
+SourceServer 카테고리에서의 각 predicates는 _`PRED:SourceServer`_ 또는 \_`PRED:AnySource`\_를 쿼리하여 반환됩니다. 다음 TypeScript 코드 예제를 고려해보세요.
 
 ```javascript
 import { Request, Response, NextFunction } from 'express';
@@ -112,9 +112,9 @@ module.exports = function productReviews () {
 
 이는 express 서버를 위한 요청 처리기를 구현한 것입니다. 이 경우, 코드는 사용자 쿠키를 읽고 콘솔에 로깅합니다. 이것은 많은 응용 프로그램에 대해 보안 취약점이며 준수 문제가 될 수 있습니다. 의 첫 번째 기능은 쿠키 위치를 확인할 수 있으며 많은 프로퍼티에 대해 검사할 수 있습니다. 이 경우, _`PRED:SourceCookie`_ 쿼리를 실행하여 요청 핸들러의 첫 번째 줄을 찾을 수 있습니다.
 
-이제 코드가 쿠키를 올바르게 처리했는지 확인할 수 있습니다. 예를 들어, 쿠키가 어디에도 로그되지 않는지 확인할 수 있습니다. 데이터 플로우나 _`ForSameObject`_를 사용할 수 있습니다. 이 경우, 쿠키가 다른 객체 또는 문자열 결합과 같은 다른 개체의 일부로 로깅되는지 여부를 보고할 수 있습니다.
+이제 코드가 쿠키를 올바르게 처리했는지 확인할 수 있습니다. 예를 들어, 쿠키가 어디에도 로그되지 않는지 확인할 수 있습니다. 데이터 플로우나 \_`ForSameObject`\_를 사용할 수 있습니다. 이 경우, 쿠키가 다른 객체 또는 문자열 결합과 같은 다른 개체의 일부로 로깅되는지 여부를 보고할 수 있습니다.
 
-이렇게 함으로써, `source, sanitizer, sink`의 형태로 수행되는 오염분석이 수행됩니다. 이 곳에서, _source_는 민감한 데이터의 원천이며, _sanitizer_는 데이터를 민감하지 않게 변환할 코드 패턴을 제공하며, _sink_는 민감한 데이터가 해당 위치에 도달하여 보고해야 하는 위치입니다. 그런 다음 보고가 _sink_ 위치에서 수행됩니다.
+이렇게 함으로써, `source, sanitizer, sink`의 형태로 수행되는 오염분석이 수행됩니다. 이 곳에서, \_source\_는 민감한 데이터의 원천이며, \_sanitizer\_는 데이터를 민감하지 않게 변환할 코드 패턴을 제공하며, \_sink\_는 민감한 데이터가 해당 위치에 도달하여 보고해야 하는 위치입니다. 그런 다음 보고가 _sink_ 위치에서 수행됩니다.
 
 이제 사용자가 로깅되는 위치를 찾기 원한다고 가정해보세요. 그런 다음 다음 쿼리를 사용할 수 있습니다:
 
@@ -126,19 +126,19 @@ module.exports = function productReviews () {
 
 ## 미리 정의된 싱크와 살짝말제
 
-앞서 소개한 오염된 템플릿을 사용하여 취약성 탐지기를 작성할 수 있습니다. 그러나 는 다양한 유형의 취약성을 위한 술어를 제공합니다. 예를 들어, SQL Injection을 탐지하려면 다음 쿼리로 완전히 수행할 수 있습니다:
+앞서 소개한 오염된 템플릿을 사용하여 취약성 탐지기를 작성할 수 있습니다. 그러나 는 다양한 유형의 취약성을 위한 predicates를 제공합니다. 예를 들어, SQL Injection을 탐지하려면 다음 쿼리로 완전히 수행할 수 있습니다:
 
 `Taint<PRED:AnySource, PRED:SqliSanitizer, PRED:SqliSink>`
 
-물론, 이는 _`AnySource`_에서의 어떤 소스든 악의적인 사용자가 제어할 수 있는 것이라고 가정합니다. 예를 들어, 모든 응용프로그램이 환경변수나 명령줄 인수를 사용자가 제어할 수 있는 방식으로 구성되지는 않습니다. 만약 이를 확인하려면 다음과 같이 질의할 수 있습니다:\
+물론, 이는 \_`AnySource`\_에서의 어떤 소스든 악의적인 사용자가 제어할 수 있는 것이라고 가정합니다. 예를 들어, 모든 응용프로그램이 환경변수나 명령줄 인수를 사용자가 제어할 수 있는 방식으로 구성되지는 않습니다. 만약 이를 확인하려면 다음과 같이 질의할 수 있습니다:\
 \
 `Taint<Or<PRED:AnySource, PRED:SourceResourceAccess>, PRED:SqliSanitizer, PRED:SqliSink>`
 
-SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 있으며 검색 및 사용자 정의 규칙에서 액세스 가능한 해당 술어를 가지고 있습니다. 술어의 수는 시간이 지남에 따라 증가하고 더 많은 규칙이 수정 가능해지고 있습니다.
+SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 있으며 검색 및 사용자 정의 규칙에서 액세스 가능한 해당 predicates를 가지고 있습니다. predicates의 수는 시간이 지남에 따라 증가하고 더 많은 규칙이 수정 가능해지고 있습니다.
 
-## 미리 정의된 템플릿과 술어
+## 미리 정의된 템플릿과 predicates
 
-### 술어
+### predicates
 
 #### Any
 
@@ -158,7 +158,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 #### SourceArchive
 
-...<TextView>...### Templates
+......### Templates
 
 #### And
 
@@ -166,8 +166,8 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- First - 연결지시어
-- Second - 연결지시어
+* First - 연결지시어
+* Second - 연결지시어
 
 #### AnyParamIn
 
@@ -175,7 +175,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg0In
 
@@ -183,7 +183,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg1In
 
@@ -191,7 +191,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg2In
 
@@ -199,7 +199,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg3In
 
@@ -207,7 +207,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg4In
 
@@ -215,7 +215,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg5In
 
@@ -223,7 +223,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg6In
 
@@ -231,7 +231,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### Arg7In
 
@@ -239,7 +239,7 @@ SQL Injection 이외에도 는 수십 개의 다른 취약성을 탐지할 수 �
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### BooleanLiteral
 
@@ -247,7 +247,7 @@ boolean 유형 리터럴에 일치합니다.
 
 템플릿 매개변수:
 
-- Value
+* Value
 
 #### CallExpression
 
@@ -255,7 +255,7 @@ boolean 유형 리터럴에 일치합니다.
 
 템플릿 매개변수:
 
-- Callee - 호출할 함수, 메서드 또는 생성자
+* Callee - 호출할 함수, 메서드 또는 생성자
 
 #### DataFlowAfter
 
@@ -263,7 +263,7 @@ boolean 유형 리터럴에 일치합니다.
 
 템플릿 매개변수:
 
-- PrevAction - 실행된 이전 작업
+* PrevAction - 실행된 이전 작업
 
 <details>
 
@@ -334,7 +334,7 @@ Taint<
 
 템플릿 매개변수:
 
-- Source
+* Source
 
 #### DataFlowsInto
 
@@ -342,7 +342,7 @@ Taint<
 
 템플릿 매개변수:
 
-- Sink
+* Sink
 
 #### ExplicitSelfParamIn
 
@@ -350,7 +350,7 @@ Taint<
 
 템플릿 매개변수:
 
-- Function
+* Function
 
 #### ForSameObject
 
@@ -358,7 +358,7 @@ Taint<
 
 템플릿 매개변수:
 
-- ObjectAction - 객체에서 발생한 작업
+* ObjectAction - 객체에서 발생한 작업
 
 #### HasAnnotation
 
@@ -366,7 +366,7 @@ Taint<
 
 템플릿 매개변수:
 
-- Annotation - 엔티티에 달린 주석
+* Annotation - 엔티티에 달린 주석
 
 <details>
 

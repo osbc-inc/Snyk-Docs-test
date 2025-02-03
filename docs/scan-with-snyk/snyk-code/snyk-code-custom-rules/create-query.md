@@ -1,8 +1,8 @@
-# Create query
+# 쿼리 만들기
 
-{Snyk Code 사용자 정의 규칙을 쿼리 생성에 사용하려면 [제안하는 AI 지원](./#suggestive-ai-support)을 통해 제공된 [템플릿](./#template) 및 \[프리디케이트]에서 선택할 수 있습니다. (./#predicate-pred) 또는 자체 프리디케이트를 만들어서 [사용자 정의 규칙으로 저장할 수 있습니다.](create-custom-rule.md).
+Snyk Code 사용자 정의 규칙을 쿼리 생성에 사용하려면 [제안하는 AI 지원](./#suggestive-ai-support)을 통해 제공된 [템플릿](./#template) 및 [predicates](./#pred)에서 선택할 수 있습니다. (./#predicate-pred) 또는 자체 프리디케이트를 만들어서 [사용자 정의 규칙으로 저장할 수 있습니다.](create-custom-rule.md).
 
-{Snyk Code 사용자 정의 규칙과 함께 사용할 쿼리 예제 및 규칙을 고려하십시오. 이 페이지에서 [CWE 312 쿼리 예제](create-query.md#cwe-312-query-example)가 제공됩니다.
+Snyk Code 사용자 정의 규칙과 함께 사용할 쿼리 예제 및 규칙을 고려하십시오. 이 페이지에서 [CWE 312 쿼리 예제](create-query.md#cwe-312-query-example)가 제공됩니다.
 
 ## 간단한 구문 쿼리
 
@@ -107,7 +107,7 @@ connectDb(client).then(() => {
 
 ```
 
-{Snyk Code는 `PRED: AnySource` 프리디케이트에서 알려지지 않은 외부 데이터 소스 목록을 알고 있습니다. 다음 쿼리는 `app.post()`가 식별된 것을 보여줍니다.
+Snyk Code는 `PRED: AnySource` 프리디케이트에서 알려지지 않은 외부 데이터 소스 목록을 알고 있습니다. 다음 쿼리는 `app.post()`가 식별된 것을 보여줍니다.
 
 쿼리 `PRED: SqliSinks`는 `query()`가 SQL 인젝션 싱크 목록에 포함되어 있음을 보여줍니다. 쿼리 엔진에는 다양한 소스, 싱크 및 살균제 타입을위한 많은 다른 프리디케이트가 함께 제공됩니다. 이들을 모두 보려면 프리디케이트 목록을 확인하십시오.
 
@@ -121,7 +121,7 @@ connectDb(client).then(() => {
 
 ## **신규 데이터 흐름 규칙**
 
-Snyk가 내부 빌드된 프로프리어터리 소스를 인식하지 못하여 검사 중에 발견되는 취약점을 놓치게 되므로 **신규 규칙을 만드세요.**
+Snyk이 내부 빌드된 프로프리어터리 소스를 인식하지 못하여 검사 중에 발견되는 취약점을 놓치게 되므로 **신규 규칙을 만드세요.**
 
 데이터 흐름 [템플릿](templates-and-predicates.md)인 `Taint`를 사용하여 [데이터 흐름 쿼리](run-query.md#run-query-on-a-repository)를 만들 때 쓰는 것이 좋습니다.
 
@@ -135,9 +135,9 @@ Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
 * **살균제**: 데이터를 살균화하여 오염되지 않고 데이터를 전달하는 알려진 살균화제를 나타내는 두 번째 매개변수
 * **싱크**: 데이터 흐름이 끝나는 곳을 나타내는 세 번째 매개변수
 
-사용자 정의 [프레디케이트](templates-and-predicates.md)는 이름을 대괄호로 감싸서 나타납니다. 이 시나리오에서 사용자 정의 메소드의 이름은 'SourceFoo'입니다.
+사용자 정의 [predicates](templates-and-predicates.md)는 이름을 대괄호로 감싸서 나타납니다. 이 시나리오에서 사용자 정의 메소드의 이름은 'SourceFoo'입니다.
 
-이 쿼리를 사용하면 'SourceFoo'에서 시작하는 데이터 흐름을 찾을 수 있습니다. Snyk가 알지 못하는 소스가 알려진 보안 취약한 크로스 사이트 스크립팅 (XSS) 싱크에 도달하고 알려진 크로스 사이트 스크립팅 (XSS) 살균화제를 거치지 않는 상태에서 데이터가 오염되었다는 가정을 할 수 있습니다.
+이 쿼리를 사용하면 'SourceFoo'에서 시작하는 데이터 흐름을 찾을 수 있습니다. Snyk이알지 못하는 소스가 알려진 보안 취약한 크로스 사이트 스크립팅 (XSS) 싱크에 도달하고 알려진 크로스 사이트 스크립팅 (XSS) 살균화제를 거치지 않는 상태에서 데이터가 오염되었다는 가정을 할 수 있습니다.
 
 ## **데이터 흐름 규칙 확장**
 
@@ -151,7 +151,7 @@ Snyk 규칙을 재생성하고 현재 Snyk에서 스캔 중 이용되지 않아 
 Taint<Or<PRED:AnySource,"SourceFoo">,PRED:XssSanitizer,PRED:XssSink>
 ```
 
-이 쿼리를 사용하면 Snyk 알려진 소스 또는 "SourceFoo"에서 시작하는 데이터 흐름을 찾게 됩니다. Snyk가 알지 못하는 소스가 알려진 취약한 크로스 사이트 스크립팅 (XSS) 싱크에 도달하고 알려진 크로스 사이트 스크립팅 (XSS) 살균화제를 거치지 않는 상태에서 데이터가 오염되었다는 가정을 할 수 있습니다.
+이 쿼리를 사용하면 Snyk 알려진 소스 또는 "SourceFoo"에서 시작하는 데이터 흐름을 찾게 됩니다. Snyk이 알지 못하는 소스가 알려진 취약한 크로스 사이트 스크립팅 (XSS) 싱크에 도달하고 알려진 크로스 사이트 스크립팅 (XSS) 살균화제를 거치지 않는 상태에서 데이터가 오염되었다는 가정을 할 수 있습니다.
 
 연산자를 사용하는 문은 모두 소괄호 안에 기입됩니다 _`< statement >`_.
 
