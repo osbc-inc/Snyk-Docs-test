@@ -505,7 +505,7 @@
       * [Snyk 오픈소스로 취약점 수정문제 해결](scan-with-snyk/snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md)
     * [Bazel - 빌드 및 테스트 도구](scan-with-snyk/snyk-open-source/bazel/README.md)
       * [Dep 그래프 API](scan-with-snyk/snyk-open-source/bazel/dep-graph-api.md)
-      * [Example of Snyk for Bazel](scan-with-snyk/snyk-open-source/bazel/example-of-snyk-for-bazel.md)
+      * [Bazel을 위한 Snyk의 예](scan-with-snyk/snyk-open-source/bazel/example-of-snyk-for-bazel.md)
   * [Snyk Code](scan-with-snyk/snyk-code/README.md)
     * [Snyk Code Local Engine](scan-with-snyk/snyk-code/snyk-code-local-engine.md)
     * [Snyk 코드 구성](scan-with-snyk/snyk-code/configure-snyk-code.md)

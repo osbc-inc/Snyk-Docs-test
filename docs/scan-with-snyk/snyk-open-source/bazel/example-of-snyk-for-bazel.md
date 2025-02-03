@@ -1,7 +1,7 @@
-# Bazel을 위한 Snyk 예제
+# Bazel을 위한 Snyk의 예
 
 {% hint style="info" %}
-전체 Bazel Java 프로젝트 및 해당 Snyk Dep Graph 객체의 예제를 보려면 [Bazel Java 프로젝트에서 수동으로 Dep Graph 생성하기](https://github.com/snyk/bazel-simple-app)를 참조하십시오.
+전체 Bazel Java 프로젝트 및 해당 Snyk Dep 그래프 객체의 예제를 보려면 [Bazel Java 프로젝트에서 수동으로 Dep 그래프 생성하기](https://github.com/snyk/bazel-simple-app)를 참조하십시오.
 {% endhint %}
 
 Maven 패키지에 대한 단일 종속성이 있는 간단한 Bazel 프로젝트의 경우, 다음과 같이 종속성을 지정할 수 있습니다:
@@ -14,7 +14,7 @@ maven_jar(
 )
 ```
 
-이를 통해 다음과 같은 Dep Graph JSON 객체를 작성할 수 있습니다:
+이를 통해 다음과 같은 Dep 그래프 JSON 객체를 작성할 수 있습니다:
 
 ```
 {
