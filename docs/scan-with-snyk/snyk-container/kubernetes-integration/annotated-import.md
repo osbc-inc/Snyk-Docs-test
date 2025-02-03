@@ -1,9 +1,9 @@
-# 주석이 달린 가져오기
+# 주석이 달린 가져오기(Annotated import)
 
 {% hint style="warning" %}
 **폐기됨**
 
-주석이 달린 가져오기는 더 이상 유지되지 않으며 폐기되었습니다.&#x20;
+주석이 달린 가져오기(Annotated import)는 더 이상 유지되지 않으며 폐기되었습니다.
 {% endhint %}
 
 Snyk 관리자가 Kubernetes 클러스터에 Snyk 컨트롤러를 설치한 후에는 스캔을 위한 워크로드를 추가할 수 있습니다. Kubernetes 협력자는 클러스터에서 워크로드를 표시하여 Snyk에 자동으로 추가할 수 있습니다.

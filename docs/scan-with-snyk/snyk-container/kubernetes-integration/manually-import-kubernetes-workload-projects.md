@@ -1,4 +1,4 @@
-# Kubernetes Workload 프로젝트 수동으로 가져오기
+# Kubernetes 워크로드 프로젝트 수동 가져오기
 
 동일한 통합 ID를 사용하여 클러스터에 고유한 클러스터 이름을 제공하여 설치 중에 여러 클러스터를 한 개의 Snyk 조직으로 가져올 수 있습니다.
 
@@ -25,7 +25,7 @@ Snyk 웹 UI에서 **프로젝트** 페이지로 이동하고 페이지 상단의
 
 <figure><img src="../../../.gitbook/assets/uuid-3a8568e0-b5a4-34af-d612-83466b206882-en.png" alt=""><figcaption><p>Kubernetes 워크로드 import 화면</p></figcaption></figure>
 
-Snyk는 의도적으로 Kubernetes 내부로 간주하는 특정 네임스페이스를 무시합니다 (kube-\*로 시작하는 모든 네임스페이스). 따라서 해당 네임스페이스는 목록에 표시되지 않으며 해당 네임스페이스에 포함된 워크로드도 표시되지 않습니다. 무시된 네임스페이스의 전체 목록은 [kubernetes-monitor internal-workspaces 파일](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts)에서 확인할 수 있습니다.
+Snyk은 의도적으로 Kubernetes 내부로 간주하는 특정 네임스페이스를 무시합니다 (kube-\*로 시작하는 모든 네임스페이스). 따라서 해당 네임스페이스는 목록에 표시되지 않으며 해당 네임스페이스에 포함된 워크로드도 표시되지 않습니다. 무시된 네임스페이스의 전체 목록은 [kubernetes-monitor internal-workspaces 파일](https://github.com/snyk/kubernetes-monitor/blob/master/src/supervisor/watchers/internal-namespaces.ts)에서 확인할 수 있습니다.
 
 snyk-monitor를 설정할 때 다음 코드를 Helm에 추가하여 목록을 구성할 수 있습니다:
 
@@ -45,4 +45,4 @@ snyk-monitor를 설정할 때 다음 코드를 Helm에 추가하여 목록을 �
 
 **프로젝트** 목록에서 Kubernetes 프로젝트를 필터링할 수 있습니다.
 
-![Kubernetes 프로젝트의 예시](../../../.gitbook/assets/filter\_kubernetes\_projects.png)
+![Kubernetes 프로젝트의 예시](../../../.gitbook/assets/filter_kubernetes_projects.png)

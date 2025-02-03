@@ -1,4 +1,4 @@
-# Helm을 사용하여 Snyk Controller를 설치하는 선택적 단계
+# Helm이 포함된 Snyk Controller의 선택적 설치 단계
 
 설치 단계는 Snyk Controller를 환경에 맞게 구성하는 방법에 따라 다릅니다. 해당 상황에 맞는 단계를 따르십시오.
 
@@ -13,7 +13,7 @@ kubectl create configmap snyk-monitor-certs \
 
 ## **보안되지 않은 컨테이너 레지스트리 또는 미지정 이미지를 사용하는 레지스트리 사용**
 
-보안되지 않은 레지스트리를 사용하거나 레지스트리가 미지정 이미지를 사용하는 경우, `registries.conf` 파일을 제공할 수 있습니다.  
+보안되지 않은 레지스트리를 사용하거나 레지스트리가 미지정 이미지를 사용하는 경우, `registries.conf` 파일을 제공할 수 있습니다.
 
 ```
 [[registry]]
@@ -33,9 +33,9 @@ kubectl create configmap snyk-monitor-registries-conf \
 
 Snyk의 아웃바운드 연결에 프록시를 사용 중이면 통합을 해당 프록시를 사용하도록 구성해야 합니다. 프록시를 구성하려면 Helm Chart에서 제공하는 다음 값들을 설정하십시오:
 
-- `http_proxy`
-- `https_proxy`
-- `no_proxy`
+* `http_proxy`
+* `https_proxy`
+* `no_proxy`
 
 예를 들어:
 
@@ -90,10 +90,10 @@ PVC를 생성하려면 Snyk 차트에서 제공하는 Helm 템플릿이나 이�
 
 PVC를 제어하기 위해 다음 플래그를 사용하십시오:
 
-- `pvc.enabled` - 빈 디렉터리 대신 PVC를 사용하도록 Helm Chart에 지시합니다.
-- `pvc.create` - PVC를 생성합니다. 처음으로 프로비저닝할 때 유용합니다.
-- `pvc.storageClassName` - PVC의 StorageClass를 제어합니다.
-- `pvc.name` - Kubernetes에서 사용할 PVC의 이름입니다.
+* `pvc.enabled` - 빈 디렉터리 대신 PVC를 사용하도록 Helm Chart에 지시합니다.
+* `pvc.create` - PVC를 생성합니다. 처음으로 프로비저닝할 때 유용합니다.
+* `pvc.storageClassName` - PVC의 StorageClass를 제어합니다.
+* `pvc.name` - Kubernetes에서 사용할 PVC의 이름입니다.
 
 예를 들어, 다음 명령을 실행하여 PVC를 프로비저닝하고 생성할 수 있습니다:
 
@@ -116,9 +116,9 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 
 ## **특정 네임스페이스 제외하도록 Snyk Controller 구성하기**
 
-기본적으로 Snyk는 쿠버네티스 내부적으로 간주되는 특정 네임스페이스의 스캔을 무시합니다. 전체 목록은 [제외할 네임스페이스 구성](https://github.com/snyk/kubernetes-monitor/tree/master/snyk-monitor#configuring-excluded-namespaces)을 참조하십시오.  
+기본적으로 Snyk은 쿠버네티스 내부적으로 간주되는 특정 네임스페이스의 스캔을 무시합니다. 전체 목록은 [제외할 네임스페이스 구성](https://github.com/snyk/kubernetes-monitor/tree/master/snyk-monitor#configuring-excluded-namespaces)을 참조하십시오.
 
-기본 설정을 변경할 수 있으며 `excludedNamespaces` 설정으로 제외할 네임스페이스의 목록을 추가할 수 있습니다. Snyk는 기본 설정을 무시하고 제공하는 네임스페이스 목록을 사용합니다.
+기본 설정을 변경할 수 있으며 `excludedNamespaces` 설정으로 제외할 네임스페이스의 목록을 추가할 수 있습니다. Snyk은 기본 설정을 무시하고 제공하는 네임스페이스 목록을 사용합니다.
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \ 

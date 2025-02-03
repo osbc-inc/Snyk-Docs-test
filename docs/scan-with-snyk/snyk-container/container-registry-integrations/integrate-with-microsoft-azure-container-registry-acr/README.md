@@ -1,6 +1,6 @@
-# ACR과의 컨테이너 보안: 통합 및 테스트
+# Microsoft Azure 컨테이너 레지스트리(ACR)와 통합
 
-Snyk는 Microsoft Azure Container Registry (ACR)와 통합되어 프로젝트를 가져와 보안 취약점을 모니터링할 수 있습니다. Snyk는 가져온 프로젝트를 알려진 보안 취약점을 테스트하며, 그 빈도를 제어할 수 있습니다.
+Snyk은 Microsoft Azure Container Registry (ACR)와 통합되어 프로젝트를 가져와 보안 취약점을 모니터링할 수 있습니다. Snyk은 가져온 프로젝트를 알려진 보안 취약점을 테스트하며, 그 빈도를 제어할 수 있습니다.
 
 자세한 내용은 다음 페이지를 참조하세요:
 

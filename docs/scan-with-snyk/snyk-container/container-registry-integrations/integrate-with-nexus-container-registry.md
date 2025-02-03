@@ -1,13 +1,13 @@
 # Nexus 컨테이너 레지스트리와 통합
 
-{% hint 스타일="info" %}
+{% hint style="info" %}
 **기능 가용성**\
 이 기능은 전문가용 요금제에서만 제공됩니다. 자세한 정보는 [가격제](https://snyk.io/plans/)를 참조하십시오.
 {% endhint %}
 
 Snyk은 Nexus 컨테이너 레지스트리와 통합하여 컨테이너 이미지를 가져와 취약점을 모니터링할 수 있게 해줍니다.
 
-Snyk는 가져온 이미지(프로젝트)를 알려진 보안 취약점에 대해 테스트하며, 여러분이 제어하는 빈도로 테스트하고 새로운 문제가 발견되면 경고를 표시합니다.
+Snyk은 가져온 이미지(프로젝트)를 알려진 보안 취약점에 대해 테스트하며, 여러분이 제어하는 빈도로 테스트하고 새로운 문제가 발견되면 경고를 표시합니다.
 
 이 페이지에서는 Snyk에서 Nexus 컨테이너 레지스트리 통합 설정 방법과 이미지 취약점 관리를 시작하는 방법을 설명합니다.
 
@@ -26,15 +26,15 @@ Snyk는 가져온 이미지(프로젝트)를 알려진 보안 취약점에 대�
 
 자체 호스팅된 Nexus 레지스트리를 사용 중인 경우 [Snyk 지원팀에 문의](https://support.snyk.io)하여 토큰을 제공받으십시오. 자세한 정보는 [자체 호스팅된 컨테이너 레지스트리에 대한 Snyk(브로커와 함께)](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)를 참조하십시오.
 
-Snyk는 연결 값을 테스트하고, 페이지가 다시로드되면 Nexus 통합 정보가 표시됩니다. **Snyk에 Nexus 이미지 추가** 버튼이 사용 가능해집니다.
+Snyk은 연결 값을 테스트하고, 페이지가 다시로드되면 Nexus 통합 정보가 표시됩니다. **Snyk에 Nexus 이미지 추가** 버튼이 사용 가능해집니다.
 
 Nexus 연결에 실패하면 **Nexus에 연결됨** 섹션 아래에 알림이 표시됩니다.
 
 ## Snyk에서 Nexus의 컨테이너 이미지 스캔
 
-연결이 성공하면 Snyk를 사용하여 Nexus의 이미지를 스캔할 수 있습니다.
+연결이 성공하면 Snyk을 사용하여 Nexus의 이미지를 스캔할 수 있습니다.
 
-Snyk는 Nexus 컨테이너 이미지를 테스트하고 모니터링하여 여러분의 저장소에 있는 이미지 태그를 평가합니다. Snyk에 이미지를 가져온 후 이미지 취약점이 식별되어 간편하게 처리할 수 있습니다.
+Snyk은 Nexus 컨테이너 이미지를 테스트하고 모니터링하여 여러분의 저장소에 있는 이미지 태그를 평가합니다. Snyk에 이미지를 가져온 후 이미지 취약점이 식별되어 간편하게 처리할 수 있습니다.
 
 Nexus 이미지를 Snyk에 추가하려면 다음 단계를 따르십시오.
 
@@ -63,6 +63,6 @@ Nexus 가져오기는 고유한 아이콘으로 표시됩니다. Nexus 프로젝
 
 <figure><img src="../../../.gitbook/assets/mceclip0-18-.png" alt="프로젝트 목록에 있는 Nexus 프로젝트"><figcaption><p>프로젝트 목록에 있는 Nexus 프로젝트</p></figcaption></figure>
 
-{% hint 스타일="info" %}
+{% hint style="info" %}
 컨테이너 이미지 내의 애플리케이션 취약점의 경우 수동 또는 주기적인 재테스트로 적용된 변경 사항이 반영되지 않습니다. 이미지를 다시 가져와야 합니다. 자세한 정보는 [컨테이너 이미지 내의 애플리케이션 취약점 감지](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md)를 참조하십시오.
 {% endhint %}

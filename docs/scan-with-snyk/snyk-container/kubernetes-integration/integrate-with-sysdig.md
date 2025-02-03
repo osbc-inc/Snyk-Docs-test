@@ -1,6 +1,6 @@
-# Sysdig와 통합하기
+# Sysdig와 통합
 
-워크로드 정보를 감지할 때 기능을 향상시키기 위해 Snyk가 Sysdig와 파트너십을 맺었습니다. 이 통합은 Snyk가 감지하는 워크로드 문제를 Sysdig가 제공하는 런타임 데이터로 보강합니다.
+워크로드 정보를 감지할 때 기능을 향상시키기 위해 Snyk이Sysdig와 파트너십을 맺었습니다. 이 통합은 Snyk이감지하는 워크로드 문제를 Sysdig가 제공하는 런타임 데이터로 보강합니다.
 
 ## Sysdig 통합 활성화
 
@@ -25,7 +25,7 @@ SYSDIG\_ENDPOINT\_URL은 Sysdig SaaS 어플리케이션과 지역과 관련이 �
 
 SYSDIG\_AGENT\_CLUSTER는 [Sysdig Agent 설치](https://docs.sysdig.com/en/docs/installation/sysdig-secure/install-agent-components/kubernetes/#parameter-definitions) 시 구성한 것들입니다 - global.clusterConfig.name.
 
-Snyk가 Sysdig와 통합하여 런타임에서 실행된 패키지에 대한 정보를 수집할 수 있도록 하려면, Snyk Controller를 설치할 때 `--set sysdig.enabled=true`를 사용하십시오:
+Snyk이 Sysdig와 통합하여 런타임에서 실행된 패키지에 대한 정보를 수집할 수 있도록 하려면, Snyk Controller를 설치할 때 `--set sysdig.enabled=true`를 사용하십시오:
 
 ```
 helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
@@ -38,7 +38,7 @@ helm upgrade --install snyk-monitor snyk-charts/snyk-monitor \
 
 ## Snyk 취약점 데이터와 우선순위 점수 보강
 
-Snyk는 실행된 패키지를 활용하여 감지한 취약점의 우선순위 점수를 높이고 있습니다. 이를 통해 Snyk는 어떤 취약점을 먼저 해결해야 하는지를 더 잘 우선순위를 매길 수 있습니다. 이 우선순위 점수는 **프로젝트** 페이지와 [Snyk public API](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues)에서 확인할 수 있습니다.
+Snyk은 실행된 패키지를 활용하여 감지한 취약점의 우선순위 점수를 높이고 있습니다. 이를 통해 Snyk은 어떤 취약점을 먼저 해결해야 하는지를 더 잘 우선순위를 매길 수 있습니다. 이 우선순위 점수는 **프로젝트** 페이지와 [Snyk public API](https://snyk.docs.apiary.io/#reference/projects/aggregated-project-issues/list-all-aggregated-issues)에서 확인할 수 있습니다.
 
 ![런타임에서 실행된 패키지들](<../../../.gitbook/assets/image (113) (1) (2) (1) (1) (2) (1) (1) (1).png>)
 
@@ -46,15 +46,15 @@ Snyk는 실행된 패키지를 활용하여 감지한 취약점의 우선순위 
 
 Sysdig 통합을 활성화한 후에는 수동으로 워크로드를 가져오기 전에 30분간 기다려야 합니다. 완료된 패키지의 수집에 관련한 타이밍 고려 사항으로 인합니다:
 
-- Snyk Controller는 실행된 패키지에 대한 데이터를 30분마다 수집합니다.
-- Snyk는 매일 새로운 취약점을 위해 가져온 Kubernetes 프로젝트를 다시 스캔합니다.
+* Snyk Controller는 실행된 패키지에 대한 데이터를 30분마다 수집합니다.
+* Snyk는 매일 새로운 취약점을 위해 가져온 Kubernetes 프로젝트를 다시 스캔합니다.
 
 ## 애플리케이션 지원
 
-애플리케이션 취약점의 경우, Snyk는 현재 다음 언어를 지원합니다:
+애플리케이션 취약점의 경우, Snyk은 현재 다음 언어를 지원합니다:
 
-- Java
-- JavaScript
-- Go
+* Java
+* JavaScript
+* Go
 
 지원하는 언어 목록을 확인하려면 [컨테이너 이미지에서 애플리케이션 취약점 검색](../use-snyk-container/detect-application-vulnerabilities-in-container-images.md)을 참조하십시오.

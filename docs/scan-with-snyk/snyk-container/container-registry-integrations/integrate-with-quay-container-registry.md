@@ -1,4 +1,4 @@
-# Quay Container Registry와 통합
+# Quay 컨테이너 레지스트리와 통합
 
 Snyk은 Quay Container Registry와 통합하여 컨테이너 이미지를 가져오고 취약점을 모니터링할 수 있도록 지원합니다.
 
@@ -24,7 +24,7 @@ Quay와의 통합은 모든 Snyk 사용자에게 제공됩니다.
 [Quay.io](https://quay.io/)는 2021년 6월에 Quay 로그인 사용을 중단했습니다. 자격 증명은 더 이상 Quay 사용자명과 암호가 아니라 최소 '읽기' 권한을 가진 Quay 로봇 계정 자격 증명(사용자명 및 토큰)이어야 합니다.
 {% endhint %}
 
-Snyk는 연결 값들을 테스트하고 페이지가 새로 고침되어 Quay 통합 정보를 표시하며 **Add your Quay images to Snyk** 버튼이 사용 가능해집니다. Quay와의 연결에 실패하면 **Connected to Quay** 섹션 아래에 알림이 나타납니다.
+Snyk은 연결 값들을 테스트하고 페이지가 새로 고침되어 Quay 통합 정보를 표시하며 **Add your Quay images to Snyk** 버튼이 사용 가능해집니다. Quay와의 연결에 실패하면 **Connected to Quay** 섹션 아래에 알림이 나타납니다.
 
 연결에 성공하면 Snyk을 사용하여 Quay의 이미지를 스캔할 수 있습니다.
 
