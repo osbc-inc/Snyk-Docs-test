@@ -1,12 +1,12 @@
-# 쿼리 생성
+# Create query
 
-{Snyk Code 사용자 정의 규칙을 쿼리 생성에 사용하려면 [제안하는 AI 지원](./#suggestive-ai-support)을 통해 제공된 [템플릿](./#template) 및 [프리디케이트]에서 선택할 수 있습니다. (./#predicate-pred) 또는 자체 프리디케이트를 만들어서 [사용자 정의 규칙으로 저장할 수 있습니다.](create-custom-rule.md).&#x20;
+{Snyk Code 사용자 정의 규칙을 쿼리 생성에 사용하려면 [제안하는 AI 지원](./#suggestive-ai-support)을 통해 제공된 [템플릿](./#template) 및 \[프리디케이트]에서 선택할 수 있습니다. (./#predicate-pred) 또는 자체 프리디케이트를 만들어서 [사용자 정의 규칙으로 저장할 수 있습니다.](create-custom-rule.md).
 
 {Snyk Code 사용자 정의 규칙과 함께 사용할 쿼리 예제 및 규칙을 고려하십시오. 이 페이지에서 [CWE 312 쿼리 예제](create-query.md#cwe-312-query-example)가 제공됩니다.
 
 ## 간단한 구문 쿼리
 
-다음 소스 코드 스니펫을 복사하여 스니펫 창으로 이동하고 언어로 **C#**을 선택하십시오
+다음 소스 코드 스니펫을 복사하여 스니펫 창으로 이동하고 언어로 \*\*C#\*\*을 선택하십시오
 
 {% hint style="info" %}
 이것은 단지 스니펫이며 완전한 프로그램이 아닙니다. 컴파일되지 않습니다.
@@ -29,7 +29,7 @@ using var cmd = new NpgsqlCommand(sql, conn);
 
 다음 쿼리를 쿼리 창에 입력하고 **쿼리 실행**을 눌러 결과를 확인합니다.
 
-1. 쿼리에 의해 `body`를 선택하세요: `“body”`&#x20;
+1. 쿼리에 의해 `body`를 선택하세요: `“body”`
 
 {% hint style="info" %}
 이 쿼리는 Body를 대문자 'B'로 선택하지 않습니다. 쿼리 언어는 대소문자를 구분합니다.
@@ -37,7 +37,7 @@ using var cmd = new NpgsqlCommand(sql, conn);
 
 2. 쿼리에 `Body`를 결과에 추가하여 쿼리를 `Or<”body”,”Body”>`로 만드세요.
 3. 동일한 결과를 얻으려면 정규식 `~"body|Body"` 또는 `~"[Bb]ody"`를 사용할 수 있습니다.
-4. 더 복잡한 정규식 및 쿼리 수행: \
+4. 더 복잡한 정규식 및 쿼리 수행:\
    ``~"[a-z0-9!#$%&'*+/=?^_{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"``\
    이것은 하드코딩된 이메일 주소와 일치합니다.
 
@@ -107,7 +107,7 @@ connectDb(client).then(() => {
 
 ```
 
-{Snyk Code는 `PRED: AnySource` 프리디케이트에서 알려지지 않은 외부 데이터 소스 목록을 알고 있습니다. 다음 쿼리는 `app.post()`가 식별된 것을 보여줍니다.&#x20;
+{Snyk Code는 `PRED: AnySource` 프리디케이트에서 알려지지 않은 외부 데이터 소스 목록을 알고 있습니다. 다음 쿼리는 `app.post()`가 식별된 것을 보여줍니다.
 
 쿼리 `PRED: SqliSinks`는 `query()`가 SQL 인젝션 싱크 목록에 포함되어 있음을 보여줍니다. 쿼리 엔진에는 다양한 소스, 싱크 및 살균제 타입을위한 많은 다른 프리디케이트가 함께 제공됩니다. 이들을 모두 보려면 프리디케이트 목록을 확인하십시오.
 
@@ -123,7 +123,7 @@ connectDb(client).then(() => {
 
 Snyk가 내부 빌드된 프로프리어터리 소스를 인식하지 못하여 검사 중에 발견되는 취약점을 놓치게 되므로 **신규 규칙을 만드세요.**
 
-데이터 흐름 [템플릿](templates-and-predicates.md)인 `Taint`를 사용하여 [데이터 흐름 쿼리](run-query.md#run-query-on-a-repository)를 만들 때 쓰는 것이 좋습니다.&#x20;
+데이터 흐름 [템플릿](templates-and-predicates.md)인 `Taint`를 사용하여 [데이터 흐름 쿼리](run-query.md#run-query-on-a-repository)를 만들 때 쓰는 것이 좋습니다.
 
 ```javascript
 Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
@@ -131,9 +131,9 @@ Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
 
 다음 매개변수를 구성할 수 있습니다:
 
-- **소스**: 첫 번째 매개변수는 데이터 흐름이 시작되는 곳을 나타냅니다.
-- **살균제**: 데이터를 살균화하여 오염되지 않고 데이터를 전달하는 알려진 살균화제를 나타내는 두 번째 매개변수
-- **싱크**: 데이터 흐름이 끝나는 곳을 나타내는 세 번째 매개변수
+* **소스**: 첫 번째 매개변수는 데이터 흐름이 시작되는 곳을 나타냅니다.
+* **살균제**: 데이터를 살균화하여 오염되지 않고 데이터를 전달하는 알려진 살균화제를 나타내는 두 번째 매개변수
+* **싱크**: 데이터 흐름이 끝나는 곳을 나타내는 세 번째 매개변수
 
 사용자 정의 [프레디케이트](templates-and-predicates.md)는 이름을 대괄호로 감싸서 나타납니다. 이 시나리오에서 사용자 정의 메소드의 이름은 'SourceFoo'입니다.
 
@@ -141,11 +141,11 @@ Taint<PRED:"SourceFoo",PRED:XssSanitizer,PRED:XssSink>
 
 ## **데이터 흐름 규칙 확장**
 
-Snyk 규칙을 재생성하고 현재 Snyk에서 스캔 중 이용되지 않아 검사에서 제외되고 있는 이미 알려진 보안 소스 목록에 소스를 추가하십시오. 결과인 취약점 놓침으로 이어지게 됩니다.&#x20;
+Snyk 규칙을 재생성하고 현재 Snyk에서 스캔 중 이용되지 않아 검사에서 제외되고 있는 이미 알려진 보안 소스 목록에 소스를 추가하십시오. 결과인 취약점 놓침으로 이어지게 됩니다.
 
 [신규 데이터 흐름 규칙](create-query.md#net-new-data-flow-rule)과 마찬가지로 `Or` 연산자를 사용하는 `Taint` 데이터 흐름 템플릿을 사용하게 됩니다. 쿼리에서 논리적 명제를 만드는데 사용할 수 있는 `Or` 또는 `And`와 같은 연산자가 제공됩니다.
 
-이 쿼리를 참조하여 Snyk에서 알려진 소스 외에도 사용자 정의 소스를 포함하여 데이터 흐름 규칙을 실행하세요 [`SourceFoo`](#user-content-fn-1)를 사용한 예시는 본문의 쿼리를 참고하세요. 
+이 쿼리를 참조하여 Snyk에서 알려진 소스 외에도 사용자 정의 소스를 포함하여 데이터 흐름 규칙을 실행하세요 [`SourceFoo`](create-query.md#user-content-fn-1)를 사용한 예시는 본문의 쿼리를 참고하세요.
 
 ```javascript
 Taint<Or<PRED:AnySource,"SourceFoo">,PRED:XssSanitizer,PRED:XssSink>
@@ -153,7 +153,7 @@ Taint<Or<PRED:AnySource,"SourceFoo">,PRED:XssSanitizer,PRED:XssSink>
 
 이 쿼리를 사용하면 Snyk 알려진 소스 또는 "SourceFoo"에서 시작하는 데이터 흐름을 찾게 됩니다. Snyk가 알지 못하는 소스가 알려진 취약한 크로스 사이트 스크립팅 (XSS) 싱크에 도달하고 알려진 크로스 사이트 스크립팅 (XSS) 살균화제를 거치지 않는 상태에서 데이터가 오염되었다는 가정을 할 수 있습니다.
 
-연산자를 사용하는 문은 모두 소괄호 안에 기입됩니다 _`< statement >`_.&#x20;
+연산자를 사용하는 문은 모두 소괄호 안에 기입됩니다 _`< statement >`_.
 
 ## **데이터 흐름 규칙에 콘텍스트 추가**
 
@@ -199,14 +199,18 @@ PRED:AnySink
 
 이 자바 예시는 "WebServer"와 "WebServlet" 두 구성 요소를 보여줍니다.
 
-- **WebServer**: 지원되지 않는 또는 프로프리어터리 컴포넌트를 사용하는 사용자 지정 HTTP 서버
-- **WebServlet**: 웹 상호 작용을 위해 Java의 표준 서```txt">
->
-```
+* **WebServer**: 지원되지 않는 또는 프로프리어터리 컴포넌트를 사용하는 사용자 지정 HTTP 서버
+* **WebServlet**: 웹 상호 작용을 위해 Java의 표준 서\`\`\`txt">
 
-{% hint style="info" %}
+
+
+````
+
+<div data-gb-custom-block data-tag="hint" data-style='info'>
+
 **`CallExpression`** 및 **`HasArg1`**은 개별적으로도 사용할 수 있습니다. **`and`** 연산자를 사용하여 이를 연결하면 관계가 설정되어 결합된 상태에서 일치하려고 시도할 것입니다.
-{% endhint %}
+
+</div>
 
 ### 모든 파일 작성자 탐지
 
@@ -222,7 +226,7 @@ string[] userLines = new string[] {userData};
 File.WriteAllText("testFile.txt", userData);
 File.WriteAllLines("testFile.txt", userLines);
 File.WriteAllBytes("testFile.bin", userBytes);
-```
+````
 
 정규 표현식을 사용하여 먼저 변형을 캡처해봅시다. 함수와 두 가지 파일 이름 변형(`.bin` 및 `.txt`)을 찾겠습니다.
 
@@ -238,9 +242,7 @@ Taint<
 >
 ```
 
-{% hint style="info" %}
 `CallExpression`이 이제 **정규 표현식**을 포함하고 있고, `HasArg1`이 **`or`** 연산자를 사용하고 있다는 것에 주목하세요. 두 가지 방법 중 아무 것이나 선택할 수 있습니다.
-{% endhint %}
 
 마지막으로 .NET `Async` 변형과 `Append` 메서드에 대한 지원을 추가해봅시다:
 
@@ -256,7 +258,7 @@ Taint<
 >
 ```
 
-### "중요 데이터" 정의
+#### "중요 데이터" 정의
 
 이전 예제에서 `ReadLine`을 민감한 데이터의 소스로 다루었습니다. 특정 민감한 필드만을 가진 간단한 객체를 고려해봅시다.
 
@@ -299,5 +301,7 @@ Taint<
 >
 ```
 
-[^1]: 
-```  
+```
+```
+
+</details>

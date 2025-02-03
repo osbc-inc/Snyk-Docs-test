@@ -500,7 +500,7 @@
       * [취약점 수정 유형](scan-with-snyk/snyk-open-source/manage-vulnerabilities/vulnerability-fix-types.md)
       * [취약점 수정을 위한 패키지 버전 업그레이드](scan-with-snyk/snyk-open-source/manage-vulnerabilities/upgrade-package-versions-to-fix-vulnerabilities.md)
       * [취약점 해결을 위한 Snyk 패치](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)
-      * [Snyk Vulnerability Database](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)
+      * [Snyk 취약점 데이터베이스](scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)
       * [환경에 따른 오픈 소스 취약점 수 차이](scan-with-snyk/snyk-open-source/manage-vulnerabilities/differences-in-open-source-vulnerability-counts-across-environments.md)
       * [Troubleshoot fixing vulnerabilities with Snyk Open Source](scan-with-snyk/snyk-open-source/manage-vulnerabilities/troubleshoot-fixing-vulnerabilities-with-snyk-open-source.md)
     * [Bazel - a build and test tool](scan-with-snyk/snyk-open-source/bazel/README.md)
