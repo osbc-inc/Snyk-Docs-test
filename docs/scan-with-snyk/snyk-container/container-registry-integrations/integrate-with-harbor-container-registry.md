@@ -1,22 +1,24 @@
-# Harbor 컨테이너 레지스트리 통합
+# Harbor 컨테이너 레지스트리와 통합
 
 {% hint style="info" %}
 **기능 가용성**\
 이 기능은 엔터프라이즈 요금제에서만 이용 가능합니다. 더 많은 정보는 [가격 요금제](https://snyk.io/plans/)를 참조하십시오.
 {% endhint %}
 
-Snyk는 Harbor 컨테이너 레지스트리와 통합하여 컨테이너 이미지를 가져오고 취약점을 모니터링할 수 있도록 지원합니다.
+Snyk은 Harbor 컨테이너 레지스트리와 통합하여 컨테이너 이미지를 가져오고 취약점을 모니터링할 수 있도록 지원합니다.
 
-Snyk는 가져온 이미지(프로젝트로 지칭)를 알려진 보안 취약점을 검사하고 새로운 문제가 감지될 때 귀하에게 경고합니다.
+Snyk은 가져온 이미지(프로젝트로 지칭)를 알려진 보안 취약점을 검사하고 새로운 문제가 감지될 때 귀하에게 경고합니다.
 
 다음 지침에 따라 Snyk에서 Harbor 통합을 설정하고 이미지 취약점을 관리를 시작하세요.
+
+
 
 ## Harbor 컨테이너 레지스트리 통합
 
 ### Harbor 통합을 위한 사전 요구 사항
 
-* Snyk를 통해 구성 중인 조직의 관리자여야 합니다.
-* Snyk는 Harbor와 통합하기 위해 사용자 자격 증명이 필요하며 싱글 사인온 (SSO)으로 구성된 Harbor를 지원하지 않습니다.
+* Snyk을 통해 구성 중인 조직의 관리자여야 합니다.
+* Snyk은 Harbor와 통합하기 위해 사용자 자격 증명이 필요하며 싱글 사인온 (SSO)으로 구성된 Harbor를 지원하지 않습니다.
 
 ### **Harbor 통합 구성**
 
@@ -25,7 +27,7 @@ Snyk는 가져온 이미지(프로젝트로 지칭)를 알려진 보안 취약�
 3. **컨테이너 레지스트리 이름**에 통합하려는 레지스트리의 전체 URL을 입력합니다.
 4. 마지막으로 **저장**을 선택합니다.
 
-자체 호스팅 Harbor 레지스트리를 사용하는 경우 Snyk에게 토큰을 제공하도록하십시오. 더 많은 정보는 [ (Broker와 함께)의 자체 호스트된 컨테이너 레지스트리 통합](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)를 참조하십시오.
+자체 호스팅 Harbor 레지스트리를 사용하는 경우 Snyk에게 토큰을 제공하도록하십시오. 더 많은 정보는 [(Broker와 함께)의 자체 호스트된 컨테이너 레지스트리 통합](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)를 참조하십시오.
 
 {% hint style="info" %}
 통합을 설정하려면 Harbor 사용자는 관리자 사용자이어야 합니다. 통합은 레포지토리를 나열하기 위해 /v2/\_catalog 엔드포인트를 사용합니다.
@@ -33,7 +35,7 @@ Snyk는 가져온 이미지(프로젝트로 지칭)를 알려진 보안 취약�
 
 <figure><img src="../../../.gitbook/assets/mceclip1-8-.png" alt="Broker 토큰을 포함한 Harbor 계정 자격 증명"><figcaption><p>Broker 토큰을 포함한 Harbor 계정 자격 증명</p></figcaption></figure>
 
-Snyk는 연결 값을 테스트하고 페이지가 다시로드되어 Harbor 통합 정보가 표시됩니다. **Snyk에 Harbor 이미지 추가** 버튼을 사용할 수 있습니다. Harbor와의 연결이 실패하면 **Harbor에 연결됨** 섹션 아래에 알림이 표시됩니다.
+Snyk은 연결 값을 테스트하고 페이지가 다시로드되어 Harbor 통합 정보가 표시됩니다. **Snyk에 Harbor 이미지 추가** 버튼을 사용할 수 있습니다. Harbor와의 연결이 실패하면 **Harbor에 연결됨** 섹션 아래에 알림이 표시됩니다.
 
 연결이 성공하면 Snyk를 사용하여 Harbor로부터 이미지를 스캔할 수 있습니다.
 

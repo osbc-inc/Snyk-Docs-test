@@ -1,6 +1,6 @@
-# Google Artifact Registry (GAR)과 통합하기
+# Google Artifact Registry(GAR)와 통합하기
 
-Snyk는 [Google Artifact Registry (GAR)](https://cloud.google.com/artifact-registry)과 통합되어 컨테이너를 취약점으로 모니터링하고 작업 중에 이를 수정할 수 있습니다. Snyk는 정기적으로 가져온 컨테이너 이미지를 테스트합니다.
+Snyk은 [Google Artifact Registry (GAR)](https://cloud.google.com/artifact-registry)과 통합되어 컨테이너를 취약점으로 모니터링하고 작업 중에 이를 수정할 수 있습니다. Snyk은 정기적으로 가져온 컨테이너 이미지를 테스트합니다.
 
 ## GAR 통합 권한 활성화
 
@@ -10,7 +10,7 @@ Snyk는 [Google Artifact Registry (GAR)](https://cloud.google.com/artifact-regis
 
 ### **GAR 통합 권한 활성화 단계**
 
-1. Google Cloud Console [Credentials](https://console.cloud.google.com/apis/credentials) 페이지로 이동합니다.&#x20;
+1. Google Cloud Console [Credentials](https://console.cloud.google.com/apis/credentials) 페이지로 이동합니다.
 2. 이미 선택되어 있지 않은 경우 구성할 Google 프로젝트를 선택합니다.
 3. **Credentials** 버튼을 선택하고 **Service Account**를 선택합니다.
 4. 새로운 서비스 계정에 고유한 이름 및 ID를 지정하고 **Create**를 선택합니다.
@@ -23,7 +23,7 @@ Snyk는 [Google Artifact Registry (GAR)](https://cloud.google.com/artifact-regis
 
 ## GAR를 위한 인테그레이션 구성
 
-Snyk를 통한 Google Artifact Registry 계정의 인테그레이션을 구성하여 취약점을 스캔하고 보안 및 라이선스 문제를 해결합니다.
+Snyk을 통한 Google Artifact Registry 계정의 인테그레이션을 구성하여 취약점을 스캔하고 보안 및 라이선스 문제를 해결합니다.
 
 ### GAR 인테그레이션 구성 전제 조건
 
@@ -38,4 +38,4 @@ GAR 통합을 위한 [권한 활성화](integrate-with-google-artifact-registry-
 5. JSON 키 파일 필드에 [권한을 활성화](integrate-with-google-artifact-registry-gar.md#enable-permissions-for-gar-integration)할 때 다운로드한 JSON 키 파일 전체 내용을 붙여넣습니다.
 6. **Save**를 선택합니다.
 
-Snyk는 자격 증명을 확인하고 성공하면 페이지가 다시로드되어 연결이 성공했다는 알림이 표시됩니다.
+Snyk은 자격 증명을 확인하고 성공하면 페이지가 다시로드되어 연결이 성공했다는 알림이 표시됩니다.

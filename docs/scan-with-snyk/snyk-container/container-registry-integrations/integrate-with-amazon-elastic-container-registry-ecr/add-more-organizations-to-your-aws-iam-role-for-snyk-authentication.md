@@ -1,10 +1,10 @@
-# Snyk 인증을 위한 AWS IAM 역할에 더 많은 조직 추가
+# Snyk 인증을 위해 AWS IAM 역할에 더 많은 조직 추가하기
 
-Snyk를 위한 AWS IAM 역할을 생성한 후, 동일한 역할에 더 많은 조직을 추가하여 반복적으로 사용할 수 있습니다.
+Snyk을 위한 AWS IAM 역할을 생성한 후, 동일한 역할에 더 많은 조직을 추가하여 반복적으로 사용할 수 있습니다.
 
 1. [Snyk](https://app.snyk.io/)에서 통합하려는 추가 Snyk 조직의 ID를 검색하고 복사한 후, 해당 ID를 스크립트에 붙여넣을 수 있도록 저장합니다.
 2. AWS 콘솔에서 추가 조직으로 업데이트하려는 역할의 **Trust relationships(신뢰 관계)** 탭으로 이동합니다.
-3. **Edit trust relationship(신뢰 관계 편집)**을 클릭합니다.
+3.  \*\*Edit trust relationship(신뢰 관계 편집)\*\*을 클릭합니다.
 
     "sts:ExternalId"의 값이 대괄호로 둘러싸여 있고 해당 대괄호 안에 추가 조직 ID를 삽입합니다. 조직 ID 값 간에는 쉼표( , )로 구분합니다. 예시:
 

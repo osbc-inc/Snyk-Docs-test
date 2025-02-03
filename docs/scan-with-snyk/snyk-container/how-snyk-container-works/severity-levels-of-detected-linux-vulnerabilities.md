@@ -1,10 +1,10 @@
-# Linux 취약점의 심각도 수준
+# 탐지된 Linux 취약점의 심각도 수준
 
 Linux 취약점의 [심각도 수준](../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md) (낮음, 중간, 높음, 심각)을 결정할 때, 은 다음과 같은 여러 요소를 고려합니다:
 
-- Snyk 내부 분석
-- Linux 배포 보안 유지자가 제공한 심각도 평가
-- 국가 취약성 데이터베이스 (NVD)에서 평가한 취약성의 심각도
+* Snyk 내부 분석
+* Linux 배포 보안 유지자가 제공한 심각도 평가
+* 국가 취약성 데이터베이스 (NVD)에서 평가한 취약성의 심각도
 
 특정 경우에는 NVD가 특정 Linux 배포판의 보안 유지자와 다른 CVSS 벡터 및 심각도 점수를 할당할 수 있습니다. 이때 Snyk는 상대적 중요도 기능에 의해 Linux 배포유지자가 결정한 CVSS 및 심각도를 우선시하고 사용합니다.
 
@@ -22,14 +22,14 @@ Snyk는 Ubuntu, Debian, Red Hat Enterprise Linux (RHEL), CentOS, Amazon Linux, O
 
 ## 상대적 중요도를 위한 외부 정보 소스
 
-Snyk는 배포 정보를 제공하기 위해 다음 외부 소스를 사용합니다:
+Snyk은 배포 정보를 제공하기 위해 다음 외부 소스를 사용합니다:
 
-- [NVD 심각도](https://nvd.nist.gov/vuln)
-- [Debian 심각도 수준](https://security-team.debian.org/security_tracker.html#severity-levels) 및 [no-dsa](https://security-team.debian.org/security_tracker.html#issues-not-warranting-a-security-advisory) 이슈
-- [Ubuntu CVE 우선 순위](https://people.canonical.com/~ubuntu-security/priority.html)
-- [Red Hat Enterprise Linux 심각도 등급](https://access.redhat.com/security/updates/classification)
-- [SUSE Linux Enterprise 보안 등급 개요](https://www.suse.com/support/security/rating/)
-- [Amazon Linux](https://alas.aws.amazon.com/alas2.html)
+* [NVD 심각도](https://nvd.nist.gov/vuln)
+* [Debian 심각도 수준](https://security-team.debian.org/security_tracker.html#severity-levels) 및 [no-dsa](https://security-team.debian.org/security_tracker.html#issues-not-warranting-a-security-advisory) 이슈
+* [Ubuntu CVE 우선 순위](https://people.canonical.com/~ubuntu-security/priority.html)
+* [Red Hat Enterprise Linux 심각도 등급](https://access.redhat.com/security/updates/classification)
+* [SUSE Linux Enterprise 보안 등급 개요](https://www.suse.com/support/security/rating/)
+* [Amazon Linux](https://alas.aws.amazon.com/alas2.html)
 
 ## Linux 취약점을 위한 NVD 점수 및 심각도 보기
 

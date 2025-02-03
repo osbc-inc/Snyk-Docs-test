@@ -1,4 +1,4 @@
-# Amazon Elastic Container Registry (ECR) 통합 구성
+# Amazon Elastic 컨테이너 레지스트리(ECR)에 대한 통합 구성
 
 {% hint style="warning" %}
 ECR 통합을 설정할 때는 us-east-2 지역이 활성화되어 있는지 확인하세요. 이는 STS(보안 토큰 서비스)가 올바르게 작동하기 위해 필요합니다. 자세한 내용은 [관련 지원 문서](https://support.snyk.io/s/article/Connecting-to-ECR-Integration-gives-error-Could-not-connect-to-ECR-Please-ensure-your-credentials-are-correctly-configured)를 참조하십시오.
@@ -16,6 +16,6 @@ ECR 통합을 설정할 때는 us-east-2 지역이 활성화되어 있는지 확
 
 ## **ECR를 위한 수동 통합 프로세스**
 
-통합을 활성화하려면 먼저 읽기 전용 AWS Identity and Access Management (IAM) 역할을 생성해야 합니다. 이 역할은 Snyk의 각 조직에 대해 레지스트리의 모든 리포지토리에 대한 읽기 전용 액세스를 위임하며 허용된 Snyk가 할당한 조직 ID 목록을 지정합니다.
+통합을 활성화하려면 먼저 읽기 전용 AWS Identity and Access Management (IAM) 역할을 생성해야 합니다. 이 역할은 Snyk의 각 조직에 대해 레지스트리의 모든 리포지토리에 대한 읽기 전용 액세스를 위임하며 허용된 Snyk이 할당한 조직 ID 목록을 지정합니다.
 
 IAM 역할을 생성한 후 추가 조직을 통합하려면 필요한 추가 조직 ID를 추가할 수 있습니다.
