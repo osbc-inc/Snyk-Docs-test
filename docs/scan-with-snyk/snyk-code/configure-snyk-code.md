@@ -14,8 +14,8 @@ Snyk 코드는 이미 가져온 저장소에는 적용되지 않고 새 저장�
 
 Snyk 코드로 코드를 스캔하기 전에 다음 사항을 확인하세요:
 
-- [시작하기](../../getting-started/) 단계를 완료했는지 확인하세요.
-- 귀하의 저장소에는 [지원되는 언어 및 플랫폼의 코드가 포함되어 있는지](../../supported-languages-package-managers-and-frameworks/) 확인하세요.
+* [시작하기](../../getting-started/) 단계를 완료했는지 확인하세요.
+* 귀하의 저장소에는 [지원되는 언어 및 플랫폼의 코드가 포함되어 있는지](../../supported-languages-package-managers-and-frameworks/) 확인하세요.
 
 ## Snyk 웹 UI에서 Snyk 코드 활성화
 
@@ -51,7 +51,7 @@ Snyk 코드를 Snyk 조직 설정에서 활성화하면 웹 UI나 API에서 작�
 {% hint style="info" %}
 Snyk 코드는 코드 분석을 위해 임시적으로 저장소를 복제합니다. 이는 적절한 권한 및 SCM에 대한 HTTPS 액세스가 필요합니다.
 
-Snyk에서 데이터가 어떻게 저장되는지에 대한 자세한 정보는 [Snyk가 데이터를 처리하는 방법](../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하세요. 통합에 대한 자세한 내용은 [Snyk 통합](../../integrate-with-snyk/)을 참조하세요.
+Snyk에서 데이터가 어떻게 저장되는지에 대한 자세한 정보는 [Snyk이 데이터를 처리하는 방법](../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하세요. 통합에 대한 자세한 내용은 [Snyk 통합](../../integrate-with-snyk/)을 참조하세요.
 {% endhint %}
 
 SCM을 Snyk 계정과 통합하려면:
@@ -70,7 +70,7 @@ SCM을 Snyk 계정과 통합하려면:
 
 3\. 통합 페이지에서 계정 자격 증명을 입력하고 세부 정보를 저장합니다.
 
-이를 통해 Snyk가 통합된 SCM에 대한 액세스 권한을 부여합니다.
+이를 통해 Snyk이 통합된 SCM에 대한 액세스 권한을 부여합니다.
 
 사용 가능한 각 SCM과의 통합에 대한 자세한 내용은 [Git 저장소 (SCM)](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 참조하세요.
 
@@ -82,14 +82,14 @@ Snyk 코드를 활성화하고 Git 저장소를 Snyk와 통합한 후, 취약점
 
 현재 Snyk 계정 상태 및 수행하려는 작업에 따라 다음을 수행해야 합니다:
 
-- Snyk 계정에 저장소가 없는 경우, 처음 저장소를 Snyk에 가져와야 합니다.
-- 이미 Snyk 계정에 저장소가 있는 경우 추가적인 저장소를 가져오지 않고 기존 저장소를 Snyk 코드로 스캔하려면 [이러한 저장소를 다시 가져와야](import-project-with-snyk-code.md#re-import-repository-to-snyk) 합니다.
-- 이미 Snyk 계정에 저장소가 있는 경우, Snyk 코드로 스캔할 추가 저장소를 가져오려면 [Snyk에 추가 저장소를 가져와야](import-project-with-snyk-code.md) 합니다.
+* Snyk 계정에 저장소가 없는 경우, 처음 저장소를 Snyk에 가져와야 합니다.
+* 이미 Snyk 계정에 저장소가 있는 경우 추가적인 저장소를 가져오지 않고 기존 저장소를 Snyk 코드로 스캔하려면 [이러한 저장소를 다시 가져와야](import-project-with-snyk-code.md#re-import-repository-to-snyk) 합니다.
+* 이미 Snyk 계정에 저장소가 있는 경우, Snyk 코드로 스캔할 추가 저장소를 가져오려면 [Snyk에 추가 저장소를 가져와야](import-project-with-snyk-code.md) 합니다.
 
 Snyk 코드로 스캔하기 위해 저장소를 가져오거나 다시 가져오기 전에 .snyk 파일을 사용하여 가져오기를 제외할 특정 디렉터리 및 파일을 [제외할 수 있습니다](../import-project-repository/exclude-directories-and-files-from-project-import.md).
 
 ## 다음 단계
 
-- [코드 취약점 관리](manage-code-vulnerabilities/)
-- [코드 취약점 자동으로 수정](manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
-- [Snyk 코드 보안 규칙 보기](snyk-code-security-rules/)
+* [코드 취약점 관리](manage-code-vulnerabilities/)
+* [코드 취약점 자동으로 수정](manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
+* [Snyk 코드 보안 규칙 보기](snyk-code-security-rules/)
