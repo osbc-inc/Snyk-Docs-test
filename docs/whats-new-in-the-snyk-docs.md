@@ -9,15 +9,15 @@ coverY: 0
 
 ## 2024년 11월
 
-### &#x20;**Snyk AppRisk**&#x20;
+### **Snyk AppRisk**
 
-- [자산 대시보드](manage-issues/reporting/available-snyk-reports.md#asset-dashboard)가 재설계되어 보고서 섹션에 포함되었습니다. 새로운 글로벌 필터 바, 새로운 데이터 위젯 및 대시보드를 PDF로 내보내는 옵션 등 여러 개선 사항이 추가되었습니다.
-- [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#scm-integrations) 문서가 업데이트되어 각 SCM 통합을 구성하는 데 필요한 구체적인 단계를 설명하도록 되었습니다.
+* [자산 대시보드](manage-issues/reporting/available-snyk-reports.md#asset-dashboard)가 재설계되어 보고서 섹션에 포함되었습니다. 새로운 글로벌 필터 바, 새로운 데이터 위젯 및 대시보드를 PDF로 내보내는 옵션 등 여러 개선 사항이 추가되었습니다.
+* [Snyk Broker - AppRisk](enterprise-setup/snyk-broker/snyk-broker-apprisk.md#scm-integrations) 문서가 업데이트되어 각 SCM 통합을 구성하는 데 필요한 구체적인 단계를 설명하도록 되었습니다.
 
 ### **Snyk Container**
 
-- [{Snyk Container에서 지원하는 운영 체제 배포](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) 목록이 업데이트되어 Ubuntu 24.10 - Oracular Oriole 및 Ubuntu 24.04 - Noble Numbat 04가 포함되었습니다.
-- [{Snyk Container 작동 방식](scan-with-snyk/snyk-container/how-snyk-container-works/)이 업데이트되어 Snyk가 공개 베이스 이미지 추천을 제공할 때 적용하는 로직에 대한 세부 정보가 추가되었습니다.
+* [Snyk Container에서 지원하는 운영 체제 배포](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) 목록이 업데이트되어 Ubuntu 24.10 - Oracular Oriole 및 Ubuntu 24.04 - Noble Numbat 04가 포함되었습니다.
+* [Snyk Container 작동 방식](scan-with-snyk/snyk-container/how-snyk-container-works/)이 업데이트되어 Snyk가 공개 베이스 이미지 추천을 제공할 때 적용하는 로직에 대한 세부 정보가 추가되었습니다.
 
 ### **Snyk 통합**
 
@@ -34,13 +34,13 @@ coverY: 0
 
 ## 2024년 10월
 
-### **Snyk API**&#x20;
+### **Snyk API**
 
 * Snyk 사용자 문서 사이트 전반에 걸쳐 API 링크가 업데이트되었습니다.
 * [API](snyk-api/) 페이지가 API 게시 방식의 변화를 반영하기 위해 대대적으로 업데이트되었습니다.
 * [API 인증](snyk-api/rest-api/authentication-for-api/) 페이지가 개인 토큰을 사용할 때와 서비스 계정을 사용할 때를 명확히 구분하고, 정보 흐름을 개선하기 위해 업데이트되었습니다.
 
-### **Snyk AppRisk**&#x20;
+### **Snyk AppRisk**
 
 * [자산의 위험 요소](manage-assets/#inventory-overview)가 이제 [EA](getting-started/snyk-release-process.md#early-access) 버전으로 Snyk AppRisk Pro 고객에게 제공됩니다.
 * [자산 인벤토리 구성 요소](manage-assets/assets-inventory-components.md#clusters)가 클러스터에 대한 세부 정보를 포함하도록 업데이트되었습니다.
@@ -70,13 +70,13 @@ coverY: 0
 
 ## 2024년 9월
 
-### **Snyk API**&#x20;
+### **Snyk API**
 
 * 문서 사이트의 대부분의 API 링크가 업데이트되었습니다.
 * [API 문서 인덱스 페이지](snyk-api/api-endpoints-index-and-tips/)에 추가 항목이 추가되었습니다.
 * [API의 지역 URL](snyk-api/rest-api/about-the-rest-api.md#api-url)이 업데이트되었습니다.
 
-### **Snyk AppRisk**&#x20;
+### **Snyk AppRisk**
 
 * [GitHub 통합](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md#prerequisites)에서 그룹 수준에 대한 전제 조건 섹션이 추가되었으며, [개인 리포지토리 풀 옵션](scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md#github-integrate-using-snyk-apprisk)에 대한 세부 사항이 추가되었습니다.
 * [Snyk AppRisk에 대한 통찰력 설정](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/) 섹션이 각 통합 옵션에 대한 위험 요소 가용성을 강조하도록 업데이트되었습니다.
@@ -104,12 +104,12 @@ Snowflake 데이터 공유 섹션이 [데이터 공유 사전 정의](manage-ris
 
 ## 2024년 8월
 
-### **Snyk API**&#x20;
+### **Snyk API**
 
 * API 참조 문서의 링크가 업데이트되었습니다.
 * [API 엔드포인트 인덱스 및 노트](snyk-api/api-endpoints-index-and-tips/)가 업데이트되었습니다.
 
-### **Snyk AppRisk**&#x20;
+### **Snyk AppRisk**
 
 * **Manage Risk > Analytics** 페이지가 두 가지 Snyk 제공 사항을 더 잘 반영하도록 통합되었습니다:
   * [문제 분석](manage-risk/enterprise-analytics/issues-analytics.md) - 현재 Snyk Enterprise 고객을 위한 Early Access 버전.

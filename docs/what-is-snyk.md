@@ -13,7 +13,7 @@ Snyk은 코드, 오픈 소스 의존성, 컨테이너 이미지 및 인프라 �
 
 Snyk은 개발자의 워크플로우에서 가시성 및 실행 가능한 통찰을 제공합니다. 개발자를 보안 관행의 일환으로 참여시켜 보안 응용프로그램을 구축하는 데 중점을 두는 이점은 현재 개발자들이 Kubernetes와 Terraform과 같은 기술을 사용하여 모든 코드를 조합하고, 컨테이너에서 해당 코드를 실행하고, 인프라 코드 구성을 사용하여 배포한다는 점입니다.
 
-각 구성 요소가 빌드되고 유지되는 곳마다 강력한 보안 프로세스가 수행됩니다. Snyk는 개발자가 선호하는 방식을 사용하면서 산업 최선의 가이드라인을 준수하고 지원합니다. Snyk은 직접 IDE, 워크플로 및 자동화 파이프라인에 통합하여 보안 전문성을 제공합니다.
+각 구성 요소가 빌드되고 유지되는 곳마다 강력한 보안 프로세스가 수행됩니다. Snyk은 개발자가 선호하는 방식을 사용하면서 산업 최선의 가이드라인을 준수하고 지원합니다. Snyk은 직접 IDE, 워크플로 및 자동화 파이프라인에 통합하여 보안 전문성을 제공합니다.
 
 <figure><img src=".gitbook/assets/image (565).png" alt="Snyk 개발자 보안 플랫폼: 제품 및 개발자 경험"><figcaption><p>Snyk 개발자 보안 플랫폼: 제품 및 개발자 경험</p></figcaption></figure>
 
@@ -23,14 +23,14 @@ Snyk은 개발자의 워크플로우에서 가시성 및 실행 가능한 통찰
 * **컨테이너 보호**: [Snyk Container](https://docs.snyk.io/scan-using-snyk/snyk-container)를 사용하여 컨테이너 이미지와 Kubernetes 애플리케이션의 취약점을 수정합니다.
 * **인프라 보호**: [(IaC)](https://docs.snyk.io/scan-using-snyk/snyk-iac/scan-your-iac-source-code)를 활용하여 Terraform, CloudFormation, Kubernetes 및 Azure 템플릿의 잘못된 구성을 수정합니다. [IaC+](https://docs.snyk.io/scan-using-snyk/snyk-iac/iac+-code-to-cloud-capabilities)를 사용하여 Amazon Web Services 계정, Microsoft Azure 구독 및 Google Cloud 프로젝트의 잘못된 구성을 수정합니다.
 
-## Snyk을실행하는 방법 선택하기
+## Snyk을 실행하는 방법 선택하기
 
 다음과 같은 방법으로 Snyk을 실행할 수 있습니다:
 
 * [**Web**](getting-started/snyk-web-ui.md): Snyk 웹 UI([app.snyk.io](https://app.snyk.io))를 통해 구성 설정, 발견된 문제 필터링 및 수정, 리포트 등의 기능을 제공하는 웹 기반 경험.
 * [**CLI**](snyk-cli/): Snyk 명령줄 인터페이스를 사용하여 로컬 머신에서 취약점 스캔을 실행하고 Snyk를 파이프라인에 통합합니다.
 * [**IDEs**](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/): Snyk IDE 통합을 사용하여 개발 환경에 Snyk를 포함시킬 수 있습니다.
-* [**API**](snyk-api/): Snyk API를 통해 Snyk를 프로그래밍 방식으로 통합하여 Snyk 보안 자동화를 특정 워크플로에 맞게 조정할 수 있습니다.
+* [**API**](snyk-api/): Snyk API를 통해 Snyk을 프로그래밍 방식으로 통합하여 Snyk 보안 자동화를 특정 워크플로에 맞게 조정할 수 있습니다.
 
 ## Snyk은 무엇과 통합할 수 있나요?
 
@@ -42,7 +42,7 @@ Snyk은 개발자의 워크플로우에서 가시성 및 실행 가능한 통찰
 
 Snyk에는 무료부터 엔터프라이즈까지 다양한 요금제가 있습니다. [Snyk 요금제](https://snyk.io/plans/)를 확인하세요.
 
-Snyk는 플랫폼의 평가판을 제공하지만 특정 기능 제한이 있습니다. [평가판 제한 사항](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations/)을 확인하세요.
+Snyk은 플랫폼의 평가판을 제공하지만 특정 기능 제한이 있습니다. [평가판 제한 사항](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations/)을 확인하세요.
 
 ## 내 데이터는 어떻게 처리되나요?
 
