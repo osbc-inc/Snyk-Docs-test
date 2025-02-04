@@ -1084,7 +1084,7 @@
   * [마이그레이션 안내서](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/README.md)
     * [모든 프로젝트 V1 API를 REST API로 전환하는 마이그레이션 가이드 목록(마이그레이션이 완료됨)](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/list-all-projects-v1-api-to-rest-api-migration-guide-completed-migration.md)
     * [REST Issue 실험 API에서 GA API로의 마이그레이션 가이드](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/rest-issues-experimental-api-to-ga-api-migration-guide.md)
-    * [Search Audit Logs (Group and Org) v1 API to GA REST Audit logs API migration guide](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/search-audit-logs-group-and-org-v1-api-to-ga-rest-audit-logs-api-migration-guide.md)
+    * [Search Audit Logs (그룹 및 조직) v1 API에서 GA REST로의 Audit logs API 마이그레이션 가이드](api-end-of-life-eol-process-and-migration-guides/guides-to-migration/search-audit-logs-group-and-org-v1-api-to-ga-rest-audit-logs-api-migration-guide.md)
   * [다가오는 API end-of-life 후보자](api-end-of-life-eol-process-and-migration-guides/candidates-for-upcoming-api-end-of-life-cadences.md)
 * [Snyk 작업하기](working-with-snyk/README.md)
   * [Snyk이 데이터를 처리하는 방법](working-with-snyk/how-snyk-handles-your-data.md)
