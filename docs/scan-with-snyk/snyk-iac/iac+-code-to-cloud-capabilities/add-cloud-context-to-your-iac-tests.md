@@ -1,11 +1,11 @@
-# IaC 테스트에 클라우드 컨텍스트 추가
+# Add cloud context to your IaC tests
 
 {% hint style="info" %}
 **릴리스 상태**\
 클라우드 컨텍스트 기능은 [IaC+](./)에서만 사용 가능하며 AWS를 지원합니다.
 
-+는 지금 클로즈드 베타로 진행 중이며 새 고객을 더 이상 받지 않습니다.\
-사용 가능한 기능에 대한 자세한 내용은 [현재 IaC로 시작하기](https://docs.snyk.io/scan-using-snyk/snyk-iac/getting-started-with-current-iac)를 참조하십시오.
+IaC+는 지금 클로즈드 베타로 진행 중이며 새 고객을 더 이상 받지 않습니다.\
+사용 가능한 기능에 대한 자세한 내용은 [현재 IaC로 시작하기](../getting-started-with-current-iac.md)를 참조하십시오.
 {% endhint %}
 
 ## 클라우드 컨텍스트란?
