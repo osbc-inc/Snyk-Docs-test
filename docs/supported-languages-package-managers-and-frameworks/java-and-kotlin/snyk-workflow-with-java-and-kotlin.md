@@ -15,20 +15,20 @@ Snyk을 사용하여 코드에 제출된 변경 사항과 오픈 소스 패키�
 
 이러한 결과는 다음에서 볼 수 있습니다:
 
-* Snyk 코드와 함께 당신의 코드
-* Snyk 오픈 소스와 함께 오픈 소스
-  * 알려진 취약점 확인 (Snyk 오픈 소스)
+* Snyk Code를 사용한 Code
+* Snyk Open Source를 사용한 Open Source
+  * 알려진 취약점 확인 (Snyk Open Source)
     * 알려진 취약성을 해결하기 위한 수정 풀 리퀘스트 생성 (Maven)
-  * 라이선스 규정 준수 확인 (Snyk 오픈 소스)(Maven)
-  * 의존성 업데이트 - 기술적 부채 해결을 위한 업데이트 지정 (Snyk 오픈 소스) (Maven)
+  * 라이선스 규정 준수 확인 (Snyk Open Source)(Maven)
+  * 의존성 업데이트 - 기술적 부채 해결을 위한 업데이트 지정 (Snyk Open Source) (Maven)
 
 Git 통합을 통해 매일 다음을 모니터링할 수 있습니다:
 
-* Snyk 인프라스트럭처 as Code Infrastructure as Code와 함께 인프라스트럭처 as Code
+* Snyk Infrastructure as Code를 사용한 Infrastructure as Code
 
 ### **CI/CD 통합을 통해**
 
-Snyk는 정책 위반에 대한 테스트 중 빌드 검사 실패로 QA 게이트를 제공할 수 있습니다.
+Snyk은 정책 위반에 대한 테스트 중 빌드 검사 실패로 QA 게이트를 제공할 수 있습니다.
 
 Snyk은 다음과 같은 유연한 능력을 제공합니다:
 
@@ -39,7 +39,7 @@ Snyk은 다음과 같은 유연한 능력을 제공합니다:
 * 대부분의 CI/CD 시스템에서 Snyk CLI 사용 가능(예시 참조: [GitHub 링크](https://github.com/snyk-labs/snyk-cicd-integration-examples))
   * 옵션이나 [snyk-filter](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-filter.md) 도구를 사용하여 기준에 따라 빌드 실패 처리
   * [컨테이너화된](https://hub.docker.com/r/snyk/snyk) 버전 사용 가능
-* 파트너 플랫폼으로: Azure, Bitbucket 및 AWS는 Snyk와 함께 사용하기 위한 내장 파이프/구성요소를 가지고 있습니다.
+* 파트너 플랫폼으로: Azure, Bitbucket 및 AWS는 Snyk과 함께 사용하기 위한 내장 파이프/구성요소를 가지고 있습니다.
   * Java에 대한 참고: Bitbucket Cloud에서 Git 통합을 사용하거나 사전 패키지화된 Bitbucket 파이프 대신 CLI를 사용하는 것이 좋습니다.
 
 ## 프로덕션 모니터링

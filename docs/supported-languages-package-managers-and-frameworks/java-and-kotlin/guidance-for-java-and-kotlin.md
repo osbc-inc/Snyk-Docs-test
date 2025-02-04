@@ -42,7 +42,7 @@ Snyk은 Git 통합 또는 CLI를 통해 POM에서 종속성 트리를 생성할 
 
 ### Gradle
 
-* Snyk은은 패키지 매니저와 상호 작용하여 종속성 목록을 생성할 것입니다.
+* Snyk은 패키지 매니저와 상호 작용하여 종속성 목록을 생성할 것입니다.
 * 일반적으로 Gradle은 빌드 프로세스 중에 코드 및 다른 작업을 실행할 수 있으므로 gradle.lockfile이 없는 경우 CLI 워크플로우가 권장됩니다.
 
 ### Kotlin
@@ -56,9 +56,9 @@ Snyk은 Git 통합 또는 CLI를 통해 POM에서 종속성 트리를 생성할 
 
 ### **APIs**
 
-고객이 고급 종속성 관리 전략을 개발하고 일반적으로 사용되는 표준 패키지 매니저를 사용하지 않을 수 있습니다. 이에 따라 Snyk은테스트 API를 제공했습니다.
+고객이 고급 종속성 관리 전략을 개발하고 일반적으로 사용되는 표준 패키지 매니저를 사용하지 않을 수 있습니다. 이에 따라 Snyk은 테스트 API를 제공했습니다.
 
-Snyk API를 사용하여 즉시 테스트하려면 [Test](../../snyk-api/reference/test-v1.md) 엔드포인트를 사용하십시오. [Maven) 공개 패키지의 문제에 대한 테스트](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) 및 [패키지에 대한 문제 목록](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)와 같은 예시가 있습니다.
+Snyk API를 사용하여 즉시 테스트하려면 [Test](../../snyk-api/reference/test-v1.md) 엔드포인트를 사용하십시오. [Maven 공개 패키지의 문제에 대한 테스트](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) 및 [패키지에 대한 문제 목록](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)와 같은 예시가 있습니다.
 
 ## Snyk 통합 및 일반적으로 사용되는 패턴
 
@@ -74,7 +74,7 @@ Java는 개발자에게 강력한 유연성과 설정 옵션을 제공합니다.
 
 ### lock file이 없는 Gradle 프로젝트
 
-* CI/CD를 사용하여 수동으로 모니터링한 후 CI/CD 통합에서 `snyk [제품] 테스트` 및 `monitor` 명령을 사용하여 게이팅을 실행합니다.
+* CI/CD를 사용하여 수동으로 모니터링한 후 CI/CD 통합에서 `snyk [product] test` 및 `monitor` 명령을 사용하여 게이팅을 실행합니다.
 * 일반적으로 빌드를 실패시키는 게이팅은 시작할 때 하나의 프로젝트에 대해 켜져 있으며 모두가 프로세스를 익힘과 동시에 나머지 포트폴리오에 대해 수동 모니터링을 사용합니다.
 
 ## Snyk CLI의 팁과 트릭

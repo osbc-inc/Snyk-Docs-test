@@ -16,7 +16,7 @@ JavaScript 패키지의 경우 npmjs 패키지 레지스트리에 릴리스되�
 
 다음 표는 npm 잠금 파일 버전 및 Snyk 기능 가용성을 제공합니다.
 
-<table><thead><tr><th>잠금 파일 버전</th><th width="144">CLI 지원</th><th>SCM 지원</th><th>라이선스 스캔</th><th>수정 PR</th></tr></thead><tbody><tr><td>잠금 파일 v1</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>잠금 파일 v2</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>잠금 파일 v3</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr></tbody></table>
+<table><thead><tr><th>Lockfile 버전</th><th width="144">CLI 지원</th><th>SCM 지원</th><th>라이선스 스캔</th><th>수정 PR</th></tr></thead><tbody><tr><td>Lockfile v1</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>Lockfile v2</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr><tr><td>Lockfile v3</td><td>✔︎</td><td>✔︎</td><td>✔︎</td><td>✔︎</td></tr></tbody></table>
 
 #### **피어 종속성**
 
