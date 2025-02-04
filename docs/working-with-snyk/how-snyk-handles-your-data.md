@@ -1,4 +1,4 @@
-# How Snyk handles your data
+# Snyk이 데이터를 처리하는 방법
 
 Snyk은 데이터 보안에 가장 중요성을 두는 개발자 보안 플랫폼입니다. 개인 정보와 보안 요구 사항을 완전히 이해하고, Snyk은 이 문서를 통해 Snyk이 데이터에 액세스하고, 전송하며, 저장하는 방식에 대한 투명성을 제공합니다.
 
@@ -47,7 +47,7 @@ Snyk은 데이터를 보호하는 것이 얼마나 중요한지 알고 있습니
 
 ### **Snyk** Open Source
 
-<figure><img src="../.gitbook/assets/SnykOSS.svg" alt=" 로고"><figcaption><p>Snyk Open Source</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykOSS.svg" alt="로고"><figcaption><p>Snyk Open Source</p></figcaption></figure>
 
 * Snyk은 오픈 소스 의존성을 식별하기 위해 매니페스트 파일, 락 파일 및 관련 구성 파일에 접근합니다.
 * 다음 상황에서 Snyk는 소스 코드에 액세스합니다:
@@ -68,7 +68,7 @@ Snyk은 데이터를 보호하는 것이 얼마나 중요한지 알고 있습니
 
 ### **Snyk** Code
 
-<figure><img src="../.gitbook/assets/SnykCode.svg" alt=" 로고"><figcaption><p>Snyk Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykCode.svg" alt="로고"><figcaption><p>Snyk Code</p></figcaption></figure>
 
 * Snyk은 저장소별 정보를 저장합니다. 예: Git 저장소의 이름 및 파일 이름. Snyk은 저장소 코드에 대한 일회성 분석을 위해 액세스하고 [소스 코드를 캐시](how-snyk-handles-your-data.md#how-snyk-processes-this-data)합니다. 이 기간 후, 발견된 문제의 위치(파일 경로, 라인, 열)와 문제 ID, 그리고 설명만 유지됩니다.귀하의 코드는 삭제되어 Snyk 네트워크 또는 로그에 저장되지 않습니다.
 * 결과는 데이터베이스에 저장되며, Snyk에 의해 분석 및 모니터링 목적으로 사용됩니다.
@@ -80,17 +80,17 @@ Snyk은 데이터를 보호하는 것이 얼마나 중요한지 알고 있습니
 
 ### **Snyk** Container
 
-<figure><img src="../.gitbook/assets/image (201) (1).png" alt=" 로고"><figcaption><p>Snyk Container</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (201) (1).png" alt="로고"><figcaption><p>Snyk Container</p></figcaption></figure>
 
 * Snyk은 패키지 버전, 실행 가능한 해시 및 버전, 운영 체제, 컨테이너 이미지 메타데이터(예: 루트 FS 해시, 히스토리) 및 이미지 ID에 액세스하고 저장합니다.
 * Snyk은 부모 이미지에 대한 정보를 액세스하고 저장합니다: 이름, 버전 및 태그.
 * Snyk은 Dockerfile의 RUN 지시문에 액세스하고 저장합니다.
-* Kubernetes 구성: Snyk은 워크로드 보안 설정, 예를 들어 `루트로 실행`를 액세스합니다. 이는 Snyk Kubernetes 통합을 사용하는 경우에만 액세스됩니다.
+* Kubernetes 구성: Snyk은 워크로드 보안 설정, 예를 들어 `run as root`를 액세스합니다. 이는 Snyk Kubernetes 통합을 사용하는 경우에만 액세스됩니다.
 * 컨테이너 레지스트리 통합: Snyk은 컨테이너 이미지의 단기 복사본에 액세스한 후 분석 후 Snyk 네트워크에서 삭제합니다. 브로커가 사용되지 않는 한 이 복사본이 Snyk에서 제거됩니다.
 
 ### **Snyk IaC**
 
-<figure><img src="../.gitbook/assets/SnykIaC.svg" alt=" 로고"><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SnykIaC.svg" alt="로고"><figcaption><p>Snyk Infrastructure as Code</p></figcaption></figure>
 
 #### Current IaC
 
