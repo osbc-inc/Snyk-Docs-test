@@ -2,7 +2,7 @@
 
 * [Snyk 문서](README.md)
 * [Snyk 문서의 새로운 내용](whats-new-in-the-snyk-docs.md)
-* [Snyk이란 무엇인가요?](what-is-snyk.md)
+* [Snyk란 무엇인가요?](what-is-snyk.md)
 * [시작하기](getting-started/README.md)
   * [Snyk 웹 UI 살펴보기](getting-started/snyk-web-ui.md)
   * [Snyk 릴리스 프로세스](getting-started/snyk-release-process.md)
