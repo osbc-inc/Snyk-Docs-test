@@ -10,7 +10,7 @@
 
 ## 오픈 소스 및 라이선스
 
-npm 또는 Maven과 같은 패키지 관리자의 경우, Snyk은일반적으로 `snyk test` 및 `snyk monitor`의 관리되는 오픈 소스 기능을 사용합니다. C/C++의 경우, Snyk은 `--unmanaged`를 추가하여 관리되지 않는 종속성을 지원합니다.
+npm 또는 Maven과 같은 패키지 관리자의 경우, Snyk은 일반적으로 `snyk test` 및 `snyk monitor`의 관리되는 오픈 소스 기능을 사용합니다. C/C++의 경우, Snyk은 `--unmanaged`를 추가하여 관리되지 않는 종속성을 지원합니다.
 
 {% hint style="info" %}
 Snyk은 빌드에 편입되지 않으며 스캔을 수행하기 위해 빌드에 의존하지 않습니다. Snyk은 소스 코드에서 분석을 수행합니다.
@@ -73,7 +73,7 @@ snyk monitor --unmanaged --org=<org-id>
 여기서 `org-id`는 Snyk 웹 인터페이스의 조직 설정에서 찾을 수 있습니다. 조직 ID는 필수가 아니지만 사용하는 것이 강력히 권장됩니다. 와 마찬가지로 [snyk-to-html](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-to-html.md) 플러그인을 사용하여 보고서 아티팩트를 생성할 수 있습니다.
 
 * 개별 또는 개인 스캔의 경우 CLI 또는 IDE를 사용하여 결과를 업로드하려면 `snyk monitor --unmanaged` 명령을 사용하세요.
-  * 그러나 Snyk은은 개별 스캔이 잡음을 유발하지 않도록 개인 폴더로 결과를 보내고 프로젝트 설정에서 예약된 스캔을 비활성화하는 것이 좋다고 권장합니다.
+  * 그러나 Snyk은 개별 스캔이 잡음을 유발하지 않도록 개인 폴더로 결과를 보내고 프로젝트 설정에서 예약된 스캔을 비활성화하는 것이 좋다고 권장합니다.
   * 이는 라이선스 및 정책 정보를 확인할 수 있습니다.
 * CI/CD와 같은 자동화된 스캔의 경우 `snyk monitor --unmanaged`를 사용하여 결과를 선택한 조직에 전송하세요. 이는 라이선스 및 정책 정보를 확인할 수 있습니다.
 
