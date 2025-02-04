@@ -16,7 +16,7 @@ Snyk 기능은 다음 유형의 릴리스로 사용자에게 제공됩니다.
 
 **Snyk 폐쇄 베타의 기능**
 
-- [PR 확인 구성](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
+* [PR Checks 구성](../scan-with-snyk/pull-requests/pull-request-checks/configure-pull-request-checks.md)
 
 ## 조기 액세스
 
@@ -24,34 +24,34 @@ Snyk 기능은 다음 유형의 릴리스로 사용자에게 제공됩니다.
 
 **Snyk 조기 액세스의 기능**
 
-- [Snyk GitHub 클라우드 앱](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md)
--   프로젝트
-    - [자동 생성된 프로젝트 컬렉션](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
-- Snyk Code
-    - [Snyk Code 사용자 정의 규칙](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)
-    - [코드 취약점 자동으로 수정](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
-- 리스크 관리
-    - [리스크 점수](../manage-risk/prioritize-issues-for-fixing/risk-score.md)
-    - [도달 가능성 분석](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
-- Snyk 브로커
-    - [Snyk 브로커 커밋 서명](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
-    - [Snyk Code - 도커용 브로커와 함께 복제 능력](../enterprise-setup/snyk-broker/git-clone-through-broker.md)
-    - [유니버설 브로커](../enterprise-setup/snyk-broker/universal-broker/)
-- 언어 지원
-    - [.NET 스캔 개선](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
-    - [Snyk CLI pnpm 지원](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)
-    - [개선된 Gradle SCM 스캔](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access)
-- Snyk 앱 리스크용 타사 통합:
-    - [Veracode](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#veracode-setup-guide)
-    - [Checkmarx](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#checkmarx-setup-guide)
-    - [SonarQube](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sonarqube-setup-guide)
-    - [GitGuardian](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#gitguardian-setup-guide)
-    - [Nightfall](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#nightfall-setup-guide)
-    - [Dynatrace](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#dynatrace-setup-guide)
-    - [Sysdig](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sysdig-setup-guide)
-- [이슈 분석](../manage-risk/enterprise-analytics/issues-analytics.md)
-- [애플리케이션 분석](../manage-risk/enterprise-analytics/application-analytics.md)
-- [Snyk 런타임 센서](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
+* [Snyk GitHub 클라우드 앱](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-cloud-app.md)
+* 프로젝트
+  * [자동 생성된 프로젝트 컬렉션](../snyk-admin/introduction-to-snyk-projects/automatically-created-project-collections.md)
+* Snyk Code
+  * [Snyk Code 사용자 정의 규칙](../scan-with-snyk/snyk-code/snyk-code-custom-rules/)
+  * [코드 취약점 자동으로 수정](../scan-with-snyk/snyk-code/manage-code-vulnerabilities/fix-code-vulnerabilities-automatically.md)
+* 리스크 관리
+  * [리스크 점수](../manage-risk/prioritize-issues-for-fixing/risk-score.md)
+  * [도달 가능성 분석](../manage-risk/prioritize-issues-for-fixing/reachability-analysis.md)
+* Snyk 브로커
+  * [Snyk 브로커 커밋 서명](../enterprise-setup/snyk-broker/snyk-broker-commit-signing.md)
+  * [Snyk Code - 도커용 브로커와 함께 복제 능력](../enterprise-setup/snyk-broker/git-clone-through-broker.md)
+  * [유니버설 브로커](../enterprise-setup/snyk-broker/universal-broker/)
+* 언어 지원
+  * [.NET 스캔 개선](../supported-languages-package-managers-and-frameworks/.net/improved-.net-scanning.md)
+  * [Snyk CLI pnpm 지원](../supported-languages-package-managers-and-frameworks/javascript/javascript-for-open-source.md#pnpm)
+  * [개선된 Gradle SCM 스캔](../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access)
+* Snyk 앱 리스크용 타사 통합:
+  * [Veracode](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#veracode-setup-guide)
+  * [Checkmarx](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#checkmarx-setup-guide)
+  * [SonarQube](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sonarqube-setup-guide)
+  * [GitGuardian](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#gitguardian-setup-guide)
+  * [Nightfall](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#nightfall-setup-guide)
+  * [Dynatrace](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#dynatrace-setup-guide)
+  * [Sysdig](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/connect-a-third-party-integration.md#sysdig-setup-guide)
+* [이슈 분석](../manage-risk/enterprise-analytics/issues-analytics.md)
+* [애플리케이션 분석](../manage-risk/enterprise-analytics/application-analytics.md)
+* [Snyk 런타임 센서](../manage-risk/snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)
 
 ## 일반 공개
 
