@@ -25,7 +25,7 @@ Snyk 어플리케이션에서 기본 작업을 수행하기 위해:
 
 ## Snyk 계정 생성 또는 로그인
 
-무료 계정을 생성하거나 요금제를 가입하려면 [snyk.io](https://snyk.io/)로 이동하십시오. 자세한 내용은 [Snyk 가격제도](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations)를 참조하십시오.
+무료 계정을 생성하거나 요금제를 가입하려면 [snyk.io](https://snyk.io/)로 이동하십시오. 자세한 내용은 [Snyk 가격 제도](https://docs.snyk.io/implement-snyk/enterprise-implementation-guide/trial-limitations)를 참조하십시오.
 
 회사가 기존 Snyk 계정을 보유하고 있고 단일 로그인 (SSO)을 사용하는 경우, 회사 관리자가 제공한 SSO 링크를 사용하십시오.
 
@@ -35,13 +35,13 @@ Snyk 어플리케이션에서 기본 작업을 수행하기 위해:
 회사에서 사용하는 인증 공급자와 다른 인증 공급자로 로그인하는 경우, 새로운 계정이 생성됩니다. 이 경우 회사의 올바른 조직에 로그인되지 않습니다.
 {% endhint %}
 
-Snyk Web UI에 로그인하면 Snyk은 기본 설정된 조직을 표시합니다. Snyk은 또한 CLI를 사용하여 로컬에서 프로젝트를 테스트할 때 기본 조직의 설정을 사용합니다. 기본 조직을 변경하려면 [계정 환경 설정 관리](snyk-web-ui.md#manage-account-preferences-and-settings)를 참조하십시오.
+Snyk Web UI에 로그인하면 Snyk는 기본 설정된 조직을 표시합니다. Snyk는 또한 CLI를 사용하여 로컬에서 프로젝트를 테스트할 때 기본 조직의 설정을 사용합니다. 기본 조직을 변경하려면 [계정 환경 설정 관리](snyk-web-ui.md#manage-account-preferences-and-settings)를 참조하십시오.
 
 ## Snyk 통합 설정
 
-Snyk이 스캔할 위치를 알기 위해 환경에 액세스 권한을 제공해야 합니다. 필요한 통합 유형은 사용하는 시스템, 스캔하려는 항목 및 통합을 추가할 위치에 따라 다릅니다. [조직](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk) 또는 [그룹](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk-apprisk)에 통합을 추가해야 합니다. 사용 가능한 통합 프로그램에 대한 정보는 [Snyk SCM 통합](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) 및 [Snyk와 통합](https://docs.snyk.io/integrate-with-snyk)을 참조하십시오.
+Snyk가 스캔할 위치를 알기 위해 환경에 액세스 권한을 제공해야 합니다. 필요한 통합 유형은 사용하는 시스템, 스캔하려는 항목 및 통합을 추가할 위치에 따라 다릅니다. [조직](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk) 또는 [그룹](https://docs.snyk.io/integrate-with-snyk#integrations-for-snyk-apprisk)에 통합을 추가해야 합니다. 사용 가능한 통합 프로그램에 대한 정보는 [Snyk SCM 통합](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-scm-integrations) 및 [Snyk와 통합](https://docs.snyk.io/integrate-with-snyk)을 참조하십시오.
 
-코드를 스캔하려면 먼저 Snyk을 그 코드를 보유한 저장소와 통합해야 합니다.
+코드를 스캔하려면 먼저 Snyk를 그 코드를 보유한 저장소와 통합해야 합니다.
 
 ### 가이드된 과정
 
@@ -100,7 +100,7 @@ Snyk AppRisk를 통해 애플리케이션 보안 팀은 현대화되고 높은 �
 
 ## 결과 검토 및 문제 수정
 
-프로젝트를 가져온 후 Snyk이 해당 프로젝트를 스캔하고 문제를 식별하면 스캔 결과를 확인하고 문제 해결을 위한 조치를 취할 수 있습니다. 심각도 수준별로 (Critical, High, Medium 또는 Low) 그룹화된 발견된 문제 수를 볼 수 있습니다. 자세한 내용은 [심각도 수준](../manage-risk/prioritize-issues-for-fixing/severity-levels.md)을 참조하십시오.
+프로젝트를 가져온 후 Snyk가 해당 프로젝트를 스캔하고 문제를 식별하면 스캔 결과를 확인하고 문제 해결을 위한 조치를 취할 수 있습니다. 심각도 수준별로 (Critical, High, Medium 또는 Low) 그룹화된 발견된 문제 수를 볼 수 있습니다. 자세한 내용은 [심각도 수준](../manage-risk/prioritize-issues-for-fixing/severity-levels.md)을 참조하십시오.
 
 스캔 결과 및 사용 가능한 작업은 스캔하는 프로젝트 유형에 따라 달라집니다:
 
