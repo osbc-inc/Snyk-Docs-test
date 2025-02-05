@@ -4,11 +4,11 @@
 
 지원되는 Python 버전은 `2.7`, `3.7`, `3.8`, `3.9`, `3.10`,`3.11`,`3.12` 입니다.
 
-Git에서 가져온 Pip 프로젝트를 스캔할 때, Snyk은 조직 설정이나 `.snyk` 파일에 지정된 Python 버전을 사용합니다.
+Git에서 가져온 Pip 프로젝트를 스캔할 때, Snyk는 조직 설정이나 `.snyk` 파일에 지정된 Python 버전을 사용합니다.
 
-Snyk은 지원되는 각 `minor` 버전에 대해 최근의 `patch` 버전을 사용합니다.
+Snyk는 지원되는 각 `minor` 버전에 대해 최근의 `patch` 버전을 사용합니다.
 
-기본적으로 Snyk은 Python 3.7을 사용하여 Pip 프로젝트를 테스트합니다.
+기본적으로 Snyk는 Python 3.7을 사용하여 Pip 프로젝트를 테스트합니다.
 
 {% hint style="warning" %}
 Python 버전을 더 높은 버전을 요구하는 종속성을 가진 프로젝트의 경우, 가져오기, 재테스트 및 PR 확인 동작은 지정된 버전에 따라 다릅니다:
@@ -17,7 +17,7 @@ Python 버전을 더 높은 버전을 요구하는 종속성을 가진 프로젝
 * Python 2.7 또는 3.7: 스캔은 성공하지만 호환되지 않는 종속성은 결과에서 제외됩니다.
 {% endhint %}
 
-Snyk이Git에서 가져온 Pip 프로젝트를 테스트할 때 사용할 Python minor 버전을 정의하려면 조직 설정과 [.snyk 폴리시 파일](../../manage-risk/policies/the-.snyk-file.md)을 사용할 수 있습니다.
+Snyk가 Git에서 가져온 Pip 프로젝트를 테스트할 때 사용할 Python minor 버전을 정의하려면 조직 설정과 [.snyk 폴리시 파일](../../manage-risk/policies/the-.snyk-file.md)을 사용할 수 있습니다.
 
 조직 내 모든 프로젝트에 대한 Python 버전을 정의하려면:
 
@@ -64,13 +64,13 @@ Linux에서 지원되지 않는 운영 체제별 Python 패키지는 Snyk SCM �
 다운로드된 종속성이 10GB를 초과하는 프로젝트는 지원되지 않습니다.
 {% endhint %}
 
-Pip 프로젝트를 스캔하려면, Snyk은 단독 Linux 환경에서 원시 `pip` 도구를 사용하여 `requirements.txt` 파일을 분석합니다.
+Pip 프로젝트를 스캔하려면, Snyk는 단독 Linux 환경에서 원시 `pip` 도구를 사용하여 `requirements.txt` 파일을 분석합니다.
 
 Git 통합을 사용하여 스캔된 Pip 프로젝트는 위치한 디렉터리의 이름과 동일한 이름이 부여됩니다.
 
-Snyk은 `**/*req*.txt` 패턴을 따르는 파일을 가져옵니다. 예를 들어 `requirements.txt` 파일을 `requirements-dev.txt`와 같이 이름을 바꾼 경우 도움이 될 수 있습니다.
+Snyk는 `**/*req*.txt` 패턴을 따르는 파일을 가져옵니다. 예를 들어 `requirements.txt` 파일을 `requirements-dev.txt`와 같이 이름을 바꾼 경우 도움이 될 수 있습니다.
 
-Snyk은 또한 `**/requirements/*.txt` 패턴을 사용하는 파일을 찾습니다. 예를 들어 파일을 `requirements` 폴더에 포함시킨 경우 `requirements/requirements.txt`와 같이 도움이 될 수 있습니다.
+Snyk는 또한 `**/requirements/*.txt` 패턴을 사용하는 파일을 찾습니다. 예를 들어 파일을 `requirements` 폴더에 포함시킨 경우 `requirements/requirements.txt`와 같이 도움이 될 수 있습니다.
 
 `requirements.txt`에서 다른 매니페스트 파일 형식을 생성하는 패키지 관리자를 사용하는 경우, 해당 매니페스트 파일을 `requirements.txt` 형식으로 변환하거나 내보낼 수 있습니다.
 
@@ -82,9 +82,9 @@ dephell deps convert --from=conda --to=requirements.txt
 
 ### Poetry 및 Git 리포지토리
 
-Poetry 프로젝트를 스캔하려면, Snyk은 `pyproject.toml` 및 `poetry.lock` 파일을 검토합니다.
+Poetry 프로젝트를 스캔하려면, Snyk는 `pyproject.toml` 및 `poetry.lock` 파일을 검토합니다.
 
-Snyk이Poetry 프로젝트를 스캔할 때 [dev 의존성](https://python-poetry.org/docs/managing-dependencies/)을 포함해야 하는지 선택할 수 있습니다.
+Snyk이 Poetry 프로젝트를 스캔할 때 [dev 의존성](https://python-poetry.org/docs/managing-dependencies/)을 포함해야 하는지 선택할 수 있습니다.
 
 Snyk에서는 비-dev 의존성은 `tool.poetry.dependencies` 및 암시적 `main` 그룹으로 선언된 것으로 간주됩니다. 다른 모든 것들은 dev 의존성으로 분류됩니다.
 
@@ -111,7 +111,7 @@ Pipenv 프로젝트를 스캔하려면, Snyk은 `Pipfile` 및 `Pipfile.lock` 파
 `Pipfile.lock`이 존재하는 경우, 해당 파일에 포함된 해결되지 않은 패키지는 비해결된 상태로 종속성 트리의 최상위에 추가됩니다.
 {% endhint %}
 
-Snyk이 Pipenv 프로젝트를 스캔할 때 `[dev-packages]`에 지정된 종속성을 포함해야 하는지 선택할 수 있습니다.
+Snyk가 Pipenv 프로젝트를 스캔할 때 `[dev-packages]`에 지정된 종속성을 포함해야 하는지 선택할 수 있습니다.
 
 기본적으로 Pipenv dev 의존성은 스캔에 포함되지 않습니다. 이를 변경하려면 다음과 같이 설정을 수정하십시오:
 
