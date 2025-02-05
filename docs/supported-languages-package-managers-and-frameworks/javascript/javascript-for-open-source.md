@@ -76,7 +76,7 @@ Snyk CLI pnpm 지원은 이른 액세스 상태입니다.
 
 **잠금 파일 버전**
 
-Snyk은 프로젝트의 종속성 트리를 생성하기 위해 `pnpm-lock.yaml` 잠금 파일을 사용합니다.
+Snyk는 프로젝트의 종속성 트리를 생성하기 위해 `pnpm-lock.yaml` 잠금 파일을 사용합니다.
 
 지원되는 잠금 파일 버전은 pnpm 7, 8 및 9에 해당하는 5.4, 6.x 및 9.x입니다.
 
@@ -84,7 +84,7 @@ pnpm 잠금 파일에는 [bundledDependencies](https://docs.npmjs.com/cli/v10/co
 
 ### **Yarn**
 
-Snyk은은 프로젝트 종속성의 표현을 생성하기 위해 Yarn 잠금 파일(`yarn.lock`)을 사용합니다.
+Snyk는 프로젝트 종속성의 표현을 생성하기 위해 Yarn 잠금 파일(`yarn.lock`)을 사용합니다.
 
 프로젝트를 스캔하는 데 사용하는 파일은 패키지 매니저의 버전 업그레이드에 따라 변경될 수 있습니다. Snyk은 내부적으로 지원되는 버전만 나열합니다.
 

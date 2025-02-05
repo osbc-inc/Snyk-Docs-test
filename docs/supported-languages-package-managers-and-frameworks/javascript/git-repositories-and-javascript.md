@@ -1,6 +1,6 @@
 # Git 리포지토리 및 JavaScript
 
-Snyk이 지원하는 Git 서비스를 통해 JavaScript 저장소를 가져올 수 있습니다. 가져온 후에 Snyk은 지원하는 manifest 파일을 기반으로 프로젝트를 분석합니다.
+Snyk가 지원하는 Git 서비스를 통해 JavaScript 저장소를 가져올 수 있습니다. 가져온 후에 Snyk는 지원하는 manifest 파일을 기반으로 프로젝트를 분석합니다.
 
 ## JavaScript 언어 설정을 위한 Snyk
 
@@ -22,7 +22,7 @@ Snyk Git 저장소 통합 스캔에서 Yarn 및 npm 워크스페이스는 명시
 
 인접한 락 파일이 있는 루트 수준의 `package.json` manifest 파일은 일반적으로 스캔됩니다.
 
-락 파일이 없는 중첩된 manifest 파일의 경우, Snyk은 루트 락 파일을 사용하지 않고 빌드 시점의 종속성 트리가 어떻게 보일지 대략적으로 계산합니다.
+락 파일이 없는 중첩된 manifest 파일의 경우, Snyk는 루트 락 파일을 사용하지 않고 빌드 시점의 종속성 트리가 어떻게 보일지 대략적으로 계산합니다.
 
 또한, 중첩된 manifest 파일에 대한 수정 PR은 지원되지 않습니다.
 

@@ -1,12 +1,12 @@
 # JavaScript
 
-Snyk은 [코드 분석을 위한 JavaScript](javascript-for-code-analysis.md) 및 [오픈 소스용 JavaScript](javascript-for-open-source.md)를 지원합니다. SCM 통합을 사용하여 프로젝트를 가져오는 방법에 대한 정보는 [Git 저장소 및 JavaScript](git-repositories-and-javascript.md)를 참조하십시오.
+Snyk는 [코드 분석을 위한 JavaScript](javascript-for-code-analysis.md) 및 [오픈 소스용 JavaScript](javascript-for-open-source.md)를 지원합니다. SCM 통합을 사용하여 프로젝트를 가져오는 방법에 대한 정보는 [Git 저장소 및 JavaScript](git-repositories-and-javascript.md)를 참조하십시오.
 
 [JavaScript 및 Node.js에 대한 지침](best-practices-for-javascript-and-node.js.md)이 제공됩니다.
 
 ## 적용 가능성
 
-Snyk은 [코드 분석을 위한 JavaScript](javascript-for-code-analysis.md)와 [오픈 소스용 JavaScript](javascript-for-open-source.md)를 지원합니다.
+Snyk는 [코드 분석을 위한 JavaScript](javascript-for-code-analysis.md)와 [오픈 소스용 JavaScript](javascript-for-open-source.md)를 지원합니다.
 
 SCM 통합을 사용하여 프로젝트를 가져오는 방법에 대한 자세한 정보는 [Git 저장소 및 JavaScript](git-repositories-and-javascript.md)를 참조하십시오.
 
