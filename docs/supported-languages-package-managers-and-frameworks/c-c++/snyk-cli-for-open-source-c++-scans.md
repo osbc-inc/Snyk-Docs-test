@@ -1,10 +1,10 @@
-# Snyk CLI를 사용한 오픈 소스 C++ 스캔
+# 오픈 소스 C++ 스캔을 위한 Snyk CLI
 
 ## C/C++를 위한 Snyk CLI
 
 C/C++에 대한 취약점을 탐색하려면 [Snyk Vuln DB](https://security.snyk.io)를 검색하세요. Snyk는 이 데이터베이스를 기반으로 코드를 테스트하며, 이 데이터베이스는 온라인 소스에서 주기적으로 업데이트됩니다. 자세한 내용은 [Snyk 취약점 데이터베이스](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)를 참조하세요.
 
-Snyk가 오픈 소스 프로젝트를 스캔하려면 의존성이 스캔된 디렉토리 내의 소스 코드로 사용 가능해야 합니다. 의존성이 다른 위치에 있는 경우 해당 위치도 스캔해야 합니다. 자세한 내용은 [소스 코드 의존성은 스캔된 폴더에 있어야 합니다](snyk-cli-for-open-source-c++-scans.md#source-code-dependencies-must-be-in-the-scanned-folder)을 참조하세요.
+Snyk가 오픈 소스 프로젝트를 스캔하려면 의존성이 스캔된 디렉토리 내의 소스 코드로 사용 가능해야 합니다. 의존성이 다른 위치에 있는 경우 해당 위치도 스캔해야 합니다. 자세한 내용은 [소스 코드 의존성은 스캔된 폴더에 있어야 합니다](snyk-cli-for-open-source-c++-scans.md#source-code-dependencies-must-be-in-the-scanned-folder)를 참조하세요.
 
 [`snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) 명령을 실행할 때, Snyk는 다음을 수행합니다:
 
@@ -22,9 +22,9 @@ Snyk가 오픈 소스 프로젝트를 스캔하려면 의존성이 스캔된 디
 
 지원되는 아카이브 형식은 다음과 같습니다:
 
-- zip과 유사한 아카이브
-- tar 아카이브
-- gzip 압축 알고리즘이 적용된 tar 아카이브
+* zip과 유사한 아카이브
+* tar 아카이브
+* gzip 압축 알고리즘이 적용된 tar 아카이브
 
 ## **소스 코드 의존성은 스캔된 폴더에 있어야 합니다**
 
