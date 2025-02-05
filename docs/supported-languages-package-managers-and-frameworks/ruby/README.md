@@ -8,8 +8,8 @@ Snyk 제품을 사용하여 가져올 수 있는 언어의 가용성을 확인�
 
 사용 가능한 기능:
 
-* SCM 가져오기, { Snyk 오픈 소스 } 및 { Snyk 코드 }에서 사용 가능합니다.
-* CLI 및 IDE를 통해 응용 프로그램 테스트 또는 모니터링, { Snyk 오픈 소스 } 및 { Snyk 코드 }에서 사용 가능합니다.
+* SCM 가져오기, Snyk 오픈 소스 및 Snyk 코드에서 사용 가능합니다.
+* CLI 및 IDE를 통해 응용 프로그램 테스트 또는 모니터링,  Snyk 오픈 소스 및  Snyk 코드에서 사용 가능합니다.
 * `pkg:gem`을 사용하여 응용 프로그램의 SBOM 테스트
 * `pkg:gem`을 사용하여 응용 프로그램의 패키지 테스트
 
@@ -34,8 +34,8 @@ Snyk for Ruby는 Bundler를 패키지 매니저로 지원하며 모든 Gemfile �
 
 Snyk for Ruby는 다음 파일 형식을 지원합니다:
 
-* { Snyk 오픈 소스 }: `gemfile`, `gemfile.lock`
-* { Snyk 코드 }: `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
+* Snyk 오픈 소스 : `gemfile`, `gemfile.lock`
+* Snyk 코드 : `.erb`, `.haml`, `.rb`, `.rhtml`, `.slm`
 
 ## 프레임워크 및 라이브러리
 
@@ -58,7 +58,7 @@ Snyk for Ruby는 다음 파일 형식을 지원합니다:
 
 다음 기능이 Snyk for Ruby에서 지원됩니다:
 
-| { Snyk 오픈 소스 }                                      | { Snyk 코드 }                             |
+| Snyk 오픈 소스                                          | Snyk 코드                                 |
 | --------------------------------------------------- | --------------------------------------- |
 | <ul><li>수정 PR</li><li>라이센스 스캔</li><li>보고서</li></ul> | <ul><li>보고서</li><li>사용자 정의 규칙</li></ul> |
 
