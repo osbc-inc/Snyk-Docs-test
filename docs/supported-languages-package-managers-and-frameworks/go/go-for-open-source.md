@@ -84,7 +84,7 @@ Git에서 가져온 Go Modules 프로젝트에 대해 가능한 가장 정확한
 
 <figure><img src="../../.gitbook/assets/image (149) (1).png" alt=""><figcaption><p>전체 소스 코드 분석 활성화</p></figcaption></figure>
 
-다양한 Snyk 기능이 필요로 하는 귀하의 리포지토리의 액세스 수준에 대해 자세한 내용은 [Snyk이귀하의 데이터를 처리하는 방법](../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하십시오.
+다양한 Snyk 기능이 필요로 하는 귀하의 리포지토리의 액세스 수준에 대해 자세한 내용은 [Snyk 가귀하의 데이터를 처리하는 방법](../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하십시오.
 
 #### **비공개 모듈**
 
