@@ -1,6 +1,6 @@
 # Java 및 Kotlin에 대한 지침
 
-이 안내서는 기술 스택에서 Snyk을 효과적으로 적용하는 데 도움이 되도록 제공됩니다.
+이 안내서는 기술 스택에서 Snyk를 효과적으로 적용하는 데 도움이 되도록 제공됩니다.
 
 ## 패키지 레지스트리 통합 (Artifactory/Nexus) - Maven
 
@@ -58,7 +58,7 @@ Snyk은 Git 통합 또는 CLI를 통해 POM에서 종속성 트리를 생성할 
 
 고객이 고급 종속성 관리 전략을 개발하고 일반적으로 사용되는 표준 패키지 매니저를 사용하지 않을 수 있습니다. 이에 따라 Snyk은 테스트 API를 제공했습니다.
 
-Snyk API를 사용하여 즉시 테스트하려면 [Test](../../snyk-api/reference/test-v1.md) 엔드포인트를 사용하십시오. [Maven 공개 패키지의 문제에 대한 테스트](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) 및 [패키지에 대한 문제 목록](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)와 같은 예시가 있습니다.
+Snyk API를 사용하여 즉시 테스트하려면 [Test](../../snyk-api/reference/test-v1.md) 엔드포인트를 사용하십시오. [Maven 공개 패키지의 문제에 대한 테스트](../../snyk-api/reference/test-v1.md#test-maven-groupid-artifactid-version) 및 [패키지에 대한 문제 목록](../../snyk-api/reference/issues.md#orgs-org_id-packages-purl-issues)과과 같은 예시가 있습니다.
 
 ## Snyk 통합 및 일반적으로 사용되는 패턴
 
