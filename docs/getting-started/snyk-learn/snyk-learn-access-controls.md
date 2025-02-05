@@ -1,6 +1,5 @@
 ---
-설명: >-
-  이 페이지는 Snyk Learn 액세스 제어를 어떻게 관리하는지에 대한 단계별 안내를 제공합니다.
+설명: 이 페이지는 Snyk Learn 액세스 제어를 어떻게 관리하는지에 대한 단계별 안내를 제공합니다.
 ---
 
 # Snyk Learn 액세스 제어
@@ -8,7 +7,7 @@
 {% hint style="info" %}
 **릴리스 상태**
 
-[Snyk Learn 과제](snyk-learn-assignments.md)는 학습 관리 애드온 제공의 일환으로 얼리 엑세스 중입니다. 자세한 정보는 Snyk 계정 팀에 문의하십시오.
+[Snyk Learn 과제](snyk-learn-assignments.md)는 학습 관리 add-on 제공의 일환으로 얼리 엑세스 중입니다. 자세한 정보는 Snyk 계정 팀에 문의하십시오.
 {% endhint %}
 
 **Snyk Learn 액세스 제어** 기능을 사용하면 Snyk 플랫폼과 동일한 [액세스 제어 모델](../../snyk-admin/user-roles/user-role-management.md)을 사용하여 Snyk Learn의 사용자 권한을 관리할 수 있습니다. 그룹 관리자는 Snyk Learn 과제와 관련된 권한 세트를 사용하여 사용자 권한을 관리할 수 있습니다. 이러한 역할은 조직의 사용자와 기능을 반영할 수 있습니다. 예를 들어, 귀하의 조직에서 교육 및 훈련 관리 기능에 대한 Snyk Learn의 권한을 교육 및 훈련 관리자로 제한할 수 있습니다.
