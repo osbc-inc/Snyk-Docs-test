@@ -1,6 +1,6 @@
 # .NET용 Snyk 문제 해결
 
-## .NET에 대한 \{{Snyk 오픈 소스\}} 제한 사항
+## .NET에 대한 Snyk 오픈 소스 제한 사항
 
 * [`Directory.Build.props`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets) 및 [`Directory.Build.targets`](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets)은 SCM 통합에 지원되지 않습니다. Snyk CLI를 사용하여 중앙 패키지 관리로 비공개 종속성을 스캔할 수 있습니다. `dotnet restore`를 실행한 다음 `--all-projects`를 사용하여 `snyk test`를 실행해야 합니다. 각 하위 폴더에는 고유한 `project.assets.json` 파일이 있습니다.
 * `<ProjectReference>` 요소는 지원되지 않습니다.

@@ -25,7 +25,7 @@ Snyk은 Snyk CLI 및 GitHub와 같은 소스 코드 관리 (SCM) 시스템에서
 
 ### **SCM에서의 런타임 의존성에서의 취약성**
 
-Microsoft에서 항상 최신 패치를 설치하는 시스템에서 응용 프로그램을 실행하므로 오류가 발견된 것이 잘못된 것이라고 여길 수 있다면, 해당 취약성을 [무시하길](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) 선택할 수 있습니다.
+Microsoft에서 항상 최신 패치를 설치하는 시스템에서 응용 프로그램을 실행하므로 오류가 발견된 것이 잘못된 것이라고 여길 수 있다면, 해당 취약성을 [무시하기를](../../manage-risk/prioritize-issues-for-fixing/ignore-issues/) 선택할 수 있습니다.
 
 ### **CLI에서의 런타임 의존성에서의 취약성**
 
@@ -49,20 +49,20 @@ Microsoft에서 항상 최신 패치를 설치하는 시스템에서 응용 프�
 
 ## C\#
 
-\{{Snyk Code\}}는 IDE, CLI 및 Git 통합을 사용하여 C# 코드를 분석할 수 있습니다.
+Snyk Code는 IDE, CLI 및 Git 통합을 사용하여 C# 코드를 분석할 수 있습니다.
 
-프레임워크 지원은 [\{{Snyk Code\}} - 지원하는 언어 및 프레임워크](../)를 참조하세요.
+프레임워크 지원은 [Snyk Code - 지원하는 언어 및 프레임워크](../)를 참조하세요.
 
 ## Nuget
 
-**대상 프레임워크**: Snyk은대상 프레임워크를 식별하고 git 통합을 사용하여 각 식별된 버전에 대한 결과를 제공합니다.
+**대상 프레임워크**: Snyk는 대상 프레임워크를 식별하고 git 통합을 사용하여 각 식별된 버전에 대한 결과를 제공합니다.
 
-**개발 의존성**: Snyk은일반적으로 프로덕션으로 푸시되지 않는 개발자 의존성을 스캔하지 않습니다. 이러한 의존성을 스캔하려면 **설정 > 언어 > .NET** 설정을 통해 Nuget git 가져오기에서 가시성을 활성화하세요 ([.NET을 위한 Git 설정](./#git-settings-for-.net)).\
+**개발 의존성**: Snyk는 일반적으로 프로덕션으로 푸시되지 않는 개발자 의존성을 스캔하지 않습니다. 이러한 의존성을 스캔하려면 **설정 > 언어 > .NET** 설정을 통해 Nuget git 가져오기에서 가시성을 활성화하세요 ([.NET을 위한 Git 설정](./#git-settings-for-.net)).\
 Snyk는 [`*.proj`](guidance-for-snyk-for-.net.md#user-content-fn-1) 파일의 빌드 및 개발 의존성 섹션, `packages.config` 및 `project.json` 파일을 스캔하고 수정합니다.
 
-**잠금 파일**: 현재 **packages-lock.json**은 지원되지 않습니다. Snyk은 설치된 의존성을 결정하기 위해 빌드 시스템과 상호 작용합니다.
+**잠금 파일**: 현재 **packages-lock.json**은 지원되지 않습니다. Snyk는 설치된 의존성을 결정하기 위해 빌드 시스템과 상호 작용합니다.
 
-**PackageReference:** Snyk은 현재 버전 속성이 필요합니다. 프로젝트에 이 속성이 없는 경우 Snyk은 프로젝트에 대한 PR을 열 수 없을 수 있습니다.
+**PackageReference:** Snyk는 현재 버전 속성이 필요합니다. 프로젝트에 이 속성이 없는 경우 Snyk는 프로젝트에 대한 PR을 열 수 없을 수 있습니다.
 
 **Git 분석**
 
@@ -112,7 +112,7 @@ Paket 지원에 대한 자세한 내용은 [Snyk for .NET](./)를 참조하세�
 
 ## 기타
 
-Snyk은 고유한 의존성 관리 전략에 대한 사용자 정의 테스트 API를 제공합니다. 자세한 정보는 [패키지에 대한 이슈 목록](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org_id-/packages/-purl-/issues) 페이지를 확인하십시오.
+Snyk는 고유한 의존성 관리 전략에 대한 사용자 정의 테스트 API를 제공합니다. 자세한 정보는 [패키지에 대한 이슈 목록](https://apidocs.snyk.io/?version=2022-11-14#get-/orgs/-org_id-/packages/-purl-/issues) 페이지를 확인하십시오.
 
 ## 닷넷 개발자를 위한 추가 보안 주제
 

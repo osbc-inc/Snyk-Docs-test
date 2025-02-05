@@ -3,13 +3,13 @@
 {% hint style="warning" %}
 **릴리스 상태 및 기능 가용성**
 
-개선된 \{{Snyk 오픈 소스\}} NuGet .NET 어플리케이션 스캔은 [얼리 엑세스](../../getting-started/snyk-release-process.md#early-access)에 있으며 엔터프라이즈 요금제 고객만 사용 가능합니다. 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)를 참조하십시오.
+개선된 Snyk 오픈 소스 NuGet .NET 어플리케이션 스캔은 [얼리 엑세스](../../getting-started/snyk-release-process.md#early-access)에 있으며 엔터프라이즈 요금제 고객만 사용 가능합니다. 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)를 참조하십시오.
 
 [Snyk Preview](../../snyk-admin/snyk-preview.md)를 사용하여 기능을 활성화할 수 있습니다.
 {% endhint %}
 
 {% hint style="info" %}
-얼리 엑세스 중이므로이 기능은 스캔이 실패하거나 다른 결과물이 생성될 수 있습니다. Snyk는 조직의 하위 집합을 시작하여이 기능을 점진적으로 활성화하는 것을 권장합니다. 자세한 정보는 [엔터프라이즈 설정](https://docs.snyk.io/enterprise-configuration)을 참조하십시오.
+얼리 엑세스 중이므로이 기능은 스캔이 실패하거나 다른 결과물이 생성될 수 있습니다. Snyk은 조직의 하위 집합을 시작하여이 기능을 점진적으로 활성화하는 것을 권장합니다. 자세한 정보는 [엔터프라이즈 설정](https://docs.snyk.io/enterprise-configuration)을 참조하십시오.
 
 [support ticket](https://support.snyk.io)를 제출하여 문제를 보고할 수 있습니다.
 {% endhint %}
