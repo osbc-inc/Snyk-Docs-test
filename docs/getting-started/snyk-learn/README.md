@@ -1,6 +1,6 @@
 # Snyk Learn
 
-[Snyk Learn](https://learn.snyk.io)은 [보안 교육](./#security-education)과 [제품 교육](./#product-training)에 전념합니다. Snyk Learn은 학습자가 미리 정의된 일련의 수업을 수강하는 방법으로[학습 경로](https://learn.snyk.io/catalog/?format=learning_path\&type=security-education)을 제공합니다.
+[Snyk Learn](https://learn.snyk.io)은 [보안 교육](./#security-education)과 [제품 교육](./#product-training)에 전념합니다. Snyk Learn은 학습자가 미리 정의된 일련의 수업을 수강하는 방법으로 [학습 경로](https://learn.snyk.io/catalog/?format=learning_path\&type=security-education)을 제공합니다.
 
 Snyk Learn은 사용자와 고객을 위해 제공되는 학습 구성 요소 중 하나입니다. Snyk [고객 리소스 페이지](https://snyk.io/customer-resources/)를 통해 조직 내에서 Snyk를 구현하는 최상의 방법을 습득할 수 있습니다.
 
