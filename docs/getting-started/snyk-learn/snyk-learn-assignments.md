@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **릴리스 상태**
 
-Snyk Learn Assignments는 Snyk Learning Management 애드온 제공의 일환으로 얼리 액세스 중입니다. 자세한 정보는 Snyk 계정 팀에 문의하십시오.
+Snyk Learn Assignments는 Snyk Learning Management add-on 제공의 일환으로 얼리 액세스 중입니다. 자세한 정보는 Snyk 계정 팀에 문의하십시오.
 {% endhint %}
 
 Assignments는 관리자가 교육을 지정, 추적 및 효율적으로 관리할 수 있도록 함으로써 교육 관리를 스트림라인화합니다. Assignments 기능은 완료 기한을 설정하고 구성 목표와 원활하게 통합하여 계정을 향상시켜 책임성을 강화합니다. 예를 들어, 교육 이니셔티브 간의 조정이 보장되도록 규정 준수 일정과 같은 조직적 목표를 통합합니다.
