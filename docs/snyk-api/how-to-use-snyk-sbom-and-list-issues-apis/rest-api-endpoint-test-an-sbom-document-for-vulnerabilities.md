@@ -20,7 +20,7 @@ Snyk은 SBOM 내의 구성 요소를 [패키지 URL](https://github.com/package-
 
 [SBOM 엔드포인트](https://apidocs.snyk.io/?version=2024-09-03%7Ebeta#post-/orgs/-org_id-/sbom_tests)를 사용하여 SBOM 문서를 생성하고 상태를 확인하고 결과를 확인할 수 있습니다. 다음 단계를 따르세요:
 
-1. Snyk에 SBOM을 보내어 테스트를 생성합니다. (rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#Create-a-test-by-sending-an-sbom-to-snyk)
+1. [Snyk에 SBOM을 보내어 테스트를 생성합니다.](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#sbom-snyk)
 2. [테스트의 상태를 확인합니다](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#Check-the-status-of-the-test).
 3. [테스트 결과를 확인합니다. 테스트가 완료된 경우](rest-api-endpoint-test-an-sbom-document-for-vulnerabilities.md#View-results-of-the-test).
 
