@@ -34,14 +34,14 @@ description: SCM-Contributors-Count 도구 실행 결과 출력
 ## 레포지토리 목록
 
 # 비공개 레포지토리:
-someOrganization/someRepository(비공개)
+someOrganization/someRepository(Private)
 
 # 공개 레포지토리:
-anotherOrganization/anotherRepository(공개)
+anotherOrganization/anotherRepository(Public)
 ```
 
-* `비공개 레포지토리` - 검색된 비공개 레포지토리 목록.
-* `공개 레포지토리` - 검색된 공개 레포지토리 목록.
+* `Private Repositories` - 검색된 비공개 레포지토리 목록.
+* `Public Repositories`- 검색된 공개 레포지토리 목록.
 
 {% hint style="info" %}
 각 레포지토리 이름 옆에는 (비공개) 또는 (공개)의 가시성 표시가 있습니다.
@@ -58,8 +58,8 @@ anotherOrganization/anotherRepository(공개)
             "email": "someUser@company.io",
             "contributionsCount": 15,
             "reposContributedTo": [
-                "someOrganization/someRepository(비공개)"
-                "anotherOrganization/anotherRepository(공개)"
+                "someOrganization/someRepository(Private)"
+                "anotherOrganization/anotherRepository(Public)"
             ]
         }
     ],
@@ -69,17 +69,17 @@ anotherOrganization/anotherRepository(공개)
             "email": "anotherUser@company.io",
             "contributionsCount": 11,
             "reposContributedTo": [
-                "someOrganization/someRepository(비공개)"
+                "someOrganization/someRepository(Private)"
             ]
         }
     ],
     [
-        "anotheruser(중복)",
+        "anotheruser(duplicate)",
         {
             "email": "anotherUser@otherCompany.com",
             "contributionsCount": 11,
             "reposContributedTo": [
-                "someOrganization/someRepository(비공개)"
+                "someOrganization/someRepository(Private)"
             ]
         }
     ]
@@ -89,7 +89,7 @@ anotherOrganization/anotherRepository(공개)
 * `email` - 기여자의 이메일
 * `contributionsCount` - 이 기여자가 레포지토리에 기여한 횟수.
 * `repoContributedTo` - 이 기여자가 기여한 레포지토리 목록.
-* `(중복)` - 동일한 사용자가 다른 이메일 주소에서 감지된 것을 나타내는 표시; 다른 커미터로 **계산**될 것임을 주의하세요.
+* `(duplicate)` - 동일한 사용자가 다른 이메일 주소에서 감지된 것을 나타내는 표시; 다른 커미터로 **계산**될 것임을 주의하세요.
 
 {% hint style="info" %}
 출력이 길어질 수 있기 때문에 Snyk은 더 좋은 검토 및 구문 분석 옵션을 위해 출력을 파일로 보내는 것을 권장합니다.
