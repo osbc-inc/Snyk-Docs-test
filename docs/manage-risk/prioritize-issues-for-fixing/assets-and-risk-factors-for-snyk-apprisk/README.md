@@ -41,14 +41,14 @@ Snyk Open Source는 패키지 의존성 manifest에 선언된 타사 의존성�
 
 ## 위험 요인
 
-이미지, 패키지 및 Kubernetes 자원을 "애플리케이션 컨텍스트"로 이해함으로써 Snyk는 다음과 같은 위험 요소를 계산할 수 있습니다:
+이미지, 패키지 및 Kubernetes 자원을 "애플리케이션 컨텍스트"로 이해함으로써 Snyk은 다음과 같은 위험 요소를 계산할 수 있습니다:
 
 * [배포됨](risk-factor-deployed.md)
 * [로드된 패키지](risk-factor-loaded-package.md)
 * [운영 체제 상태](risk-factor-os-condition.md)
 * [외부 노출](risk-factor-public-facing.md)
 
-당신의 애플리케이션을 위한 활성화 및 비활성화할 수 있는 이러한 "애플리케이션 컨텍스트" 위험 요인은 **그룹 설정**의 **Insights** UI 탭에서 설정할 수 있습니다. 위험 요인을 비활성화하면 공급자 선택 또는 Kubernetes 클러스터 매핑이 제거되며 Snyk가 해당 요소를 더 이상 계산하지 않습니다.
+당신의 애플리케이션을 위한 활성화 및 비활성화할 수 있는 이러한 "애플리케이션 컨텍스트" 위험 요인은 **그룹 설정**의 **Insights** UI 탭에서 설정할 수 있습니다. 위험 요인을 비활성화하면 공급자 선택 또는 Kubernetes 클러스터 매핑이 제거되며 Snyk이 해당 요소를 더 이상 계산하지 않습니다.
 
 {% hint style="info" %}
 위험 요소는 Snyk AppRisk Pro에서만 사용할 수 있습니다.

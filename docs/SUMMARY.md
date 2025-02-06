@@ -729,7 +729,7 @@
   * [수정할 문제 우선 순위 지정](manage-risk/prioritize-issues-for-fixing/README.md)
     * [우선순위 점수 vs 리스크 점수](manage-risk/prioritize-issues-for-fixing/priority-score-vs-risk-score.md)
     * [우선순위 점수](manage-risk/prioritize-issues-for-fixing/priority-score.md)
-    * [Risk Score](manage-risk/prioritize-issues-for-fixing/risk-score.md)
+    * [Risk Score(위험 점수)](manage-risk/prioritize-issues-for-fixing/risk-score.md)
     * [심각도 수준](manage-risk/prioritize-issues-for-fixing/severity-levels.md)
     * [문제 무시](manage-risk/prioritize-issues-for-fixing/ignore-issues/README.md)
       * [SCM 및 CLI를 사용하여 임포트한 프로젝트의 무시 작동 방식](manage-risk/prioritize-issues-for-fixing/ignore-issues/how-ignores-work-for-projects-imported-using-an-scm-and-the-cli.md)
