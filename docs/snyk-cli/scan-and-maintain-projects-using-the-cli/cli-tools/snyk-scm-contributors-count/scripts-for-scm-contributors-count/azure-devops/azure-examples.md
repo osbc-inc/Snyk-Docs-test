@@ -60,7 +60,7 @@ description: Azure에 대한 옵션 목록과 예제
 
 ### 옵션
 
-*   `Snyk에서 이미 모니터링하는 저장소를 고려하지 않고 Azure에서 모든 커밋을 가져오려면` `--skipSnykMonitoredRepos` 플래그를 추가하세요.
+*   Snyk에서 이미 모니터링하는 저장소를 고려하지 않고 Azure에서 모든 커밋을 가져오려면 `--skipSnykMonitoredRepos` 플래그를 추가하세요.
 
     Snyk에서 모니터링 중이 아닌 Azure의 저장소가 있을 수 있습니다. 이 플래그를 사용하여 Snyk에서 모니터링 중인 저장소를 확인하지 않고 직접 Azure에서 커밋을 가져올 수 있습니다.
 

@@ -1,9 +1,9 @@
-# GitHub - Flow and Tech
+# GitHub - Flow 및 기술
 
 ## Flow <a href="#flow" id="flow"></a>
 
 1. SCM에서 액세스 권한이 있는 조직을 가져와 orgs 목록을 작성합니다.
-2. 가져온/제공된 orgs에 속하는 repo 중 하나/모두를 가져옵니다.
+2. 가져온/제공된 orgs에 속하는 repo 중 `one`/`all`를 가져옵니다.
 3. 가져온/제공된 repo/s의 커밋을 가져와 기여자 목록을 작성합니다.
 4. 기여자별로 repo의 커밋 수를 계산합니다.
 5. 제외 파일(exclusion file)에 지정된 기여자들을 제거합니다 (`the exclusionFilePath` 플래그가 설정되고 유효한 텍스트 파일 경로가 제공된 경우).

@@ -887,7 +887,7 @@
             * [GitHub Enterprise - Flow 및 기술](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/github-enterprise/github-enterprise-flow-and-tech.md)
             * [Github Enterprise - 예제](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/github-enterprise/github-enterprise-examples.md)
           * [GitLab 및 GitLab 서버](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/gitlab-and-gitlab-server/README.md)
-            * [GitLab - 흐름과 기술](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/gitlab-and-gitlab-server/gitlab-flow-and-tech.md)
+            * [GitLab - Flow 및 기술](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/gitlab-and-gitlab-server/gitlab-flow-and-tech.md)
             * [GitLab - 예제](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/scripts-for-scm-contributors-count/gitlab-and-gitlab-server/gitlab-examples.md)
         * [결과 통합](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/consolidate-results.md)
         * [가져오기 파일 만들기 및 사용](snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/snyk-scm-contributors-count/creating-and-using-the-import-file.md)

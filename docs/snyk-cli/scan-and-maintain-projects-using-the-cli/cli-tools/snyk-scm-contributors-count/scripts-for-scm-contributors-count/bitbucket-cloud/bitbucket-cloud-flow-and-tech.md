@@ -1,9 +1,9 @@
-# Bitbucket Cloud - Flow and Tech
+# BitBucket Cloud - Flow 및 기술
 
 ## Flow
 
 1. Snyk로부터 모니터링 중인 프로젝트들을 가져옵니다 (만약 `skipSnykMonitoredRepos` 플래그가 **설정되어 있지 않고** `SNYK_TOKEN`이 export되었을 경우).
-2. 자격 증명이 액세스할 수 있는 `한 개`/`여러 개`/`모든` 작업 공간을 SCM에서 가져와 작업 공간 목록을 생성합니다.
+2. 자격 증명이 액세스할 수 있는 `one`/`some`/`all` 작업 공간을 SCM에서 가져와 작업 공간 목록을 생성합니다.
 3. 가져온/제공된 작업 공간 아래의 `한 개`/`모든` 레포지토리를 가져옵니다.
 4. Snyk에 의해 모니터링되지 않는 레포지토리들을 제거하고 Repo 목록을 만듭니다 (만약 `skipSnykMonitoredRepos` 플래그가 **설정되어 있지 않고** `SNYK_TOKEN`이 export되었을 경우).
 5. 모니터링되지 않는 레포지토리들을 쉽게 가져올 수 있도록 Snyk 계정으로 가져올 레포지토리들을 위한 가져오기 파일을 생성합니다 (만약 `importConfDir` 플래그가 설정된 경우)

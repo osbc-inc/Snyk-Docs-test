@@ -1,10 +1,10 @@
-# Bitbucket Server - Flow and Tech
+# Bitbucket Server - Flow 및 기술
 
 ## Flow <a href="#flow" id="flow"></a>
 
 1. Snyk로부터 모니터링 중인 프로젝트를 가져옵니다 (만약 `skipSnykMonitoredRepos` 플래그가 **설정되지 않았고** `SNYK_TOKEN`이 export되었다면).
-2. 자격 증명이 액세스할 수 있는 프로젝트들을 SCM에서 하나/몇 개/모두 가져와 프로젝트 목록을 생성합니다.
-3. 가져오거나 제공된 프로젝트 아래의 하나/모든 저장소를 가져옵니다.
+2. 자격 증명이 액세스할 수 있는 프로젝트들을 SCM에서 `one`/`some`/`all` 가져와 프로젝트 목록을 생성합니다.
+3. 가져오거나 제공된 프로젝트 아래의 `one`/`all` 저장소를 가져옵니다.
 4. Snyk에서 모니터링되지 않는 저장소를 제거합니다 (만약 `skipSnykMonitoredRepos` 플래그가 **설정되지 않았고** `SNYK_TOKEN`이 export되었다면) 그리고 저장소 목록을 생성합니다.
 5. 모니터링되지 않는 저장소를 쉽게 Snyk 계정으로 가져오기 위한 가져오기 파일을 생성합니다 (만약 `importConfDir` 플래그가 설정되어 있다면).
 6. 가져오거나 제공된 저장소에 대해 커밋을 가져와 기여자 목록을 생성합니다.
