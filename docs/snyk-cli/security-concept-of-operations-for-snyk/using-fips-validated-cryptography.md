@@ -30,13 +30,13 @@ Snyk 언어 서버는 이제 CLI 명령어로 실행할 수 있습니다.
 
 **Linux 운영 체제**
 
-Linux에서 Snyk는 OpenSSL 및 해당 검증된 FIPS 제공 업체를 통해 FIPS-검증 암호화를 지원합니다.
+Linux에서 Snyk은 OpenSSL 및 해당 검증된 FIPS 제공 업체를 통해 FIPS-검증 암호화를 지원합니다.
 
 Linux 시스템이 FIPS 인증 요구 사항을 충족하도록 OpenSSL을 설치하고 구성했는지 확인하십시오. 이를 수행하는 방법에 대한 자세한 내용은 [OpenSSL 프로젝트 문서](https://www.openssl.org/docs/fips.html)를 참조하십시오.
 
 **Windows 운영 체제**
 
-Windows에서 Snyk는 Windows CNG API를 통해 FIPS-검증 암호화를 지원합니다.
+Windows에서 Snyk은 Windows CNG API를 통해 FIPS-검증 암호화를 지원합니다.
 
 Windows에서 FIPS를 활성화하려면 [Windows FIPS 정책을 사용](https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#step-3-enable-the-fips-security-policy)하십시오.
 
