@@ -5,7 +5,7 @@ Snyk Code 리포지토리를 CLI를 사용하여 테스트할 때, `snyk ignore 
 {% hint style="info" %}
 * `.snyk` 파일을 수동으로 생성하여 CLI 테스트에서 디렉터리와 파일을 제외할 수도 있습니다. `.snyk` 파일의 수동 생성에 대한 자세한 내용은 [수입 프로세스에서 디렉터리 및 파일 제외](https://docs.snyk.io/products/snyk-code/getting-started-with-snyk-code/activating-snyk-code-using-the-web-ui/step-3-importing-repositories-to-snyk-for-the-snyk-code-testing/excluding-directories-and-files-from-the-import-process)를 참조하세요.
 * `snyk ignore --file-path` 명령은 특정 취약점 문제를 무시하지 않습니다. 이 명령은 CLI 테스트에서 디렉터리와 파일만 제외합니다.
-* 제작 단계로 컴파일되거나 배포되지 않는 디렉터리와 파일을 제외하는 것을 고려하십시오. 제외된 파일이나 디렉터리에 기존 취약점이 있는 경우, 추적이 해당되면 Snyk는 잠재적 문제를 감지하지 못할 수 있습니다.
+* 제작 단계로 컴파일되거나 배포되지 않는 디렉터리와 파일을 제외하는 것을 고려하십시오. 제외된 파일이나 디렉터리에 기존 취약점이 있는 경우, 추적이 해당되면 Snyk은 잠재적 문제를 감지하지 못할 수 있습니다.
 {% endhint %}
 
 ## **CLI 테스트에서 디렉터리와 파일 제외하기**

@@ -1,13 +1,13 @@
 # Snyk CLI를 사용하여 취약점 무시하기
 
 {% hint style="info" %}
-의 경우, 이러한 옵션들은 기본적으로 작동합니다.
+[Snyk Open Source](../../scan-with-snyk/snyk-open-source/)의 경우, 이러한 옵션들은 기본적으로 작동합니다.
 
-의 경우, 이러한 옵션들도 작동하지만, 무시를 등록한 후 `snyk test`나 `snyk monitor`를 실행할 때 `--policy-path=` 옵션을 사용해야 합니다. 예를 들어, `snyk container test node --policy-path=.snyk.`와 같이 사용합니다.
+[Snyk Container](../../scan-with-snyk/snyk-container/)의 경우, 이러한 옵션들도 작동하지만, 무시를 등록한 후 `snyk test`나 `snyk monitor`를 실행할 때 `--policy-path=` 옵션을 사용해야 합니다. 예를 들어, `snyk container test node --policy-path=.snyk.`와 같이 사용합니다.
 
-[Snyk ](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/)의 경우, [snyk 정책 파일을 사용한 IaC 무시](snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md)를 참조하십시오.
+[Snyk Infrastructure as Code](../../scan-with-snyk/snyk-iac/scan-your-iac-source-code/)의 경우, [snyk 정책 파일을 사용한 IaC 무시](snyk-cli-for-iac/iac-ignores-using-the-.snyk-policy-file.md)를 참조하십시오.
 
-의 경우, [Snyk 코드 CLI 테스트에서 디렉터리와 파일 제외하기](snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)를 참조하십시오.
+[Snyk Code](../../scan-with-snyk/snyk-code/)의 경우, [Snyk 코드 CLI 테스트에서 디렉터리와 파일 제외하기](snyk-cli-for-snyk-code/exclude-directories-and-files-from-snyk-code-cli-tests.md)를 참조하십시오.
 {% endhint %}
 
 가끔 Snyk이 업데이트나 Snyk 패치가 없는 취약점을 발견하거나 현재 응용 프로그램에서 쉽게 이용될 수 없다고 생각하는 경우, 해당 취약점을 일정 기간 동안 Snyk에 무시하도록 지시할 수 있습니다.

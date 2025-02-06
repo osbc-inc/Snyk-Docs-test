@@ -2,7 +2,7 @@
 
 Snyk CLI를 사용하여 `snyk code test` 명령의 결과에 대해 다음 작업을 수행할 수 있습니다:
 
-* [{Snyk Code CLI 결과 분석](view-snyk-code-cli-results.md#analyze-snyk-code-cli-results): 테스트 결과 보기 및 취약점 분석.
+* [Snyk Code CLI 결과 분석](view-snyk-code-cli-results.md#analyze-snyk-code-cli-results): 테스트 결과 보기 및 취약점 분석.
 * [심각도 수준으로 결과 필터링](view-snyk-code-cli-results.md#filter-results-by-severity-level): 터미널에 표시된 `snyk code test` 결과를 특정 심각도 수준 이상의 문제만 표시하도록 필터링.
 * [테스트 결과 출력](view-snyk-code-cli-results.md#output-test-results): `snyk code test` 결과를 표준 CLI 형식으로 표시하는 대신 터미널에서 JSON 또는 SARIF 형식으로 출력.
 * [테스트 결과 내보내기](view-snyk-code-cli-results.md#export-test-results): CLI 코드 결과를 JSON 또는 SARIF 형식 파일로 내보내기.
@@ -23,7 +23,7 @@ Snyk 웹 UI에서 문제를 무시했다면, 이러한 문제는 여전히 CLI �
 
 ### 에서 감지한 취약점 문제 목록
 
-{Snyk Code 테스트에서 발견된 문제 목록은 문제의 심각도 수준에 따라 구성되어 있습니다.
+Snyk Code 테스트에서 발견된 문제 목록은 문제의 심각도 수준에 따라 구성되어 있습니다.
 
 각 문제에 대해 다음 정보가 제공됩니다:
 
@@ -97,7 +97,7 @@ snyk code test /Users/username/Documents/Repositories/snyk-goof-master --severit
 * 중간 = **경고**
 * 낮음 = **노트/정보**
 
-크리티컬 표시는 {Snyk Code}에서 사용되지 않습니다.
+크리티컬 표시는 Snyk Code에서 사용되지 않습니다.
 
 터미널에 표시된 중간 심각도 예시는 다음과 같습니다:
 
@@ -175,7 +175,7 @@ snyk code test --json-file-output=json
 
 터미널에서 코드 테스트 결과가 표준 형식으로 표시됩니다:
 
-<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - 2 .png" alt="터미널에서 snyk code test 결과"><figcaption><p><code>snyk code tes</code>t 결과 터미널에 표시</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/snyk Code - CLI - results - export to JSON - with terminal results - 2 .png" alt="터미널에서 snyk code test 결과"><figcaption><p><code>snyk code test</code> 결과 터미널에 표시</p></figcaption></figure>
 
 리포지토리 폴더에 JSON 파일이 생성됩니다:
 

@@ -2,7 +2,7 @@
 
 Snyk CLI는 `snyk test` 명령을 사용하여 발견된 취약점을 수정하는 기능을 제공합니다. Web UI에서 수정에 대한 정보를 보려면 [취약점 수정](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/fix-your-vulnerabilities.md)을 참조하십시오. 패치에 대한 일반 정보는 [취약점 수정을 위한 Snyk 패치](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-patches-to-fix-vulnerabilities.md)를 참조하십시오.
 
-`snyk container test`를 사용하는 경우, 스캔에서 발견된 취약점을 해결하는 정보는 [{Snyk Container CLI 결과 이해](snyk-cli-for-snyk-container/understand-snyk-container-cli-results.md)를 참조하십시오. `snyk code test`를 사용하는 경우 [Snyk Code CLI 결과 보기](snyk-cli-for-snyk-code/view-snyk-code-cli-results.md)를 참조하십시오. `snyk iac test`를 사용하는 경우 [IaC CLI 테스트 결과 이해](snyk-cli-for-iac/understand-the-iac-cli-test-results/)를 참조하십시오.
+`snyk container test`를 사용하는 경우, 스캔에서 발견된 취약점을 해결하는 정보는 [Snyk Container CLI 결과 이해](snyk-cli-for-snyk-container/understand-snyk-container-cli-results.md)를 참조하십시오. `snyk code test`를 사용하는 경우 [Snyk Code CLI 결과 보기](snyk-cli-for-snyk-code/view-snyk-code-cli-results.md)를 참조하십시오. `snyk iac test`를 사용하는 경우 [IaC CLI 테스트 결과 이해](snyk-cli-for-iac/understand-the-iac-cli-test-results/)를 참조하십시오.
 
 ## CLI에서 업그레이드 및 패치 결과
 

@@ -1,8 +1,8 @@
-# Advanced use of Snyk Container CLI
+# Snyk 컨테이너 CLI의 고급 사용법
 
 ## 아카이브 스캔
 
-로컬 Docker 데몬이나 원격 레지스트리에서 이미지를 스캔하는 것 외에도 Snyk는 `snyk container test docker-archive:<filename>.tar` 또는 `snyk container test oci-archive:<filename>.tar`을 실행하여 Docker 또는 OCI 아카이브를 직접 스캔하거나 모니터링할 수 있습니다.
+로컬 Docker 데몬이나 원격 레지스트리에서 이미지를 스캔하는 것 외에도 Snyk은 `snyk container test docker-archive:<filename>.tar` 또는 `snyk container test oci-archive:<filename>.tar`을 실행하여 Docker 또는 OCI 아카이브를 직접 스캔하거나 모니터링할 수 있습니다.
 
 예를 들어:
 

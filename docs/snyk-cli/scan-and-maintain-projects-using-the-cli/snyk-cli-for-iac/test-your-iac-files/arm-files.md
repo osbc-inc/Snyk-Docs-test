@@ -1,8 +1,8 @@
 # ARM 파일
 
-Snyk의 **인프라스트럭처 as 코드(Infrastructure as Code)**를 사용하면 CLI를 통해 구성 파일을 테스트할 수 있습니다.
+코드형 Snyk 인프라를 사용하면 CLI를 통해 구성 파일을 테스트할 수 있습니다.
 
-Azure 리소스 관리자(ARM)를 위한 **인프라스트럭처 as 코드(Infrastructure as Code)**는 JSON 형식 파일을 스캔할 수 있습니다. Bicep 형식 파일을 스캔하기 위해서는 Bicep CLI를 사용하여 구성 파일을 JSON으로 변환해야 합니다.
+ARM(Azure 리소스 관리자를 위한 Snyk Infrastructure as Code)은 JSON 형식 파일 스캔을 지원합니다. Bicep 형식 파일을 스캔하기 위해서는 Bicep CLI를 사용하여 구성 파일을 JSON으로 변환해야 합니다.
 
 ## 특정 JSON 파일에 문제를 테스트
 
@@ -32,4 +32,4 @@ az bicep build -f deploy.bicep
 
 ```
 snyk iac test deploy.json
-```  
+```

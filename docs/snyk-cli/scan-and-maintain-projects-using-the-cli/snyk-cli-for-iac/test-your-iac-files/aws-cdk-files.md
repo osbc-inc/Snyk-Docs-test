@@ -1,6 +1,6 @@
 # AWS CDK 파일
 
-Snyk의 인프라스트럭처로 코드를 사용하여 CLI로 구성 파일을 테스트할 수 있습니다. CDK CLI를 사용하여 CloudFormation 파일을 생성하여 [Amazon Web Services Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/)를 Snyk CLI로 스캔할 수 있습니다.
+Snyk Infrastructure as Code를 사용하여 CLI로 구성 파일을 테스트할 수 있습니다. CDK CLI를 사용하여 CloudFormation 파일을 생성하여 [Amazon Web Services Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/)를 Snyk CLI로 스캔할 수 있습니다.
 
 다음 단계를 따라 CDK 애플리케이션을 스캔합니다:
 
