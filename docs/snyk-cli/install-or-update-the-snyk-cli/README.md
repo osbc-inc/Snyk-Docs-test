@@ -77,7 +77,7 @@ scoop install snyk
 npm를 사용하여 Snyk CLI를 설치하기 전에 다음 **전제 조건**이 충족되어 있는지 확인하십시오:
 
 * Node.js 버전 12 이상을 사용하여 로컬 환경에 npm의 최신 버전을 설치하십시오. Node.js를 업데이트하는 방법에 대한 정보는 [Snyk CLI에 필요한 Node.js 버전 설치 또는 업그레이드](install-or-upgrade-to-version-of-node.js-required-for-snyk-cli.md)를 참조하십시오.
-* Alpine Linux에서 Snyk를 실행하려면 먼저 libstdc++를 설치하십시오.\
+* Alpine Linux에서 Snyk을 실행하려면 먼저 libstdc++를 설치하십시오.\
   자세한 내용은 [알파인 리눅스 운영 체제에서 CLI 및 Jenkins 플러그인의 사전 필요 조건](prerequisites-for-cli-and-jenkins-plugin-on-alpine-linux-operating-system.md)을 참조하십시오.
 
 그런 다음 다음 **단계를 따라 npm 또는 Yarn으로 설치**하십시오:

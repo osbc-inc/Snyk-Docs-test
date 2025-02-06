@@ -1,4 +1,4 @@
-# 모니터
+# Monitor
 
 ## 사용법
 
@@ -16,11 +16,11 @@ PR 확인도 테스트를 수행합니다.
 
 코드를 변경하는 경우 `monitor` 명령을 다시 실행해야 합니다.
 
-Snyk 의 경우, [`snyk container` 도움말](https://docs.snyk.io/snyk-cli/commands/container) 을 참조하십시오
+Snyk Container의 경우, [`snyk container` 도움말](https://docs.snyk.io/snyk-cli/commands/container) 을 참조하십시오
 
 `monitor` 명령은 Snyk 에서 지원되지 않습니다.
 
-Snyk 를 사용하는 경우, [Snyk CLI for IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac)의 "정기적으로 IaC 파일 테스트하기" 지침을 따르십시오.
+Snyk Infrastructure as Code의 경우, [Snyk CLI for IaC](https://docs.snyk.io/snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac)의 "정기적으로 IaC 파일 테스트하기" 지침을 따르십시오.
 
 ## 종료 코드
 
@@ -133,7 +133,7 @@ Yarn 작업 영역을 포함하여 작업 디렉토리의 모든 프로젝트를
 
 로컬에서 테스트하거나 프로젝트를 모니터링할 때 Snyk가 패키지 정보를 검사해야 하는 파일을 지정할 수 있습니다. 파일이 지정되지 않으면 Snyk는 프로젝트에 적합한 파일을 자동으로 감지하려고 시도합니다.
 
-Python 프로젝트에 대한 자세한 내용은 [Python 프로젝트용 옵션](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects) 섹션을 참조하십시오. 
+Python 프로젝트에 대한 자세한 내용은 [Python 프로젝트용 옵션](https://docs.snyk.io/snyk-cli/commands/monitor#options-for-python-projects) 섹션을 참조하십시오.
 
 ### `--package-manager=<PACKAGE_MANAGER_NAME>`
 
@@ -301,7 +301,7 @@ C++ 전용, 알려진 오픈 소스 종속성을 가진 모든 파일을 스캔�
 
 Python 버전을 기반으로 사용할 특정 Python 명령을 지정합니다.
 
-Snyk는 종속성을 찾기 위해 Python을 사용합니다. 여러 Python 버전을 사용하는 경우 이 매개변수를 사용하여 실행에 올바른 Python 명령을 지정하십시오.
+Snyk은 종속성을 찾기 위해 Python을 사용합니다. 여러 Python 버전을 사용하는 경우 이 매개변수를 사용하여 실행에 올바른 Python 명령을 지정하십시오.
 
 기본값: `python`은 기본 python 버전을 실행합니다. 기본 버전을 확인하려면 `python -V`를 실행하십시오.
 
@@ -315,7 +315,7 @@ Snyk는 종속성을 찾기 위해 Python을 사용합니다. 여러 Python 버�
 
 Python 프로젝트에서 모니터링할 특정 파일을 지정하십시오.
 
-기본값: Snyk는 프로젝트의 최상위에 있는 requirements.txt 파일을 스캔합니다.
+기본값: Snyk은 프로젝트의 최상위에 있는 requirements.txt 파일을 스캔합니다.
 
 **중요:** 기본 파일이 아닌 `--file` 매개변수 값을 지정할 때는 `--package-manager=pip` 옵션을 포함해야합니다. 이 매개변수가 없으면 테스트가 실패합니다.
 
@@ -325,7 +325,7 @@ Python 프로젝트에서 모니터링할 특정 파일을 지정하십시오.
 snyk test --file=requirements-dev.txt --package-manager=pip
 ```
 
-이렇게 하면 Snyk가 지정한 manifest 파일을 올바르게 인식하고 스캔할 수 있으며, 이름을 `requirements-dev.txt`로 변경한 경우와 같이 파일을 올바르게 인식합니다.
+이렇게 하면 Snyk이 지정한 manifest 파일을 올바르게 인식하고 스캔할 수 있으며, 이름을 `requirements-dev.txt`로 변경한 경우와 같이 파일을 올바르게 인식합니다.
 
 ### `--package-manager=pip`
 
