@@ -49,4 +49,4 @@ Bitbucket Server 프로젝트는 동적 저장소 URL 스키마 때문에 자동
 
 * 자동으로 생성된 컬렉션은 `snyk code test --report --project-name="name"` 명령을 사용하여 Snyk Web UI에 푸시된 [SAST](../../getting-started/glossary.md#sast) 스캔을 감지하지 않습니다.
 * 이 기능은 GitHub, GitHub Enterprise, GitLab, Bitbucket Cloud 및 Azure 통합 스캔만 지원합니다.
-* 본 기능은 을 지원하지 않습니다.
+* 본 기능은 Snyk Container를 지원하지 않습니다.
