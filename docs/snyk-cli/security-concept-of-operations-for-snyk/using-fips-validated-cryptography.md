@@ -13,7 +13,7 @@ FIPS-검증 암호화 지원은 Windows 및 Linux 운영 체제에서만 제한�
 
 ## Snyk CLI 및 Snyk 언어 서버에서의 FIPS-검증 암호화 지원 및 사용
 
-개발자 경험을 최적화하기 위해 Snyk는 [Snyk 언어 서버](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/)와 [Snyk CLI](../getting-started-with-the-snyk-cli.md)를 결합하고 있습니다. 첫 번째 단계로, Snyk은 FIPS 이진 파일을 하나의 애플리케이션 하에 통합하고 있습니다. 나중에는 Snyk 언어 서버에 FIPS가 아닌 CLI 이진 파일도 사용될 것입니다.
+개발자 경험을 최적화하기 위해 Snyk은 [Snyk 언어 서버](../../scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/)와 [Snyk CLI](../getting-started-with-the-snyk-cli.md)를 결합하고 있습니다. 첫 번째 단계로, Snyk은 FIPS 이진 파일을 하나의 애플리케이션 하에 통합하고 있습니다. 나중에는 Snyk 언어 서버에 FIPS가 아닌 CLI 이진 파일도 사용될 것입니다.
 
 Snyk 언어 서버는 이제 CLI 명령어로 실행할 수 있습니다.
 
