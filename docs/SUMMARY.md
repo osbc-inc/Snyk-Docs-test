@@ -750,7 +750,7 @@
       * [인사이트 설정: 사용자 권한](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-user-permissions.md)
       * [인사이트 설정: Kubernetes 커넥터](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-kubernetes-connector.md)
       * [인사이트 설정: 이미지 스캔](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-image-scanning.md)
-      * [인사이트 설정: Snyk Open Source, Code, 및 Container 프로젝트 연결](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-associating-snyk-open-source-code-and-container-projects.md)
+      * [인사이트 설정: Snyk 오픈 소스, 코드 및 컨테이너 프로젝트 연결하기](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-associating-snyk-open-source-code-and-container-projects.md)
     * [exploits 보기](manage-risk/prioritize-issues-for-fixing/view-exploits.md)
     * [악성 패키지](manage-risk/prioritize-issues-for-fixing/malicious-packages.md)
     * [취약한 조건](manage-risk/prioritize-issues-for-fixing/vulnerable-conditions.md)
