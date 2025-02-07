@@ -23,7 +23,7 @@ Windows에서 Snyk 브로커를 사용하는 것은 지원되지 않습니다. S
 
 ## Snyk 브로커 설치를 위한 호스트 준비
 
-Snyk은각 통합을 위해 최소한 두 개의 별도의 브로커 클라이언트 인스턴스를 설정하거나 Kubernetes 시스템을 사용하여 설치하길 권장합니다. 이렇게 하면 항상 적어도 두 개의 인스턴스가 가동되어 중복성이 유지됩니다.
+Snyk는 각 통합을 위해 최소한 두 개의 별도의 브로커 클라이언트 인스턴스를 설정하거나 Kubernetes 시스템을 사용하여 설치하길 권장합니다. 이렇게 하면 항상 적어도 두 개의 인스턴스가 가동되어 중복성이 유지됩니다.
 
 ## Snyk 브로커 사용을 위한 네트워크 구성
 
@@ -76,7 +76,7 @@ Snyk 모든 API 토큰과 자격 증명을 90일마다 반복해서 바꾸는 �
 [Artifactory Repository](../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/) 및 [Nexus Repository Manager](../../scan-with-snyk/snyk-open-source/package-repository-integrations/nexus-repository-manager-connection-setup/) 브로커화된 인스턴스 또는 [Jira](install-and-configure-snyk-broker/jira-prerequisites-and-steps-to-install-and-configure-broker/setup-broker-with-jira.md) 통합의 경우, Snyk UI에서 브로커 토큰을 생성하거나 [Snyk 지원팀](https://support.snyk.io)에 문의할 수 있습니다.
 
 1. 해당 통합을 위해 **설정** > **통합**을 선택하여 브로커 토큰을 생성하십시오.
-2. 브로커 토큰이 생성된 후, 해당 통합에서, 스크린에 나타나는 알림이 \*\*Could not connect to...\*\*인 것을 확인하십시오. 이는 아직 클라이언트를 설치하거나 구성하지 않았기 때문입니다.
+2. 브로커 토큰이 생성된 후, 해당 통합에서, 스크린에 나타나는 알림이 "Could not connect to..."인 것을 확인하십시오. 이는 아직 클라이언트를 설치하거나 구성하지 않았기 때문입니다.
 3. UI에서 브로커 토큰을 복사하여 클라이언트를 설치할 때 사용하십시오.
 
 ## 여러 조직을 대상으로 브로커 활성화
