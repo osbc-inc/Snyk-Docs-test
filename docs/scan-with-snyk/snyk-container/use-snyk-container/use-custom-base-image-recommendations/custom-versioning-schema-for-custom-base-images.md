@@ -204,19 +204,23 @@ COMPARE 그룹의 수가 불일치하면, Snyk는 비교를 정확하게 수행�
 
 ## CVS의 오류
 
-`지원되지 않거나 잘못된 정규식 구문의 사용`
+`Use of unsupported or invalid regex syntax`
 
-#### 왜 발생하는가요?
+### 왜 발생하는가요?
 
 ECMAScript 구문을 준수하지 않는 표현식을 전달하는 경우이 오류가 발생할 수 있습니다.
 
 예를 들어 Python의 명명된 캡처 그룹 구문 `(?P<C0>.*)`를 사용하는 경우입니다.
 
-#### 어떻게 해결할 수 있나요특정 문자가 아닌 [양자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)와 [문자 클래스](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)를 사용하세요.
+### 어떻게 해결할 수 있나요?
+
+#### 특정 문자가 아닌 [양자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)와 [문자 클래스](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)를 사용하세요.
 
 태그를 설명하는 데 1,000자 이상이 필요하다면 CSV는 적합하지 않을 수 있습니다.
 
 다른 옵션에 대한 정보는 [Snyk 지원팀](https://support.snyk.io)에 문의하십시오.
+
+`Use of an unsupported regex feature`
 
 [^1]: 가장 중요한 것
 

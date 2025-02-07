@@ -17,9 +17,9 @@ GitHub 컨테이너 레지스트리와의 통합은 모든 Snyk 사용자를 대
 
 ### **GitHub 컨테이너 레지스트리 통합 구성**
 
-1. Snyk 계정에서 **통합(Integrations)**으로 이동합니다. **컨테이너 레지스트리(Container registries)** 섹션에서 GitHub 컨테이너 레지스트리 옵션을 찾아 클릭합니다.
+1. Snyk 계정에서 **통합(Integrations)**&#xC73C;로 이동합니다. **컨테이너 레지스트리(Container registries)** 섹션에서 GitHub 컨테이너 레지스트리 옵션을 찾아 클릭합니다.
 2. 계정 자격 증명 섹션에 GitHub 컨테이너 레지스트리 사용자 이름과 암호를 입력합니다.
-3. **컨테이너 레지스트리 이름**에 통합하려는 레지스트리의 전체 URL을 입력합니다. 마무리하려면 **저장(Save)**을 클릭합니다.
+3. **컨테이너 레지스트리 이름**에 통합하려는 레지스트리의 전체 URL을 입력합니다. 마무리하려면 **저장(Save)**&#xC744; 클릭합니다.
 
 자체 호스팅된 GitHub 컨테이너 레지스트리를 사용하는 경우에는 [Snyk 지원팀에 문의](https://support.snyk.io)하여 토큰을 제공받아야 합니다. 자세한 내용은 [자체 호스팅 컨테이너 레지스트리(Broker 포함)용 Snyk 컨테이너](../../../enterprise-setup/snyk-broker/snyk-broker-container-registry-agent/integrate-with-self-hosted-container-registries-broker.md)를 참조하십시오.
 
@@ -45,19 +45,19 @@ GitHub 컨테이너 레지스트리 이미지를 Snyk에 추가하려면 다음 
 ## **GitHub 컨테이너 레지스트리 이미지 스캔 단계**
 
 1. 계정에 로그인하고 관리하려는 해당 그룹 및 조직으로 이동합니다.
-2. **프로젝트(Projects)** 탭에서 **프로젝트 추가(Add project)**를 클릭합니다.\
+2. **프로젝트(Projects)** 탭에서 **프로젝트 추가(Add project)**&#xB97C; 클릭합니다.\
    계정에 이미 구성된 통합 목록이 표시됩니다.
-3. **GitHub 컨테이너 레지스트리** 옵션을 선택하거나 나타나지 않을 경우 **기타(Other)**를 선택합니다.
+3. **GitHub 컨테이너 레지스트리** 옵션을 선택하거나 나타나지 않을 경우 **기타(Other)**&#xB97C; 선택합니다.
 4. **테스트할 이미지를 선택하십니김**이라는 제목의 화면이 열립니다. 연결된 레지스트리의 각 리포지토리마다 그룹화된 사용 가능한 이미지가 표시됩니다.\
    **참고**: GitHub 컨테이너 레지스트리는 Docker v2 API를 따르지 않습니다. 따라서 리포지토리의 이미지를 나열하는 것은 불가능하며, 원하는 이미지를 직접 지정해야 합니다.
 5. Snyk에 가져올 이미지를 단일 또는 다중 선택합니다.\
    특정 이미지나 전체 리포지토리를 선택할 수 있습니다. 또한 이미지 이름으로 검색하여 가져올 특정 이미지를 찾을 수 있습니다.
-6. 완료하려면 페이지 상단의 **선택한 리포지토리 추가(Add selected repositories)**를 클릭합니다.\
+6. 완료하려면 페이지 상단의 **선택한 리포지토리 추가(Add selected repositories)**&#xB97C; 클릭합니다.\
    가져오는 이미지에 대한 상태 표시줄이 페이지 상단에 나타나며, 동안 작업을 계속할 수 있습니다.
 7. 가져오기가 완료되면:
    * **프로젝트** 페이지에서 **NEW** 태그가 표시된 새로 가져온 이미지를 확인할 수 있습니다. 이미지는 리포지토리별로 그룹화되며, 각 이미지는 상세한 **프로젝트** 페이지로 개별적으로 연결됩니다.
    * **가져오기 로그**가 사용 가능해지며, **프로젝트 목록** 상단에서 확인할 수 있습니다.
-   * 데이터를 보강하고 기본 이미지에 대한 권장사항을 받으려면 **설정(Settings)**에서 Dockerfile을 이미지 프로젝트에 연결할 수 있습니다. 자세한 정보는 [Dockerfile 추가 및 기본 이미지 테스트하기(Adding your Dockerfile and testing your base image)](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md)를 참조하십시오.
+   * 데이터를 보강하고 기본 이미지에 대한 권장사항을 받으려면 **설정(Settings)**&#xC5D0;서 Dockerfile을 이미지 프로젝트에 연결할 수 있습니다. 자세한 정보는 [Dockerfile 추가 및 기본 이미지 테스트하기(Adding your Dockerfile and testing your base image)](../scan-your-dockerfile/detect-vulnerable-base-images-from-your-dockerfile.md)를 참조하십시오.
 
 GitHub 컨테이너 레지스트리 가져오기는 고유한 아이콘으로 표시됩니다. **프로젝트** 뷰에서 해당 통합을 필터링하여 GitHub 컨테이너 레지스트리 프로젝트만 볼 수 있습니다.
 
