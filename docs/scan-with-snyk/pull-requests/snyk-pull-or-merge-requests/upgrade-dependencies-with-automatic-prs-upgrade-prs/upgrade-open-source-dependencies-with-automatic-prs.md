@@ -1,12 +1,12 @@
 # 자동 PR을 통한 오픈 소스 종속성 업그레이드
 
-Git 리포지토리를 가져오면 Snyk는 취약점과 라이선스, 그리고 종속성 상태 문제를 스캔하여 지속적으로 감시합니다. Snyk는 구성 설정에 따라 자동으로 pull request(PR)를 생성합니다.
+Git 리포지토리를 가져오면 Snyk은 취약점과 라이선스, 그리고 종속성 상태 문제를 스캔하여 지속적으로 감시합니다. Snyk은 구성 설정에 따라 자동으로 pull request(PR)를 생성합니다.
 
-<figure><img src="../../../../.gitbook/assets/image (435).png" alt="Snyk Bot conversation card in GitHub reporting PR raised"><figcaption><p>Snyk Bot conversation card in GitHub reporting PR raised</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (435).png" alt="Snyk Bot conversation card in GitHub reporting PR raised"><figcaption><p>깃허브 보고 PR을 위한 Snyk Bot 대화 카드 올리기</p></figcaption></figure>
 
 ## 지원되는 언어 및 SCMs
 
-Snyk는 npm, Yarn 및 Maven Central 리포지토리에 대한 **자동 종속성 업그레이드 pull request** 기능을 지원합니다. 지원하는 소스 컨트롤 관리자(SCM)는 다음과 같습니다: GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab 및 Azure Repos.
+Snyk은 npm, Yarn 및 Maven Central 리포지토리에 대한 **자동 종속성 업그레이드 pull request** 기능을 지원합니다. 지원하는 소스 컨트롤 관리자(SCM)는 다음과 같습니다: GitHub, GitHub Enterprise, GitHub Cloud App, Bitbucket Server, Bitbucket Cloud, Bitbucket Connect, GitLab 및 Azure Repos.
 
 이 기능은 Snyk Broker를 사용할 수도 있습니다. 이 기능을 사용하려면 Snyk Broker를 버전 1.4.55.0 이상으로 업그레이드해야 합니다. 자세한 정보는 [Snyk Broker 클라이언트 업그레이드](../../../../enterprise-setup/snyk-broker/upgrade-the-snyk-broker-client.md)를 참조하십시오.
 
@@ -15,18 +15,18 @@ Snyk는 npm, Yarn 및 Maven Central 리포지토리에 대한 **자동 종속성
 자동 종속성 또는 업그레이드 PRs 이는 다음과 같이 작동합니다.
 
 1. [조직 수준의 통합 설정](upgrade-open-source-dependencies-with-automatic-prs.md#enabling-the-automatic-dependency-upgrade-prs-option-for-an-entire-organization)에서 **자동 종속성 업그레이드 pull request** 옵션을 활성화해야 합니다.
-2. 리포지토리 가져오기 시, Snyk가 리포지토리를 스캔하고 결과를 제공합니다. 그 후 Snyk는 주기적으로 스캔하여 오픈 소스 프로젝트를 지속적으로 모니터링합니다. 다시 스캔하는 빈도는 프로젝트 설정에 설정된 일정에 따라 결정됩니다.
-3. 스캔마다 종속성의 새 버전이 식별되면, Snyk는 자동 업그레이드 PRs를 생성합니다.
-   * 이미 업그레이드되었거나 다른 열린 Snyk PR에서 패치된 종속성에 대해 Snyk는 새로운 업그레이드 PR을 열지 않습니다. 마찬가지로, 해당 문제에 대해 열리고 업그레이드가 이루어지기 전에 닫힌 PR에 대해서도 동일합니다.
-   * Snyk는 각 종속성마다 별도의 PR를 엽니다.
-   * 기본적으로 Snyk는 프로젝트가 다섯 개 이상의 열린 Snyk PR을 가지고 있다면 업그레이드 PR을 생성하지 않습니다. 새 PR은 생성되지 않습니다. 이 한도는 통합 또는 프로젝트 설정에서 1-10 사이로 설정할 수 있습니다. 이 한도는 업그레이드 PR에만 적용되며 Fix PR은 제한되지 않습니다.
-   * 기본적으로 Snyk는 패치 및 소규모 업그레이드만 권장합니다. 그러나 주 버전 업그레이드에 대한 권장 사항은 해당 기능이 활성화된 **설정** 페이지에서 요청할 수 있습니다.
-   * 최신 버전이 프로젝트에서 아직 발견되지 않은 취약점을 포함하는 경우, Snyk는 업그레이드를 권장하지 않습니다.
-   * 21일 미만의 버전 업그레이드에 대한 권장 사항은 Snyk가 하지 않습니다. 이렇게 함으로써 기능 버그가 도입되거나 후속으로 삭제된 버전 또는 훼손된 계정에서 릴리즈된 버전을 피할 수 있습니다.
+2. 리포지토리 가져오기 시, Snyk이 리포지토리를 스캔하고 결과를 제공합니다. 그 후 Snyk은 주기적으로 스캔하여 오픈 소스 프로젝트를 지속적으로 모니터링합니다. 다시 스캔하는 빈도는 프로젝트 설정에 설정된 일정에 따라 결정됩니다.
+3. 스캔마다 종속성의 새 버전이 식별되면, Snyk은 자동 업그레이드 PRs를 생성합니다.
+   * 이미 업그레이드되었거나 다른 열린 Snyk PR에서 패치된 종속성에 대해 Snyk은 새로운 업그레이드 PR을 열지 않습니다. 마찬가지로, 해당 문제에 대해 열리고 업그레이드가 이루어지기 전에 닫힌 PR에 대해서도 동일합니다.
+   * Snyk은 각 종속성마다 별도의 PR를 엽니다.
+   * 기본적으로 Snyk은 프로젝트가 다섯 개 이상의 열린 Snyk PR을 가지고 있다면 업그레이드 PR을 생성하지 않습니다. 새 PR은 생성되지 않습니다. 이 한도는 통합 또는 프로젝트 설정에서 1-10 사이로 설정할 수 있습니다. 이 한도는 업그레이드 PR에만 적용되며 Fix PR은 제한되지 않습니다.
+   * 기본적으로 Snyk은 패치 및 소규모 업그레이드만 권장합니다. 그러나 주 버전 업그레이드에 대한 권장 사항은 해당 기능이 활성화된 **설정** 페이지에서 요청할 수 있습니다.
+   * 최신 버전이 프로젝트에서 아직 발견되지 않은 취약점을 포함하는 경우, Snyk은 업그레이드를 권장하지 않습니다.
+   * 21일 미만의 버전 업그레이드에 대한 권장 사항은 Snyk이 하지 않습니다. 이렇게 함으로써 기능 버그가 도입되거나 후속으로 삭제된 버전 또는 훼손된 계정에서 릴리즈된 버전을 피할 수 있습니다.
 
 ## 자동 종속성 업그레이드 PRs 옵션 활성화 방법
 
-Snyk를 구성하여 종속성 건강을 정기적으로 확인하고 종속성 업그레이드를 권장하며 업그레이드에 대한 PR을 자동으로 제출할 수 있습니다. 구성 후, Snyk는 스캔된 프로젝트에 대한 종속성이 사용 가능해지면 모든 필요한 종속성에 대해 자동으로 PR을 생성합니다.
+Snyk을 구성하여 종속성 건강을 정기적으로 확인하고 종속성 업그레이드를 권장하며 업그레이드에 대한 PR을 자동으로 제출할 수 있습니다. 구성 후, Snyk은 스캔된 프로젝트에 대한 종속성이 사용 가능해지면 모든 필요한 종속성에 대해 자동으로 PR을 생성합니다.
 
 기본적으로 프로젝트 설정은 조직 설정을 상속합니다. 그러나 조직 및 프로젝트 수준의 설정이 다른 경우 프로젝트 설정이 조직 설정을 재정의합니다.
 
@@ -56,9 +56,9 @@ Snyk를 구성하여 종속성 건강을 정기적으로 확인하고 종속성 
    * **Save** – 변경 사항이 저장되어 조직에서 이 설정을 상속받은 모든 프로젝트에 적용됩니다. 사용자 정의 설정이 있는 프로젝트는 해당 변경사항에 영향받지 않습니다.
    * **Save changes and apply to all overridden Projects** – 변경 사항이 저장되어 조직의 모든 프로젝트에 적용됩니다. 사용자 정의 설정을 가진 프로젝트는 조직 설정을 상속하고 사용자 정의 설정이 무시됩니다.
 
-이제부터 Snyk가 조직의 모든 프로젝트를 스캔할 때 새 업그레이드가 가능하면 자동으로 Upgrade PR을 제출합니다.
+이제부터 Snyk이 조직의 모든 프로젝트를 스캔할 때 새 업그레이드가 가능하면 자동으로 Upgrade PR을 제출합니다.
 
-기존 Snyk Upgrade PR이나 Fix PR에 대해 더 높은 버전이 릴리스되면 기존 PR을 닫거나 병합해야만 Snyk가 새 PR을 만들 수 있습니다.
+기존 Snyk Upgrade PR이나 Fix PR에 대해 더 높은 버전이 릴리스되면 기존 PR을 닫거나 병합해야만 Snyk이 새 PR을 만들 수 있습니다.
 
 ### 특정 프로젝트에 대한 자동 종속성 업그레이드 PRs 옵션 활성화 방법
 
@@ -92,4 +92,4 @@ Snyk를 구성하여 종속성 건강을 정기적으로 확인하고 종속성 
 
 <figure><img src="../../../../.gitbook/assets/image (440).png" alt="프로젝트 수준의 자동 종속성 업그레이드 pull requests 설정"><figcaption><p>프로젝트 수준의 자동 종속성 업그레이드 pull requests 설정</p></figcaption></figure>
 
-이러한 단계를 완료하면 Snyk가 프로젝트를 스캔하고 업그레이드가 가능하면 자동으로 Upgrade PR을 제출합니다. 기존 Snyk Upgrade PR이나 Fix PR에 대해 더 높은 버전이 릴리스되면 기존 PR을 닫거나 병합해야만 Snyk가 새 PR을 만들 수 있습니다.
+이러한 단계를 완료하면 Snyk이 프로젝트를 스캔하고 업그레이드가 가능하면 자동으로 Upgrade PR을 제출합니다. 기존 Snyk Upgrade PR이나 Fix PR에 대해 더 높은 버전이 릴리스되면 기존 PR을 닫거나 병합해야만 Snyk이 새 PR을 만들 수 있습니다.

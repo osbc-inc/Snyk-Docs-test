@@ -4,7 +4,7 @@
 
 <figure><img src="https://lh7-us.googleusercontent.com/stHVnzk1ZuP6oUm0zAImt0zROcajuZMm5iB4qX7vTbHkjPWklSgD9NxUdZ6UGgT1kV-dBjrcLyOp0SP1CqFzbNuq9S7qgl4cOD6T9UwuWlEk5SWVHUiHRlO-KfAyq_UppnGNvE67p7ZsSwuWok0_2RM" alt=""><figcaption><p>폴더 제외하기</p></figcaption></figure>
 
-{Snyk Code에서 저장소를 가져올 때, `.snyk` 파일을 사용하여 가져오기에서 특정 디렉토리 및 파일을 제외할 수 있습니다. `.snyk` 파일은 쉘 매칭 패턴(정규 표현식)을 포함할 수 있는 YAML 정책 파일이며, 가져오기 프로세스에서 제외할 디렉토리 및 파일을 지정할 수 있게 합니다. `.snyk` 파일은 가져올 저장소에 생성되어야 합니다.
+Snyk Code에서 저장소를 가져올 때, `.snyk` 파일을 사용하여 가져오기에서 특정 디렉토리 및 파일을 제외할 수 있습니다. `.snyk` 파일은 쉘 매칭 패턴(정규 표현식)을 포함할 수 있는 YAML 정책 파일이며, 가져오기 프로세스에서 제외할 디렉토리 및 파일을 지정할 수 있게 합니다. `.snyk` 파일은 가져올 저장소에 생성되어야 합니다.
 
 {% hint style="info" %}
 * Synk 코드에서 `.snyk` 파일은 가져오기에서 디렉토리 및 파일을 제외하는 데만 사용됩니다. 다른 Snyk 제품처럼 취약점을 무시하거나 다른 작업에는 사용할 수 없습니다.
@@ -13,7 +13,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-생산 환경으로 배포 또는 컴파일하지 않는 경우에만 디렉토리 및 파일을 제외하는 것을 고려하세요. 제외된 파일 또는 디렉토리를 통해 존재하는 취약점이 전달되는 경우, Snyk는 잠재적인 문제를 감지하지 못할 수 있습니다.
+생산 환경으로 배포 또는 컴파일하지 않는 경우에만 디렉토리 및 파일을 제외하는 것을 고려하세요. 제외된 파일 또는 디렉토리를 통해 존재하는 취약점이 전달되는 경우, Snyk은 잠재적인 문제를 감지하지 못할 수 있습니다.
 {% endhint %}
 
 또한 이 섹션의 지침을 사용하여 [CLI 테스트](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md)에서 디렉토리 및 파일을 제외할 수 있습니다. 이는 테스트 중인 저장소에 `.snyk` 파일을 만들어 실행합니다.
@@ -65,7 +65,7 @@ exclude:
 
 1\. 가져오기를 원하는 저장소에서 `.snyk`라는 YAML 파일을 만듭니다. 예:
 
-<figure><img src="../../.gitbook/assets/%20-%20Exlude%20from%20Import%20-%20.snyk%20file%20creation%20-%202.png" alt=".snyk 파일이 있는 저장소"><figcaption><p><code>.snyk</code> 파일이 있는 저장소</p></figcaption></figure>
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fujcybzw26nXxEsgGKRPL%252FSnyk%2520Code%2520-%2520Exlude%2520from%2520Import%2520-%2520.snyk%2520file%2520creation%2520-%25202.png%3Falt%3Dmedia%26token%3D89e57b3c-c201-48a1-9090-037781daa689&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e7be9826&#x26;sv=2" alt=".snyk 파일이 있는 저장소"><figcaption><p><code>.snyk</code> 파일이 있는 저장소</p></figcaption></figure>
 
 2\. `.snyk` 파일에서 다음 구문에 따라 가져오기에서 제외할 디렉토리 또는 파일 또는 둘 다를 지정합니다:
 
@@ -96,7 +96,7 @@ exclude:
 
 * 아직 Snyk로 가져오지 않은 경우, [저장소를 가져옵니다](../snyk-code/import-project-with-snyk-code.md#snyk로-저장소-가져오기).
 
-선택한 디렉토리와/또는 파일을 제외하고 저장소가 Snyk로 가져오기됩니다.
+리포지토리는 제외하도록 선택한 디렉터리 및/또는 파일 없이 Snyk로 가져옵니다.
 
 ## **예시**: **Snyk Code 분석에서 두 파일 제외하기**
 
