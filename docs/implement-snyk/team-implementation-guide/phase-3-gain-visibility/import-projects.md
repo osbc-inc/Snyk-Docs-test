@@ -1,6 +1,6 @@
 # 프로젝트 가져오기
 
-구성된 통합에 따라서 기술 스택의 언어/패키지 관리자에 따라, Snyk을 사용하여 다음을 통해 프로젝트를 가져올 수 있습니다:
+구성된 통합에 따라서 기술 스택의 언어/패키지 관리자에 따라, Snyk를 사용하여 다음을 통해 프로젝트를 가져올 수 있습니다:
 
 * Git 리포지토리와의 소스 제어 통합
 * CI/CD를 사용하는 Snyk CLI
@@ -15,11 +15,11 @@
 자세한 내용은 [시작하기](../../../getting-started/) 및 [스캔 시작](../../../scan-with-snyk/start-scanning.md)을 참조하십시오.
 {% endhint %}
 
-귀하는 필요에 따라 Snyk이 다양한 통합 방법을 제공합니다.
+귀하는 필요에 따라 Snyk가 다양한 통합 방법을 제공합니다.
 
 ### Git 통합
 
-자세한 내용은 [Snyk을 사용한 Git 리포지토리(SCMs) 통합](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 참조하십시오.
+자세한 내용은 [Snyk를 사용한 Git 리포지토리(SCMs) 통합](../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 참조하십시오.
 
 자동 스캔을 위해 리포지토리를 연결하십시오.
 

@@ -1,4 +1,4 @@
-# 시험 제한
+# 평가판 제한 사항
 
 Snyk 14일 동안의 시험은 유료 엔터프라이즈 플랜에서 제공되는 기능의 샘플을 제공합니다. 그러나 시험이 종료될 때 원활한 경험을 제공하기 위해 특정 기능은 기능이 제한되거나 완전히 사용할 수 없을 수 있습니다.
 
@@ -16,7 +16,7 @@ Snyk AppRisk를 구현한 후 모든 필요한 정보로 채워진 인벤토리 
 * [**사용자 정의 프로젝트 태그**](../../snyk-admin/introduction-to-snyk-projects/project-tags.md)**:** 사용할 수 없음.
 * [**사용자 정의 사용자 역할**](../../snyk-admin/user-roles/user-role-management.md): 사용할 수 없음.
 * [**감사 로깅**](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md): 사용할 수 없음.
-* [** Local Engine**](../../scan-with-snyk/snyk-code/snyk-code-local-engine.md): 사용할 수 없음.
+* [**Snyk Code Local Engine**](../../scan-with-snyk/snyk-code/snyk-code-local-engine.md): 사용할 수 없음.
 * [**브로커**](../../enterprise-setup/snyk-broker/): 사용할 수 없음.
 * [**셀프 호스팅 Git**](../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/github-enterprise.md): 사용할 수 없음.
 * [**개인 레지스트리 통합**](../../scan-with-snyk/snyk-open-source/package-repository-integrations/): 사용할 수 없음.
