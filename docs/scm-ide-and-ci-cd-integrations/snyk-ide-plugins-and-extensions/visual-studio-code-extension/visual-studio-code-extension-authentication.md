@@ -17,7 +17,7 @@ Snyk은 다음 프로토콜을 지원하여 인증합니다:
 
 인증하려면 다음 단계를 따르십시오:
 
-1.  확장 프로그램이 설치된 후 \*\*\*\*을 탐색 모음에서 클릭한 다음 **연결 및 Workspace 신뢰**를 클릭하십시오:
+1.  확장 프로그램이 설치된 후 Snyk Icon을 탐색 모음에서 클릭한 다음 **연결 및 Workspace 신뢰**를 클릭하십시오:
 
     <figure><img src="../../../.gitbook/assets/SCR-20240821-qmuv.png" alt="Connect and turst workspace" width="359"><figcaption><p>연결 및 Workspace 신뢰</p></figcaption></figure>
 2.  확장 프로그램은 기본 브라우저에서 새 페이지를 열고 Snyk 계정에 로그인하라는 메시지를 표시합니다.
