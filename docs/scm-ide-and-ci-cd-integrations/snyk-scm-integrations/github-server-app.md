@@ -28,13 +28,13 @@ GitHub 서버 앱은 이른 액세스 단계에 있으며 엔터프라이즈 요
 * GitHub 조직 관리자 역할.
 * 공개 또는 비공개 GitHub 리포지토리.
 
-### GitHub 서버 앱 이점<a href="#github-server-app-benefits" id="github-server-app-benefits"></a>
+### GitHub 서버 앱 이점 <a href="#github-server-app-benefits" id="github-server-app-benefits"></a>
 
 Snyk GitHub 서버 앱은 Snyk GitHub 엔터프라이즈 통합과 비교하여 많은 기능을 개선합니다. 이에는 롤 기반의 세분화된 액세스 제어, 증가한 API 속도 제한 및 확장 및 향상된 개발 경험을 위한 진입점 생성이 포함됩니다.
 
 * **RBAC(롤 기반 액세스 제어) 규칙 준수**: GitHub 서버 앱을 사용하면 액세스 제어 메커니즘이 개별 사용자 계정에서 분리됩니다. 대신, 이는 앱 엔티티 자체에 연결됩니다. 이 분리로 인해 액세스 제어는 개별 사용자 계정에 묶이는 대신 애플리케이션 레벨에서 처리되므로 RBAC 정책의 관리 및 강제가 더 잘 이루어질 수 있습니다.
 * **세분화된 액세스 제어**: GitHub 서버 앱은 리포지토리 수준에서 액세스 권한을 세분화된 권한 제어가 가능하게 해 줍니다.
-* **증가한 API 속도 제한**: GitHub 서버 앱은 더 높은 속도 제한을 제공하여 Snyk가 더 많은 API 요청을 수행할 수 있습니다. 이 증가한 한도는 큰 규모의 사용 사례를 처리하는 데 도움이 될 것입니다. 예를 들어, 많은 프로젝트를 가진 모노 리포지토리, 많은 리포지토리를 가진 GitHub 조직 등을 다룰 때 유용할 것입니다.
+* **증가한 API 속도 제한**: GitHub 서버 앱은 더 높은 속도 제한을 제공하여 Snyk이 더 많은 API 요청을 수행할 수 있습니다. 이 증가한 한도는 큰 규모의 사용 사례를 처리하는 데 도움이 될 것입니다. 예를 들어, 많은 프로젝트를 가진 모노 리포지토리, 많은 리포지토리를 가진 GitHub 조직 등을 다룰 때 유용할 것입니다.
 * **확장 및 향상된 개발 경험을 위한 활성화 요소:**
   * 풀 리퀘스트 확인: GitHub의 Checks 탭 경험은 GitHub 클라우드 앱을 통해서만 접근이 가능하며 잠재적인 향후 PR 확인 워크플로우 개선의 일부로 SCM 네이티브 경험을 제공합니다.
   * 수정 및 업그레이드 풀 리퀘스트: Snyk에서 시작된 풀 리퀘스트는 서비스 계정이 아닌 GitHub 앱을 통해 직접 수행됩니다.
@@ -99,12 +99,12 @@ GitHub 서버 앱이 GitHub 조직에서 제거되면 Snyk의 액세스도 제�
 
 위 URL에서 다음을 교체합니다:
 
-- ``: GitHub 서버 인스턴스의 기본 URL로 교체합니다.
-- ``: Snyk 계정의 테넌시로 교체합니다. 이 값은 URL로 인코딩되어야 하며, 아래와 같이 일반적인 값을 사용할 수 있습니다:
-  - Snyk US: https%3A%2F%2Fapp.snyk.io
-  - Snyk EU: https%3A%2F%2Fapp.eu.snyk.io
-  - Snyk AU: https%3A%2F%2Fapp.au.snyk.io
-  - Snyk AWS US: https%3A%2F%2Fapp.us.snyk.io
+* `{{GITHUB-SERVER-URL}}`: GitHub 서버 인스턴스의 기본 URL로 교체합니다.
+* `{{SNYK-ENV}}`: Snyk 계정의 테넌시로 교체합니다. 이 값은 URL로 인코딩되어야 하며, 아래와 같이 일반적인 값을 사용할 수 있습니다:
+  * Snyk US: https%3A%2F%2Fapp.snyk.io
+  * Snyk EU: https%3A%2F%2Fapp.eu.snyk.io
+  * Snyk AU: https%3A%2F%2Fapp.au.snyk.io
+  * Snyk AWS US: https%3A%2F%2Fapp.us.snyk.io
 
 값을 교체한 후 해당 URL로 이동합니다. 이 URL로 이동하면 GitHub 서버 인스턴스에서 모든 필수 정보가 미리 채워진 앱 생성 화면으로 이동합니다. 그런 다음 페이지 하단으로 스크롤하여 **GitHub 앱 생성** 버튼을 클릭하여 **모든 계정**라디오 버튼이 선택되었는지 확인하십시오.
 
