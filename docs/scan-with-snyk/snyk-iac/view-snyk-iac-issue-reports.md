@@ -36,7 +36,7 @@ IaC 문제만 보려면 **문제 필터** 드롭다운에서 **구성**을 선�
 
 API 엔드포인트 [최신 문제 목록 가져오기](../../snyk-api/reference/reporting-api-v1.md#reporting-issues-latest)를 사용하여 전체 문제 목록을 볼 수 있습니다.
 
-\*\*\*\* 문제만 검색하려면 다음과 같은 본문 페이로드를 제출하세요:
+Infrastructure as Code 문제만 검색하려면 다음과 같은 본문 페이로드를 제출하세요:
 
 ```
 {

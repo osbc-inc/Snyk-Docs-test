@@ -37,8 +37,8 @@ deny[msg] {
 
     msg := {
         "publicId": "CUSTOM-RULE-1",
-        "title": "태그에서 소유자가 누락됨",
-        "severity": "중간",
+        "title": "Missing an owner from tag",
+        "severity": "medium",
         "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
@@ -130,8 +130,8 @@ deny[msg] {
     not aws_redshift_cluster_tags_present(resource)
     msg := {
         "publicId": "CUSTOM-RULE-2",
-        "title": "설명 및 소유자가 태그에서 누락됨",
-        "severity": "중간",
+        "title": "Missing a description and an owner from the tag",
+        "severity": "medium",
         "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
@@ -228,8 +228,8 @@ deny[msg] {
     aws_redshift_cluster_tags_missing(resource)
     msg := {
         "publicId": "CUSTOM-RULE-3",
-        "title": "태그에서 설명 또는 소유자가 누락됨",
-        "severity": "중간",
+        "title": "Missing a description or an owner from the tag",
+        "severity": "medium",
         "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
@@ -304,8 +304,8 @@ deny[msg] {
     aws_redshift_cluster_tags_missing(resource)
     msg := {
         "publicId": "CUSTOM-RULE-4",
-        "title": "태그에서 설명과 소유자가 누락되거나 소유자 태그가 이메일 요구 사항을 준수하지 않습니다",
-        "severity": "중간",
+        "title": "Missing a description and an owner from tag, or owner tag does not comply with email requirements",
+        "severity": "medium",
         "msg": sprintf("input.resource.aws_redshift_cluster[%s].tags", [name]),
         "issue": "",
         "impact": "",
@@ -361,8 +361,8 @@ deny[msg] {
 
     msg := {
         "publicId": "CUSTOM-RULE-5",
-        "title": "복잡한 규칙",
-        "severity": "중간",
+        "title": "Complex rule",
+        "severity": "medium",
         "msg": sprintf("input.resource.aws_redshift_cluster[%v].tags", [name]),
         "issue": "",
         "impact": "",
@@ -377,10 +377,54 @@ deny[msg] {
 
 {% code title="rules/CUSTOM-RULE-5/main.rego" %}
 ```
+package rules
+
+checkUserTag(resource){
+    not resource.tags.email
+}
+
+checkUserTag(resource){
+    resource.tags.serviceDescription
+}
+
+checkServiceTag(resource){
+    not resource.tags.serviceDescription
+}
+
+checkServiceTag(resource){
+    resource.tags.email
+}
+
+checkTags(resource){
+	count(resource.tags) == 0
+}
+
+checkTags(resource) {
+    resource.tags.type == "user"
+    checkUserTag(resource)
+} else {
+    resource.tags.type == "service"
+    checkServiceTag(resource)
+}
+
+deny[msg] {
+    resource := input.resource.aws_redshift_cluster[name]
+	checkTags(resource)
+    msg := {
+        "publicId": "CUSTOM-RULE-5",
+        "title": "Missing the right tags from for a resource of type user or service",
+        "severity": "medium",
+        "msg": sprintf("input.resource.aws_redshift_cluster[%v].tags", [name]),
+        "issue": "",
+        "impact": "",
+        "remediation": "",
+        "references": [],
+    }
+}
 ```
 {% endcode %}
 
-
+이를 XOR로 변환하려면 `else`규칙을 사용하면 됩니다:
 
 ````
 package rules
