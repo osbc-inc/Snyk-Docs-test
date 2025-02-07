@@ -1,6 +1,6 @@
 # Docker를 사용한 컨테이너 레지스트리 에이전트 고급 구성
 
-Docker를 사용하여 브로커 컨테이너 레지스트리 에이전트를 설치하는 방법에 대한 지침은 [Snyk 브로커 - 컨테이너 레지스트리 에이전트](./)를 참조하십시오. Helm 방법을 사용한 설치 지침은 [Helm을 사용한 컨테이너 레지스트리 에이전트용 브로커 설치](install-broker-for-container-registry-agent-using-helm.md)을 참조하십시오.
+Docker를 사용하여 브로커 컨테이너 레지스트리 에이전트를 설치하는 방법에 대한 지침은 [Snyk 브로커 - 컨테이너 레지스트리 에이전트](./)를 참조하십시오. Helm 방법을 사용한 설치 지침은 [Helm을 사용한 컨테이너 레지스트리 에이전트용 브로커 설치](install-broker-for-container-registry-agent-using-helm.md)를 참조하십시오.
 
 ## 컨테이너 레지스트리 에이전트 서버 **HTTPS 구성**
 
