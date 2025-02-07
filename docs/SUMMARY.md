@@ -746,7 +746,7 @@
       * [증거 그래프](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/evidence-graph.md)
       * [보기 내보내기 및 사용자 지정](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/export-and-customize-views.md)
     * [Snyk AppRisk에 대한 인사이트 설정](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/README.md)
-      * [Set up Insights: Snyk Runtime Sensor](https://docs.snyk.io/integrate-with-snyk/snyk-runtime-sensor)
+      * [Set up Insights: Snyk Runtime Sensor](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/snyk-runtime-sensor.md)
       * [인사이트 설정: 사용자 권한](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-user-permissions.md)
       * [인사이트 설정: Kubernetes 커넥터](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-kubernetes-connector.md)
       * [인사이트 설정: 이미지 스캔](manage-risk/prioritize-issues-for-fixing/set-up-insights-for-snyk-apprisk/set-up-insights-image-scanning.md)
