@@ -13,7 +13,7 @@
 GitHub Enterprise 통합은 엔터프라이즈 플랜에서만 사용할 수 있습니다. 자세한 정보는 [플랜 및 가격](https://snyk.io/plans/)을 참조하십시오.
 {% endhint %}
 
-Snyk 엔터프라이즈 플랜 고객이라면, Snyk는 GitHub Enterprise 통합을 사용할 것을 권장합니다. 자체 호스팅된 GitHub Enterprise 제품을 사용하는 경우, GitHub Enterprise 통합을 사용해야 합니다.
+Snyk 엔터프라이즈 플랜 고객이라면, Snyk GitHub Enterprise 통합을 사용할 것을 권장합니다. 자체 호스팅된 GitHub Enterprise 제품을 사용하는 경우, GitHub Enterprise 통합을 사용해야 합니다.
 
 ### GitHub Enterprise 통합 사전 준비 사항
 
@@ -36,7 +36,7 @@ GitHub Enterprise 통합을 통해 다음을 수행할 수 있습니다.
 
 ### GitHub Enterprise 통합 설정 방법
 
-Snyk를 GitHub 저장소와 연결하려면 다음 단계를 따르세요.
+Snyk GitHub 저장소와 연결하려면 다음 단계를 따르세요.
 
 1. GitHub Enterprise에서 쓰기 권한 또는 더 높은 범위의 서비스 계정을 작성하세요.\
    자세한 내용은 [GitHub 계정 유형](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts) 및 [필요한 액세스 범위](github-enterprise.md#required-access-scopes-for-snyk-github-enterprise-integration)를 참조하십시오.\
@@ -66,7 +66,7 @@ URL 뒤에 `/`와 같은 나머지 문자가 없는지 확인하세요. URL에 �
 {% endhint %}
 
 {% hint style="warning" %}
-GitHub에서 PAT 토큰이 변경되거나 만료되면 Snyk와의 통합이 작동하지 않을 수 있습니다. 이 문제를 해결하려면 Snyk의 **GitHub Enterprise Integration settings** 에서 토큰을 업데이트하십시오.
+GitHub에서 PAT 토큰이 변경되거나 만료되면 Snyk과의 통합이 작동하지 않을 수 있습니다. 이 문제를 해결하려면 Snyk의 **GitHub Enterprise Integration settings** 에서 토큰을 업데이트하십시오.
 {% endhint %}
 
 #### GitHub 저장소 가져오기 방법
@@ -159,7 +159,7 @@ PR 할당에 대한 옵션 **The last user to change the manifest file**은 Git 
 
 ### GitHub Enterprise 통합 해제 방법
 
-Snyk GitHub Enterprise 통합을 해제하면 가져온 저장소에 대한 모든 스캔이 중지되며 PR 확인을 수행할 수 없으며 Snyk Web UI에서 프로젝20;
+Snyk GitHub Enterprise 연동 연결을 해제하면 가져온 리포지토리에 대한 모든 스캔이 중지되고, PR 확인을 실행할 수 없으며, Snyk 웹 UI에서 프로젝트가 비활성화됩니다.
 
 * SAML SSO를 구성했다면 GitHub PAT를 인증하십시오. 자세한 내용은 [How to authorize your Personal Access Token and enable SSO](github-enterprise.md#how-to-authorize-your-personal-access-token-and-enable-sso) 페이지를 참조하십시오.
 

@@ -113,7 +113,7 @@ SCM 통합은 저장소 검색을 증분 방식으로 사용합니다. 즉, 동�
 통합이 유효성을 검사하면 통합 페이지에 카드가 표시되어 연결을 활성화하거나 비활성화하거나 설정을 편집하거나 구성에서 연결을 제거할 수 있습니다.
 
 {% hint style="info" %}
-초기 구성 후 권한 및 범위를 수정하는 경우 리포지토리 내에서 가져오기를 초기화하거나 변경을 구현하는 것이 중요합니다. 이 작업을 통해 Snyk가 업데이트를 인식하고 효과적으로 통합할 수 있습니다.
+초기 구성 후 권한 및 범위를 수정하는 경우 리포지토리 내에서 가져오기를 초기화하거나 변경을 구현하는 것이 중요합니다. 이 작업을 통해 Snyk 업데이트를 인식하고 효과적으로 통합할 수 있습니다.
 {% endhint %}
 
 ### Snyk Broker 사용
@@ -154,7 +154,7 @@ Snyk은 다음 SCMs와 통합하여 귀하의 코드에서의 문제와 취약�
 이 기능은 GitHub, GitHub Enterprise, GitHub Cloud App, GitLab, Bitbucket Server, Bitbucket Cloud App, Bitbucket Cloud (Legacy) 및 Azure Repos (TFS) 통합에 사용할 수 있습니다.
 {% endhint %}
 
-Workspaces 기능을 사용하면 Snyk가 구성된 SCM 통합을 통해 저장소 내용의 임시 스냅샷과 모든 커밋 메타데이터를 수용할 수 있습니다.
+Workspaces 기능을 사용하면 Snyk이 구성된 SCM 통합을 통해 저장소 내용의 임시 스냅샷과 모든 커밋 메타데이터를 수용할 수 있습니다.
 
 이 기능에 대한 자세한 내용 및 활성화 단계에 대한 정보는 [SCM 통합을 위한 Workspaces](introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md)를 참조하십시오.
 
