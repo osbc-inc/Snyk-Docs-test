@@ -15,7 +15,7 @@
 자세한 내용은 [시작하기](../../../getting-started/) 섹션 및 [CLI, Web UI 또는 AP를 사용한 스캔 시작](../../../scan-with-snyk/start-scanning.md)을 참조하세요.
 {% endhint %}
 
-Snyk은 여기에서 설명하는대로 여러 통합 방법을 제공합니다.
+Snyk는 여기에서 설명하는대로 여러 통합 방법을 제공합니다.
 
 ### Git 통합
 
