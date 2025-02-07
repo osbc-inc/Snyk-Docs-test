@@ -25,7 +25,7 @@ Ping Identity 애플리케이션을 SSO와 함께 Snyk을 사용하도록 구성
 7.  더 아래로 스크롤하여 **Single Signon Service** 세부 정보를 복사합니다.
 
     <figure><img src="../../../.gitbook/assets/5 (2).png" alt="Single Signon Service 세부 정보 복사"><figcaption><p>Single Signon Service 세부 정보 복사</p></figcaption></figure>
-8.  Snyk 포털로 돌아가서 2단계에서 복사한 단일 사인인 URL을 **로그인 URL** 필드에 붙여넣습니다. \\
+8.  Snyk 포털로 돌아가서 2단계에서 복사한 단일 사인인 URL을 **로그인 URL** 필드에 붙여넣습니다.&#x20;
 
     <figure><img src="../../../.gitbook/assets/single-sign-on-URL-field.png" alt="로그인 URL 붙여넣기"><figcaption><p>로그인 URL 붙여넣기</p></figcaption></figure>
 9.  다운로드한 인증서를 선호하는 텍스트 편집기에서 열어 텍스트를 복사하여 Snyk **X509 서명 인증서** 필드에 붙여넣고 이 SSO 연결에서 지원되는 관련 도메인을 추가하세요.\
