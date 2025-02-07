@@ -24,7 +24,7 @@ Snyk 오픈소스를 사용하여 오픈 소스 라이브러리를 스캔하기 
 
 ## 오픈 소스 라이브러리의 취약점 수정
 
-일부 언어에 대해 Snyk는 수정된 풀/병합 요청을 사용하여 취약점을 처리할 수 있습니다. 자세한 내용은 [Snyk Open Source를 통한 자동 및 수동 PR](../../pull-requests/snyk-pull-or-merge-requests/)을 참조하세요.
+일부 언어에 대해 Snyk은 수정된 풀/병합 요청을 사용하여 취약점을 처리할 수 있습니다. 자세한 내용은 [Snyk Open Source를 통한 자동 및 수동 PR](../../pull-requests/snyk-pull-or-merge-requests/)을 참조하세요.
 
 프로젝트의 **이슈** 카드로 이동합니다.
 

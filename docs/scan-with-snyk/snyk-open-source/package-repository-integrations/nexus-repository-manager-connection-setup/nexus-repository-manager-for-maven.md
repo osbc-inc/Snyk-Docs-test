@@ -8,9 +8,9 @@
 Nexus 리포지토리 관리자 통합은 [Node.js](../../../../supported-languages-package-managers-and-frameworks/javascript/#supported-frameworks-and-package-managers) (npm 및 Yarn) 및 [Maven](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/#supported-frameworks-and-package-managers) 프로젝트를 지원합니다. [개선된 Gradle SCM 스캐닝](../../../../supported-languages-package-managers-and-frameworks/java-and-kotlin/git-repositories-with-maven-and-gradle.md#improved-gradle-scm-scanning-early-access)을 위해 Maven 설정을 사용하세요.
 {% endhint %}
 
-Snyk는 Maven 프로젝트와 함께 Nexus 리포지토리 관리자를 사용할 수 있습니다.
+Snyk은 Maven 프로젝트와 함께 Nexus 리포지토리 관리자를 사용할 수 있습니다.
 
-이를 통해 Snyk는 사용자 지정 레지스트리에 호스팅된 패키지의 모든 직접 및 간접 종속성을 해결하고 더 완전하고 정확한 종속성 그래프 및 관련된 취약점을 계산할 수 있습니다.
+이를 통해 Snyk은 사용자 지정 레지스트리에 호스팅된 패키지의 모든 직접 및 간접 종속성을 해결하고 더 완전하고 정확한 종속성 그래프 및 관련된 취약점을 계산할 수 있습니다.
 
 Maven 프로젝트를 구성하여 모든 요청을 사용자 지정 패키지 저장소를 통해 미러링하거나 Maven Central과 함께 사용할 추가 저장소를 지정할 수 있습니다.
 
@@ -32,7 +32,7 @@ Nexus를 미러 또는 추가 리포지토리로 사용할 수 있습니다.
 
 **통합(Integration)** 유형을 사용하는 경우 Nexus 통합 유형을 선택하고 **저장소 이름** 및 **거울 대상** 세부 정보를 제공해야 합니다.
 
-\*\*저장소 이름(Repository Name)\*\*을 Nexus 버전에 따라 설정하십시오.
+**저장소 이름(Repository Name)**&#xC744; Nexus 버전에 따라 설정하십시오.
 
 {% tabs %}
 {% tab title="Nexus 3" %}
