@@ -15,7 +15,7 @@
 AWS CodeBuild와 Snyk CLI가 요구 사항을 충족할 것으로 확신합니다.
 {% endhint %}
 
-Snyk은 애플리케이션의 매니페스트 파일을 분석하고 Snyk 취약점 데이터베이스와 종속성 목록을 연관시킵니다. [Snyk은 오픈 소스 코드에 대한 자세한 보고서를 제공합니다](../../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md). 매니페스트 파일을 분석함으로써 Snyk는 전체 종속성 트리를 작성하여 직간접 종속성(직간접 종속성은 Snyk가 감지하는 취약성의 78%를 차지합니다)을 정확하게 식별합니다. 이를 통해 Snyk는 어떻게 취약성이 응용 프로그램에 도입되었는지 정확히 보여줄 수 있습니다.
+Snyk은 애플리케이션의 매니페스트 파일을 분석하고 Snyk 취약점 데이터베이스와 종속성 목록을 연관시킵니다. [Snyk은 오픈 소스 코드에 대한 자세한 보고서를 제공합니다](../../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md). 매니페스트 파일을 분석함으로써 Snyk은 전체 종속성 트리를 작성하여 직간접 종속성(직간접 종속성은 Snyk이 감지하는 취약성의 78%를 차지합니다)을 정확하게 식별합니다. 이를 통해 Snyk이 어떻게 취약성이 응용 프로그램에 도입되었는지 정확히 보여줄 수 있습니다.
 
 ![Snyk 테스트 보고서](../../../.gitbook/assets/prototype.png)
 

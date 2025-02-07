@@ -5,7 +5,7 @@ Snyk은 다음과 같은 이유로 CI/CD 통합을 위해 [Snyk CLI](https://git
 
 * [미리보기 채널](../../snyk-cli/releases-and-channels-for-the-snyk-cli.md#preview)을 사용하여 CLI의 진행 중인 기능을 테스트할 유연성을 갖게 됩니다.
 * CLI는 규칙적인 주기로 [안정된 릴리스](../../snyk-cli/releases-and-channels-for-the-snyk-cli.md#stable)를 제공합니다.
-* CLI를 통해 대규모로 Snyk를 배포하는 경우 [사용 사례를 확장할 수 있는 옵션](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/)을 제공합니다.
+* CLI를 통해 대규모로 Snyk을 배포하는 경우 [사용 사례를 확장할 수 있는 옵션](../../snyk-cli/scan-and-maintain-projects-using-the-cli/cli-tools/)을 제공합니다.
 {% endhint %}
 
 [CI/CD 통합을 사용하기로 결정하면,](../git-repository-and-ci-cd-integrations-comparisons.md) 일반적으로 통합을 단계적으로 채택하게 됩니다. 배포 방법을 선택하고 검사할 코드에 대한 전략을 구현합니다. [Snyk CI/CD 통합 배포 및 전략](snyk-ci-cd-integration-deployment-and-strategies/)을 참조하세요.
