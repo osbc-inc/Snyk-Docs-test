@@ -33,7 +33,7 @@ docker run --restart=always \
 ```
 
 {% hint style="info" %}
-Snyk AppRisk는 기본적으로 \*\*`false`\*\*로 설정됩니다. \*\*`true`\*\*로 설정하여 활성화하십시오.
+Snyk AppRisk는 기본적으로 `false`로 설정됩니다. `true`로 설정하여 활성화하십시오.
 {% endhint %}
 
 **Docker 실행 명령을 사용하는 대신에** GitHub 통합을 위해 환경 변수를 재정의하기 위해 파생된 Docker 이미지를 사용할 수도 있습니다. [파생된 Docker 이미지](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)를 참조하여 GitHub 통합을 위해 오버라이드할 환경 변수를 확인하십시오.
@@ -51,7 +51,7 @@ Broker 클라이언트 구성을 붙여넣어 Broker 클라이언트 컨테이�
 오픈 Fix/Upgrade PR 또는 PR/반복 테스트가 실패하는 이유 중 하나는 큰 매니페스트 파일(> 1MB)을 가져오는 것일 수 있습니다. 이 문제를 해결하려면 [Snyk Open Source 스캔 (SCA)의 대용량 매니페스트 파일 (Docker 설정)](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)의 추가 지침을 따라 브로커에 추가 변수를 활성화하십시오.
 
 {% hint style="info" %}
-가능한 최대 보안을 보장하기 위해 Snyk은 이 규칙을 기본으로 활성화하지 않습니다. 이 엔드포인트 사용은 경로에 특정 허용된 파일 이름이 포함되어 있지 않기 때문에 이 규칙의 사용은 이 리포지토리의 모든 파일에 대한 이론적 액세스를 의미합니다.
+가능한 최대 보안을 보장하기 위해 Snyk는 이 규칙을 기본으로 활성화하지 않습니다. 이 엔드포인트 사용은 경로에 특정 허용된 파일 이름이 포함되어 있지 않기 때문에 이 규칙의 사용은 이 리포지토리의 모든 파일에 대한 이론적 액세스를 의미합니다.
 {% endhint %}
 
 ### **GitHub와의 Broker에 대한 추가 문제 해결**
