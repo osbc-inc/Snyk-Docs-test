@@ -10,7 +10,7 @@ Snyk은 소스 코드 저장소에 저장된 Kubernetes 구성을 테스트하�
 
 Snyk은 통합 Git 저장소에서 가져올 때 JSON 및 YAML 형식의 Kubernetes 구성 파일을 스캔합니다.
 
-## Snyk를 구성하여 Kubernetes 구성 파일 스캔
+## Snyk을 구성하여 Kubernetes 구성 파일 스캔
 
 ### **Kubernetes 구성 파일을 스캔하기 위한 사전 요구 사항**
 
@@ -18,7 +18,7 @@ Snyk은 통합 Git 저장소에서 가져올 때 JSON 및 YAML 형식의 Kuberne
 * Git 저장소 액세스 및 권한 부여\
   자세한 내용은 [Git 저장소 (SCM) 통합](../../../../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/)을 참조하세요.
 
-### **Snyk를 구성하여 Kubernetes 구성 파일 스캔**
+### **Snyk을 구성하여 Kubernetes 구성 파일 스캔**
 
 * Snyk 웹 UI ([app.snyk.io](https://app.snyk.io))에 로그인하고 관리하려는 관련 그룹 및 조직으로 이동합니다.\
   통합은 조직별로 관리됩니다.

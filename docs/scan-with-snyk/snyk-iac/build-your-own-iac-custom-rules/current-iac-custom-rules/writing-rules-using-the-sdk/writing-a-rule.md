@@ -1,4 +1,4 @@
-# 규칙 작성
+# 규칙 작성하기
 
 ## Rego에서의 규칙
 
@@ -17,14 +17,14 @@ Policy Language에 대해 더 알아보려면 [OPA Policy Language Documentation
 
 시작하는 데 두 가지 옵션이 있습니다.
 
-1. 규칙을 작성하기 위해 필요한 파일을 생성하려면 `template` 명령을 사용하십시오:
+1.  규칙을 작성하기 위해 필요한 파일을 생성하려면 `template` 명령을 사용하십시오:
 
     ```
     snyk-iac-rules template --rule <RULE-NAME> --format <hcl2|json|yaml|tf-plan>
     ```
 
     이 명령은 제공된 구성 형식을 기반으로 규칙에 대한 틀을 생성합니다. 자세한 내용은 [템플릿 명령에 대한 문서](../sdk-reference.md#template-options)를 읽어보세요.
-2. Rego 정책을 처음부터 작성하고 본인이 예상하는 파일 및 폴더 구조와 일치하도록 일치시킵니다:
+2.  Rego 정책을 처음부터 작성하고 본인이 예상하는 파일 및 폴더 구조와 일치하도록 일치시킵니다:
 
     `rules`\
     `└── my_rule`\
@@ -42,7 +42,7 @@ Rego에서 요청을 허용하거나 거부하는 문을 작성할 수 있습니
 `allow { input.name == "alice" }` 또는 `deny { input.name == "alice" }`
 
 {% hint style="info" %}
-**`template`** 명령을 사용하여 규칙을 생성한 경우 기본 진입점은 **`rules/deny`**입니다. 이를 재정의하고 `deny` 외 다른 이름을 사용하려면 [규칙 번들링](bundling-rules.md) 섹션을 참조하십시오.
+**`template`** 명령을 사용하여 규칙을 생성한 경우 기본 진입점은 \*\*`rules/deny`\*\*입니다. 이를 재정의하고 `deny` 외 다른 이름을 사용하려면 [규칙 번들링](bundling-rules.md) 섹션을 참조하십시오.
 {% endhint %}
 
 다음은 `snyk-iac-rules template --rule NEW-RULE --format hcl2`를 실행했을 때 생성된 별도의 규칙 스켈레톤의 모습입니다:
@@ -76,17 +76,17 @@ deny[msg] {
 
 속성은 다음과 같습니다:
 
-- **publicId:** 팀별 고유한 네이밍 규칙으로, 예를 들어 COMPANY-001입니다. **이 값은 내부 Snyk 규칙과 구분하기 위해 “SNYK-”를 포함해서는 안 됩니다.**
-- **title:** 이슈를 요약하는 간단한 제목입니다.
-- **severity:** **low/medium/high/critical** 중 하나일 수 있습니다.
-- **msg:** Snyk는 자원 이름 및 속성을 변경하여 예를 들어 `input.aws_s3_bucket[%s].tags`와 일치하도록 권장합니다. `sprintf` 함수는 Rego에서 제공되며 Snyk가 발견한 문제의 정확한 위치를 설명하는 동적 오류 메시지를 제공합니다.
+* **publicId:** 팀별 고유한 네이밍 규칙으로, 예를 들어 COMPANY-001입니다. **이 값은 내부 Snyk 규칙과 구분하기 위해 “SNYK-”를 포함해서는 안 됩니다.**
+* **title:** 이슈를 요약하는 간단한 제목입니다.
+* **severity:** **low/medium/high/critical** 중 하나일 수 있습니다.
+* **msg:** Snyk는 자원 이름 및 속성을 변경하여 예를 들어 `input.aws_s3_bucket[%s].tags`와 일치하도록 권장합니다. `sprintf` 함수는 Rego에서 제공되며 Snyk가 발견한 문제의 정확한 위치를 설명하는 동적 오류 메시지를 제공합니다.
 
 다음 속성은 선택적이지만 Snyk CLI에서 스캔 결과를 향상시키는 데 사용할 수 있습니다:
 
-- **issue:** 정확한 문제에 대한 자세한 설명 문자열입니다.
-- **impact:** 이 문제를 해결하지 않았을 때의 영향에 대한 자세한 설명 문자열입니다.
-- **remediation:** 문제를 해결하는 방법에 대한 자세한 설명 문자열입니다. Snyk는 여기에 코드 스니펫을 제공하는 것을 권장합니다.
-- **references:** 문서 URL 문자열 배열을 제공할 수 있습니다.
+* **issue:** 정확한 문제에 대한 자세한 설명 문자열입니다.
+* **impact:** 이 문제를 해결하지 않았을 때의 영향에 대한 자세한 설명 문자열입니다.
+* **remediation:** 문제를 해결하는 방법에 대한 자세한 설명 문자열입니다. Snyk는 여기에 코드 스니펫을 제공하는 것을 권장합니다.
+* **references:** 문서 URL 문자열 배열을 제공할 수 있습니다.
 
 규칙의 생성된 테스트는 허용된 및 거부된 Fixture에 대해 올바른 `msg` 필드가 규칙에 의해 반환되는지 확인하기 위해 두 개의 생성된 Terraform 파일을 사용합니다.
 
@@ -146,7 +146,7 @@ deny[msg] {
 
 ## 제한 사항 및 참고 사항
 
-* Snyk는 Rego 정책을 Wasm 모듈로 컴파일하기 때문에 Wasm을 지원하는 내장 함수만 사용할 수 있습니다. 이러한 함수를 확인하는 표가 [Policy Reference Documentation](https://www.openpolicyagent.org/docs/latest/policy-reference/) 맨 아래에 있습니다.
+* Snyk은 Rego 정책을 Wasm 모듈로 컴파일하기 때문에 Wasm을 지원하는 내장 함수만 사용할 수 있습니다. 이러한 함수를 확인하는 표가 [Policy Reference Documentation](https://www.openpolicyagent.org/docs/latest/policy-reference/) 맨 아래에 있습니다.
 * 규칙은 동일한 이름으로 여러 번 정의될 수 있습니다. 파일이나 동일한 패키지 내의 별도 파일에서 정의할 수 있습니다. 예를 들어,
 
 ```
@@ -164,4 +164,5 @@ deny[msg] {
 ```
 
 이러한 규칙은 `증분적(incremental)` 규칙이라고 하며 각 정의가 누적적입니다. [Policy Reference Documentation](https://www.openpolicyagent.org/docs/latest/policy-language/#incremental-definitions)에서 증분적 정의에 대해 더 읽어볼 수 있습니다. 동일한 이름을 가진 규칙은 다른 값을 반환해야 하며 그렇지 않으면 OPA에서 오류를 반환합니다. [Policy Reference Documentation](https://www.openpolicyagent.org/docs/latest/policy-language/#complete-definitions)에서 완전한 정의에 대해 더 읽어볼 수 있습니다.
+
 * 더 복잡한 주제에 대해서는 [OPA Conflict Resolution 해결 방법](https://www.openpolicyagent.org/docs/latest/faq/#conflict-resolution)을 확인하십시오.
