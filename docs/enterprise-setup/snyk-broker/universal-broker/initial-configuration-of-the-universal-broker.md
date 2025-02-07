@@ -1,22 +1,22 @@
 # 유니버셜 브로커의 초기 구성
 
-유니버설 브로커를 구현하는 과정은 구성 방법에 상관없이 전체적인 단계는 동일합니다. `snyk-broker-config` 명령어를 사용하면 온보딩을 쉽게 할 수 있습니다. 반면에 직접 API 호출은 전반적인 Universal Broker 모델을 이해해야 합니다. 다음은 이러한 단계입니다.
+유니버설 브로커를 구현하는 과정은 구성 방법에 상관없이 전체적인 단계는 동일합니다. `snyk-broker-config` 명령어를 사용하면 온보딩을 쉽게 할 수 있습니다. 반면에 직접 API 호출은 전반적인 유니버설 브로커 모델을 이해해야 합니다. 다음은 이러한 단계입니다.
 
 {% hint style="info" %}
 사전 조건: 배포, 자격 증명 참조 및 연결을 만들기 위해 테넌트 관리자여야 합니다.
 {% endhint %}
 
 * **한 번만:** Snyk 브로커 앱을 조직에 설치합니다. 이렇게 하면 설치 ID, 클라이언트 ID 및 클라이언트 비밀번호가 반환되는데, 이는 모두 Snyk 플랫폼과 상호 작용하는 데 필요합니다. 배포를 생성하려면 조직 ID가 필요합니다.
-* **한 번만:** 테넌트 ID와 설치 ID에 대한 Universal Broker 배포를 생성합니다.
+* **한 번만:** 테넌트 ID와 설치 ID에 대한 유니버설 브로커 배포를 생성합니다.
 * **한 번만:** 연결에 필요한 자격 증명 참조를 만듭니다.
 * **한 번만:** 원하는 연결 또는 연결을 생성합니다.
 * **각 조직 통합을 위해 한 번씩:** 연결을 사용해야 하는 조직과 통합을 구성합니다.
 
-<figure><img src="../../../.gitbook/assets/image 7-121224.png" alt=""><figcaption><p>GitHub를 위한 Universal Broker 구현 단계 그림</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image 7-121224.png" alt=""><figcaption><p>GitHub를 위한 유니버셜 브로커 구현 단계 그림</p></figcaption></figure>
 
 ## `snyk-broker-config` 명령을 사용한 구성 (권장) <a href="#using-snyk-broker-config-cli" id="using-snyk-broker-config-cli"></a>
 
-`snyk-broker-config` 명령을 사용하여 Universal Broker를 구성하는 단계는 다음과 같습니다.
+`snyk-broker-config` 명령을 사용하여 유니버설 브로커를 구성하는 단계는 다음과 같습니다.
 
 {% hint style="info" %}
 이 명령을 사용하려면 Node 18 이상이 설치되어 있어야 합니다.
@@ -42,11 +42,11 @@
    * **어떤 종류의 연결을 생성하시겠습니까?** 프롬프트에 응답하여, 표시된 목록에서 생성할 연결의 유형을 선택합니다.
      * `github` 및 변형, `bitbucket` 및 변형, `gitlab`, `azure`와 같은 SCM 연결 유형 또는 컨테이너 레지스트리 연결(다음 단계 참조), 패키지 관리자 연결, Jira 및 기타 옵션이 포함됩니다.
      * 컨테이너 레지스트리 유형의 브로커 연결의 경우 CR\_AGENT\_URL을 지정하여 컨테이너 레지스트리 에이전트를 가리켜야 합니다.
-     * Universal Broker와 별도의 컨테이너 레지스트리 에이전트를 구성하고 실행해야 합니다. [컨테이너 레지스트리 에이전트를 구성 및 실행](../snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent)하는 지침을 따르세요.
+     * 유니버셜 브로커커와 별도의 컨테이너 레지스트리 에이전트를 구성하고 실행해야 합니다. [컨테이너 레지스트리 에이전트를 구성 및 실행](../snyk-broker-container-registry-agent/#configuring-and-running-the-container-registry-agent)하는 지침을 따르세요.
    * 프롬프트에 응답하여 각 필수 필드에 대한 구성을 제공합니다.
      * 연결에 사용할 사용자 친화적인 이름을 입력합니다. 공백이 허용되지 않음에 유의하세요.
      * **broker\_client-url**(브로커 클라이언트의 호스트명 및 포트, 예: https://my.broker.company.com:8000)을 입력합니다.
-     * 프롬프트에 응답하여 `github-token (민감): 사용할 자격 증명 참조를 선택하십시오. 또는 새로 만들기?`와 같은 프롬프트에 대한 응답을 제공합니다.
+     * 자격증명 참조를 입력하거나 **github-token(민감)과 같은 메시지에 대한 응답으로 CreateNew 옵션을 선택합니다: 어떤 자격증명 참조를 사용하시겠습니까?** 아니면 **새로 만들기**를 선택하시겠습니까?
    * 메시지 **Connection created** 및 **Ready to configure integrations to use this connection**을 보게 되면 브로커 클라이언트를 실행할 수 있습니다.
 8. 연결이 생성된 후에 `snyk-broker-config workflows connections integrate`을 사용하여 새로 생성된 연결을 사용하여 통합을 구성합니다. 프롬프트에 대응하여 사용할 `배포`, 사용할 **연결**, 통합하려는 조직의 `OrgID` 및 `github` 유형인 `integration ID`를 입력하세요. **integration ID**는 **Organization Integrations** 설정에서 찾을 수 있거나 [Integrations](../../../snyk-api/reference/integrations-v1.md) API를 사용하여 검색할 수 있습니다.
 
