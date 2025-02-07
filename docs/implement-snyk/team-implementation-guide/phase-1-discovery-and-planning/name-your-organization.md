@@ -15,7 +15,7 @@
 
 <div align="left"><figure><img src="../../../.gitbook/assets/determine-account-structure.png" alt="회사 계정 구조 결정" width="563"><figcaption><p>회사 계정 구조 결정</p></figcaption></figure></div>
 
-Snyk은 자산, 액세스 및 롤업 보고를 관리하기 위해 계층적 접근 방식을 사용합니다.
+Snyk는 자산, 액세스 및 롤업 보고를 관리하기 위해 계층적 접근 방식을 사용합니다.
 
 * **Snyk 그룹 -** Snyk 엔터프라이즈 고객 전용. 이는 조직을 그룹화하는 데 사용되는 최상위 엔티티입니다.
 *   **Snyk 조직**: 그룹 레벨 아래에 있으며 일반적으로 다음을 나타냅니다:

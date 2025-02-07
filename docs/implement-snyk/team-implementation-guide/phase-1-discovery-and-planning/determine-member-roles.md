@@ -2,7 +2,7 @@
 
 ## 기본 역할
 
-Snyk을 설정할 때 중요한 고려 사항은 귀하의 요구에 부합하는 [기본 사용자 역할](../../../snyk-admin/user-roles/pre-defined-roles.md)을 결정하는 것입니다.
+Snyk를 설정할 때 중요한 고려 사항은 귀하의 요구에 부합하는 [기본 사용자 역할](../../../snyk-admin/user-roles/pre-defined-roles.md)을 결정하는 것입니다.
 
 {% hint style="info" %}
 Snyk의 사용자 역할은 변경할 수 없는 고정된 권한 집합을 사용합니다.
