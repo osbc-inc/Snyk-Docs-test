@@ -1,12 +1,12 @@
 # 탐지된 Linux 취약점의 심각도 수준
 
-Linux 취약점의 [심각도 수준](../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md) (낮음, 중간, 높음, 심각)을 결정할 때, 은 다음과 같은 여러 요소를 고려합니다:
+Linux 취약점의 [심각도 수준](../../../manage-risk/prioritize-issues-for-fixing/severity-levels.md) (낮음, 중간, 높음, 심각)을 결정할 때, Snyk Container는 다음과 같은 여러 요소를 고려합니다:
 
 * Snyk 내부 분석
 * Linux 배포 보안 유지자가 제공한 심각도 평가
 * 국가 취약성 데이터베이스 (NVD)에서 평가한 취약성의 심각도
 
-특정 경우에는 NVD가 특정 Linux 배포판의 보안 유지자와 다른 CVSS 벡터 및 심각도 점수를 할당할 수 있습니다. 이때 Snyk는 상대적 중요도 기능에 의해 Linux 배포유지자가 결정한 CVSS 및 심각도를 우선시하고 사용합니다.
+특정 경우에는 NVD가 특정 Linux 배포판의 보안 유지자와 다른 CVSS 벡터 및 심각도 점수를 할당할 수 있습니다. 이때 Snyk은 상대적 중요도 기능에 의해 Linux 배포유지자가 결정한 CVSS 및 심각도를 우선시하고 사용합니다.
 
 ## 상대적 중요도 기능
 
