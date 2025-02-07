@@ -1,7 +1,7 @@
 # 사전 정의된 역할
 
 {% hint style="info" %}
-**기능 가용성**
+**기능 사용 여부**
 
 그룹 수준 역할은 Enterprise Enterprise 플랜에서만 사용할 수 있습니다. 자세한 내용은 [요금제 및 가격](https://snyk.io/plans/)을 참조하세요.
 {% endhint %}
@@ -35,121 +35,121 @@ Snyk에서 제공하는 사전 정의된 역할은 다음과 같습니다:
 
 다음 표는 각 사전 정의된 역할에 적용되는 조직 수준 권한을 나타냅니다.
 
-|  | Org Admin | Org Collaborator | Group Admin | Group Viewer |
-|---|---|---|---|---|
-| 조직 보기(View Organization) | x | x | x | x |
-| 조직 편집(Edit Organization) | x |  | x |  |
-| 조직 삭제(Remove Organization) | x |  | x |  |
-| 조직 보고서 보기(View Organization Reports) | x | x | x | x |
-| 프로젝트 보기(View Project) | x | x | x | x |
-| 프로젝트 추가(Add Project) | x | x | x |  |
-| 프로젝트 편집(Edit Project) | x | x | x |  |
-| 프로젝트 상태(Project Status) | x | x | x |  |
-| 프로젝트 테스트(Test Project) | x | x | x |  |
-| 프로젝트 이동(Move Project) | x |  | x |  |
-| 프로젝트 삭제(Remove Project) | x | x | x |  |
-| 프로젝트 기록 보기(View Project History) | x | x | x | x |
-| 프로젝트 통합 편집(Edit Project Integrations) | x |  | x |  |
-| 프로젝트 속성 편집(Edit Project Attributes) | x |  | x |  |
-| Jira 이슈 보기(View Jira Issues) | x | x | x | x |
-| Jira 이슈 생성(Create Jira Issues) | x | x | x |  |
-| 프로젝트 태그 편집(Edit Project Tags) | x | x | x |  |
-| 프로젝트 무시 보기(View Project Ignores) | x | x | x | x |
-| 프로젝트 무시 생성(Create Project Ignores) | x | x | x |  |
-| 프로젝트 무시 편집(Edit Project Ignores) | x | x | x |  |
-| 프로젝트 무시 제거(Remove Project Ignores) | x | x | x |  |
-| Pull Requests 생성(Create Pull Requests) | x | x | x |  |
-| Pull Request 체크 성공으로 표시(Mark Pull Request checks as successful) | x |  | x |  |
-| 서비스 계정 보기(View Service Accounts) | x |  | x | x |
-| 서비스 계정 생성(Create Service Accounts) | x |  | x |  |
-| 서비스 계정 편집(Edit Service Accounts) | x |  | x |  |
-| 서비스 계정 삭제(Remove Service Accounts) | x |  | x |  |
-| 사용자 보기(View Users) | x | x | x | x |
-| 사용자 초대(Invite Users) | x |  | x |  |
-| 사용자 관리(Manage Users) | x |  | x |  |
-| 사용자 추가(Add Users) | x |  | x |  |
-| 사용자 승인(Provision Users) | x |  | x |  |
-| 사용자 퇴사(User Leave) | x | x | x |  |
-| 사용자 삭제(User Remove) | x |  | x |  |
-| 통합 보기(View Integrations) | x | x | x | x |
+|                                                                 | Org Admin | Org Collaborator | Group Admin | Group Viewer |
+| --------------------------------------------------------------- | --------- | ---------------- | ----------- | ------------ |
+| 조직 보기(View Organization)                                        | x         | x                | x           | x            |
+| 조직 편집(Edit Organization)                                        | x         |                  | x           |              |
+| 조직 삭제(Remove Organization)                                      | x         |                  | x           |              |
+| 조직 보고서 보기(View Organization Reports)                            | x         | x                | x           | x            |
+| 프로젝트 보기(View Project)                                           | x         | x                | x           | x            |
+| 프로젝트 추가(Add Project)                                            | x         | x                | x           |              |
+| 프로젝트 편집(Edit Project)                                           | x         | x                | x           |              |
+| 프로젝트 상태(Project Status)                                         | x         | x                | x           |              |
+| 프로젝트 테스트(Test Project)                                          | x         | x                | x           |              |
+| 프로젝트 이동(Move Project)                                           | x         |                  | x           |              |
+| 프로젝트 삭제(Remove Project)                                         | x         | x                | x           |              |
+| 프로젝트 기록 보기(View Project History)                                | x         | x                | x           | x            |
+| 프로젝트 통합 편집(Edit Project Integrations)                           | x         |                  | x           |              |
+| 프로젝트 속성 편집(Edit Project Attributes)                             | x         |                  | x           |              |
+| Jira 이슈 보기(View Jira Issues)                                    | x         | x                | x           | x            |
+| Jira 이슈 생성(Create Jira Issues)                                  | x         | x                | x           |              |
+| 프로젝트 태그 편집(Edit Project Tags)                                   | x         | x                | x           |              |
+| 프로젝트 무시 보기(View Project Ignores)                                | x         | x                | x           | x            |
+| 프로젝트 무시 생성(Create Project Ignores)                              | x         | x                | x           |              |
+| 프로젝트 무시 편집(Edit Project Ignores)                                | x         | x                | x           |              |
+| 프로젝트 무시 제거(Remove Project Ignores)                              | x         | x                | x           |              |
+| Pull Requests 생성(Create Pull Requests)                          | x         | x                | x           |              |
+| Pull Request 체크 성공으로 표시(Mark Pull Request checks as successful) | x         |                  | x           |              |
+| 서비스 계정 보기(View Service Accounts)                                | x         |                  | x           | x            |
+| 서비스 계정 생성(Create Service Accounts)                              | x         |                  | x           |              |
+| 서비스 계정 편집(Edit Service Accounts)                                | x         |                  | x           |              |
+| 서비스 계정 삭제(Remove Service Accounts)                              | x         |                  | x           |              |
+| 사용자 보기(View Users)                                              | x         | x                | x           | x            |
+| 사용자 초대(Invite Users)                                            | x         |                  | x           |              |
+| 사용자 관리(Manage Users)                                            | x         |                  | x           |              |
+| 사용자 추가(Add Users)                                               | x         |                  | x           |              |
+| 사용자 승인(Provision Users)                                         | x         |                  | x           |              |
+| 사용자 퇴사(User Leave)                                              | x         | x                | x           |              |
+| 사용자 삭제(User Remove)                                             | x         |                  | x           |              |
+| 통합 보기(View Integrations)                                        | x         | x                | x           | x            |
 
 ## 조직 수준 권한
 
 다음 표는 각 사전 정의된 역할에 적용되는 조직 수준 권한을 자세히 설명합니다.
 
-|                       | 조직 관리자 | 조직 협력자 | 그룹 관리자 | 그룹 뷰어 |
-|-----------------------|--------------|--------------|--------------|--------------|
-| 조직 보기            | x            | x            | x            | x            |
-| 조직 편집            | x            |              | x            |              |
-| 조직 제거            | x            |              | x            |              |
-| 조직 보고서 보기    | x            | x            | x            | x            |
-| 프로젝트 보기       | x            | x            | x            | x            |
-| 프로젝트 추가       | x            | x            | x            |              |
-| 프로젝트 편집       | x            | x            | x            |              |
-| 프로젝트 상태       | x            | x            | x            |              |
-| 프로젝트 테스트     | x            | x            | x            |              |
-| 프로젝트 이동       | x            |              | x            |              |
-| 프로젝트 제거       | x            | x            | x            |              |
-| 프로젝트 기록 보기 | x            | x            | x            | x            |
-| 프로젝트 통합 편집 | x            |              | x            |              |
-| 프로젝트 속성 편집 | x            |              | x            |              |
-| Jira 이슈 보기      | x            | x            | x            | x            |
-| Jira 이슈 생성      | x            | x            | x            |              |
-| 프로젝트 태그 편집 | x            | x            | x            |              |
-| 프로젝트 무시 보기 | x            | x            | x            | x            |
-| 프로젝트 무시 생성 | x            | x            | x            |              |
-| 프로젝트 무시 편집 | x            | x            | x            |              |
-| 프로젝트 무시 제거 | x            | x            | x            |              |
-| 풀 리퀘스트 생성     | x            | x            | x            |              |
-| 풀 리퀘스트 확인 표시 | x            |              | x            |              |
-| 컬렉션 보기         | x            | x            | x            | x            |
-| 컬렉션 생성         | x            |              | x            |              |
-| 컬렉션 편집         | x            |              | x            |              |
-| 컬렉션 삭제         | x            |              | x            |              |
-| 서비스 계정 보기    | x            |              | x            | x            |
-| 서비스 계정 생성    | x            |              | x            |              |
-| 서비스 계정 편집    | x            |              | x            |              |
-| 서비스 계정 제거    | x            |              | x            |              |
-| 사용자 보기         | x            | x            | x            | x            |
-| 사용자 초대         | x            |              | x            |              |
-| 사용자 관리         | x            |              | x            |              |
-| 사용자 추가         | x            |              | x            |              |
-| 사용자 할당         | x            |              | x            |              |
-| 사용자 나가기       | x            | x            | x            |              |
-| 사용자 제거         | x            |              | x            |              |
-| 통합 보기           | x            | x            | x            | x            |
-| 통합 편집           | x            |              | x            |              |
-| 패키지 테스트       | x            | x            | x            |              |
-| 청구 보기           | x            |              | x            |              |
-| 청구 편집           | x            |              | x            |              |
-| 권리 보기           | x            | x            | x            | x            |
-| 미리보기 기능 보기 | x            | x            | x            |              |
-| 미리보기 기능 편집 | x            |              | x            |              |
-| 감사 로그 보기      | x            | x            | x            |              |
-| 아웃바운드 웹훅 보기 | x            |              | x            |              |
-| 아웃바운드 웹훅 생성 | x            |              | x            |              |
-| 아웃바운드 웹훅 제거 | x            |              | x            |              |
-| 앱 보기             | x            |              | x            |              |
-| 앱 설치             | x            |              | x            |              |
-| 앱 생성             | x            |              | x            |              |
-| 앱 편집             | x            |              | x            |              |
-| 앱 삭제             | x            |              | x            |              |
-| 환경 보기           | x            | x            | x            | x            |
-| 환경 생성           | x            |              | x            |              |
-| 환경 삭제           | x            |              | x            |              |
-| 환경 업데이트       | x            |              | x            |              |
-| 스캔 보기           | x            | x            | x            | x            |
-| 스캔 생성           | x            | x            | x            |              |
-| 리소스 보기         | x            | x            | x            | x            |
-| 아티팩트 보기       | x            | x            | x            | x            |
-| 아티팩트 생성       | x            | x            | x            |              |
-| 사용자 정의 룰 보기 | x            | x            | x            | x            |
-| 사용자 정의 룰 생성 | x            | x            | x            |              |
-| 사용자 정의 룰 편집 | x            | x            | x            |              |
-| 사용자 정의 룰 제거 | x            | x            | x            |              |
-| 컨테이너 이미지 보기 | x           |              | x            |              |
-| Kubernetes 리소스 게시 | x         |              | x            |              |
-| Snyk 학습 관리 | x               |              | x            |              |
+|                   | 조직 관리자 | 조직 협력자 | 그룹 관리자 | 그룹 뷰어 |
+| ----------------- | ------ | ------ | ------ | ----- |
+| 조직 보기             | x      | x      | x      | x     |
+| 조직 편집             | x      |        | x      |       |
+| 조직 제거             | x      |        | x      |       |
+| 조직 보고서 보기         | x      | x      | x      | x     |
+| 프로젝트 보기           | x      | x      | x      | x     |
+| 프로젝트 추가           | x      | x      | x      |       |
+| 프로젝트 편집           | x      | x      | x      |       |
+| 프로젝트 상태           | x      | x      | x      |       |
+| 프로젝트 테스트          | x      | x      | x      |       |
+| 프로젝트 이동           | x      |        | x      |       |
+| 프로젝트 제거           | x      | x      | x      |       |
+| 프로젝트 기록 보기        | x      | x      | x      | x     |
+| 프로젝트 통합 편집        | x      |        | x      |       |
+| 프로젝트 속성 편집        | x      |        | x      |       |
+| Jira 이슈 보기        | x      | x      | x      | x     |
+| Jira 이슈 생성        | x      | x      | x      |       |
+| 프로젝트 태그 편집        | x      | x      | x      |       |
+| 프로젝트 무시 보기        | x      | x      | x      | x     |
+| 프로젝트 무시 생성        | x      | x      | x      |       |
+| 프로젝트 무시 편집        | x      | x      | x      |       |
+| 프로젝트 무시 제거        | x      | x      | x      |       |
+| 풀 리퀘스트 생성         | x      | x      | x      |       |
+| 풀 리퀘스트 확인 표시      | x      |        | x      |       |
+| 컬렉션 보기            | x      | x      | x      | x     |
+| 컬렉션 생성            | x      |        | x      |       |
+| 컬렉션 편집            | x      |        | x      |       |
+| 컬렉션 삭제            | x      |        | x      |       |
+| 서비스 계정 보기         | x      |        | x      | x     |
+| 서비스 계정 생성         | x      |        | x      |       |
+| 서비스 계정 편집         | x      |        | x      |       |
+| 서비스 계정 제거         | x      |        | x      |       |
+| 사용자 보기            | x      | x      | x      | x     |
+| 사용자 초대            | x      |        | x      |       |
+| 사용자 관리            | x      |        | x      |       |
+| 사용자 추가            | x      |        | x      |       |
+| 사용자 할당            | x      |        | x      |       |
+| 사용자 나가기           | x      | x      | x      |       |
+| 사용자 제거            | x      |        | x      |       |
+| 통합 보기             | x      | x      | x      | x     |
+| 통합 편집             | x      |        | x      |       |
+| 패키지 테스트           | x      | x      | x      |       |
+| 청구 보기             | x      |        | x      |       |
+| 청구 편집             | x      |        | x      |       |
+| 권리 보기             | x      | x      | x      | x     |
+| 미리보기 기능 보기        | x      | x      | x      |       |
+| 미리보기 기능 편집        | x      |        | x      |       |
+| 감사 로그 보기          | x      | x      | x      |       |
+| 아웃바운드 웹훅 보기       | x      |        | x      |       |
+| 아웃바운드 웹훅 생성       | x      |        | x      |       |
+| 아웃바운드 웹훅 제거       | x      |        | x      |       |
+| 앱 보기              | x      |        | x      |       |
+| 앱 설치              | x      |        | x      |       |
+| 앱 생성              | x      |        | x      |       |
+| 앱 편집              | x      |        | x      |       |
+| 앱 삭제              | x      |        | x      |       |
+| 환경 보기             | x      | x      | x      | x     |
+| 환경 생성             | x      |        | x      |       |
+| 환경 삭제             | x      |        | x      |       |
+| 환경 업데이트           | x      |        | x      |       |
+| 스캔 보기             | x      | x      | x      | x     |
+| 스캔 생성             | x      | x      | x      |       |
+| 리소스 보기            | x      | x      | x      | x     |
+| 아티팩트 보기           | x      | x      | x      | x     |
+| 아티팩트 생성           | x      | x      | x      |       |
+| 사용자 정의 룰 보기       | x      | x      | x      | x     |
+| 사용자 정의 룰 생성       | x      | x      | x      |       |
+| 사용자 정의 룰 편집       | x      | x      | x      |       |
+| 사용자 정의 룰 제거       | x      | x      | x      |       |
+| 컨테이너 이미지 보기       | x      |        | x      |       |
+| Kubernetes 리소스 게시 | x      |        | x      |       |
+| Snyk 학습 관리        | x      |        | x      |       |
 
 ## 그룹 수준 권한
 
@@ -159,4 +159,4 @@ Snyk에서 제공하는 사전 정의된 역할은 다음과 같습니다:
 
 ## 테넌트 수준 권한 <a href="#tenant-level-permissions" id="tenant-level-permissions"></a>
 
-테넌트 권한은 **테넌트 멤버** 페이지에서 설정 및 관리됩니다. 개별적으로 선택할 수 있는 권한은 없으며, **Tenant Admin**, **Tenant Viewer**, **Tenant Member**의 테넌트 역할 이름만 존재합니다. 자세한 내용은 [테넌트에서 사용자 관리](Manage users in a Tenant)를 참조하세요.
+테넌트 권한은 **테넌트 멤버** 페이지에서 설정 및 관리됩니다. 개별적으로 선택할 수 있는 권한은 없으며, **Tenant Admin**, **Tenant Viewer**, **Tenant Member**의 테넌트 역할 이름만 존재합니다. 자세한 내용은 테넌트에서 사용자 관리를 참조하세요.

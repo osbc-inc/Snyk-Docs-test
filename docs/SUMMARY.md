@@ -818,7 +818,7 @@
     * [사용 설정](snyk-admin/groups-and-organizations/usage-settings.md)
   * [사용자 역할](snyk-admin/user-roles/README.md)
     * [사용자 역할 관리](snyk-admin/user-roles/user-role-management.md)
-    * [Pre-defined roles](snyk-admin/user-roles/pre-defined-roles.md)
+    * [사전 정의된 역할](snyk-admin/user-roles/pre-defined-roles.md)
     * [사용자 지정 역할 템플릿](snyk-admin/user-roles/custom-role-templates/README.md)
       * [팀 리더 역할 템플릿](snyk-admin/user-roles/custom-role-templates/team-lead-role-template.md)
       * [개발자 역할 템플릿](snyk-admin/user-roles/custom-role-templates/developer-role-template.md)
