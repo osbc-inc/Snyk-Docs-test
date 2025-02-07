@@ -220,8 +220,6 @@ ECMAScript 구문을 준수하지 않는 표현식을 전달하는 경우이 오
 
 다른 옵션에 대한 정보는 [Snyk 지원팀](https://support.snyk.io)에 문의하십시오.
 
-`Use of an unsupported regex feature`
-
 [^1]: 가장 중요한 것
 
 [^2]: 덜 중요한 것
