@@ -1,22 +1,22 @@
-# Artifactory 저장소 - Docker를 사용하여 설치 및 구성
+# Artifactory Repository - Docker를 사용한 설치 및 구성
 
 {% hint style="info" %}
 **기능 가용성**
 
-Artifactory 저장소와의 통합은 엔터프라이즈 요금제에서만 사용할 수 있습니다. 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)을 참조하세요.
+Artifactory Repository와의 통합은 엔터프라이즈 요금제에서만 사용할 수 있습니다. 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)을 참조하세요.
 {% endhint %}
 
 설치하기 전에 [전제 조건](./)과 [Docker를 사용한 설치에 대한 일반 지침](../install-and-configure-broker-using-docker.md)를 검토하세요.
 
-이 통합은 온프레미스 Artifactory 저장소 배포와의 안전한 연결을 보장하는 데 유용합니다.
+이 통합은 온프레미스 Artifactory Repository 배포와의 안전한 연결을 보장하는 데 유용합니다.
 
-Artifactory 저장소와의 비브로커 통합에 대한 정보는 [Artifactory Repository 설정](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)을 참조하십시오. Artifactory 컨테이너 레지스트리와의 브로커 통합에 대한 정보는 [Snyk 브로커 - 컨테이너 레지스트리 에이전트](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent)를 참조하십시오.
+Artifactory Repository와의 비브로커 통합에 대한 정보는 [Artifactory Repository 설정](../../../../scan-with-snyk/snyk-open-source/package-repository-integrations/artifactory-package-repository-connection-setup/)을 참조하십시오. Artifactory 컨테이너 레지스트리와의 브로커 통합에 대한 정보는 [Snyk 브로커 - 컨테이너 레지스트리 에이전트](https://docs.snyk.io/snyk-admin/snyk-broker/snyk-broker-container-registry-agent)를 참조하십시오.
 
 ## Artifactory 레지스트리에 사용할 브로커 구성
 
-Artifactory 레지스트리 배포에 브로커 클라이언트를 사용하려면 `docker pull snyk/broker:artifactory`를 **실행**하십시오. 환경 변수의 정의는 [Artifactory 저장소 - Snyk 브로커를 위한 환경 변수](artifactory-repository-environment-variables-for-snyk-broker.md)를 참조하십시오.
+Artifactory 레지스트리 배포에 브로커 클라이언트를 사용하려면 `docker pull snyk/broker:artifactory`를 **실행**하십시오. 환경 변수의 정의는 [Artifactory ](artifactory-repository-environment-variables-for-snyk-broker.md)[Repository - Snyk 브로커를 위한 환경 변수](artifactory-repository-environment-variables-for-snyk-broker.md)를 참조하십시오.
 
-## Artifactory 저장소를 위한 브로커 클라이언트 설정을 위한 Docker 실행 명령어
+## Artifactory Repository를 위한 브로커 클라이언트 설정을 위한 Docker 실행 명령어
 
 {% hint style="info" %}
 **기본값 이외의 지역에서의 멀티 테넌트 설정**\
@@ -46,7 +46,7 @@ docker run --restart=always \
 
 **Docker run 명령어 사용 대안**으로, Artifactory 통합을 위해 환경 변수를 재정의할 파생 Docker 이미지를 사용할 수 있습니다. 환경 변수에 대한 자세한 내용은 [파생 Docker 이미지](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)를 참조하십시오.
 
-## 브로커 클라이언트 컨테이너 시작 및 Artifactory 저장소와의 연결 확인
+## 브로커 클라이언트 컨테이너 시작 및 Artifactory Repository와의 연결 확인
 
 브로커 클라이언트 컨테이너를 시작하기 위해 브로커 클라이언트 구성을 붙여넣으십시오.
 

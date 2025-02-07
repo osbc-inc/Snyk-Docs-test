@@ -1,4 +1,4 @@
-# Azure Repos - Docker를 사용하여 설치하고 구성하기
+# Azure Repos - Docker를 사용하여 설치 및 구성
 
 {% hint style="info" %}
 **기능 가용성**
@@ -6,7 +6,7 @@
 Snyk Azure Repos는 Azure DevOps/TFS 2020 이상에서만 사용할 수 있습니다.
 {% endhint %}
 
-설치하기 전에 [필수 조건](/ko/) 및 Docker를 사용하여 설치하는 일반적인 지침을 검토하십시오.
+설치하기 전에 [필수 조건](../../../../../ko/) 및 Docker를 사용하여 설치하는 일반적인 지침을 검토하십시오.
 
 이 통합은 온프레미스 또는 클라우드 Azure Repos 배포와의 안전한 연결을 보장하는 데 유용합니다.
 
@@ -25,7 +25,7 @@ Azure와 함께 브로커 클라이언트를 사용하려면 [Azure](https://azu
 기본 이외의 지역에서 Snyk 브로커를 사용하려면 별도의 URL을 사용하는 환경 변수가 필요합니다. URL 및 예제에 대한 자세한 내용은 [지역 호스팅 및 데이터 잔단성, 브로커 URL](https://docs.snyk.io/working-with-snyk/regional-hosting-and-data-residency#broker-urls)를 참조하십시오.
 {% endhint %}
 
-하나의 Azure 조직에 대해 더 많은 Azure 조직이 있는 경우 각각의 Azure 조직에 대해 브로커를 배포해야 합니다. Snyk AppRisk는 기본적으로 **`false`**로 설정되어 있습니다. `true`로 설정하여 활성화하십시오.
+하나의 Azure 조직에 대해 더 많은 Azure 조직이 있는 경우 각각의 Azure 조직에 대해 브로커를 배포해야 합니다. Snyk AppRisk는 기본적으로 `false`로 설정되어 있습니다. `true`로 설정하여 활성화하십시오.
 
 ```bash
 docker run --restart=always \
