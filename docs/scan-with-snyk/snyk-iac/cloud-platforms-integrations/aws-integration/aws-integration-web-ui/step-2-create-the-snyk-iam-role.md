@@ -82,7 +82,7 @@ aws cloudformation describe-stacks \
 
 <figure><img src="../../../../../.gitbook/assets/snyk-cloud-cloudformation-create-stacks.png" alt="AWS Management Console에서 스택 생성 버튼 선택"><figcaption><p>AWS Management Console에서 스택 생성 버튼 선택</p></figcaption></figure>
 
-4\. 드롭다운 메뉴에서 \*\*새 리소스로(표준)\*\*를 선택합니다.
+4\. 드롭다운 메뉴에서 **새 리소스로(표준)**&#xB97C; 선택합니다.
 
 5\. **스택 생성** 페이지에서 **템플릿 지정** 섹션으로 이동하고 **템플릿 파일 업로드**를 선택합니다.
 
