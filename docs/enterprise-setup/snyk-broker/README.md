@@ -6,13 +6,13 @@
 Snyk 브로커는 엔터프라이즈 플랜에서만 사용 가능합니다. 자세한 정보는 [요금제 및 가격 책정](https://snyk.io/plans/)을 참조하십시오.
 {% endhint %}
 
-Snyk 브로커는 Snyk와 특별 통합 사이에 프록시 역할을 하는 오픈 소스 도구로, [snyk.io](http://snyk.io/)가 코드에 액세스하여 스캔하고 결과를 반환할 수 있도록 합니다. 브로커와 함께 지원되는 SCM 통합은 , , (Dockerfile), 및 Snyk AppRisk입니다. 자세한 정보는 [Snyk 브로커 작동 방식](./#how-snyk-broker-works)을 참조하십시오.
+Snyk 브로커는 Snyk와 특별 통합 사이에 프록시 역할을 하는 오픈 소스 도구로, [snyk.io](http://snyk.io/)가 코드에 액세스하여 스캔하고 결과를 반환할 수 있도록 합니다. 브로커와 함께 지원되는 SCM 통합은 Snyk 오픈 소스, Snyk 코드, Snyk 컨테이너(Docker파일), Snyk IaC. Snyk AppRisk입니다. 자세한 정보는 [Snyk 브로커 작동 방식](./#how-snyk-broker-works)을 참조하십시오.
 
 ## Snyk 브로커 다운로드 및 설치 방법
 
-Snyk 브로커는 [GitHub](https://github.com/snyk/broker)에 호스팅되어 특정 통합을 위한 Docker 이미지 세트로 게시됩니다. Kubernetes를 사용하는 경우, Snyk은 Snyk 브로커를 배포하기 위한 [헬름 차트](https://github.com/snyk/snyk-broker-helm)를 제공합니다. 브로커를 배포하려면 통합을 설치하고 구성해야 합니다.
+Snyk 브로커는 [GitHub](https://github.com/snyk/broker)에 호스팅되어 특정 통합을 위한 Docker 이미지 세트로 게시됩니다. Kubernetes를 사용하는 경우, Snyk는 Snyk 브로커를 배포하기 위한 [헬름 차트](https://github.com/snyk/snyk-broker-helm)를 제공합니다. 브로커를 배포하려면 통합을 설치하고 구성해야 합니다.
 
-[Helm](install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) 또는 [Docker](install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md)를 사용하여 설치하고 구성할 수 있습니다. Snyk은 Snyk 브로커 클라이언트를 실행하기 위해 Docker를 사용하거나 `npm install snyk-broker`를 실행할 수 있습니다. Snyk은은 Snyk 브로커를 배포하는 가장 간단한 방법으로 Helm을 사용하는 것을 권장합니다.
+[Helm](install-and-configure-snyk-broker/install-and-configure-broker-using-helm.md) 또는 [Docker](install-and-configure-snyk-broker/install-and-configure-broker-using-docker.md)를 사용하여 설치하고 구성할 수 있습니다. Snyk는 Snyk 브로커 클라이언트를 실행하기 위해 Docker를 사용하거나 `npm install snyk-broker`를 실행할 수 있습니다. Snyk는 Snyk 브로커를 배포하는 가장 간단한 방법으로 Helm을 사용하는 것을 권장합니다.
 
 ## **Snyk 브로커와의 통합**
 
@@ -37,9 +37,9 @@ Snyk 브로커를 사용하여 Snyk 오픈 소스를 사용하려면 브로커 �
 
 Snyk 브로커를 사용하여 다른 유형의 코드를 스캔하려면 컴포넌트나 설정을 추가하고 브로커 클라이언트 설정에 매개변수를 추가해야 합니다:
 
-* \*\*\*\* – 환경 변수 `ACCEPT_CODE=true`를 추가하여 [저장소의 Git 클론을 실행](git-clone-through-broker.md)할 수 있도록 브로커 액세스 권한을 부여합니다.
-* \*\*\*\* – [컨테이너 레지스트리 에이전트](snyk-broker-container-registry-agent/)를 추가하여 네트워크 제한된 컨테이너 레지스트리 연결을 가능하게 하고 컨테이너 이미지를 분석합니다. [Docker로 설치하는 방법](snyk-broker-container-registry-agent/) 및 [헬름으로 설치하는 방법](snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md)에 대한 지침이 있습니다.
-* \*\*Snyk \*\* – Snyk 브로커를 통해 Terraform, CloudFormation 및 Kubernetes 구성 파일을 감지하고 분석하기 위해 [`accept.json` 파일에 추가 매개변수](snyk-broker-infrastructure-as-code-detection/)를 구성합니다.
+* Snyk 코드 – 환경 변수 `ACCEPT_CODE=true`를 추가하여 [저장소의 Git 클론을 실행](git-clone-through-broker.md)할 수 있도록 브로커 액세스 권한을 부여합니다.
+* Snyk 컨테이너 – [컨테이너 레지스트리 에이전트](snyk-broker-container-registry-agent/)를 추가하여 네트워크 제한된 컨테이너 레지스트리 연결을 가능하게 하고 컨테이너 이미지를 분석합니다. [Docker로 설치하는 방법](snyk-broker-container-registry-agent/) 및 [헬름으로 설치하는 방법](snyk-broker-container-registry-agent/install-broker-for-container-registry-agent-using-helm.md)에 대한 지침이 있습니다.
+* 코드화된 Snyk 인프라 – Snyk 브로커를 통해 Terraform, CloudFormation 및 Kubernetes 구성 파일을 감지하고 분석하기 위해 [`accept.json` 파일에 추가 매개변수](snyk-broker-infrastructure-as-code-detection/)를 구성합니다.
 
 ## Snyk 브로커 작동 방식
 
