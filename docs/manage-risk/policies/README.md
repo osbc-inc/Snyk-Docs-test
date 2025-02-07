@@ -7,10 +7,10 @@
 
 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)을 참조하십시오.
 
-참고로 `.snyk` 파일은 Snyk가 오픈 소스, , 그리고 Snyk IaC 스캔에 대한 특정 분석 동작을 정의하고 CLI 및 CI/CD 플러그인에 대한 패치를 지정하는 데 사용하는 정책 파일입니다. 자세한 내용은 [The .snyk file](the-.snyk-file.md)을 참조하십시오.
+참고로 `.snyk` 파일은 Snyk이 오픈 소스, , 그리고 Snyk IaC 스캔에 대한 특정 분석 동작을 정의하고 CLI 및 CI/CD 플러그인에 대한 패치를 지정하는 데 사용하는 정책 파일입니다. 자세한 내용은 [The .snyk file](the-.snyk-file.md)을 참조하십시오.
 {% endhint %}
 
-Snyk 정책에는 Snyk가 특정 유형의 오픈 소스 문제를 만났을 때의 동작 방식을 정의하는 규칙이 포함됩니다. 정책을 사용하면 `exploit 사용 불가`, 같은 조건에 따라 문제 유형을 식별하고 해당 문제에 조치를 취할 수 있습니다. 따라서 사용자 지정 가능한 Snyk 정책을 사용하여 스캔 중 발견된 특정 문제 유형에 대한 조치를 정의할 수 있습니다.
+Snyk 정책에는 Snyk가 특정 유형의 오픈 소스 문제를 만났을 때의 동작 방식을 정의하는 규칙이 포함됩니다. 정책을 사용하면 `no exploit available`, 같은 조건에 따라 문제 유형을 식별하고 해당 문제에 조치를 취할 수 있습니다. 따라서 사용자 지정 가능한 Snyk 정책을 사용하여 스캔 중 발견된 특정 문제 유형에 대한 조치를 정의할 수 있습니다.
 
 <div align="left"><figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fgit-blob-b9765625d9be0504acad00c2d78a078465170f05%252Fimage%2520%28112%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%281%29%2520%282%29%2520%281%29%2520%282%29.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8a357553&#x26;sv=2" alt="Snyk 정책 관리자"><figcaption><p>Snyk 정책 관리자</p></figcaption></figure></div>
 

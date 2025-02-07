@@ -18,8 +18,7 @@
 `snyk ignore` 명령을 사용하여 `.snyk` 파일을 생성할 수 있습니다. 자세한 내용은 [무시](../../snyk-cli/commands/ignore.md) 명령 CLI 도움말을 참조하십시오.
 
 기존 `.snyk` 파일이 없는 경우 다음 코드로 파일을 생성하고 채울 수 있습니다:\
-`# Snyk (https://snyk.io) 정책 파일, 패치 또는 이미 알려진 취약점 무시`\
-`version: v1.25.0`
+`# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities` `version: v1.25.0`
 
 * 현재 정책 스키마 버전이므로 `version`을 `v1.25.0`으로 설정해야 합니다.
 * 무시 블록(들)은 [무시 명령 설명서](../../snyk-cli/commands/ignore.md#description)나 이 페이지의 예제에 표시된 관련 구문을 따라야 합니다.
@@ -67,7 +66,7 @@ IaC 무시 규칙에 대해서는 [.snyk 정책 파일을 사용한 IaC 무시](
 
 ### 오픈 소스 프로젝트와 함께 `.snyk` 파일 작동 방식
 
-Snyk는 SCM 통합, Snyk CLI 및 CI/CD 통합을 통한 스캔 시 Snyk 데이터베이스 및 `.snyk` 파일의 무시 규칙을 확인합니다.
+Snyk은 SCM 통합, Snyk CLI 및 CI/CD 통합을 통한 스캔 시 Snyk 데이터베이스 및 `.snyk` 파일의 무시 규칙을 확인합니다.
 
 프로젝트에 `.snyk` 파일이 있는 경우, `snyk test` 명령은 해당 파일을 무시 메커니즘으로 사용하며, 웹 UI에서 설정된 무시 대신에 사용합니다.
 
@@ -87,7 +86,7 @@ Python 버전 지원에 대한 자세한 내용은 [Python 버전 지원](../../
 오픈 소스 프로젝트와 `.snyk` 파일을 사용하는 방법에 대해 더 많은 정보를 원하시면 다음을 참조하십시오:
 
 * [CLI를 사용하여 취약점 무시](https://docs.snyk.io/snyk-cli/fix-vulnerabilities-from-the-cli/ignore-vulnerabilities-using-snyk-cli)
-* [오류 메시지: CLI를 통한 무시가이 조직에서는 활성화되지 않았습니다. 문제를 웹사이트를 통해 불평하시길 바랍니다](https://support.snyk.io/s/article/Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
+* [오류 메시지: CLI를 통한 무시가 이 조직에서는 활성화되지 않았습니다. 문제를 웹사이트를 통해 불평하시길 바랍니다](https://support.snyk.io/s/article/Error-message-Ignoring-via-the-CLI-is-not-enabled-for-this-organization-Please-ignore-issues-via-our-website)
 
 ### 오픈 소스를 위한 `.snyk` 파일 예시
 
