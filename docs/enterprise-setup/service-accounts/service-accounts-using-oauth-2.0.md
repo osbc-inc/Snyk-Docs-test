@@ -86,7 +86,7 @@ Snyk API를 사용하여 그룹 또는 조직 수준에서 `oauth_private_key_jw
 
 Snyk는 적절한 클레임으로 `private_key_jwt`를 작성하고 생성한 개인 서명 키로 서명하는 도구나 스크립트를 준비하라고 권장합니다.
 
-JWT는 `client_assertion` 속성을 위해 [클레임](https://datatracker.ietf.org/doc/html/rfc7519#section-4)이 포함되어 있어야 합니다. `aud` 클레임은 Snyk 인스턴스에 따라 다를 수 있으며, 예를 들어 `api.snyk.io` 또는 `api.eu.snyk.io` 등이 있습니다. 자세한 정보는 [지역 호스팅 및 데이터 보관](../../working-with-snyk/regional-hosting-and-data-residency.md) 을참조하십시오.
+JWT는 `client_assertion` 속성을 위해 [클레임](https://datatracker.ietf.org/doc/html/rfc7519#section-4)이 포함되어 있어야 합니다. `aud` 클레임은 Snyk 인스턴스에 따라 다를 수 있으며, 예를 들어 `api.snyk.io` 또는 `api.eu.snyk.io` 등이 있습니다. 자세한 정보는 [지역 호스팅 및 데이터 보관](../../working-with-snyk/regional-hosting-and-data-residency.md)을 참조하십시오.
 
 ### Private Key JWT 액세스 토큰 검색
 
