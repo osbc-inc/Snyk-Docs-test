@@ -1,8 +1,8 @@
-# 이슈 열(dictionary) 사전
+# 이슈 열 사전
 
 Snyk 보고서에는 수십 가지 필터 및 열(columns)이 포함되어 있어 사용자가 데이터의 정교한 표시를 개발하고 쉽게 필요한 통찰을 얻을 수 있도록 합니다. 따라서 정확한 결론을 도출하려면 사용된 열(columns)과 필터의 의미를 이해해야 합니다. 이 사전은 Snyk 이슈 상세 보고서의 이슈 열(columns) 뒤에 숨겨진 의미를 설명합니다.
 
-## 이슈 특성  <a href="#issue-characteristics" id="issue-characteristics"></a>
+## 이슈 특성 <a href="#issue-characteristics" id="issue-characteristics"></a>
 
 이슈의 주요 특성에 대해 설명합니다.
 
@@ -14,7 +14,7 @@ Snyk 보고서에는 수십 가지 필터 및 열(columns)이 포함되어 있�
   * **Baseline Issue** - 프로젝트가 모니터링되기 시작한 직후 식별된 이슈입니다.
   * **Preventable Issue** - Snyk에서 관련 문제를 감지하기 전 최소 일곱 일 동안 발생한 이슈입니다.
   * **Non Preventable Issue** - 새로운 취약성 게시 때문 등 외부 요인으로 인해 발생된 이슈입니다.
-  * **Other New Issue** - Snyk가 그들의 예방 가능성을 분류 할 수 없는 이슈들입니다. 자세한 내용은 [위험이 소개되는 방법의 구분](../enterprise-analytics/issues-analytics.md#delineation-of-how-risk-is-introduced)을 참조하십시오.
+  * **Other New Issue** - Snyk이 그들의 예방 가능성을 분류 할 수 없는 이슈들입니다. 자세한 내용은 [위험이 소개되는 방법의 구분](../enterprise-analytics/issues-analytics.md#delineation-of-how-risk-is-introduced)을 참조하십시오.
 * **ISSUE** - 다음을 포함하는:
   * **Problem Title**: Snyk 취약점 이름.
   * **Issue Type:** 이슈가 취약점, 라이선스 또는 구성과 관련이 있는지를 나타냅니다.
@@ -32,15 +32,15 @@ Snyk 보고서에는 수십 가지 필터 및 열(columns)이 포함되어 있�
 
 취약점 세부 정보는 Snyk, Mitre, NVD 또는 기타 신뢰할 수 있는 보안 기관에서 정의한 다양한 이슈 속성을 참조합니다.
 
-* **ATTACK VECTOR -** 취약성이 공격되기 가능한 맥락을 나타냅니다. 공격 벡터 및 그 값(Network, Adjacent, Local, Physical)에 대한 자세한 내용은 [사양 문서](https://www.first.org/cvss/specification-document)를 참조하십시오.&#x20;
+* **ATTACK VECTOR -** 취약성이 공격되기 가능한 맥락을 나타냅니다. 공격 벡터 및 그 값(Network, Adjacent, Local, Physical)에 대한 자세한 내용은 [사양 문서](https://www.first.org/cvss/specification-document)를 참조하십시오.
 * **CVE** - Mitre CVE ID
 * **CWE** - Mitre CWE ID
 * **EPSS SCORE** - 앞으로 30일 동안 야생에서의 공격 발생 가능성입니다.
 * **EPSS PERCENTILE** - 동일하거나 낮은 EPSS 점수를 가진 모든 취약성의 비율입니다.
 * **EXPLOIT MATURITY** - Snyk에서 확인한 공개 취약점의 존재 및 성숙도를 나타냅니다. 자세한 내용은 [프로젝트에서 exploits 보기](../prioritize-issues-for-fixing/view-exploits.md#view-exploits-in-projects)를 참조하십시오. 허용되는 값은 다음과 같습니다:
   * **Mature:** 이 취약점에 대한 Snyk의 공개 코드 exploit이 있습니다.
-  * **Proof of concept:** Snyk가 이러한 취약성을 어떻게 exploit 하는지에 대한 concept 또는 자세한 설명이 있습니다. Proof of concept 취약점 패치는 비활성화되지 않으며 찾은 곳에서 fix PR에 나타날 것입니다.
-  * **No known exploit:** Snyk가 이 취약성에 대한 concept 또는 공개 exploit을 찾지 못했습니다.
+  * **Proof of concept:** Snyk이 이러한 취약성을 어떻게 exploit 하는지에 대한 concept 또는 자세한 설명이 있습니다. Proof of concept 취약점 패치는 비활성화되지 않으며 찾은 곳에서 fix PR에 나타날 것입니다.
+  * **No known exploit:** Snyk이 이 취약성에 대한 concept 또는 공개 exploit을 찾지 못했습니다.
   * **No data**: 이슈는 취약점이 아니라 라이선스 이슈 또는 취약점 알림입니다.
 * **FIXED IN AVAILABLE** - 취약성에 대한 해결책을 포함한 새 패키지 버전이 있는지 나타냅니다.
 * **FIXED IN VERSION** - 취약성에 대한 해결책이 제공된 패키지 버전을 나타냅니다.
@@ -51,7 +51,7 @@ Snyk 보고서에는 수십 가지 필터 및 열(columns)이 포함되어 있�
 * **NVD SEVERITY** - NVD에서 평가한 취약성 심각도입니다.
 * **PACKAGE NAME AND VERSION** - 관련된 패키지 이름과 버전입니다.
 * **PROBLEM ID** - 취약성을 고유하게 식별하는 Snyk Vuln DB ID입니다.
-* **PROBLEM TITLE** - Snyk가 설명하는 취약성 이름입니다.
+* **PROBLEM TITLE** - Snyk이 설명하는 취약성 이름입니다.
 * **SEMVER VULNERABLE RANGE** - 패키지 버전의 취약 범위(semantic versioning을 기반으로 함)입니다.
 * **SNYK CVSS SCORE -** Snyk의 CVSS (공통 취약점 평가 시스템) 점수입니다.
 * **VULNERABILITY PUBLICATION DATE** - 취약점이 Snyk에서 발행된 날짜를 나타냅니다.

@@ -147,7 +147,7 @@ Snyk Learn의 [OWASP TOP 10 학습 경로](https://learn.snyk.io/learning-paths/
 {% hint style="info" %}
 **팁**
 
-* 자산 클래스의 컨텍스트를 보유하는 것은 자산 우선 순위를 정하는 데 중요합니다. 기존 및 새롭게 도입된 자산을 미리 분류하는[분류 정책](../../manage-risk/policies/assets-policies/use-cases-for-policies/classification-policy-use-case.md)을 구현하여 재고를 분류하는 것이 권장됩니다.
+* 자산 클래스의 컨텍스트를 보유하는 것은 자산 우선 순위를 정하는 데 중요합니다. 기존 및 새롭게 도입된 자산을 미리 분류하는 [분류 정책](../../manage-risk/policies/assets-policies/use-cases-for-policies/classification-policy-use-case.md)을 구현하여 재고를 분류하는 것이 권장됩니다.
 * 필터를 사용하여 특정 응용 프로그램 또는 코드 소유자 내에서 자산 클래스 분포를 좁히거나 자산 태그를 기준으로 한 액티브 리포지토리 또는 자산 그룹에 집중할 수 있습니다.
 {% endhint %}
 

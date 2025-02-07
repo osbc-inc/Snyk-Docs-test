@@ -39,7 +39,7 @@ Snowflake Data Share는 다양한 사용 사례에 활용되며 수많은 보안
    * 계정 이름.
    * 조직 이름.
    * 데이터 공유를 특정 Snyk 그룹에 제한하려는 경우 관련 그룹 ID를 언급하십시오(ID는 Snyk 그룹 설정에 있습니다).
-3. Snyk가 Snowflake 계정 세부 정보를 받은 후, 팀은 데이터 공유를 준비합니다. 데이터가 24시간 이내에 표시되도록 응답해야 합니다.
+3. Snyk이 Snowflake 계정 세부 정보를 받은 후, 팀은 데이터 공유를 준비합니다. 데이터가 24시간 이내에 표시되도록 응답해야 합니다.
 
 ### Snowflake Data Share 사용 준비 <a href="#prepare-to-consume-snowflake-data-shares" id="prepare-to-consume-snowflake-data-shares"></a>
 
@@ -72,7 +72,7 @@ Snowflake 데이터 공유에서 쿼리를 사용하는 방법에 대한 자세�
 ### 데이터 범위 및 접근성 <a href="#data-freshness" id="data-freshness"></a>
 
 * Snowflake 데이터 공유는 요청된 Snyk 그룹의 데이터 범위로 제한됩니다. 고객은 모든 Snyk 그룹 또는 특정 그룹에 대한 액세스를 요청할 수 있습니다.
-* Snyk는 공유된 Snyk 데이터베이스에 있는 요청된 Snyk 그룹의 모든 사용 가능한 데이터를 공유하는데 있어 데이터 공유 자체에 추가적인 제한은 없습니다.
+* Snyk은 공유된 Snyk 데이터베이스에 있는 요청된 Snyk 그룹의 모든 사용 가능한 데이터를 공유하는데 있어 데이터 공유 자체에 추가적인 제한은 없습니다.
 * 데이터 공유 자체는 읽기 전용 데이터베이스로 제공되며 Snowflake 표준 역할 기반 액세스 제어에 따라 접근할 수 있습니다.
 
 ### 어떤 데이터를 제공하나요? <a href="#supported-data" id="supported-data"></a>
