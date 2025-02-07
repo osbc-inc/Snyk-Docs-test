@@ -315,7 +315,7 @@
       * [IDE 및 CLI 사용량 원격 분석](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/ide-and-cli-usage-telemetry.md)
       * [Snyk 언어 서버의 구성 예시](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server/example-configurations-for-snyk-language-server.md)
     * [Snyk IDE 플러그인 릴리스 및 지원 정책](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/release-policy.md)
-    * [Troubleshooting IDEs](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/README.md)
+    * [IDE 문제 해결](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/README.md)
       * [운영 체제별 환경 변수 설정 방법 IDE 및 CLI용 운영 체제 OS](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli.md)
       * [OAuth 2.0 인증이 작동하지 않습니다.](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/how-to-set-environment-variables-by-operating-system-os-for-ides-and-cli-1.md)
       * [API 토큰을 사용한 인증이 작동하지 않습니다.](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/troubleshooting-ides/authentication-using-api-token-does-not-work.md)
