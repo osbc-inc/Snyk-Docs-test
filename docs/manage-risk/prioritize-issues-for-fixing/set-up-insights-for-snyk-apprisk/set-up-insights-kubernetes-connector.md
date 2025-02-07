@@ -78,7 +78,7 @@ Kubernetes 커넥터를 올바르게 설정했는지 확인하려면 **이슈** 
 
 ## FAQ
 
-#### [**Kubernetes 모니터**](../../../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/)**(Snyk 컨트롤러 또는 Snyk 모니터로도 불림), Snyk AppRisk용 Kubernetes 커넥터, 그리고** [**Snyk 런타임 센서**](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md)\*\* 간의 차이는 무엇인가요?\*\*
+#### [**Kubernetes 모니터**](../../../scan-with-snyk/snyk-container/kubernetes-integration/overview-of-kubernetes-integration/)**(Snyk 컨트롤러 또는 Snyk 모니터로도 불림), Snyk AppRisk용 Kubernetes 커넥터, 그리고** [**Snyk 런타임 센서**](../../snyk-apprisk/integrations-for-snyk-apprisk/snyk-runtime-sensor.md) 간의 차이는 무엇인가요?
 
 * Kubernetes **모니터**는 Kubernetes 클러스터의 워크로드에서 이미지를 추출하고 취약점을 스캔합니다. Kubernetes 모니터는 **배포된** 리스크 요인을 보고합니다.
 * Snyk AppRisk용 Kubernetes **커넥터**는 Kubernetes 클러스터의 워크로드 구성을 추출합니다. Kubernetes 커넥터는 **공개되는** 및 **배포된** 리스크 요인을 보고합니다.

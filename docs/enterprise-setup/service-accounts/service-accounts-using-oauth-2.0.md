@@ -1,4 +1,4 @@
-# OAuth 2.0을 사용한 서비스 계정
+# OAuth 2.0을 사용하는 서비스 계정
 
 {% hint style="info" %}
 **기능 가용성**\
@@ -32,38 +32,36 @@ Snyk CLI를 사용하여 `client_secret` 및 `client_id`로도 인증할 수 있
 API를 통해 OAuth 서비스 계정을 만들고 관리하는 것 외에도 웹 UI를 통해 OAuth 기반 서비스 계정을 생성할 수 있습니다. 아래 단계를 따르세요.
 
 {% hint style="info" %}
-참고: UI를 통해 OAuth 서비스 계정의 수명을 수정할 수는 없지만, API를 통해 이 작업을 수행할 수 있습니다. &#x20;
+참고: UI를 통해 OAuth 서비스 계정의 수명을 수정할 수는 없지만, API를 통해 이 작업을 수행할 수 있습니다.
 {% endhint %}
 
-1. 그룹 설정 섹션에서 **서비스 계정**을 선택합니다.&#x20;
+1. 그룹 설정 섹션에서 **서비스 계정**을 선택합니다.
 
 <figure><img src="../../.gitbook/assets/service-accounts-settings.png" alt=""><figcaption><p>서비스 계정 설정</p></figcaption></figure>
 
-2. **서비스 계정** 설정에서 **이름** 필드에 서비스 계정의 이름을 입력하고, **Role** 드롭다운에서 서비스 계정에 할당할 **Role**을 선택합니다. &#x20;
-3. **OAuth 2.0 클라이언트 자격 증명** 라디오 버튼을 선택하고 **서비스 계정 생성** 버튼을 클릭합니다. &#x20;
+2. **서비스 계정** 설정에서 **이름** 필드에 서비스 계정의 이름을 입력하고, **Role** 드롭다운에서 서비스 계정에 할당할 **Role**을 선택합니다.
+3.  **OAuth 2.0 클라이언트 자격 증명** 라디오 버튼을 선택하고 **서비스 계정 생성** 버튼을 클릭합니다.
 
     <figure><img src="../../.gitbook/assets/oath2-client-credentials.png" alt=""><figcaption><p>OAuth 2.0 클라이언트 자격 증명</p></figcaption></figure>
 4. **Client ID**와 **Client Secret**이 표시되는 창이 열립니다. 이 자격 증명을 기록하고, 나중에 검색할 수 없으므로 안전한 위치에 복사한 후 **창 닫기**를 클릭합니다.
-5. 서비스 계정이 그룹의 서비스 계정 목록에 표시됩니다.&#x20;
+5.  서비스 계정이 그룹의 서비스 계정 목록에 표시됩니다.
 
     <figure><img src="../../.gitbook/assets/service-accounts-for-group.jpg" alt=""><figcaption><p>그룹의 서비스 계정이 나열됨</p></figcaption></figure>
 
 ## UI를 통한 OAuth 기반 서비스 계정 삭제
 
-1. 그룹에서 활성화된 서비스 계정 목록에서 삭제하려는 서비스 계정을 식별합니다.&#x20;
+1. 그룹에서 활성화된 서비스 계정 목록에서 삭제하려는 서비스 계정을 식별합니다.
 2. 서비스 계정 옆에 있는 **Delete** 버튼을 클릭합니다.
-
-&#x20;
 
 <figure><img src="../../.gitbook/assets/delete.png" alt=""><figcaption><p>서비스 계정 삭제 버튼</p></figcaption></figure>
 
-3. **이 서비스 계정을 삭제하시겠습니까?**를 나타내는 창이 열립니다. 서비스 계정을 삭제하려면 **서비스 계정 삭제** 버튼을 클릭합니다.&#x20;
+3.  **이 서비스 계정을 삭제하시겠습니까?** 를 나타내는 창이 열립니다. 서비스 계정을 삭제하려면 **서비스 계정 삭제** 버튼을 클릭합니다.
 
     <figure><img src="../../.gitbook/assets/delete-service-account-confirmation.png" alt=""><figcaption><p>서비스 계정 유지 또는 삭제를 위한 확인 화면</p></figcaption></figure>
 
 서비스 계정이 삭제되었습니다.
 
-## Private Key JWT를 사용한 OAuth 2.0 &#x20;
+## Private Key JWT를 사용한 OAuth 2.0
 
 서비스 계정은 보다 전통적인 `client_secret` 대신 [OIDC Core 1.0 스펙](https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication)에 정의된 `client_assertion`의 `private_key_jwt` 형식을 사용하여 인증할 수 있습니다.
 
@@ -80,7 +78,7 @@ API를 통해 OAuth 서비스 계정을 만들고 관리하는 것 외에도 웹
 
 ### Private Key JWT 서비스 계정 작성
 
-Snyk API를 사용하여 그룹 또는 조직 수준에서 `oauth_private_key_jwt` 서비스 계정을 만들 수 있습니다. 서비스 계정을 생성하려면 공개적으로 액세스 가능한 JWKS 엔드포인트 URL 및 서비스 계정에 할당할 역할을 제공해야 합니다. 자세한 내용은 [Manage service accounts using the Snyk API](manage-service-accounts-using-the-snyk-api.md)를 참조하십시오.
+Snyk API를 사용하여 그룹 또는 조직 수준에서 `oauth_private_key_jwt` 서비스 계정을 만들 수 있습니다. 서비스 계정을 생성하려면 공개적으로 액세스 가능한 JWKS 엔드포인트 URL 및 서비스 계정에 할당할 역할을 제공해야 합니다. 자세한 내용은 [Snyk API를 사용하여 서비스 계정 관리하기](manage-service-accounts-using-the-snyk-api.md)를 참조하십시오.
 
 응답에는 다음 단계에서 필요한 `client_id`가 포함됩니다.
 
@@ -88,7 +86,7 @@ Snyk API를 사용하여 그룹 또는 조직 수준에서 `oauth_private_key_jw
 
 Snyk는 적절한 클레임으로 `private_key_jwt`를 작성하고 생성한 개인 서명 키로 서명하는 도구나 스크립트를 준비하라고 권장합니다.
 
-JWT는 `client_assertion` 속성을 위해 [클레임](https://datatracker.ietf.org/doc/html/rfc7519#section-4)이 포함되어 있어야 합니다. `aud` 클레임은 Snyk 인스턴스에 따라 다를 수 있으며, 예를 들어 `api.snyk.io` 또는 `api.eu.snyk.io` 등이 있습니다. 자세한 정보는 [Regional hosting and data residency](../../working-with-snyk/regional-hosting-and-data-residency.md)를 참조하십시오.
+JWT는 `client_assertion` 속성을 위해 [클레임](https://datatracker.ietf.org/doc/html/rfc7519#section-4)이 포함되어 있어야 합니다. `aud` 클레임은 Snyk 인스턴스에 따라 다를 수 있으며, 예를 들어 `api.snyk.io` 또는 `api.eu.snyk.io` 등이 있습니다. 자세한 정보는 [지역 호스팅 및 데이터 보관](../../working-with-snyk/regional-hosting-and-data-residency.md)을 참조하십시오.
 
 ### Private Key JWT 액세스 토큰 검색
 

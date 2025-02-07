@@ -20,7 +20,7 @@ Snyk은 프로그램 분석과 다양한 AI 기술의 조합을 사용하여 특
 
 다음 단계를 따라 Reachability analysis를 활성화하고 도달 가능한 취약점을 분석하기 시작하십시오:
 
-* 조직 **설정**에서 \*\*\*\* 섹션으로 이동합니다.
+* 조직 **설정**에서 **Snyk Open Source** 섹션으로 이동합니다.
 * **일반** 섹션에서 **Reachability analysis**를 찾습니다.
 * **Enable reachability analysis**를 활성화합니다.
 
