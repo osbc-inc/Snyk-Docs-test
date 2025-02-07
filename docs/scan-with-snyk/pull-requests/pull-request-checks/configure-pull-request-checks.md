@@ -26,8 +26,8 @@ PR Check는 조직의 테스트 횟수로 카운트됩니다. 새로운 커밋�
 PR Checks에서 변경된 코드를 다음과 같이 분석할 수 있습니다:
 
 * ([Closed Beta](../../../getting-started/snyk-release-process.md#closed-beta)) Snyk Code: 소스 코드 변경으로 특정 임계값을 초과하는 취약점이 발생합니다. 새로운 취약점이 있는지 확인하기 위해 저장소의 전체 스캔을 수행합니다.
-* Snyk 오픈소스: Snyk가 지정된 심각성을 초과하는 알려진 보안 취약점을 가진 종속성 매니페스트나 지원되는 파일을 분석합니다.
-* 오픈 소스 라이선스 확인: Snyk가 라이선스 정책 위반에 대한 구성된 정책을 기준으로 패키지 라이선스를 유효성 검사합니다.
+* Snyk 오픈소스: Snyk이 지정된 심각성을 초과하는 알려진 보안 취약점을 가진 종속성 매니페스트나 지원되는 파일을 분석합니다.
+* 오픈 소스 라이선스 확인: Snyk이 라이선스 정책 위반에 대한 구성된 정책을 기준으로 패키지 라이선스를 유효성 검사합니다.
 
 PR Checks는 또한 Snyk 코드와 오픈소스 엔진에서 지원하는 모든 프로그래밍 언어 및 프레임워크를 지원합니다. 자세한 내용은 [Snyk 코드를 위한 프로그래밍 언어 지원](../../../supported-languages-package-managers-and-frameworks/#code-analysis-snyk-code) 및 [오픈소스](../../../supported-languages-package-managers-and-frameworks/#open-source-and-licensing-snyk-open-source)을 참조하십시오.
 
@@ -65,7 +65,7 @@ Snyk와 이미 통합된 GitHub 저장소와 같은 특정 Git 저장소에 대�
 * [ ] **고 또는 심각한 심각성 문제로만 실패**: 심각성 임계값을 기준으로 추가 실패 조건을 선택합니다.
 * [ ] **문제가 해결 가능한 경우에만 실패**: PR이 Snyk에서 해결 가능한 새 취약점을 도입할 때 PR 확인에 실패하도록 설정합니다. Snyk에서 해결할 수 없는 새로운 취약점을 소개하면 PR 확인을 실패시키지 않습니다.
 
-이 설정을 켬으로 설정하면 PR 확인이 Snyk에 의해 해결 가능한 새 취약성을 도입할 때 PR 확인을 실패시킵니다. Snyk가 해당 취약성을 해결할 수 없는 경우 PR 확인은 실패하지 않습니다.
+이 설정을 켬으로 설정하면 PR 확인이 Snyk에 의해 해결 가능한 새 취약성을 도입할 때 PR 확인을 실패시킵니다. Snyk이 해당 취약성을 해결할 수 없는 경우 PR 확인은 실패하지 않습니다.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-28 at 12.06.13 (1) (1).png" alt="오픈 소스 및 라이선싱 문제를 분석하는 풀 요청 확인 설정." width="563"><figcaption><p>오픈 소스 및 라이선싱 문제를 분석하는 풀 요청 확인 설정</p></figcaption></figure>
 
