@@ -28,15 +28,15 @@
 **Slack 메시지 보내기** 작업을 설정하려면 [Incoming WebHooks 앱](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks)을 사용하거나 [자체 Slack 앱](https://api.slack.com/incoming-webhooks)을 만들어 Slack 웹훅을 생성할 수 있습니다.
 {% endhint %}
 
-**이메일 보내기** 작업을 사용자 정의하여 정책에 영향 받는 자산을 가리키는 링크와 함께 알림을 받도록 설정할 수 있습니다. 이 작업의 **본문** 필드 내에 "/"를 입력하고 **자산 링크(Link to Assets)**를 선택함으로써 이를 수행할 수 있습니다. 정책을 저장한 후, 수신된 모든 알림에서 정책에 영향을 받는 모든 자산이 나열됩니다.
+**이메일 보내기** 작업을 사용자 정의하여 정책에 영향 받는 자산을 가리키는 링크와 함께 알림을 받도록 설정할 수 있습니다. 이 작업의 **본문** 필드 내에 "/"를 입력하고 **자산 링크(Link to Assets)**&#xB97C; 선택함으로써 이를 수행할 수 있습니다. 정책을 저장한 후, 수신된 모든 알림에서 정책에 영향을 받는 모든 자산이 나열됩니다.
 
-<figure><img src="../../../../.gitbook/assets/image (509).png" alt="Snyk AppRisk - Send Email 작업에서 Link to Assets 옵션 설정 "><figcaption><p>Snyk AppRisk - Send Email 작업에서 Link to Assets 옵션 설정 </p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (509).png" alt="Snyk AppRisk - Send Email 작업에서 Link to Assets 옵션 설정"><figcaption><p>Snyk AppRisk - Send Email 작업에서 Link to Assets 옵션 설정</p></figcaption></figure>
 
 모든 필터 및 작업이 설정된 후 정책이 어떻게 보이는지는 아래에 나와 있습니다.
 
 <figure><img src="../../../../.gitbook/assets/image (508).png" alt="Snyk AppRisk - 알림 정책 설정"><figcaption><p>Snyk AppRisk - 알림 정책 설정</p></figcaption></figure>
 
-**자산에 대한 링크(Link to Assets)** 옵션을 본문 필드에 포함시킨 후 이메일 알림을 받게 됩니다. 이메일 알림에서 자산에 액세스하거나 **여기를 클릭(Click Here)**하여 집계 형태로 보거나 수 있습니다. 이메일 알림에 표시된 자산 목록은 자동으로 생성됩니다.
+**자산에 대한 링크(Link to Assets)** 옵션을 본문 필드에 포함시킨 후 이메일 알림을 받게 됩니다. 이메일 알림에서 자산에 액세스하거나 **여기를 클릭(Click Here)**&#xD558;여 집계 형태로 보거나 수 있습니다. 이메일 알림에 표시된 자산 목록은 자동으로 생성됩니다.
 
 <figure><img src="../../../../.gitbook/assets/image (510).png" alt="Snyk AppRisk - Send Email 작업의 알림 예시"><figcaption><p>Snyk AppRisk - Send Email 작업의 알림 예시</p></figcaption></figure>
 
