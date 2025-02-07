@@ -44,7 +44,7 @@ DeepCode AI Fix는 고객 데이터를 훈련 목적으로 수집하지 않고 �
 
 훈련 데이터의 품질이 최적화되도록 최선을 다하며 성능을 향상시킵니다.
 
-더 많은 정보는 Snyk이 데이터를 처리하는 방법에 관한 [Snyk이데이터를 처리하는 방법](../../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하세요.
+더 많은 정보는 Snyk이 데이터를 처리하는 방법에 관한 [Snyk이 데이터를 처리하는 방법](../../../working-with-snyk/how-snyk-handles-your-data.md)을 참조하세요.
 
 ## DeepCode AI Fix 작동 방식
 
