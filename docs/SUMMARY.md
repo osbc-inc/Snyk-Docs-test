@@ -354,7 +354,7 @@
       * [AWS CodePipeline 통합을 위한 설정 단계](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/setup-steps-for-aws-codepipeline-integration.md)
       * [AWS 코드파이프라인 검사 결과 보기](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/view-aws-codepipeline-scan-results.md)
       * [AWS 코드파이프라인 테스트 보고서 세부 정보](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/aws-codepipeline-integration-by-adding-a-snyk-scan-stage/aws-codepipeline-test-report-details.md)
-    * [Azure Pipelines integration using the Snyk Security Scan task](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/azure-pipelines-integration/README.md)
+    * [Snyk 보안 검사 작업을 사용한 Azure 파이프라인 통합](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/azure-pipelines-integration/README.md)
       * [Snyk 보안 검사 작업의 작동 방식](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/azure-pipelines-integration/how-the-snyk-security-scan-task-works.md)
       * [Azure 파이프라인을 위한 Snyk 확장 설치](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/azure-pipelines-integration/install-the-snyk-extension-for-your-azure-pipelines.md)
       * [파이프라인에 Snyk 보안 작업 추가하기](scm-ide-and-ci-cd-integrations/snyk-ci-cd-integrations/azure-pipelines-integration/add-the-snyk-security-task-to-your-pipelines.md)
