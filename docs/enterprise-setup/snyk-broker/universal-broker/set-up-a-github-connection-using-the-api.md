@@ -1,6 +1,6 @@
-# GitHub API를 사용하여 GitHub 연결 설정
+# API를 사용하여 GitHub 연결 설정하기
 
-이 페이지는 Universal Broker와 연결된 GitHub을 설정하기 위한 Snyk API 예제를 제공합니다. 필요한 통합별로 여러 연결을 반복적으로 설정할 수 있습니다.
+이 페이지는 유니버셜 브로커와 연결된 GitHub을 설정하기 위한 Snyk API 예제를 제공합니다. 필요한 통합별로 여러 연결을 반복적으로 설정할 수 있습니다.
 
 `Snyk-broker-config` 명령어를 사용하는 것이 쉬운 경험을 제공합니다. API는 자동화 및 더 많은 제어를 허용합니다. 브로커 배포, 자격 증명, 및 연결에 대한 명확한 이해가 필요합니다.
 
@@ -10,7 +10,7 @@
 
 ## 조직을 위한 Broker 앱 설치 <a href="#id-1-install-the-broker-app-on-your-org" id="id-1-install-the-broker-app-on-your-org"></a>
 
-조직 수준에서 Universal Broker 앱을 설치합니다. 그룹 수준 설치는 지원되지 않습니다. [이 조직에 Snyk 앱 설치](../../../snyk-api/reference/apps.md#orgs-org_id-apps-installs) 엔드포인트를 사용합니다. 다음은 API를 호출할 때 사용할 App ID입니다:
+조직 수준에서 유니버셜 브로커 앱을 설치합니다. 그룹 수준 설치는 지원되지 않습니다. [이 조직에 Snyk 앱 설치](../../../snyk-api/reference/apps.md#orgs-org_id-apps-installs) 엔드포인트를 사용합니다. 다음은 API를 호출할 때 사용할 App ID입니다:
 
 `Snyk Broker App ID: cb43d761-bd17-4b44-9b6c-e5b8ad077d33`
 
@@ -37,7 +37,6 @@ curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/broke
 ```
 
 위 명령을 실행하면 `DEPLOYMENT_ID`(예: `data.id`)가 반환됩니다.
-
 
 ```
 {
@@ -75,7 +74,6 @@ docker run --restart=always \
     -e BROKER_HA_MODE_ENABLED=true \
 snyk/broker:universal
 ```
-
 
 명령 실행 시 다음 메시지가 출력에 표시되어야 합니다.
 
@@ -119,7 +117,6 @@ curl --location --request POST 'https://api.snyk.io/rest/tenants/TENANT_ID/broke
     ...
 }
 ```
-
 
 한 번의 호출에서 최대 10개의 자격 증명을 생성할 수 있으며, 서로 다른 유형의 객체를 추가할 수도 있습니다.
 
