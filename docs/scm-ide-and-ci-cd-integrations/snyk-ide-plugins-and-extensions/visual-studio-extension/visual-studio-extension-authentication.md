@@ -1,6 +1,6 @@
 # Visual Studio 확장 인증
 
-프로젝트를 스캔하려면 Snyk로 인증해야 합니다.
+프로젝트를 스캔하려면 Snyk으로 인증해야 합니다.
 
 {% hint style="warning" %}
 인증하기 전에 지역을 올바르게 설정했는지 확인하세요. 자세한 내용은 [지역 호스팅 및 데이터 수용](../../../working-with-snyk/regional-hosting-and-data-residency.md)를 참조하십시오. 해당 문서에는 [지역별 URL 목록](../../../working-with-snyk/regional-hosting-and-data-residency.md#regional-urls)이 있습니다.

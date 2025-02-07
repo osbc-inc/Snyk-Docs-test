@@ -85,7 +85,7 @@ Eclipse 결과 행에 나타나는 화살표
 
 에이브러포트 close the Snyk Results panel by accident, or for some reason you do not see it, you can enable it as follows:
 
-\*\*Windows -> Show View -> Other...\*\*을 차례로 탐색하십시오.
+Windows -> Show View -> Other...을 차례로 탐색하십시오.
 
 ![Show View, Other](<../../../.gitbook/assets/Screenshot 2022-05-13 at 12.04.07.png>)
 

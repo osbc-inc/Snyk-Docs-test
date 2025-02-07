@@ -299,7 +299,7 @@
       * [Visual Studio Workspace trust](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/visual-studio-workspace-trust.md)
       * [Visual Studio 확장 프로그램으로 분석 실행](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/run-an-analysis-with-visual-studio-extension.md)
       * [Visual Studio 확장 프로그램에서 분석 결과 보기](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/view-analysis-results-from-visual-studio-extension.md)
-      * [Troubleshooting and known issues with Visual Studio extension](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/troubleshooting-and-known-issues-with-visual-studio-extension.md)
+      * [Visual Studio 확장 프로그램의 문제 해결 및 알려진 문제](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-extension/troubleshooting-and-known-issues-with-visual-studio-extension.md)
     * [Visual Studio 코드 확장자](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/README.md)
       * [Visual Studio Code 확장 프로그램 구성, 환경 변수 및 프록시](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-configuration.md)
       * [Visual Studio 코드 확장자 인증](scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension/visual-studio-code-extension-authentication.md)

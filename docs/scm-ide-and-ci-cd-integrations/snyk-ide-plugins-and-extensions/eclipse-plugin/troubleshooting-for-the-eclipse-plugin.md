@@ -1,7 +1,7 @@
-# 이클립스 플러그인에 대한 문제 해결
+# Eclipse 플러그인 문제 해결
 
 {% hint style="warning" %}
-Snyk 플러그인은 유통업체의 End Of Life (EOL)에 도달한 모든 운영 체제를 지원하지 않습니다.&#x20;
+Snyk 플러그인은 유통업체의 End Of Life (EOL)에 도달한 모든 운영 체제를 지원하지 않습니다.
 {% endhint %}
 
 ## 일반적인 문제 해결
@@ -18,7 +18,7 @@ Snyk 플러그인은 유통업체의 End Of Life (EOL)에 도달한 모든 운�
 
 추가적인 플러그인 오류 로그를 보려면:
 
-1. **Window** > **Show View** > **Others...**로 이동합니다.
+1. **Window** > **Show View** > Others...로 이동합니다.
 2. **type text filer**에 **Error Log**를 검색합니다.
 3. **Open**을 클릭하여 오류 로그 탭을 엽니다. 탭 보기에서 플러그인별로 그룹화하려면 (오른쪽 상단의 세 개의 점 메뉴 > **Group By** > **Plug-in**) `io.snyk.eclipse.plugin` 행에서 플러그인 오류를 확인할 수 있습니다.
 
@@ -32,14 +32,14 @@ Language Server의 설치 경로는 플러그인 설정에서 표시됩니다. L
 
 Snyk [Eclipse 문서](./)를 반드시 읽어보세요.
 
-### &#x20;다룰 세부 사항
+### 다룰 세부 사항
 
 * 문제 발생 여부를 CLI 터미널에서 IDE 외부에서 확인하세요.
 * 가능하면 최신 Snyk CLI 버전을 사용하세요.
 * 디버그 옵션을 사용하여 사용자의 `snyk test`와 `snyk monitor` 출력 값을 얻으세요.
 * 명령줄에서 프록시 변수를 설정하세요: `set http_proxy=<http….>`
 
-### &#x20;프록시 설정 확인
+### 프록시 설정 확인
 
 Eclipse에서 **Windows → Preferences → General → Network Connections**로 이동합니다.
 
@@ -56,7 +56,7 @@ Eclipse 플러그인 설치에 문제가 발생하는 경우, 이는 Eclipse에�
 1. JDK 17 또는 더 높은 버전을 다운로드하여 설치합니다.
 2. 공식 Eclipse 웹사이트에서 Eclipse IDE를 다운로드하여 설치합니다.
 3. Eclipse IDE가 설치된 후, Eclipse 설치 디렉터리로 이동하여 `eclipse.ini` 파일을 찾습니다.
-4. `eclipse.ini` 파일을 열고 다음을 추가합니다:
+4.  `eclipse.ini` 파일을 열고 다음을 추가합니다:
 
     `vm {JDK 17 이상 버전의 경로}\bin`
 
