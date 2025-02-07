@@ -42,7 +42,7 @@ Bitbucket Cloud 워크스페이스에 Snyk 앱을 설치하려면 Bitbucket에 �
 
     <figure><img src="../../.gitbook/assets/bitbucket-cloud-permissions_10nov2022.png" alt="Bitbucket Cloud가 Snyk 조직에 액세스 허용" width="365"><figcaption><p>Bitbucket Cloud가 Snyk 조직에 액세스 허용<br></p></figcaption></figure>
 
-    Snyk 조직에 액세스를 허용하고 난 뒤, Snyk **Organization Settings** 페이지가 열리며 Bitbucket Cloud 앱이 연결되었음이 확인됩니다.\\
+    Snyk 조직에 액세스를 허용하고 난 뒤, Snyk **Organization Settings** 페이지가 열리며 Bitbucket Cloud 앱이 연결되었음이 확인됩니다.
 
 Snyk이 Bitbucket Cloud와 통합되면 저장소 페이지에서 새 Snyk 보안 탭을 볼 수 있으며 Bitbucket에서 직접 프로젝트의 문제와 취약성을 가져오고 탐색할 수 있습니다.
 

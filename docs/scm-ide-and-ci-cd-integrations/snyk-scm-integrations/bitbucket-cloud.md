@@ -8,7 +8,7 @@ Snyk 계정에 새 통합을 추가하려면 먼저 통합을 설치할 수준 �
 ## 조직 수준 - Snyk 통합
 
 {% hint style="info" %}
-Snyk은은 더 부드러운 통합 및 장기 지원을 위해 [Bitbucket Cloud 애플리케이션](bitbucket-cloud-app.md)을 설치하거나 이관하는 것을 권장합니다.
+Snyk은 더 부드러운 통합 및 장기 지원을 위해 [Bitbucket Cloud 애플리케이션](bitbucket-cloud-app.md)을 설치하거나 이관하는 것을 권장합니다.
 {% endhint %}
 
 Bitbucket Cloud (PAT) 통합을 통해 다음을 수행할 수 있습니다.

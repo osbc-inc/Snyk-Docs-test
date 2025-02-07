@@ -21,7 +21,7 @@ Snyk GitHub 통합을 통해 가져온 프로젝트와는 달리, 읽기 전용 
 * 새로운 취약점이 도입되지 않도록 감지하고 선택적으로 차단하기 위해 발생한 모든 PR에 대해 커밋 테스트.
 * 취약점을 해결하는 데 필요한 최소한의 변경을 추천하기 위해 [자동수정 PR](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md) 사용.
 * 종속성을 최신 상태로 유지하고 새로운 취약점을 방지하며 발견된 취약점을 간소화하기 위해 [자동 종속성 업그레이드 PR](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/upgrade-dependencies-with-automatic-prs-upgrade-prs/) 사용.
-* 사용자가 선택한 구체적인 문제를 해결하기 위해 Snyk를 통해 생성된 수동 Fix PR 사용.
+* 사용자가 선택한 구체적인 문제를 해결하기 위해 Snyk 통해 생성된 수동 Fix PR 사용.
 
 ### 공개 GitHub 저장소 모니터링 방법
 

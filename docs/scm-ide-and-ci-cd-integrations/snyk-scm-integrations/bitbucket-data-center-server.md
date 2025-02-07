@@ -71,7 +71,7 @@ Snyk 풀 리퀘스트는 Bitbucket Server/Data Center 계정에서 기본 리뷰
 
 Bitbucket 인터페이스에서 열린 수동 풀 리퀘스트와 달리, Snyk Bitbucket 클라우드 통합에서는 Snyk 풀 리퀘스트가 기본 리뷰어에 자동으로 할당되지 않습니다.
 
-자세한 정보는 [새로운 수정 사항을 위한 자동 풀 리퀘스트 생성](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md)를 참조하세요.
+자세한 정보는 [새로운 수정 사항을 위한 자동 풀 리퀘스트 생성](../../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-new-fixes-fix-prs.md)을 참조하세요.
 {% endhint %}
 
 #### **풀 리퀘스트 테스트**
