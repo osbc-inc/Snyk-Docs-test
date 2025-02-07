@@ -147,59 +147,106 @@ ignore:
 
 라이선스 ID는 라이선스 문제 URL의 일부이며, 이러한 URL 예시에서 라이선스 ID는 `snyk:lic:npm:symbol:MPL-2.0`입니다: [https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0](https://snyk.io/vuln/snyk:lic:npm:symbol:MPL-2.0).
 
-## Snyk Open Source를 위한 Snyk CLI 및 `.snyk` 파일 사용
+### **Snyk CLI 및 `.snyk` 파일을 사용한 Snyk Open Source 관리**  
 
-Snyk CLI에는 `.snyk` 파일을 생성하고 보는 명령이 있습니다.
+## **Snyk CLI와 `.snyk` 파일 사용**  
 
-`snyk policy` 명령은 패키지를 위한 `.snyk` 정책을 표시합니다.
+### **사용할 CLI 명령어**  
 
-`snyk ignore` 명령은 지정된 문제를 무시하기 위해 `.snyk` 파일을 수정합니다.
+Snyk CLI는 `.snyk` 파일을 생성하고 조회하는 명령어를 제공합니다.  
+
+- `snyk policy` 명령어는 패키지의 `.snyk` 정책을 표시합니다.  
+- `snyk ignore` 명령어는 특정 문제를 무시하도록 `.snyk` 파일을 수정합니다.  
 
 ```
 snyk ignore --id='vulnerabilityID' --expiry='date-string' --reason='text string'
-```
+```  
 
-다음 예시는 `snyk ignore` 명령을 사용하여 디스크의 해당 라이브러리로 이동하는 모든 경로의 `SNYK-JS-BSON-561052` 취약점을 모두 무시하는 규칙을 생성하는 방법을 보여줍니다:
-
-```
-snyk ignore --id='SNYK-JS-BSON-561052' --expiry='2018-04-01'`--policy-path=/path/path/file.` 옵션을 사용하여 취약점을 성공적으로 무시하지 못한 경우가 있습니다.
-
-완전한 명령문은 다음과 같아야 합니다 `snyk ignore --id=IssueID [--expiry=expiry] [--reason='무시하는 이유'] [--policy-path=/path/path/file].`
-
-## `.snyk` 파일의 구문
-
-`.snyk` 파일은 다음과 같은 최상위 키를 갖습니다:
-
-* `language-settings:`
-* `ignore:`
-* `patch:`
-
-`language-settings:` 값은 현재 사용 중인 Python 버전입니다. 이 페이지의 [Python 언어 버전 설정](the-.snyk-file.md#set-the-language-version-for-python) 섹션의 예시를 참조하세요.&#x20;
-
-`ignore:`는 다음과 같은 형식의 무시 규칙입니다:
+다음 예제는 `SNYK-JS-BSON-561052` 취약점을 무시하는 규칙을 생성하는 명령어입니다. 이 규칙은 디스크상의 모든 경로에서 해당 라이브러리를 무시하도록 설정합니다.  
 
 ```
+snyk ignore --id='SNYK-JS-BSON-561052' --expiry='2018-04-01' --reason='testing'
+```  
 
-ignore: snyk-vulnid: - > 구분자를 사용한 라이브러리 경로: reason: '텍스트 문자열' expires: 'YYYY-MM-DDThh:mm:ss.fffZ'
+### **Monorepo 및 복잡한 프로젝트에서 `.snyk` 파일 사용**  
 
-```
+Snyk CLI는 `.snyk` 파일이 분석 중인 매니페스트(manifest)에 적용된다고 가정합니다. 그러나 복잡한 프로젝트나 monorepo의 경우 여러 개의 매니페스트가 하위 폴더에 있을 수 있으며, 중앙 집중식 무시 정책을 사용하고 싶을 수도 있습니다. `.snyk` 파일은 프로젝트 루트에 위치해야 하며, 매니페스트 파일과 함께 있어야 합니다.  
 
-`expires` 필드는 선택 사항입니다. 영구적으로 무시가 필요한 경우 이 필드를 생략해야 합니다. 아래 형식처럼 작성하세요:
+만약 `.snyk` 파일이 프로젝트 루트에 존재하지 않는 경우(예: 중앙 집중식 정책 사용), `--policy-path` 옵션을 사용하여 경로를 명시적으로 지정해야 합니다.  
 
-```
-
-ignore: snyk-vulnid: - > 구분자를 사용한 라이브러리 경로: reason: '텍스트 문자열'
-
-```
-
-`patch:`는 다음과 같은 형식의 패치입니다:
+CLI를 사용하여 `.snyk` 무시 정책을 생성했는데 Snyk가 취약점을 성공적으로 무시하지 않는다면, 다음 옵션을 추가하십시오.  
 
 ```
+--policy-path=/path/path/file
+```  
 
+전체 명령어는 다음과 같습니다.  
+
+```
+snyk ignore --id=IssueID [--expiry=expiry] [--reason='reason for ignoring'] [--policy-path=/path/path/file]
+```  
+
+---
+
+## **데이터베이스의 무시 규칙을 재정의하는 방법**  
+
+프로젝트에 `.snyk` 파일이 있으면 `snyk test` CLI 명령어는 해당 파일을 무시 규칙(ignore mechanism)으로 사용하며, 웹 UI에서 설정한 무시 규칙을 덮어씁니다. 즉, `.snyk` 파일이 있는 프로젝트에서 `snyk test` 명령어를 실행하면 Snyk Web UI에서 설정한 모든 무시 설정이 무시됩니다.  
+
+그러나 `.snyk` 파일이 포함된 프로젝트가 SCM(Source Control Management)에 있는 경우, Snyk는 데이터베이스의 무시 규칙과 `.snyk` 파일의 무시 규칙을 모두 고려합니다.  
+
+### **관리자 사용자만 무시 규칙을 변경하도록 설정하는 방법**  
+
+웹 UI에서 설정된 무시 규칙을 `.snyk` 파일을 통해 재정의하려면, **관리자 사용자만** 무시 규칙을 변경할 수 있도록 설정해야 합니다. 이를 위해 다음 단계를 수행하십시오.  
+
+1. Snyk 계정에 로그인합니다.  
+2. **Settings** 메뉴에서 **General**을 선택합니다.  
+3. 다음 옵션 중 하나를 선택합니다.  
+   - **Admin users only** - 관리자만 무시 설정을 변경할 수 있습니다.  
+   - **All users in any environment** - 모든 사용자가 무시 설정을 변경할 수 있습니다.  
+
+---
+
+## **`.snyk` 파일의 문법(Syntax)**  
+
+`.snyk` 파일의 최상위 키는 다음과 같습니다.  
+
+- `language-settings:`  
+- `ignore:`  
+- `patch:`  
+
+### **`language-settings:`**  
+이 값은 현재 사용 중인 Python 버전을 나타냅니다. Python 버전 설정 예제는 [Python 언어 버전 설정](the-.snyk-file.md#set-the-language-version-for-python) 섹션을 참조하십시오.  
+
+### **`ignore:` (무시 규칙)**  
+무시 규칙은 다음 형식으로 작성됩니다.  
+
+```
+ignore:
+  snyk-vulnid:
+    - path to library using > separator :
+        reason: 'text string'
+        expires: 'YYYY-MM-DDThh:mm:ss.fffZ'
+```  
+
+- `expires` 필드는 선택 사항입니다.  
+- 특정 취약점을 영구적으로 무시하려면 `expires` 필드를 생략하면 됩니다.  
+
+예제:  
+
+```
+ignore:
+  snyk-vulnid:
+    - path to library using > separator :
+        reason: 'text string'
+```  
+
+### **`patch:` (패치 규칙)**  
+패치 규칙은 다음 형식으로 작성됩니다.  
+
+```
 'npm:library:yyyymmdd’ :
-
-* > 구분자를 사용한 라이브러리 경로: patched: '날짜 및 시간 문자열'
-* > 경로에서 라이브러리 사용 > 구분자를 사용 > 다른 > 경로로: patched: 'YYYY-MM-DDThh:mm:ss.fffZ'
-
-```
+  - path to library using > separator:
+    patched: 'datetime string'
+  - path to library using > separator > to > another > path:
+    patched: 'YYYY-MM-DDThh:mm:ss.fffZ'
 ```
