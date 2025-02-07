@@ -137,4 +137,4 @@ curl -X GET \
   -H 'Authorization: token YOUR-API-TOKEN'
 ```
 
-Snyk는 선택한 리소스에 대한 정보를 포함하는 JSON 문서를 반환합니다. 이 정보는 [API 응답 이해](view-iac+-and-cloud-resources.md#understand-the-api-response)에 표시된 것과 동일합니다.
+Snyk은 선택한 리소스에 대한 정보를 포함하는 JSON 문서를 반환합니다. 이 정보는 [API 응답 이해](view-iac+-and-cloud-resources.md#understand-the-api-response)에 표시된 것과 동일합니다.

@@ -4,7 +4,7 @@
 이 페이지의 정보는 현재 IaC에 적용됩니다. IaC+를 사용 중이라면 [IaC+ 및 클라우드 스캔 시작하기](getting-started-with-iac+-and-cloud-scans/)을 참조하십시오.
 {% endhint %}
 
-Snyk 웹 UI에서 Infrastructure as Code({Snyk IaC)를 사용하여 구성 파일에서 문제를 찾아보고 수정할 수 있습니다. 또한 Snyk CLI에서도 를 사용할 수 있습니다. 자세한 내용은 [Infrastructure as Code용 Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)를 참조하십시오.
+Snyk 웹 UI에서 Infrastructure as Code(Snyk IaC)를 사용하여 구성 파일에서 문제를 찾아보고 수정할 수 있습니다. 또한 Snyk CLI에서도 Snyk IaC를 사용할 수 있습니다. 자세한 내용은 [Infrastructure as Code용 Snyk CLI](../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-iac/)를 참조하십시오.
 
 이 페이지에서는 지원되는 환경( [Terraform](scan-your-iac-source-code/scan-terraform-files/), [AWS CloudFormation](scan-your-iac-source-code/scan-cloudformation-files/), [Kubernetes](scan-your-iac-source-code/scan-kubernetes-configuration-files/)(포함 Helm), 그리고 [Azure Resource Manager (ARM)](scan-your-iac-source-code/scan-arm-configuration-files.md))에 대한 구성 파일에서 문제를 찾아보고 수정하는 단계를 찾을 수 있습니다. 이러한 단계는 현재 IaC에 특화되어 있습니다. 또한 [IaC 및 클라우드 스캔 시작하기](getting-started-with-iac+-and-cloud-scans/)도 참조하십시오.
 

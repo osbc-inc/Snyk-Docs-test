@@ -2,16 +2,16 @@
 
 다음과 같은 [클라우드 환경](../key-concepts-for-iac+-and-cloud.md#environments)의 속성을 업데이트할 수 있습니다:
 
-- **AWS:** 환경 이름 및 IAM 역할 ARN(Amazon Resource Name). 새로운 역할 ARN은 이전 역할 ARN과 동일한 AWS 계정 ID를 가져야 합니다. [역할 ARN 찾기](../../cloud-platforms-integrations/aws-integration/aws-integration-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn) 참조.
-- **Google:** 환경 이름 및 서비스 계정 이메일 주소. 새로운 서비스 계정 이메일은 이전 것과 동일한 프로젝트 ID와 연관되어야 합니다.
-- **Azure:** 환경 이름 및 애플리케이션 ID. 새로운 애플리케이션 ID는 이전 것과 동일한 구독과 테넌트와 연관되어야 합니다.
+* **AWS:** 환경 이름 및 IAM 역할 ARN(Amazon Resource Name). 새로운 역할 ARN은 이전 역할 ARN과 동일한 AWS 계정 ID를 가져야 합니다. [역할 ARN 찾기](../../cloud-platforms-integrations/aws-integration/aws-integration-api/step-3-create-and-scan-a-snyk-cloud-environment.md#find-the-role-arn) 참조.
+* **Google:** 환경 이름 및 서비스 계정 이메일 주소. 새로운 서비스 계정 이메일은 이전 것과 동일한 프로젝트 ID와 연관되어야 합니다.
+* **Azure:** 환경 이름 및 애플리케이션 ID. 새로운 애플리케이션 ID는 이전 것과 동일한 구독과 테넌트와 연관되어야 합니다.
 
 예를 들어, Terraform이나 CloudFormation 템플릿에서 역할 이름을 변경하고 변경 사항을 배포하는 경우 Snyk IAM 역할 ARN을 업데이트해야 합니다.
 
 다음 방법을 사용하여 Snyk 클라우드 환경을 업데이트할 수 있습니다:
 
-- [웹 UI](update-a-cloud-environment.md#web-ui)
-- [API](update-a-cloud-environment.md#api)
+* [웹 UI](update-a-cloud-environment.md#web-ui)
+* [API](update-a-cloud-environment.md#api)
 
 ## 웹 UI
 
@@ -19,21 +19,12 @@
 
 1. 조직 **설정(톱니바퀴 아이콘) > 클라우드 환경**으로 이동합니다.
 2. **작업** 열에서 업데이트하려는 환경의 `...` 아이콘을 선택합니다.
-3. **업데이트**를 선택합니다.
+3.  **업데이트**를 선택합니다.
 
-   <figure><img src="../../../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="환경을 업데이트하려면 ... 아이콘을 선택합니다."><figcaption><p>환경을 업데이트하려면 ... 아이콘을 선택합니다.</p></figcaption></figure>
-   
-4. **일반** 섹션에서 업데이트된 환경 이름, 자격 증명 또는 둘 다를 입력합니다.
+    <figure><img src="../../../../.gitbook/assets/snyk-cloud-update-env-ui.png" alt="환경을 업데이트하려면 ... 아이콘을 선택합니다."><figcaption><p>환경을 업데이트하려면 ... 아이콘을 선택합니다.</p></figcaption></figure>
+4.  **일반** 섹션에서 업데이트된 환경 이름, 자격 증명 또는 둘 다를 입력합니다.
 
-    <div>
-
-    <figure><img src="../../../../.gitbook/assets/snyk-cloud-update-aws-env-ui.png" alt="AWS 환경을 업데이트하는 예시입니다."><figcaption><p>AWS 환경을 업데이트하는 예시입니다.</p></figcaption></figure>
-
-     
-
-    <figure><img src="../../../../.gitbook/assets/snyk-cloud-update-google-env.png" alt="Google 환경을 업데이트하는 예시입니다."><figcaption><p>Google 환경을 업데이트하는 예시입니다.</p></figcaption></figure>
-
-    </div>
+    <div><figure><img src="../../../../.gitbook/assets/snyk-cloud-update-aws-env-ui.png" alt="AWS 환경을 업데이트하는 예시입니다."><figcaption><p>AWS 환경을 업데이트하는 예시입니다.</p></figcaption></figure> <figure><img src="../../../../.gitbook/assets/snyk-cloud-update-google-env.png" alt="Google 환경을 업데이트하는 예시입니다."><figcaption><p>Google 환경을 업데이트하는 예시입니다.</p></figcaption></figure></div>
 5. **변경 내용 저장**을 선택합니다.
 
 ## API
@@ -45,7 +36,7 @@ Snyk API를 사용하여 환경을 업데이트하는 방법은 다음과 같습
 
 ### 환경 ID 찾기
 
-먼저 업데이트하려는 클라우드 환경의 ID를 찾습니다. 다음 형식에 맞춰 [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org\_id-/cloud/environments) 엔드포인트에 요청을 보냅니다:
+먼저 업데이트하려는 클라우드 환경의 ID를 찾습니다. 다음 형식에 맞춰 [`/cloud/environments`](https://apidocs.snyk.io/#get-/orgs/-org_id-/cloud/environments) 엔드포인트에 요청을 보냅니다:
 
 ```
 curl -X GET \
@@ -134,7 +125,7 @@ curl -X PATCH \
 
 ### API 응답 이해
 
-Snyk는 업데이트된 환경 세부 정보가 포함된 JSON 문서를 반환합니다. 예를 들어, 다음 응답은 AWS 환경을 보여줍니다:
+Snyk은 업데이트된 환경 세부 정보가 포함된 JSON 문서를 반환합니다. 예를 들어, 다음 응답은 AWS 환경을 보여줍니다:
 
 ```json
 {
