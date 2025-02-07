@@ -17,7 +17,7 @@ coverY: 0
 ### **Snyk Container**
 
 * [Snyk Container에서 지원하는 운영 체제 배포](scan-with-snyk/snyk-container/how-snyk-container-works/operating-system-distributions-supported-by-snyk-container.md) 목록이 업데이트되어 Ubuntu 24.10 - Oracular Oriole 및 Ubuntu 24.04 - Noble Numbat 04가 포함되었습니다.
-* [Snyk Container 작동 방식](scan-with-snyk/snyk-container/how-snyk-container-works/)이 업데이트되어 Snyk가 공개 베이스 이미지 추천을 제공할 때 적용하는 로직에 대한 세부 정보가 추가되었습니다.
+* [Snyk Container 작동 방식](scan-with-snyk/snyk-container/how-snyk-container-works/)이 업데이트되어 Snyk 공개 베이스 이미지 추천을 제공할 때 적용하는 로직에 대한 세부 정보가 추가되었습니다.
 
 ### **Snyk 통합**
 
