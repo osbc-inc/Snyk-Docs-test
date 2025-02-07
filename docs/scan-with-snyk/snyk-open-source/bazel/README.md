@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 **기능 이용 가능성**\
-Snyk는 에서 지원하는 Bazel을 위한 빌드 및 테스트 도구입니다. 이 설명서의 지침은 Bazel v 7에만 해당됩니다.
+Snyk은 에서 지원하는 Bazel을 위한 빌드 및 테스트 도구입니다. 이 설명서의 지침은 Bazel v 7에만 해당됩니다.
 {% endhint %}
 
 Bazel은 [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.html)에서 다음과 같이 정의됩니다.
@@ -11,9 +11,9 @@ Bazel은 [bazel.build](https://docs.bazel.build/versions/master/bazel-overview.h
 
 ## 적용 가능성
 
-Snyk는 Bazel을 **Snyk 오픈 소스**에 대해서만 지원합니다.
+Snyk은 Bazel을 **Snyk 오픈 소스**에 대해서만 지원합니다.
 
-Snyk는 Bazel로 관리되는 종속성을 가진 프로젝트를 테스트 지원합니다. 권장되는 방법은 [Dep 그래프 API](dep-graph-api.md)를 사용하여 테스트하고 모니터링하는 것입니다. C++를 비롯한 여러 언어에 Bazel을 사용할 수 있지만, **Dep 그래프 엔드포인트는 C++을 지원하지 않습니다**.
+Snyk은 Bazel로 관리되는 종속성을 가진 프로젝트를 테스트 지원합니다. 권장되는 방법은 [Dep 그래프 API](dep-graph-api.md)를 사용하여 테스트하고 모니터링하는 것입니다. C++를 비롯한 여러 언어에 Bazel을 사용할 수 있지만, **Dep 그래프 엔드포인트는 C++을 지원하지 않습니다**.
 
 ## 패키지 관리자
 
@@ -21,15 +21,15 @@ Bazel은 npm 등의 패키지 관리자와 같은 종속성 매니페스트 파�
 
 Bazel은 npmjs.org나 Maven Central과 같은 패키지 레지스트리와의 네이티브 통합이 제한적입니다. 외부 레지스트리에서 종속성을 설치하는 데 도움이 되는 일부 Bazel 규칙을 추가할 수 있습니다. 예를 들어, [Maven에서](https://docs.bazel.build/versions/master/external.html#maven-artifacts-and-repositories) 가져오기.
 
-Bazel 종속성은 BUILD 파일의 코드로 지정되므로 Snyk는 프로젝트에서 종속성을 쉽게 발견할 수 없습니다. Snyk를 사용하여 Bazel 프로젝트를 테스트하고 모니터링하는 정보는 [Dep 그래프 API](dep-graph-api.md) 페이지를 참조하십시오.
+Bazel 종속성은 BUILD 파일의 코드로 지정되므로 Snyk는 프로젝트에서 종속성을 쉽게 발견할 수 없습니다. Snyk을 사용하여 Bazel 프로젝트를 테스트하고 모니터링하는 정보는 [Dep 그래프 API](dep-graph-api.md) 페이지를 참조하십시오.
 
 ## 프레임워크 및 라이브러리
 
-Snyk를 위한 Bazel의 사용 가능한 프레임워크 및 라이브러리가 없습니다.
+Snyk을 위한 Bazel의 사용 가능한 프레임워크 및 라이브러리가 없습니다.
 
 ## 기능
 
-Snyk를 위한 Bazel의 사용 가능한 기능이 없습니다.
+Snyk을 위한 Bazel의 사용 가능한 기능이 없습니다.
 
 ## Dep Graph API
 
@@ -218,7 +218,7 @@ Test Dep 그래프 API는 Dep 그래프 종속성에서 발견된 문제(취약�
 
 응답 객체의 특정 구성 요소에 대한 추가 설명은 다음과 같습니다:
 
-* `ok` - Snyk가 제공된 종속성에서 어떠한 취약점도 찾지 못했는지를 요약하는 부울 값입니다. 이를 사용하여 간편한 통과 또는 실패 테스트에 사용할 수 있습니다.
+* `ok` - Snyk이 제공된 종속성에서 어떠한 취약점도 찾지 못했는지를 요약하는 부울 값입니다. 이를 사용하여 간편한 통과 또는 실패 테스트에 사용할 수 있습니다.
 * `issuesData` - 찾은 각 고유 취약점에 대한 해시입니다. 각 취약점에는 `title`, `description`, `identifiers`, `publicationTime`, `severity` 등 많은 유용한 속성이 포함됩니다.
 * `issues` - `issuesData`의 취약점에서 패키지로의 매핑에 대한 간단한 배열입니다. 취약점이 여러 패키지에 관련될 수 있으므로 이러한 매핑은 가능한 한 응답 길이를 짧게 유지하는 데 사용됩니다.
 
