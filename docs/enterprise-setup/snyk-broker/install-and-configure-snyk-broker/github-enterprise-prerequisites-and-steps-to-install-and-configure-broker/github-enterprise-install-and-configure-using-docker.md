@@ -1,4 +1,4 @@
-# GitHub Enterprise - Docker를 사용하여 설치 및 구성
+# GitHub Enterprise - Docker를 사용한 설치 및 구성
 
 설치하기 전에 [전제 조건](./)을 검토하고 [Docker를 사용한 설치에 대한 일반 지침](../install-and-configure-broker-using-docker.md)를 참조하십시오.
 
@@ -36,7 +36,7 @@ docker run --restart=always \
 ```
 
 {% hint style="info" %}
-Snyk AppRisk는 기본적으로 **`false`**로 설정됩니다. 이 기능을 **`true`**로 설정하여 활성화할 수 있습니다.
+Snyk AppRisk는 기본적으로 `false`로 설정됩니다. 이 기능을 `true`로 설정하여 활성화할 수 있습니다.
 {% endhint %}
 
 **Docker 실행 명령어를 대체로 사용하는 대안**으로 GitHub Enterprise 통합을 위해 환경 변수를 재정의하기 위해 파생된 Docker 이미지를 사용할 수 있습니다. GitHub Enterprise 통합을 위한 환경 변수를 재정의하는 경우 [파생된 Docker 이미지](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)를 참조하십시오.
@@ -51,7 +51,7 @@ Snyk AppRisk는 기본적으로 **`false`**로 설정됩니다. 이 기능을 **
 
 ### **GitHub Enterprise용 큰 Manifest 파일 (> 1Mb) 지원**
 
-오픈 소스 PR 또는 PR/반복 테스트가 실패하는 이유 중 하나는 큰 Manifest 파일(> 1MB)을 가져오는 것일 수 있습니다. 이 문제를 해결하려면 GitHub Enterprise 브로커에서 추가 변수를 활성화하십시오. 자세한 내용은 [큰 Manifest 파일의 Snyk 오픈 소스 스캔(SCA) (Docker 설정)](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)의 추가 지침을 따르십시오. 
+오픈 소스 PR 또는 PR/반복 테스트가 실패하는 이유 중 하나는 큰 Manifest 파일(> 1MB)을 가져오는 것일 수 있습니다. 이 문제를 해결하려면 GitHub Enterprise 브로커에서 추가 변수를 활성화하십시오. 자세한 내용은 [큰 Manifest 파일의 Snyk 오픈 소스 스캔(SCA) (Docker 설정)](https://docs.snyk.io/enterprise-setup/snyk-broker/install-and-configure-snyk-broker/advanced-configuration-for-snyk-broker-docker-installation/snyk-open-source-scans-sca-of-large-manifest-files-docker-setup)의 추가 지침을 따르십시오.
 
 {% hint style="info" %}
 최대한의 보안을 보장하기 위해, Snyk는 이 규칙을 기본으로 활성화하지 않습니다. 이 엔드포인트의 이용은 경로에 특정한 허용된 파일 이름이 포함되어 있지 않기 때문에, Snyk 플랫폼이 원칙적으로 이 저장소의 모든 파일에 액세스할 수 있게 되기 때문입니다.

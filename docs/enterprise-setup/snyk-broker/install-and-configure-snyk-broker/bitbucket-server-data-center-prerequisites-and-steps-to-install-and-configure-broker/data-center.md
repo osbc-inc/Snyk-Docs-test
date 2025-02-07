@@ -1,4 +1,4 @@
-# Bitbucket Server/Data Center - Docker를 사용하여 설치 및 구성
+# Bitbucket Server/Data Center - Docker를 사용한 설치 및 구성
 
 설치 전에 [prerequisites](./)를 검토하고 [Docker](../install-and-configure-broker-using-docker.md)를 사용한 설치에 대한 일반 설명을 살펴보세요.
 
@@ -40,7 +40,7 @@ docker run --restart=always \
 ```
 
 {% hint style="info" %}
-Snyk AppRisk는 기본적으로 **`false`**로 설정됩니다. 이를 **`true`**로 설정하여 활성화할 수 있습니다.
+Snyk AppRisk는 기본적으로 `false`로 설정됩니다. 이를 `true`로 설정하여 활성화할 수 있습니다.
 {% endhint %}
 
 **Docker run 명령어 대신** 도커 이미지를 파생하여 Broker Client 통합을 설정할 수도 있습니다. BitBucket Server/Data Center 통합을 위해 변경할 환경 변수에 대해서는 [파생된 Docker 이미지](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)를 참조하세요.
@@ -73,7 +73,7 @@ docker run --restart=always \
 ```
 
 {% hint style="info" %}
-Snyk AppRisk는 기본적으로 **`false`**로 설정됩니다. 이를 **`true`**로 설정하여 활성화할 수 있습니다.
+Snyk AppRisk는 기본적으로 `false`로 설정됩니다. 이를 `true`로 설정하여 활성화할 수 있습니다.
 {% endhint %}
 
 **Docker run 명령어 대신** 도커 이미지를 파생하여 Broker Client 통합을 설정할 수도 있습니다. BitBucket Server/Data Center 통합을 위해 변경할 환경 변수에 대해서는 [파생된 Docker 이미지](../derived-docker-images-for-broker-client-integrations-and-container-registry-agent.md)를 참조하세요.
