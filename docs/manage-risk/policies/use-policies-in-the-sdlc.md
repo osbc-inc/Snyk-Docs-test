@@ -5,7 +5,7 @@
 이러한 다수의 보안 및 규정 준수 제어는 개발 프로세스에서 문제가 가능한 일찍 식별되어 가장 적게 비용이 들고 시간이 소요되는 시기에 수정될 수 있도록 보장합니다.
 
 {% hint style="info" %}
-또한 `.snyk` 파일은 Snyk가 CLI 및 CI/CD 플러그인을 위한 패치를 지정하고 특정 분석 동작을 정의하는 데 사용하는 정책 파일입니다. 자세한 내용은 [The .snyk file](the-.snyk-file.md)을 참조하십시오.
+또한 `.snyk` 파일은 Snyk이 CLI 및 CI/CD 플러그인을 위한 패치를 지정하고 특정 분석 동작을 정의하는 데 사용하는 정책 파일입니다. 자세한 내용은 [The .snyk file](the-.snyk-file.md)을 참조하십시오.
 {% endhint %}
 
 ## 프로젝트 또는 조직에 정책 할당하기
@@ -27,7 +27,7 @@
 
 {% hint style="info" %}
 정책 자체에서 프로젝트에 식별된 Copyleft 라이선스인 [**GPL-3.0**](https://snyk.io/learn/what-is-gpl-license-gplv3-explained/), [**AGPL-3.0 라이선스**](https://snyk.io/learn/agpl-license/) 등에 높은 심각도가 적용될 수 있습니다.\
-라이선스 정책을 만들 때 Snyk는 테스트가 실패하는 이유를 설명하도록 권장합니다. 따라서 예를 들어 GPL 라이선스로 빌드가 실패하면 개발자들이 설명을 볼 수 있고 취해야 할 조치를 알 수 있습니다. 자세한 내용은 [라이선스 정책 및 규칙 만들기](license-policies/create-a-license-policy-and-rules.md)를 참조하십시오.
+라이선스 정책을 만들 때 Snyk은 테스트가 실패하는 이유를 설명하도록 권장합니다. 따라서 예를 들어 GPL 라이선스로 빌드가 실패하면 개발자들이 설명을 볼 수 있고 취해야 할 조치를 알 수 있습니다. 자세한 내용은 [라이선스 정책 및 규칙 만들기](license-policies/create-a-license-policy-and-rules.md)를 참조하십시오.
 {% endhint %}
 
 이 정책은 선택된 속성이 적용된 모든 프로젝트에 할당되었으며 다음 번 Snyk이 해당 프로젝트를 스캔할 때 적용됩니다.
