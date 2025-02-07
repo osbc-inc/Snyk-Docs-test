@@ -741,7 +741,7 @@
       * [위험 요소: OS 상태](manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-os-condition.md)
       * [위험 요소: 공개 대면](manage-risk/prioritize-issues-for-fixing/assets-and-risk-factors-for-snyk-apprisk/risk-factor-public-facing.md)
     * [Snyk AppRisk에서 이슈 UI 사용](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/README.md)
-      * [문제 필터링](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/filter-your-issues.md)
+      * [이슈 필터링](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/filter-your-issues.md)
       * [문제 파악](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/understand-your-issues.md)
       * [증거 그래프](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/evidence-graph.md)
       * [보기 내보내기 및 사용자 지정](manage-risk/prioritize-issues-for-fixing/using-the-issues-ui-with-snyk-apprisk/export-and-customize-views.md)
