@@ -65,7 +65,7 @@ GitHub 통합의 모든 설정을 보려면 GitHub 통합 설정 페이지로 �
 <div align="center"><figure><img src="../../.gitbook/assets/Github-integrations-general.png" alt="GitHub 통합 일반 설정" width="563"><figcaption><p>GitHub 통합 일반 설정</p></figcaption></figure></div>
 
 * **통합 ID**: 이 통합을 위해 필요한 고유 ID. [Snyk API](../../snyk-api/)를 사용하는 경우 필요합니다.
-* **저장소 액세스**: Snyk가 공개 저장소에 액세스할 수 있는지 여부 (공개 저장소 외에 비공개 저장소도 포함). 이 설정을 변경하면 기존 프로젝트에 영향을 줍니다.
+* **저장소 액세스**: Snyk이 공개 저장소에 액세스할 수 있는지 여부 (공개 저장소 외에 비공개 저장소도 포함). 이 설정을 변경하면 기존 프로젝트에 영향을 줍니다.
 
 ### GitHub 통합 기능
 
@@ -81,7 +81,7 @@ GitHub를 Snyk에 연결한 후 다음과 같은 기능을 사용할 수 있습�
 {% hint style="info" %}
 **기능 가용성**
 
-보고서는 엔터프라이즈 플랜에서만 사용 가능합니다. 자세한 내용은 [요금제 및 가격정책](https://snyk.io/plans/)을 참조하십시오.
+보고서는 엔터프라이즈 플랜에서만 사용 가능합니다. 자세한 내용은 [요금제 및 가격 정책](https://snyk.io/plans/)을 참조하십시오.
 {% endhint %}
 
 Snyk 고급 [보안 보고서](../../manage-issues/reporting/legacy-reports/legacy-reports-overview.md)를 제공하여 저장소에서 발견된 취약점을 탐색하고 필요한 업그레이드 또는 패치로 바로 수정 풀 리퀘스트를 여는 등의 처리 방법을 제공합니다.
@@ -92,7 +92,7 @@ Snyk 고급 [보안 보고서](../../manage-issues/reporting/legacy-reports/lega
 
 #### **프로젝트 모니터링 및 자동 수정 풀 리퀘스트**
 
-Snyk 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk가 이메일을 통해 알림을 보내고 저장소에 대한 수정을 자동으로 하는 풀 리퀘스트를 엽니다.
+Snyk 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk이 이메일을 통해 알림을 보내고 저장소에 대한 수정을 자동으로 하는 풀 리퀘스트를 엽니다.
 
 다음 예제는 Snyk에 의해 열린 수정 풀 리퀘스트를 보여줍니다.
 
@@ -104,7 +104,7 @@ Snyk GitHub 통합 설정 페이지에서 자동 수정 풀 리퀘스트 설정�
 
 <div align="left"><figure><img src="../../.gitbook/assets/Github-integrations-auto-fix-PRs.png" alt="자동 수정 풀 리퀘스트 설정" width="563"><figcaption><p>자동 수정 풀 리퀘스트 설정</p></figcaption></figure></div>
 
-#### 커밋 서명
+#### **커밋 서명**
 
 {% hint style="info" %}
 **기능 가용성**
@@ -144,7 +144,7 @@ Snyk 조직 관리자는 [특정 GitHub 계정을 지정하여 수정 및 업그
 
 ### **Snyk PR을 열려면 GitHub 계정 설정하는 방법**
 
-Snyk 사용하여 고치기 및 업그레이드 PR을 열려면 특정 GitHub 계정을 지정할 수 있습니다.
+Snyk을 사용하여 고치기 및 업그레이드 PR을 열려면 특정 GitHub 계정을 지정할 수 있습니다.
 
 {% hint style="info" %}
 구성된 계정은 PR을 열 때만 사용됩니다. 다른 모든 작업은 여전히 무작위 Snyk 조직 구성원의 GitHub 계정을 사용하여 수행됩니다.
@@ -163,19 +163,19 @@ Snyk 사용하여 고치기 및 업그레이드 PR을 열려면 특정 GitHub �
 
 <figure><img src="../../.gitbook/assets/disconnect_github_3-july-2022.png" alt="Revoke OAuth authorization"><figcaption><p>Revoke OAuth authorization</p></figcaption></figure>
 
-이 액세스를 취소하면 Snyk가 해당 GitHub 계정에 대한 액세스를 끊게 됩니다.
+이 액세스를 취소하면 Snyk이 해당 GitHub 계정에 대한 액세스를 끊게 됩니다.
 
 * 기존 가져온 스냅샷은 Snyk에서 계속 유지되며 삭제될 때까지 기존 스냅샷을 기반으로 다시 스캔됩니다.
 * Snyk 더 이상 GitHub 통합에서 새 프로젝트를 가져오거나 새 코드 병합에 대해 다시 스캔할 수 없게 됩니다.
 
-또한, 기존 **Branch protection rules**에서 Snyk가 사용 중이지 않아야 합니다.
+또한, 기존 **Branch protection rules**에서 Snyk 사용 중이지 않아야 합니다.
 
 {% hint style="info" %}
 branch protection은 PR이 올라갔을 때에만 활성화됩니다.
 {% endhint %}
 
 1. GitHub 리포지토리의 메인 페이지에서 **Settings > Branches > Branch protection rules**로 이동하십시오.
-2. \*\*이 리포지토리에 대한 지난 일주일 동안의 상태 확인이 없습니다.\*\*를 확인하십시오.
+2. **이 리포지토리에 대해 지난 주에 발견된 상태 확인이 없는지 확인합니다.**
 
 {% hint style="info" %}
 연결이 끊긴 GitHub 통합은 여전히 Snyk UI의 Integrations 메뉴에서 구성된 것으로 나타납니다. 그러나 해당 통합 설정을 클릭하면 연결되지 않은 것으로 표시됩니다. 이 경우 "구성된" 통합은 안전하게 무시할 수 있습니다.
@@ -193,7 +193,7 @@ GitHub 통합을 사용하여 가져온 프로젝트를 수동으로 제거하�
 
 이미 여러 Snyk 조직을 만들었고 각 조직으로부터 GitHub에서 프로젝트를 가져온 경우, 각각을 수동으로 업데이트하는 것보다 Snyk GitHub Enterprise 통합을 사용하기 위해 새로운 Snyk 조직을 만드는 것이 더 간편할 수 있습니다. 이렇게 하면 다른 통합을 다시 구성하지 않고 기존 조직에서 통합 설정을 복사할 수 있습니다.
 
-#### 마이그레이션 단계
+### **마이그레이션 단계**
 
 이미 GitHub 통합을 사용하여 가져온 여러 Snyk 조직이 있는 경우, GitHub 통합에서 GitHub Enterprise 통합으로 마이그레이션하는 단계는 다음과 같습니다.
 
