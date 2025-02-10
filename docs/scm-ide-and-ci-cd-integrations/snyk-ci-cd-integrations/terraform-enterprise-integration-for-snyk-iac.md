@@ -6,7 +6,7 @@
 
 ## Terraform Enterprise와 Snyk 통합 개요
 
-Snyk는 Terraform Enterprise와의 통합이 Terraform Cloud를 위한 Snyk 통합과 정확히 동일하게 작동합니다. 통합 설정 방법에 대한 자세한 내용은 [Snyk integration for Terraform Cloud](terraform-cloud-integration-for-snyk-iac-using-run-tasks/) 페이지를 참조하십시오.
+Snyk은 Terraform Enterprise와의 통합이 Terraform Cloud를 위한 Snyk 통합과 정확히 동일하게 작동합니다. 통합 설정 방법에 대한 자세한 내용은 [Snyk integration for Terraform Cloud](terraform-cloud-integration-for-snyk-iac-using-run-tasks/) 페이지를 참조하십시오.
 
 ## Terraform Enterprise 통합을 위한 네트워크 요구 사항
 

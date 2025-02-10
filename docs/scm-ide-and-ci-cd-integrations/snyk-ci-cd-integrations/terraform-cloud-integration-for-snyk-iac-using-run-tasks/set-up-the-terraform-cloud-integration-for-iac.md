@@ -25,7 +25,7 @@ Snyk Web UI에서 귀하의 조직을 위한 Terraform Cloud 통합 설정 페�
 ## 실행 작업을 Terraform Cloud Workspace에 연결
 
 1. Terraform Cloud Workspace로 이동한 다음 **Settings** 메뉴에 들어가 **Run Tasks**를 선택하세요.
-2. 생성한 실행 작업은 **Available Run Tasks** 아래에서 사용 가능합니다. 연결하려면 \*\*+\*\*를 클릭하세요.
+2. 생성한 실행 작업은 **Available Run Tasks** 아래에서 사용 가능합니다. 연결하려면 **+**&#xB97C; 클릭하세요.
 3. 실행 강도를 선택하세요 (**Advisory** 또는 **Mandatory**) 그리고 **Create**를 클릭하세요.
 
 통합이 설정되면 Snyk은 워크스페이스에서 트리거된 각 실행에 대해 Terraform 플랜을 스캔합니다.
