@@ -2,11 +2,11 @@
 
 ## C/C++를 위한 Snyk CLI
 
-C/C++에 대한 취약점을 탐색하려면 [Snyk Vuln DB](https://security.snyk.io)를 검색하세요. Snyk는 이 데이터베이스를 기반으로 코드를 테스트하며, 이 데이터베이스는 온라인 소스에서 주기적으로 업데이트됩니다. 자세한 내용은 [Snyk 취약점 데이터베이스](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)를 참조하세요.
+C/C++에 대한 취약점을 탐색하려면 [Snyk Vuln DB](https://security.snyk.io)를 검색하세요. Snyk은 이 데이터베이스를 기반으로 코드를 테스트하며, 이 데이터베이스는 온라인 소스에서 주기적으로 업데이트됩니다. 자세한 내용은 [Snyk 취약점 데이터베이스](../../scan-with-snyk/snyk-open-source/manage-vulnerabilities/snyk-vulnerability-database.md)를 참조하세요.
 
-Snyk가 오픈 소스 프로젝트를 스캔하려면 의존성이 스캔된 디렉토리 내의 소스 코드로 사용 가능해야 합니다. 의존성이 다른 위치에 있는 경우 해당 위치도 스캔해야 합니다. 자세한 내용은 [소스 코드 의존성은 스캔된 폴더에 있어야 합니다](snyk-cli-for-open-source-c++-scans.md#source-code-dependencies-must-be-in-the-scanned-folder)를 참조하세요.
+Snyk이 오픈 소스 프로젝트를 스캔하려면 의존성이 스캔된 디렉토리 내의 소스 코드로 사용 가능해야 합니다. 의존성이 다른 위치에 있는 경우 해당 위치도 스캔해야 합니다. 자세한 내용은 [소스 코드 의존성은 스캔된 폴더에 있어야 합니다](snyk-cli-for-open-source-c++-scans.md#source-code-dependencies-must-be-in-the-scanned-folder)를 참조하세요.
 
-[`snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) 명령을 실행할 때, Snyk는 다음을 수행합니다:
+[`snyk test --unmanaged`](../../snyk-cli/commands/test.md#unmanaged) 명령을 실행할 때, Snyk 다음을 수행합니다:
 
 1. 현재 폴더의 모든 파일을 해시 목록으로 변환합니다.
 2. 해시를 Snyk 스캔 서버로 전송하여 의존성 목록을 계산합니다.
@@ -139,15 +139,15 @@ Dependencies:
     ... 그리고 249개의 파일
 ```
 
-이 출력은 Snyk가 식별한 의존성과 해당 버전에 대한 확신 수준을 보여줍니다. Snyk가 식별한 의존성과 해당 버전에 대한 확신 수준을 보려면 `--print-deps` 또는 `--print-dep-paths` 옵션을 사용할 수 있습니다.
+이 출력은 Snyk이 식별한 의존성과 해당 버전에 대한 확신 수준을 보여줍니다. Snyk이 식별한 의존성과 해당 버전에 대한 확신 수준을 보려면 `--print-deps` 또는 `--print-dep-paths` 옵션을 사용할 수 있습니다.
 
 ## **확신 수준 이해**
 
-확신 수준은 Snyk가 실제 의존성 식별에 대해 얼마나 확신하는지를 보여줍니다. 해당 숫자는 `0`에서 `1` 사이일 수 있으며, 숫자가 클수록 식별이 더 정확합니다. 확신 수준이 `1`인 경우 소스 트리의 모든 파일이 Snyk 데이터베이스의 모든 예상 파일과 완전히 일치합니다.
+확신 수준은 Snyk이 실제 의존성 식별에 대해 얼마나 확신하는지를 보여줍니다. 해당 숫자는 `0`에서 `1` 사이일 수 있으며, 숫자가 클수록 식별이 더 정확합니다. 확신 수준이 `1`인 경우 소스 트리의 모든 파일이 Snyk 데이터베이스의 모든 예상 파일과 완전히 일치합니다.
 
 `curl|https://github.com/curl/curl/releases/download/curl-7_58_0/curl-7.58.0.tar.xz@7.58.0 confidence: 0.993`
 
-소프트웨어에서 사용하는 의존성의 소스 코드를 변경해야 할 수 있습니다. Snyk는 파일 시그니처를 사용하여 오픈 소스 라이브러리와 가장 유사한 항목을 찾습니다. 변경 사항은 실제 라이브러리 식별의 정확성을 낮출 수 있습니다.
+소프트웨어에서 사용하는 의존성의 소스 코드를 변경해야 할 수 있습니다. Snyk 파일 시그니처를 사용하여 오픈 소스 라이브러리와 가장 유사한 항목을 찾습니다. 변경 사항은 실제 라이브러리 식별의 정확성을 낮출 수 있습니다.
 
 ## **JSON 출력**
 
