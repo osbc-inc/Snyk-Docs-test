@@ -12,10 +12,10 @@ Snyk 환경설정에서 다음 구성 옵션을 설정할 수 있습니다.
 * `Snyk 코드 보안활성화됨`: 랭귀지 서버를 통해 Snyk 코드 스캔을 활성화 또는 비활성화합니다. 기본값: 베타 동안 `비활성화` 상태
 * `Snyk Infrastructure-as-Code 활성화됨`: 랭귀지 서버를 통해 Snyk IaC 스캔을 활성화 또는 비활성화합니다. 기본값: 베타 동안 `활성화` 상태
 * `시작시 자동으로 스캔 및 저장`: 자동으로 스캔할지 여부
-* `조직`: 스캔에 사용할 Snyk 조직을 지정합니다. Snyk는 `ORG_ID`를 사용하도록 권장합니다. 조직 슬러그 이름을 지정하는 경우, 값은 Snyk UI의 조직 URL 슬러그 이름 (`[orgslugname]`)과 일치해야 합니다: `https://app.snyk.io/org/[orgslugname]`.
-* `추가 매개변수`: CLI로 전달할 추가 매개변수를 지정합니다. 예를 들어, `.NET Projects`의 경우 Snyk는 `--all-projects` 추가 매개변수를 추가하도록 권장합니다.
+* `조직`: 스캔에 사용할 Snyk 조직을 지정합니다. Snyk은 `ORG_ID`를 사용하도록 권장합니다. 조직 슬러그 이름을 지정하는 경우, 값은 Snyk UI의 조직 URL 슬러그 이름 (`[orgslugname]`)과 일치해야 합니다: `https://app.snyk.io/org/[orgslugname]`.
+* `추가 매개변수`: CLI로 전달할 추가 매개변수를 지정합니다. 예를 들어, `.NET Projects`의 경우 Snyk은 `--all-projects` 추가 매개변수를 추가하도록 권장합니다.
 * `추가 환경 변수`: 랭귀지 서버에 환경 변수를 추가합니다. 여러 변수는 `;`로 구분할 수 있습니다. 예: `JAVA_HOME=/usr/local/bin;GOPATH=/usr/local/bin`
-* `Snyk 이진 파일 자동 업데이트 및 설치`: 비활성화된 경우 업데이트가 다운로드되지 않으며, 업데이트를 수동으로 수행해야 합니다. Snyk는 항상 최신 버전의 CLI를 사용하도록 권장합니다. CLI의 위치가 현재 이진 파일을 가리키도록 해야 합니다.
+* `Snyk 이진 파일 자동 업데이트 및 설치`: 비활성화된 경우 업데이트가 다운로드되지 않으며, 업데이트를 수동으로 수행해야 합니다. Snyk은 항상 최신 버전의 CLI를 사용하도록 권장합니다. CLI의 위치가 현재 이진 파일을 가리키도록 해야 합니다.
 * `CLI 다운로드를 위한 기본 URL:` CLI를 위한 대체 다운로드 호스트를 지정합니다. 예: `https://downloads.snyk.io/fips`. 이는 다음 파일을 제공해야 합니다. GitHub [릴리스](https://github.com/snyk/cli/releases)도 참조하세요.
   * %Base URL%/cli/v%VERSION%/%CLI-BINARY-NAME%
   * %Base URL%/cli/v%VERSION%/%CLI-BINARY-NAME%.sha256
@@ -28,6 +28,6 @@ Snyk 환경설정에서 다음 구성 옵션을 설정할 수 있습니다.
   * %Base URL%/cli/stable/release.json
   * %Base URL%/cli/stable/sha256sums.txt.asc
 * `Snyk CLI`: Snyk CLI의 위치를 지정합니다.
-* `에러 보고서를 Snyk로 보내기`: 랭귀지 서버에서 발생한 오류를 빠른 버그 수정을 위해 Snyk로 보냅니다. 기본값: `활성화`.
-* `사용 통계를 Snyk로 보내기`: 워크플로를 개선하기 위해 사용 데이터를 Snyk에 제공합니다. 기본값: `활성화`.
+* `에러 보고서를 Snyk으로 보내기`: 랭귀지 서버에서 발생한 오류를 빠른 버그 수정을 위해 Snyk으로 보냅니다. 기본값: `활성화`.
+* `사용 통계를 Snyk으로 보내기`: 워크플로를 개선하기 위해 사용 데이터를 Snyk에 제공합니다. 기본값: `활성화`.
 * `신뢰할 수 있는 폴더`: 안전한 고려해야 하는 디렉터리를 지정합니다. 예: 모든 프로젝트의 상위 디렉토리.
