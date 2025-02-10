@@ -180,7 +180,7 @@ Snyk SCM 통합은 연결 방법에 따라 다른 권한 요구 사항을 필요
 * [Bitbucket](./#bitbucket-permission-requirements)
 * [Azure Repositories (TFS)](./#azure-repositories-tfs-permission-requirements)
 
-### GitHub와# GitHub Enterprise 권한 요구사항
+### GitHub와 GitHub Enterprise 권한 요구사항
 
 {% hint style="info" %}
 브로커드 통합에서 토큰 권한에 대한 정보는 [GitHub - 브로커 설치 및 구성 사전 조건 및 단계](https://docs.snyk.io/enterprise-configuration/snyk-broker/install-and-configure-snyk-broker/github-prerequisites-and-steps-to-install-and-configure-broker) 및 [Snyk 브로커를 위한 통합 SCM 토큰](./#integrated-scm-tokens-for-snyk-broker)을 참조하십시오.
@@ -213,7 +213,7 @@ PAT의 `Administration: Read-only` 권한은 Snyk이 새 프로젝트를 가져�
 
 Snyk은 병합이 발생할 것을 [GitHub Enterprise](github-enterprise.md)에 알리기 위해 PR을 사용합니다. 이를 위해 콘텐츠가 분기로 푸시되어야 하며 이렇게 되면 `content: write` 범위가 필요합니다. 그런 다음 따로 호출을 통해 고칠 PR을 만들고 이는 `pull request: write` 범위가 필요합니다. 그런 후 GitHub Enterprise에게 PR을 만들도록 지시하여 변경된 브랜치를 기본 브랜치로 병합합니다.
 
-Snyk는 SCM 웹훅을 사용하여 다음과 같은 작업을 수행합니다:
+Snyk은 SCM 웹훅을 사용하여 다음과 같은 작업을 수행합니다:
 
 * PR이 만들어지거나 업데이트되거나 트리거되거나 병합될 때 PR 상태를 추적합니다.
 * PR 체크 트리거를 위해 푸시 이벤트를 전송합니다.
@@ -300,7 +300,7 @@ Snyk Bitbucket 통합을 설정하려면 Bitbucket 워크스페이스 관리자�
 | <p><strong>풀 리퀘스트에 대한 Snyk 테스트 (초기 설정):</strong><br>수입된 저장소에 SCM 웹훅 추가</p>                                         | **웹훅**: `읽기, 쓰기`                                                                                                                      | `관리자`        |
 | <p><strong>Snyk에 새 프로젝트 가져오기:</strong><br>Bitbucket 인스턴스에 있는 모든 사용 가능한 저장소 목록을 <strong>프로젝트 추가</strong> 화면에 제시</p> | <p><strong>계정</strong>: <code>읽기</code><br><strong>워크스페이스 멤버십</strong>: <code>읽기</code><br><strong>프로젝트</strong>: <code>읽기</code></p> |              |
 
-Snyk는 Bitbucket에서 SCM 웹훅을 사용하여 다음 작업을 수행합니다:
+Snyk은 Bitbucket에서 SCM 웹훅을 사용하여 다음 작업을 수행합니다:
 
 * PR이 만들어지거나 업데이트되거나 트리거되거나 병합될 때 PR 상태를 추적합니다.
 * PR 체크를 트리거하기 위해 푸시 이벤트를 전송합니다.
