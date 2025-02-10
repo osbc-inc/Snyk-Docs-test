@@ -36,4 +36,4 @@ Snyk [제품 교육](https://learn.snyk.io/catalog/?type=product-training)은 Sn
 
 이 플랫폼은 팀이 Snyk 도구 및 최상의 사용 방법에 대한 소개를 받는 쉬운 방법을 제공합니다. 대부분의 코스는 3분에서 10분 사이에 소요됩니다.
 
-Snyk은 Snyk 구현, Snyk를 사용한 응용 프로그램 보안 관리, 그리고 Snyk을 사용한 개발 등을 포함하는[학습 경로](https://learn.snyk.io/catalog/?type=product-training\&format=learning_path)를 제공합니다.
+Snyk은 Snyk 구현, Snyk을 사용한 응용 프로그램 보안 관리, 그리고 Snyk을 사용한 개발 등을 포함하는 [학습 경로](https://learn.snyk.io/catalog/?type=product-training\&format=learning_path)를 제공합니다.
