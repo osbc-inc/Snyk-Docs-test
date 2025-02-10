@@ -37,7 +37,7 @@ Slack을 위한 Snyk 앱은 [Snyk 앱](../../snyk-api/how-to-use-snyk-apps-apis/
 Slack을 위한 Snyk 앱을 활성화하려면 다음을 수행해야 합니다:
 
 1. Snyk에서 새로운 이슈 데이터를 받아 Slack 워크스페이스로 전달할 수 있도록 앱을 허가합니다.
-2. Slack 워크스페이스에서 앱을 허가하여 Snyk가 채널로 알림을 보낼 수 있도록 허용합니다.
+2. Slack 워크스페이스에서 앱을 허가하여 Snyk이 채널로 알림을 보낼 수 있도록 허용합니다.
 3. 조직 내 모든 프로젝트의 기본 알림 설정을 Snyk에서 구성하고 [프로젝트 수준 알림 재지정](slack-app.md#manage-project-level-notification-overrides)을 추가하려면 구성합니다.
 
 ## Slack을 위한 Snyk 앱 구성
@@ -83,10 +83,10 @@ Slack 앱이 구성되면 새 이슈 알림이 원하는 심각도 수준 임계
 
 ### 알림 사용자화 추가
 
-1. `사용자화 추가`를 선택하여 Slack 앱 통합 페이지에서 만들기 대화 상자를 엽니다.
-2. 이전에 복사한 프로젝트 ID 값을 붙여 넣습니다.
-3. 원하는 이슈 심각도 수준 및 대상 Slack 채널을 선택합니다.
-4. 사용자화를 저장합니다.
+1. `Add customization`를 선택하여 Slack 앱 통합 페이지에서 만들기 대화 상자를 엽니다.
+2. 이전에 복사한 **프로젝트 ID** 값을 붙여 넣습니다.
+3. 원하는 이슈 **심각도 수준** 및 대상 **Slack 채널**을 선택합니다.
+4. **사용자화를 저장**합니다.
 
 <div data-full-width="true"><figure><img src="../../.gitbook/assets/slack-app-project-override.png" alt="프로젝트 알림 사용자화 작성 대화 상자" width="563"><figcaption><p>프로젝트 알림 사용자화 작성 대화 상자</p></figcaption></figure></div>
 

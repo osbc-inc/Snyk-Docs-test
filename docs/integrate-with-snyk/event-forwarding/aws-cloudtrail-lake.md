@@ -1,9 +1,9 @@
-# AWS CloudTrail Lake
+# AWS 클라우드 트레일 레이크
 
 {% hint style="info" %}
 **Snyk 앱으로의 전환**
 
-Snyk는 이벤트 전송 통합을 Snyk 앱 플랫폼을 사용하도록 전환하고 있습니다. 이 변경은 현재 및 미래의 클라우드 이벤트 통합에 대한 새로운 기능과 강화된 보안을 제공할 것입니다.
+Snyk은 이벤트 전송 통합을 Snyk 앱 플랫폼을 사용하도록 전환하고 있습니다. 이 변경은 현재 및 미래의 클라우드 이벤트 통합에 대한 새로운 기능과 강화된 보안을 제공할 것입니다.
 
 전환 중에 기존 통합은 정상적으로 계속 작동하며 고객은 통합을 승인하여 Snyk 앱이 되면 계속 작동하도록 할 수 있습니다. 기존 통합을 인증하려면 다음 단계를 따르십시오:
 
@@ -16,7 +16,7 @@ Snyk는 이벤트 전송 통합을 Snyk 앱 플랫폼을 사용하도록 전환�
 
 {% hint style="info" %}
 **기능 가용성**\
-AWS CloudTrail Lake 통합은 Snyk 엔터프라이즈 요금제에서만 이용 가능합니다. 자세한 정보는[요금제 및 가격](https://snyk.io/plans/)을 참조하십시오.
+AWS CloudTrail Lake 통합은 Snyk 엔터프라이즈 요금제에서만 이용 가능합니다. 자세한 정보는 [요금제 및 가격](https://snyk.io/plans/)을 참조하십시오.
 {% endhint %}
 
 AWS CloudTrail Lake 통합을 통해 [Snyk 감사 로그](../../snyk-admin/user-management-with-the-api/retrieve-audit-logs-of-user-initiated-activity-by-api-for-an-org-or-group.md)를 AWS CloudTrail Lake로 전달하여 로그에서 SQL 기반 쿼리를 실행하고 최대 일곱(7) 년간 보관할 수 있습니다.
@@ -144,7 +144,7 @@ curl --location --request POST 'https://api.snyk.io/rest/groups/<그룹 ID>/clou
 
 **통합 제거**를 선택하고 통합을 삭제하려고 확인하십시오.
 
-<figure><img src="../../.gitbook/assets/aws-ctl-6 (1) (1) (1) (1) (1) (1).png"" alt="통합 제거 버튼"><figcaption><p>통합 제거 버튼</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aws-ctl-6 (1) (1) (1) (1) (1) (1).png" alt="통합 제거 버튼"><figcaption><p>통합 제거 버튼</p></figcaption></figure>
 
 이 작업은 Snyk이 이 통합에 대한 구성을 제거하여 더 이상 감사 로그가 AWS CloudTrail Lake로 전송되지 않도록 합니다. 이는 AWS CloudTrail Lake에서 Snyk 통합을 제거하는 것이 아닙니다. 이를 위해서는 AWS CloudTrail Lake로 이동하여 **통합 목록**에서 Snyk 통합을 삭제해야 합니다.
 
@@ -152,5 +152,4 @@ curl --location --request POST 'https://api.snyk.io/rest/groups/<그룹 ID>/clou
 
 그룹을 위한 통합 설정 및 관리는 Snyk REST API에서만 지원됩니다. 엔드포인트 [그룹 등록 삭제](https://apidocs.snyk.io/experimental?version=2023-05-29%7Eexperimental#delete-/groups/-group_id-/cloud_events/group_registrations/-group_registration_id-)를 사용하여 통합을 제거할 수 있습니다. API 사용에 대한 팁은 [그룹 수준 통합을 구성하는 방법](aws-cloudtrail-lake.md#configure-the-integration-in-snyk-snyk-group-and-child-organizations) 섹션에서 확인하십시오.
 
-{% hint style="info" %}
-그룹 수준 통합을 삭제하려면 통합 ID를 검색하십시오. 이는 그룹 수준 통합을 생성할 때 API에서 반환되는 ID와 동일합니다. 또한 [모든 그룹 통합을 표시](https://apidocs.snyk.io/experimental?version=202
+그룹 수준 연동을 삭제하려면 연동 ID를 검색합니다. 이 ID는 그룹 수준 연동을 만들 때 API에서 반환되는 것과 동일한 ID입니다. [모든 그룹 등록 나열](https://apidocs.snyk.io/experimental?version=2023-05-29%7Eexperimental&_gl=1*15yge1f*_gcl_au*MjA2Mjk5NTgxOS4xNzM3MDEwOTQ4*_ga*NjUxODc3MTA0LjE3MzY5OTAwMzM.*_ga_X9SH3KP7B4*MTczOTE2NDczMC4zNS4xLjE3MzkxNjc0ODEuNTcuMC4w#get-/groups/-group_id-/cloud_events/group_registrations) 엔드포인트를 사용하여 현재 구성된 모든 그룹 연동 서비스를 가져올 수도 있습니다.

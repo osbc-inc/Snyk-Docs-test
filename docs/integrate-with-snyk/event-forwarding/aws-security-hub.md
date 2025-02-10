@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Snyk 앱으로의 전환**
 
-Snyk는 이벤트 전달 통합을 Snyk 앱 플랫폼을 사용하도록 전환하고 있습니다. 이 변경으로 인해 현재 및 미래의 클라우드 이벤트 통합에 새로운 기능과 향상된 보안이 제공될 것입니다.
+Snyk은 이벤트 전달 통합을 Snyk 앱 플랫폼을 사용하도록 전환하고 있습니다. 이 변경으로 인해 현재 및 미래의 클라우드 이벤트 통합에 새로운 기능과 향상된 보안이 제공될 것입니다.
 
 전환 과정에서 기존 통합은 계속해서 정상적으로 작동하며 고객들은 Snyk 앱으로 전환될 시 계속 작동하기 위해 통합을 승인할 기회를 얻을 수 있습니다. 기존 통합의 승인을 완료하려면 다음 단계를 따르세요:
 
@@ -19,11 +19,11 @@ Snyk는 이벤트 전달 통합을 Snyk 앱 플랫폼을 사용하도록 전환�
 통합을 구성하려면 두 가지 단계가 필요합니다:
 
 1. Security Hub를 구성하여 Security Hub 콘솔에서 Snyk의 결과물을 수락합니다.
-2. Snyk를 구성하여 Snyk 대시보드에서 Security Hub로 결과물을 보냅니다.
+2. Snyk을 구성하여 Snyk 대시보드에서 Security Hub로 결과물을 보냅니다.
 
 ## Snyk 결과물 수락을 위한 Security Hub 구성
 
-Snyk 결과물을 수신하려는 AWS 계정 및 지역의 Security Hub 콘솔로 이동하십시오. **Integrations** 섹션으로 이동하고 **Snyk**를 검색하세요. **Snyk** 통합 타일에서 **결과물 수락**을 클릭하고 안내에 따릅니다.
+Snyk 결과물을 수신하려는 AWS 계정 및 지역의 Security Hub 콘솔로 이동하십시오. **Integrations** 섹션으로 이동하고 **Snyk**을 검색하세요. **Snyk** 통합 타일에서 **결과물 수락**을 클릭하고 안내에 따릅니다.
 
 <figure><img src="../../.gitbook/assets/integrations-eventforwarding-securityhub-aws-acceptfindings.png" alt="Snyk 통합 검색"><figcaption><p>Snyk 통합 검색</p></figcaption></figure>
 
@@ -39,7 +39,7 @@ Snyk 결과물을 수신하려는 AWS 계정 및 지역의 Security Hub 콘솔�
 
 <figure><img src="../../.gitbook/assets/integratinos-eventforwarding-securityhub-dialog.png" alt="통합 세부 정보 입력"><figcaption><p>통합 세부 정보 입력</p></figcaption></figure>
 
-이 단계를 마치면 Snyk는 Security Hub로 새로운 문제 이벤트를 보내기 시작합니다.
+이 단계를 마치면 Snyk은 Security Hub로 새로운 문제 이벤트를 보내기 시작합니다.
 
 {% hint style="info" %}
 기존 프로젝트에서의 문제는 업데이트된 경우에만 Security Hub로 전송됩니다. 기존 프로젝트에서 문제를 채우려면 삭제하고 다시 가져와야 합니다.

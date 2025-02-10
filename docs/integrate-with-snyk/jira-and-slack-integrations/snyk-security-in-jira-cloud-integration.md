@@ -49,7 +49,7 @@ Snyk을 Jira에 연결하려면 다음 단계를 완료한 후 Jira에서 보안
 일반적으로 연구 및 개발 엔지니어링 매니저가 이 작업을 수행합니다. 그들은 Jira 프로젝트를 소유하고 팀의 코드 저장소를 알고 있기 때문입니다.
 {% endhint %}
 
-1. Jira에서 **프로젝트 설정** > **도구 체인**으로 이동하여 도구 목록에서 Snyk를 찾습니다.\
+1. Jira에서 **프로젝트 설정** > **도구 체인**으로 이동하여 도구 목록에서 Snyk을 찾습니다.\
    [Jira Software에서 프로젝트 도구 체인이란?](https://support.atlassian.com/jira-software-cloud/docs/what-is-the-project-toolchain-in-jira/)
 2. Snyk을 위한 **연결 추가** 플러스(+ ) 버튼을 클릭합니다.
 3. 목록에서 컨테이너 코드 저장소를 선택하고 **컨테이너 추가**를 선택합니다. 이것이 Snyk 대상입니다.\
@@ -94,7 +94,7 @@ Snyk Jira Cloud 앱의 Security를 설치하고 구성한 후 Jira 프로젝트 
 
 <figure><img src="../../.gitbook/assets/Secuirity-Jira-Cloud-tab.png" alt="Snyk Jira Cloud 탭의 Security"><figcaption><p>Snyk Jira Cloud 탭의 Security</p></figcaption></figure>
 
-취약점을 찾으려면 **취약점** 섹션으로 이동하십시오. Snyk는 심각성, 상태 및 식별자를 표시합니다. Snyk 웹 UI에서 자세한 내용을 보려면 제목을 클릭하십시오.
+취약점을 찾으려면 **취약점** 섹션으로 이동하십시오. Snyk은 심각성, 상태 및 식별자를 표시합니다. Snyk 웹 UI에서 자세한 내용을 보려면 제목을 클릭하십시오.
 
 ### 취약점 검색, 필터링, 정렬
 
@@ -108,7 +108,7 @@ Snyk Jira Cloud 앱의 Security를 설치하고 구성한 후 Jira 프로젝트 
 
 이슈를 우선순위에 따라 계획하고 추적하여 취약점을 해결하기 위해 티켓을 Jira 이슈에 추가할 수 있습니다.
 
-Snyk는 취약성 정보를 Jira로 제공하여 사용자가 문제를 해결하는 데 필요한 종합 데이터를 얻을 수 있습니다.
+Snyk은 취약성 정보를 Jira로 제공하여 사용자가 문제를 해결하는 데 필요한 종합 데이터를 얻을 수 있습니다.
 
 Jira 이슈를 추가하려면 **Snyk 보안** 탭으로 이동하여 취약점을 찾은 후 **이슈 생성**을 클릭합니다.
 
