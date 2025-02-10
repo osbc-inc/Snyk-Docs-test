@@ -72,7 +72,7 @@ phases:
 
 ### CodePipeline 설정
 
-일부 [오픈 소스](https://snyk.io/product/open-source-security-management/) 프로젝트는 Snyk CLI로 테스트하기 전에 프로젝트를 빌드해야 할 수도 있습니다. Snyk가 오픈 소스 스캔을 실행하기 전에 프로젝트를 빌드해야 하는지 확인하려면 Snyk [문서](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md)를 검토한 후 해당 섹션에서 지시사항을 따르십시오.
+일부 [오픈 소스](https://snyk.io/product/open-source-security-management/) 프로젝트는 Snyk CLI로 테스트하기 전에 프로젝트를 빌드해야 할 수도 있습니다. Snyk이 오픈 소스 스캔을 실행하기 전에 프로젝트를 빌드해야 하는지 확인하려면 Snyk [문서](../../../snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md)를 검토한 후 해당 섹션에서 지시사항을 따르십시오.
 
 #### 빌드된 프로젝트가 필요한 경우
 
