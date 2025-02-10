@@ -38,7 +38,7 @@ Snyk Language Server는 Visual Studio Code(VS Code) 및 Eclipse 플러그인을 
 #!/bin/bash
 # 이 파일은 최신 Language Server를 다운로드할 수 있게 해 주며, 이는 미관리 에디터와 IDE에 통합하는 데 유용합니다.
 # 이는 Snyk에서 다운로드를 지원하지 않은 모든 에디터를 위해 정기적으로 다운로드 및 업데이트해야 하는데, 이러한 작업을 시스템 관리자와 사용자가 할 수 있도록 하는 스크립트입니다.
-# Snyk는 항상 최신 버전의 Language Server를 사용하는 것을 권장합니다.
+# Snyk은 항상 최신 버전의 Language Server를 사용하는 것을 권장합니다.
 
 set -e
 OS=$(uname -s | tr '[:upper:]' '[:lower:]')
@@ -73,7 +73,7 @@ PROTOCOL\_VERSION은 3이지만, 계속된 개발에 따라 증가할 수 있습
 
 ### **LSP 초기화 옵션**
 
-`initializationOptions?: LSPAny;` 내에서 [초기화 메시지](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#initialize)의 일부로, Snyk는 다음 설정을 지원합니다:
+`initializationOptions?: LSPAny;` 내에서 [초기화 메시지](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#initialize)의 일부로, Snyk은 다음 설정을 지원합니다:
 
 ```json
 {
@@ -97,7 +97,7 @@ PROTOCOL\_VERSION은 3이지만, 계속된 개발에 따라 증가할 수 있습
 }
 ```
 
-모든 .NET 프로젝트에 대해 Snyk는 `--all-projects` 추가 매개변수로 추가하도록 권장합니다.
+모든 .NET 프로젝트에 대해 Snyk `--all-projects` 추가 매개변수로 추가하도록 권장합니다.
 
 ## Snyk Language Server의 인증
 

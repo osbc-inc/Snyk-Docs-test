@@ -30,6 +30,6 @@ IDE에서는 확장이 이미 파일을 인식하고 분석을 위해 업로드�
 
 Snyk Open Source는 Snyk CLI를 필요로 하며, 백그라운드에서 다운로드됩니다.
 
-Snyk Code 분석은 CLI 없이 빠르게 실행되므로 결과가 이미 사용 가능할 수 있습니다. 그렇지 않으면 다음 화면을 볼 수 있으며, Snyk가 취약점과 문제를 검사하기 위해 작업영역을 스캔하는 동안 다음과 같은 화면이 표시됩니다:
+Snyk Code 분석은 CLI 없이 빠르게 실행되므로 결과가 이미 사용 가능할 수 있습니다. 그렇지 않으면 다음 화면을 볼 수 있으며, Snyk이 취약점과 문제를 검사하기 위해 작업영역을 스캔하는 동안 다음과 같은 화면이 표시됩니다:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-03-16 at 14.53.38.png" alt="Snyk 스캔 진행중"><figcaption><p>Snyk 스캔 진행중</p></figcaption></figure>

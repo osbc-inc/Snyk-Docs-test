@@ -15,7 +15,7 @@ Snyk은 다음 프로토콜을 지원합니다:
 
 다음 단계에 따라 인증하세요:
 
-1. 확장 프로그램을 설치한 후 **Extensions > Snyk > Windows > Snyk**로 이동한 다음 열려 있는 패널을 찾으세요.
+1. 확장 프로그램을 설치한 후 **Extensions > Snyk > Windows > Snyk**으로 이동한 다음 열려 있는 패널을 찾으세요.
 
 <figure><img src="../../../.gitbook/assets/SCR-20240822-llxy.png" alt="Snyk 확장 프로그램 탐색" width="563"><figcaption><p>Snyk 확장 프로그램 탐색</p></figcaption></figure>
 
