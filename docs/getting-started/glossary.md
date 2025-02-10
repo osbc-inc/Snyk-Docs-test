@@ -8,7 +8,7 @@
 
 ### **자산 (Snyk AppRisk)**
 
-Snyk AppRisk 자산은 애플리케이션의 일부인 식별 가능한 개체로, 보안 및 개발자에 관련이 있습니다. Snyk는 보통 소프트웨어 개발 단계에 중점을 두며, 소프트웨어 패키지 자산을 포함하는 보안 저장소 자산을 보호하고, 컨테이너 이미지 자산과 같은 아티팩트를 구축합니다.
+Snyk AppRisk 자산은 애플리케이션의 일부인 식별 가능한 개체로, 보안 및 개발자에 관련이 있습니다. Snyk은 보통 소프트웨어 개발 단계에 중점을 두며, 소프트웨어 패키지 자산을 포함하는 보안 저장소 자산을 보호하고, 컨테이너 이미지 자산과 같은 아티팩트를 구축합니다.
 
 ### 애플리케이션 (Snyk AppRisk)
 
@@ -16,7 +16,7 @@ Snyk AppRisk 자산은 애플리케이션의 일부인 식별 가능한 개체�
 
 ### 애플리케이션 그래프
 
-보안 문제, 애플리케이션 자산, 자산 간 관계, 및 모든 관련 정보를 매핑합니다.&#x20;
+보안 문제, 애플리케이션 자산, 자산 간 관계, 및 모든 관련 정보를 매핑합니다.
 
 ## B
 
@@ -52,7 +52,7 @@ Command Line Interface. [Snyk CLI](glossary.md#snyk-cli)를 참조하세요.
 
 ### 클라우드 네이티브 애플리케이션 보안
 
-CI/CD 파이프라인 전체에 걸쳐 보안을 구현하고, 보안을 자동화하여 마이크로서비스에 내장하고 취약점 도입을 최소화하는 반복을 극대화하는 것입니다. Snyk는 포괄적인 [CNAS 플랫폼](https://snyk.io/product/cloud-native-application-security/)을 제공합니다.\
+CI/CD 파이프라인 전체에 걸쳐 보안을 구현하고, 보안을 자동화하여 마이크로서비스에 내장하고 취약점 도입을 최소화하는 반복을 극대화하는 것입니다. Snyk 포괄적인 [CNAS 플랫폼](https://snyk.io/product/cloud-native-application-security/)을 제공합니다.\
 [클라우드 네이티브 응용 프로그램 보안을 위한 클라우드 네이티브 보안 가이드](https://snyk.io/learn/cloud-native-security-for-cloud-native-applications/)를 참조하세요.
 
 ### 코드 자산 (Snyk AppRisk)
@@ -93,7 +93,7 @@ CI/CD 파이프라인 전체에 걸쳐 보안을 구현하고, 보안을 자동�
 
 ### CVSS
 
-공통 취약점 점수 시스템입니다. 취약점의 심각도를 평가하는 산업 표준으로, 0(최저)에서 10(최고)까지 점수를 사용합니다. Snyk는 CVSS를 사용합니다.
+공통 취약점 점수 시스템입니다. 취약점의 심각도를 평가하는 산업 표준으로, 0(최저)에서 10(최고)까지 점수를 사용합니다. Snyk CVSS를 사용합니다.
 
 ### CWE
 
@@ -103,14 +103,14 @@ CI/CD 파이프라인 전체에 걸쳐 보안을 구현하고, 보안을 자동�
 
 ### DAST
 
-동적 애플리케이션 보안 테스팅(Dynamic Application Security Testing)입니다. 실행 중인 애플리케이션을 외부에서 테스트하여 보안 문제를 찾는 보안 분석 기술입니다. [IAST](glossary.md#iast) 및 [SAST](glossary.md#sast)도 참조하세요.  
+동적 애플리케이션 보안 테스팅(Dynamic Application Security Testing)입니다. 실행 중인 애플리케이션을 외부에서 테스트하여 보안 문제를 찾는 보안 분석 기술입니다. [IAST](glossary.md#iast) 및 [SAST](glossary.md#sast)도 참조하세요.
 
 ### 의존성
 
 애플리케이션이 다른 패키지를 사용할 때, 해당 다른 패키지는 자신의 소프트웨어에서 의존성이 됩니다.
 
-- 직접 의존성은 자신의 프로젝트에 포함하는 패키지입니다.
-- 간접 의존성(또는 깊거나 체인 또는 추이적 의존성이라고도 함)은 직접 의존성 중 하나가 사용하는 패키지입니다.
+* 직접 의존성은 자신의 프로젝트에 포함하는 패키지입니다.
+* 간접 의존성(또는 깊거나 체인 또는 추이적 의존성이라고도 함)은 직접 의존성 중 하나가 사용하는 패키지입니다.
 
 ### 의존성 트리
 
@@ -154,7 +154,7 @@ Docker를 사용하여 컨테이너 이미지를 빌드하는 데 사용되는 �
 
 ### 수정 PR
 
-Snyk가 사용자에게 제공할 수 있는 발견된 취약점에 대한 자동 수정이 포함된 풀 리퀘스트입니다. [Automated fix PRs](../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)를 참조하세요.
+Snyk 사용자에게 제공할 수 있는 발견된 취약점에 대한 자동 수정이 포함된 풀 리퀘스트입니다. [Automated fix PRs](../scan-with-snyk/pull-requests/snyk-pull-or-merge-requests/create-automatic-prs-for-backlog-issues-and-known-vulnerabilities-backlog-prs.md)를 참조하세요.
 
 ## G
 
@@ -178,7 +178,7 @@ Integrated Development Environment. 보통 소스 코드 편집기, 빌드 자�
 
 ### 이미지
 
-애플리케이션을 실행하는 데 필요한 소프트웨어 세트를 포함하는 컨테이너의 저장된 인스턴스입니다.  
+애플리케이션을 실행하는 데 필요한 소프트웨어 세트를 포함하는 컨테이너의 저장된 인스턴스입니다.
 
 ### 이미지 레이어
 
@@ -186,7 +186,7 @@ Integrated Development Environment. 보통 소스 코드 편집기, 빌드 자�
 
 ### 통합
 
-Snyk가 작동하는 타사 제품, 애플리케이션 및 플랫폼입니다(예: GitHub와 같은 SCM 시스템). [Snyk와 통합](../integrate-with-snyk/)을 참조하세요.
+Snyk 작동하는 타사 제품, 애플리케이션 및 플랫폼입니다(예: GitHub와 같은 SCM 시스템). [Snyk와 통합](../integrate-with-snyk/)을 참조하세요.
 
 ### 이슈
 
@@ -202,7 +202,7 @@ Snyk에 의해 식별되고 목록화된 라이선스 문제,### 런타임 컨�
 
 ### SAST
 
-정적 응용프로그램 보안 테스트. 응용프로그램을 실행하지 않고 정적 소스 코드를 검토하여 잠재적인 취약점을 식별하는 보안 분석 기술입니다. [IAST](glossary.md#iast), [DAST](glossary.md#dast), [](glossary.md#snyk-code), 및 [Snyk ](glossary.md#snyk-infrastructure-as-code)도 참조하십시오.
+정적 응용프로그램 보안 테스트. 응용프로그램을 실행하지 않고 정적 소스 코드를 검토하여 잠재적인 취약점을 식별하는 보안 분석 기술입니다. [IAST](glossary.md#iast), [DAST](glossary.md#dast),, 및 [Snyk ](glossary.md#snyk-infrastructure-as-code)도 참조하십시오.
 
 ### SBOM
 
@@ -210,7 +210,7 @@ Snyk에 의해 식별되고 목록화된 라이선스 문제,### 런타임 컨�
 
 ### SCA
 
-소프트웨어 구성 요소 분석. 응용프로그램에서 사용 중인 오픈 소스 및 제삼자 구성 요소, 알려진 보안 취약점 및 종종 상대적인 라이센스 제한을 식별하는 보안 분석 기술입니다. [정적 코드 분석](glossary.md#static-code-analysis)과 혼동되어서는 안 됩니다. [](glossary.md#snyk-open-source)도 참조하십시오.
+소프트웨어 구성 요소 분석. 응용프로그램에서 사용 중인 오픈 소스 및 제삼자 구성 요소, 알려진 보안 취약점 및 종종 상대적인 라이센스 제한을 식별하는 보안 분석 기술입니다. [정적 코드 분석](glossary.md#static-code-analysis)과 혼동되어서는 안 됩니다.도 참조하십시오.
 
 ### 스캔된 artifact(들) (Snyk AppRisk)
 
@@ -242,11 +242,11 @@ SCM 리포지토리 최신 정보는 마지막 커밋 날짜를 포함하여 리
 
 ### `.snyk` 정책
 
-Snyk가 CLI 및 CI/CD 플러그인에 대한 패치를 지정하고 특정 분석 동작을 정의하는 데 사용하는 정책 파일입니다. [.snyk 파일](../manage-risk/policies/the-.snyk-file.md)을 참조하십시오.
+Snyk CLI 및 CI/CD 플러그인에 대한 패치를 지정하고 특정 분석 동작을 정의하는 데 사용하는 정책 파일입니다. [.snyk 파일](../manage-risk/policies/the-.snyk-file.md)을 참조하십시오.
 
 ### Snyk
 
-클라우드 네이티브 애플리케이션 보안(CNAS) 솔루션을 제공하는 플랫폼으로, 개발자가 코드 및 오픈 소스에서 컨테이너 및 클라우드 인프라까지 전체 응용프로그램의 보안을 소유하고 구축할 수 있게 합니다. Snyk는 또한 Snyk 플랫폼을 제공하는 회사입니다. [시작하기](./)를 참조하십시오.
+클라우드 네이티브 애플리케이션 보안(CNAS) 솔루션을 제공하는 플랫폼으로, 개발자가 코드 및 오픈 소스에서 컨테이너 및 클라우드 인프라까지 전체 응용프로그램의 보안을 소유하고 구축할 수 있게 합니다. Snyk 또한 Snyk 플랫폼을 제공하는 회사입니다. [시작하기](./)를 참조하십시오.
 
 ### Snyk Advisor
 
@@ -262,7 +262,7 @@ Snyk Apps는 Snyk와 통합을 구축하는 현대적이고 선호되는 방법�
 
 ### Snyk Broker
 
-Snyk가 개인 고객 환경 (Jira, 코드 저장소 또는 컨테이너 레지스트리)를 스캔할 수 있게 하는 클라이언트/서버 시스템으로, 에이전트나 프록시로 작동합니다. Snyk Broker는 메시지를 중계하고 사용자가 허용하는 메시지를 필터링하여, 예를 들어 일부 GitHub API만 Snyk에 노출되도록 하는 등의 기능을 제공합니다. [Snyk Broker](../enterprise-setup/snyk-broker/)를 참조하십시오.
+Snyk 개인 고객 환경 (Jira, 코드 저장소 또는 컨테이너 레지스트리)를 스캔할 수 있게 하는 클라이언트/서버 시스템으로, 에이전트나 프록시로 작동합니다. Snyk Broker는 메시지를 중계하고 사용자가 허용하는 메시지를 필터링하여, 예를 들어 일부 GitHub API만 Snyk에 노출되도록 하는 등의 기능을 제공합니다. [Snyk Broker](../enterprise-setup/snyk-broker/)를 참조하십시오.
 
 ### Snyk CLI
 
@@ -290,8 +290,7 @@ Snyk 제품으로, 오픈 소스 취약점을 찾고 수정할 수 있도록 합
 
 ### Snyk 보안 인텔리전스
 
-Snk 클라우드 네이티브 애플리케이션 보안 플랫폼을 구동하는 구성 요소입니다.
-Snyk Intel 취약점 DB를 포함하여, 알려진 취약점에 대한 자세한 정보와 수정 지침을 제공하는 취약점 데이터베이스입니다. [취약점 DB](https://snyk.io/vuln)를 참조하십시오.
+Snk 클라우드 네이티브 애플리케이션 보안 플랫폼을 구동하는 구성 요소입니다. Snyk Intel 취약점 DB를 포함하여, 알려진 취약점에 대한 자세한 정보와 수정 지침을 제공하는 취약점 데이터베이스입니다. [취약점 DB](https://snyk.io/vuln)를 참조하십시오.
 
 ### Snyk 웹 UI
 
@@ -299,7 +298,7 @@ Snyk 기능에 대한 사용자 액세스를 제공하는 브라우저 기반 �
 
 ### 소셜 트렌드
 
-Snyk는 활발하게 논의되는 문제에 대한 트렌드 배너를 표시합니다 (이전에는 Twitter로 알려졌음). [소셜 트렌드를 갖는 취약점](../manage-risk/prioritize-issues-for-fixing/vulnerabilities-with-social-trends.md)을 참조하십시오.
+Snyk 활발하게 논의되는 문제에 대한 트렌드 배너를 표시합니다 (이전에는 Twitter로 알려졌음). [소셜 트렌드를 갖는 취약점](../manage-risk/prioritize-issues-for-fixing/vulnerabilities-with-social-trends.md)을 참조하십시오.
 
 ### 소스
 
@@ -317,7 +316,7 @@ Snyk는 활발하게 논의되는 문제에 대한 트렌드 배너를 표시합
 
 ### 타겟
 
-Snyk가 스캔한 외부 리소스의 표현입니다. 모든 [Snyk 프로젝트](glossary.md#project)는 부모 타겟과 관련이 있으며, 한 타겟은 여러 프로젝트에 관련됩니다. 타겟의 구조는 [원본](glossary.md#origin-or-source)에 따라 달라집니다.
+Snyk 스캔한 외부 리소스의 표현입니다. 모든 [Snyk 프로젝트](glossary.md#project)는 부모 타겟과 관련이 있으며, 한 타겟은 여러 프로젝트에 관련됩니다. 타겟의 구조는 [원본](glossary.md#origin-or-source)에 따라 달라집니다.
 
 ### **태그 (Snyk AppRisk)**
 
@@ -339,7 +338,7 @@ Snyk에서 식별된 보안 취약점입니다. [취약점 관리](../scan-with-
 
 ### 웹훅
 
-애플리케이션이 실시간 정보를 다른 응용프로그램에 제공하는 방법입니다. Snyk는 코드 변경 사항을 확인하기 위해 웹훅을 사용합니다. [Snyk 웹훅](../snyk-api/how-to-use-snyk-webhooks-apis/)을 참조하십시오.
+애플리케이션이 실시간 정보를 다른 응용프로그램에 제공하는 방법입니다. Snyk은 코드 변경 사항을 확인하기 위해 웹훅을 사용합니다. [Snyk 웹훅](../snyk-api/how-to-use-snyk-webhooks-apis/)을 참조하십시오.
 
 ### 웹 UI
 
@@ -347,6 +346,6 @@ Snyk에서 식별된 보안 취약점입니다. [취약점 관리](../scan-with-
 
 ### Workspace(SCM 통합)
 
-Snyk의 기능입니다. 이를 통해 Snyk는 정확하고 신뢰할 수 있는 취약성 검사 결과를 얻기 위해 Git 리포지토리의 얕은 복사본을 처리할 수 있습니다.
+Snyk의 기능입니다. 이를 통해 Snyk은 정확하고 신뢰할 수 있는 취약성 검사 결과를 얻기 위해 Git 리포지토리의 얕은 복사본을 처리할 수 있습니다.
 
 [SCM 통합을 위한 Workspace](../scm-ide-and-ci-cd-integrations/snyk-scm-integrations/introduction-to-git-repository-integrations/workspaces-for-scm-integrations.md)를 참조하십시오.
