@@ -1,4 +1,4 @@
-# Snyk 앱 리스크를 위한 서드 파티 통합
+# Snyk AppRisk를 위한 타사 통합
 
 Integrations 페이지는 자동으로 동기화된 기존 Snyk 조직 데이터를 포함하여 모든 활성 통합을 보여주며, Integration Hub에 액세스할 수 있습니다.
 
@@ -86,7 +86,7 @@ Snyk AppRisk Pro는 Checkmarx One 통합을 지원하지 않습니다.
 
 1. API URL - 예: `checkmarx.customer.com`과 같은 Checkmarx API의 URL입니다.
 2. 사용자 이름과 비밀번호 - Checkmarx SAST 액세스 권한이 있는 사용자 계정의 자격 증명입니다.
-  
+
 ### Integration Hub 설정 <a href="#checkmarx-integration-hub-setup" id="checkmarx-integration-hub-setup"></a>
 
 Snyk Broker를 AppRisk용으로 설치하고 구성한 후 Checkmarx SAST를 위한 연결을 성공적으로 설정한 경우, Integration Hub에서 해당 통합을 구성해야 합니다.
@@ -153,13 +153,13 @@ Snyk AppRisk Pro용 Nightfall는 조기 액세스 단계이며, Snyk Enterprise 
 다음 비디오는 Integration Hub에서의 Nightfall 구성 개요를 제공합니다:
 
 {% embed url="https://www.youtube.com/watch?v=FJ5fAyMYSUs" %}
-비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training&topics=AppRisk)에서 나머지 코스를 확인하세요!
+비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)에서 나머지 코스를 확인하세요!
 {% endembed %}
 
 Integration Hub을 사용하여 Nightfall 통합을 설정한 후에는 시크릿 감지 범위를 확인할 수 있습니다.
 
 {% embed url="https://www.youtube.com/watch?v=o6TqPMSq1rk" %}
-비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training&topics=AppRisk)에서 나머지 코스를 확인하세요!
+비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)에서 나머지 코스를 확인하세요!
 {% endembed %}
 
 ## GitGuardian 설정 가이드
@@ -178,8 +178,8 @@ GitGuardian API 키를 생성할 때, 해당 API 키가 서비스 계정 및 개
 
 다음 권한이 **READ**로 설정되어 있는지 확인하세요:
 
-* Incident (`의무 사항`)
-* Teams (유료 계정의 경우 **권장**)
+* Incident (`mandatory`)
+* Teams (유료 계정의 경우 `recommended`)
 
 ### Integration Hub 설정 <a href="#gitguardian-integration-hub-setup" id="gitguardian-integration-hub-setup"></a>
 
@@ -194,13 +194,13 @@ GitGuardian API 키를 생성할 때, 해당 API 키가 서비스 계정 및 개
 다음 비디오는 Integration Hub에서의 GitGuardian 구성 개요를 제공합니다:
 
 {% embed url="https://www.youtube.com/watch?v=4u4QrJBZTkI" %}
-비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training&topics=AppRisk)에서 나머지 코스를 확인하세요!
+비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)에서 나머지 코스를 확인하세요!
 {% endembed %}
 
 Integration Hub을 사용하여 GitGuardian 통합을 설정한 후에는 시크릿 감지 범위를 확인할 수 있습니다:
 
 {% embed url="https://www.youtube.com/watch?v=zh4c5f_vv1k" %}
-비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training&topics=AppRisk)에서 나머지 코스를 확인하세요!
+비디오가 도움이 되었나요? [Snyk Learn](https://learn.snyk.io/catalog/?type=product-training\&topics=AppRisk)에서 나머지 코스를 확인하세요!
 {% endembed %}
 
 ## Dynatrace 설정 가이드
@@ -221,7 +221,7 @@ Dynatrace 통합에서 보고되는 로드된 패키지 리스크 팩터를 위�
 
 * DPS 라이선스 모델에서 Dynatrace SaaS를 사용하세요.
 * Dynatrace [Kubernetes 앱](https://docs.dynatrace.com/docs/platform-modules/infrastructure-monitoring/container-platform-monitoring/kubernetes-app/overview)은 적어도 하나의 클러스터를 모니터링하도록 구성되어 있어야 합니다.
-* 사용자가 엔티티 모델을 쿼리할 수 있는## Dynatrace 설정 페이지
+* 사용자가 엔티티 모델을 쿼리할 수 있는 권한이 있는 그룹과 연결되어 있습니다.&#x20;
 
 이후, `Identity & access management`으로 이동하십시오. `OAuth clients`를 선택하고 `Create client`를 클릭하십시오. 세부 정보를 입력하고 다음 권한을 확인한 후 `Create client`를 클릭하십시오:
 
@@ -255,7 +255,7 @@ storage:entities:read
 런타임 통합에서 Dynatrace 런타임 데이터가 제공되면, Snyk AppRisk에 몇 시간 내에 표시됩니다.
 {% endhint %}
 
-![Dynatrace - 설정 화면](../../../.gitbook/assets/image (592).png)
+<figure><img src="https://docs.snyk.io/~gitbook/image?url=https%3A%2F%2F2533899886-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MdwVZ6HOZriajCf5nXH%252Fuploads%252Fm6MrWddrP2dQVNhZ28IW%252Fimage.png%3Falt%3Dmedia%26token%3D7771b1be-482e-4cd2-bbe3-89e8bff09201&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c1687b41&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
 ## Sysdig 설정 가이드
 
@@ -303,7 +303,6 @@ Sysdig 런타임 통합으로부터 보고된 다음 [위험 요인](https://doc
 * **Sysdig 지역**을 설정합니다.
 * **Done** 버튼을 클릭합니다.
 * 연결이 설정되면 Sysdig 통합 상태가 **Connected**로 변경됩니다.
-
 
 {% hint style="info" %}
 Sysdig 런타임 데이터가 런타임 통합을 통해 사용 가능해지면 몇 시간 내에 Snyk AppRisk에 표시됩니다.
