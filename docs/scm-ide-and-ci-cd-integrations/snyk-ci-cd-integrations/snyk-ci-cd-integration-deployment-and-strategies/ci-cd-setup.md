@@ -61,4 +61,4 @@ Snyk으로 프로젝트를 모니터링하면 프로젝트의 종속성이 최�
 * [Circle CI](https://circleci.com/docs/set-environment-variable/)
 * [Codeship Basic](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/basic-builds-and-configuration/set-environment-variables), [Codeship Pro](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/pro-builds-and-configuration/environment-variables)
 
-`CI에서 환경 변수 설정`으로 웹 검색을 통해 추가 문서를 찾을 수 있습니다.
+`setting up env variables in CI`으로 웹 검색을 통해 추가 문서를 찾을 수 있습니다.
