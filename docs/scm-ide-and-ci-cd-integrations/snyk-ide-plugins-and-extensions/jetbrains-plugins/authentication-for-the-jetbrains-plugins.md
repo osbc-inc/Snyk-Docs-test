@@ -47,8 +47,8 @@ OAuth 2.0 토큰은 정적이 아니며 Snyk 계정 페이지에서 복사할 �
 
 다음 단계에 따라 인증하세요:
 
-1. JetBrains 플러그인에서 **Preferences** > **Tools** > **Snyk**로 이동합니다.
-2. **Authentication Method**를 찾아 **Token authentication**로 변경합니다.
+1. JetBrains 플러그인에서 **Preferences** > **Tools** > **Snyk**으로 이동합니다.
+2. **Authentication Method**를 찾아 **Token authentication**으로 변경합니다.
 3. API 토큰을 복사합니다. 자세한 내용은 [Snyk API 토큰을 가져오고 사용](../../../getting-started/#obtain-and-use-your-snyk-api-token)을 참조하세요.
 4. **Token** 필드에 붙여넣거나 입력합니다.
 5. **Apply** 또는 **OK**를 클릭합니다. 분석이 자동으로 시작됩니다.
@@ -57,7 +57,7 @@ OAuth 2.0 토큰은 정적이 아니며 Snyk 계정 페이지에서 복사할 �
 
 다른 계정으로 다시 인증하려면 다음 단계를 따르세요:
 
-1. JetBrains 플러그인에서 **Preferences** > **Tools** > **Snyk**로 이동합니다.
+1. JetBrains 플러그인에서 **Preferences** > **Tools** > **Snyk**으로 이동합니다.
 2. **Token** 필드의 값을 지우세요.
 3. **Apply** 또는 **OK**를 클릭합니다.
 4. 로그아웃되면 처음부터 인증을 시작하세요.

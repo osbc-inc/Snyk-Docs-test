@@ -32,7 +32,7 @@ Snyk 비주얼 스튜디오 확장 프로그램을 사용하면 코드 및 오�
 
 <figure><img src="../../../.gitbook/assets/image (351) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Snyk extensions menu"><figcaption><p>Snyk 확장 메뉴</p></figcaption></figure>
 
-**뷰 > 기타 창 > Snyk**를 통해 Snyk 도구 창을 열 수도 있습니다.
+**뷰 > 기타 창 > Snyk**을  통해 Snyk 도구 창을 열 수도 있습니다.
 
 도구 창이 열리면 Snyk 확장 프로그램이 [Snyk CLI,](https://docs.snyk.io/snyk-cli) 즉 [언어 서버](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/snyk-language-server)를 다운로드하고 있습니다.
 

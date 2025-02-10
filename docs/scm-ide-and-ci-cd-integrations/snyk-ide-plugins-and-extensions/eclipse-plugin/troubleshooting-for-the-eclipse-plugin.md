@@ -18,7 +18,7 @@ Snyk 플러그인은 유통업체의 End Of Life (EOL)에 도달한 모든 운�
 
 추가적인 플러그인 오류 로그를 보려면:
 
-1. **Window** > **Show View** > Others...로 이동합니다.
+1. **Window** > **Show View** > **Others...**&#xB85C; 이동합니다.
 2. **type text filer**에 **Error Log**를 검색합니다.
 3. **Open**을 클릭하여 오류 로그 탭을 엽니다. 탭 보기에서 플러그인별로 그룹화하려면 (오른쪽 상단의 세 개의 점 메뉴 > **Group By** > **Plug-in**) `io.snyk.eclipse.plugin` 행에서 플러그인 오류를 확인할 수 있습니다.
 
