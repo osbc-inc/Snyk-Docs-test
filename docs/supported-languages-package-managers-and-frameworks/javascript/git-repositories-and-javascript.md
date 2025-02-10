@@ -1,6 +1,6 @@
 # Git 리포지토리 및 JavaScript
 
-Snyk가 지원하는 Git 서비스를 통해 JavaScript 저장소를 가져올 수 있습니다. 가져온 후에 Snyk는 지원하는 manifest 파일을 기반으로 프로젝트를 분석합니다.
+Snyk이 지원하는 Git 서비스를 통해 JavaScript 저장소를 가져올 수 있습니다. 가져온 후에 Snyk은 지원하는 manifest 파일을 기반으로 프로젝트를 분석합니다.
 
 ## JavaScript 언어 설정을 위한 Snyk
 
@@ -10,7 +10,7 @@ Snyk가 지원하는 Git 서비스를 통해 JavaScript 저장소를 가져올 �
 2. **언어** 아래에서 **JavaScript**을 찾아 **설정 편집**을 선택합니다.
 3. 패키지 관리자, **npm** 또는 **Yarn**에 기반하여 설정을 구성합니다.
    * **Dev dependencies 스캔 및 수정**: 이 옵션을 선택하면 Snyk이 `package.json`의 `devDependencies` 속성을 읽고 해당 취약점을 보고하고 수정합니다.
-   * **package.json 및 package-lock.json/yarn.lock 파일 동기화 필요**: 이 옵션을 선택하면 `package.json`과 `package-lock.json`/`yarn.lock` 파일이 동기화되지 않은 경우 Snyk가 가져오기를 실패합니다.
+   * **package.json 및 package-lock.json/yarn.lock 파일 동기화 필요**: 이 옵션을 선택하면 `package.json`과 `package-lock.json`/`yarn.lock` 파일이 동기화되지 않은 경우 Snyk이 가져오기를 실패합니다.
    * **취약점 수정 시 package-lock.json 생성 제외**: 개인 미러 또는 레지스트리를 사용하는 경우, Snyk이락 파일을 업데이트하기 위해 npm 레지스트리를 사용하기 때문에 Snyk에서 생성된 락 파일이 적합하지 않을 수 있습니다. 엔터프라이즈 고객은 [패키지 저장소 통합](../../scan-with-snyk/snyk-open-source/package-repository-integrations/)을 사용하여 락 파일이 올바르게 업데이트되도록 할 수 있습니다. 또는 이 설정을 통해 Snyk 수정 풀 리퀘스트 및 머지 리퀘스트에 대한 락 파일 생성을 건너뛸 수 있습니다.
 4. 변경 사항을 저장하기 위해 **설정 업데이트**를 클릭합니다.
 
@@ -22,7 +22,7 @@ Snyk Git 저장소 통합 스캔에서 Yarn 및 npm 워크스페이스는 명시
 
 인접한 락 파일이 있는 루트 수준의 `package.json` manifest 파일은 일반적으로 스캔됩니다.
 
-락 파일이 없는 중첩된 manifest 파일의 경우, Snyk는 루트 락 파일을 사용하지 않고 빌드 시점의 종속성 트리가 어떻게 보일지 대략적으로 계산합니다.
+락 파일이 없는 중첩된 manifest 파일의 경우, Snyk 루트 락 파일을 사용하지 않고 빌드 시점의 종속성 트리가 어떻게 보일지 대략적으로 계산합니다.
 
 또한, 중첩된 manifest 파일에 대한 수정 PR은 지원되지 않습니다.
 
