@@ -896,7 +896,7 @@
       * [Snyk CLI로 테스트하기 전에 빌드해야 하는 오픈 소스 프로젝트](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/open-source-projects-that-must-be-built-before-testing-with-the-snyk-cli.md)
       * [옵션을 사용하여 snyk 테스트 명령 사용자 지정하기](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/use-options-to-customize-the-snyk-test-command.md)
       * [Snyk 오픈 소스 CLI 결과 검토하기](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/review-the-snyk-open-source-cli-results.md)
-      * [CLI를 사용하여 Snyk를 워크플로에 통합하기](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/integrate-snyk-into-your-workflow-using-the-cli.md)
+      * [CLI를 사용하여 Snyk을 워크플로에 통합하기](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-open-source/integrate-snyk-into-your-workflow-using-the-cli.md)
     * [Snyk Code용 Snyk CLI](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/README.md)
       * [CLI 테스트를 위한 Snyk 조직 설정하기](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/set-the-snyk-organization-for-the-cli-tests.md)
       * [CLI를 사용하여 Snyk 코드로 소스 코드 스캔하기](snyk-cli/scan-and-maintain-projects-using-the-cli/snyk-cli-for-snyk-code/scan-source-code-with-snyk-code-using-the-cli.md)

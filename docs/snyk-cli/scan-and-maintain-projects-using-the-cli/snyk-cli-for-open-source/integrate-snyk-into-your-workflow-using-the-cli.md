@@ -1,16 +1,15 @@
-# CLI를 사용하여 작업 흐름에 Snyk 통합하기
+# CLI를 사용하여 Snyk을 워크플로에 통합하기
 
-이 페이지는 [Snyk CLI](../../)를 사용하여 GitHub 작업 흐름에 Snyk를 통합하는 예시를 제공합니다.
+이 페이지는 [Snyk CLI](../../)를 사용하여 GitHub 작업 흐름에 Snyk 통합하는 예시를 제공합니다.
 
 ### 단계 1: 환경 설정
 
-1. [Snyk CLI](../../)를 열고 **goof** 저장소에 대한 git clone 명령을 실행합니다.
+1.  [Snyk CLI](../../)를 열고 **goof** 저장소에 대한 git clone 명령을 실행합니다.
 
     ```
        git clone https://github.com/snyk/goof.git
     ```
-
-2. 새 브랜치를 생성하고 해당 브랜치에 취약점을 추가한 후 변경 사항을 GitHub로 다시 병합할 Pull Request를 생성합니다:
+2.  새 브랜치를 생성하고 해당 브랜치에 취약점을 추가한 후 변경 사항을 GitHub로 다시 병합할 Pull Request를 생성합니다:
 
     ```
        git branch add_vulns
@@ -29,24 +28,28 @@
 
 종속성을 추가하려면:
 
-* 종속성 목록 가장 아래에 **tinymce 4.1.0** 라이브러리를 추가합니다:
+*   종속성 목록 가장 아래에 **tinymce 4.1.0** 라이브러리를 추가합니다:
 
     ```
-   {
-   "name": "goof",
-   ...
-   }
-   "dependencies" {
+    {
+    "name": "goof",
     ...
-   "typeorm": "^0.2.24",
-   "tinymce": "4.1.0"
-   },
-   ...
-```
+    }
+    "dependencies" {
+    ...
+    "typeorm": "^0.2.24",
+    "tinymce": "4.1.0"
+    },
+    ...
+    ```
 
-{% hint style="info" %}
+````
+
+<div data-gb-custom-block data-tag="hint" data-style='info'>
+
 팁: 이전 종속성 뒤에 쉼표를 추가하는 것을 잊지 마세요.
-{% endhint %}
+
+</div>
 
 * Node 애플리케이션을 위해 [lock 파일](https://docs.npmjs.com/files/package-lock.json)을 생성합니다:
 
@@ -54,9 +57,11 @@
     npm install --package-lock
     ```
 
-{% hint style="info" %}
+<div data-gb-custom-block data-tag="hint" data-style='info'>
+
 팁: 이미 파일이 존재한다면, 제거하려면 rm package-lock.json을 실행하십시오.
-{% endhint %}
+
+</div>
 
 ### 단계 3: 변경 내용 커밋 및 검토
 
@@ -84,10 +89,11 @@ GitHub에서 **add_vulns** 브랜치에 변경 사항을 받았습니다.
 
 ### 단계 4: Snyk PR Checks 사용
 
-Snyk가 병합 프로세스에서 풀 요청(PR)을 자동으로 스캔하여 취약점 및 라이선스 문제를 확인할 수 있습니다:
+Snyk 병합 프로세스에서 풀 요청(PR)을 자동으로 스캔하여 취약점 및 라이선스 문제를 확인할 수 있습니다:
 
 <figure><img src="../../../.gitbook/assets/snyk_vuln_lic_check (1).png" alt="GitHub에서 Snyk 풀 요청 검사"><figcaption><p>GitHub에서 Snyk 풀 요청 검사</p></figcaption></figure>
 
-PR 작업 흐름이 완료되면, Snyk는 프로젝트에 대해 설정된 취약점 및 라이선스 정책을 유효성 검사합니다. 정책에 따라 검사가 통과하거나 실패하며, 이 내용은 GitHub에 표시됩니다.
+PR 작업 흐름이 완료되면, Snyk 프로젝트에 대해 설정된 취약점 및 라이선스 정책을 유효성 검사합니다. 정책에 따라 검사가 통과하거나 실패하며, 이 내용은 GitHub에 표시됩니다.
 
 이를 통해 보안 게이트를 설정하고 새로운 취약점이나 라이선스 정책을 충족하지 못하는 새로운 오픈 소스 라이브러리를 소스 코드 기준선에 추가하는 것을 방지할 수 있습니다.
+````
