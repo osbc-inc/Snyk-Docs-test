@@ -39,7 +39,7 @@ Snyk UI를 사용하여 시작된 작업(예: Fix PR 열기 또는 프로젝트 
 
 ## 단계 2: 프로젝트 가져오기
 
-Snyk UI의 **Projects** 페이지로 이동하고 **Add projects**를 선택한 다음 Snyk로 가져올 저장소를 선택하고 **Add selected repositories**를 클릭합니다.
+Snyk UI의 **Projects** 페이지로 이동하고 **Add projects**를 선택한 다음 Snyk으로 가져올 저장소를 선택하고 **Add selected repositories**를 클릭합니다.
 
 * Snyk은 선택한 저장소에서 의존성 파일(예: **package.json**)을 스캔하기 시작하고 전체 디렉토리 트리에서 이 파일을 프로젝트로 가져옵니다.
 * Snyk은 루트 폴더와 정의된 사용자 정의 파일 위치를 평가합니다. 매니페스트 또는 구성 파일이 없는 경우, Snyk 가져올 파일이 없음을 알립니다.
