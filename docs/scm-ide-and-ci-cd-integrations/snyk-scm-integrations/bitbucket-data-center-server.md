@@ -100,7 +100,7 @@ Snyk은 통합된 서비스 계정을 통해 모든 Bitbucket DC/Server 작업�
 Snyk이 주기적으로 매니페스트 파일을 읽고 수정 또는 업그레이드 PR를 열기 위해 필요한 작업을 수행할 수 있도록 Bitbucket DC/Server에서 모니터링 중인 리포지토리에 통합된 Bitbucket DC/Server 서비스 계정은 가져온 리포지토리에 **관리자** 권한이 필요합니다.
 
 보안 웹훅을 설정하는 것도 **관리자** 권한이 필요합니다. Snyk은 PR 체크뿐만 아니라 병합 이벤트에 대한 커밋 테스트와 향후 자동 가져오기와 같은 다양한 작업에 웹훅을 사용합니다. 이 이벤트가 귀하의 시스템에서만 발생하도록 하기 위해 우리는 저희가 연결된 시스템에서 공유한 권장 메소드를 사용하여 웹훅을 안전하게 유지합니다. Bitbucket Server의 경우 다음 링크를 참조하세요: [이 링크](https://urldefense.proofpoint.com/v2/url?u=https-3A__confluence.atlassian.com_bitbucketserver_manage-2Dwebhooks-2D938025878.html-23Managewebhooks-2DwebhooksecretsSecuringyourwebhook\&d=DwMGaQ\&c=wwDYKmuffy0jxUGHACmjf\&r=Ck2O4F9WHPBs7KXjKQbW8v6LYdkZzI7TbBwtHf0DvoQ\&m=aKqZjXlWOErUgMQ_jsYYcqqKiHpEYfZS1BT-ru1umJEnIorIvvNt1QshbHugekFP\&s=khA_g0Unp0YP0qTeBtQyma-KHpa1vgWwT0kzcA5tQr0\&e=).\
-이를 위해 각 안전한 웹훅에 대해 생성된 시크릿 토큰이 있습니다. Snyk가 웹훅을 설정하면 확장성 제한을 해결하고 토큰 노출을 제거하며 귀하에게 통합 작업 부하를 줄여줍니다.
+이를 위해 각 안전한 웹훅에 대해 생성된 시크릿 토큰이 있습니다. Snyk이 웹훅을 설정하면 확장성 제한을 해결하고 토큰 노출을 제거하며 귀하에게 통합 작업 부하를 줄여줍니다.
 
 자세한 정보는 필요한 권한 스코프에 대해 [Bitbucket 권한 필요 사항](./#bitbucket-permission-requirements)을 참조하세요.
 

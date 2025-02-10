@@ -26,7 +26,7 @@ Snyk은 Git만 지원합니다. Snyk은 현재 Team Foundation 버전 제어 (TF
 
 ### Azure 저장소 (TFS) 통합 기능
 
-Snyk은 Microsoft Azure 저장소와 통합하여 프로젝트를 가져와 저장소의 소스 코드를 모니터링할 수 있습니다. Snyk는 가져온 프로젝트를 검사하여 의존성의 알려진 보안 취약점을 확인하며 필요에 따라 테스트 빈도를 제어할 수 있습니다.
+Snyk은 Microsoft Azure 저장소와 통합하여 프로젝트를 가져와 저장소의 소스 코드를 모니터링할 수 있습니다. Snyk 가져온 프로젝트를 검사하여 의존성의 알려진 보안 취약점을 확인하며 필요에 따라 테스트 빈도를 제어할 수 있습니다.
 
 Azure 저장소 통합을 사용하여 다음을 수행할 수 있습니다:
 
@@ -44,9 +44,9 @@ Azure 저장소 통합을 사용하여 다음을 수행할 수 있습니다:
 
 Snyk을 Azure 저장소와 연결하는 프로세스는 다음 단계를 포함합니다:
 
-1. Snyk을 위한 고유한 Azure DevOps 개인 액세스 토큰(PAT)을 생성합니다. 이는 사용자 이름과 비밀번호 조합에 따라 생성되며, Snyk가 귀하의 Azure 저장소에 액세스해야 하는 특정 권한으로 구성됩니다. 자세한 정보는 [개인 액세스 토큰(PAT) 구성하기](azure-repositories-tfs.md#configure-a-personal-access-token-pat)를 참조하세요.
+1. Snyk을 위한 고유한 Azure DevOps 개인 액세스 토큰(PAT)을 생성합니다. 이는 사용자 이름과 비밀번호 조합에 따라 생성되며, Snyk이 귀하의 Azure 저장소에 액세스해야 하는 특정 권한으로 구성됩니다. 자세한 정보는 [개인 액세스 토큰(PAT) 구성하기](azure-repositories-tfs.md#configure-a-personal-access-token-pat)를 참조하세요.
 2. Snyk 웹 UI를 통해 [통합 활성화](azure-repositories-tfs.md#integrate-using-the-snyk-web-ui)합니다.
-3. Snyk를 통해 테스트 및 모니터링할 [프로젝트 및 저장소를 선택](azure-repositories-tfs.md#add-projects-to-snyk-for-azure-repos)합니다.\
+3. Snyk을 통해 테스트 및 모니터링할 [프로젝트 및 저장소를 선택](azure-repositories-tfs.md#add-projects-to-snyk-for-azure-repos)합니다.\
    저장소 루트 폴더에 위치하지 않은 매니페스트 파일은 사용자 지정 파일 위치에 입력할 수도 있습니다.
 
 ### **개인 액세스 토큰(PAT) 구성하기**
@@ -65,7 +65,7 @@ Snyk에서 사용할 고유한 PAT을 생성하고 복사합니다. Azure에서 
      또는 공개적으로 접근 가능한 사용자 지정 URL을 입력할 수도 있습니다.
 4. **저장**을 클릭한 다음 생성한 PAT을 입력합니다.
 5. **저장**을 클릭합니다.\
-   입력한 연결 값에 대한 테스트를 Snyk가 수행하고 페이지가 다시로드되어 Azure 저장소 통합 정보가 표시됩니다. 정보가 업데이트되었다는 확인 메시지가 화면 상단에 나타납니다.
+   입력한 연결 값에 대한 테스트를 Snyk이 수행하고 페이지가 다시로드되어 Azure 저장소 통합 정보가 표시됩니다. 정보가 업데이트되었다는 확인 메시지가 화면 상단에 나타납니다.
 
 {% hint style="info" %}
 Azure와의 연결이 실패하면 **Azure 저장소** 카드 제목 아래에 알림이 표시됩니다.
@@ -73,7 +73,7 @@ Azure와의 연결이 실패하면 **Azure 저장소** 카드 제목 아래에 �
 
 ### Snyk에 Azure 저장소 프로젝트 추가
 
-Snyk은 [Snyk가 지원하는](../../supported-languages-package-managers-and-frameworks/) 언어를 위한 루트 폴더 및 사용자 지정 파일 위치를 평가하여 Azure 저장소를 테스트하고 모니터링합니다.
+Snyk은 [Snyk 지원하는](../../supported-languages-package-managers-and-frameworks/) 언어를 위한 루트 폴더 및 사용자 지정 파일 위치를 평가하여 Azure 저장소를 테스트하고 모니터링합니다.
 
 기본 프로젝트를 추가하려면 다음을 수행합니다:
 
