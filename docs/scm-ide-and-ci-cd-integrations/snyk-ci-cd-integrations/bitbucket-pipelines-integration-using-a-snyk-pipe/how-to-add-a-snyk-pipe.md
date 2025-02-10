@@ -15,5 +15,5 @@
 ![Bitbucket 파이프라인 출력 인터페이스 - 여기서 Snyk은 취약점을 발견하여 파이프라인이 실패한 것입니다](<../../../.gitbook/assets/Screenshot 2023-10-03 at 13.08.45.png>)
 
 {% hint style="info" %}
-빌드가 실패하면 **MONITOR**가 **True**로 설정되어 있더라도 Snyk는 프로젝트가 성공적으로 빌드될 때까지 모니터 단계로 진행하지 않습니다. Snyk의 모니터링을 활성화하려면 **DONT\_BREAK\_BUILD**를 **True**로 설정하세요. 파이프를 스캔 단계에서 실패시킬 심각도 임계값을 파이프에 알리기 위해 **SEVERITY\_THRESHOLD**를 사용할 수 있습니다. 자세한 내용은 [Snyk 파이프 매개변수 및 값](snyk-pipe-parameters-and-values-bitbucket-cloud.md)를 참조하세요.
+빌드가 실패하면 **MONITOR**가 **True**로 설정되어 있더라도 Snyk은 프로젝트가 성공적으로 빌드될 때까지 모니터 단계로 진행하지 않습니다. Snyk의 모니터링을 활성화하려면 **DONT\_BREAK\_BUILD**를 **True**로 설정하세요. 파이프를 스캔 단계에서 실패시킬 심각도 임계값을 파이프에 알리기 위해 **SEVERITY\_THRESHOLD**를 사용할 수 있습니다. 자세한 내용은 [Snyk 파이프 매개변수 및 값](snyk-pipe-parameters-and-values-bitbucket-cloud.md)를 참조하세요.
 {% endhint %}

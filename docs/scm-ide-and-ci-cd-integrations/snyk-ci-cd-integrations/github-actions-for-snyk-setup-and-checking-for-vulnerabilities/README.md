@@ -176,7 +176,7 @@ env:
   SNYK_TOKEN: $
 ```
 
-모든 Snyk 계정에는 이러한 토큰이 있습니다. Snyk 계정을 생성한 후에는 [Snyk에서 찾을 수 있습니다.](https://docs.snyk.io)Snyk API 토큰은 두 가지 방법 중 하나로 가져올 수 있습니다:
+모든 Snyk 계정에는 이러한 토큰이 있습니다. Snyk 계정을 생성한 후에는 [Snyk에서 찾을 수 있습니다.](https://docs.snyk.io) Snyk API 토큰은 두 가지 방법 중 하나로 가져올 수 있습니다:
 
 1. UI에서 Snyk 계정 [설정 페이지](https://app.snyk.io/account)로 이동하여 [Snyk API 토큰 폐기 및 재생성](https://docs.snyk.io/snyk-api-info/revoking-and-regenerating-snyk-api-tokens)에 설명된 대로 API 토큰을 검색합니다.
 2. 로컬에서 [Snyk CLI](https://docs.snyk.io/snyk-cli/getting-started-with-the-cli)를 사용 중이라면 `snyk config get api` 명령을 실행하여 API 토큰을 가져올 수 있습니다.

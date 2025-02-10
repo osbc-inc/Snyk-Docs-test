@@ -6,7 +6,7 @@
 
 다음 예제는 Snyk Python GitHub 액션을 어떻게 사용할 수 있는지 보여줍니다.
 
-Snyk는 Python이 Snyk 체크를 실행하기 전에 종속성을 다운로드하도록 요구합니다.
+Snyk은 Python이 Snyk 체크를 실행하기 전에 종속성을 다운로드하도록 요구합니다.
 
 Python 이미지는 현재 경로에 manifest 파일이 있는 경우에만 종속성을 확인하고 설치합니다. 즉, 액션이 트리거되는 경로에서 manifest 파일이 있어야 합니다.
 
