@@ -35,7 +35,7 @@ Snyk 런타임 센서는 쿠버네티스 클러스터 상의 배포를 감시하
 Snyk 런타임 센서를 올바르게 사용하려면 환경이 다음 기술적 요구 사항을 충족하는지 확인하십시오:
 
 * 지원되는 Kubernetes 버전 - Kubernetes v.1.19 이상 사용.
-  
+
 {% hint style="info" %}
 EKS Fargate 또는 GKE Autopilot과 같은 관리형 쿠버네티스 서비스는 지원되지 않습니다. 왜냐하면 클러스터 노드가 클라우드 공급업체에 의해 관리됩니다.
 {% endhint %}
@@ -57,7 +57,7 @@ EKS Fargate 또는 GKE Autopilot과 같은 관리형 쿠버네티스 서비스�
 또한 [서비스 계정](https://docs.snyk.io/snyk-admin/service-accounts)용 토큰이 필요합니다. 서비스 계정은 다음 중 하나의 역할을 가져야합니다:
 
 * 그룹 관리자
-* `AppRisk 편집` 권한이 활성화된 사용자 지정 그룹 레벨 역할.
+* `AppRisk edit`권한이 활성화된 사용자 지정 그룹 레벨 역할.
 
 ## Snyk 런타임 센서 설치
 
@@ -69,7 +69,7 @@ EKS Fargate 또는 GKE Autopilot과 같은 관리형 쿠버네티스 서비스�
 * Snyk 런타임 센서 데몬셋은 다음 최소 요구 사항을 충족해야합니다:
   * `CPU: 100m` (Helm을 사용하여 증가 가능)
   * `Memory: 512Mi` (Helm을 사용하여 증가 가능)
-* 다음 중 하나의 방법을 선택하여 Snyk 런타임 센서를 배포할 수 있습니다:&#x20;
+* 다음 중 하나의 방법을 선택하여 Snyk 런타임 센서를 배포할 수 있습니다:
   * [Helm 차트를 사용하여 Snyk 런타임 센서 설치](snyk-runtime-sensor.md#using-a-helm-chart)
   * [Helm 차트 및 AWS Secrets Manager를 사용하여 Snyk 런타임 센서 설치](snyk-runtime-sensor.md#using-a-helm-chart-and-the-aws-secrets-manager)
   * [OpenShift에 Snyk 런타임 센서 설치](snyk-runtime-sensor.md#on-openshift)
@@ -82,24 +82,25 @@ EKS Fargate 또는 GKE Autopilot과 같은 관리형 쿠버네티스 서비스�
 Helm 차트를 사용하여 Snyk 런타임 센서를 설치하려면 다음 단계를 따를 수 있습니다:
 
 1. Helm이 설치되었는지 확인하십시오.
-2. `snyk-runtime-sensor` 네임스페이스를 만드십시오:
+2.  `snyk-runtime-sensor` 네임스페이스를 만드십시오:
 
     <pre><code><strong>kubectl create namespace snyk-runtime-sensor
     </strong></code></pre>
-3. AppRisk 전제 사항 섹션에 지시된 대로 해당 네임스페이스에 적절한 권한이있는 서비스 계정 토큰을 포함하는 시크릿을 생성하십시오:
+3. AppRisk 전제 사항 섹션에 지시된 대로 해당 네임스페이스에 적절한 권한이 있는 서비스 계정 토큰을 포함하는 시크릿을 생성하십시오:
 
-    {% code overflow="wrap" %}
-    ```
-    kubectl create secret generic <<YOUR_SECRET_NAME>> --from-literal=snykToken=<<YOUR_TOKEN>> -n snyk-runtime-sensor
-    ```
-    {% endcode %}
-4. Helm 리포지토리를 추가하십시오:
+{% code overflow="wrap" %}
+```
+kubectl create secret generic <<YOUR_SECRET_NAME>> --from-literal=snykToken=<<YOUR_TOKEN>> -n snyk-runtime-sensor
+```
+{% endcode %}
+
+4.  Helm 리포지토리를 추가하십시오:
 
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
 5. 데이터가 기본 지역(미국)과 다른 지역에 호스팅될 경우, Helm 차트 설치 시 `snykAPIBaseURL`을 다음 형식으로 설정해야합니다: `api.<<REGION>>.snyk.io:443`, 예: `api.eu.snyk.io:443`
-6. (선택 사항) 런타임 센서 이미지의 사용자 정의 리소스(CPU/메모리)를 구성하려면 다음 값을 지정하십시오(여기서는 기본값 사용):
+6.  (선택 사항) 런타임 센서 이미지의 사용자 정의 리소스(CPU/메모리)를 구성하려면 다음 값을 지정하십시오(여기서는 기본값 사용):
 
     ```
     ...
@@ -109,7 +110,7 @@ Helm 차트를 사용하여 Snyk 런타임 센서를 설치하려면 다음 단�
     --set sensor.resources.limits.cpu=500m
     ...
     ```
-7. Helm 차트를 설치하십시오:
+7.  Helm 차트를 설치하십시오:
 
     ```
     helm install my-runtime-sensor \
@@ -125,19 +126,21 @@ Helm 차트를 사용하여 Snyk 런타임 센서를 설치하려면 다음 단�
 
 1. 센서에 주어진 이름을 확인하십시오.
 
-    {% code overflow="wrap" %}
-    ```
-    helm repo list
-    ```
-    {% endcode %}
+{% code overflow="wrap" %}
+```
+helm repo list
+```
+{% endcode %}
+
 2. 리포지토리를 업데이트하십시오((1)에서 받은 이름으로):
 
-    {% code overflow="wrap" %}
-    ```
-    helm repo update <<SENSOR_REPO_NAME>>
-    ```
-    {% endcode %}
-3. 설치를 업그레이드하십시오:
+{% code overflow="wrap" %}
+```
+helm repo update <<SENSOR_REPO_NAME>>
+```
+{% endcode %}
+
+3.  설치를 업그레이드하십시오:
 
     ```
     helm upgrade --install <<SENSOR_REPO_NAME>> \
@@ -157,18 +160,18 @@ Helm 차트 및 AWS Secrets Manager를 사용하여 Snyk 런타임 센서를 설
 전제 조건: 권장 [여기](https://github.com/aws/secrets-store-csi-driver-provider-aws)를 따라 클러스터에 AWS Provider 및 CSI Secrets Store를 설치하십시오.
 
 1. Helm이 설치되었는지 확인하십시오.
-2. `snyk-runtime-sensor` 네임스페이스를 만드십시오:
+2.  `snyk-runtime-sensor` 네임스페이스를 만드십시오:
 
     <pre><code><strong>kubectl create namespace snyk-runtime-sensor
     </strong></code></pre>
-3. AWS 계정에 `snykToken` 키 아래 컨텐츠를 포함하는 Snyk 런타임 센서 시크릿을 만들고 얻으십시오:
+3.  AWS 계정에 `snykToken` 키 아래 컨텐츠를 포함하는 Snyk 런타임 센서 시크릿을 만들고 얻으십시오:
 
     ```
     aws secretsmanager create-secret \
     --name snyk-runtime-sensor-secret \
     --secret-string '{"snykToken":"<<YOUR_SERVICE_ACCOUNT_TOKEN>>"}'
     ```
-4. 새로 생성된 시크릿에 대한 액세스 정책을 생성:
+4.  새로 생성된 시크릿에 대한 액세스 정책을 생성:
 
     ```
     POLICY_ARN=$(aws --query Policy.Arn --output text iam create-policy --policy-name snyk-runtime-sensor-secret-policy --policy-document '{
@@ -180,20 +183,20 @@ Helm 차트 및 AWS Secrets Manager를 사용하여 Snyk 런타임 센서를 설
         } ]
     }')
     ```
-5. 아직 수행하지 않은 경우, 클러스터에 IAM OIDC 프로바이더를 만드십시오 (한 번만 실행):
+5.  아직 수행하지 않은 경우, 클러스터에 IAM OIDC 프로바이더를 만드십시오 (한 번만 실행):
 
     ```
     eksctl utils associate-iam-oidc-provider \
     --cluster="<<CLUSTER_NAME>>" \
     --approve
     ```
-6. Helm 리포지토리를 추가하십시오:
+6.  Helm 리포지토리를 추가하십시오:
 
     ```
     helm repo add runtime-sensor https://snyk.github.io/runtime-sensor
     ```
 7. 데이터가 기본 지역(미국)과 다른 지역에 호스팅될 경우, Helm 차트 설치 시 `snykAPIBaseURL`을 다음 형식으로 설정해야합니다: `api.<<REGION>>.snyk.io:443`, 예: `api.eu.snyk.io:443`
-8. (선택 사항) 런타임 센서 이미지의 사용자 정의 리소스(CPU/메모리)를 구성하려면 다음 값을 지정하십시오(여기서는 기본값 사용):
+8.  (선택 사항) 런타임 센서 이미지의 사용자 정의 리소스(CPU/메모리)를 구성하려면 다음 값을 지정하십시오(여기서는 기본값 사용):
 
     ```
     ...
@@ -203,7 +206,7 @@ Helm 차트 및 AWS Secrets Manager를 사용하여 Snyk 런타임 센서를 설
     --set sensor.resources.limits.cpu=500m
     ...
     ```
-9. Helm 차트를 설치하십시오:
+9.  Helm 차트를 설치하십시오:
 
     ```
     helm install my-runtime-sensor \
@@ -217,41 +220,47 @@ Helm 차트 및 AWS Secrets Manager를 사용하여 Snyk 런타임 센서를 설
     ```
 10. 다음과 같이 새롭게 생성된 서비스 계정에 단계 4에서 생성된 정책의 ARN을 첨부하여 새롭게 생성된 서비스 계정에 대한 새 역할을 생성하십시오:
 
-    {% code overflow="wrap" %}
-    ```
-    eksctl create iamserviceaccount \
-    --name runtime-sensor \
-    --region=<<REGION>> \
-    --cluster "<<CLUSTER_NAME>>" \
-    --attach-policy-arn "$POLICY_ARN" \
-    --approve \
-    --override-existing-serviceaccounts \
-    --namespace=snyk-runtime-sensor
-    ```
-    {% endcode %}
+{% code overflow="wrap" %}
+````
+```
+eksctl create iamserviceaccount \
+--name runtime-sensor \
+--region=<<REGION>> \
+--cluster "<<CLUSTER_NAME>>" \
+--attach-policy-arn "$POLICY_ARN" \
+--approve \
+--override-existing-serviceaccounts \
+--namespace=snyk-runtime-sensor
+```
+````
+{% endcode %}
+
 11. `snyk-runtime-sensor` 네임스페이스로 시크릿이 성공적으로 마운트되었는지 (`kubectl get secrets -n snyk-runtime-sensor`) 및 센서 포드가 성공적으로 실행 중인지 확인하십시오 (`kubectl get pods -n snyk-runtime-sensor`).
 
 #### 최신 버전으로 업그레이드
 
 1. 센서에 주어진 이름을 확인하십시오.
 
-    {% code overflow="wrap" %}
-    ```
-    helm repo list
-    ```
-    {% endcode %}
+{% code overflow="wrap" %}
+```
+helm repo list
+```
+{% endcode %}
+
 2. 리포지토리를 업데이트하십시오((1)에서 받은 이름으로):
 
-    {% code overflow="wrap" %}
-    ```
-    helm repo update <<SENSOR_REPO_NAME>>
-    ```
-    {% endcode %}
-3. 설치를 업그레이드하십시오:
+{% code overflow="wrap" %}
+```
+helm repo update <<SENSOR_REPO_NAME>>
+```
+{% endcode %}
+
+3.  설치를 업그레이드하십시오:
 
     ```
     helm upgrade --install <<SENSOR_REPO_NAME>> \
     --set secretProvider=aws**AWS 콘솔**
+    ```
 
 Snyk 런타임 센서를 AWS Marketplace에서 성공적으로 구독하였고 화면 안내에 따라 진행한 후에는 Amazon EKS 콘솔로 리디렉션됩니다.
 
@@ -279,7 +288,7 @@ snykGroupId: <<MY_SNYK_GROUP_ID>>
 snykAPIBaseURL: api.snyk.io:443
 ```
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt="'Optional configuraiton settings' 아래 적절한 구성 값 설정"><figcaption><p>'Optional configuraiton settings' 아래 적절한 구성 값 설정</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-26 at 15.58.12.png" alt="&#x27;Optional configuraiton settings&#x27; 아래 적절한 구성 값 설정"><figcaption><p>'Optional configuraiton settings' 아래 적절한 구성 값 설정</p></figcaption></figure>
 
 **다음** 및 **생성** 옵션을 선택하면 페이지 상단에 `클러스터 <<YOUR_CLUSTER>>에 Add-on snyk-runtimesensor가 성공적으로 추가되었음` 알림이 표시됩니다.
 
@@ -291,7 +300,7 @@ snykAPIBaseURL: api.snyk.io:443
 
 * $CLUSTER\_NAME
 * $AWS\_REGION
-* $SNYK\_GROUP\_ID&#x20;
+* $SNYK\_GROUP\_ID
 * $SNYK\_API\_BASE\_URL(미국을 제외한 다른 지역에서 호스팅되는 경우 `api.snyk.io:443`로 설정해야 합니다).
 
 ```
@@ -332,13 +341,13 @@ aws eks describe-addon --addon-name snyk_runtime-sensor --cluster-name $CLUSTER_
 
 #### **EKS 클러스터에 Snyk 서비스 계정 토큰 추가하기**
 
-* `aws eks`를 사용하여 클러스터를 제어하기 위해 `kubectl` 컨텍스트를 설정합니다:&#x20;
+* `aws eks`를 사용하여 클러스터를 제어하기 위해 `kubectl` 컨텍스트를 설정합니다:
 
 ```
 aws eks update-kubeconfig --name $CLUSTER_NAME --region $AWS_REGION
 ```
 
-* `snykToken`을 포함하는 `snyk-secret` 이름의 시크릿을 생성합니다. `snykToken`은 서비스 계정 토큰입니다:&#x20;
+* `snykToken`을 포함하는 `snyk-secret` 이름의 시크릿을 생성합니다. `snykToken`은 서비스 계정 토큰입니다:
 
 ```
 kubectl create secret generic snyk-secret \
