@@ -24,7 +24,7 @@ Bitbucket Cloud (PAT) 통합을 통해 다음을 수행할 수 있습니다.
 {% endhint %}
 
 1. Snyk에 Bitbucket 계정에 액세스 권한을 부여하려면 Bitbucket에서 관리자 권한을 가진 전용 서비스 계정을 설정하십시오. 작업 영역에 사용자 추가에 대한 자세한 내용은 [Bitbucket 문서](https://support.atlassian.com/bitbucket-cloud/docs/grant-access-to-a-workspace/)를 참조하십시오.\
-   새로 만든 사용자는 Snyk로 모니터할 필요가 있는 모든 저장소에 **관리자** 권한이 있어야 합니다.
+   새로 만든 사용자는 Snyk으로 모니터할 필요가 있는 모든 저장소에 **관리자** 권한이 있어야 합니다.
 2. Snyk에서 **통합** 페이지로 이동하여 **Bitbucket Cloud** 카드를 열고 **계정 자격 정보**를 구성하십시오.
 3. Snyk의 **계정 자격 정보 >** **앱 비밀번호 생성** 섹션에서 링크 **앱 비밀번호 생성**을 사용하여 Bitbucket Cloud 계정으로 이동하십시오.
 4.  다음 권한이 할당된 계정을 설정하기 위해 Bitbucket 절차를 따르십시오.
@@ -39,11 +39,11 @@ Bitbucket Cloud (PAT) 통합을 통해 다음을 수행할 수 있습니다.
     절차에 대한 자세한 내용은 [Bitbucket 문서](https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html)를 참조하십시오.
 5. Bitbucket 계정의 사용자 이름 및 [비트 버킷 계정의 앱 비밀번호](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/)를 입력하고 **저장**을 클릭하십시오.\
    사용자 이름은 Bitbucket **개인 설정** 아래에서 찾을 수 있습니다.\
-   Snyk는 Bitbucket Cloud 계정에 연결됩니다. 연결에 성공하면 확인 메시지 "**Bitbucket Cloud 설정이 성공적으로 업데이트되었습니다**"가 표시됩니다.
+   Snyk Bitbucket Cloud 계정에 연결됩니다. 연결에 성공하면 확인 메시지 "**Bitbucket Cloud 설정이 성공적으로 업데이트되었습니다**"가 표시됩니다.
 
 ### Snyk에 Bitbucket 저장소 추가하는 방법
 
-Snyk을 Bitbucket Cloud 계정에 연결한 후 Snyk이모니터링할 저장소를 선택할 수 있습니다.
+Snyk을 Bitbucket Cloud 계정에 연결한 후 Snyk이 모니터링할 저장소를 선택할 수 있습니다.
 
 1. Snyk에서 **통합** > **Bitbucket Cloud** 카드로 이동한 다음 **Snyk에 Bitbucket Cloud 저장소 추가**를 클릭하여 Snyk에 저장소를 가져올 수 있습니다.
 2. 가져오려는 저장소를 선택하고 **선택한 저장소 추가**를 클릭하십시오.
@@ -70,7 +70,7 @@ Snyk이 발견한 취약점을 즉시 해결하기 위해 필요한 업그레이
 
 #### 프로젝트 모니터링 및 자동 수정 풀 리퀘스트
 
-Snyk이 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk은은 이메일과 함께 자동화된 수정 풀 리퀘스트를 여는 방법으로 알림을 보냅니다.
+Snyk이 프로젝트를 매일 또는 매주 스캔합니다. 새로운 취약점이 발견되면 Snyk은 이메일과 함께 자동화된 수정 풀 리퀘스트를 여는 방법으로 알림을 보냅니다.
 
 다음의 예시는 Snyk에 의해 열린 자동 수정 풀 리퀘스트를 보여줍니다.
 
@@ -91,7 +91,7 @@ Bitbucket Cloud 인터페이스에서 수동으로 열리는 풀 리퀘스트와
 
 #### 풀 리퀘스트 테스트
 
-Snyk는 저장소의 새로 생성된 풀 리퀘스트를 보안 취약점에 대해 테스트하고 빌드 확인을 Bitbucket Cloud에 전송합니다. Bitbucket Cloud에서 바로 새 보안 문제가 소개되었는지 확인할 수 있습니다.
+Snyk 저장소의 새로 생성된 풀 리퀘스트를 보안 취약점에 대해 테스트하고 빌드 확인을 Bitbucket Cloud에 전송합니다. Bitbucket Cloud에서 바로 새 보안 문제가 소개되었는지 확인할 수 있습니다.
 
 다음의 예시는 Bitbucket Cloud **풀 리퀘스트** 페이지에서의 Snyk 풀 리퀘스트 빌드 확인을 보여줍니다.
 
@@ -115,7 +115,7 @@ Snyk이 모니터링 중인 저장소에서 매니페스트 파일을 주기적�
 ### Snyk을 Bitbucket Cloud에서 연결 해제하는 방법
 
 {% hint style="warning" %}
-Snyk에서 귀하의 저장소 프로젝트에서 Snyk의 자격 정보를 제거하고 Snyk가 모니터링 중인 전용 프로젝트를 비활성화합니다. 이 통합을 다시 활성화하려면 자격 정보를 다시 입력하고 프로젝트를 활성화해야 합니다.
+Snyk에서 귀하의 저장소 프로젝트에서 Snyk의 자격 정보를 제거하고 Snyk이 모니터링 중인 전용 프로젝트를 비활성화합니다. 이 통합을 다시 활성화하려면 자격 정보를 다시 입력하고 프로젝트를 활성화해야 합니다.
 {% endhint %}
 
 이 통합을 해제하려면 **조직 설정** > **통합**에서 다음을 수행하십시오.
@@ -193,7 +193,7 @@ Snyk Bitbucket Cloud App 통합으로 마이그레이션하는 방법
 
 {% hint style="info" %}
 Bitbucket Server와 Bitbucket Cloud는 자동 언어 감지를 지원하지 않습니다. Bitbucket Cloud 리포지토리에 언어 태그를 수동으로 추가할 수 있습니다.\
-Bitbucket 프로젝트에서 언어를 수동으로 설정한 후, Snyk는 Snyk AppRisk 애플리케이션에서 자동으로 해당 언어를 감지하고 수집할 수 있습니다.
+Bitbucket 프로젝트에서 언어를 수동으로 설정한 후, Snyk Snyk AppRisk 애플리케이션에서 자동으로 해당 언어를 감지하고 수집할 수 있습니다.
 {% endhint %}
 
 #### 가져온 엔터티 <a href="#bitbucket-pulled-entities" id="bitbucket-pulled-entities"></a>

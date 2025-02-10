@@ -17,7 +17,7 @@ Bitbucket Cloud 앱 통합을 통해 Snyk 조직을 Bitbucket Cloud 워크스페
 * 보안 문제에 대한 개발팀에 첫 번째 개발 우선 보기 제공
 
 {% hint style="info" %}
-Snyk는 더 부드러운 통합과 장기 지원을 보장하기 위해 Bitbucket Cloud 앱 통합을 사용할 것을 권장합니다.
+Snyk은 더 부드러운 통합과 장기 지원을 보장하기 위해 Bitbucket Cloud 앱 통합을 사용할 것을 권장합니다.
 
 [Bitbucket Cloud 개인 액세스 토큰 통합](bitbucket-cloud.md)을 사용 중이라면 더 많은 정보가 필요하면.
 {% endhint %}
@@ -31,7 +31,7 @@ Bitbucket Cloud 워크스페이스에 Snyk 앱을 설치하려면 Bitbucket에 �
 {% endhint %}
 
 1. Snyk에서 **Integrations(소스 제어) >** **Bitbucket Cloud App** 타일로 이동하여 **Connect**를 클릭하여 Snyk Bitbucket Cloud 앱을 Bitbucket Cloud 워크스페이스에 설치하세요.
-2.  새 Bitbucket 탭에서 목록에서 Snyk 조직에 연결할 해당 워크스페이스를 선택하고 [**Grant access** to let Snyk](bitbucket-cloud-app.md#required-snyk-bitbucket-cloud-app-permissions-scope)를 클릭하세요:
+2.  새 Bitbucket 탭에서 목록에서 Snyk 조직에 연결할 해당 워크스페이스를 선택하고 [**Grant access** to let Snyk](bitbucket-cloud-app.md#required-snyk-bitbucket-cloud-app-permissions-scope)을 클릭하세요:
 
     * 계정 정보 읽기
     * 리포지토리 및 풀 리퀘스트 읽기 및 수정
