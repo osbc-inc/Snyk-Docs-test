@@ -356,7 +356,7 @@ GitLab 계정에 `Maintainer` 권한이 필요합니다.
 ### Azure Repositories (TFS) SCM 토큰
 
 **형식**: `AZURE_REPOS_TOKEN=` - Azure Repos 개인 액세스 토큰.\
-**범위**: `사용자 정의`, `Code:` `읽기 및 쓰기`.
+**범위**: `Custom defined`, `Code:` `Read & write`_._
 
 ### Bitbucket Server/Data Center SCM 토큰
 
