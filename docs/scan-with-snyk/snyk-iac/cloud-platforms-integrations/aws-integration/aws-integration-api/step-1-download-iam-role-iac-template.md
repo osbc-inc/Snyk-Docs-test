@@ -1,6 +1,6 @@
-# 단계 1: IAM 역할 IaC 템플릿 다운로드 (API)
+# 1단계: IAM 역할 IaC 템플릿(API) 다운로드하기
 
-클라우드 환경을 생성하기 전에,  (IaC) 템플릿을 다운로드해야 합니다. 이 템플릿은 읽기 전용 **Identity and Access Management** (IAM) 역할을 선언하며, 이 역할은 Snyk가 AWS 계정의 리소스 구성을 스캔할 수 있도록 할 수 있습니다.
+클라우드 환경을 생성하기 전에, (IaC) 템플릿을 다운로드해야 합니다. 이 템플릿은 읽기 전용 **Identity and Access Management** (IAM) 역할을 선언하며, 이 역할은 Snyk가 AWS 계정의 리소스 구성을 스캔할 수 있도록 할 수 있습니다.
 
 이 IaC 템플릿은 [단계 2: Snyk IAM 역할 생성](../aws-integration-web-ui/step-2-create-the-snyk-iam-role.md)에서 역할을 프로비전하는 데 사용됩니다.
 
@@ -8,7 +8,7 @@
 
 ## IaC 템플릿 검색
 
-[Snyk API endpoint Generate Cloud Provider Permissions](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org\_id-/cloud/permissions)을 사용하여 IaC 템플릿을 가져오려면, Org Admin 역할을 가진 Organization 수준의 [서비스 계정](../../../../../enterprise-setup/service-accounts/)에 대한 API 토큰이 필요합니다.
+[Snyk API endpoint Generate Cloud Provider Permissions](https://apidocs.snyk.io/?version=2022-12-21%7Ebeta#post-/orgs/-org_id-/cloud/permissions)을 사용하여 IaC 템플릿을 가져오려면, Org Admin 역할을 가진 Organization 수준의 [서비스 계정](../../../../../enterprise-setup/service-accounts/)에 대한 API 토큰이 필요합니다.
 
 1. [Snyk Web UI](https://app.snyk.io)에서 **Settings (톱니바퀴 아이콘) > General > Organization ID**로 이동하여 조직 ID를 복사합니다.
 2. 다음 형식으로 Snyk API에 요청을 보내어 템플릿을 검색합니다. `INPUT-TYPE`을 Terraform의 경우 `tf`, CloudFormation의 경우 `cf`로 바꿉니다.
@@ -84,7 +84,7 @@ CloudFormation 템플릿으로 예제 응답:
 ### `jq` 사용
 
 1. [jq 다운로드 및 설치](https://stedolan.github.io/jq/download/)합니다.
-2. 템플릿을 검색하기 위해 API 요청을 제출할 때, 다음을 명령어 끝에 추가합니다:
+2.  템플릿을 검색하기 위해 API 요청을 제출할 때, 다음을 명령어 끝에 추가합니다:
 
     ```
     | jq -r .data.attributes.data > snyk_iac_template
@@ -106,7 +106,7 @@ CloudFormation 템플릿으로 예제 응답:
 **Terraform**에서 역할 이름은 19번째 줄에 있습니다:
 
 ```
-  name                = "snyk-cloud-role"
+  name = "snyk-cloud-role"
 ```
 
 **CloudFormation**에서 역할 이름은 7번째 줄에 있습니다:
