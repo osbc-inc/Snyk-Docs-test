@@ -1,3 +1,98 @@
+## 2024-10-15 - Updated 2025-02-21
+
+### POST - `/orgs/{org_id}/policies` - Added
+- Create a new org-level policy.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### GET - `/orgs/{org_id}/policies` - Added
+- Get all policies for the requested organisation.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Update the org-level policy. 
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### GET - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Get a specific org-level policy based on its ID.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### DELETE - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Delete an existing org-level policy.
+
+*Org level Policy APIs Access Notice:* Access to our Org level Policy APIs is currently
+restricted via "snykCodeConsistentIgnores" feature flag and will result in a 403 Forbidden error
+without the flag enabled. Please contact your account representative for
+eligibility requirements.
+
+
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the optional property `data/items/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/items/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/items/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the optional property `data/items/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/items/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/items/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
 ## 2024-10-15 - 업데이트됨 2024-12-09
 
 ### GET - `/orgs/{org_id}` - 업데이트됨
