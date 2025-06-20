@@ -1,7 +1,7 @@
-# 사용자
+# Users
 
 {% hint style="info" %}
-이 문서는 REST API를 사용합니다. 자세한 내용은 [API를 위한 인증](../rest-api/authentication-for-api/) 페이지를 참조하십시오.
+This document uses the REST API. For more details, see the [Authentication for API](../rest-api/authentication-for-api/) page.
 {% endhint %}
 
 {% swagger src="../../.gitbook/assets/rest-spec.json" path="/self" method="get" %}

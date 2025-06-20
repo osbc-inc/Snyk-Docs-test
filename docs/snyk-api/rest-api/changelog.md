@@ -1,3 +1,596 @@
+## 2024-10-15 - Updated 2025-06-20
+
+### GET - `/tenants` - Added
+- Get a list of all Tenants which the calling user is a member of
+
+
+### PATCH - `/tenants/{tenant_id}` - Added
+- Update the details of a tenant
+
+#### Required permissions
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}` - Added
+- Get the full details of a Tenant.
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added
+- Creates a new Broker Deployment for an installation
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments` - Added
+- List Broker deployments for a given install ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added
+- Updates a Broker deployment for a given install ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}` - Added
+- Delete a Broker deployment for a given install ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added
+- Creates a new Deployment credential
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials` - Added
+- List Deployment credentials for a given deployment ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+- Updates a Deployment credential for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+- Get all Deployment credential data for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/credentials/{credential_id}` - Added
+- Deletes an existing Deployment credential for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+- Creates a new Broker Context
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/contexts` - Added
+- List Deployment contexts for a given deployment ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+- Creates a new Broker connection for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+- List all Broker connections for a given deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections` - Added
+- Deletes all existing Broker connections for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+- Updates a Broker connection for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+- Get all Broker connection data for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}` - Added
+- Deletes an existing Broker connection for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### POST - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added
+- Performs bulk migration for integrations from legacy to universal broker
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/deployments/{deployment_id}/connections/{connection_id}/bulk_migration` - Added
+- Lists organization IDs associated with a connection type to be bulk migrated to universal broker
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- Updates a Broker Context for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- List Broker context for a given broker context ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}` - Added
+- Deletes an existing broker context
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integrations/{integration_id}` - Added
+- Deletes an existing Broker context association for an integration
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### PATCH - `/tenants/{tenant_id}/brokers/installs/{install_id}/contexts/{context_id}/integration` - Added
+- Updates an integration to be associated with a Broker context
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/installs/{install_id}/connections/{connection_id}/contexts` - Added
+- List Broker contexts for a given broker connection ID
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/deployments` - Added
+- List Broker deployments for the tenant
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### DELETE - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integrations/{integration_id}` - Added
+- Deletes an existing Broker connection for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### POST - `/tenants/{tenant_id}/brokers/connections/{connection_id}/orgs/{org_id}/integration` - Added
+- Configures integrations to use the Broker connection for an deployment
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+- `Edit Tenant Details (tenant.edit)`
+
+
+### GET - `/tenants/{tenant_id}/brokers/connections/{connection_id}/integrations` - Added
+- Get all integrations using the Broker connection
+
+#### Required permissions
+
+- `View Tenant Details (tenant.read)`
+
+
+### POST - `/orgs/{org_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `data/attributes/access_token_expires_at`
+
+- added the new `access_token` enum value to the request property `data/attributes/auth_type`
+
+- added the optional property `data/attributes/access_token` to the response with the `201` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
+
+- added the optional property `data/attributes/created_at` to the response with the `201` status
+
+
+
+### GET - `/orgs/{org_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/items/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_at` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### POST - `/orgs/{org_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/projects` - Updated
+- added the optional property `data/items/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+- added the optional property `data/items/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
+
+
+
+### PATCH - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+- added the optional property `data/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
+
+
+
+### GET - `/orgs/{org_id}/projects/{project_id}` - Updated
+- added the optional property `data/attributes/settings/auto_dependency_upgrade/is_inherited` to the response with the `200` status
+
+- added the optional property `data/attributes/settings/pull_requests/is_enabled` to the response with the `200` status
+
+
+
+### POST - `/orgs/{org_id}/policies` - Added
+- Create a new org-level policy.
+
+*Org level Policy APIs Access Notice:* Org level Policy APIs are only available 
+for use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores 
+see [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#enable-snyk-code-consistent-ignores) 
+documentation.
+
+#### Required permissions
+
+- `Create Ignores (org.project.ignore.create)`
+
+
+### GET - `/orgs/{org_id}/policies` - Added
+- Get all policies for the requested organisation.
+
+*Org level Policy APIs Access Notice:* Org level Policy APIs are only available 
+for use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores 
+see [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#enable-snyk-code-consistent-ignores) 
+documentation.
+
+#### Required permissions
+
+- `View Ignores (org.project.ignore.read)`
+
+
+### PATCH - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Update the org-level policy. 
+
+*Org level Policy APIs Access Notice:* Org level Policy APIs are only available 
+for use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores 
+see [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#enable-snyk-code-consistent-ignores) 
+documentation.
+
+#### Required permissions
+
+- `Edit Ignores (org.project.ignore.edit)`
+
+
+### GET - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Get a specific org-level policy based on its ID.
+
+*Org level Policy APIs Access Notice:* Org level Policy APIs are only available 
+for use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores 
+see [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#enable-snyk-code-consistent-ignores) 
+documentation.
+
+#### Required permissions
+
+- `View Ignores (org.project.ignore.read)`
+
+
+### DELETE - `/orgs/{org_id}/policies/{policy_id}` - Added
+- Delete an existing org-level policy.
+
+*Org level Policy APIs Access Notice:* Org level Policy APIs are only available 
+for use with Code Consistent Ignores. For information about how to enable Code Consistent Ignores 
+see [this](https://docs.snyk.io/manage-risk/prioritize-issues-for-fixing/ignore-issues/consistent-ignores-for-snyk-code#enable-snyk-code-consistent-ignores) 
+documentation.
+
+#### Required permissions
+
+- `Remove Ignores (org.project.ignore.delete)`
+
+
+### POST - `/orgs/{org_id}/memberships` - Updated
+- the request property `data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/org/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/org/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/org/data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/role/data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data/id` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/relationships/user/data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- the request property `data/type` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### PATCH - `/orgs/{org_id}/memberships/{membership_id}` - Updated
+- the request property `data` became required
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+
+
+### GET - `/orgs/{org_id}/issues` - Updated
+- added the optional property `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/items/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/items/attributes/key_asset` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/items/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/items/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/attributes/key_asset` to the response with the `200` status
+
+- added the optional property `data/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/orgs/{org_id}/brokers/connections` - Added
+- List all Broker connections integrated with a given org
+
+#### Required permissions
+
+- `View Organization (org.read)`
+
+
+### POST - `/groups/{group_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `201`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the new optional request property `data/attributes/access_token_expires_at`
+
+- added the new `access_token` enum value to the request property `data/attributes/auth_type`
+
+- added the optional property `data/attributes/access_token` to the response with the `201` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `201` status
+
+- added the optional property `data/attributes/created_at` to the response with the `201` status
+
+
+
+### GET - `/groups/{group_id}/service_accounts` - Updated
+- added the new `access_token` enum value to the `data/items/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/items/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/items/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/items/attributes/created_at` to the response with the `200` status
+
+- added the optional property `meta` to the response with the `200` status
+
+
+
+### PATCH - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/service_accounts/{serviceaccount_id}` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### POST - `/groups/{group_id}/service_accounts/{serviceaccount_id}/secrets` - Updated
+- added the new `access_token` enum value to the `data/attributes/auth_type` response property for the response status `200`
+![Badge](https://img.shields.io/badge/Breaking-yellow)
+- added the optional property `data/attributes/access_token` to the response with the `200` status
+
+- added the optional property `data/attributes/access_token_expires_at` to the response with the `200` status
+
+- added the optional property `data/attributes/created_at` to the response with the `200` status
+
+
+
+### GET - `/groups/{group_id}/issues` - Updated
+- added the optional property `data/items/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/items/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/items/attributes/key_asset` to the response with the `200` status
+
+- added the optional property `data/items/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/items/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/items/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
+
+### GET - `/groups/{group_id}/issues/{issue_id}` - Updated
+- added the optional property `data/attributes/coordinates/items/representations/items/oneOf[subschema #4]/sourceLocation/commit_id` to the response with the `200` status
+
+- added the optional property `data/attributes/exploit_details` to the response with the `200` status
+
+- added the optional property `data/attributes/key_asset` to the response with the `200` status
+
+- added the optional property `data/attributes/severities` to the response with the `200` status
+
+- added `loaded_package` discriminator mapping keys to the `data/attributes/risk/factors/items/` response property for the response status `200`
+
+- added `#/components/schemas/LoadedPackageRiskFactor` to the `data/attributes/risk/factors/items/` response property `oneOf` list for the response status `200`
+
+
 ## 2024-10-15 - 업데이트됨 2024-12-09
 
 ### GET - `/orgs/{org_id}` - 업데이트됨

@@ -1,7 +1,7 @@
-# 앱
+# Apps
 
 {% hint style="info" %}
-이 문서는 REST API를 사용합니다. 자세한 내용은 [API용 인증](../rest-api/authentication-for-api/) 페이지를 참조하십시오.
+This document uses the REST API. For more details, see the [Authentication for API](../rest-api/authentication-for-api/) page.
 {% endhint %}
 
 {% swagger src="../../.gitbook/assets/rest-spec.json" path="/self/apps" method="get" %}
