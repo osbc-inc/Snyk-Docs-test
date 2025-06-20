@@ -1,7 +1,7 @@
 # Orgs
 
 {% hint style="info" %}
-이 문서는 REST API를 사용합니다. 자세한 내용은 [API용 인증](../rest-api/authentication-for-api/) 페이지를 참조하십시오.
+This document uses the REST API. For more details, see the [Authentication for API](../rest-api/authentication-for-api/) page.
 {% endhint %}
 
 {% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs" method="get" %}
@@ -9,10 +9,6 @@
 {% endswagger %}
 
 {% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}" method="patch" %}
-[rest-spec.json](../../.gitbook/assets/rest-spec.json)
-{% endswagger %}
-
-{% swagger src="../../.gitbook/assets/rest-spec.json" path="/orgs/{org_id}" method="get" %}
 [rest-spec.json](../../.gitbook/assets/rest-spec.json)
 {% endswagger %}
 

@@ -1,7 +1,7 @@
-# 프로젝트 가져오기 (v1)
+# Import Projects (v1)
 
 {% hint style="info" %}
-이 문서는 v1 API를 사용합니다. 자세한 내용은 [v1 API](../v1-api.md)를 참조하십시오.
+This document uses the v1 API. For more details, see the [v1 API](../v1-api.md).
 {% endhint %}
 
 {% swagger src="../../.gitbook/assets/v1-api-spec.yaml" path="/org/{orgId}/integrations/{integrationId}/import" method="post" %}
